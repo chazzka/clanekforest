@@ -1,38 +1,12 @@
-# config.toml
-
-[server]
-auth = ["api_username", "api_password"]
-url = "https://intern.smart.ariscat.com/datasnap/rest/TARSMethods/GetRecordLst"
-posturl = "https://intern.smart.ariscat.com/datasnap/rest/TARSMethods/RecordLst"
-daystostrip = 1000
-date_to = false # false or "2023-01-20"
-deviceIdLst = 3
-apiDataIndentifier = "iot_device_data"
-
-[args]
-idColumnName = "@ID"
-averageColumnName = "@iDevdAverageCurrent"
-timeColumnName = "@dDevdCasZpravy"
-modelPath = "models/newmodel.pckl"
-# only for train.py
-newModelName = "newmodel"
-
 # args for AI algorithms, see README for info
 [AI]
 # if anomaly detection is supervised (false) or unsupervised (true)
 fitPredict = false
 
-[anomalymodel]
-path = "sklearn.ensemble"
-what = "IsolationForest"
-
 [anomaly]
 contamination = 0.25
 max_samples= "auto"
 
-[clustermodel]
-path = "sklearn.cluster"
-what = "DBSCAN"
 
 [cluster]
 eps = 7

@@ -29,5 +29,6 @@ six==1.16.0
 static-frame==1.2.7
 threadpoolctl==3.1.0
 tomli==2.0.1
+toolz==0.12.0
 urllib3==1.26.13
 xmltodict==0.13.0
