@@ -69,8 +69,7 @@ This means, that if the dataset contains observation which may look like anomali
 
 - [ ] TODO: TADY NAPIŠ JAKOBY ŽE ISOLATION FOREST NENI NOVELTY, ALE IDK...
 
-### 1.
-Isolation Forest
+### Isolation Forest
 - [ ] TODO: TADY nepiš že je to první volba ale napiš něco jako bylo to po experimentech nejlepší
 
 
@@ -92,8 +91,7 @@ As we can see the results are quite distinct.
 This kind of issue is widely known amongst AutoML community.
 Some tools have already been implemented that try to deal with the issue of automatic hyperparameter tuning, namely H20 (h2o.ai) or AutoGluon (auto.gluon.ai). 
 
-### 2.
-How to separate non anomalies
+###  How to separate non anomalies
 Using the data domain knowledge, some constraints usually arise.
 As described in the introductory section, we expect the sensors to produce linear-like data, with minor deviations within the *y* axis.
 These deviations do not follow any specific pattern and are completely random.
@@ -104,7 +102,7 @@ The task could become straightforward if we divide it into subordinate tasks.
 First of them is to use the knowledge to separate non-anomalies (not yet clusters).
 Doing so, the data that is left are anomalies-only where the task of finding anomaly clusters only becomes less challenging. 
 
-#### 2.1 Unsupervised separation intro
+####  Unsupervised separation intro
 One of the biggest tasks is drawing the line between valid data and anomalies.
 Although this may seem trivial at first glance, the issue is quite troublesome.
 Even human will find it nearly impossible to differentiate between these two classes when given plotted dataset.
@@ -120,7 +118,7 @@ This means, such method could easily misbehave, e.g., mark a large portion of an
 
 - [ ] TODO: Figure 5 ukaž čáru - průměr třeba nějaký, kde to rozseklo uplně debilně.
 
-#### 2.2 Unsupervised Isolation Forest
+####  Unsupervised Isolation Forest
 výš jsme si popsali jak funguje unsupervised separae (na naše data ne), ještě zkusíme jak funguje isolation forest na naše data
 
 - [ ] TODO:. isolation forest označil data jako anomalie ale byly to validní data (např více lineárních urovní, které jsou však OK)
@@ -135,7 +133,7 @@ However, there would still be the problem with the cluster-only separation remai
 - [ ] TODO: vložit data z isolation forestu. - jeden obrázek který ukazuje že IF našel anomalie i mezi správnými daty kvuli časové mezeře.
 
 
-#### 2.2 Supervised separation
+#### Supervised separation
 - [ ] TODO: tady se popíše ž forest má verzi supervised, takže ho naučíme na neanomálních datech, obrázky, popis
 
 ### finding the right clustering algorithm, TUNING OF DB SCAN
