@@ -31,7 +31,7 @@ PYTHONPATH=$PYTHONPATH:./src python3 bin/main.py myconfig.toml
 ## tests
 
 ```sh
-python -m unittest test.runtests
+PYTHONPATH=$PYTHONPATH:./src python3 test/runtests.py
 ```
 
 # How to run with docker
