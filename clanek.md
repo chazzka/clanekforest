@@ -43,7 +43,7 @@ If the dataset contained no anomalies at all, the result would be even more defi
 
 
 
-TODO: TADY DÁME DALŠÍ UKÁZKY MEANU NACHYSTANÉ V ČLANKU,
+- [ ] TODO: TADY DÁME DALŠÍ UKÁZKY MEANU NACHYSTANÉ V ČLANKU,
 
 
 
@@ -59,7 +59,7 @@ Therefore, the goal is to first separate the anomalies and then try to find a cl
 > Figure X - DBScan performance
 
 
->TODO: Figure X vložit data z DBScanu. - jeden obrázek který ukazuje že DBScan našel nějaké clustery, ale našel je i mezi anomaliemi
+- [ ] TODO: Figure X vložit data z DBScanu. - jeden obrázek který ukazuje že DBScan našel nějaké clustery, ale našel je i mezi anomaliemi
 
 Traditional approaches for anomaly separation consist of either novelty detection or outlier detection.
 Novelty detection is an anomaly detection mechanism, where we search for unusual observations, which are discovered due to their differences from the training data.
@@ -67,11 +67,11 @@ Novelty detection is a semi-supervised anomaly-detection technique, whereas outl
 This a crucial distinction, due to a fact that whereas the outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them, novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision.
 This means, that if the dataset contains observation which may look like anomalies but are still valid, the performance of unsupervised outlier detection in such case is usually unsatisfactory. 
 
-> TODO: TADY NAPIŠ JAKOBY ŽE ISOLATION FOREST NENI NOVELTY, ALE IDK...
+- [ ] TODO: TADY NAPIŠ JAKOBY ŽE ISOLATION FOREST NENI NOVELTY, ALE IDK...
 
 ### 1.
 Isolation Forest
-> TODO: TADY nepiš že je to první volba ale napiš něco jako bylo to po experimentech nejlepší
+- [ ] TODO: TADY nepiš že je to první volba ale napiš něco jako bylo to po experimentech nejlepší
 
 
 When stumbling upon cluster analysis with outliers problem, the first approach is usually to try some of the ready-made solutions proven by experience.
@@ -85,9 +85,9 @@ Its implementation of Isolation Forest has, in time of writing this text, 9 hype
 Figure 1 shows the differences of cluster time series analysis when performed on different hyperparameters.
 As we can see the results are quite distinct. 
 
-TODO: HONZA DOSTANE PODÍL KDYŽ SEM NACPE MATIKU
+- [ ] TODO: HONZA DOSTANE PODÍL KDYŽ SEM NACPE MATIKU
 
-`TODO: vložit data z isolation forestu. - dva obrazky pod sebou s různými HYPERPARAMETRY`
+- [ ] TODO: vložit data z isolation forestu. - dva obrazky pod sebou s různými HYPERPARAMETRY
 
 This kind of issue is widely known amongst AutoML community.
 Some tools have already been implemented that try to deal with the issue of automatic hyperparameter tuning, namely H20 (h2o.ai) or AutoGluon (auto.gluon.ai). 
@@ -112,31 +112,31 @@ Finding the line itself is obvious.
 Deciding which observations are anomalies, without some domain knowledge on the other hand is close to impossible.
 Consider data shown in Figure 4.
 
-`TODO: Figure 4 vložit nějaká těžce separovatelná data, nejlepe tři řady.`
+- [ ] TODO: Figure 4 vložit nějaká těžce separovatelná data, nejlepe tři řady.
 
 Figure 4 shows example dataset without any datamining or separation with three imaginary clusters.
 The question is, does the middle cluster represent anomalies or non-anomalies? Can we draw a line between these three clusters somehow? The most straightforward solution - to use moving average or MSE - is not really feasible, because anomalies tend to behave randomly.
 This means, such method could easily misbehave, e.g., mark a large portion of anomalies as non-anomalies, as shown in Figure 5. 
 
-`TODO: Figure 5 ukaž čáru - průměr třeba nějaký, kde to rozseklo uplně debilně.`
+- [ ] TODO: Figure 5 ukaž čáru - průměr třeba nějaký, kde to rozseklo uplně debilně.
 
 #### 2.2 Unsupervised Isolation Forest
 výš jsme si popsali jak funguje unsupervised separae (na naše data ne), ještě zkusíme jak funguje isolation forest na naše data
 
-TODO:. isolation forest označil data jako anomalie ale byly to validní data (např více lineárních urovní, které jsou však OK)
+- [ ] TODO:. isolation forest označil data jako anomalie ale byly to validní data (např více lineárních urovní, které jsou však OK)
 
-TODO: vložit obrázek kde je více lineárních randomů, a pak nějaké clustery, tak ten unsupervised z toho bude samozřejmě zmatený
+- [ ] TODO: vložit obrázek kde je více lineárních randomů, a pak nějaké clustery, tak ten unsupervised z toho bude samozřejmě zmatený
 
 However, the major drawback in our particular problem were real world disturbances of the time series data.
 Figure 2 shows the misconduct of the Isolation Forest algorithm when applied on the dataset with such disturbances, represented by the *gaps* in Figure 2.
 This raises a question, whether should we preprocess the data first to remove those gaps somehow, and then use the Isolation Forest algorithm to find the anomalies.
 However, there would still be the problem with the cluster-only separation remaining for the reasons described in the introduction section of this article. 
 
-`TODO: vložit data z isolation forestu. - jeden obrázek který ukazuje že IF našel anomalie i mezi správnými daty kvuli časové mezeře.`
+- [ ] TODO: vložit data z isolation forestu. - jeden obrázek který ukazuje že IF našel anomalie i mezi správnými daty kvuli časové mezeře.
 
 
 #### 2.2 Supervised separation
-> TODO: tady se popíše ž forest má verzi supervised, takže ho naučíme na neanomálních datech, obrázky, popis
+- [ ] TODO: tady se popíše ž forest má verzi supervised, takže ho naučíme na neanomálních datech, obrázky, popis
 
 ### finding the right clustering algorithm, TUNING OF DB SCAN
 - tad už stačí asi že prostě to není těžký ukol, vezmeme jen obyčejný DB scan a bác. oba algoritmy jsou jednoduché ale síla je v jejich kooperaci idk
@@ -144,7 +144,7 @@ However, there would still be the problem with the cluster-only separation remai
 ### automl hyperparameter tuning for IF - v jinem članku
 
 ## experiments
-> TODO: TADY SE TO UŽ ZKOMBINUJE, ukaž obrázky, ukaž jak jde měnit parametry a bude to mít jiné výslekdy, více se zvýrazní clustery, méně atp...
+- [ ] TODO: TADY SE TO UŽ ZKOMBINUJE, ukaž obrázky, ukaž jak jde měnit parametry a bude to mít jiné výslekdy, více se zvýrazní clustery, méně atp...
 
 ## Results and discussion
 - tady můžeme zkusit tabulku kde budeme ukazovat kolik procent anomálií to našlo apt možná porovnán s nějakým buď expertem nebo nějakými referenčními olabelovanými daty
