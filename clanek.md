@@ -34,7 +34,7 @@ The initial one is with the automated distinction.
 When the dataset is polluted with anomalies in close to 1:1 ratio, even for human it is close to impossible to differentiate anomalies and regular observation.
 The second problem brings up when anomalies are not present at all, making mean method unusable.
 Figure X shows the mean method when used on the dataset polluted by very little anomalies.
-If the dataset contained no anomalies at all, the result would be even more deficient.
+Obviously, if the dataset contained no anomalies at all, the result would become even more deficient.
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/mean_wrong_colored.svg) 
 > Figure X - Mean of the given dataset with little to zero anomalies.
@@ -147,5 +147,5 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDkyNDg4NTFdfQ==
+eyJoaXN0b3J5IjpbLTk0OTgwNjAxNywtMTk0OTI0ODg1MV19
 -->
