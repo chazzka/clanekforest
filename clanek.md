@@ -46,7 +46,8 @@ This, however, leads to unpleasant outcome.
 Such algorithms tend to view the data as a cluster-only data, despite it being irrelevant in cluster regards.
 Figure X shows the performance of the DBScan algorithm on previously non-processed data.
 Even though the algorithm did find some clusters, it would be demanding to differentiate and find the one with anomalies.
-Moreover, DBScan algorithm managed to split the regular observations into two clusters, due to the gap in the measurement.   This brings up the idea of algorithm cross-cooperation.
+Moreover, due to the gap in the measurement, DBScan incorrectly
+Moreover, DBScan algorithm managed to split the regular observations into two clusters, due to the gap in the measurement. This brings up the idea of algorithm cross-cooperation.
 Therefore, our proposed solution separates the anomalies first and then tries to find a cluster amongst them.
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/DBScanGap.svg) 
@@ -147,6 +148,6 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIxOTQxMzc2LC05NDk4MDYwMTcsLTE5ND
-kyNDg4NTFdfQ==
+eyJoaXN0b3J5IjpbMTc0NzIwNDMwMiwtOTQ5ODA2MDE3LC0xOT
+Q5MjQ4ODUxXX0=
 -->
