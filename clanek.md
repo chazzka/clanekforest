@@ -41,12 +41,6 @@ If the dataset contained no anomalies at all, the result would be even more defi
 
 
 
-
-
-- [ ] TODO: TADY DÁME DALŠÍ UKÁZKY MEANU NACHYSTANÉ V ČLANKU,
-
-
-
 One could easily argue that there is an option of using pure clustering algorithms (e.g. ([DBScan](doi/10.5555/3001460.3001507)).
 This, however, leads to unpleasant outcome.
 Such algorithms tend to view the data as a cluster-only data, despite it being irrelevant in cluster regards.
@@ -152,3 +146,6 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5NDkyNDg4NTFdfQ==
+-->
