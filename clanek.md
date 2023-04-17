@@ -94,6 +94,7 @@ However, this is a problem because the anomalies in our dataset appear randomly 
 To demonstrate the impact of contamination parameter, we prepared following experiment.
 A dataset containing approx. 25% of anomalies is prepared.
 Figures below show the differences when using rising values of the contamination parameter.
+Note that dataset is generated randomly with each run
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/contamination10.svg)
 > Figure X Isolation Forest with 10% contamination.
 
@@ -170,7 +171,7 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEyMzAwNjY4LC0xNTIzMzc2NTA4LDEzOD
+eyJoaXN0b3J5IjpbODgwNjY5Njc0LC0xNTIzMzc2NTA4LDEzOD
 Y0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAs
 Njg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Nj
 g3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5
