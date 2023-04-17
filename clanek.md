@@ -80,6 +80,8 @@ The less partitions required to isolate the more probable it is for a particle t
 
 ### todo: tady bychom asi meli vysvětlit ten algoritmus jako takovy, nasledovat budou ruzne pokusy s hyperparametry a až podtím popíšeme že vlastně budeme muset použít IF jako novelty a vysvětlíme dále proč to je možné
 
+- [ ] TODO: Honza tu vysvětlí jak funguje isolation forest, popíše všechny parametry a co dělají
+
 Despite its famousness, there are a few drawbacks.
 
 The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
@@ -144,7 +146,7 @@ Can we use Isolation Forest for novelty detection despite it not being primarily
 To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
-- [ ] TODO: otázka, je teda vubec možné ho použít? tady s Honzou vysvětlíme jak vlastně funguje ten IF, a ukážeme že si myslím že jo, použijeme ho jako novelty a ukážeme že to šlo
+- [ ] TODO: otázka, je teda vubec možné ho použít? Nahoře Honza vysvětlit jak funguje samotný IF a jeho parametry, tady  a ukážeme že si myslím že jo, použijeme ho jako novelty a ukážeme že to šlo
 
 
 
@@ -169,11 +171,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NjA3Nzk2NywtMTUyMzM3NjUwOCwxMz
-g2NDIxOTI3LDY1NjQ1MzUsMTc0NTM5MDczMSwxODgzNzg1NDUw
-LDY4NzIwODY5MiwxMTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NT
-Y4NzQ1OCwtMTk0MDgxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcy
-OTQwMywxNjE0MzIzMzMwLC01OTQyODk2MjcsLTYxMzExNjU2Ny
-wtODQwODk3MjA4LDk3NjU0ODQ4LC0xNTMyNTc0NDMyLC05NDk4
-MDYwMTddfQ==
+eyJoaXN0b3J5IjpbMjczOTI3MDc4LC0xNTIzMzc2NTA4LDEzOD
+Y0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAs
+Njg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Nj
+g3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5
+NDAzLDE2MTQzMjMzMzAsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC
+04NDA4OTcyMDgsOTc2NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OTgw
+NjAxN119
 -->
