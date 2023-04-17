@@ -81,10 +81,12 @@ The less partitions required to isolate the more probable it is for a particle t
 
 Despite its famousness, there are a few drawbacks.
 
-First, the outlier detection approach is not capable to completely isolate out all of the anomalies. For this experiment, we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). The result of the experiment shows Figure X.
+First,  the outlier detection approach is not capable to completely isolate out all of the anomalies. For this experiment, we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). The result of the experiment shows Figure X.
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/08bbb4857eb5ff788c6c2b32c7cd918bcc6519b5/code/figures/isolation1.svg)
 > Figure X, Isolation Forest with 25% of contamination.
+
+a
 
 Second, there is a large number of hyperparameters to work with.
 The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
@@ -154,10 +156,10 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NTM5MDczMSwxODgzNzg1NDUwLDY4Nz
-IwODY5MiwxMTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NTY4NzQ1
-OCwtMTk0MDgxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcyOTQwMy
-wxNjE0MzIzMzMwLC01OTQyODk2MjcsLTYxMzExNjU2NywtODQw
-ODk3MjA4LDk3NjU0ODQ4LC0xNTMyNTc0NDMyLC05NDk4MDYwMT
-csLTE5NDkyNDg4NTFdfQ==
+eyJoaXN0b3J5IjpbMTg5OTE3OTE5OCwxNzQ1MzkwNzMxLDE4OD
+M3ODU0NTAsNjg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIy
+NzgsNTk1Njg3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC
+0xMTk4NzI5NDAzLDE2MTQzMjMzMzAsLTU5NDI4OTYyNywtNjEz
+MTE2NTY3LC04NDA4OTcyMDgsOTc2NTQ4NDgsLTE1MzI1NzQ0Mz
+IsLTk0OTgwNjAxNywtMTk0OTI0ODg1MV19
 -->
