@@ -88,7 +88,9 @@ However, this is a problem because the anomalies in our dataset appear randomly 
 To demonstrate the impact of contamination parameter, we prepared following experiment.
 A dataset containing approx. 25% of anomalies is prepared.
 Figures below show the differences when using rising values of the contamination parameter.
+![fsdfsda](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/contamination10.svg)
 
+ - [ ] TODO tady napiseme jeste o ostatnich hyperparametrech
 
 In order to demonstrate , we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). 
 The result of the experiment shows Figure X.
@@ -103,6 +105,9 @@ The Scikit-Learn platform (scikit-learn.org) offers several implemented, documen
 Its implementation of Isolation Forest has, in time of writing this text, 5 hyperparameters which need to be explicitly chosen and tuned.
 Figure X shows the differences of cluster time series analysis when performed on different hyperparameters.
 As we can see the results are quite distinct. 
+
+
+
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/isolation2.svg)
 > Anomaly 2:
 n_estimators=50
@@ -166,11 +171,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjMzNzY1MDgsMTM4NjQyMTkyNyw2NT
-Y0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1MCw2ODcyMDg2OTIs
-MTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0NTgsLTE5ND
-A4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3Mjk0MDMsMTYxNDMy
-MzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5NzIwOC
-w5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5
-MjQ4ODUxXX0=
+eyJoaXN0b3J5IjpbLTE3OTc2MTU5MDMsLTE1MjMzNzY1MDgsMT
+M4NjQyMTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1
+MCw2ODcyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OT
+U2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3
+Mjk0MDMsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1Nj
+csLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5
+ODA2MDE3XX0=
 -->
