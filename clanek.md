@@ -78,6 +78,8 @@ Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"
 This approach is well known to successfully isolate outliers by using recursive partitioning (forming a tree-like structure) to decide whether the analyzed particle is an anomaly or not.
 The less partitions required to isolate the more probable it is for a particle to be an anomaly.
 
+### todo: tady bychom asi meli vysvětlit ten algoritmus jako takovy, nasledovat budou ruzne pokusy s hyperparametry a až podtím popíšeme že vlastně budeme muset použít IF jako novelty a vysvětlíme dále proč to je možné
+
 Despite its famousness, there are a few drawbacks.
 
 First, the major challenge is setting the contamination parameter itself.
@@ -181,11 +183,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI2ODIxMTEwLC0xNTIzMzc2NTA4LDEzOD
-Y0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAs
-Njg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Nj
-g3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5
-NDAzLDE2MTQzMjMzMzAsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC
-04NDA4OTcyMDgsOTc2NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OTgw
-NjAxN119
+eyJoaXN0b3J5IjpbLTEyMjMyNTYwNTgsLTE1MjMzNzY1MDgsMT
+M4NjQyMTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1
+MCw2ODcyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OT
+U2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3
+Mjk0MDMsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1Nj
+csLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5
+ODA2MDE3XX0=
 -->
