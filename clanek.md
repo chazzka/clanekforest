@@ -102,7 +102,6 @@ bootstrap=0
 random_state=1
 warm_start=0 
 
-- [ ] TODO: vložit data z isolation forestu. - dva obrazky pod sebou s různými HYPERPARAMETRY
 
 This kind of issue is widely known amongst AutoML community.
 Some tools have already been implemented that try to deal with the issue of automatic hyperparameter tuning, namely H20 (h2o.ai) or AutoGluon (auto.gluon.ai). 
@@ -114,6 +113,8 @@ Finding the line itself is obvious.
 Deciding which observations are anomalies, without some domain knowledge on the other hand is close to impossible.
 
 Despite this, one positive thing is that Isolation Forest managed to deal with the gaps in the measurement (seen in Figures above, around X=50). 
+
+The final question
 
 - [ ] TODO: otázka, je teda vubec možné ho použít? tady s Honzou vysvětlíme jak vlastně funguje ten IF, a ukážeme že si myslím že jo, použijeme ho jako novelty a ukážeme že to šlo
 
@@ -132,8 +133,6 @@ Doing so, the data that is left are anomalies-only where the task of finding ano
 
  
 
-
-
 ### finding the right clustering algorithm, TUNING OF DB SCAN
 - tady už stačí asi že prostě to není těžký ukol, vezmeme jen obyčejný DB scan a bác. oba algoritmy jsou jednoduché ale síla je v jejich kooperaci idk
 
@@ -151,10 +150,10 @@ Doing so, the data that is left are anomalies-only where the task of finding ano
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkwMjAzOTgwLDY4NzIwODY5MiwxMTQwNj
-c5OTYyLC0xNzg5ODQyMjc4LDU5NTY4NzQ1OCwtMTk0MDgxNjQy
-MywtMTM0MzEwMTY2OSwtMTE5ODcyOTQwMywxNjE0MzIzMzMwLC
-01OTQyODk2MjcsLTYxMzExNjU2NywtODQwODk3MjA4LDk3NjU0
-ODQ4LC0xNTMyNTc0NDMyLC05NDk4MDYwMTcsLTE5NDkyNDg4NT
-FdfQ==
+eyJoaXN0b3J5IjpbMTQ5ODMyMTMwMSw2ODcyMDg2OTIsMTE0MD
+Y3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0NTgsLTE5NDA4MTY0
+MjMsLTEzNDMxMDE2NjksLTExOTg3Mjk0MDMsMTYxNDMyMzMzMC
+wtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5NzIwOCw5NzY1
+NDg0OCwtMTUzMjU3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4OD
+UxXX0=
 -->
