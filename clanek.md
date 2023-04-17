@@ -84,7 +84,7 @@ First, the major challenge is setting the contamination parameter itself.
 The contamination parameter is to control the proportion of anomalies in the dataset. 
 Usually, this has to be known beforehand.
 This parameter has a huge impact on the final result of the detection.
-However, this is a problem because we sometimes 
+However, this is a problem because the anomalies in our dataset appear randomly and hence the proportion varies from 0% to 
 For this experiment, we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). 
 The result of the experiment shows Figure X.
 
@@ -161,11 +161,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MzcyNzU3OSwxMzg2NDIxOTI3LDY1Nj
-Q1MzUsMTc0NTM5MDczMSwxODgzNzg1NDUwLDY4NzIwODY5Miwx
-MTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NTY4NzQ1OCwtMTk0MD
-gxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcyOTQwMywxNjE0MzIz
-MzMwLC01OTQyODk2MjcsLTYxMzExNjU2NywtODQwODk3MjA4LD
-k3NjU0ODQ4LC0xNTMyNTc0NDMyLC05NDk4MDYwMTcsLTE5NDky
-NDg4NTFdfQ==
+eyJoaXN0b3J5IjpbMzgzMDA2MTUyLDEzODY0MjE5MjcsNjU2ND
+UzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAsNjg3MjA4NjkyLDEx
+NDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3NDU4LC0xOTQwOD
+E2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5NDAzLDE2MTQzMjMz
+MzAsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC04NDA4OTcyMDgsOT
+c2NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OTgwNjAxNywtMTk0OTI0
+ODg1MV19
 -->
