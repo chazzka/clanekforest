@@ -64,9 +64,7 @@ This means, that if the dataset contains observations which look like anomalies 
 ### Isolation Forest
 - [ ] TODO: TADY napíšeme něco jakože by nás zajímalo jestli si s tím poradí isolation forest, napíšeme že se často používá právě na outlier detection ale z toho co vysvětlíme bude jasné, že se dá použít na novelty
 
-- [ ] TODO: tady 
-
-When stumbling upon cluster analysis with outliers problem, the first approach is usually to try some of the ready-made solutions proven by experience.
+Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"), [2](https://doi.org/10.1016/j.patcog.2023.109334 "article 2")) is an outlier detection, semi-supervised ensemble algorithm. 
 This generally leads to an ensemble method called Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"), [2](https://doi.org/10.1016/j.patcog.2023.109334 "article 2")).
 This approach is well known to successfully isolate outliers by using recursive partitioning (forming a tree-like structure) to decide whether the analyzed particle is an anomaly or not.
 The less partitions required to isolate the more probable it is for a particle to be an anomaly.
@@ -144,6 +142,6 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5OTU4ODI4Niw5NzY1NDg0OCwtMTUzMj
-U3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
+eyJoaXN0b3J5IjpbLTIwODUyMTg5NzMsOTc2NTQ4NDgsLTE1Mz
+I1NzQ0MzIsLTk0OTgwNjAxNywtMTk0OTI0ODg1MV19
 -->
