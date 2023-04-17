@@ -85,7 +85,7 @@ Some tools have already been implemented that try to deal with the issue of auto
 Second, the outlier detection approach is not capable to completely isolate out all of the anomalies. For this experiment, we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies).
 
 The last problem is with the unsupervised separation itself.
-Although this may seem trivial at first glance, the issue is quite troublesome.
+Consider data 
 Even human will find it nearly impossible to differentiate between these two classes when given plotted dataset.
 Finding the line itself is obvious.
 Deciding which observations are anomalies, without some domain knowledge on the other hand is close to impossible.
@@ -137,7 +137,7 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5OTkyMzg1MywtNTk0Mjg5NjI3LC02MT
+eyJoaXN0b3J5IjpbMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MT
 MxMTY1NjcsLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQz
 MiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
 -->
