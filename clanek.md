@@ -146,15 +146,14 @@ Can we use Isolation Forest for novelty detection despite it not being primarily
 To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
-- [ ] TODO: otázka, je teda vubec možné ho použít? Nahoře Honza vysvětlit jak funguje samotný IF a jeho parametry, tady  a ukážeme že si myslím že jo, použijeme ho jako novelty a ukážeme že to šlo
+- [ ] TODO: otázka, je teda vubec možné ho použít? Nahoře Honza vysvětlit jak funguje samotný IF a jeho parametry, tady ukážeme a něčím podpoříme, že nám nic nebrání použít IF jako novelty a uděláme na to experimenty
 
+### Experiments using IF as a Novelty detection tool
 
-
-
-
+- tady experimenty
 
  
-### finding the right clustering algorithm, TUNING OF DB SCAN
+### Finding the right clustering algorithm, TUNING OF DB SCAN
 - tady už stačí asi že prostě to není těžký ukol, vezmeme jen obyčejný DB scan a bác. oba algoritmy jsou jednoduché ale síla je v jejich kooperaci idk
 
 ### automl hyperparameter tuning for IF - v jinem članku
@@ -171,7 +170,7 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjczOTI3MDc4LC0xNTIzMzc2NTA4LDEzOD
+eyJoaXN0b3J5IjpbNzEyMzAwNjY4LC0xNTIzMzc2NTA4LDEzOD
 Y0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAs
 Njg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Nj
 g3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5
