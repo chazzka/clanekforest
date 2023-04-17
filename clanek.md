@@ -14,7 +14,7 @@
 - general -> specific (describe problem as a whole, then why the problems occurs, then why is it a problem for us, technical details, env. variables)
 - constribution
 - **toto až nakonec až budeme vědět co vlastně fungovalo**
-- **here we describe the domain!! - aneb jak ta data vypadají - co je cílem**
+- **here we describe the domain!! - aneb jak ta data vypadají - co je cílem hlavně vysvětlit že chceme cluster anomalii ne jen anomalie**
  
 
 ## Methods
@@ -22,6 +22,16 @@
 The very first task is to thoroughly analyze the domain of the given problem.
 The inappropriate choice of the selected solution could lead to undesirable results.
 Having the problem already described, we are now able to analyze and establish a learning process. 
+
+Using the data domain knowledge, some constraints usually arise.
+As described in the introductory section, we expect the sensors to produce linear-like data, with minor deviations within the *y* axis.
+These deviations do not follow any specific pattern and are completely random.
+However, the errors report some kind of observable behavior.
+This is usually the case when performing cluster analysis.
+The main constraint that is crucial for this task is the cluster forming pattern.
+The task could become straightforward if we divide it into subordinate tasks.
+First of them is to use the knowledge to separate non-anomalies (not yet clusters).
+Doing so, the data that is left are anomalies-only where the task of finding anomaly clusters only becomes less challenging. 
 
 The most straightforward solution when trying to find anomalies in above-shown data would be to use some kind of statistical method that would split the data in a certain ratio.
 Figure X shows the mean (straight line) of the given data. 
@@ -141,7 +151,7 @@ The final question
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5Mzk1MzAxMyw2ODcyMDg2OTIsMTE0MD
+eyJoaXN0b3J5IjpbLTc0MzA0NDUyNCw2ODcyMDg2OTIsMTE0MD
 Y3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0NTgsLTE5NDA4MTY0
 MjMsLTEzNDMxMDE2NjksLTExOTg3Mjk0MDMsMTYxNDMyMzMzMC
 wtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5NzIwOCw5NzY1
