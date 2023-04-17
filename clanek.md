@@ -89,7 +89,7 @@ Second, the outlier detection approach is not capable to completely isolate out 
 
 
 The last problem is with the unsupervised separation itself.
-Consider data 
+Consider data polluted by anomalies in close to 1:1 ratio.
 Even human will find it nearly impossible to differentiate between these two classes when given plotted dataset.
 Finding the line itself is obvious.
 Deciding which observations are anomalies, without some domain knowledge on the other hand is close to impossible.
@@ -141,8 +141,8 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDMxMDE2NjksLTExOTg3Mjk0MDMsMT
-YxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5
-NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5ODA2MDE3LC
-0xOTQ5MjQ4ODUxXX0=
+eyJoaXN0b3J5IjpbLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLT
+ExOTg3Mjk0MDMsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMx
+MTY1NjcsLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQzMi
+wtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
 -->
