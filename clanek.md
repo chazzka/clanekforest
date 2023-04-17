@@ -104,6 +104,7 @@ Figures below show the differences when using rising values of the contamination
 > Figure X Isolation Forest with 40% contamination.
 
 
+Other notable parameters with huge impact on the result are 
 In order to demonstrate , we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). 
 The result of the experiment shows Figure X.
 
@@ -183,7 +184,7 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjMyNTYwNTgsLTE1MjMzNzY1MDgsMT
+eyJoaXN0b3J5IjpbLTIxMTIzMTEwMDUsLTE1MjMzNzY1MDgsMT
 M4NjQyMTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1
 MCw2ODcyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OT
 U2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3
