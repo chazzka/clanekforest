@@ -124,7 +124,9 @@ Deciding which observations are anomalies, without some domain knowledge on the 
 
 Despite this, one positive thing is that Isolation Forest managed to deal with the gaps in the measurement (seen in Figures above, around X=50). 
 
-The final question is if it is somehow possible to teach Isolation Forest how regular observations look like 
+The final question is if it is somehow possible to teach Isolation Forest how regular observation look like. 
+Can we use Isolation Forest for novelty detection despite it not being primarily novelty detection algorithm? 
+To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 - [ ] TODO: otázka, je teda vubec možné ho použít? tady s Honzou vysvětlíme jak vlastně funguje ten IF, a ukážeme že si myslím že jo, použijeme ho jako novelty a ukážeme že to šlo
 
@@ -151,7 +153,7 @@ The final question is if it is somehow possible to teach Isolation Forest how re
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMTYzMDkzLDE4ODM3ODU0NTAsNjg3Mj
+eyJoaXN0b3J5IjpbOTExNDAwODg5LDE4ODM3ODU0NTAsNjg3Mj
 A4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3NDU4
 LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5NDAzLD
 E2MTQzMjMzMzAsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC04NDA4
