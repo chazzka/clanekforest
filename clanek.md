@@ -82,7 +82,7 @@ As we can see the results are quite distinct.
 This kind of issue is widely known amongst AutoML community.
 Some tools have already been implemented that try to deal with the issue of automatic hyperparameter tuning, namely H20 (h2o.ai) or AutoGluon (auto.gluon.ai). 
 
-Second, the outlier detection approach is not 
+Second, the outlier detection approach is not capable to completely isolate out all of the anomalies
 
 ###  How to separate non anomalies
 Using the data domain knowledge, some constraints usually arise.
@@ -140,7 +140,7 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MzAzODQ0NywtODQwODk3MjA4LDk3Nj
+eyJoaXN0b3J5IjpbLTYxMzExNjU2NywtODQwODk3MjA4LDk3Nj
 U0ODQ4LC0xNTMyNTc0NDMyLC05NDk4MDYwMTcsLTE5NDkyNDg4
 NTFdfQ==
 -->
