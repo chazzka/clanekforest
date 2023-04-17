@@ -82,7 +82,7 @@ Its implementation of Isolation Forest has, in time of writing this text, 8 hype
 Figure X shows the differences of cluster time series analysis when performed on different hyperparameters.
 As we can see the results are quite distinct. 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/isolation2.svg)
-> 2:
+> Anomaly 2:
 n_estimators=50
 max_samples= 20
 max_features=2
@@ -91,7 +91,10 @@ bootstrap=1
 random_state=0
 warm_start=0
 
-> 3: n_estimators=10
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/isolation3.svg)
+
+> Anomaly 3: 
+n_estimators=10
 max_samples= 10
 max_features=2
 contamination = 0.25
@@ -157,9 +160,9 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTEwNjI0MjAsMTE0MDY3OTk2MiwtMT
-c4OTg0MjI3OCw1OTU2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMx
-MDE2NjksLTExOTg3Mjk0MDMsMTYxNDMyMzMzMCwtNTk0Mjg5Nj
-I3LC02MTMxMTY1NjcsLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUz
-MjU3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
+eyJoaXN0b3J5IjpbNjg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3OD
+k4NDIyNzgsNTk1Njg3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAx
+NjY5LC0xMTk4NzI5NDAzLDE2MTQzMjMzMzAsLTU5NDI4OTYyNy
+wtNjEzMTE2NTY3LC04NDA4OTcyMDgsOTc2NTQ4NDgsLTE1MzI1
+NzQ0MzIsLTk0OTgwNjAxNywtMTk0OTI0ODg1MV19
 -->
