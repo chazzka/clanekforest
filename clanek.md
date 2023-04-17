@@ -73,7 +73,7 @@ Despite its famousness, there are a few drawbacks.
 
 First, the outlier detection approach is not capable to completely isolate out all of the anomalies. For this experiment, we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). The result of the experiment shows Figure X.
 
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/isolation1.svg)
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/08bbb4857eb5ff788c6c2b32c7cd918bcc6519b5/code/figures/isolation1.svg)
 > Figure X, Isolation Forest with 25% of contamination.
 
 Second, there is a large number of hyperparameters to work with.
@@ -81,7 +81,7 @@ The Scikit-Learn platform (scikit-learn.org) offers several implemented, documen
 Its implementation of Isolation Forest has, in time of writing this text, 8 hyperparameters which need to be explicitly chosen and tuned.
 Figure X shows the differences of cluster time series analysis when performed on different hyperparameters.
 As we can see the results are quite distinct. 
-
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/isolation2.svg)
 > 2:
 n_estimators=50
 max_samples= 20
@@ -157,9 +157,9 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OT
-U2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3
-Mjk0MDMsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1Nj
-csLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5
-ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
+eyJoaXN0b3J5IjpbLTE3MTEwNjI0MjAsMTE0MDY3OTk2MiwtMT
+c4OTg0MjI3OCw1OTU2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMx
+MDE2NjksLTExOTg3Mjk0MDMsMTYxNDMyMzMzMCwtNTk0Mjg5Nj
+I3LC02MTMxMTY1NjcsLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUz
+MjU3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
 -->
