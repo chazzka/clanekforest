@@ -30,6 +30,8 @@ def plotXYData(xdata, ydata, fig_ax_tuple, savepath = 0, c='red'):
     fig = fig_ax_tuple[0]
     ax = fig_ax_tuple[1]
     ax.scatter(xdata, ydata, c=c)
+    plt.xlabel("Time")
+    plt.ylabel("Observed value")
 
     if savepath:
         plt.savefig(savepath, format="svg")

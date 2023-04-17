@@ -8,13 +8,13 @@ fitPredict = false
 # contamination = 0.25
 # max_samples= "auto"
 
-n_estimators=50
-max_samples= 20
+n_estimators=10
+max_samples= 10
 max_features=2
 contamination = 0.25
-bootstrap=1
-random_state=0
-warm_start=0
+bootstrap=0
+random_state=1
+warm_start=0 
 
 [cluster]
 eps = 7

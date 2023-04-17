@@ -33,7 +33,7 @@ if __name__ == "__main__":
         
     res = trainAndPredict(trainXyValues, forest, args=config["anomaly"])
 
-    fi, ax = plotXYData(*zip(*trainXyValues), plt.subplots(), c=list(res), savepath="figures/isolation2.svg")
+    fi, ax = plotXYData(*zip(*trainXyValues), plt.subplots(), c=list(res), savepath="figures/isolation3.svg")
     
     plt.show()
 
