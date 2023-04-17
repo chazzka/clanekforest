@@ -108,14 +108,9 @@ Other notable parameters with huge impact on the result are *number of estimator
 Using similar dataset mentioned above, we designed the experiment and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). 
 The result of the experiment shows Figure X.
 
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/08bbb4857eb5ff788c6c2b32c7cd918bcc6519b5/code/figures/isolation1.svg)
-> Figure X, Isolation Forest with 25% of contamination.
-
-
 
 Second, there is a quite large number of other hyperparameters to work with.
-The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
-Its implementation of Isolation Forest has, in time of writing this text, 5 hyperparameters which need to be explicitly chosen and tuned.
+
 Figure X shows the differences of cluster time series analysis when performed on different hyperparameters.
 As we can see the results are quite distinct. 
 
@@ -184,7 +179,7 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NDg5Mjk1OCwtMTUyMzM3NjUwOCwxMz
+eyJoaXN0b3J5IjpbLTQ4NzE3NTQ4NywtMTUyMzM3NjUwOCwxMz
 g2NDIxOTI3LDY1NjQ1MzUsMTc0NTM5MDczMSwxODgzNzg1NDUw
 LDY4NzIwODY5MiwxMTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NT
 Y4NzQ1OCwtMTk0MDgxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcy
