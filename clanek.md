@@ -70,24 +70,42 @@ This approach is well known to successfully isolate outliers by using recursive 
 The less partitions required to isolate the more probable it is for a particle to be an anomaly.
 
 Despite its famousness, there are a few drawbacks.
-First, there is a large number of hyperparameters to work with.
+
+First, the outlier detection approach is not capable to completely isolate out all of the anomalies. For this experiment, we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). The result of the experiment shows Figure X.
+
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/isolation1.svg)
+> Figure X, Isolation Forest with 25% of contamination.
+
+Second, there is a large number of hyperparameters to work with.
 The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
-Its implementation of Isolation Forest has, in time of writing this text, 9 hyperparameters which need to be explicitly chosen and tuned.
+Its implementation of Isolation Forest has, in time of writing this text, 8 hyperparameters which need to be explicitly chosen and tuned.
 Figure X shows the differences of cluster time series analysis when performed on different hyperparameters.
 As we can see the results are quite distinct. 
 
+> 2:
+n_estimators=50
+max_samples= 20
+max_features=2
+contamination = 0.25
+bootstrap=1
+random_state=0
+warm_start=0
+
+> 3: n_estimators=10
+max_samples= 10
+max_features=2
+contamination = 0.25
+bootstrap=0
+random_state=1
+warm_start=0 
 
 - [ ] TODO: vložit data z isolation forestu. - dva obrazky pod sebou s různými HYPERPARAMETRY
 
 This kind of issue is widely known amongst AutoML community.
 Some tools have already been implemented that try to deal with the issue of automatic hyperparameter tuning, namely H20 (h2o.ai) or AutoGluon (auto.gluon.ai). 
 
-Second, the outlier detection approach is not capable to completely isolate out all of the anomalies. For this experiment, we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). The result of the experiment shows Figure X.
-
-
-
 The last problem is with the unsupervised separation itself.
-Consider data 
+Consider data polluted by anomalies in close to 1:1 ratio.
 Even human will find it nearly impossible to differentiate between these two classes when given plotted dataset.
 Finding the line itself is obvious.
 Deciding which observations are anomalies, without some domain knowledge on the other hand is close to impossible.
@@ -139,8 +157,9 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTg3Mjk0MDMsMTYxNDMyMzMzMCwtNT
-k0Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5NzIwOCw5NzY1NDg0
-OCwtMTUzMjU3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX
-0=
+eyJoaXN0b3J5IjpbMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OT
+U2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3
+Mjk0MDMsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1Nj
+csLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5
+ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
 -->
