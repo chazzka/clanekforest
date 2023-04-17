@@ -68,14 +68,14 @@ Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"
 This generally leads to an ensemble method called Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"), [2](https://doi.org/10.1016/j.patcog.2023.109334 "article 2")).
 This approach is well known to successfully isolate outliers by using recursive partitioning (forming a tree-like structure) to decide whether the analyzed particle is an anomaly or not.
 The less partitions required to isolate the more probable it is for a particle to be an anomaly.
-	Despite its famousness, there are a few drawbacks.
+
+Despite its famousness, there are a few drawbacks.
 First, there is a large number of hyperparameters to work with.
 The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
 Its implementation of Isolation Forest has, in time of writing this text, 9 hyperparameters which need to be explicitly chosen and tuned.
-Figure 1 shows the differences of cluster time series analysis when performed on different hyperparameters.
+Figure X shows the differences of cluster time series analysis when performed on different hyperparameters.
 As we can see the results are quite distinct. 
 
-- [ ] TODO: HONZA DOSTANE PODÍL KDYŽ SEM NACPE MATIKU
 
 - [ ] TODO: vložit data z isolation forestu. - dva obrazky pod sebou s různými HYPERPARAMETRY
 
@@ -142,6 +142,6 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODUyMTg5NzMsOTc2NTQ4NDgsLTE1Mz
+eyJoaXN0b3J5IjpbLTIwOTc0OTY4MjEsOTc2NTQ4NDgsLTE1Mz
 I1NzQ0MzIsLTk0OTgwNjAxNywtMTk0OTI0ODg1MV19
 -->
