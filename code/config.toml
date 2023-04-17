@@ -5,10 +5,10 @@ fitPredict = false
 
 [anomaly]
 
-contamination = 0.25
+contamination = 0.4
 max_samples= "auto"
 
-# n_estimators=10
+# n_estimators=100
 # max_samples= 10
 # max_features=2
 # contamination = 0.25
