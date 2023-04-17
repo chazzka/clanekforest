@@ -103,10 +103,6 @@ Consider data shown in Figure 4.
 
 - [ ] TODO: Figure 4 vložit nějaká těžce separovatelná data, nejlepe tři řady.
 
-Figure 4 shows example dataset without any datamining or separation with three imaginary clusters.
-The question is, does the middle cluster represent anomalies or non-anomalies? Can we draw a line between these three clusters somehow? The most straightforward solution - to use moving average or MSE - is not really feasible, because anomalies tend to behave randomly.
-This means, such method could easily misbehave, e.g., mark a large portion of anomalies as non-anomalies, as shown in Figure 5. 
-
 ####  Unsupervised Isolation Forest
 výš jsme si popsali jak funguje unsupervised separae (na naše data ne), ještě zkusíme jak funguje isolation forest na naše data
 
@@ -142,6 +138,6 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTc0OTY4MjEsOTc2NTQ4NDgsLTE1Mz
-I1NzQ0MzIsLTk0OTgwNjAxNywtMTk0OTI0ODg1MV19
+eyJoaXN0b3J5IjpbLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUzMj
+U3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
 -->
