@@ -44,7 +44,7 @@ Obviously, if the dataset contained no anomalies at all, the result would become
 One could easily argue that there is an option of using pure clustering algorithms (e.g. ([DBScan](doi/10.5555/3001460.3001507)).
 This, however, leads to unpleasant outcome.
 Such algorithms tend to view the data as a cluster-only data, despite it being irrelevant in cluster regards.
-Figure X shows the performance of the DBScan algorithm on previously non-processed data.
+Figure X shows the performance of the DBScan algorithm on previously non-processed data, where different colors represent different clusters.
 Even though the algorithm did find some clusters, it would be demanding to differentiate and find the one with anomalies.
 Moreover, due to the gap in the measurement, the DBScan incorrectly split the regular observations into two clusters.
 This brings up the idea of algorithm cross-cooperation.
@@ -146,6 +146,6 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc2NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OT
-gwNjAxNywtMTk0OTI0ODg1MV19
+eyJoaXN0b3J5IjpbMjA3NzA0NTE3MCw5NzY1NDg0OCwtMTUzMj
+U3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
 -->
