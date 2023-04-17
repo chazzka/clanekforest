@@ -90,7 +90,14 @@ contamination = 0.25
 bootstrap=1
 random_state=0
 warm_start=0
-> 3: 
+
+> 3: n_estimators=10
+max_samples= 10
+max_features=2
+contamination = 0.25
+bootstrap=0
+random_state=1
+warm_start=0 
 
 - [ ] TODO: vložit data z isolation forestu. - dva obrazky pod sebou s různými HYPERPARAMETRY
 
@@ -150,9 +157,9 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODk4NDIyNzgsNTk1Njg3NDU4LC0xOT
-QwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5NDAzLDE2MTQz
-MjMzMzAsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC04NDA4OTcyMD
-gsOTc2NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OTgwNjAxNywtMTk0
-OTI0ODg1MV19
+eyJoaXN0b3J5IjpbMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OT
+U2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3
+Mjk0MDMsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1Nj
+csLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5
+ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
 -->
