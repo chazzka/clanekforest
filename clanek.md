@@ -124,7 +124,7 @@ Deciding which observations are anomalies, without some domain knowledge on the 
 
 Despite this, one positive thing is that Isolation Forest managed to deal with the gaps in the measurement (seen in Figures above, around X=50). 
 
-The final question
+The final question is 
 
 - [ ] TODO: otázka, je teda vubec možné ho použít? tady s Honzou vysvětlíme jak vlastně funguje ten IF, a ukážeme že si myslím že jo, použijeme ho jako novelty a ukážeme že to šlo
 
@@ -151,7 +151,7 @@ The final question
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MzA0NDUyNCw2ODcyMDg2OTIsMTE0MD
+eyJoaXN0b3J5IjpbMTg4Mzc4NTQ1MCw2ODcyMDg2OTIsMTE0MD
 Y3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0NTgsLTE5NDA4MTY0
 MjMsLTEzNDMxMDE2NjksLTExOTg3Mjk0MDMsMTYxNDMyMzMzMC
 wtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5NzIwOCw5NzY1
