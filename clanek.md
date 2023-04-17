@@ -62,9 +62,9 @@ This means, that if the dataset contains observations which look like anomalies 
 - [ ] TODO: TADY NAPIŠ JAKOBY ŽE ISOLATION FOREST NENI NOVELTY, ALE IDK...
 
 ### Isolation Forest
-- [ ] TODO: TADY nepiš že je to první volba ale napiš něco jako bylo to po experimentech nejlepší
+- [ ] TODO: TADY napíšeme něco jakože by nás zajímalo jestli si s tím poradí isolation forest, napíšeme že se často používá právě na outlier detection ale z toho co vysvětlíme bude jasné, že se dá použít na novelty
 
-- [] T
+- [ ] TODO: tady 
 
 When stumbling upon cluster analysis with outliers problem, the first approach is usually to try some of the ready-made solutions proven by experience.
 This generally leads to an ensemble method called Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"), [2](https://doi.org/10.1016/j.patcog.2023.109334 "article 2")).
@@ -144,6 +144,6 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NjE3MjI1Nyw5NzY1NDg0OCwtMTUzMj
+eyJoaXN0b3J5IjpbLTM5OTU4ODI4Niw5NzY1NDg0OCwtMTUzMj
 U3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
 -->
