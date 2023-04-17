@@ -82,6 +82,15 @@ Its implementation of Isolation Forest has, in time of writing this text, 8 hype
 Figure X shows the differences of cluster time series analysis when performed on different hyperparameters.
 As we can see the results are quite distinct. 
 
+> 1:
+n_estimators=50
+max_samples= 20
+max_features=2
+contamination = 0.25
+bootstrap=1
+random_state=0
+warm_start=0
+> 2: 
 
 - [ ] TODO: vložit data z isolation forestu. - dva obrazky pod sebou s různými HYPERPARAMETRY
 
@@ -141,8 +150,9 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk1Njg3NDU4LC0xOTQwODE2NDIzLC0xMz
-QzMTAxNjY5LC0xMTk4NzI5NDAzLDE2MTQzMjMzMzAsLTU5NDI4
-OTYyNywtNjEzMTE2NTY3LC04NDA4OTcyMDgsOTc2NTQ4NDgsLT
-E1MzI1NzQ0MzIsLTk0OTgwNjAxNywtMTk0OTI0ODg1MV19
+eyJoaXN0b3J5IjpbLTgzNzY0NDM1OCw1OTU2ODc0NTgsLTE5ND
+A4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3Mjk0MDMsMTYxNDMy
+MzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5NzIwOC
+w5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5
+MjQ4ODUxXX0=
 -->
