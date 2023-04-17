@@ -72,7 +72,7 @@ The less partitions required to isolate the more probable it is for a particle t
 Despite its famousness, there are a few drawbacks.
 First, there is a large number of hyperparameters to work with.
 The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
-Its implementation of Isolation Forest has, in time of writing this text, 9 hyperparameters which need to be explicitly chosen and tuned.
+Its implementation of Isolation Forest has, in time of writing this text, 8 hyperparameters which need to be explicitly chosen and tuned.
 Figure X shows the differences of cluster time series analysis when performed on different hyperparameters.
 As we can see the results are quite distinct. 
 
@@ -141,8 +141,9 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLT
-ExOTg3Mjk0MDMsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMx
-MTY1NjcsLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQzMi
-wtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
+eyJoaXN0b3J5IjpbLTE5NTUxMjM1NjAsLTE5NDA4MTY0MjMsLT
+EzNDMxMDE2NjksLTExOTg3Mjk0MDMsMTYxNDMyMzMzMCwtNTk0
+Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5NzIwOCw5NzY1NDg0OC
+wtMTUzMjU3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
+
 -->
