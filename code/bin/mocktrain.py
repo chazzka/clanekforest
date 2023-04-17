@@ -1,4 +1,3 @@
-from preprocessing.preprocessing import filterOutZeros
 from ai.trainer import doTrain, saveModel
 import logging
 import sys
@@ -21,9 +20,8 @@ def getConfigFile(path):
 
 def getModel(iterator, aiArgs, modelArgs):
     # now training is done for non zeros data
-    noZeros = filterOutZeros(iterator, 1)
     #[[1,2], [4,5]]
-    return doTrain(list(noZeros), aiArgs, modelArgs)
+    return doTrain(list(iterator), aiArgs, modelArgs)
 
 
 if __name__ == "__main__":
