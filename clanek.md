@@ -119,14 +119,10 @@ Figure 2 shows the misconduct of the Isolation Forest algorithm when applied on 
 This raises a question, whether should we preprocess the data first to remove those gaps somehow, and then use the Isolation Forest algorithm to find the anomalies.
 However, there would still be the problem with the cluster-only separation remaining for the reasons described in the introduction section of this article. 
 
-- [ ] TODO: vložit data z isolation forestu. - jeden obrázek který ukazuje že IF našel anomalie i mezi správnými daty kvuli časové mezeře.
 
-
-#### Supervised separation
-- [ ] TODO: tady se popíše ž forest má verzi supervised, takže ho naučíme na neanomálních datech, obrázky, popis
 
 ### finding the right clustering algorithm, TUNING OF DB SCAN
-- tad už stačí asi že prostě to není těžký ukol, vezmeme jen obyčejný DB scan a bác. oba algoritmy jsou jednoduché ale síla je v jejich kooperaci idk
+- tady už stačí asi že prostě to není těžký ukol, vezmeme jen obyčejný DB scan a bác. oba algoritmy jsou jednoduché ale síla je v jejich kooperaci idk
 
 ### automl hyperparameter tuning for IF - v jinem članku
 
@@ -142,7 +138,7 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NDcwOTM0NywtNjEzMTE2NTY3LC04ND
+eyJoaXN0b3J5IjpbLTU5NDI4OTYyNywtNjEzMTE2NTY3LC04ND
 A4OTcyMDgsOTc2NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OTgwNjAx
 NywtMTk0OTI0ODg1MV19
 -->
