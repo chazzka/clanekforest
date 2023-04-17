@@ -118,21 +118,12 @@ The final question
 
 - [ ] TODO: otázka, je teda vubec možné ho použít? tady s Honzou vysvětlíme jak vlastně funguje ten IF, a ukážeme že si myslím že jo, použijeme ho jako novelty a ukážeme že to šlo
 
-###  How to separate non anomalies
-Using the data domain knowledge, some constraints usually arise.
-As described in the introductory section, we expect the sensors to produce linear-like data, with minor deviations within the *y* axis.
-These deviations do not follow any specific pattern and are completely random.
-However, the errors report some kind of observable behavior.
-This is usually the case when performing cluster analysis.
-The main constraint that is crucial for this task is the cluster forming pattern.
-The task could become straightforward if we divide it into subordinate tasks.
-First of them is to use the knowledge to separate non-anomalies (not yet clusters).
-Doing so, the data that is left are anomalies-only where the task of finding anomaly clusters only becomes less challenging. 
+
+
 
 
 
  
-
 ### finding the right clustering algorithm, TUNING OF DB SCAN
 - tady už stačí asi že prostě to není těžký ukol, vezmeme jen obyčejný DB scan a bác. oba algoritmy jsou jednoduché ale síla je v jejich kooperaci idk
 
@@ -150,7 +141,7 @@ Doing so, the data that is left are anomalies-only where the task of finding ano
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5ODMyMTMwMSw2ODcyMDg2OTIsMTE0MD
+eyJoaXN0b3J5IjpbMTM5Mzk1MzAxMyw2ODcyMDg2OTIsMTE0MD
 Y3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0NTgsLTE5NDA4MTY0
 MjMsLTEzNDMxMDE2NjksLTExOTg3Mjk0MDMsMTYxNDMyMzMzMC
 wtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5NzIwOCw5NzY1
