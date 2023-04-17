@@ -82,6 +82,8 @@ The less partitions required to isolate the more probable it is for a particle t
 
 Despite its famousness, there are a few drawbacks.
 
+The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
+Its implementation of Isolation Forest has, in time of writing this text, 5 hyperparameters which need to be explicitly chosen and tuned.
 First, the major challenge is setting the contamination parameter itself.
 The contamination parameter is to control the proportion of anomalies in the dataset. 
 Usually, this has to be known beforehand.
@@ -105,11 +107,8 @@ Figures below show the differences when using rising values of the contamination
 
 
 Other notable parameters with huge impact on the result are *number of estimators*, *max samples* and *max features*.
-Using similar dataset mentioned above, we designed the experiment and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). 
+Using similar dataset mentioned above, we designed the experiment and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies) and varying above-mentioned parameters. 
 The result of the experiment shows Figure X.
-
-
-Second, there is a quite large number of other hyperparameters to work with.
 
 Figure X shows the differences of cluster time series analysis when performed on different hyperparameters.
 As we can see the results are quite distinct. 
@@ -179,11 +178,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NzE3NTQ4NywtMTUyMzM3NjUwOCwxMz
-g2NDIxOTI3LDY1NjQ1MzUsMTc0NTM5MDczMSwxODgzNzg1NDUw
-LDY4NzIwODY5MiwxMTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NT
-Y4NzQ1OCwtMTk0MDgxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcy
-OTQwMywxNjE0MzIzMzMwLC01OTQyODk2MjcsLTYxMzExNjU2Ny
-wtODQwODk3MjA4LDk3NjU0ODQ4LC0xNTMyNTc0NDMyLC05NDk4
-MDYwMTddfQ==
+eyJoaXN0b3J5IjpbLTExMzA5Mjg0MjksLTE1MjMzNzY1MDgsMT
+M4NjQyMTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1
+MCw2ODcyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OT
+U2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3
+Mjk0MDMsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1Nj
+csLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5
+ODA2MDE3XX0=
 -->
