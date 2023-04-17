@@ -112,9 +112,7 @@ Consider data polluted by anomalies in close to 1:1 ratio.
 Even human will find it nearly impossible to differentiate between these two classes when given plotted dataset.
 Finding the line itself is obvious.
 Deciding which observations are anomalies, without some domain knowledge on the other hand is close to impossible.
-Consider data shown in Figure 4.
 
-- [ ] TODO: Figure 4 vložit nějaká těžce separovatelná data, třeba pul napul.
 
 - [ ] TODO: otázka, je teda vubec možné ho použít? tady s Honzou vysvětlíme jak vlastně funguje ten IF, a ukážeme že si myslím že jo, použijeme ho jako novelty a ukážeme že to šlo
 
@@ -129,12 +127,7 @@ The task could become straightforward if we divide it into subordinate tasks.
 First of them is to use the knowledge to separate non-anomalies (not yet clusters).
 Doing so, the data that is left are anomalies-only where the task of finding anomaly clusters only becomes less challenging. 
 
-####  Unsupervised Isolation Forest
-výš jsme si popsali jak funguje unsupervised separae (na naše data ne), ještě zkusíme jak funguje isolation forest na naše data
 
-- [ ] TODO:. isolation forest označil data jako anomalie ale byly to validní data (např více lineárních urovní, které jsou však OK)
-
-- [ ] TODO: vložit obrázek kde je více lineárních randomů, a pak nějaké clustery, tak ten unsupervised z toho bude samozřejmě zmatený
 
 However, the major drawback in our particular problem were real world disturbances of the time series data.
 Figure 2 shows the misconduct of the Isolation Forest algorithm when applied on the dataset with such disturbances, represented by the *gaps* in Figure 2.
@@ -160,9 +153,10 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3OD
-k4NDIyNzgsNTk1Njg3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAx
-NjY5LC0xMTk4NzI5NDAzLDE2MTQzMjMzMzAsLTU5NDI4OTYyNy
-wtNjEzMTE2NTY3LC04NDA4OTcyMDgsOTc2NTQ4NDgsLTE1MzI1
-NzQ0MzIsLTk0OTgwNjAxNywtMTk0OTI0ODg1MV19
+eyJoaXN0b3J5IjpbLTE3NTk0MzQ0MTMsNjg3MjA4NjkyLDExND
+A2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3NDU4LC0xOTQwODE2
+NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5NDAzLDE2MTQzMjMzMz
+AsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC04NDA4OTcyMDgsOTc2
+NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OTgwNjAxNywtMTk0OTI0OD
+g1MV19
 -->
