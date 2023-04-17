@@ -14,7 +14,7 @@
 - general -> specific (describe problem as a whole, then why the problems occurs, then why is it a problem for us, technical details, env. variables)
 - constribution
 - **toto až nakonec až budeme vědět co vlastně fungovalo**
-- **here we describe the domain!! - aneb jak ta data vypadají - co je cílem**
+- **here we describe the domain!! - aneb jak ta data vypadají - co je cílem hlavně vysvětlit že chceme cluster anomalii ne jen anomalie**
  
 
 ## Methods
@@ -22,6 +22,16 @@
 The very first task is to thoroughly analyze the domain of the given problem.
 The inappropriate choice of the selected solution could lead to undesirable results.
 Having the problem already described, we are now able to analyze and establish a learning process. 
+
+Using the data domain knowledge, some constraints usually arise.
+As described in the introductory section, we expect the sensors to produce linear-like data, with minor deviations within the *y* axis.
+These deviations do not follow any specific pattern and are completely random.
+However, the errors report some kind of observable behavior.
+This is usually the case when performing cluster analysis.
+The main constraint that is crucial for this task is the cluster forming pattern.
+The task could become straightforward if we divide it into subordinate tasks.
+First of them is to use the knowledge to separate non-anomalies (not yet clusters).
+Doing so, the data that is left are anomalies-only where the task of finding anomaly clusters only becomes less challenging. 
 
 The most straightforward solution when trying to find anomalies in above-shown data would be to use some kind of statistical method that would split the data in a certain ratio.
 Figure X shows the mean (straight line) of the given data. 
@@ -65,24 +75,36 @@ This means, that if the dataset contains observations which look like anomalies 
 - [ ] TODO: TADY napíšeme něco jakože by nás zajímalo jestli si s tím poradí isolation forest, napíšeme že se často používá právě na outlier detection ale z toho co vysvětlíme bude jasné, že se dá použít na novelty
 
 Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"), [2](https://doi.org/10.1016/j.patcog.2023.109334 "article 2")) is an outlier detection, semi-supervised ensemble algorithm. 
-This generally leads to an ensemble method called Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"), [2](https://doi.org/10.1016/j.patcog.2023.109334 "article 2")).
 This approach is well known to successfully isolate outliers by using recursive partitioning (forming a tree-like structure) to decide whether the analyzed particle is an anomaly or not.
 The less partitions required to isolate the more probable it is for a particle to be an anomaly.
 
 Despite its famousness, there are a few drawbacks.
 
-First, the outlier detection approach is not capable to completely isolate out all of the anomalies. For this experiment, we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). The result of the experiment shows Figure X.
+First, the major challenge is setting the contamination parameter itself.
+The contamination parameter is to control the proportion of anomalies in the dataset. 
+Usually, this has to be known beforehand.
+This parameter has a huge impact on the final result of the detection.
+However, this is a problem because the anomalies in our dataset appear randomly and hence the proportion varies from 0% to 50%, sometimes even more.
+To demonstrate the impact of contamination parameter, we prepared following experiment.
+A dataset containing approx. 25% of anomalies is prepared.
+Figures below show the differences when using rising values of the contamination parameter.
 
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/isolation1.svg)
+
+In order to demonstrate , we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). 
+The result of the experiment shows Figure X.
+
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/08bbb4857eb5ff788c6c2b32c7cd918bcc6519b5/code/figures/isolation1.svg)
 > Figure X, Isolation Forest with 25% of contamination.
 
-Second, there is a large number of hyperparameters to work with.
+
+
+Second, there is a quite large number of other hyperparameters to work with.
 The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
-Its implementation of Isolation Forest has, in time of writing this text, 8 hyperparameters which need to be explicitly chosen and tuned.
+Its implementation of Isolation Forest has, in time of writing this text, 5 hyperparameters which need to be explicitly chosen and tuned.
 Figure X shows the differences of cluster time series analysis when performed on different hyperparameters.
 As we can see the results are quite distinct. 
-
-> 2:
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/isolation2.svg)
+> Anomaly 2:
 n_estimators=50
 max_samples= 20
 max_features=2
@@ -91,7 +113,10 @@ bootstrap=1
 random_state=0
 warm_start=0
 
-> 3: n_estimators=10
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/isolation3.svg)
+
+> Anomaly 3: 
+n_estimators=10
 max_samples= 10
 max_features=2
 contamination = 0.25
@@ -99,7 +124,6 @@ bootstrap=0
 random_state=1
 warm_start=0 
 
-- [ ] TODO: vložit data z isolation forestu. - dva obrazky pod sebou s různými HYPERPARAMETRY
 
 This kind of issue is widely known amongst AutoML community.
 Some tools have already been implemented that try to deal with the issue of automatic hyperparameter tuning, namely H20 (h2o.ai) or AutoGluon (auto.gluon.ai). 
@@ -109,37 +133,22 @@ Consider data polluted by anomalies in close to 1:1 ratio.
 Even human will find it nearly impossible to differentiate between these two classes when given plotted dataset.
 Finding the line itself is obvious.
 Deciding which observations are anomalies, without some domain knowledge on the other hand is close to impossible.
-Consider data shown in Figure 4.
 
-- [ ] TODO: Figure 4 vložit nějaká těžce separovatelná data, třeba pul napul.
+Despite this, one positive thing is that Isolation Forest managed to deal with the gaps in the measurement (seen in Figures above, around X=50). 
+
+The final question is if it is somehow possible to teach Isolation Forest how regular observation look like. 
+Can we use Isolation Forest for novelty detection despite it not being primarily novelty detection algorithm? 
+To answer these questions, lets thoroughly analyze the Isolation Forest first.
+
 
 - [ ] TODO: otázka, je teda vubec možné ho použít? tady s Honzou vysvětlíme jak vlastně funguje ten IF, a ukážeme že si myslím že jo, použijeme ho jako novelty a ukážeme že to šlo
 
-###  How to separate non anomalies
-Using the data domain knowledge, some constraints usually arise.
-As described in the introductory section, we expect the sensors to produce linear-like data, with minor deviations within the *y* axis.
-These deviations do not follow any specific pattern and are completely random.
-However, the errors report some kind of observable behavior.
-This is usually the case when performing cluster analysis.
-The main constraint that is crucial for this task is the cluster forming pattern.
-The task could become straightforward if we divide it into subordinate tasks.
-First of them is to use the knowledge to separate non-anomalies (not yet clusters).
-Doing so, the data that is left are anomalies-only where the task of finding anomaly clusters only becomes less challenging. 
-
-####  Unsupervised Isolation Forest
-výš jsme si popsali jak funguje unsupervised separae (na naše data ne), ještě zkusíme jak funguje isolation forest na naše data
-
-- [ ] TODO:. isolation forest označil data jako anomalie ale byly to validní data (např více lineárních urovní, které jsou však OK)
-
-- [ ] TODO: vložit obrázek kde je více lineárních randomů, a pak nějaké clustery, tak ten unsupervised z toho bude samozřejmě zmatený
-
-However, the major drawback in our particular problem were real world disturbances of the time series data.
-Figure 2 shows the misconduct of the Isolation Forest algorithm when applied on the dataset with such disturbances, represented by the *gaps* in Figure 2.
-This raises a question, whether should we preprocess the data first to remove those gaps somehow, and then use the Isolation Forest algorithm to find the anomalies.
-However, there would still be the problem with the cluster-only separation remaining for the reasons described in the introduction section of this article. 
 
 
 
+
+
+ 
 ### finding the right clustering algorithm, TUNING OF DB SCAN
 - tady už stačí asi že prostě to není těžký ukol, vezmeme jen obyčejný DB scan a bác. oba algoritmy jsou jednoduché ale síla je v jejich kooperaci idk
 
@@ -157,9 +166,11 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OT
-U2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3
-Mjk0MDMsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1Nj
-csLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5
-ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
+eyJoaXN0b3J5IjpbLTE1MjMzNzY1MDgsMTM4NjQyMTkyNyw2NT
+Y0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1MCw2ODcyMDg2OTIs
+MTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0NTgsLTE5ND
+A4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3Mjk0MDMsMTYxNDMy
+MzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5NzIwOC
+w5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5
+MjQ4ODUxXX0=
 -->
