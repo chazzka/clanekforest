@@ -53,9 +53,6 @@ Therefore, our proposed solution separates the anomalies first and then tries to
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/DBScanGap.svg) 
 > Figure X - DBScan performance
 
-
-- [ ] TODO: Figure X vložit data z DBScanu. - jeden obrázek který ukazuje že DBScan našel nějaké clustery, ale našel je i mezi anomaliemi
-
 Traditional approaches for anomaly separation consist of either novelty detection or outlier detection.
 Novelty detection is an anomaly detection mechanism, where we search for unusual observations, which are discovered due to their differences from the training data.
 Novelty detection is a semi-supervised anomaly-detection technique, whereas outlier detection uses unsupervised methods.
@@ -146,6 +143,6 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NzA0NTE3MCw5NzY1NDg0OCwtMTUzMj
-U3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
+eyJoaXN0b3J5IjpbLTE4ODE2MTkzNDAsOTc2NTQ4NDgsLTE1Mz
+I1NzQ0MzIsLTk0OTgwNjAxNywtMTk0OTI0ODg1MV19
 -->
