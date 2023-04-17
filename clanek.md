@@ -82,7 +82,9 @@ As we can see the results are quite distinct.
 This kind of issue is widely known amongst AutoML community.
 Some tools have already been implemented that try to deal with the issue of automatic hyperparameter tuning, namely H20 (h2o.ai) or AutoGluon (auto.gluon.ai). 
 
-Second, the outlier detection approach is not capable to completely isolate out all of the anomalies. For this experiment, we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies).
+Second, the outlier detection approach is not capable to completely isolate out all of the anomalies. For this experiment, we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). The result of the experiment shows Figure X.
+
+
 
 The last problem is with the unsupervised separation itself.
 Consider data 
@@ -137,7 +139,8 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MT
-MxMTY1NjcsLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQz
-MiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
+eyJoaXN0b3J5IjpbLTExOTg3Mjk0MDMsMTYxNDMyMzMzMCwtNT
+k0Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5NzIwOCw5NzY1NDg0
+OCwtMTUzMjU3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX
+0=
 -->
