@@ -128,6 +128,7 @@ The final question is if it is somehow possible to teach Isolation Forest how re
 Can we use Isolation Forest for novelty detection despite it not being primarily novelty detection algorithm? 
 To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
+
 - [ ] TODO: otázka, je teda vubec možné ho použít? tady s Honzou vysvětlíme jak vlastně funguje ten IF, a ukážeme že si myslím že jo, použijeme ho jako novelty a ukážeme že to šlo
 
 
@@ -153,10 +154,10 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTExNDAwODg5LDE4ODM3ODU0NTAsNjg3Mj
-A4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3NDU4
-LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5NDAzLD
-E2MTQzMjMzMzAsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC04NDA4
-OTcyMDgsOTc2NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OTgwNjAxNy
-wtMTk0OTI0ODg1MV19
+eyJoaXN0b3J5IjpbMTc0NTM5MDczMSwxODgzNzg1NDUwLDY4Nz
+IwODY5MiwxMTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NTY4NzQ1
+OCwtMTk0MDgxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcyOTQwMy
+wxNjE0MzIzMzMwLC01OTQyODk2MjcsLTYxMzExNjU2NywtODQw
+ODk3MjA4LDk3NjU0ODQ4LC0xNTMyNTc0NDMyLC05NDk4MDYwMT
+csLTE5NDkyNDg4NTFdfQ==
 -->
