@@ -98,7 +98,7 @@ The result of the experiment shows Figure X.
 
 a
 
-Second, there is a large number of hyperparameters to work with.
+Second, there is a quite large number of hyperparameters to work with.
 The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
 Its implementation of Isolation Forest has, in time of writing this text, 5 hyperparameters which need to be explicitly chosen and tuned.
 Figure X shows the differences of cluster time series analysis when performed on different hyperparameters.
@@ -166,11 +166,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NDU0OTU3OSwxMzg2NDIxOTI3LDY1Nj
-Q1MzUsMTc0NTM5MDczMSwxODgzNzg1NDUwLDY4NzIwODY5Miwx
-MTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NTY4NzQ1OCwtMTk0MD
-gxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcyOTQwMywxNjE0MzIz
-MzMwLC01OTQyODk2MjcsLTYxMzExNjU2NywtODQwODk3MjA4LD
-k3NjU0ODQ4LC0xNTMyNTc0NDMyLC05NDk4MDYwMTcsLTE5NDky
-NDg4NTFdfQ==
+eyJoaXN0b3J5IjpbLTE2MDkyMTcxMjEsMTM4NjQyMTkyNyw2NT
+Y0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1MCw2ODcyMDg2OTIs
+MTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0NTgsLTE5ND
+A4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3Mjk0MDMsMTYxNDMy
+MzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5NzIwOC
+w5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5
+MjQ4ODUxXX0=
 -->
