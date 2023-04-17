@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from itertools import *
-from toolz import groupby
+from toolz import groupby, unique
 
 
 # @deprecated, use plotXYWithMean
