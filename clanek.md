@@ -81,8 +81,9 @@ The less partitions required to isolate the more probable it is for a particle t
 Despite its famousness, there are a few drawbacks.
 
 First, the major challenge is setting the contamination parameter itself.
-This parameter has a  
-the outlier detection approach is not capable to completely isolate out all of the anomalies. 
+The contamination parameter is to control the proportion of anomalies in the dataset, 
+This parameter has a huge impact on the final result of the detection.
+However, this 
 For this experiment, we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). 
 The result of the experiment shows Figure X.
 
@@ -159,11 +160,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4OTMyMzQyLDEzODY0MjE5MjcsNjU2ND
-UzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAsNjg3MjA4NjkyLDEx
-NDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3NDU4LC0xOTQwOD
-E2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5NDAzLDE2MTQzMjMz
-MzAsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC04NDA4OTcyMDgsOT
-c2NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OTgwNjAxNywtMTk0OTI0
-ODg1MV19
+eyJoaXN0b3J5IjpbLTE5MjY1MzAzODcsMTM4NjQyMTkyNyw2NT
+Y0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1MCw2ODcyMDg2OTIs
+MTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0NTgsLTE5ND
+A4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3Mjk0MDMsMTYxNDMy
+MzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5NzIwOC
+w5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5
+MjQ4ODUxXX0=
 -->
