@@ -94,7 +94,11 @@ However, this is a problem because the anomalies in our dataset appear randomly 
 To demonstrate the impact of contamination parameter, we prepared following experiment.
 A dataset containing approx. 25% of anomalies is prepared.
 Figures below show the differences when using rising values of the contamination parameter.
-Note that dataset is generated randomly with each run
+Note that dataset is generated randomly with each run.
+
+- [ ] TODO: ta poslední věta je možná problém? Honzo?
+
+
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/contamination10.svg)
 > Figure X Isolation Forest with 10% contamination.
 
@@ -171,11 +175,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgwNjY5Njc0LC0xNTIzMzc2NTA4LDEzOD
-Y0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAs
-Njg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Nj
-g3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5
-NDAzLDE2MTQzMjMzMzAsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC
-04NDA4OTcyMDgsOTc2NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OTgw
-NjAxN119
+eyJoaXN0b3J5IjpbMTk5MDQ0NjgwNSwtMTUyMzM3NjUwOCwxMz
+g2NDIxOTI3LDY1NjQ1MzUsMTc0NTM5MDczMSwxODgzNzg1NDUw
+LDY4NzIwODY5MiwxMTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NT
+Y4NzQ1OCwtMTk0MDgxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcy
+OTQwMywxNjE0MzIzMzMwLC01OTQyODk2MjcsLTYxMzExNjU2Ny
+wtODQwODk3MjA4LDk3NjU0ODQ4LC0xNTMyNTc0NDMyLC05NDk4
+MDYwMTddfQ==
 -->
