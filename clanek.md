@@ -84,6 +84,8 @@ Some tools have already been implemented that try to deal with the issue of auto
 
 Second, the outlier detection approach is not capable to completely isolate out all of the anomalies. For this experiment, we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). The result of the experiment shows Figure X.
 
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/isolation1.svg)
+> Figure X, Isolation Forest with 25% of contamination.
 
 
 The last problem is with the unsupervised separation itself.
@@ -139,8 +141,8 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTg3Mjk0MDMsMTYxNDMyMzMzMCwtNT
-k0Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5NzIwOCw5NzY1NDg0
-OCwtMTUzMjU3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX
-0=
+eyJoaXN0b3J5IjpbLTEzNDMxMDE2NjksLTExOTg3Mjk0MDMsMT
+YxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0MDg5
+NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5ODA2MDE3LC
+0xOTQ5MjQ4ODUxXX0=
 -->
