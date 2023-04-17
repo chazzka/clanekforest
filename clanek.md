@@ -57,13 +57,14 @@ Traditional approaches for anomaly separation consist of either novelty detectio
 Novelty detection is an anomaly detection mechanism, where we search for unusual observations, which are discovered due to their differences from the training data.
 Novelty detection is a semi-supervised anomaly-detection technique, whereas outlier detection uses unsupervised methods.
 This a crucial distinction, due to a fact that whereas the outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them, novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision.
-This means, that if the dataset contains observation which may look like anomalies but are still valid, the performance of unsupervised outlier detection in such case is usually unsatisfactory. 
+This means, that if the dataset contains observations which look like anomalies but are still valid, the performance of unsupervised outlier detection in such case is usually unsatisfactory. 
 
 - [ ] TODO: TADY NAPIŠ JAKOBY ŽE ISOLATION FOREST NENI NOVELTY, ALE IDK...
 
 ### Isolation Forest
 - [ ] TODO: TADY nepiš že je to první volba ale napiš něco jako bylo to po experimentech nejlepší
 
+- [] T
 
 When stumbling upon cluster analysis with outliers problem, the first approach is usually to try some of the ready-made solutions proven by experience.
 This generally leads to an ensemble method called Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"), [2](https://doi.org/10.1016/j.patcog.2023.109334 "article 2")).
@@ -143,6 +144,6 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODE2MTkzNDAsOTc2NTQ4NDgsLTE1Mz
-I1NzQ0MzIsLTk0OTgwNjAxNywtMTk0OTI0ODg1MV19
+eyJoaXN0b3J5IjpbLTI1NjE3MjI1Nyw5NzY1NDg0OCwtMTUzMj
+U3NDQzMiwtOTQ5ODA2MDE3LC0xOTQ5MjQ4ODUxXX0=
 -->
