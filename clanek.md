@@ -80,7 +80,8 @@ The less partitions required to isolate the more probable it is for a particle t
 
 Despite its famousness, there are a few drawbacks.
 
-First, the major challenge is setting the contamination parameter itself. 
+First, the major challenge is setting the contamination parameter itself.
+This parameter has a  
 the outlier detection approach is not capable to completely isolate out all of the anomalies. 
 For this experiment, we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). 
 The result of the experiment shows Figure X.
@@ -92,7 +93,7 @@ a
 
 Second, there is a large number of hyperparameters to work with.
 The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
-Its implementation of Isolation Forest has, in time of writing this text, 8 hyperparameters which need to be explicitly chosen and tuned.
+Its implementation of Isolation Forest has, in time of writing this text, 5 hyperparameters which need to be explicitly chosen and tuned.
 Figure X shows the differences of cluster time series analysis when performed on different hyperparameters.
 As we can see the results are quite distinct. 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/isolation2.svg)
@@ -158,11 +159,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MTQwODAzNSwxMzg2NDIxOTI3LDY1Nj
-Q1MzUsMTc0NTM5MDczMSwxODgzNzg1NDUwLDY4NzIwODY5Miwx
-MTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NTY4NzQ1OCwtMTk0MD
-gxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcyOTQwMywxNjE0MzIz
-MzMwLC01OTQyODk2MjcsLTYxMzExNjU2NywtODQwODk3MjA4LD
-k3NjU0ODQ4LC0xNTMyNTc0NDMyLC05NDk4MDYwMTcsLTE5NDky
-NDg4NTFdfQ==
+eyJoaXN0b3J5IjpbMTA4OTMyMzQyLDEzODY0MjE5MjcsNjU2ND
+UzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAsNjg3MjA4NjkyLDEx
+NDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3NDU4LC0xOTQwOD
+E2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5NDAzLDE2MTQzMjMz
+MzAsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC04NDA4OTcyMDgsOT
+c2NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OTgwNjAxNywtMTk0OTI0
+ODg1MV19
 -->
