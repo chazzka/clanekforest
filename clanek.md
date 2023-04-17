@@ -88,7 +88,15 @@ However, this is a problem because the anomalies in our dataset appear randomly 
 To demonstrate the impact of contamination parameter, we prepared following experiment.
 A dataset containing approx. 25% of anomalies is prepared.
 Figures below show the differences when using rising values of the contamination parameter.
-![fsdfsda](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/contamination10.svg)
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/contamination10.svg)
+> Figure X Isolation Forest with 10% contamination.
+
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/contamination20.svg)
+> Figure X Isolation Forest with 20% contamination.
+
+
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/contamination30.svg)
+> Figure X Isolation Forest with 10% contamination.
 
  - [ ] TODO tady napiseme jeste o ostatnich hyperparametrech
 
@@ -171,11 +179,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTc2MTU5MDMsLTE1MjMzNzY1MDgsMT
-M4NjQyMTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1
-MCw2ODcyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OT
-U2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3
-Mjk0MDMsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1Nj
-csLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5
-ODA2MDE3XX0=
+eyJoaXN0b3J5IjpbMTUyMTQzNTgyNSwtMTUyMzM3NjUwOCwxMz
+g2NDIxOTI3LDY1NjQ1MzUsMTc0NTM5MDczMSwxODgzNzg1NDUw
+LDY4NzIwODY5MiwxMTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NT
+Y4NzQ1OCwtMTk0MDgxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcy
+OTQwMywxNjE0MzIzMzMwLC01OTQyODk2MjcsLTYxMzExNjU2Ny
+wtODQwODk3MjA4LDk3NjU0ODQ4LC0xNTMyNTc0NDMyLC05NDk4
+MDYwMTddfQ==
 -->
