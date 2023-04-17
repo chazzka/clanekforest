@@ -96,9 +96,9 @@ The result of the experiment shows Figure X.
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/08bbb4857eb5ff788c6c2b32c7cd918bcc6519b5/code/figures/isolation1.svg)
 > Figure X, Isolation Forest with 25% of contamination.
 
-a
 
-Second, there is a quite large number of hyperparameters to work with.
+
+Second, there is a quite large number of other hyperparameters to work with.
 The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
 Its implementation of Isolation Forest has, in time of writing this text, 5 hyperparameters which need to be explicitly chosen and tuned.
 Figure X shows the differences of cluster time series analysis when performed on different hyperparameters.
@@ -166,7 +166,7 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDkyMTcxMjEsMTM4NjQyMTkyNyw2NT
+eyJoaXN0b3J5IjpbLTE1MjMzNzY1MDgsMTM4NjQyMTkyNyw2NT
 Y0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1MCw2ODcyMDg2OTIs
 MTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0NTgsLTE5ND
 A4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3Mjk0MDMsMTYxNDMy
