@@ -104,7 +104,7 @@ Figures below show the differences when using rising values of the contamination
 > Figure X Isolation Forest with 40% contamination.
 
 
-Other notable parameters with huge impact on the result are 
+Other notable parameters with huge impact on the result are number of estimators, *max samples* and *max features*.
 In order to demonstrate , we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies). 
 The result of the experiment shows Figure X.
 
@@ -184,11 +184,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTIzMTEwMDUsLTE1MjMzNzY1MDgsMT
-M4NjQyMTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1
-MCw2ODcyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OT
-U2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3
-Mjk0MDMsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1Nj
-csLTg0MDg5NzIwOCw5NzY1NDg0OCwtMTUzMjU3NDQzMiwtOTQ5
-ODA2MDE3XX0=
+eyJoaXN0b3J5IjpbNjIyOTcwMDg3LC0xNTIzMzc2NTA4LDEzOD
+Y0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAs
+Njg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Nj
+g3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5
+NDAzLDE2MTQzMjMzMzAsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC
+04NDA4OTcyMDgsOTc2NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OTgw
+NjAxN119
 -->
