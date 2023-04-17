@@ -84,7 +84,7 @@ Some tools have already been implemented that try to deal with the issue of auto
 
 Second, the outlier detection approach is not capable to completely isolate out all of the anomalies. For this experiment, we prepared a dataset containing 25% anomalies and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies).
 
-- [ ] TODO: 
+- [ ] TODO: otázka, je teda vubec možné ho použít? tady s Honzou vysvětlíme jak vlastně funguje ten IF, a ukážeme že si myslím že jo, použijeme ho jako novelty a ukážeme že to šlo
 
 ###  How to separate non anomalies
 Using the data domain knowledge, some constraints usually arise.
@@ -142,7 +142,7 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MjUwNzg4NSwtNjEzMTE2NTY3LC04ND
+eyJoaXN0b3J5IjpbLTQ3NDcwOTM0NywtNjEzMTE2NTY3LC04ND
 A4OTcyMDgsOTc2NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OTgwNjAx
 NywtMTk0OTI0ODg1MV19
 -->
