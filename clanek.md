@@ -113,6 +113,7 @@ Even human will find it nearly impossible to differentiate between these two cla
 Finding the line itself is obvious.
 Deciding which observations are anomalies, without some domain knowledge on the other hand is close to impossible.
 
+Despite this, one positive thing is that Isolation Forest managed to deal with the gaps in the measurement (seen in Figures above, around X=50). 
 
 - [ ] TODO: otázka, je teda vubec možné ho použít? tady s Honzou vysvětlíme jak vlastně funguje ten IF, a ukážeme že si myslím že jo, použijeme ho jako novelty a ukážeme že to šlo
 
@@ -129,10 +130,7 @@ Doing so, the data that is left are anomalies-only where the task of finding ano
 
 
 
-However, the major drawback in our particular problem were real world disturbances of the time series data.
-Figure 2 shows the misconduct of the Isolation Forest algorithm when applied on the dataset with such disturbances, represented by the *gaps* in Figure 2.
-This raises a question, whether should we preprocess the data first to remove those gaps somehow, and then use the Isolation Forest algorithm to find the anomalies.
-However, there would still be the problem with the cluster-only separation remaining for the reasons described in the introduction section of this article. 
+ 
 
 
 
@@ -153,10 +151,10 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTk0MzQ0MTMsNjg3MjA4NjkyLDExND
-A2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3NDU4LC0xOTQwODE2
-NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5NDAzLDE2MTQzMjMzMz
-AsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC04NDA4OTcyMDgsOTc2
-NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OTgwNjAxNywtMTk0OTI0OD
-g1MV19
+eyJoaXN0b3J5IjpbOTkwMjAzOTgwLDY4NzIwODY5MiwxMTQwNj
+c5OTYyLC0xNzg5ODQyMjc4LDU5NTY4NzQ1OCwtMTk0MDgxNjQy
+MywtMTM0MzEwMTY2OSwtMTE5ODcyOTQwMywxNjE0MzIzMzMwLC
+01OTQyODk2MjcsLTYxMzExNjU2NywtODQwODk3MjA4LDk3NjU0
+ODQ4LC0xNTMyNTc0NDMyLC05NDk4MDYwMTcsLTE5NDkyNDg4NT
+FdfQ==
 -->
