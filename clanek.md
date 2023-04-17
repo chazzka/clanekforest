@@ -29,7 +29,7 @@ Figure X shows the mean (straight line) of the given data.
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/mean_great_colored.svg) 
 > Figure X - Mean of the given dataset with anomalies.
 
-Although this may look **great** on the first glance, several problems arise.
+Although this may look positive on the first glance, several problems arise.
 The initial one is with the automated distinction.
 When the dataset is polluted with anomalies in close to 1:1 ratio, even for human it is close to impossible to differentiate anomalies and regular observation.
 The second problem brings up when anomalies are not present at all, making mean method unusable.
@@ -111,8 +111,6 @@ Figure 4 shows example dataset without any datamining or separation with three i
 The question is, does the middle cluster represent anomalies or non-anomalies? Can we draw a line between these three clusters somehow? The most straightforward solution - to use moving average or MSE - is not really feasible, because anomalies tend to behave randomly.
 This means, such method could easily misbehave, e.g., mark a large portion of anomalies as non-anomalies, as shown in Figure 5. 
 
-- [ ] TODO: Figure 5 ukaž čáru - průměr třeba nějaký, kde to rozseklo uplně debilně.
-
 ####  Unsupervised Isolation Forest
 výš jsme si popsali jak funguje unsupervised separae (na naše data ne), ještě zkusíme jak funguje isolation forest na naše data
 
@@ -148,6 +146,6 @@ However, there would still be the problem with the cluster-only separation remai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzI1NzQ0MzIsLTk0OTgwNjAxNywtMT
-k0OTI0ODg1MV19
+eyJoaXN0b3J5IjpbOTc2NTQ4NDgsLTE1MzI1NzQ0MzIsLTk0OT
+gwNjAxNywtMTk0OTI0ODg1MV19
 -->
