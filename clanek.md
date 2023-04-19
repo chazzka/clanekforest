@@ -96,8 +96,6 @@ A dataset containing approx. 25% of anomalies is prepared.
 Figures below show the differences when using rising values of the contamination parameter.
 Note that dataset is generated randomly with each run.
 
-- [ ] TODO: ta poslední věta je možná problém? Honzo?
-
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/contamination10.svg)
 > Figure X Isolation Forest with 10% contamination.
@@ -176,11 +174,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzOTUyOTExMCwtMTUyMzM3NjUwOCwxMz
-g2NDIxOTI3LDY1NjQ1MzUsMTc0NTM5MDczMSwxODgzNzg1NDUw
-LDY4NzIwODY5MiwxMTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NT
-Y4NzQ1OCwtMTk0MDgxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcy
-OTQwMywxNjE0MzIzMzMwLC01OTQyODk2MjcsLTYxMzExNjU2Ny
-wtODQwODk3MjA4LDk3NjU0ODQ4LC0xNTMyNTc0NDMyLC05NDk4
-MDYwMTddfQ==
+eyJoaXN0b3J5IjpbLTk2MTYwODY1MSwxODM5NTI5MTEwLC0xNT
+IzMzc2NTA4LDEzODY0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMx
+LDE4ODM3ODU0NTAsNjg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3OD
+k4NDIyNzgsNTk1Njg3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAx
+NjY5LC0xMTk4NzI5NDAzLDE2MTQzMjMzMzAsLTU5NDI4OTYyNy
+wtNjEzMTE2NTY3LC04NDA4OTcyMDgsOTc2NTQ4NDgsLTE1MzI1
+NzQ0MzJdfQ==
 -->
