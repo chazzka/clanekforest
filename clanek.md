@@ -107,6 +107,7 @@ Isolation tree je kořenový binární strom sestaven na základě vybrané podm
    + [ ] jak je implementovaná funkce $c(x)$
    + [ ] jak je to s `max-depth` je nastaven na $\ln_2(n)$
    + [ ] jak se stanoví první interval, je $\langle 0, 1\rangle$, nebo $\langle min(data),max(data)\rangle$ nebo jinak
+   + [ ] co ovlivňuje contanimation v kódu
 - [ ] TODO: další možnost výzkumu (jinej článek) jak udělat isolation forest, 
   když data (features) nebudou hodnoty z intervalu, ale třeba hodnoty z konečné podmnožiny 
 
