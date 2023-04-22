@@ -81,7 +81,6 @@ The less partitions required to isolate the more probable it is for a particle t
 ### todo: tady bychom asi meli vysvětlit ten algoritmus jako takovy, nasledovat budou ruzne pokusy s hyperparametry a až podtím popíšeme že vlastně budeme muset použít IF jako novelty a vysvětlíme dále proč to je možné
 
 - [ ] TODO: Honza tu vysvětlí jak funguje isolation forest, popíše všechny parametry a co dělají
-      + Budeme to vysvětlovat obecně, nebo jen tak jak mi potřebujeme (2 dimenze x,y)?
       
 #### Isolation Tree
 Isolation tree je kořenový binární strom sestaven na základě vybrané podmnožiny $A$ prvků (bodů) o velikosti $s=|A|$.
@@ -101,8 +100,15 @@ Isolation tree je kořenový binární strom sestaven na základě vybrané podm
    
    vnější (list)
    : vzniká pokud podmínky rodičů splňuje (resp. nesplňuje) jeden nebo žádný prvek ze samplu, nebo je dosažena maximální hloubka stromu $l$ zpravidla $l=\ln_2(s)$. Obsahuje ohodnocení $h(x)$ pomocí vzdálenosti od kořene, pokud je dosaženo  max. délky stromu je *vzdálenost* odhadnuta pomocí $h(x)=e+c(n)$, $e$ je vzdálenost od kořene, $n$ je počet prvků ze samplu splňující podmínky rodičů, $c(n)=2\,(H_{n-1}-\frac{n-1}{N})$ a $H_{n-1}$ je $n-1$ harmonické číslo, $N$ je počet prvků celkově. 
-   - [ ] TODO: ověřit $c(n)$ nějak mi to furt nesedí
-    
+   
+- [ ] TODO: ověřit $c(n)$ nějak mi to furt nesedí
+- [ ] TODO: Budeme to vysvětlovat obecně, nebo jen tak jak mi potřebujeme (2 dimenze x,y)?
+- [ ] TODO: Implementace v Pythonu
+   + [ ] jak je implementovaná funkce $c(x)$
+   + [ ] jak je to s `max-depth` je nastaven na $\ln_2(n)$
+   + [ ] jak se stanoví první interval, je $\langle 0, 1\rangle$, nebo $\langle min(data),max(data)\rangle$ nebo jinak
+- [ ] TODO: další možnost výzkumu (jinej článek) jak udělat isolation forest, 
+  když data (features) nebudou hodnoty z intervalu, ale třeba hodnoty z konečné podmnožiny 
 
 Despite its famousness, there are a few drawbacks.
 
