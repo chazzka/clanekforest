@@ -179,6 +179,9 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 - [ ] TODO: otázka, je teda vubec možné ho použít? Nahoře Honza vysvětlil jak funguje samotný IF a jeho parametry, tady ukážeme a něčím podpoříme, že nám nic nebrání použít IF jako novelty a uděláme na to experimenty
+- [ ] TODO: TADY SI NAPÍŠEME VLASTNÍ FOREST A BUDEME DĚLAT CHYTRÉ
+- [ ] TODO: TADY POPIŠ ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD 
+
 
 ### Experiments using IF as a Novelty detection tool
 
@@ -203,11 +206,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MTYwODY1MSwxODM5NTI5MTEwLC0xNT
-IzMzc2NTA4LDEzODY0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMx
-LDE4ODM3ODU0NTAsNjg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3OD
-k4NDIyNzgsNTk1Njg3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAx
-NjY5LC0xMTk4NzI5NDAzLDE2MTQzMjMzMzAsLTU5NDI4OTYyNy
-wtNjEzMTE2NTY3LC04NDA4OTcyMDgsOTc2NTQ4NDgsLTE1MzI1
-NzQ0MzJdfQ==
+eyJoaXN0b3J5IjpbLTEyNjc2Nzc1MzUsLTk2MTYwODY1MSwxOD
+M5NTI5MTEwLC0xNTIzMzc2NTA4LDEzODY0MjE5MjcsNjU2NDUz
+NSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAsNjg3MjA4NjkyLDExND
+A2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3NDU4LC0xOTQwODE2
+NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5NDAzLDE2MTQzMjMzMz
+AsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC04NDA4OTcyMDgsOTc2
+NTQ4NDhdfQ==
 -->
