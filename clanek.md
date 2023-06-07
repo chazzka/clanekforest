@@ -184,7 +184,9 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 ### Proposed novelty isolation forest enhancement
-In this section, we propose a new approach for making forest detect novel observations. The proposed enhancement takes the basic idea of forest of trees with depths, but is taking it further to make supervised novel detection possible. 
+In this section, we propose a new approach for making forest detect novel observations. 
+The proposed enhancement takes the basic idea of forest of trees with depths but is taking it further to make supervised novel detection possible.
+The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new 
 
 
 
@@ -211,7 +213,7 @@ In this section, we propose a new approach for making forest detect novel observ
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3Mjg4ODc1MCwtMTI2NzY3NzUzNSwtOT
+eyJoaXN0b3J5IjpbLTQ1NDUwNzg2OSwtMTI2NzY3NzUzNSwtOT
 YxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1MjMzNzY1MDgsMTM4NjQy
 MTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1MCw2OD
 cyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0
