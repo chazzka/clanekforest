@@ -69,7 +69,7 @@ Novelty detection is a semi-supervised anomaly-detection technique, whereas outl
 This a crucial distinction, due to a fact that whereas the outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them, novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision.
 This means, that if the dataset contains observations which look like anomalies but are still valid, the performance of unsupervised outlier detection in such case is usually unsatisfactory. 
 
-- [ ] TODO: TADY NAPIŠ JAKOBY ŽE ISOLATION FOREST NENI NOVELTY, ALE IDK...
+- [ ] TODO: TADY NAPIŠ JAKOBY ŽE ISOLATION FOREST NENI from scratch novelty a vysvětli proč si, ale ukážeme později že může být
 
 ### Isolation Forest
 - [ ] TODO: TADY napíšeme něco jakože by nás zajímalo jestli si s tím poradí isolation forest, napíšeme že se často používá právě na outlier detection ale z toho co vysvětlíme bude jasné, že se dá použít na novelty
@@ -206,11 +206,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjc2Nzc1MzUsLTk2MTYwODY1MSwxOD
-M5NTI5MTEwLC0xNTIzMzc2NTA4LDEzODY0MjE5MjcsNjU2NDUz
-NSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAsNjg3MjA4NjkyLDExND
-A2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3NDU4LC0xOTQwODE2
-NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5NDAzLDE2MTQzMjMzMz
-AsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC04NDA4OTcyMDgsOTc2
-NTQ4NDhdfQ==
+eyJoaXN0b3J5IjpbMTU2OTY1NDMxNiwtMTI2NzY3NzUzNSwtOT
+YxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1MjMzNzY1MDgsMTM4NjQy
+MTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1MCw2OD
+cyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0
+NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3Mjk0MD
+MsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0
+MDg5NzIwOF19
 -->
