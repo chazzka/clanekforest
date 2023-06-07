@@ -187,6 +187,7 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 In this section, we propose a new approach for making forest detect novel observations. 
 The proposed enhancement takes the basic idea of forest of trees with depths but is taking it further to make supervised novel detection possible.
 The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
+
  - [ ] TODO:  blabla tady pokračujeme že možná nějaký obrázek jak to funguje že neustále se zmenšuje ten frame, to nám vlastně zapříčiní že 100,100 je stjeně novelty jako 1000,1000.
 
 
@@ -214,7 +215,7 @@ The basic problem with isolation forest not being able to detect novel observati
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MTExNzQzMywtMTI2NzY3NzUzNSwtOT
+eyJoaXN0b3J5IjpbMTEyNjE3MDg1NSwtMTI2NzY3NzUzNSwtOT
 YxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1MjMzNzY1MDgsMTM4NjQy
 MTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1MCw2OD
 cyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0
