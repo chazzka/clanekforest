@@ -183,7 +183,9 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 - [ ] TODO: TADY POPIŠ ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD 
 
 
-3
+### Proposed novelty isolation forest enhancement
+In this section, we propose a new approach for making forest detect novel observations. The proposed service is able to differe
+
 
 
 ### Experiments using IF as a Novelty detection tool
@@ -209,11 +211,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDYzMzY5NTAsLTEyNjc2Nzc1MzUsLT
-k2MTYwODY1MSwxODM5NTI5MTEwLC0xNTIzMzc2NTA4LDEzODY0
-MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAsNj
-g3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3
-NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5ND
-AzLDE2MTQzMjMzMzAsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC04
-NDA4OTcyMDhdfQ==
+eyJoaXN0b3J5IjpbLTkwMzA5ODY4LC0xMjY3Njc3NTM1LC05Nj
+E2MDg2NTEsMTgzOTUyOTExMCwtMTUyMzM3NjUwOCwxMzg2NDIx
+OTI3LDY1NjQ1MzUsMTc0NTM5MDczMSwxODgzNzg1NDUwLDY4Nz
+IwODY5MiwxMTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NTY4NzQ1
+OCwtMTk0MDgxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcyOTQwMy
+wxNjE0MzIzMzMwLC01OTQyODk2MjcsLTYxMzExNjU2NywtODQw
+ODk3MjA4XX0=
 -->
