@@ -183,6 +183,9 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 - [ ] TODO: TADY POPIŠ ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD 
 
 
+3
+
+
 ### Experiments using IF as a Novelty detection tool
 
 - tady experimenty
@@ -206,7 +209,7 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjExOTI1NzcsLTEyNjc2Nzc1MzUsLT
+eyJoaXN0b3J5IjpbLTIwNDYzMzY5NTAsLTEyNjc2Nzc1MzUsLT
 k2MTYwODY1MSwxODM5NTI5MTEwLC0xNTIzMzc2NTA4LDEzODY0
 MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAsNj
 g3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3
