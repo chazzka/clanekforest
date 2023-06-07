@@ -184,7 +184,7 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 ### Proposed novelty isolation forest enhancement
-In this section, we propose a new approach for making forest detect novel observations. The proposed service is able to differe
+In this section, we propose a new approach for making forest detect novel observations. The proposed service is able to make 
 
 
 
@@ -211,11 +211,11 @@ In this section, we propose a new approach for making forest detect novel observ
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMzA5ODY4LC0xMjY3Njc3NTM1LC05Nj
-E2MDg2NTEsMTgzOTUyOTExMCwtMTUyMzM3NjUwOCwxMzg2NDIx
-OTI3LDY1NjQ1MzUsMTc0NTM5MDczMSwxODgzNzg1NDUwLDY4Nz
-IwODY5MiwxMTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NTY4NzQ1
-OCwtMTk0MDgxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcyOTQwMy
-wxNjE0MzIzMzMwLC01OTQyODk2MjcsLTYxMzExNjU2NywtODQw
-ODk3MjA4XX0=
+eyJoaXN0b3J5IjpbMTM2MjU1MDYxMSwtMTI2NzY3NzUzNSwtOT
+YxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1MjMzNzY1MDgsMTM4NjQy
+MTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1MCw2OD
+cyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0
+NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3Mjk0MD
+MsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0
+MDg5NzIwOF19
 -->
