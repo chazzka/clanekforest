@@ -69,7 +69,7 @@ Novelty detection is a semi-supervised anomaly-detection technique, whereas outl
 This a crucial distinction, due to a fact that whereas the outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them, novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision.
 This means, that if the dataset contains observations which look like anomalies but are still valid, the performance of unsupervised outlier detection in such case is usually unsatisfactory. 
 
-- [ ] TODO: TADY NAPIŠ JAKOBY ŽE ISOLATION FOREST NENI from scratch novelty a vysvětli proč si, ale ukážeme později že může být
+- [ ] TODO: TADY NAPIŠ JAKOBY ŽE ISOLATION FOREST NENI from scratch novelty a vysvětli proč se to asi obecně traduje, ale ukážeme později že může být
 
 ### Isolation Forest
 - [ ] TODO: TADY napíšeme něco jakože by nás zajímalo jestli si s tím poradí isolation forest, napíšeme že se často používá právě na outlier detection ale z toho co vysvětlíme bude jasné, že se dá použít na novelty
@@ -78,7 +78,7 @@ Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"
 This approach is well known to successfully isolate outliers by using recursive partitioning (forming a tree-like structure) to decide whether the analyzed particle is an anomaly or not.
 The less partitions required to isolate the more probable it is for a particle to be an anomaly.
 
-### todo: tady bychom asi meli vysvětlit ten algoritmus jako takovy, nasledovat budou ruzne pokusy s hyperparametry a až podtím popíšeme že vlastně budeme muset použít IF jako novelty a vysvětlíme dále proč to je možné
+### todo: tady bychom asi meli vysvětlit ten algoritmus jako takovy, šupneme obrázek jak se to splituje, nasledovat budou ruzne pokusy s hyperparametry a až podtím popíšeme že vlastně budeme muset použít IF jako novelty a vysvětlíme dále proč to je možné
 
 - [ ] TODO: Honza tu vysvětlí jak funguje isolation forest, popíše všechny parametry a co dělají
       
@@ -206,11 +206,11 @@ To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2OTY1NDMxNiwtMTI2NzY3NzUzNSwtOT
-YxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1MjMzNzY1MDgsMTM4NjQy
-MTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1MCw2OD
-cyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0
-NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3Mjk0MD
-MsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0
-MDg5NzIwOF19
+eyJoaXN0b3J5IjpbLTE3NjExOTI1NzcsLTEyNjc2Nzc1MzUsLT
+k2MTYwODY1MSwxODM5NTI5MTEwLC0xNTIzMzc2NTA4LDEzODY0
+MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAsNj
+g3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3
+NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5ND
+AzLDE2MTQzMjMzMzAsLTU5NDI4OTYyNywtNjEzMTE2NTY3LC04
+NDA4OTcyMDhdfQ==
 -->
