@@ -205,7 +205,6 @@ For this to work, several alterations to the split point evaluation and form of 
 This is demonstrated by simply adding a new service to our proposed algorithm.
   - [ ] TODO: šup sem odkaz na ruby algorithm s dokumentací
  
- The service 
 
 
 
@@ -233,7 +232,7 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEzMDg5MDUzLC0yMzM0NzE0NjYsLTE0Nz
+eyJoaXN0b3J5IjpbODY4MDE3MzgzLC0yMzM0NzE0NjYsLTE0Nz
 Y1MzQ1NjAsLTE0NzY1MzQ1NjAsMTQ5OTM2MDcxOCwxNDAyNzAw
 MDczLDE0MDM2Njk1MSwtNzYwNjkwNTE3LDgwODg0MDI5NSw1Mj
 gwMTY4NzksMTgwNDAxOTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1
