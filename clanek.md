@@ -218,7 +218,7 @@ When selecting groups for next nodes, groups are evaluated by grouping the given
 Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
 For example if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
 Using this, we never loose any data like in the original article, making novelty detection possible.
-Figure X demonstrates this by adding two novel points (
+Figure X demonstrates this by adding two novel points (considering the learning sample of data beginning with 0 and ending with 100) and we can see that using our approach we successfully isolated both numbers (5000 and 2000, which are considerably far away from each other) in different nodes.
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/clanek_5000_novelty.svg)
 
@@ -248,7 +248,7 @@ Figure X demonstrates this by adding two novel points (
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4OTQ1MzA3NCwyMDExMjExOTQ4LC0xND
+eyJoaXN0b3J5IjpbLTU5OTYwMjA1NCwyMDExMjExOTQ4LC0xND
 A3OTQwMzg2LDE3NzE0NDQwMDMsMTY0Mzg0NjMyMiwtMjMzNDcx
 NDY2LC0xNDc2NTM0NTYwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MT
 gsMTQwMjcwMDA3MywxNDAzNjY5NTEsLTc2MDY5MDUxNyw4MDg4
