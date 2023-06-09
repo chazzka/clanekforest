@@ -194,8 +194,8 @@ This results in 5000 being in the same node as numbers >80, making the novelty d
 > Figure X Isolation Forest novelty point insertion on using classic IF. 
 
 
- - [ ] TODO:  blabla tady pokračujeme že možná nějaký obrázek jak to funguje že neustále se zmenšuje ten frame, to nám vlastně zapříčiní že 100,100 je stjeně novelty jako 1000,1000.
- - [ ] TODO: tady popíšeme naši isolation servisku
+ 1. [ ] TODO:  blabla tady pokračujeme že možná nějaký obrázek jak to funguje že neustále se zmenšuje ten frame, to nám vlastně zapříčiní že 100,100 je stjeně novelty jako 1000,1000.
+ 2. [ ] TODO: tady popíšeme naši isolation servisku
  
 In our proposed enhancement, we clearly have to deal with this issue.
 The problem is to somehow evaluate the sparseness of the data, differentiating between datapoint being >80 and somehow "far bigger than 80", making the latter novelty.
@@ -203,16 +203,22 @@ The proposed solution is altering the concept of evaluation of a split point.
 Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on the whole range.
 For this to work, several alterations to the split point evaluation and form of data passed between nodes has to be done, but the overall concept of the forest stays the same. 
 This is demonstrated by simply adding a new service to our proposed algorithm.
-  - [ ] TODO: šup sem odkaz na ruby algorithm s dokumentací
+ 3. [ ] TODO: šup sem odkaz na ruby algorithm s dokumentací
 
- We encourage you to try it and maybe create your own service
+ We encourage you to try it and maybe create your own service based on our already implemented ones.
+ This service called Novelty is making two main alteration concepts:
+ 
+ 
+
+ 4. List item
+
  
 
 
 
 ### Experiments using IF as a Novelty detection tool
 
-- tady experimenty
+- tady experimenty, heatmapa atp.
 
 ### Drawbacks, todos
  [ ] TODO: TADY POPIŠ například ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD 
@@ -234,11 +240,11 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzY5Mzk3NTUsLTIzMzQ3MTQ2NiwtMT
-Q3NjUzNDU2MCwtMTQ3NjUzNDU2MCwxNDk5MzYwNzE4LDE0MDI3
-MDAwNzMsMTQwMzY2OTUxLC03NjA2OTA1MTcsODA4ODQwMjk1LD
-UyODAxNjg3OSwxODA0MDE5Nzk2LDEzNTUxMTUzOCwxMTI2MTcw
-ODU1LC0xMjY3Njc3NTM1LC05NjE2MDg2NTEsMTgzOTUyOTExMC
-wtMTUyMzM3NjUwOCwxMzg2NDIxOTI3LDY1NjQ1MzUsMTc0NTM5
-MDczMV19
+eyJoaXN0b3J5IjpbMjAxNzAwNTU4MywtMjMzNDcxNDY2LC0xND
+c2NTM0NTYwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MTgsMTQwMjcw
+MDA3MywxNDAzNjY5NTEsLTc2MDY5MDUxNyw4MDg4NDAyOTUsNT
+I4MDE2ODc5LDE4MDQwMTk3OTYsMTM1NTExNTM4LDExMjYxNzA4
+NTUsLTEyNjc2Nzc1MzUsLTk2MTYwODY1MSwxODM5NTI5MTEwLC
+0xNTIzMzc2NTA4LDEzODY0MjE5MjcsNjU2NDUzNSwxNzQ1Mzkw
+NzMxXX0=
 -->
