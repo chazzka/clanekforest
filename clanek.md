@@ -213,7 +213,7 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
 
 The evaluation of a range starts by simply selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly.
-After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, like in the original article) and a random value is chosen out of the selected range. 
+After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, like in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
 Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
 For example if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
@@ -248,11 +248,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTc4MTY1MywyMDExMjExOTQ4LC0xND
-A3OTQwMzg2LDE3NzE0NDQwMDMsMTY0Mzg0NjMyMiwtMjMzNDcx
-NDY2LC0xNDc2NTM0NTYwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MT
-gsMTQwMjcwMDA3MywxNDAzNjY5NTEsLTc2MDY5MDUxNyw4MDg4
-NDAyOTUsNTI4MDE2ODc5LDE4MDQwMTk3OTYsMTM1NTExNTM4LD
-ExMjYxNzA4NTUsLTEyNjc2Nzc1MzUsLTk2MTYwODY1MSwxODM5
-NTI5MTEwXX0=
+eyJoaXN0b3J5IjpbLTE5Mzg1MDE4MDQsMjAxMTIxMTk0OCwtMT
+QwNzk0MDM4NiwxNzcxNDQ0MDAzLDE2NDM4NDYzMjIsLTIzMzQ3
+MTQ2NiwtMTQ3NjUzNDU2MCwtMTQ3NjUzNDU2MCwxNDk5MzYwNz
+E4LDE0MDI3MDAwNzMsMTQwMzY2OTUxLC03NjA2OTA1MTcsODA4
+ODQwMjk1LDUyODAxNjg3OSwxODA0MDE5Nzk2LDEzNTUxMTUzOC
+wxMTI2MTcwODU1LC0xMjY3Njc3NTM1LC05NjE2MDg2NTEsMTgz
+OTUyOTExMF19
 -->
