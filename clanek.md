@@ -183,8 +183,6 @@ However,  there seems to be not much work regarding using Isolation Forest as a 
 
 ### Isolation forest experiments
 - [ ] TODO: TADY SI NAPÍŠEME VLASTNÍ FOREST A BUDEME DĚLAT CHYTRÉ
-- [ ] TODO: TADY POPIŠ ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD 
-
 
 ### Proposed novelty isolation forest enhancement
 In this section, we propose a new approach for making forest detect novel observations. 
@@ -192,6 +190,10 @@ The proposed enhancement takes the basic idea of an ensemble of trees with depth
 The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
 
  - [ ] TODO:  blabla tady pokračujeme že možná nějaký obrázek jak to funguje že neustále se zmenšuje ten frame, to nám vlastně zapříčiní že 100,100 je stjeně novelty jako 1000,1000.
+ - [ ] TODO: tady popíšem
+
+
+
 
 
 
@@ -218,7 +220,7 @@ The basic problem with isolation forest not being able to detect novel observati
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5Nzc4NjUyOCw1MjgwMTY4NzksMTgwND
+eyJoaXN0b3J5IjpbLTM3MTIyNzY2Nyw1MjgwMTY4NzksMTgwND
 AxOTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1NSwtMTI2NzY3NzUz
 NSwtOTYxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1MjMzNzY1MDgsMT
 M4NjQyMTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1
