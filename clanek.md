@@ -208,7 +208,7 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
  We encourage you to try it and maybe create your own service based on our already implemented ones.
  This service called Novelty is making two main alteration concepts:
  
- 1. List item
+ 1. When selecting a sample from the given data, instead of 
  2. 
 
  
@@ -239,11 +239,11 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MTQ0NDAwMywxNjQzODQ2MzIyLC0yMz
-M0NzE0NjYsLTE0NzY1MzQ1NjAsLTE0NzY1MzQ1NjAsMTQ5OTM2
-MDcxOCwxNDAyNzAwMDczLDE0MDM2Njk1MSwtNzYwNjkwNTE3LD
-gwODg0MDI5NSw1MjgwMTY4NzksMTgwNDAxOTc5NiwxMzU1MTE1
-MzgsMTEyNjE3MDg1NSwtMTI2NzY3NzUzNSwtOTYxNjA4NjUxLD
-E4Mzk1MjkxMTAsLTE1MjMzNzY1MDgsMTM4NjQyMTkyNyw2NTY0
-NTM1XX0=
+eyJoaXN0b3J5IjpbMTgxMzc0ODk1OCwxNzcxNDQ0MDAzLDE2ND
+M4NDYzMjIsLTIzMzQ3MTQ2NiwtMTQ3NjUzNDU2MCwtMTQ3NjUz
+NDU2MCwxNDk5MzYwNzE4LDE0MDI3MDAwNzMsMTQwMzY2OTUxLC
+03NjA2OTA1MTcsODA4ODQwMjk1LDUyODAxNjg3OSwxODA0MDE5
+Nzk2LDEzNTUxMTUzOCwxMTI2MTcwODU1LC0xMjY3Njc3NTM1LC
+05NjE2MDg2NTEsMTgzOTUyOTExMCwtMTUyMzM3NjUwOCwxMzg2
+NDIxOTI3XX0=
 -->
