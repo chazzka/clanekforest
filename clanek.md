@@ -211,7 +211,7 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
  1. When selecting a sample from the given data, to randomly selecting the sample of a given *batch size*,  the evaluation of range for each dimension was added.
  2. When the split point is calculated, random dimension is chosen and the split point is taken from the evaluated range (and not the data itself)
 
-The evaluation of a range starts by simply selecting some initial (either random or user defined range). 
+The evaluation of a range starts by simply selecting some initial (either random or user defined) range. 
 This range should be reasonable enough to allow all the domain space to be separated correctly.
 After that, each range 
  
@@ -242,11 +242,11 @@ After that, each range
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNDM4NDg0MSwxNzcxNDQ0MDAzLDE2ND
-M4NDYzMjIsLTIzMzQ3MTQ2NiwtMTQ3NjUzNDU2MCwtMTQ3NjUz
-NDU2MCwxNDk5MzYwNzE4LDE0MDI3MDAwNzMsMTQwMzY2OTUxLC
-03NjA2OTA1MTcsODA4ODQwMjk1LDUyODAxNjg3OSwxODA0MDE5
-Nzk2LDEzNTUxMTUzOCwxMTI2MTcwODU1LC0xMjY3Njc3NTM1LC
-05NjE2MDg2NTEsMTgzOTUyOTExMCwtMTUyMzM3NjUwOCwxMzg2
-NDIxOTI3XX0=
+eyJoaXN0b3J5IjpbOTU2NTc3MDU5LDE3NzE0NDQwMDMsMTY0Mz
+g0NjMyMiwtMjMzNDcxNDY2LC0xNDc2NTM0NTYwLC0xNDc2NTM0
+NTYwLDE0OTkzNjA3MTgsMTQwMjcwMDA3MywxNDAzNjY5NTEsLT
+c2MDY5MDUxNyw4MDg4NDAyOTUsNTI4MDE2ODc5LDE4MDQwMTk3
+OTYsMTM1NTExNTM4LDExMjYxNzA4NTUsLTEyNjc2Nzc1MzUsLT
+k2MTYwODY1MSwxODM5NTI5MTEwLC0xNTIzMzc2NTA4LDEzODY0
+MjE5MjddfQ==
 -->
