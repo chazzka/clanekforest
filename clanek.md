@@ -1,4 +1,4 @@
-# Cluster Anomaly Detection in Time Series Data - work title
+# Using Isolation Forest as a Novelty Detection tool - work title
 
 ## Abstract
 - téma
@@ -213,11 +213,11 @@ The basic problem with isolation forest not being able to detect novel observati
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NTExNTM4LDExMjYxNzA4NTUsLTEyNj
-c2Nzc1MzUsLTk2MTYwODY1MSwxODM5NTI5MTEwLC0xNTIzMzc2
-NTA4LDEzODY0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4OD
-M3ODU0NTAsNjg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIy
-NzgsNTk1Njg3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC
-0xMTk4NzI5NDAzLDE2MTQzMjMzMzAsLTU5NDI4OTYyNywtNjEz
-MTE2NTY3XX0=
+eyJoaXN0b3J5IjpbNTI4MDE2ODc5LDEzNTUxMTUzOCwxMTI2MT
+cwODU1LC0xMjY3Njc3NTM1LC05NjE2MDg2NTEsMTgzOTUyOTEx
+MCwtMTUyMzM3NjUwOCwxMzg2NDIxOTI3LDY1NjQ1MzUsMTc0NT
+M5MDczMSwxODgzNzg1NDUwLDY4NzIwODY5MiwxMTQwNjc5OTYy
+LC0xNzg5ODQyMjc4LDU5NTY4NzQ1OCwtMTk0MDgxNjQyMywtMT
+M0MzEwMTY2OSwtMTE5ODcyOTQwMywxNjE0MzIzMzMwLC01OTQy
+ODk2MjddfQ==
 -->
