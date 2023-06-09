@@ -186,6 +186,7 @@ However,  there seems to be not much work regarding using Isolation Forest as a 
 In this section, we propose a new approach for making forest detect novel observations. 
 The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
 The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
+This results in having a split point for each node, not  
 
  - [ ] TODO:  blabla tady pokračujeme že možná nějaký obrázek jak to funguje že neustále se zmenšuje ten frame, to nám vlastně zapříčiní že 100,100 je stjeně novelty jako 1000,1000.
  - [ ] TODO: tady popíšeme naši isolation servisku
@@ -220,11 +221,11 @@ The basic problem with isolation forest not being able to detect novel observati
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA4ODQwMjk1LDUyODAxNjg3OSwxODA0MD
-E5Nzk2LDEzNTUxMTUzOCwxMTI2MTcwODU1LC0xMjY3Njc3NTM1
-LC05NjE2MDg2NTEsMTgzOTUyOTExMCwtMTUyMzM3NjUwOCwxMz
-g2NDIxOTI3LDY1NjQ1MzUsMTc0NTM5MDczMSwxODgzNzg1NDUw
-LDY4NzIwODY5MiwxMTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NT
-Y4NzQ1OCwtMTk0MDgxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcy
-OTQwM119
+eyJoaXN0b3J5IjpbOTczNzI2ODUzLDgwODg0MDI5NSw1MjgwMT
+Y4NzksMTgwNDAxOTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1NSwt
+MTI2NzY3NzUzNSwtOTYxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1Mj
+MzNzY1MDgsMTM4NjQyMTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEs
+MTg4Mzc4NTQ1MCw2ODcyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OT
+g0MjI3OCw1OTU2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2
+NjldfQ==
 -->
