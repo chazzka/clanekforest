@@ -177,7 +177,7 @@ The final question is if it is somehow possible to teach Isolation Forest how re
 Can we use Isolation Forest for novelty detection despite it not being primarily novelty detection algorithm? 
 
 ### SOTA
-Isolation forest has been widely used for outlier detection. In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets. Thorough the years, many successful implementations have arisen.
+Isolation forest has been widely used for outlier detection. In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets. Thorough the years, many successful enhancements of the Isolation Forest have arisen. Gałka, Karczmarek, Tokovarov in (https://doi.org/10.1016/j.patrec.2022.09.015) implement M
 
 ### Isolation forest experiments
 - [ ] TODO: TADY SI NAPÍŠEME VLASTNÍ FOREST A BUDEME DĚLAT CHYTRÉ
@@ -216,11 +216,11 @@ The basic problem with isolation forest not being able to detect novel observati
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcwMTEzOTM5LDUyODAxNjg3OSwxODA0MD
-E5Nzk2LDEzNTUxMTUzOCwxMTI2MTcwODU1LC0xMjY3Njc3NTM1
-LC05NjE2MDg2NTEsMTgzOTUyOTExMCwtMTUyMzM3NjUwOCwxMz
-g2NDIxOTI3LDY1NjQ1MzUsMTc0NTM5MDczMSwxODgzNzg1NDUw
-LDY4NzIwODY5MiwxMTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NT
-Y4NzQ1OCwtMTk0MDgxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcy
-OTQwM119
+eyJoaXN0b3J5IjpbLTE3Njc2MDk3MzQsNTI4MDE2ODc5LDE4MD
+QwMTk3OTYsMTM1NTExNTM4LDExMjYxNzA4NTUsLTEyNjc2Nzc1
+MzUsLTk2MTYwODY1MSwxODM5NTI5MTEwLC0xNTIzMzc2NTA4LD
+EzODY0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0
+NTAsNjg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNT
+k1Njg3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4
+NzI5NDAzXX0=
 -->
