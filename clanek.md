@@ -177,15 +177,13 @@ The final question is if it is somehow possible to teach Isolation Forest how re
 Can we use Isolation Forest for novelty detection despite it not being primarily novelty detection algorithm? 
 To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
-
-- [ ] TODO: otázka, je teda vubec možné ho použít? Nahoře Honza vysvětlil jak funguje samotný IF a jeho parametry, tady ukážeme a něčím podpoříme, že nám nic nebrání použít IF jako novelty a uděláme na to experimenty
 - [ ] TODO: TADY SI NAPÍŠEME VLASTNÍ FOREST A BUDEME DĚLAT CHYTRÉ
 - [ ] TODO: TADY POPIŠ ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD 
 
 
 ### Proposed novelty isolation forest enhancement
 In this section, we propose a new approach for making forest detect novel observations. 
-The proposed enhancement takes the basic idea of forest of trees with depths but is taking it further to make supervised novel detection possible.
+The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
 The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
 
  - [ ] TODO:  blabla tady pokračujeme že možná nějaký obrázek jak to funguje že neustále se zmenšuje ten frame, to nám vlastně zapříčiní že 100,100 je stjeně novelty jako 1000,1000.
@@ -215,11 +213,11 @@ The basic problem with isolation forest not being able to detect novel observati
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNjE3MDg1NSwtMTI2NzY3NzUzNSwtOT
-YxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1MjMzNzY1MDgsMTM4NjQy
-MTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1MCw2OD
-cyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OTU2ODc0
-NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3Mjk0MD
-MsMTYxNDMyMzMzMCwtNTk0Mjg5NjI3LC02MTMxMTY1NjcsLTg0
-MDg5NzIwOF19
+eyJoaXN0b3J5IjpbMTM1NTExNTM4LDExMjYxNzA4NTUsLTEyNj
+c2Nzc1MzUsLTk2MTYwODY1MSwxODM5NTI5MTEwLC0xNTIzMzc2
+NTA4LDEzODY0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4OD
+M3ODU0NTAsNjg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIy
+NzgsNTk1Njg3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC
+0xMTk4NzI5NDAzLDE2MTQzMjMzMzAsLTU5NDI4OTYyNywtNjEz
+MTE2NTY3XX0=
 -->
