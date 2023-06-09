@@ -216,7 +216,8 @@ This range should be reasonable enough to allow all the domain space to be separ
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, like in the original article) and a random value is chosen out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
 Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
-For example if the selected split point was number 7, then 
+For example if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
+Using this, we never loose any data like in the original article
  
 
 
@@ -245,11 +246,11 @@ For example if the selected split point was number 7, then
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQwMjQ5NDE0LC0xNDA3OTQwMzg2LDE3Nz
-E0NDQwMDMsMTY0Mzg0NjMyMiwtMjMzNDcxNDY2LC0xNDc2NTM0
-NTYwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MTgsMTQwMjcwMDA3My
-wxNDAzNjY5NTEsLTc2MDY5MDUxNyw4MDg4NDAyOTUsNTI4MDE2
-ODc5LDE4MDQwMTk3OTYsMTM1NTExNTM4LDExMjYxNzA4NTUsLT
-EyNjc2Nzc1MzUsLTk2MTYwODY1MSwxODM5NTI5MTEwLC0xNTIz
-Mzc2NTA4XX0=
+eyJoaXN0b3J5IjpbMjEzMjgxNTE2NCwtMTQwNzk0MDM4NiwxNz
+cxNDQ0MDAzLDE2NDM4NDYzMjIsLTIzMzQ3MTQ2NiwtMTQ3NjUz
+NDU2MCwtMTQ3NjUzNDU2MCwxNDk5MzYwNzE4LDE0MDI3MDAwNz
+MsMTQwMzY2OTUxLC03NjA2OTA1MTcsODA4ODQwMjk1LDUyODAx
+Njg3OSwxODA0MDE5Nzk2LDEzNTUxMTUzOCwxMTI2MTcwODU1LC
+0xMjY3Njc3NTM1LC05NjE2MDg2NTEsMTgzOTUyOTExMCwtMTUy
+MzM3NjUwOF19
 -->
