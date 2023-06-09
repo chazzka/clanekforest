@@ -198,7 +198,7 @@ This results in 5000 being in the same node as numbers >80, making the novelty d
  - [ ] TODO: tady popíšeme naši isolation servisku
  
 In our proposed enhancement, we clearly have to deal with this issue.
-The problem is to somehow evaluate the sparseness of the data, differentiating between datapoint being >80 and somehow "far bigger than 80", making the latter on novelty.
+The problem is to somehow evaluate the sparseness of the data, differentiating between datapoint being >80 and somehow "far bigger than 80", making the latter novelty.
 
 
 
@@ -226,11 +226,11 @@ The problem is to somehow evaluate the sparseness of the data, differentiating b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMjcwMDA3MywxNDAzNjY5NTEsLTc2MD
-Y5MDUxNyw4MDg4NDAyOTUsNTI4MDE2ODc5LDE4MDQwMTk3OTYs
-MTM1NTExNTM4LDExMjYxNzA4NTUsLTEyNjc2Nzc1MzUsLTk2MT
-YwODY1MSwxODM5NTI5MTEwLC0xNTIzMzc2NTA4LDEzODY0MjE5
-MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAsNjg3Mj
-A4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3NDU4
-XX0=
+eyJoaXN0b3J5IjpbMTQ5OTM2MDcxOCwxNDAyNzAwMDczLDE0MD
+M2Njk1MSwtNzYwNjkwNTE3LDgwODg0MDI5NSw1MjgwMTY4Nzks
+MTgwNDAxOTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1NSwtMTI2Nz
+Y3NzUzNSwtOTYxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1MjMzNzY1
+MDgsMTM4NjQyMTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mz
+c4NTQ1MCw2ODcyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3
+OF19
 -->
