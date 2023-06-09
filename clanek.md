@@ -188,7 +188,9 @@ The proposed enhancement takes the basic idea of an ensemble of trees with depth
 The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
 Figure X demonstrates this by creating a first node of a forest with dataset consisting of range (0,100), successfully creating a node and a random split point of 80. 
 Later on, when Isolation Forest is being used for evaluation of a number 5000 (which is obviously far away from the initial (0, 100) range) the previous split point is used to determine its final node.
-This results in 5000 being in the same node as 
+This results in 5000 being in the same node as numbers >80, making the novelty detection impossible.
+
+
 
  - [ ] TODO:  blabla tady pokračujeme že možná nějaký obrázek jak to funguje že neustále se zmenšuje ten frame, to nám vlastně zapříčiní že 100,100 je stjeně novelty jako 1000,1000.
  - [ ] TODO: tady popíšeme naši isolation servisku
@@ -223,11 +225,11 @@ This results in 5000 being in the same node as
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTY0MTE0NzIsODA4ODQwMjk1LDUyOD
-AxNjg3OSwxODA0MDE5Nzk2LDEzNTUxMTUzOCwxMTI2MTcwODU1
-LC0xMjY3Njc3NTM1LC05NjE2MDg2NTEsMTgzOTUyOTExMCwtMT
-UyMzM3NjUwOCwxMzg2NDIxOTI3LDY1NjQ1MzUsMTc0NTM5MDcz
-MSwxODgzNzg1NDUwLDY4NzIwODY5MiwxMTQwNjc5OTYyLC0xNz
-g5ODQyMjc4LDU5NTY4NzQ1OCwtMTk0MDgxNjQyMywtMTM0MzEw
-MTY2OV19
+eyJoaXN0b3J5IjpbLTc2MDY5MDUxNyw4MDg4NDAyOTUsNTI4MD
+E2ODc5LDE4MDQwMTk3OTYsMTM1NTExNTM4LDExMjYxNzA4NTUs
+LTEyNjc2Nzc1MzUsLTk2MTYwODY1MSwxODM5NTI5MTEwLC0xNT
+IzMzc2NTA4LDEzODY0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMx
+LDE4ODM3ODU0NTAsNjg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3OD
+k4NDIyNzgsNTk1Njg3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAx
+NjY5XX0=
 -->
