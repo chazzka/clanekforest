@@ -217,8 +217,9 @@ After that, during tree initialization, a random range out of N is chosen (if pr
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
 Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
 For example if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
-Using this, we never loose any data like in the original article
- 
+Using this, we never loose any data like in the original article, making novelty detection possible.
+
+
 
 
 
@@ -246,7 +247,7 @@ Using this, we never loose any data like in the original article
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMjgxNTE2NCwtMTQwNzk0MDM4NiwxNz
+eyJoaXN0b3J5IjpbMjAxMTIxMTk0OCwtMTQwNzk0MDM4NiwxNz
 cxNDQ0MDAzLDE2NDM4NDYzMjIsLTIzMzQ3MTQ2NiwtMTQ3NjUz
 NDU2MCwtMTQ3NjUzNDU2MCwxNDk5MzYwNzE4LDE0MDI3MDAwNz
 MsMTQwMzY2OTUxLC03NjA2OTA1MTcsODA4ODQwMjk1LDUyODAx
