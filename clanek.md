@@ -212,7 +212,8 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
  2. When the split point is calculated, random dimension is chosen and the split point is taken from the evaluated range (and not the data itself)
 
 The evaluation of a range starts by simply selecting some initial (either random or user defined range). 
-This range should be reasonable enou
+This range should be reasonable enough to allow all the domain space to be separated correctly.
+After that, each range 
  
 
 
@@ -241,7 +242,7 @@ This range should be reasonable enou
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MTg2NTU1MywxNzcxNDQ0MDAzLDE2ND
+eyJoaXN0b3J5IjpbMTQyNDM4NDg0MSwxNzcxNDQ0MDAzLDE2ND
 M4NDYzMjIsLTIzMzQ3MTQ2NiwtMTQ3NjUzNDU2MCwtMTQ3NjUz
 NDU2MCwxNDk5MzYwNzE4LDE0MDI3MDAwNzMsMTQwMzY2OTUxLC
 03NjA2OTA1MTcsODA4ODQwMjk1LDUyODAxNjg3OSwxODA0MDE5
