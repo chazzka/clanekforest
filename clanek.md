@@ -219,7 +219,7 @@ Each group is then assigned a new ranges array where ranges are also grouped acc
 For example if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
 Using this, we never loose any data like in the original article, making novelty detection possible.
 
-
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/clanek_5000_novelty.svg)
 
 
 
@@ -247,11 +247,11 @@ Using this, we never loose any data like in the original article, making novelty
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMTIxMTk0OCwtMTQwNzk0MDM4NiwxNz
-cxNDQ0MDAzLDE2NDM4NDYzMjIsLTIzMzQ3MTQ2NiwtMTQ3NjUz
-NDU2MCwtMTQ3NjUzNDU2MCwxNDk5MzYwNzE4LDE0MDI3MDAwNz
-MsMTQwMzY2OTUxLC03NjA2OTA1MTcsODA4ODQwMjk1LDUyODAx
-Njg3OSwxODA0MDE5Nzk2LDEzNTUxMTUzOCwxMTI2MTcwODU1LC
-0xMjY3Njc3NTM1LC05NjE2MDg2NTEsMTgzOTUyOTExMCwtMTUy
-MzM3NjUwOF19
+eyJoaXN0b3J5IjpbMjYzODk1ODUwLDIwMTEyMTE5NDgsLTE0MD
+c5NDAzODYsMTc3MTQ0NDAwMywxNjQzODQ2MzIyLC0yMzM0NzE0
+NjYsLTE0NzY1MzQ1NjAsLTE0NzY1MzQ1NjAsMTQ5OTM2MDcxOC
+wxNDAyNzAwMDczLDE0MDM2Njk1MSwtNzYwNjkwNTE3LDgwODg0
+MDI5NSw1MjgwMTY4NzksMTgwNDAxOTc5NiwxMzU1MTE1MzgsMT
+EyNjE3MDg1NSwtMTI2NzY3NzUzNSwtOTYxNjA4NjUxLDE4Mzk1
+MjkxMTBdfQ==
 -->
