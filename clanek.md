@@ -190,7 +190,8 @@ The proposed enhancement takes the basic idea of an ensemble of trees with depth
 The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
 
  - [ ] TODO:  blabla tady pokračujeme že možná nějaký obrázek jak to funguje že neustále se zmenšuje ten frame, to nám vlastně zapříčiní že 100,100 je stjeně novelty jako 1000,1000.
- - [ ] TODO: tady popíšem
+ - [ ] TODO: tady popíšeme naši isolation servisku
+ 
 
 
 
@@ -201,18 +202,19 @@ The basic problem with isolation forest not being able to detect novel observati
 
 - tady experimenty
 
+### Drawbacks, todos
+ [ ] TODO: TADY POPIŠ například ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD 
  
-### Finding the right clustering algorithm, TUNING OF DB SCAN
+### Finding clusters amongst novelties ??
+TODO:
 - tady už stačí asi že prostě to není těžký ukol, vezmeme jen obyčejný DB scan a bác. oba algoritmy jsou jednoduché ale síla je v jejich kooperaci idk
 - možná bychom se tu mohli taky zamyslet nad tím jak funguje ten DB Scan a zkusit trochu potunit aby to dělalo celé clustery
 
 ### automl hyperparameter tuning for IF - v jinem članku
 
-## experiments
-- [ ] TODO: TADY SE TO UŽ ZKOMBINUJE, ukaž obrázky, ukaž jak jde měnit parametry a bude to mít jiné výslekdy, více se zvýrazní clustery, méně atp...
 
 ## Results and discussion
-- tady můžeme zkusit tabulku kde budeme ukazovat kolik procent anomálií to našlo apt možná porovnání s nějakým buď expertem nebo nějakými referenčními olabelovanými daty
+- tady můžeme zkusit tabulku kde budeme ukazovat kolik procent novelty to našlo apt možná porovnání s nějakým buď expertem nebo nějakými referenčními olabelovanými daty
 - zde napíšeme co se povedlo, jak to neni vubec lehke najit dva či více algoritmů které spolu dobře fungují a velký problem je jejich validace a verifikace, zkus navhrnout nějaké řešení verifikace
 ## Conclusion
 
@@ -220,11 +222,11 @@ The basic problem with isolation forest not being able to detect novel observati
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MTIyNzY2Nyw1MjgwMTY4NzksMTgwND
-AxOTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1NSwtMTI2NzY3NzUz
-NSwtOTYxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1MjMzNzY1MDgsMT
-M4NjQyMTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1
-MCw2ODcyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OT
-U2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3
-Mjk0MDNdfQ==
+eyJoaXN0b3J5IjpbLTE0NTAyNDAzMDgsNTI4MDE2ODc5LDE4MD
+QwMTk3OTYsMTM1NTExNTM4LDExMjYxNzA4NTUsLTEyNjc2Nzc1
+MzUsLTk2MTYwODY1MSwxODM5NTI5MTEwLC0xNTIzMzc2NTA4LD
+EzODY0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0
+NTAsNjg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNT
+k1Njg3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4
+NzI5NDAzXX0=
 -->
