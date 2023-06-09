@@ -186,16 +186,18 @@ However,  there seems to be not much work regarding using Isolation Forest as a 
 In this section, we propose a new approach for making forest detect novel observations. 
 The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
 The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
-Figure X demonstrates this by creating a first node of a forest with dataset consisting of range (0,100), successfully creating a node and a random split point of 80. 
+Figure X demonstrates this by creating a first node of a forest with dataset consisting of a sample from range (0,100), successfully creating a node and a random split point of 80. 
 Later on, when Isolation Forest is being used for evaluation of a number 5000 (which is obviously far away from the initial (0, 100) range) the previous split point is used to determine its final node.
 This results in 5000 being in the same node as numbers >80, making the novelty detection impossible.
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/isolation_5000.svg) 
 > Figure X Isolation Forest novelty point insertion on using classic IF. 
 
+
  - [ ] TODO:  blabla tady pokračujeme že možná nějaký obrázek jak to funguje že neustále se zmenšuje ten frame, to nám vlastně zapříčiní že 100,100 je stjeně novelty jako 1000,1000.
  - [ ] TODO: tady popíšeme naši isolation servisku
  
+In our proposed enhancement, we clearly have to deal with this issue.
 
 
 
@@ -226,7 +228,7 @@ This results in 5000 being in the same node as numbers >80, making the novelty d
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTgwODIwMDIsMTQwMzY2OTUxLC03Nj
+eyJoaXN0b3J5IjpbLTE2Mzk0MDA1NTIsMTQwMzY2OTUxLC03Nj
 A2OTA1MTcsODA4ODQwMjk1LDUyODAxNjg3OSwxODA0MDE5Nzk2
 LDEzNTUxMTUzOCwxMTI2MTcwODU1LC0xMjY3Njc3NTM1LC05Nj
 E2MDg2NTEsMTgzOTUyOTExMCwtMTUyMzM3NjUwOCwxMzg2NDIx
