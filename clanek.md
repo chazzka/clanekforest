@@ -206,7 +206,7 @@ The basic problem with isolation forest not being able to detect novel observati
  [ ] TODO: TADY POPIŠ například ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD 
  
 ### Finding clusters amongst novelties ??
-TODO:
+ [ ] TODO: Honzo je to tu potřeba taková sekce, s přihlédnutím k tomu, že nově ten článek by měl být čistě o IF? kdyžtak prosím smazat všecko
 - tady už stačí asi že prostě to není těžký ukol, vezmeme jen obyčejný DB scan a bác. oba algoritmy jsou jednoduché ale síla je v jejich kooperaci idk
 - možná bychom se tu mohli taky zamyslet nad tím jak funguje ten DB Scan a zkusit trochu potunit aby to dělalo celé clustery
 
@@ -222,11 +222,11 @@ TODO:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTAyNDAzMDgsNTI4MDE2ODc5LDE4MD
-QwMTk3OTYsMTM1NTExNTM4LDExMjYxNzA4NTUsLTEyNjc2Nzc1
-MzUsLTk2MTYwODY1MSwxODM5NTI5MTEwLC0xNTIzMzc2NTA4LD
-EzODY0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0
-NTAsNjg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNT
-k1Njg3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4
-NzI5NDAzXX0=
+eyJoaXN0b3J5IjpbMTk1NDIwMzQ4Myw1MjgwMTY4NzksMTgwND
+AxOTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1NSwtMTI2NzY3NzUz
+NSwtOTYxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1MjMzNzY1MDgsMT
+M4NjQyMTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1
+MCw2ODcyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3OCw1OT
+U2ODc0NTgsLTE5NDA4MTY0MjMsLTEzNDMxMDE2NjksLTExOTg3
+Mjk0MDNdfQ==
 -->
