@@ -190,6 +190,7 @@ Figure X demonstrates this by creating a first node of a forest with dataset con
 Later on, when Isolation Forest is being used for evaluation of a number 5000 (which is obviously far away from the initial (0, 100) range) the previous split point is used to determine its final node.
 This results in 5000 being in the same node as numbers >80, making the novelty detection impossible.
 
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/isolation_5000.svg)
 
 
  - [ ] TODO:  blabla tady pokračujeme že možná nějaký obrázek jak to funguje že neustále se zmenšuje ten frame, to nám vlastně zapříčiní že 100,100 je stjeně novelty jako 1000,1000.
@@ -225,11 +226,11 @@ This results in 5000 being in the same node as numbers >80, making the novelty d
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MDY5MDUxNyw4MDg4NDAyOTUsNTI4MD
-E2ODc5LDE4MDQwMTk3OTYsMTM1NTExNTM4LDExMjYxNzA4NTUs
-LTEyNjc2Nzc1MzUsLTk2MTYwODY1MSwxODM5NTI5MTEwLC0xNT
-IzMzc2NTA4LDEzODY0MjE5MjcsNjU2NDUzNSwxNzQ1MzkwNzMx
-LDE4ODM3ODU0NTAsNjg3MjA4NjkyLDExNDA2Nzk5NjIsLTE3OD
-k4NDIyNzgsNTk1Njg3NDU4LC0xOTQwODE2NDIzLC0xMzQzMTAx
-NjY5XX0=
+eyJoaXN0b3J5IjpbMTQwMzY2OTUxLC03NjA2OTA1MTcsODA4OD
+QwMjk1LDUyODAxNjg3OSwxODA0MDE5Nzk2LDEzNTUxMTUzOCwx
+MTI2MTcwODU1LC0xMjY3Njc3NTM1LC05NjE2MDg2NTEsMTgzOT
+UyOTExMCwtMTUyMzM3NjUwOCwxMzg2NDIxOTI3LDY1NjQ1MzUs
+MTc0NTM5MDczMSwxODgzNzg1NDUwLDY4NzIwODY5MiwxMTQwNj
+c5OTYyLC0xNzg5ODQyMjc4LDU5NTY4NzQ1OCwtMTk0MDgxNjQy
+M119
 -->
