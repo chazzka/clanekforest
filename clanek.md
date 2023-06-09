@@ -213,7 +213,7 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
 
 The evaluation of a range starts by simply selecting some initial (either random or user defined) range. 
 This range should be reasonable enough to allow all the domain space to be separated correctly.
-After that, each range 
+After that, during tree initialization, a random dimension is chosen (if presented only one-dimen
  
 
 
@@ -242,11 +242,11 @@ After that, each range
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2NTc3MDU5LDE3NzE0NDQwMDMsMTY0Mz
-g0NjMyMiwtMjMzNDcxNDY2LC0xNDc2NTM0NTYwLC0xNDc2NTM0
-NTYwLDE0OTkzNjA3MTgsMTQwMjcwMDA3MywxNDAzNjY5NTEsLT
-c2MDY5MDUxNyw4MDg4NDAyOTUsNTI4MDE2ODc5LDE4MDQwMTk3
-OTYsMTM1NTExNTM4LDExMjYxNzA4NTUsLTEyNjc2Nzc1MzUsLT
-k2MTYwODY1MSwxODM5NTI5MTEwLC0xNTIzMzc2NTA4LDEzODY0
-MjE5MjddfQ==
+eyJoaXN0b3J5IjpbLTIwNjE2NDU2MTUsMTc3MTQ0NDAwMywxNj
+QzODQ2MzIyLC0yMzM0NzE0NjYsLTE0NzY1MzQ1NjAsLTE0NzY1
+MzQ1NjAsMTQ5OTM2MDcxOCwxNDAyNzAwMDczLDE0MDM2Njk1MS
+wtNzYwNjkwNTE3LDgwODg0MDI5NSw1MjgwMTY4NzksMTgwNDAx
+OTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1NSwtMTI2NzY3NzUzNS
+wtOTYxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1MjMzNzY1MDgsMTM4
+NjQyMTkyN119
 -->
