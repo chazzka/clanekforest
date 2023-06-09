@@ -204,6 +204,8 @@ Whereas the original Isolation Forest is evaluating the split point based on the
 For this to work, several alterations to the split point evaluation and form of data passed between nodes has to be done, but the overall concept of the forest stays the same. 
 This is demonstrated by simply adding a new service to our proposed algorithm.
   - [ ] TODO: šup sem odkaz na ruby algorithm s dokumentací
+
+ We encourage you to try it and maybe create your own service
  
 
 
@@ -232,11 +234,11 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY4MDE3MzgzLC0yMzM0NzE0NjYsLTE0Nz
-Y1MzQ1NjAsLTE0NzY1MzQ1NjAsMTQ5OTM2MDcxOCwxNDAyNzAw
-MDczLDE0MDM2Njk1MSwtNzYwNjkwNTE3LDgwODg0MDI5NSw1Mj
-gwMTY4NzksMTgwNDAxOTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1
-NSwtMTI2NzY3NzUzNSwtOTYxNjA4NjUxLDE4Mzk1MjkxMTAsLT
-E1MjMzNzY1MDgsMTM4NjQyMTkyNyw2NTY0NTM1LDE3NDUzOTA3
-MzFdfQ==
+eyJoaXN0b3J5IjpbLTIwNzY5Mzk3NTUsLTIzMzQ3MTQ2NiwtMT
+Q3NjUzNDU2MCwtMTQ3NjUzNDU2MCwxNDk5MzYwNzE4LDE0MDI3
+MDAwNzMsMTQwMzY2OTUxLC03NjA2OTA1MTcsODA4ODQwMjk1LD
+UyODAxNjg3OSwxODA0MDE5Nzk2LDEzNTUxMTUzOCwxMTI2MTcw
+ODU1LC0xMjY3Njc3NTM1LC05NjE2MDg2NTEsMTgzOTUyOTExMC
+wtMTUyMzM3NjUwOCwxMzg2NDIxOTI3LDY1NjQ1MzUsMTc0NTM5
+MDczMV19
 -->
