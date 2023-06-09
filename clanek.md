@@ -210,7 +210,7 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
  
  
 
- 4. List item
+ 1. List item
 
  
 
@@ -240,7 +240,7 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNzAwNTU4MywtMjMzNDcxNDY2LC0xND
+eyJoaXN0b3J5IjpbMTY0Mzg0NjMyMiwtMjMzNDcxNDY2LC0xND
 c2NTM0NTYwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MTgsMTQwMjcw
 MDA3MywxNDAzNjY5NTEsLTc2MDY5MDUxNyw4MDg4NDAyOTUsNT
 I4MDE2ODc5LDE4MDQwMTk3OTYsMTM1NTExNTM4LDExMjYxNzA4
