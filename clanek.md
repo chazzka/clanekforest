@@ -177,7 +177,7 @@ The final question is if it is somehow possible to teach Isolation Forest how re
 Can we use Isolation Forest for novelty detection despite it not being primarily novelty detection algorithm? 
 
 ### SOTA
-Isolation forest has been widely used for outlier detection. In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets. Thorough the years, many successful enhancements of the Isolation Forest have arisen. Gałka, Karczmarek, Tokovarov in (https://doi.org/10.1016/j.patrec.2022.09.015) implement Minimal Spanning Tree clustering based enhancement, where the random determinantion of a split point is substitued by 
+Isolation forest has been widely used for outlier detection. In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets. Thorough the years, many successful enhancements of the Isolation Forest have arisen. Gałka, Karczmarek, Tokovarov in (https://doi.org/10.1016/j.patrec.2022.09.015) implement Minimal Spanning Tree clustering based enhancement. Insted of random determination of a split point, first, two clusters are prepared and then a split point is substituted by 
 
 ### Isolation forest experiments
 - [ ] TODO: TADY SI NAPÍŠEME VLASTNÍ FOREST A BUDEME DĚLAT CHYTRÉ
@@ -216,7 +216,7 @@ The basic problem with isolation forest not being able to detect novel observati
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MjI5NTE4OCw1MjgwMTY4NzksMTgwND
+eyJoaXN0b3J5IjpbMTYwMDg4MjcxNSw1MjgwMTY4NzksMTgwND
 AxOTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1NSwtMTI2NzY3NzUz
 NSwtOTYxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1MjMzNzY1MDgsMT
 M4NjQyMTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mzc4NTQ1
