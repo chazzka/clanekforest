@@ -211,9 +211,9 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
  1. When selecting a sample from the given data, to randomly selecting the sample of a given *batch size*,  the evaluation of range for each dimension was added.
  2. When the split point is calculated, random dimension is chosen and the split point is taken from the evaluated range (and not the data itself)
 
-The evaluation of a range starts by simply selecting some initial (either random or user defined) range. 
+The evaluation of a range starts by simply selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly.
-After that, during tree initialization, a random dimension is chosen (if presented only one-dimensional data, we take one dimension, like in the original article) 
+After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, like in the original article) and a random value is chosen of the 
  
 
 
@@ -242,7 +242,7 @@ After that, during tree initialization, a random dimension is chosen (if present
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1Mjk5NDEzMywxNzcxNDQ0MDAzLDE2ND
+eyJoaXN0b3J5IjpbMjE0MDQzMTE2MSwxNzcxNDQ0MDAzLDE2ND
 M4NDYzMjIsLTIzMzQ3MTQ2NiwtMTQ3NjUzNDU2MCwtMTQ3NjUz
 NDU2MCwxNDk5MzYwNzE4LDE0MDI3MDAwNzMsMTQwMzY2OTUxLC
 03NjA2OTA1MTcsODA4ODQwMjk1LDUyODAxNjg3OSwxODA0MDE5
