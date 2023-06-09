@@ -202,6 +202,7 @@ The problem is to somehow evaluate the sparseness of the data, differentiating b
 
 
 
+
 ### Experiments using IF as a Novelty detection tool
 
 - tady experimenty
@@ -226,11 +227,11 @@ The problem is to somehow evaluate the sparseness of the data, differentiating b
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5OTM2MDcxOCwxNDAyNzAwMDczLDE0MD
-M2Njk1MSwtNzYwNjkwNTE3LDgwODg0MDI5NSw1MjgwMTY4Nzks
-MTgwNDAxOTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1NSwtMTI2Nz
-Y3NzUzNSwtOTYxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1MjMzNzY1
-MDgsMTM4NjQyMTkyNyw2NTY0NTM1LDE3NDUzOTA3MzEsMTg4Mz
-c4NTQ1MCw2ODcyMDg2OTIsMTE0MDY3OTk2MiwtMTc4OTg0MjI3
-OF19
+eyJoaXN0b3J5IjpbLTE0NzY1MzQ1NjAsMTQ5OTM2MDcxOCwxND
+AyNzAwMDczLDE0MDM2Njk1MSwtNzYwNjkwNTE3LDgwODg0MDI5
+NSw1MjgwMTY4NzksMTgwNDAxOTc5NiwxMzU1MTE1MzgsMTEyNj
+E3MDg1NSwtMTI2NzY3NzUzNSwtOTYxNjA4NjUxLDE4Mzk1Mjkx
+MTAsLTE1MjMzNzY1MDgsMTM4NjQyMTkyNyw2NTY0NTM1LDE3ND
+UzOTA3MzEsMTg4Mzc4NTQ1MCw2ODcyMDg2OTIsMTE0MDY3OTk2
+Ml19
 -->
