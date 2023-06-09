@@ -175,8 +175,11 @@ Despite this, one positive thing is that Isolation Forest managed to deal with t
 
 The final question is if it is somehow possible to teach Isolation Forest how regular observation look like. 
 Can we use Isolation Forest for novelty detection despite it not being primarily novelty detection algorithm? 
-To answer these questions, lets thoroughly analyze the Isolation Forest first.
 
+### SOTA
+
+
+### Isolation forest experiments
 - [ ] TODO: TADY SI NAPÍŠEME VLASTNÍ FOREST A BUDEME DĚLAT CHYTRÉ
 - [ ] TODO: TADY POPIŠ ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD 
 
@@ -213,11 +216,11 @@ The basic problem with isolation forest not being able to detect novel observati
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI4MDE2ODc5LDE4MDQwMTk3OTYsMTM1NT
-ExNTM4LDExMjYxNzA4NTUsLTEyNjc2Nzc1MzUsLTk2MTYwODY1
-MSwxODM5NTI5MTEwLC0xNTIzMzc2NTA4LDEzODY0MjE5MjcsNj
-U2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAsNjg3MjA4Njky
-LDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3NDU4LC0xOT
-QwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5NDAzLDE2MTQz
-MjMzMzBdfQ==
+eyJoaXN0b3J5IjpbMTk2MzE1MDYxLDUyODAxNjg3OSwxODA0MD
+E5Nzk2LDEzNTUxMTUzOCwxMTI2MTcwODU1LC0xMjY3Njc3NTM1
+LC05NjE2MDg2NTEsMTgzOTUyOTExMCwtMTUyMzM3NjUwOCwxMz
+g2NDIxOTI3LDY1NjQ1MzUsMTc0NTM5MDczMSwxODgzNzg1NDUw
+LDY4NzIwODY5MiwxMTQwNjc5OTYyLC0xNzg5ODQyMjc4LDU5NT
+Y4NzQ1OCwtMTk0MDgxNjQyMywtMTM0MzEwMTY2OSwtMTE5ODcy
+OTQwM119
 -->
