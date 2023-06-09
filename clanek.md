@@ -215,7 +215,8 @@ The evaluation of a range starts by simply selecting some initial (either random
 This range should be reasonable enough to allow all the domain space to be separated correctly.
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, like in the original article) and a random value is chosen out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
-Each group is then assigned a new ranges array wher 
+Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
+For example if the selected split point was number 7, then 
  
 
 
@@ -244,11 +245,11 @@ Each group is then assigned a new ranges array wher
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjUzOTA0MTgsLTE0MDc5NDAzODYsMT
-c3MTQ0NDAwMywxNjQzODQ2MzIyLC0yMzM0NzE0NjYsLTE0NzY1
-MzQ1NjAsLTE0NzY1MzQ1NjAsMTQ5OTM2MDcxOCwxNDAyNzAwMD
-czLDE0MDM2Njk1MSwtNzYwNjkwNTE3LDgwODg0MDI5NSw1Mjgw
-MTY4NzksMTgwNDAxOTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1NS
-wtMTI2NzY3NzUzNSwtOTYxNjA4NjUxLDE4Mzk1MjkxMTAsLTE1
-MjMzNzY1MDhdfQ==
+eyJoaXN0b3J5IjpbMzQwMjQ5NDE0LC0xNDA3OTQwMzg2LDE3Nz
+E0NDQwMDMsMTY0Mzg0NjMyMiwtMjMzNDcxNDY2LC0xNDc2NTM0
+NTYwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MTgsMTQwMjcwMDA3My
+wxNDAzNjY5NTEsLTc2MDY5MDUxNyw4MDg4NDAyOTUsNTI4MDE2
+ODc5LDE4MDQwMTk3OTYsMTM1NTExNTM4LDExMjYxNzA4NTUsLT
+EyNjc2Nzc1MzUsLTk2MTYwODY1MSwxODM5NTI5MTEwLC0xNTIz
+Mzc2NTA4XX0=
 -->
