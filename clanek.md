@@ -201,7 +201,11 @@ In our proposed enhancement, we clearly have to deal with this issue.
 The problem is to somehow evaluate the sparseness of the data, differentiating between datapoint being >80 and somehow "far bigger than 80", making the latter novelty.
 The proposed solution is altering the concept of evaluation of a split point.
 Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on the whole range.
-For this to work, several alterations to the split point evaluation and form of data passed between nodes has to be done, but the overall concept of the forest stays the same. This is demonstrated by simply adding a new service to
+For this to work, several alterations to the split point evaluation and form of data passed between nodes has to be done, but the overall concept of the forest stays the same. 
+This is demonstrated by simply adding a new service to our proposed algorithm.
+  - [ ] TODO: šup sem odkaz na ruby algorithm s dokumentací
+ 
+ The service 
 
 
 
@@ -229,7 +233,7 @@ For this to work, several alterations to the split point evaluation and form of 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAzNjY5MzkyLC0yMzM0NzE0NjYsLTE0Nz
+eyJoaXN0b3J5IjpbOTEzMDg5MDUzLC0yMzM0NzE0NjYsLTE0Nz
 Y1MzQ1NjAsLTE0NzY1MzQ1NjAsMTQ5OTM2MDcxOCwxNDAyNzAw
 MDczLDE0MDM2Njk1MSwtNzYwNjkwNTE3LDgwODg0MDI5NSw1Mj
 gwMTY4NzksMTgwNDAxOTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1
