@@ -200,7 +200,8 @@ This results in 5000 being in the same node as numbers >80, making the novelty d
 In our proposed enhancement, we clearly have to deal with this issue.
 The problem is to somehow evaluate the sparseness of the data, differentiating between datapoint being >80 and somehow "far bigger than 80", making the latter novelty.
 The proposed solution is altering the concept of evaluation of a split point.
-Whereas the original Isolation Forest is making 
+Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on the whole range.
+For this to work, several alterations to the split point evaluation and data 
 
 
 
@@ -228,11 +229,11 @@ Whereas the original Isolation Forest is making
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzYwMzg5ODcsLTIzMzQ3MTQ2NiwtMT
-Q3NjUzNDU2MCwtMTQ3NjUzNDU2MCwxNDk5MzYwNzE4LDE0MDI3
-MDAwNzMsMTQwMzY2OTUxLC03NjA2OTA1MTcsODA4ODQwMjk1LD
-UyODAxNjg3OSwxODA0MDE5Nzk2LDEzNTUxMTUzOCwxMTI2MTcw
-ODU1LC0xMjY3Njc3NTM1LC05NjE2MDg2NTEsMTgzOTUyOTExMC
-wtMTUyMzM3NjUwOCwxMzg2NDIxOTI3LDY1NjQ1MzUsMTc0NTM5
-MDczMV19
+eyJoaXN0b3J5IjpbMTg4NjcyNjgzNiwtMjMzNDcxNDY2LC0xND
+c2NTM0NTYwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MTgsMTQwMjcw
+MDA3MywxNDAzNjY5NTEsLTc2MDY5MDUxNyw4MDg4NDAyOTUsNT
+I4MDE2ODc5LDE4MDQwMTk3OTYsMTM1NTExNTM4LDExMjYxNzA4
+NTUsLTEyNjc2Nzc1MzUsLTk2MTYwODY1MSwxODM5NTI5MTEwLC
+0xNTIzMzc2NTA4LDEzODY0MjE5MjcsNjU2NDUzNSwxNzQ1Mzkw
+NzMxXX0=
 -->
