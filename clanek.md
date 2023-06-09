@@ -194,8 +194,8 @@ This results in 5000 being in the same node as numbers >80, making the novelty d
 > Figure X Isolation Forest novelty point insertion on using classic IF. 
 
 
- 1. [ ] TODO:  blabla tady pokračujeme že možná nějaký obrázek jak to funguje že neustále se zmenšuje ten frame, to nám vlastně zapříčiní že 100,100 je stjeně novelty jako 1000,1000.
- 2. [ ] TODO: tady popíšeme naši isolation servisku
+ - [ ] TODO:  blabla tady pokračujeme že možná nějaký obrázek jak to funguje že neustále se zmenšuje ten frame, to nám vlastně zapříčiní že 100,100 je stjeně novelty jako 1000,1000.
+ - [ ] TODO: tady popíšeme naši isolation servisku
  
 In our proposed enhancement, we clearly have to deal with this issue.
 The problem is to somehow evaluate the sparseness of the data, differentiating between datapoint being >80 and somehow "far bigger than 80", making the latter novelty.
@@ -208,9 +208,8 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
  We encourage you to try it and maybe create your own service based on our already implemented ones.
  This service called Novelty is making two main alteration concepts:
  
- 
-
  1. List item
+ 2. 
 
  
 
@@ -240,11 +239,11 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0Mzg0NjMyMiwtMjMzNDcxNDY2LC0xND
-c2NTM0NTYwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MTgsMTQwMjcw
-MDA3MywxNDAzNjY5NTEsLTc2MDY5MDUxNyw4MDg4NDAyOTUsNT
-I4MDE2ODc5LDE4MDQwMTk3OTYsMTM1NTExNTM4LDExMjYxNzA4
-NTUsLTEyNjc2Nzc1MzUsLTk2MTYwODY1MSwxODM5NTI5MTEwLC
-0xNTIzMzc2NTA4LDEzODY0MjE5MjcsNjU2NDUzNSwxNzQ1Mzkw
-NzMxXX0=
+eyJoaXN0b3J5IjpbMTc3MTQ0NDAwMywxNjQzODQ2MzIyLC0yMz
+M0NzE0NjYsLTE0NzY1MzQ1NjAsLTE0NzY1MzQ1NjAsMTQ5OTM2
+MDcxOCwxNDAyNzAwMDczLDE0MDM2Njk1MSwtNzYwNjkwNTE3LD
+gwODg0MDI5NSw1MjgwMTY4NzksMTgwNDAxOTc5NiwxMzU1MTE1
+MzgsMTEyNjE3MDg1NSwtMTI2NzY3NzUzNSwtOTYxNjA4NjUxLD
+E4Mzk1MjkxMTAsLTE1MjMzNzY1MDgsMTM4NjQyMTkyNyw2NTY0
+NTM1XX0=
 -->
