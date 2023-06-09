@@ -16,8 +16,6 @@
 - **toto až nakonec až budeme vědět co vlastně fungovalo**
 - **here we describe the domain!! - aneb jak ta data vypadají - co je cílem hlavně vysvětlit že chceme cluster anomalii ne jen anomalie**
  
-## SOTA
-
 
 ## Methods
 
@@ -215,11 +213,11 @@ The basic problem with isolation forest not being able to detect novel observati
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNDAxOTc5NiwxMzU1MTE1MzgsMTEyNj
-E3MDg1NSwtMTI2NzY3NzUzNSwtOTYxNjA4NjUxLDE4Mzk1Mjkx
-MTAsLTE1MjMzNzY1MDgsMTM4NjQyMTkyNyw2NTY0NTM1LDE3ND
-UzOTA3MzEsMTg4Mzc4NTQ1MCw2ODcyMDg2OTIsMTE0MDY3OTk2
-MiwtMTc4OTg0MjI3OCw1OTU2ODc0NTgsLTE5NDA4MTY0MjMsLT
-EzNDMxMDE2NjksLTExOTg3Mjk0MDMsMTYxNDMyMzMzMCwtNTk0
-Mjg5NjI3XX0=
+eyJoaXN0b3J5IjpbNTI4MDE2ODc5LDE4MDQwMTk3OTYsMTM1NT
+ExNTM4LDExMjYxNzA4NTUsLTEyNjc2Nzc1MzUsLTk2MTYwODY1
+MSwxODM5NTI5MTEwLC0xNTIzMzc2NTA4LDEzODY0MjE5MjcsNj
+U2NDUzNSwxNzQ1MzkwNzMxLDE4ODM3ODU0NTAsNjg3MjA4Njky
+LDExNDA2Nzk5NjIsLTE3ODk4NDIyNzgsNTk1Njg3NDU4LC0xOT
+QwODE2NDIzLC0xMzQzMTAxNjY5LC0xMTk4NzI5NDAzLDE2MTQz
+MjMzMzBdfQ==
 -->
