@@ -14,7 +14,7 @@
 - general -> specific (describe problem as a whole, then why the problems occurs, then why is it a problem for us, technical details, env. variables)
 - constribution
 - **toto až nakonec až budeme vědět co vlastně fungovalo**
-- **here we describe the domain!! - aneb jak ta data vypadají - co je cílem hlavně vysvětlit že chceme cluster anomalii ne jen anomalie**
+- **here we describe the domain!! - aneb jak ta data vypadají - co je cílem hlavně vysvětlit že chceme cluster anomalii ne jen anomalie - asi hledame jen anomalie ale, dbscan cpat nebudeme**
  
 
 ## Methods
@@ -177,7 +177,7 @@ Isolation forest has been widely used for outlier detection.
 In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets.
 Thorough the years, many successful enhancements of the Isolation Forest have arisen. Gałka, Karczmarek, Tokovarov in (https://doi.org/10.1016/j.patrec.2022.09.015) implement Minimal Spanning Tree clustering based enhancement.
 Instead of random determination of a split point, first, two clusters are prepared and then a split point is set to the middle of prepared clusters. Another interesting enhancement comes from Chater and al. (https://doi.org/10.1016/j.procs.2022.09.147) where the team deal with the necessity of having precise and crisp data when using basic Isolation Forest approach by implementing Fuzzy adaptation for the Isolation Forest.
-However,  there seems to be not much work regarding using Isolation Forest as a novelty detection tool. 
+However, there seems to be not much work regarding using Isolation Forest as a novelty detection tool. 
 
 ### Isolation forest experiments
 - [ ] TODO: TADY SI NAPÍŠEME VLASTNÍ FOREST A BUDEME DĚLAT CHYTRÉ
@@ -208,15 +208,15 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
  We encourage you to try it and maybe create your own service based on our already implemented ones.
  This service called Novelty is making two main alteration concepts:
  
- 1. When selecting a sample from the given data, to randomly selecting the sample of a given *batch size*,  the evaluation of range for each dimension was added.
- 2. When the split point is calculated, random dimension is chosen and the split point is taken from the evaluated range (and not the data itself).
+ 1. When selecting a sample from the given data, to randomly selecting the sample of a given *batch size*, the evaluation of range for each dimension was added.
+ 2. When the split point is calculated, random dimension is chosen, and the split point is taken from the evaluated range (and not the data itself).
 
 The evaluation of a range starts by simply selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly.
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, like in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
 Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
-For example if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
+For example, if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
 Using this, we never loose any data like in the original article, making novelty detection possible.
 Figure X demonstrates this by adding two novel points (considering the learning sample of data beginning with 0 and ending with 100) and we can see that using our approach we successfully isolated both numbers (5000 and 2000, which are considerably far away from each other) in different nodes.
 
@@ -248,11 +248,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzg1MDE4MDQsMjAxMTIxMTk0OCwtMT
-QwNzk0MDM4NiwxNzcxNDQ0MDAzLDE2NDM4NDYzMjIsLTIzMzQ3
-MTQ2NiwtMTQ3NjUzNDU2MCwtMTQ3NjUzNDU2MCwxNDk5MzYwNz
-E4LDE0MDI3MDAwNzMsMTQwMzY2OTUxLC03NjA2OTA1MTcsODA4
-ODQwMjk1LDUyODAxNjg3OSwxODA0MDE5Nzk2LDEzNTUxMTUzOC
-wxMTI2MTcwODU1LC0xMjY3Njc3NTM1LC05NjE2MDg2NTEsMTgz
-OTUyOTExMF19
+eyJoaXN0b3J5IjpbLTczODQyMTcyNywtMTkzODUwMTgwNCwyMD
+ExMjExOTQ4LC0xNDA3OTQwMzg2LDE3NzE0NDQwMDMsMTY0Mzg0
+NjMyMiwtMjMzNDcxNDY2LC0xNDc2NTM0NTYwLC0xNDc2NTM0NT
+YwLDE0OTkzNjA3MTgsMTQwMjcwMDA3MywxNDAzNjY5NTEsLTc2
+MDY5MDUxNyw4MDg4NDAyOTUsNTI4MDE2ODc5LDE4MDQwMTk3OT
+YsMTM1NTExNTM4LDExMjYxNzA4NTUsLTEyNjc2Nzc1MzUsLTk2
+MTYwODY1MV19
 -->
