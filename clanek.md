@@ -3,7 +3,7 @@
 ## Abstract
 - téma
 - toto jsme udělali
-- co řešíme (řešíme problem hledání clusterů dat, ne problem nějakeho algoritmu)
+- co řešíme
 - takto
 - takto jsme to otestovali
 - toto je výsledek
@@ -249,11 +249,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODIyMDI0NzEsLTE5Mzg1MDE4MDQsMj
-AxMTIxMTk0OCwtMTQwNzk0MDM4NiwxNzcxNDQ0MDAzLDE2NDM4
-NDYzMjIsLTIzMzQ3MTQ2NiwtMTQ3NjUzNDU2MCwtMTQ3NjUzND
-U2MCwxNDk5MzYwNzE4LDE0MDI3MDAwNzMsMTQwMzY2OTUxLC03
-NjA2OTA1MTcsODA4ODQwMjk1LDUyODAxNjg3OSwxODA0MDE5Nz
-k2LDEzNTUxMTUzOCwxMTI2MTcwODU1LC0xMjY3Njc3NTM1LC05
-NjE2MDg2NTFdfQ==
+eyJoaXN0b3J5IjpbNTM5MDA2NTczLC0xMTgyMjAyNDcxLC0xOT
+M4NTAxODA0LDIwMTEyMTE5NDgsLTE0MDc5NDAzODYsMTc3MTQ0
+NDAwMywxNjQzODQ2MzIyLC0yMzM0NzE0NjYsLTE0NzY1MzQ1Nj
+AsLTE0NzY1MzQ1NjAsMTQ5OTM2MDcxOCwxNDAyNzAwMDczLDE0
+MDM2Njk1MSwtNzYwNjkwNTE3LDgwODg0MDI5NSw1MjgwMTY4Nz
+ksMTgwNDAxOTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1NSwtMTI2
+NzY3NzUzNV19
 -->
