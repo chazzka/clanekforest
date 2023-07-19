@@ -19,7 +19,7 @@
 
 ## Methods
 
-- [ ] TODO: toto se přepíše na ukázku toho co už existuje, jak
+- [ ] TODO: toto se přepíše na ukázku obecně toho problému s novelty detection
 
 The very first task is to thoroughly analyze the domain of the given problem.
 The inappropriate choice of the selected solution could lead to undesirable results.
@@ -32,11 +32,11 @@ However, the errors report some kind of observable behavior.
 This is usually the case when performing cluster analysis.
 The main constraint that is crucial for this task is the cluster forming pattern.
 The task could become straightforward if we divide it into subordinate tasks.
-First of them is to use the knowledge to separate non-anomalies (not yet clusters).
-Doing so, the data that is left are anomalies-only where the task of finding anomaly clusters only becomes less challenging. 
 
 The most straightforward solution when trying to find anomalies in above-shown data would be to use some kind of statistical method that would split the data in a certain ratio.
 Figure X shows the mean (straight line) of the given data. 
+
+- [ ] TODO: toto je teď špatně, my chceme ukázat čtenáři že začínáme s regular data a pak až máme novelty
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/mean_great_colored.svg) 
 > Figure X - Mean of the given dataset with anomalies.
@@ -251,7 +251,7 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjM1NjM1OCwtMTE4MjIwMjQ3MSwtMT
+eyJoaXN0b3J5IjpbLTYzOTAxOTMxMSwtMTE4MjIwMjQ3MSwtMT
 kzODUwMTgwNCwyMDExMjExOTQ4LC0xNDA3OTQwMzg2LDE3NzE0
 NDQwMDMsMTY0Mzg0NjMyMiwtMjMzNDcxNDY2LC0xNDc2NTM0NT
 YwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MTgsMTQwMjcwMDA3Mywx
