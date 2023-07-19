@@ -52,6 +52,7 @@ Obviously, if the dataset contained no anomalies at all, the result would become
 > Figure X - Mean of the given dataset with little to zero anomalies.
 
 
+- [ ] TODO: toto už není pravda, když je to novelty DB scan použít nejde
 
 One could easily argue that there is an option of using pure clustering algorithms (e.g. ([DBScan](doi/10.5555/3001460.3001507)).
 This, however, leads to unpleasant outcome.
@@ -64,6 +65,8 @@ Therefore, our proposed solution separates the anomalies first and then tries to
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/DBScanGap.svg) 
 > Figure X - DBScan performance
+
+- [ ] TODO: toto je super, nechat
 
 Traditional approaches for anomaly separation consist of either novelty detection or outlier detection.
 Novelty detection is an anomaly detection mechanism, where we search for unusual observations, which are discovered due to their differences from the training data.
@@ -251,11 +254,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzOTAxOTMxMSwtMTE4MjIwMjQ3MSwtMT
-kzODUwMTgwNCwyMDExMjExOTQ4LC0xNDA3OTQwMzg2LDE3NzE0
-NDQwMDMsMTY0Mzg0NjMyMiwtMjMzNDcxNDY2LC0xNDc2NTM0NT
-YwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MTgsMTQwMjcwMDA3Mywx
-NDAzNjY5NTEsLTc2MDY5MDUxNyw4MDg4NDAyOTUsNTI4MDE2OD
-c5LDE4MDQwMTk3OTYsMTM1NTExNTM4LDExMjYxNzA4NTUsLTEy
-Njc2Nzc1MzVdfQ==
+eyJoaXN0b3J5IjpbNzMwMjUxNjI0LC0xMTgyMjAyNDcxLC0xOT
+M4NTAxODA0LDIwMTEyMTE5NDgsLTE0MDc5NDAzODYsMTc3MTQ0
+NDAwMywxNjQzODQ2MzIyLC0yMzM0NzE0NjYsLTE0NzY1MzQ1Nj
+AsLTE0NzY1MzQ1NjAsMTQ5OTM2MDcxOCwxNDAyNzAwMDczLDE0
+MDM2Njk1MSwtNzYwNjkwNTE3LDgwODg0MDI5NSw1MjgwMTY4Nz
+ksMTgwNDAxOTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1NSwtMTI2
+NzY3NzUzNV19
 -->
