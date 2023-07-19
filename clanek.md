@@ -14,10 +14,12 @@
 - general -> specific (describe problem as a whole, then why the problems occurs, then why is it a problem for us, technical details, env. variables)
 - constribution
 - **toto až nakonec až budeme vědět co vlastně fungovalo**
-- **here we describe the domain!! - aneb jak ta data vypadají - co je cílem hlavně vysvětlit že chceme cluster anomalii ne jen anomalie - asi hledame jen anomalie ale, dbscan cpat nebudeme**
+- **here we describe the domain!! - aneb jak ta data vypadají - co je cílem hlavně vysvětlit čeho jsme chtěli dosáhnout**
  
 
 ## Methods
+
+- [ ] TODO: toto se přepíše na ukázku toho co už existuje, jak
 
 The very first task is to thoroughly analyze the domain of the given problem.
 The inappropriate choice of the selected solution could lead to undesirable results.
@@ -249,11 +251,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5MDA2NTczLC0xMTgyMjAyNDcxLC0xOT
-M4NTAxODA0LDIwMTEyMTE5NDgsLTE0MDc5NDAzODYsMTc3MTQ0
-NDAwMywxNjQzODQ2MzIyLC0yMzM0NzE0NjYsLTE0NzY1MzQ1Nj
-AsLTE0NzY1MzQ1NjAsMTQ5OTM2MDcxOCwxNDAyNzAwMDczLDE0
-MDM2Njk1MSwtNzYwNjkwNTE3LDgwODg0MDI5NSw1MjgwMTY4Nz
-ksMTgwNDAxOTc5NiwxMzU1MTE1MzgsMTEyNjE3MDg1NSwtMTI2
-NzY3NzUzNV19
+eyJoaXN0b3J5IjpbLTEyNjM1NjM1OCwtMTE4MjIwMjQ3MSwtMT
+kzODUwMTgwNCwyMDExMjExOTQ4LC0xNDA3OTQwMzg2LDE3NzE0
+NDQwMDMsMTY0Mzg0NjMyMiwtMjMzNDcxNDY2LC0xNDc2NTM0NT
+YwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MTgsMTQwMjcwMDA3Mywx
+NDAzNjY5NTEsLTc2MDY5MDUxNyw4MDg4NDAyOTUsNTI4MDE2OD
+c5LDE4MDQwMTk3OTYsMTM1NTExNTM4LDExMjYxNzA4NTUsLTEy
+Njc2Nzc1MzVdfQ==
 -->
