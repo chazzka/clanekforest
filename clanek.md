@@ -111,20 +111,16 @@ Even human will find it nearly impossible to differentiate between these two cla
 Finding the line itself is obvious.
 Deciding which observations are anomalies, without some domain knowledge on the other hand is close to impossible.
 
-Despite this, one positive thing is that Isolation Forest managed to deal with the gaps in the measurement (seen in Figures above, around X=50). 
-
 The final question is if it is somehow possible to teach Isolation Forest how regular observation look like. 
 Can we use Isolation Forest for novelty detection despite it not being primarily novelty detection algorithm? 
 
 ### SOTA
 Isolation forest has been widely used for outlier detection. 
 In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets.
-Thorough the years, many successful enhancements of the Isolation Forest have arisen. Gałka, Karczmarek, Tokovarov in (https://doi.org/10.1016/j.patrec.2022.09.015) implement Minimal Spanning Tree clustering based enhancement.
+Thorough the years, many successful enhancements of the Isolation Forest have been developed. Gałka, Karczmarek, Tokovarov in (https://doi.org/10.1016/j.patrec.2022.09.015) implement Minimal Spanning Tree clustering based enhancement.
 Instead of random determination of a split point, first, two clusters are prepared and then a split point is set to the middle of prepared clusters. Another interesting enhancement comes from Chater and al. (https://doi.org/10.1016/j.procs.2022.09.147) where the team deal with the necessity of having precise and crisp data when using basic Isolation Forest approach by implementing Fuzzy adaptation for the Isolation Forest.
-However, there seems to be not much work regarding using Isolation Forest as a novelty detection tool. 
+However, there does not seem to be much work regarding using Isolation Forest as a novelty detection tool. 
 
-### Isolation forest experiments
-- [ ] TODO: TADY SI NAPÍŠEME VLASTNÍ FOREST A BUDEME DĚLAT CHYTRÉ
 
 ### Proposed novelty isolation forest enhancement
 In this section, we propose a new approach for making forest detect novel observations. 
@@ -192,11 +188,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTI5OTcwMDYsMTEwNDcyODM5LC04Mj
-U0NzA1OTEsLTE5MzAzNzk2NTAsLTcyNzU2Nzk1MiwtMTE4MjIw
-MjQ3MSwtMTkzODUwMTgwNCwyMDExMjExOTQ4LC0xNDA3OTQwMz
-g2LDE3NzE0NDQwMDMsMTY0Mzg0NjMyMiwtMjMzNDcxNDY2LC0x
-NDc2NTM0NTYwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MTgsMTQwMj
-cwMDA3MywxNDAzNjY5NTEsLTc2MDY5MDUxNyw4MDg4NDAyOTUs
-NTI4MDE2ODc5XX0=
+eyJoaXN0b3J5IjpbLTg1MDEyNTU1MiwxMTA0NzI4MzksLTgyNT
+Q3MDU5MSwtMTkzMDM3OTY1MCwtNzI3NTY3OTUyLC0xMTgyMjAy
+NDcxLC0xOTM4NTAxODA0LDIwMTEyMTE5NDgsLTE0MDc5NDAzOD
+YsMTc3MTQ0NDAwMywxNjQzODQ2MzIyLC0yMzM0NzE0NjYsLTE0
+NzY1MzQ1NjAsLTE0NzY1MzQ1NjAsMTQ5OTM2MDcxOCwxNDAyNz
+AwMDczLDE0MDM2Njk1MSwtNzYwNjkwNTE3LDgwODg0MDI5NSw1
+MjgwMTY4NzldfQ==
 -->
