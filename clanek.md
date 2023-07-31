@@ -21,37 +21,6 @@
 
 - [ ] TODO: toto se přepíše na ukázku obecně toho problému s novelty detection
 
-The very first task is to thoroughly analyze the domain of the given problem.
-The inappropriate choice of the selected solution could lead to undesirable results.
-Having the problem already described, we are now able to analyze and establish a learning process. 
-
-Using the data domain knowledge, some constraints usually arise.
-As described in the introductory section, we expect the sensors to produce linear-like data, with minor deviations within the *y* axis.
-These deviations do not follow any specific pattern and are completely random.
-However, the errors report some kind of observable behavior.
-This is usually the case when performing cluster analysis.
-The main constraint that is crucial for this task is the cluster forming pattern.
-The task could become straightforward if we divide it into subordinate tasks.
-
-The most straightforward solution when trying to find anomalies in above-shown data would be to use some kind of statistical method that would split the data in a certain ratio.
-Figure X shows the mean (straight line) of the given data. 
-
-- [ ] TODO: toto je teď špatně, my chceme ukázat čtenáři že začínáme s regular data a pak až máme novelty
-
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/mean_great_colored.svg) 
-> Figure X - Mean of the given dataset with anomalies.
-
-Although this may look positive on the first glance, several problems arise.
-The initial one is with the automated distinction.
-When the dataset is polluted with anomalies in close to 1:1 ratio, even for human it is close to impossible to differentiate anomalies and regular observation.
-The second problem brings up when anomalies are not present at all, making mean method unusable.
-Figure X shows the mean method when used on the dataset polluted by very little anomalies.
-Obviously, if the dataset contained no anomalies at all, the result would become even more deficient.
-
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/mean_wrong_colored.svg) 
-> Figure X - Mean of the given dataset with little to zero anomalies.
-
-
 - [ ] TODO: toto je super, nechat
 
 Traditional approaches for anomaly separation consist of either novelty detection or outlier detection.
@@ -182,7 +151,7 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NTcyMTI5NSwxMTA0NzI4MzksLTgyNT
+eyJoaXN0b3J5IjpbMTk5Nzk2NDUxMCwxMTA0NzI4MzksLTgyNT
 Q3MDU5MSwtMTkzMDM3OTY1MCwtNzI3NTY3OTUyLC0xMTgyMjAy
 NDcxLC0xOTM4NTAxODA0LDIwMTEyMTE5NDgsLTE0MDc5NDAzOD
 YsMTc3MTQ0NDAwMywxNjQzODQ2MzIyLC0yMzM0NzE0NjYsLTE0
