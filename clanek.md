@@ -18,6 +18,7 @@
  
 ## SOTA
 - [ ] TODO: zde ze scikitu apod články na novelty detection algoritmy, stěmi to pak budeme porovnávat
+https://scikit-learn.org/stable/modules/outlier_detection.html#novelty-detection
 
 
 Isolation forest on the other hand, has been widely used for outlier detection. 
@@ -154,11 +155,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY0OTIzMTcxLC01NzE5MjMwMjYsMTQzNT
-IxNzY2NSwtMTk1NTMwNjc1OSwxOTk3OTY0NTEwLDExMDQ3Mjgz
-OSwtODI1NDcwNTkxLC0xOTMwMzc5NjUwLC03Mjc1Njc5NTIsLT
-ExODIyMDI0NzEsLTE5Mzg1MDE4MDQsMjAxMTIxMTk0OCwtMTQw
-Nzk0MDM4NiwxNzcxNDQ0MDAzLDE2NDM4NDYzMjIsLTIzMzQ3MT
-Q2NiwtMTQ3NjUzNDU2MCwtMTQ3NjUzNDU2MCwxNDk5MzYwNzE4
-LDE0MDI3MDAwNzNdfQ==
+eyJoaXN0b3J5IjpbMzUzNzA5ODY4LDI2NDkyMzE3MSwtNTcxOT
+IzMDI2LDE0MzUyMTc2NjUsLTE5NTUzMDY3NTksMTk5Nzk2NDUx
+MCwxMTA0NzI4MzksLTgyNTQ3MDU5MSwtMTkzMDM3OTY1MCwtNz
+I3NTY3OTUyLC0xMTgyMjAyNDcxLC0xOTM4NTAxODA0LDIwMTEy
+MTE5NDgsLTE0MDc5NDAzODYsMTc3MTQ0NDAwMywxNjQzODQ2Mz
+IyLC0yMzM0NzE0NjYsLTE0NzY1MzQ1NjAsLTE0NzY1MzQ1NjAs
+MTQ5OTM2MDcxOF19
 -->
