@@ -99,29 +99,8 @@ Despite its famousness, there are a few drawbacks.
 
 The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
 
-- [ ] TODO:  popíšeme 
-
-Other notable parameters with huge impact on the result are *number of estimators*, *max samples* and *max features*.
-Using similar dataset, we designed the experiment and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies) and varying above-mentioned parameters. 
-The result of the experiment shows Figure X.
-As we can see the results are quite distinct. 
-
-
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/isolation2.svg)
-> Anomaly 2:
-n_estimators=50
-max_samples= 20
-max_features=2
-contamination = 0.25
-
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/isolation3.svg)
-
-> Anomaly 3: 
-n_estimators=10
-max_samples= 10
-max_features=2
-contamination = 0.25
-
+- [ ] TODO:  popíšeme že scikit má nějaké novelty detection algortimy, budeme to s nimi porovnávat
+- [ ] TODO:  popíšeme že challenge je dobře nastavit hyperparametry
 
 This kind of issue is widely known amongst AutoML community.
 Some tools have already been implemented that try to deal with the issue of automatic hyperparameter tuning, namely H20 (h2o.ai) or AutoGluon (auto.gluon.ai). 
@@ -213,7 +192,7 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjU3NjU1MjQsMTEwNDcyODM5LC04Mj
+eyJoaXN0b3J5IjpbLTExOTI5OTcwMDYsMTEwNDcyODM5LC04Mj
 U0NzA1OTEsLTE5MzAzNzk2NTAsLTcyNzU2Nzk1MiwtMTE4MjIw
 MjQ3MSwtMTkzODUwMTgwNCwyMDExMjExOTQ4LC0xNDA3OTQwMz
 g2LDE3NzE0NDQwMDMsMTY0Mzg0NjMyMiwtMjMzNDcxNDY2LC0x
