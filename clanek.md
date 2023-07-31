@@ -19,6 +19,7 @@
 ## SOTA
 - [ ] TODO: zde ze scikitu apod články na novelty detection algoritmy, stěmi to pak budeme porovnávat
 
+
 Isolation forest on the other hand, has been widely used for outlier detection. 
 In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets.
 Thorough the years, many successful enhancements of the Isolation Forest have been developed. Gałka, Karczmarek, Tokovarov in (https://doi.org/10.1016/j.patrec.2022.09.015) implement Minimal Spanning Tree clustering based enhancement.
@@ -34,7 +35,7 @@ However, there does not seem to be much work regarding using Isolation Forest as
 Traditional approaches for anomaly separation consist of either novelty detection or outlier detection.
 Novelty detection is an anomaly detection mechanism, where we search for unusual observations, which are discovered due to their differences from the training data.
 Novelty detection is a semi-supervised anomaly-detection technique, whereas outlier detection uses unsupervised methods.
-With novelty detection, the training data is not polluted by outliers and we are interested in detecting whether a new observation is an outlier. In this context an outlier is also called a novelty.
+With novelty detection, the training data is not polluted by anomalous elements, and we are interested in detecting whether a new observation is an anomaly. In this context also called a novelty.
 This is a crucial distinction, due to a fact that whereas the outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them, novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision.
 This means, that if the dataset contains observations which look like anomalies but are still valid, the performance of unsupervised outlier detection in such case is usually unsatisfactory. 
 
@@ -153,11 +154,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MTkyMzAyNiwxNDM1MjE3NjY1LC0xOT
-U1MzA2NzU5LDE5OTc5NjQ1MTAsMTEwNDcyODM5LC04MjU0NzA1
-OTEsLTE5MzAzNzk2NTAsLTcyNzU2Nzk1MiwtMTE4MjIwMjQ3MS
-wtMTkzODUwMTgwNCwyMDExMjExOTQ4LC0xNDA3OTQwMzg2LDE3
-NzE0NDQwMDMsMTY0Mzg0NjMyMiwtMjMzNDcxNDY2LC0xNDc2NT
-M0NTYwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MTgsMTQwMjcwMDA3
-MywxNDAzNjY5NTFdfQ==
+eyJoaXN0b3J5IjpbMjY0OTIzMTcxLC01NzE5MjMwMjYsMTQzNT
+IxNzY2NSwtMTk1NTMwNjc1OSwxOTk3OTY0NTEwLDExMDQ3Mjgz
+OSwtODI1NDcwNTkxLC0xOTMwMzc5NjUwLC03Mjc1Njc5NTIsLT
+ExODIyMDI0NzEsLTE5Mzg1MDE4MDQsMjAxMTIxMTk0OCwtMTQw
+Nzk0MDM4NiwxNzcxNDQ0MDAzLDE2NDM4NDYzMjIsLTIzMzQ3MT
+Q2NiwtMTQ3NjUzNDU2MCwtMTQ3NjUzNDU2MCwxNDk5MzYwNzE4
+LDE0MDI3MDAwNzNdfQ==
 -->
