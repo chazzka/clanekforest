@@ -19,6 +19,8 @@
 ## SOTA
 - [ ] TODO: zde ze scikitu apod články na novelty detection algoritmy, stěmi to pak budeme porovnávat
 https://scikit-learn.org/stable/modules/outlier_detection.html#novelty-detection
+https://scikit-learn.org/stable/modules/outlier_detection.html#novelty-detection-with-local-outlier-factor
+
 
 
 Isolation forest on the other hand, has been widely used for outlier detection. 
@@ -29,7 +31,7 @@ However, there does not seem to be much work regarding using Isolation Forest as
 
 ## Methods
 
-- [ ] TODO: toto se přepíše na ukázku obecně toho problému s novelty detection
+- [ ] TODO: tadz bude ukázka obecně toho problému s novelty detection
 
 - [ ] TODO: toto je super, nechat
 
@@ -155,7 +157,7 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUzNzA5ODY4LDI2NDkyMzE3MSwtNTcxOT
+eyJoaXN0b3J5IjpbNTkwMjI1MDA2LDI2NDkyMzE3MSwtNTcxOT
 IzMDI2LDE0MzUyMTc2NjUsLTE5NTUzMDY3NTksMTk5Nzk2NDUx
 MCwxMTA0NzI4MzksLTgyNTQ3MDU5MSwtMTkzMDM3OTY1MCwtNz
 I3NTY3OTUyLC0xMTgyMjAyNDcxLC0xOTM4NTAxODA0LDIwMTEy
