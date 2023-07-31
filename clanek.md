@@ -98,31 +98,8 @@ Isolation tree je kořenový binární strom sestaven na základě vybrané podm
 Despite its famousness, there are a few drawbacks.
 
 The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
-Its implementation of Isolation Forest has, in time of writing this text, 5 hyperparameters which need to be explicitly chosen and tuned.
-First, the major challenge is setting the contamination parameter itself.
-The contamination parameter is to control the proportion of anomalies in the dataset. 
-Usually, this has to be known beforehand.
-This parameter has a huge impact on the final result of the detection.
-However, this is a problem because the anomalies in our dataset appear randomly and hence the proportion varies from 0% to 50%, sometimes even more.
-To demonstrate the impact of contamination parameter, we prepared following experiment.
-A dataset containing approx. 25% of anomalies is prepared.
-Figures below show the differences when using rising values of the contamination parameter.
-Note that dataset is generated randomly with each run.
 
-
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/contamination10.svg)
-> Figure X Isolation Forest with 10% contamination.
-
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/contamination20.svg)
-> Figure X Isolation Forest with 20% contamination.
-
-
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/contamination30.svg)
-> Figure X Isolation Forest with 30% contamination.
-
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/contamination40.svg)
-> Figure X Isolation Forest with 40% contamination.
-
+- [ ] TODO:  popíšeme 
 
 Other notable parameters with huge impact on the result are *number of estimators*, *max samples* and *max features*.
 Using similar dataset, we designed the experiment and tested the behavior of the Isolation Forest, with contamination parameter set to 0.25 (=25% anomalies) and varying above-mentioned parameters. 
@@ -236,11 +213,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNDcyODM5LC04MjU0NzA1OTEsLTE5Mz
-AzNzk2NTAsLTcyNzU2Nzk1MiwtMTE4MjIwMjQ3MSwtMTkzODUw
-MTgwNCwyMDExMjExOTQ4LC0xNDA3OTQwMzg2LDE3NzE0NDQwMD
-MsMTY0Mzg0NjMyMiwtMjMzNDcxNDY2LC0xNDc2NTM0NTYwLC0x
-NDc2NTM0NTYwLDE0OTkzNjA3MTgsMTQwMjcwMDA3MywxNDAzNj
-Y5NTEsLTc2MDY5MDUxNyw4MDg4NDAyOTUsNTI4MDE2ODc5LDE4
-MDQwMTk3OTZdfQ==
+eyJoaXN0b3J5IjpbLTE2MjU3NjU1MjQsMTEwNDcyODM5LC04Mj
+U0NzA1OTEsLTE5MzAzNzk2NTAsLTcyNzU2Nzk1MiwtMTE4MjIw
+MjQ3MSwtMTkzODUwMTgwNCwyMDExMjExOTQ4LC0xNDA3OTQwMz
+g2LDE3NzE0NDQwMDMsMTY0Mzg0NjMyMiwtMjMzNDcxNDY2LC0x
+NDc2NTM0NTYwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MTgsMTQwMj
+cwMDA3MywxNDAzNjY5NTEsLTc2MDY5MDUxNyw4MDg4NDAyOTUs
+NTI4MDE2ODc5XX0=
 -->
