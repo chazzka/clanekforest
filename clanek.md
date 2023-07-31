@@ -106,8 +106,6 @@ Isolation tree je kořenový binární strom sestaven na základě vybrané podm
 - [ ] TODO: ověřit $c(n)$ nějak mi to furt nesedí
 - [ ] TODO: Budeme to vysvětlovat obecně, nebo jen tak jak mi potřebujeme (2 dimenze x,y)?
 - [ ] TODO: Implementace v Pythonu
-   + [ ] jak je implementovaná funkce $c(x)$
-   + [ ] jak je to s `max-depth` je nastaven na $\ln_2(n)$
    + [ ] jak se stanoví první interval, je $\langle 0, 1\rangle$, nebo $\langle min(data),max(data)\rangle$ nebo jinak
    + [ ] co ovlivňuje contanimation v kódu
 - [ ] TODO: další možnost výzkumu (jinej článek) jak udělat isolation forest, 
@@ -254,11 +252,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNzU2Nzk1MiwtMTE4MjIwMjQ3MSwtMT
-kzODUwMTgwNCwyMDExMjExOTQ4LC0xNDA3OTQwMzg2LDE3NzE0
-NDQwMDMsMTY0Mzg0NjMyMiwtMjMzNDcxNDY2LC0xNDc2NTM0NT
-YwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MTgsMTQwMjcwMDA3Mywx
-NDAzNjY5NTEsLTc2MDY5MDUxNyw4MDg4NDAyOTUsNTI4MDE2OD
-c5LDE4MDQwMTk3OTYsMTM1NTExNTM4LDExMjYxNzA4NTUsLTEy
-Njc2Nzc1MzVdfQ==
+eyJoaXN0b3J5IjpbMTkwMzAxMzc1MCwtNzI3NTY3OTUyLC0xMT
+gyMjAyNDcxLC0xOTM4NTAxODA0LDIwMTEyMTE5NDgsLTE0MDc5
+NDAzODYsMTc3MTQ0NDAwMywxNjQzODQ2MzIyLC0yMzM0NzE0Nj
+YsLTE0NzY1MzQ1NjAsLTE0NzY1MzQ1NjAsMTQ5OTM2MDcxOCwx
+NDAyNzAwMDczLDE0MDM2Njk1MSwtNzYwNjkwNTE3LDgwODg0MD
+I5NSw1MjgwMTY4NzksMTgwNDAxOTc5NiwxMzU1MTE1MzgsMTEy
+NjE3MDg1NV19
 -->
