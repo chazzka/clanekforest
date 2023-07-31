@@ -52,20 +52,6 @@ Obviously, if the dataset contained no anomalies at all, the result would become
 > Figure X - Mean of the given dataset with little to zero anomalies.
 
 
-- [ ] TODO: toto už není pravda, když je to novelty DB scan použít nejde
-
-One could easily argue that there is an option of using pure clustering algorithms (e.g. ([DBScan](doi/10.5555/3001460.3001507)).
-This, however, leads to unpleasant outcome.
-Such algorithms tend to view the data as a cluster-only data, despite it being irrelevant in cluster regards.
-Figure X shows the performance of the DBScan algorithm on previously non-processed data, where different colors represent different clusters.
-Even though the algorithm did find some clusters, it would be demanding to differentiate and find the one with anomalies.
-Moreover, due to the gap in the measurement, the DBScan incorrectly split the regular observations into two clusters.
-This brings up the idea of algorithm cross-cooperation.
-Therefore, our proposed solution separates the anomalies first and then tries to find a cluster amongst them.
-
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/code/figures/DBScanGap.svg) 
-> Figure X - DBScan performance
-
 - [ ] TODO: toto je super, nechat
 
 Traditional approaches for anomaly separation consist of either novelty detection or outlier detection.
@@ -250,11 +236,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzAzNzk2NTAsLTcyNzU2Nzk1MiwtMT
-E4MjIwMjQ3MSwtMTkzODUwMTgwNCwyMDExMjExOTQ4LC0xNDA3
-OTQwMzg2LDE3NzE0NDQwMDMsMTY0Mzg0NjMyMiwtMjMzNDcxND
-Y2LC0xNDc2NTM0NTYwLC0xNDc2NTM0NTYwLDE0OTkzNjA3MTgs
-MTQwMjcwMDA3MywxNDAzNjY5NTEsLTc2MDY5MDUxNyw4MDg4ND
-AyOTUsNTI4MDE2ODc5LDE4MDQwMTk3OTYsMTM1NTExNTM4LDEx
-MjYxNzA4NTVdfQ==
+eyJoaXN0b3J5IjpbLTgyNTQ3MDU5MSwtMTkzMDM3OTY1MCwtNz
+I3NTY3OTUyLC0xMTgyMjAyNDcxLC0xOTM4NTAxODA0LDIwMTEy
+MTE5NDgsLTE0MDc5NDAzODYsMTc3MTQ0NDAwMywxNjQzODQ2Mz
+IyLC0yMzM0NzE0NjYsLTE0NzY1MzQ1NjAsLTE0NzY1MzQ1NjAs
+MTQ5OTM2MDcxOCwxNDAyNzAwMDczLDE0MDM2Njk1MSwtNzYwNj
+kwNTE3LDgwODg0MDI5NSw1MjgwMTY4NzksMTgwNDAxOTc5Niwx
+MzU1MTE1MzhdfQ==
 -->
