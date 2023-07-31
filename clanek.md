@@ -16,6 +16,14 @@
 - **toto až nakonec až budeme vědět co vlastně fungovalo**
 - **here we describe the domain!! - aneb jak ta data vypadají - co je cílem hlavně vysvětlit čeho jsme chtěli dosáhnout**
  
+## SOTA
+- [ ] to
+
+Isolation forest on the other hand, has been widely used for outlier detection. 
+In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets.
+Thorough the years, many successful enhancements of the Isolation Forest have been developed. Gałka, Karczmarek, Tokovarov in (https://doi.org/10.1016/j.patrec.2022.09.015) implement Minimal Spanning Tree clustering based enhancement.
+Instead of random determination of a split point, first, two clusters are prepared and then a split point is set to the middle of prepared clusters. Another interesting enhancement comes from Chater and al. (https://doi.org/10.1016/j.procs.2022.09.147) where the team deal with the necessity of having precise and crisp data when using basic Isolation Forest approach by implementing Fuzzy adaptation for the Isolation Forest.
+However, there does not seem to be much work regarding using Isolation Forest as a novelty detection tool. 
 
 ## Methods
 
@@ -82,14 +90,8 @@ Deciding which observations are anomalies, without some domain knowledge on the 
 The final question is if it is somehow possible to teach Isolation Forest how regular observation look like. 
 Can we use Isolation Forest for novelty detection despite it not being primarily novelty detection algorithm? 
 
-### SOTA
-Isolation forest has been widely used for outlier detection. 
-In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets.
-Thorough the years, many successful enhancements of the Isolation Forest have been developed. Gałka, Karczmarek, Tokovarov in (https://doi.org/10.1016/j.patrec.2022.09.015) implement Minimal Spanning Tree clustering based enhancement.
-Instead of random determination of a split point, first, two clusters are prepared and then a split point is set to the middle of prepared clusters. Another interesting enhancement comes from Chater and al. (https://doi.org/10.1016/j.procs.2022.09.147) where the team deal with the necessity of having precise and crisp data when using basic Isolation Forest approach by implementing Fuzzy adaptation for the Isolation Forest.
-However, there does not seem to be much work regarding using Isolation Forest as a novelty detection tool. 
 
-### Proposed novelty isolation forest enhancement
+## Proposed novelty isolation forest enhancement
 In this section, we propose a new approach for making forest detect novel observations. 
 The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
 The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
@@ -150,11 +152,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTUzMDY3NTksMTk5Nzk2NDUxMCwxMT
-A0NzI4MzksLTgyNTQ3MDU5MSwtMTkzMDM3OTY1MCwtNzI3NTY3
-OTUyLC0xMTgyMjAyNDcxLC0xOTM4NTAxODA0LDIwMTEyMTE5ND
-gsLTE0MDc5NDAzODYsMTc3MTQ0NDAwMywxNjQzODQ2MzIyLC0y
-MzM0NzE0NjYsLTE0NzY1MzQ1NjAsLTE0NzY1MzQ1NjAsMTQ5OT
-M2MDcxOCwxNDAyNzAwMDczLDE0MDM2Njk1MSwtNzYwNjkwNTE3
-LDgwODg0MDI5NV19
+eyJoaXN0b3J5IjpbMjAxMzgxMjEwLC0xOTU1MzA2NzU5LDE5OT
+c5NjQ1MTAsMTEwNDcyODM5LC04MjU0NzA1OTEsLTE5MzAzNzk2
+NTAsLTcyNzU2Nzk1MiwtMTE4MjIwMjQ3MSwtMTkzODUwMTgwNC
+wyMDExMjExOTQ4LC0xNDA3OTQwMzg2LDE3NzE0NDQwMDMsMTY0
+Mzg0NjMyMiwtMjMzNDcxNDY2LC0xNDc2NTM0NTYwLC0xNDc2NT
+M0NTYwLDE0OTkzNjA3MTgsMTQwMjcwMDA3MywxNDAzNjY5NTEs
+LTc2MDY5MDUxN119
 -->
