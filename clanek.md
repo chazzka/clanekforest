@@ -34,6 +34,7 @@ However, there does not seem to be much work regarding using Isolation Forest as
 Traditional approaches for anomaly separation consist of either novelty detection or outlier detection.
 Novelty detection is an anomaly detection mechanism, where we search for unusual observations, which are discovered due to their differences from the training data.
 Novelty detection is a semi-supervised anomaly-detection technique, whereas outlier detection uses unsupervised methods.
+With novelty detection, the training data is not polluted by outliers and we are interested in detecting whether a new observation is an outlier. In this context an outlier is also called a novelty.
 This is a crucial distinction, due to a fact that whereas the outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them, novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision.
 This means, that if the dataset contains observations which look like anomalies but are still valid, the performance of unsupervised outlier detection in such case is usually unsatisfactory. 
 
@@ -152,7 +153,7 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MTQ4ODYxMSwxNDM1MjE3NjY1LC0xOT
+eyJoaXN0b3J5IjpbLTU3MTkyMzAyNiwxNDM1MjE3NjY1LC0xOT
 U1MzA2NzU5LDE5OTc5NjQ1MTAsMTEwNDcyODM5LC04MjU0NzA1
 OTEsLTE5MzAzNzk2NTAsLTcyNzU2Nzk1MiwtMTE4MjIwMjQ3MS
 wtMTkzODUwMTgwNCwyMDExMjExOTQ4LC0xNDA3OTQwMzg2LDE3
