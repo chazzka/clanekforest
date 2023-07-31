@@ -165,16 +165,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 ### Experiments using IF as a Novelty detection tool
 
-- tady experimenty, heatmapa atp.
+- [ ] TODO: tady experimenty, heatmapa atp., nějaký SOTA novelty algoritmus ze scikitu na porovnání
 
 ### Drawbacks, todos
- [ ] TODO: TADY POPIŠ například ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD 
+-  [ ] TODO: TADY POPIŠ například ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD, když by se to lišilo jen v jedné tak je to naprd...
  
-### Finding clusters amongst novelties ??
- [ ] TODO: Honzo je to tu potřeba taková sekce, s přihlédnutím k tomu, že nově ten článek by měl být čistě o IF? kdyžtak prosím smazat všecko
-- tady už stačí asi že prostě to není těžký ukol, vezmeme jen obyčejný DB scan a bác. oba algoritmy jsou jednoduché ale síla je v jejich kooperaci idk
-- možná bychom se tu mohli taky zamyslet nad tím jak funguje ten DB Scan a zkusit trochu potunit aby to dělalo celé clustery
-
 ### automl hyperparameter tuning for IF - v jinem članku
 
 
@@ -187,11 +182,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODExMzg3MTM0LDExMDQ3MjgzOSwtODI1ND
-cwNTkxLC0xOTMwMzc5NjUwLC03Mjc1Njc5NTIsLTExODIyMDI0
-NzEsLTE5Mzg1MDE4MDQsMjAxMTIxMTk0OCwtMTQwNzk0MDM4Ni
-wxNzcxNDQ0MDAzLDE2NDM4NDYzMjIsLTIzMzQ3MTQ2NiwtMTQ3
-NjUzNDU2MCwtMTQ3NjUzNDU2MCwxNDk5MzYwNzE4LDE0MDI3MD
-AwNzMsMTQwMzY2OTUxLC03NjA2OTA1MTcsODA4ODQwMjk1LDUy
-ODAxNjg3OV19
+eyJoaXN0b3J5IjpbMTY5NTcyMTI5NSwxMTA0NzI4MzksLTgyNT
+Q3MDU5MSwtMTkzMDM3OTY1MCwtNzI3NTY3OTUyLC0xMTgyMjAy
+NDcxLC0xOTM4NTAxODA0LDIwMTEyMTE5NDgsLTE0MDc5NDAzOD
+YsMTc3MTQ0NDAwMywxNjQzODQ2MzIyLC0yMzM0NzE0NjYsLTE0
+NzY1MzQ1NjAsLTE0NzY1MzQ1NjAsMTQ5OTM2MDcxOCwxNDAyNz
+AwMDczLDE0MDM2Njk1MSwtNzYwNjkwNTE3LDgwODg0MDI5NSw1
+MjgwMTY4NzldfQ==
 -->
