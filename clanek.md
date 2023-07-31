@@ -17,7 +17,7 @@
 - **here we describe the domain!! - aneb jak ta data vypadají - co je cílem hlavně vysvětlit čeho jsme chtěli dosáhnout**
  
 ## SOTA
-- [ ] to
+- [ ] TODO: zde ze scikitu apod články na novelty detection algoritmy, stěmi to pak budeme porovnávat
 
 Isolation forest on the other hand, has been widely used for outlier detection. 
 In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets.
@@ -152,11 +152,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMzgxMjEwLC0xOTU1MzA2NzU5LDE5OT
-c5NjQ1MTAsMTEwNDcyODM5LC04MjU0NzA1OTEsLTE5MzAzNzk2
-NTAsLTcyNzU2Nzk1MiwtMTE4MjIwMjQ3MSwtMTkzODUwMTgwNC
-wyMDExMjExOTQ4LC0xNDA3OTQwMzg2LDE3NzE0NDQwMDMsMTY0
-Mzg0NjMyMiwtMjMzNDcxNDY2LC0xNDc2NTM0NTYwLC0xNDc2NT
-M0NTYwLDE0OTkzNjA3MTgsMTQwMjcwMDA3MywxNDAzNjY5NTEs
-LTc2MDY5MDUxN119
+eyJoaXN0b3J5IjpbMTQzNTIxNzY2NSwtMTk1NTMwNjc1OSwxOT
+k3OTY0NTEwLDExMDQ3MjgzOSwtODI1NDcwNTkxLC0xOTMwMzc5
+NjUwLC03Mjc1Njc5NTIsLTExODIyMDI0NzEsLTE5Mzg1MDE4MD
+QsMjAxMTIxMTk0OCwtMTQwNzk0MDM4NiwxNzcxNDQ0MDAzLDE2
+NDM4NDYzMjIsLTIzMzQ3MTQ2NiwtMTQ3NjUzNDU2MCwtMTQ3Nj
+UzNDU2MCwxNDk5MzYwNzE4LDE0MDI3MDAwNzMsMTQwMzY2OTUx
+LC03NjA2OTA1MTddfQ==
 -->
