@@ -121,7 +121,6 @@ Thorough the years, many successful enhancements of the Isolation Forest have be
 Instead of random determination of a split point, first, two clusters are prepared and then a split point is set to the middle of prepared clusters. Another interesting enhancement comes from Chater and al. (https://doi.org/10.1016/j.procs.2022.09.147) where the team deal with the necessity of having precise and crisp data when using basic Isolation Forest approach by implementing Fuzzy adaptation for the Isolation Forest.
 However, there does not seem to be much work regarding using Isolation Forest as a novelty detection tool. 
 
-
 ### Proposed novelty isolation forest enhancement
 In this section, we propose a new approach for making forest detect novel observations. 
 The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
@@ -188,11 +187,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MDEyNTU1MiwxMTA0NzI4MzksLTgyNT
-Q3MDU5MSwtMTkzMDM3OTY1MCwtNzI3NTY3OTUyLC0xMTgyMjAy
-NDcxLC0xOTM4NTAxODA0LDIwMTEyMTE5NDgsLTE0MDc5NDAzOD
-YsMTc3MTQ0NDAwMywxNjQzODQ2MzIyLC0yMzM0NzE0NjYsLTE0
-NzY1MzQ1NjAsLTE0NzY1MzQ1NjAsMTQ5OTM2MDcxOCwxNDAyNz
-AwMDczLDE0MDM2Njk1MSwtNzYwNjkwNTE3LDgwODg0MDI5NSw1
-MjgwMTY4NzldfQ==
+eyJoaXN0b3J5IjpbODExMzg3MTM0LDExMDQ3MjgzOSwtODI1ND
+cwNTkxLC0xOTMwMzc5NjUwLC03Mjc1Njc5NTIsLTExODIyMDI0
+NzEsLTE5Mzg1MDE4MDQsMjAxMTIxMTk0OCwtMTQwNzk0MDM4Ni
+wxNzcxNDQ0MDAzLDE2NDM4NDYzMjIsLTIzMzQ3MTQ2NiwtMTQ3
+NjUzNDU2MCwtMTQ3NjUzNDU2MCwxNDk5MzYwNzE4LDE0MDI3MD
+AwNzMsMTQwMzY2OTUxLC03NjA2OTA1MTcsODA4ODQwMjk1LDUy
+ODAxNjg3OV19
 -->
