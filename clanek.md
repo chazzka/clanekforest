@@ -24,7 +24,6 @@ https://scikit-learn.org/stable/modules/outlier_detection.html#novelty-detection
 One of the successful methods dealing with novelty detection is OneClass SVM algorithm (10.1162/089976601750264965).
 
 
-
 Isolation forest on the other hand, has been widely used for outlier detection. 
 In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets.
 Thorough the years, many successful enhancements of the Isolation Forest have been developed. Gałka, Karczmarek, Tokovarov in (https://doi.org/10.1016/j.patrec.2022.09.015) implement Minimal Spanning Tree clustering based enhancement.
@@ -112,7 +111,7 @@ In this section, we propose a new enhancement of the original Isolation Forest a
 The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
 The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
 Figure X demonstrates this by creating a first node of a forest with dataset consisting of a sample from range (0,100), successfully creating a node and a random split point of 80. 
-Later on, when Isolation Forest is being used for the evaluation of a number 5000 (which is obviously far away from the initial (0, 100) range) the previous split point is used to determine its final node.
+Later on, when Isolation Forest is being used for the evaluation of the number 5000 (which is reasonably far away from the initial 0 to 100 range) the previous split point is used to determine its final node.
 This results in 5000 being in the same node as numbers >80, making the novelty detection impossible.
 - [ ] TODO: OBRÁZEK SE MI PŘESTAL LÍBIT
 
@@ -171,7 +170,7 @@ We can see that using our approach we successfully isolated both numbers (5000 a
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2ODQwMzAwMiwtMTM3NDMwMTQyMCw3OD
+eyJoaXN0b3J5IjpbLTUyMzkwMzY5NiwtMTM3NDMwMTQyMCw3OD
 M0NTc4MjAsMTAwOTcxMDE0OCwtNzU1MTc5MTcwLC05MDUzMjA4
 NzUsNzAwNzY0NjkxLC0zMTg5MTEwMzMsLTE4MTI5MTkwMDQsNT
 kwMjI1MDA2LDI2NDkyMzE3MSwtNTcxOTIzMDI2LDE0MzUyMTc2
