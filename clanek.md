@@ -52,6 +52,7 @@ Figure X shows the result of evaluating classical Isolation Forest on such datas
 
 Let *x* be regular observations and *y* false positive regular observations marked by Isolation Forest (batch_size 128, trees_count: 100, zbytek default), figure x shows that approx. 10% of observations are marked as anomalies.
 This is not unwanted behavior in the sense of outlier detection but is undesired in the sense of novelty detection, because the false positive marked data are regular observations which should not be omitted.
+
 Another problem is with the unsupervised separation itself.
 Consider data polluted by anomalies in close to 1:1 ratio.
 Even human will find it nearly impossible to differentiate between these two classes when given plotted dataset.
@@ -142,7 +143,8 @@ When selecting groups for next nodes, groups are evaluated by grouping the given
 Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
 For example, if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
 Using this, we never loose any data like in the original article, making novelty detection possible.
-Figure X demonstrates this by adding two novel points (considering the learning sample of data beginning with 0 and ending with 100) and we can see that using our approach we successfully isolated both numbers (5000 and 2000, which are considerably far away from each other) in different nodes.
+Figure X demonstrates this by adding two novel points (considering the learning sample of data beginning with 0 and ending with 100).
+We can see that using our approach we successfully isolated both numbers (5000 and 2000, which are considerably far away from each other) in different nodes.
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/clanek_5000_novelty.svg)
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. 
@@ -167,11 +169,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyODU5MjkwOCwtMTM3NDMwMTQyMCw3OD
-M0NTc4MjAsMTAwOTcxMDE0OCwtNzU1MTc5MTcwLC05MDUzMjA4
-NzUsNzAwNzY0NjkxLC0zMTg5MTEwMzMsLTE4MTI5MTkwMDQsNT
-kwMjI1MDA2LDI2NDkyMzE3MSwtNTcxOTIzMDI2LDE0MzUyMTc2
-NjUsLTE5NTUzMDY3NTksMTk5Nzk2NDUxMCwxMTA0NzI4MzksLT
-gyNTQ3MDU5MSwtMTkzMDM3OTY1MCwtNzI3NTY3OTUyLC0xMTgy
-MjAyNDcxXX0=
+eyJoaXN0b3J5IjpbNzAzMDEzNjc1LC0xMzc0MzAxNDIwLDc4Mz
+Q1NzgyMCwxMDA5NzEwMTQ4LC03NTUxNzkxNzAsLTkwNTMyMDg3
+NSw3MDA3NjQ2OTEsLTMxODkxMTAzMywtMTgxMjkxOTAwNCw1OT
+AyMjUwMDYsMjY0OTIzMTcxLC01NzE5MjMwMjYsMTQzNTIxNzY2
+NSwtMTk1NTMwNjc1OSwxOTk3OTY0NTEwLDExMDQ3MjgzOSwtOD
+I1NDcwNTkxLC0xOTMwMzc5NjUwLC03Mjc1Njc5NTIsLTExODIy
+MDI0NzFdfQ==
 -->
