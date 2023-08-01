@@ -32,6 +32,7 @@ However, there does not seem to be much work regarding using Isolation Forest as
 ## Methods
 
 - [ ] TODO: tadz bude ukázka obecně toho problému s novelty detection
+In general, we can define the novelty detection problem as 
 
 - [ ] TODO: toto je super, nechat
 
@@ -157,11 +158,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkwMjI1MDA2LDI2NDkyMzE3MSwtNTcxOT
-IzMDI2LDE0MzUyMTc2NjUsLTE5NTUzMDY3NTksMTk5Nzk2NDUx
-MCwxMTA0NzI4MzksLTgyNTQ3MDU5MSwtMTkzMDM3OTY1MCwtNz
-I3NTY3OTUyLC0xMTgyMjAyNDcxLC0xOTM4NTAxODA0LDIwMTEy
-MTE5NDgsLTE0MDc5NDAzODYsMTc3MTQ0NDAwMywxNjQzODQ2Mz
-IyLC0yMzM0NzE0NjYsLTE0NzY1MzQ1NjAsLTE0NzY1MzQ1NjAs
-MTQ5OTM2MDcxOF19
+eyJoaXN0b3J5IjpbLTE4MTI5MTkwMDQsNTkwMjI1MDA2LDI2ND
+kyMzE3MSwtNTcxOTIzMDI2LDE0MzUyMTc2NjUsLTE5NTUzMDY3
+NTksMTk5Nzk2NDUxMCwxMTA0NzI4MzksLTgyNTQ3MDU5MSwtMT
+kzMDM3OTY1MCwtNzI3NTY3OTUyLC0xMTgyMjAyNDcxLC0xOTM4
+NTAxODA0LDIwMTEyMTE5NDgsLTE0MDc5NDAzODYsMTc3MTQ0ND
+AwMywxNjQzODQ2MzIyLC0yMzM0NzE0NjYsLTE0NzY1MzQ1NjAs
+LTE0NzY1MzQ1NjBdfQ==
 -->
