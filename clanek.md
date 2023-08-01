@@ -159,7 +159,8 @@ We can see that using our approach we successfully isolated both numbers (5000 a
 
 - [ ] TODO: tady experimenty, heatmapa atp., nějaký SOTA novelty algoritmus ze scikitu na porovnání
 - [ ] TODO: přídáme i porovnání s bin/simple_novelty.rb
-http.csv 
+SVM: http.csv - odchylky všechny, ale pulku normálních označil jako ochylky
+
 
 ### Drawbacks, todos
 -  [ ] TODO: TADY POPIŠ například ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD, když by se to lišilo jen v jedné tak je to naprd...
@@ -176,11 +177,11 @@ http.csv
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NzU5ODc0NCwtMTA5MTkzMjU1MCwxND
-I1MDMxNzgwLC05MDM5MDYxNDgsLTEzNzQzMDE0MjAsNzgzNDU3
-ODIwLDEwMDk3MTAxNDgsLTc1NTE3OTE3MCwtOTA1MzIwODc1LD
-cwMDc2NDY5MSwtMzE4OTExMDMzLC0xODEyOTE5MDA0LDU5MDIy
-NTAwNiwyNjQ5MjMxNzEsLTU3MTkyMzAyNiwxNDM1MjE3NjY1LC
-0xOTU1MzA2NzU5LDE5OTc5NjQ1MTAsMTEwNDcyODM5LC04MjU0
-NzA1OTFdfQ==
+eyJoaXN0b3J5IjpbMTkwMDgzNzQwLC0xMDkxOTMyNTUwLDE0Mj
+UwMzE3ODAsLTkwMzkwNjE0OCwtMTM3NDMwMTQyMCw3ODM0NTc4
+MjAsMTAwOTcxMDE0OCwtNzU1MTc5MTcwLC05MDUzMjA4NzUsNz
+AwNzY0NjkxLC0zMTg5MTEwMzMsLTE4MTI5MTkwMDQsNTkwMjI1
+MDA2LDI2NDkyMzE3MSwtNTcxOTIzMDI2LDE0MzUyMTc2NjUsLT
+E5NTUzMDY3NTksMTk5Nzk2NDUxMCwxMTA0NzI4MzksLTgyNTQ3
+MDU5MV19
 -->
