@@ -27,6 +27,7 @@ The One-class SVM algorithm is the unsupervised outlier detection algorithm whic
 It computes a binary function which is supposed to capture regions in input space where the probability density lives (its support), i.e. a function such that most of the data will live in the region where the function is nonzero (Schölkopf et al., 1999).
 
 
+
 Isolation forest on the other hand, has been widely used for outlier detection. 
 In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets.
 Thorough the years, many successful enhancements of the Isolation Forest have been developed. Gałka, Karczmarek, Tokovarov in (https://doi.org/10.1016/j.patrec.2022.09.015) implement Minimal Spanning Tree clustering based enhancement.
@@ -173,11 +174,11 @@ We can see that using our approach we successfully isolated both numbers (5000 a
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgxNDA0NzkwLC05MDM5MDYxNDgsLTEzNz
-QzMDE0MjAsNzgzNDU3ODIwLDEwMDk3MTAxNDgsLTc1NTE3OTE3
-MCwtOTA1MzIwODc1LDcwMDc2NDY5MSwtMzE4OTExMDMzLC0xOD
-EyOTE5MDA0LDU5MDIyNTAwNiwyNjQ5MjMxNzEsLTU3MTkyMzAy
-NiwxNDM1MjE3NjY1LC0xOTU1MzA2NzU5LDE5OTc5NjQ1MTAsMT
-EwNDcyODM5LC04MjU0NzA1OTEsLTE5MzAzNzk2NTAsLTcyNzU2
-Nzk1Ml19
+eyJoaXN0b3J5IjpbMTQyNTAzMTc4MCwtOTAzOTA2MTQ4LC0xMz
+c0MzAxNDIwLDc4MzQ1NzgyMCwxMDA5NzEwMTQ4LC03NTUxNzkx
+NzAsLTkwNTMyMDg3NSw3MDA3NjQ2OTEsLTMxODkxMTAzMywtMT
+gxMjkxOTAwNCw1OTAyMjUwMDYsMjY0OTIzMTcxLC01NzE5MjMw
+MjYsMTQzNTIxNzY2NSwtMTk1NTMwNjc1OSwxOTk3OTY0NTEwLD
+ExMDQ3MjgzOSwtODI1NDcwNTkxLC0xOTMwMzc5NjUwLC03Mjc1
+Njc5NTJdfQ==
 -->
