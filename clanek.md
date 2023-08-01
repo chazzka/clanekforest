@@ -38,7 +38,11 @@ With novelty detection, the training data is not polluted by anomalous elements,
 This is a crucial distinction, due to a fact that whereas the outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them, novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision. 
 
 - [ ] TODO: tadz bude ukázka obecně toho problému s novelty detection
+
 Consider following example. Figure X contains random datapoints arranged in a way they form a cluster like shape. Say this data is our regular observations. 
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/9047b936158e6320e0b4b942ab0d65c8e12f280f/clanek_figures/regular_observations_no_novelites.svg) 
+> Figure X Dataset with regular observations. 
+
 
 
 
@@ -155,11 +159,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxODkxMTAzMywtMTgxMjkxOTAwNCw1OT
-AyMjUwMDYsMjY0OTIzMTcxLC01NzE5MjMwMjYsMTQzNTIxNzY2
-NSwtMTk1NTMwNjc1OSwxOTk3OTY0NTEwLDExMDQ3MjgzOSwtOD
-I1NDcwNTkxLC0xOTMwMzc5NjUwLC03Mjc1Njc5NTIsLTExODIy
-MDI0NzEsLTE5Mzg1MDE4MDQsMjAxMTIxMTk0OCwtMTQwNzk0MD
-M4NiwxNzcxNDQ0MDAzLDE2NDM4NDYzMjIsLTIzMzQ3MTQ2Niwt
-MTQ3NjUzNDU2MF19
+eyJoaXN0b3J5IjpbMTY2MTM0MDU5OSwtMzE4OTExMDMzLC0xOD
+EyOTE5MDA0LDU5MDIyNTAwNiwyNjQ5MjMxNzEsLTU3MTkyMzAy
+NiwxNDM1MjE3NjY1LC0xOTU1MzA2NzU5LDE5OTc5NjQ1MTAsMT
+EwNDcyODM5LC04MjU0NzA1OTEsLTE5MzAzNzk2NTAsLTcyNzU2
+Nzk1MiwtMTE4MjIwMjQ3MSwtMTkzODUwMTgwNCwyMDExMjExOT
+Q4LC0xNDA3OTQwMzg2LDE3NzE0NDQwMDMsMTY0Mzg0NjMyMiwt
+MjMzNDcxNDY2XX0=
 -->
