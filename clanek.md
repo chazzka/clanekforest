@@ -159,10 +159,10 @@ We can see that using our approach we successfully isolated both numbers (5000 a
 
 - [ ] TODO: tady experimenty, heatmapa atp., nějaký SOTA novelty algoritmus ze scikitu na porovnání
 - [ ] TODO: přídáme i porovnání s bin/simple_novelty.rb
-SVM: http.csv - odchylky všechny, ale pulku normálních označil jako ochylky
-SVM: shuttle.csv 
-- pokud naučíš na regularech, najde anomalie správně, ale pulku regularů označí jako anomálie
-
+SVM: http.csv - anomalie všechny, ale pulku regularů označil jako ochylky
+SVM: shuttle.csv - najde anomalie správně, ale pulku regularů označí jako anomálie
+simple_novelty : http.csv - hodně dobře funguje, až moc
+sim
 
 ### Drawbacks, todos
 -  [ ] TODO: TADY POPIŠ například ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD, když by se to lišilo jen v jedné tak je to naprd...
@@ -179,11 +179,11 @@ SVM: shuttle.csv
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTMyMjE0NSwtMTYwMzA4MDY3NiwxOT
-AwODM3NDAsLTEwOTE5MzI1NTAsMTQyNTAzMTc4MCwtOTAzOTA2
-MTQ4LC0xMzc0MzAxNDIwLDc4MzQ1NzgyMCwxMDA5NzEwMTQ4LC
-03NTUxNzkxNzAsLTkwNTMyMDg3NSw3MDA3NjQ2OTEsLTMxODkx
-MTAzMywtMTgxMjkxOTAwNCw1OTAyMjUwMDYsMjY0OTIzMTcxLC
-01NzE5MjMwMjYsMTQzNTIxNzY2NSwtMTk1NTMwNjc1OSwxOTk3
-OTY0NTEwXX0=
+eyJoaXN0b3J5IjpbMTIxNDE5NTE3MiwtMTYxMzIyMTQ1LC0xNj
+AzMDgwNjc2LDE5MDA4Mzc0MCwtMTA5MTkzMjU1MCwxNDI1MDMx
+NzgwLC05MDM5MDYxNDgsLTEzNzQzMDE0MjAsNzgzNDU3ODIwLD
+EwMDk3MTAxNDgsLTc1NTE3OTE3MCwtOTA1MzIwODc1LDcwMDc2
+NDY5MSwtMzE4OTExMDMzLC0xODEyOTE5MDA0LDU5MDIyNTAwNi
+wyNjQ5MjMxNzEsLTU3MTkyMzAyNiwxNDM1MjE3NjY1LC0xOTU1
+MzA2NzU5XX0=
 -->
