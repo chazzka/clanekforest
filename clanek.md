@@ -53,6 +53,7 @@ Figure X shows the result of evaluating classical Isolation Forest on such datas
 Let *x* be regular observations and *y* false positive regular observations marked by Isolation Forest (batch_size 128, trees_count: 100, zbytek default), figure x shows that approx. 10% of observations are marked as anomalies.
 This is not unwanted behavior in the sense of outlier detection but is undesired in the sense of novelty detection, because the false positive marked data are regular observations which should not be omitted.
 
+One of the 
 
 
 
@@ -169,7 +170,7 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMyODEwMjIxLC03NTUxNzkxNzAsLTkwNT
+eyJoaXN0b3J5IjpbMTcyMTUyMjk5LC03NTUxNzkxNzAsLTkwNT
 MyMDg3NSw3MDA3NjQ2OTEsLTMxODkxMTAzMywtMTgxMjkxOTAw
 NCw1OTAyMjUwMDYsMjY0OTIzMTcxLC01NzE5MjMwMjYsMTQzNT
 IxNzY2NSwtMTk1NTMwNjc1OSwxOTk3OTY0NTEwLDExMDQ3Mjgz
