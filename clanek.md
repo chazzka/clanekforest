@@ -159,6 +159,7 @@ We can see that using our approach we successfully isolated both numbers (5000 a
 
 - [ ] TODO: tady experimenty, heatmapa atp., nějaký SOTA novelty algoritmus ze scikitu na porovnání
 - [ ] TODO: přídáme i porovnání s bin/simple_novelty.rb
+http.csv 
 
 ### Drawbacks, todos
 -  [ ] TODO: TADY POPIŠ například ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD, když by se to lišilo jen v jedné tak je to naprd...
@@ -175,11 +176,11 @@ We can see that using our approach we successfully isolated both numbers (5000 a
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTE5MzI1NTAsMTQyNTAzMTc4MCwtOT
-AzOTA2MTQ4LC0xMzc0MzAxNDIwLDc4MzQ1NzgyMCwxMDA5NzEw
-MTQ4LC03NTUxNzkxNzAsLTkwNTMyMDg3NSw3MDA3NjQ2OTEsLT
-MxODkxMTAzMywtMTgxMjkxOTAwNCw1OTAyMjUwMDYsMjY0OTIz
-MTcxLC01NzE5MjMwMjYsMTQzNTIxNzY2NSwtMTk1NTMwNjc1OS
-wxOTk3OTY0NTEwLDExMDQ3MjgzOSwtODI1NDcwNTkxLC0xOTMw
-Mzc5NjUwXX0=
+eyJoaXN0b3J5IjpbLTU4NzU5ODc0NCwtMTA5MTkzMjU1MCwxND
+I1MDMxNzgwLC05MDM5MDYxNDgsLTEzNzQzMDE0MjAsNzgzNDU3
+ODIwLDEwMDk3MTAxNDgsLTc1NTE3OTE3MCwtOTA1MzIwODc1LD
+cwMDc2NDY5MSwtMzE4OTExMDMzLC0xODEyOTE5MDA0LDU5MDIy
+NTAwNiwyNjQ5MjMxNzEsLTU3MTkyMzAyNiwxNDM1MjE3NjY1LC
+0xOTU1MzA2NzU5LDE5OTc5NjQ1MTAsMTEwNDcyODM5LC04MjU0
+NzA1OTFdfQ==
 -->
