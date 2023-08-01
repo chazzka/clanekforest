@@ -23,7 +23,9 @@ https://scikit-learn.org/stable/modules/outlier_detection.html#novelty-detection
 
 One of the successful methods dealing with novelty detection is OneClass SVM algorithm (10.1162/089976601750264965). 
 #### One-class SVM novelty
-The One-class SVM algorithm is the unsupervised outlier detection algorithm which can also be used for novelty detection. 
+The One-class SVM algorithm is the unsupervised outlier detection algorithm which can also be used for novelty detection.
+It computes a binary function which is supposed to capture regions in input space where the probability density lives (its support), i.e. a function such that most of the data will live in the region where the function is nonzero (Schölkopf et al., 1999).
+
 
 Isolation forest on the other hand, has been widely used for outlier detection. 
 In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets.
@@ -171,11 +173,11 @@ We can see that using our approach we successfully isolated both numbers (5000 a
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMzkwNjE0OCwtMTM3NDMwMTQyMCw3OD
-M0NTc4MjAsMTAwOTcxMDE0OCwtNzU1MTc5MTcwLC05MDUzMjA4
-NzUsNzAwNzY0NjkxLC0zMTg5MTEwMzMsLTE4MTI5MTkwMDQsNT
-kwMjI1MDA2LDI2NDkyMzE3MSwtNTcxOTIzMDI2LDE0MzUyMTc2
-NjUsLTE5NTUzMDY3NTksMTk5Nzk2NDUxMCwxMTA0NzI4MzksLT
-gyNTQ3MDU5MSwtMTkzMDM3OTY1MCwtNzI3NTY3OTUyLC0xMTgy
-MjAyNDcxXX0=
+eyJoaXN0b3J5IjpbMjgxNDA0NzkwLC05MDM5MDYxNDgsLTEzNz
+QzMDE0MjAsNzgzNDU3ODIwLDEwMDk3MTAxNDgsLTc1NTE3OTE3
+MCwtOTA1MzIwODc1LDcwMDc2NDY5MSwtMzE4OTExMDMzLC0xOD
+EyOTE5MDA0LDU5MDIyNTAwNiwyNjQ5MjMxNzEsLTU3MTkyMzAy
+NiwxNDM1MjE3NjY1LC0xOTU1MzA2NzU5LDE5OTc5NjQ1MTAsMT
+EwNDcyODM5LC04MjU0NzA1OTEsLTE5MzAzNzk2NTAsLTcyNzU2
+Nzk1Ml19
 -->
