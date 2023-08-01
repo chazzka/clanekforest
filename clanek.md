@@ -112,8 +112,9 @@ In this section, we propose a new enhancement of the original Isolation Forest a
 The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
 The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
 Figure X demonstrates this by creating a first node of a forest with dataset consisting of a sample from range (0,100), successfully creating a node and a random split point of 80. 
-Later on, when Isolation Forest is being used for evaluation of a number 5000 (which is obviously far away from the initial (0, 100) range) the previous split point is used to determine its final node.
+Later on, when Isolation Forest is being used for the evaluation of a number 5000 (which is obviously far away from the initial (0, 100) range) the previous split point is used to determine its final node.
 This results in 5000 being in the same node as numbers >80, making the novelty detection impossible.
+- [ ] TODO: OBRÁZEK SE MI PŘESTAL LÍBIT
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/isolation_5000.svg) 
 > Figure X Isolation Forest novelty point insertion on using classic IF. 
@@ -145,6 +146,7 @@ For example, if the selected split point was X, then the new range for the left 
 Using this, we never loose any data like in the original article, making novelty detection possible.
 Figure X demonstrates this by adding two novel points (considering the learning sample of data beginning with 0 and ending with 100).
 We can see that using our approach we successfully isolated both numbers (5000 and 2000, which are considerably far away from each other) in different nodes.
+- [ ] TODO: OBRÁZEK SE MI PŘESTAL LÍBIT
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/clanek_5000_novelty.svg)
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. 
@@ -169,11 +171,11 @@ We can see that using our approach we successfully isolated both numbers (5000 a
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAzMDEzNjc1LC0xMzc0MzAxNDIwLDc4Mz
-Q1NzgyMCwxMDA5NzEwMTQ4LC03NTUxNzkxNzAsLTkwNTMyMDg3
-NSw3MDA3NjQ2OTEsLTMxODkxMTAzMywtMTgxMjkxOTAwNCw1OT
-AyMjUwMDYsMjY0OTIzMTcxLC01NzE5MjMwMjYsMTQzNTIxNzY2
-NSwtMTk1NTMwNjc1OSwxOTk3OTY0NTEwLDExMDQ3MjgzOSwtOD
-I1NDcwNTkxLC0xOTMwMzc5NjUwLC03Mjc1Njc5NTIsLTExODIy
-MDI0NzFdfQ==
+eyJoaXN0b3J5IjpbMTA2ODQwMzAwMiwtMTM3NDMwMTQyMCw3OD
+M0NTc4MjAsMTAwOTcxMDE0OCwtNzU1MTc5MTcwLC05MDUzMjA4
+NzUsNzAwNzY0NjkxLC0zMTg5MTEwMzMsLTE4MTI5MTkwMDQsNT
+kwMjI1MDA2LDI2NDkyMzE3MSwtNTcxOTIzMDI2LDE0MzUyMTc2
+NjUsLTE5NTUzMDY3NTksMTk5Nzk2NDUxMCwxMTA0NzI4MzksLT
+gyNTQ3MDU5MSwtMTkzMDM3OTY1MCwtNzI3NTY3OTUyLC0xMTgy
+MjAyNDcxXX0=
 -->
