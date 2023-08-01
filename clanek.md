@@ -54,6 +54,9 @@ Let *x* be regular observations and *y* false positive regular observations, fig
 This is not unwanted behavior in the sense of outlier detection but is undesired in the sense of novelty detection.
 Consider our dataset to be presented novelty datapoints. Figure x shows the regular dataset enriched by novelty dataset.
 
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_outlier_if.svg) 
+> Figure X Dataset with regular observations.
+
 
 
 
@@ -170,11 +173,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNTMyMDg3NSw3MDA3NjQ2OTEsLTMxOD
-kxMTAzMywtMTgxMjkxOTAwNCw1OTAyMjUwMDYsMjY0OTIzMTcx
-LC01NzE5MjMwMjYsMTQzNTIxNzY2NSwtMTk1NTMwNjc1OSwxOT
-k3OTY0NTEwLDExMDQ3MjgzOSwtODI1NDcwNTkxLC0xOTMwMzc5
-NjUwLC03Mjc1Njc5NTIsLTExODIyMDI0NzEsLTE5Mzg1MDE4MD
-QsMjAxMTIxMTk0OCwtMTQwNzk0MDM4NiwxNzcxNDQ0MDAzLDE2
-NDM4NDYzMjJdfQ==
+eyJoaXN0b3J5IjpbODU3MzcwMTUxLC05MDUzMjA4NzUsNzAwNz
+Y0NjkxLC0zMTg5MTEwMzMsLTE4MTI5MTkwMDQsNTkwMjI1MDA2
+LDI2NDkyMzE3MSwtNTcxOTIzMDI2LDE0MzUyMTc2NjUsLTE5NT
+UzMDY3NTksMTk5Nzk2NDUxMCwxMTA0NzI4MzksLTgyNTQ3MDU5
+MSwtMTkzMDM3OTY1MCwtNzI3NTY3OTUyLC0xMTgyMjAyNDcxLC
+0xOTM4NTAxODA0LDIwMTEyMTE5NDgsLTE0MDc5NDAzODYsMTc3
+MTQ0NDAwM119
 -->
