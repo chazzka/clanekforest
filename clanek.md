@@ -31,17 +31,14 @@ However, there does not seem to be much work regarding using Isolation Forest as
 
 ## Methods
 
-- [ ] TODO: toto je super, nechat
-
 Traditional approaches for anomaly separation consist of either novelty detection or outlier detection.
 Novelty detection is an anomaly detection mechanism, where we search for unusual observations, which are discovered due to their differences from the training data.
 Novelty detection is a semi-supervised anomaly-detection technique, whereas outlier detection uses unsupervised methods.
 With novelty detection, the training data is not polluted by anomalous elements, and we are interested in detecting whether a new observation is an anomaly. In this context also called a novelty.
-This is a crucial distinction, due to a fact that whereas the outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them, novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision.
-This means, that if the dataset contains observations which look like anomalies but are still valid, the performance of unsupervised outlier detection in such case is usually unsatisfactory. 
+This is a crucial distinction, due to a fact that whereas the outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them, novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision. 
 
 - [ ] TODO: tadz bude ukázka obecně toho problému s novelty detection
-
+Consider following example. Figure X contains random datapoin
 
 
 ### Isolation Forest
@@ -157,11 +154,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzYyOTkwNTQsLTE4MTI5MTkwMDQsNT
-kwMjI1MDA2LDI2NDkyMzE3MSwtNTcxOTIzMDI2LDE0MzUyMTc2
-NjUsLTE5NTUzMDY3NTksMTk5Nzk2NDUxMCwxMTA0NzI4MzksLT
-gyNTQ3MDU5MSwtMTkzMDM3OTY1MCwtNzI3NTY3OTUyLC0xMTgy
-MjAyNDcxLC0xOTM4NTAxODA0LDIwMTEyMTE5NDgsLTE0MDc5ND
-AzODYsMTc3MTQ0NDAwMywxNjQzODQ2MzIyLC0yMzM0NzE0NjYs
-LTE0NzY1MzQ1NjBdfQ==
+eyJoaXN0b3J5IjpbMTkwMTk0NTYwMCwtMTgxMjkxOTAwNCw1OT
+AyMjUwMDYsMjY0OTIzMTcxLC01NzE5MjMwMjYsMTQzNTIxNzY2
+NSwtMTk1NTMwNjc1OSwxOTk3OTY0NTEwLDExMDQ3MjgzOSwtOD
+I1NDcwNTkxLC0xOTMwMzc5NjUwLC03Mjc1Njc5NTIsLTExODIy
+MDI0NzEsLTE5Mzg1MDE4MDQsMjAxMTIxMTk0OCwtMTQwNzk0MD
+M4NiwxNzcxNDQ0MDAzLDE2NDM4NDYzMjIsLTIzMzQ3MTQ2Niwt
+MTQ3NjUzNDU2MF19
 -->
