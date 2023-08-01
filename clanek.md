@@ -31,9 +31,6 @@ However, there does not seem to be much work regarding using Isolation Forest as
 
 ## Methods
 
-- [ ] TODO: tadz bude ukázka obecně toho problému s novelty detection
-In general, we can define the novelty detection problem as 
-
 - [ ] TODO: toto je super, nechat
 
 Traditional approaches for anomaly separation consist of either novelty detection or outlier detection.
@@ -42,6 +39,8 @@ Novelty detection is a semi-supervised anomaly-detection technique, whereas outl
 With novelty detection, the training data is not polluted by anomalous elements, and we are interested in detecting whether a new observation is an anomaly. In this context also called a novelty.
 This is a crucial distinction, due to a fact that whereas the outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them, novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision.
 This means, that if the dataset contains observations which look like anomalies but are still valid, the performance of unsupervised outlier detection in such case is usually unsatisfactory. 
+
+- [ ] TODO: tadz bude ukázka obecně toho problému s novelty detection
 
 
 
@@ -158,11 +157,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTI5MTkwMDQsNTkwMjI1MDA2LDI2ND
-kyMzE3MSwtNTcxOTIzMDI2LDE0MzUyMTc2NjUsLTE5NTUzMDY3
-NTksMTk5Nzk2NDUxMCwxMTA0NzI4MzksLTgyNTQ3MDU5MSwtMT
-kzMDM3OTY1MCwtNzI3NTY3OTUyLC0xMTgyMjAyNDcxLC0xOTM4
-NTAxODA0LDIwMTEyMTE5NDgsLTE0MDc5NDAzODYsMTc3MTQ0ND
-AwMywxNjQzODQ2MzIyLC0yMzM0NzE0NjYsLTE0NzY1MzQ1NjAs
+eyJoaXN0b3J5IjpbLTIwMzYyOTkwNTQsLTE4MTI5MTkwMDQsNT
+kwMjI1MDA2LDI2NDkyMzE3MSwtNTcxOTIzMDI2LDE0MzUyMTc2
+NjUsLTE5NTUzMDY3NTksMTk5Nzk2NDUxMCwxMTA0NzI4MzksLT
+gyNTQ3MDU5MSwtMTkzMDM3OTY1MCwtNzI3NTY3OTUyLC0xMTgy
+MjAyNDcxLC0xOTM4NTAxODA0LDIwMTEyMTE5NDgsLTE0MDc5ND
+AzODYsMTc3MTQ0NDAwMywxNjQzODQ2MzIyLC0yMzM0NzE0NjYs
 LTE0NzY1MzQ1NjBdfQ==
 -->
