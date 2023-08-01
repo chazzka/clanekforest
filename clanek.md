@@ -21,6 +21,8 @@
 https://scikit-learn.org/stable/modules/outlier_detection.html#novelty-detection
 https://scikit-learn.org/stable/modules/outlier_detection.html#novelty-detection-with-local-outlier-factor
 
+http://proceedings.mlr.press/v5/smola09a/smola09a.pdf
+
 One of the successful methods dealing with novelty detection is OneClass SVM algorithm (10.1162/089976601750264965). 
 #### One-class SVM novelty
 The One-class SVM algorithm is the unsupervised outlier detection algorithm which can also be used for novelty detection.
@@ -184,11 +186,11 @@ naše novelty: shuttle.csv - horší ale OK
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcyMzMwNDc5LC0xNjEzMjIxNDUsLTE2MD
-MwODA2NzYsMTkwMDgzNzQwLC0xMDkxOTMyNTUwLDE0MjUwMzE3
-ODAsLTkwMzkwNjE0OCwtMTM3NDMwMTQyMCw3ODM0NTc4MjAsMT
-AwOTcxMDE0OCwtNzU1MTc5MTcwLC05MDUzMjA4NzUsNzAwNzY0
-NjkxLC0zMTg5MTEwMzMsLTE4MTI5MTkwMDQsNTkwMjI1MDA2LD
-I2NDkyMzE3MSwtNTcxOTIzMDI2LDE0MzUyMTc2NjUsLTE5NTUz
-MDY3NTldfQ==
+eyJoaXN0b3J5IjpbLTI1MTc5MjQ3MiwzNzIzMzA0NzksLTE2MT
+MyMjE0NSwtMTYwMzA4MDY3NiwxOTAwODM3NDAsLTEwOTE5MzI1
+NTAsMTQyNTAzMTc4MCwtOTAzOTA2MTQ4LC0xMzc0MzAxNDIwLD
+c4MzQ1NzgyMCwxMDA5NzEwMTQ4LC03NTUxNzkxNzAsLTkwNTMy
+MDg3NSw3MDA3NjQ2OTEsLTMxODkxMTAzMywtMTgxMjkxOTAwNC
+w1OTAyMjUwMDYsMjY0OTIzMTcxLC01NzE5MjMwMjYsMTQzNTIx
+NzY2NV19
 -->
