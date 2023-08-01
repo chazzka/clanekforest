@@ -57,6 +57,7 @@ One of the successful methods dealing with novelty detection is OneClass SVM alg
 
 
 
+
 ### Isolation Forest
 Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"), [2](https://doi.org/10.1016/j.patcog.2023.109334 "article 2")) is an outlier detection, semi-supervised ensemble algorithm. 
 This approach is well known to successfully isolate outliers by using recursive partitioning (forming a tree-like structure) to decide whether the analyzed particle is an anomaly or not.
@@ -109,7 +110,7 @@ The final question is if it is somehow possible to teach Isolation Forest how re
 Can we use Isolation Forest for novelty detection despite it not being primarily novelty detection algorithm? 
 
 
-## Proposed novelty isolation forest enhancement
+### Proposed novelty isolation forest enhancement
 In this section, we propose a new approach for making forest detect novel observations. 
 The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
 The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
@@ -170,11 +171,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTQyMjYxMjUsLTc1NTE3OTE3MCwtOT
-A1MzIwODc1LDcwMDc2NDY5MSwtMzE4OTExMDMzLC0xODEyOTE5
-MDA0LDU5MDIyNTAwNiwyNjQ5MjMxNzEsLTU3MTkyMzAyNiwxND
-M1MjE3NjY1LC0xOTU1MzA2NzU5LDE5OTc5NjQ1MTAsMTEwNDcy
-ODM5LC04MjU0NzA1OTEsLTE5MzAzNzk2NTAsLTcyNzU2Nzk1Mi
-wtMTE4MjIwMjQ3MSwtMTkzODUwMTgwNCwyMDExMjExOTQ4LC0x
-NDA3OTQwMzg2XX0=
+eyJoaXN0b3J5IjpbMTAwOTcxMDE0OCwtNzU1MTc5MTcwLC05MD
+UzMjA4NzUsNzAwNzY0NjkxLC0zMTg5MTEwMzMsLTE4MTI5MTkw
+MDQsNTkwMjI1MDA2LDI2NDkyMzE3MSwtNTcxOTIzMDI2LDE0Mz
+UyMTc2NjUsLTE5NTUzMDY3NTksMTk5Nzk2NDUxMCwxMTA0NzI4
+MzksLTgyNTQ3MDU5MSwtMTkzMDM3OTY1MCwtNzI3NTY3OTUyLC
+0xMTgyMjAyNDcxLC0xOTM4NTAxODA0LDIwMTEyMTE5NDgsLTE0
+MDc5NDAzODZdfQ==
 -->
