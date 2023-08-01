@@ -21,6 +21,7 @@
 https://scikit-learn.org/stable/modules/outlier_detection.html#novelty-detection
 https://scikit-learn.org/stable/modules/outlier_detection.html#novelty-detection-with-local-outlier-factor
 
+One of the successful methods dealing with novelty detection is OneClass SVM algorithm (10.1162/089976601750264965).
 
 
 Isolation forest on the other hand, has been widely used for outlier detection. 
@@ -37,8 +38,6 @@ Novelty detection is a semi-supervised anomaly-detection technique, whereas outl
 With novelty detection, the training data is not polluted by anomalous elements, and we are interested in detecting whether a new observation is an anomaly. In this context also called a novelty.
 This is a crucial distinction, due to a fact that whereas the outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them, novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision. 
 
-- [ ] TODO: tadz bude ukázka obecně toho problému s novelty detection
-
 Consider following example. 
 Figure X contains random datapoints arranged in a way they form a cluster like shape. 
 Say this data is our regular observations. 
@@ -52,11 +51,6 @@ Figure X shows the result of evaluating classical Isolation Forest on such datas
 
 Let *x* be regular observations and *y* false positive regular observations marked by Isolation Forest (batch_size 128, trees_count: 100, zbytek default), figure x shows that approx. 10% of observations are marked as anomalies.
 This is not unwanted behavior in the sense of outlier detection but is undesired in the sense of novelty detection, because the false positive marked data are regular observations which should not be omitted.
-
-One of the successful methods dealing with novelty detection is OneClass SVM algorithm (10.1162/089976601750264965).
-
-
-
 
 ### Isolation Forest
 Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"), [2](https://doi.org/10.1016/j.patcog.2023.109334 "article 2")) is an outlier detection, semi-supervised ensemble algorithm. 
@@ -171,11 +165,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwOTcxMDE0OCwtNzU1MTc5MTcwLC05MD
-UzMjA4NzUsNzAwNzY0NjkxLC0zMTg5MTEwMzMsLTE4MTI5MTkw
-MDQsNTkwMjI1MDA2LDI2NDkyMzE3MSwtNTcxOTIzMDI2LDE0Mz
-UyMTc2NjUsLTE5NTUzMDY3NTksMTk5Nzk2NDUxMCwxMTA0NzI4
-MzksLTgyNTQ3MDU5MSwtMTkzMDM3OTY1MCwtNzI3NTY3OTUyLC
-0xMTgyMjAyNDcxLC0xOTM4NTAxODA0LDIwMTEyMTE5NDgsLTE0
-MDc5NDAzODZdfQ==
+eyJoaXN0b3J5IjpbNzgzNDU3ODIwLDEwMDk3MTAxNDgsLTc1NT
+E3OTE3MCwtOTA1MzIwODc1LDcwMDc2NDY5MSwtMzE4OTExMDMz
+LC0xODEyOTE5MDA0LDU5MDIyNTAwNiwyNjQ5MjMxNzEsLTU3MT
+kyMzAyNiwxNDM1MjE3NjY1LC0xOTU1MzA2NzU5LDE5OTc5NjQ1
+MTAsMTEwNDcyODM5LC04MjU0NzA1OTEsLTE5MzAzNzk2NTAsLT
+cyNzU2Nzk1MiwtMTE4MjIwMjQ3MSwtMTkzODUwMTgwNCwyMDEx
+MjExOTQ4XX0=
 -->
