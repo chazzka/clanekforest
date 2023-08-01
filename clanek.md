@@ -57,7 +57,7 @@ Consider our dataset to be presented novelty datapoints. Figure x shows the regu
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_novelty.svg) 
 > Figure X Dataset with regular and novelty observations.
 
-Such dataset is usually not known beforehand, hence we have no 
+Such dataset is usually not known beforehand; hence we have no previous information about it.
 
 
 
@@ -174,11 +174,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NDQ5NzA2NCwtOTA1MzIwODc1LDcwMD
-c2NDY5MSwtMzE4OTExMDMzLC0xODEyOTE5MDA0LDU5MDIyNTAw
-NiwyNjQ5MjMxNzEsLTU3MTkyMzAyNiwxNDM1MjE3NjY1LC0xOT
-U1MzA2NzU5LDE5OTc5NjQ1MTAsMTEwNDcyODM5LC04MjU0NzA1
-OTEsLTE5MzAzNzk2NTAsLTcyNzU2Nzk1MiwtMTE4MjIwMjQ3MS
-wtMTkzODUwMTgwNCwyMDExMjExOTQ4LC0xNDA3OTQwMzg2LDE3
-NzE0NDQwMDNdfQ==
+eyJoaXN0b3J5IjpbLTE5MjI1NjExNzgsLTkwNTMyMDg3NSw3MD
+A3NjQ2OTEsLTMxODkxMTAzMywtMTgxMjkxOTAwNCw1OTAyMjUw
+MDYsMjY0OTIzMTcxLC01NzE5MjMwMjYsMTQzNTIxNzY2NSwtMT
+k1NTMwNjc1OSwxOTk3OTY0NTEwLDExMDQ3MjgzOSwtODI1NDcw
+NTkxLC0xOTMwMzc5NjUwLC03Mjc1Njc5NTIsLTExODIyMDI0Nz
+EsLTE5Mzg1MDE4MDQsMjAxMTIxMTk0OCwtMTQwNzk0MDM4Niwx
+NzcxNDQ0MDAzXX0=
 -->
