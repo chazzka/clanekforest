@@ -50,7 +50,7 @@ Figure X shows the result of evaluating classical Isolation Forest on such datas
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_outlier_if.svg) 
 > Figure X Dataset with regular observations. 
 
-Let *x* be regular observations and *y* false positive regular observations, figure x clearly shows that approx. 10% of observations are marked as anomalies.
+Let *x* be regular observations and *y* false positive regular observations marked by Isolation Forest (batch_size 128, trees_count: 100, zbytek default), figure x clearly shows that approx. 10% of observations are marked as anomalies.
 This is not unwanted behavior in the sense of outlier detection but is undesired in the sense of novelty detection.
 Consider our dataset to be presented novelty datapoints. Figure x shows the regular dataset enriched by novelty dataset.
 
@@ -174,11 +174,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjI1NjExNzgsLTkwNTMyMDg3NSw3MD
-A3NjQ2OTEsLTMxODkxMTAzMywtMTgxMjkxOTAwNCw1OTAyMjUw
-MDYsMjY0OTIzMTcxLC01NzE5MjMwMjYsMTQzNTIxNzY2NSwtMT
-k1NTMwNjc1OSwxOTk3OTY0NTEwLDExMDQ3MjgzOSwtODI1NDcw
-NTkxLC0xOTMwMzc5NjUwLC03Mjc1Njc5NTIsLTExODIyMDI0Nz
-EsLTE5Mzg1MDE4MDQsMjAxMTIxMTk0OCwtMTQwNzk0MDM4Niwx
-NzcxNDQ0MDAzXX0=
+eyJoaXN0b3J5IjpbLTc1NTE3OTE3MCwtOTA1MzIwODc1LDcwMD
+c2NDY5MSwtMzE4OTExMDMzLC0xODEyOTE5MDA0LDU5MDIyNTAw
+NiwyNjQ5MjMxNzEsLTU3MTkyMzAyNiwxNDM1MjE3NjY1LC0xOT
+U1MzA2NzU5LDE5OTc5NjQ1MTAsMTEwNDcyODM5LC04MjU0NzA1
+OTEsLTE5MzAzNzk2NTAsLTcyNzU2Nzk1MiwtMTE4MjIwMjQ3MS
+wtMTkzODUwMTgwNCwyMDExMjExOTQ4LC0xNDA3OTQwMzg2LDE3
+NzE0NDQwMDNdfQ==
 -->
