@@ -43,7 +43,9 @@ Consider following example. Figure X contains random datapoints arranged in a wa
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/9047b936158e6320e0b4b942ab0d65c8e12f280f/clanek_figures/regular_observations_no_novelites.svg) 
 > Figure X Dataset with regular observations. 
 
-When an unsupervised, outlier detection algorithm tries to analyze such data, it sees the datapoints as a cluster containing both regular and anomalous observations. Figure X shows the result of evaluating classical Isolation Forest 
+When an unsupervised, outlier detection algorithm tries to analyze such data, it sees the datapoints as a cluster containing both regular and anomalous observations. Figure X shows the result of evaluating classical Isolation Forest on such dataset.
+
+
 
 
 
@@ -160,11 +162,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNTQzMjM0NywtMzE4OTExMDMzLC0xOD
-EyOTE5MDA0LDU5MDIyNTAwNiwyNjQ5MjMxNzEsLTU3MTkyMzAy
-NiwxNDM1MjE3NjY1LC0xOTU1MzA2NzU5LDE5OTc5NjQ1MTAsMT
-EwNDcyODM5LC04MjU0NzA1OTEsLTE5MzAzNzk2NTAsLTcyNzU2
-Nzk1MiwtMTE4MjIwMjQ3MSwtMTkzODUwMTgwNCwyMDExMjExOT
-Q4LC0xNDA3OTQwMzg2LDE3NzE0NDQwMDMsMTY0Mzg0NjMyMiwt
-MjMzNDcxNDY2XX0=
+eyJoaXN0b3J5IjpbNzAwNzY0NjkxLC0zMTg5MTEwMzMsLTE4MT
+I5MTkwMDQsNTkwMjI1MDA2LDI2NDkyMzE3MSwtNTcxOTIzMDI2
+LDE0MzUyMTc2NjUsLTE5NTUzMDY3NTksMTk5Nzk2NDUxMCwxMT
+A0NzI4MzksLTgyNTQ3MDU5MSwtMTkzMDM3OTY1MCwtNzI3NTY3
+OTUyLC0xMTgyMjAyNDcxLC0xOTM4NTAxODA0LDIwMTEyMTE5ND
+gsLTE0MDc5NDAzODYsMTc3MTQ0NDAwMywxNjQzODQ2MzIyLC0y
+MzM0NzE0NjZdfQ==
 -->
