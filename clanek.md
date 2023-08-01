@@ -162,7 +162,11 @@ We can see that using our approach we successfully isolated both numbers (5000 a
 SVM: http.csv - anomalie všechny, ale pulku regularů označil jako ochylky
 SVM: shuttle.csv - najde anomalie správně, ale pulku regularů označí jako anomálie
 simple_novelty : http.csv - hodně dobře funguje, až moc
-sim
+simple_novelty: shuttle.csv - nic moc
+naše novelty: http.csv - slušné
+naše novelty: shuttle.csv - horší ale OK
+
+- [ ] 
 
 ### Drawbacks, todos
 -  [ ] TODO: TADY POPIŠ například ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD, když by se to lišilo jen v jedné tak je to naprd...
@@ -179,7 +183,7 @@ sim
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNDE5NTE3MiwtMTYxMzIyMTQ1LC0xNj
+eyJoaXN0b3J5IjpbLTQ3NjI3MzczNSwtMTYxMzIyMTQ1LC0xNj
 AzMDgwNjc2LDE5MDA4Mzc0MCwtMTA5MTkzMjU1MCwxNDI1MDMx
 NzgwLC05MDM5MDYxNDgsLTEzNzQzMDE0MjAsNzgzNDU3ODIwLD
 EwMDk3MTAxNDgsLTc1NTE3OTE3MCwtOTA1MzIwODc1LDcwMDc2
