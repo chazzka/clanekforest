@@ -158,6 +158,7 @@ We can see that using our approach we successfully isolated both numbers (5000 a
 ### Experiments using IF as a Novelty detection tool
 
 - [ ] TODO: tady experimenty, heatmapa atp., nějaký SOTA novelty algoritmus ze scikitu na porovnání
+- [ ] TODO: přídáme i porovnání s bin/simple_novelty.rb
 
 ### Drawbacks, todos
 -  [ ] TODO: TADY POPIŠ například ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD, když by se to lišilo jen v jedné tak je to naprd...
@@ -174,11 +175,11 @@ We can see that using our approach we successfully isolated both numbers (5000 a
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNTAzMTc4MCwtOTAzOTA2MTQ4LC0xMz
-c0MzAxNDIwLDc4MzQ1NzgyMCwxMDA5NzEwMTQ4LC03NTUxNzkx
-NzAsLTkwNTMyMDg3NSw3MDA3NjQ2OTEsLTMxODkxMTAzMywtMT
-gxMjkxOTAwNCw1OTAyMjUwMDYsMjY0OTIzMTcxLC01NzE5MjMw
-MjYsMTQzNTIxNzY2NSwtMTk1NTMwNjc1OSwxOTk3OTY0NTEwLD
-ExMDQ3MjgzOSwtODI1NDcwNTkxLC0xOTMwMzc5NjUwLC03Mjc1
-Njc5NTJdfQ==
+eyJoaXN0b3J5IjpbLTEwOTE5MzI1NTAsMTQyNTAzMTc4MCwtOT
+AzOTA2MTQ4LC0xMzc0MzAxNDIwLDc4MzQ1NzgyMCwxMDA5NzEw
+MTQ4LC03NTUxNzkxNzAsLTkwNTMyMDg3NSw3MDA3NjQ2OTEsLT
+MxODkxMTAzMywtMTgxMjkxOTAwNCw1OTAyMjUwMDYsMjY0OTIz
+MTcxLC01NzE5MjMwMjYsMTQzNTIxNzY2NSwtMTk1NTMwNjc1OS
+wxOTk3OTY0NTEwLDExMDQ3MjgzOSwtODI1NDcwNTkxLC0xOTMw
+Mzc5NjUwXX0=
 -->
