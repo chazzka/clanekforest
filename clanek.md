@@ -160,6 +160,7 @@ We can see that using our approach we successfully isolated both numbers (5000 a
 - [ ] TODO: tady experimenty, heatmapa atp., nějaký SOTA novelty algoritmus ze scikitu na porovnání
 - [ ] TODO: přídáme i porovnání s bin/simple_novelty.rb
 SVM: http.csv - odchylky všechny, ale pulku normálních označil jako ochylky
+SVM: shuttle.csv - 
 
 
 ### Drawbacks, todos
@@ -177,11 +178,11 @@ SVM: http.csv - odchylky všechny, ale pulku normálních označil jako ochylky
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMDgzNzQwLC0xMDkxOTMyNTUwLDE0Mj
-UwMzE3ODAsLTkwMzkwNjE0OCwtMTM3NDMwMTQyMCw3ODM0NTc4
-MjAsMTAwOTcxMDE0OCwtNzU1MTc5MTcwLC05MDUzMjA4NzUsNz
-AwNzY0NjkxLC0zMTg5MTEwMzMsLTE4MTI5MTkwMDQsNTkwMjI1
-MDA2LDI2NDkyMzE3MSwtNTcxOTIzMDI2LDE0MzUyMTc2NjUsLT
-E5NTUzMDY3NTksMTk5Nzk2NDUxMCwxMTA0NzI4MzksLTgyNTQ3
-MDU5MV19
+eyJoaXN0b3J5IjpbLTE2MDMwODA2NzYsMTkwMDgzNzQwLC0xMD
+kxOTMyNTUwLDE0MjUwMzE3ODAsLTkwMzkwNjE0OCwtMTM3NDMw
+MTQyMCw3ODM0NTc4MjAsMTAwOTcxMDE0OCwtNzU1MTc5MTcwLC
+05MDUzMjA4NzUsNzAwNzY0NjkxLC0zMTg5MTEwMzMsLTE4MTI5
+MTkwMDQsNTkwMjI1MDA2LDI2NDkyMzE3MSwtNTcxOTIzMDI2LD
+E0MzUyMTc2NjUsLTE5NTUzMDY3NTksMTk5Nzk2NDUxMCwxMTA0
+NzI4MzldfQ==
 -->
