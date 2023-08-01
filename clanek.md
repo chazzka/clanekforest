@@ -166,7 +166,7 @@ simple_novelty: shuttle.csv - nic moc
 naše novelty: http.csv - slušné
 naše novelty: shuttle.csv - horší ale OK
 
-- [ ] 
+- [ ] TODO: stanovit ranges na základě střední hodnoty a odchylky (doteď děláme mezikvart. odcyhlku) 
 
 ### Drawbacks, todos
 -  [ ] TODO: TADY POPIŠ například ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD, když by se to lišilo jen v jedné tak je to naprd...
@@ -183,7 +183,7 @@ naše novelty: shuttle.csv - horší ale OK
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NjI3MzczNSwtMTYxMzIyMTQ1LC0xNj
+eyJoaXN0b3J5IjpbMTY5OTIyNjYzOSwtMTYxMzIyMTQ1LC0xNj
 AzMDgwNjc2LDE5MDA4Mzc0MCwtMTA5MTkzMjU1MCwxNDI1MDMx
 NzgwLC05MDM5MDYxNDgsLTEzNzQzMDE0MjAsNzgzNDU3ODIwLD
 EwMDk3MTAxNDgsLTc1NTE3OTE3MCwtOTA1MzIwODc1LDcwMDc2
