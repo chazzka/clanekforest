@@ -43,6 +43,7 @@ Consider following example. Figure X contains random datapoints arranged in a wa
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/9047b936158e6320e0b4b942ab0d65c8e12f280f/clanek_figures/regular_observations_no_novelites.svg) 
 > Figure X Dataset with regular observations. 
 
+When an unsupervised, outlier detection algorithm tries to analyze such data, it 
 
 
 
@@ -159,11 +160,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MTM0MDU5OSwtMzE4OTExMDMzLC0xOD
-EyOTE5MDA0LDU5MDIyNTAwNiwyNjQ5MjMxNzEsLTU3MTkyMzAy
-NiwxNDM1MjE3NjY1LC0xOTU1MzA2NzU5LDE5OTc5NjQ1MTAsMT
-EwNDcyODM5LC04MjU0NzA1OTEsLTE5MzAzNzk2NTAsLTcyNzU2
-Nzk1MiwtMTE4MjIwMjQ3MSwtMTkzODUwMTgwNCwyMDExMjExOT
-Q4LC0xNDA3OTQwMzg2LDE3NzE0NDQwMDMsMTY0Mzg0NjMyMiwt
-MjMzNDcxNDY2XX0=
+eyJoaXN0b3J5IjpbLTE3NjQ3OTAwMTUsLTMxODkxMTAzMywtMT
+gxMjkxOTAwNCw1OTAyMjUwMDYsMjY0OTIzMTcxLC01NzE5MjMw
+MjYsMTQzNTIxNzY2NSwtMTk1NTMwNjc1OSwxOTk3OTY0NTEwLD
+ExMDQ3MjgzOSwtODI1NDcwNTkxLC0xOTMwMzc5NjUwLC03Mjc1
+Njc5NTIsLTExODIyMDI0NzEsLTE5Mzg1MDE4MDQsMjAxMTIxMT
+k0OCwtMTQwNzk0MDM4NiwxNzcxNDQ0MDAzLDE2NDM4NDYzMjIs
+LTIzMzQ3MTQ2Nl19
 -->
