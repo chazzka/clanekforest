@@ -105,7 +105,7 @@ Can we use Isolation Forest for novelty detection despite it not being primarily
 
 
 ### Proposed novelty isolation forest enhancement
-In this section, we propose a new approach for making forest detect novel observations. 
+In this section, we propose a new enhancement of the original Isolation Forest algoi for making forest detect novel observations. 
 The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
 The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
 Figure X demonstrates this by creating a first node of a forest with dataset consisting of a sample from range (0,100), successfully creating a node and a random split point of 80. 
@@ -165,11 +165,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgzNDU3ODIwLDEwMDk3MTAxNDgsLTc1NT
-E3OTE3MCwtOTA1MzIwODc1LDcwMDc2NDY5MSwtMzE4OTExMDMz
-LC0xODEyOTE5MDA0LDU5MDIyNTAwNiwyNjQ5MjMxNzEsLTU3MT
-kyMzAyNiwxNDM1MjE3NjY1LC0xOTU1MzA2NzU5LDE5OTc5NjQ1
-MTAsMTEwNDcyODM5LC04MjU0NzA1OTEsLTE5MzAzNzk2NTAsLT
-cyNzU2Nzk1MiwtMTE4MjIwMjQ3MSwtMTkzODUwMTgwNCwyMDEx
-MjExOTQ4XX0=
+eyJoaXN0b3J5IjpbLTkwNjcyNTU4MCw3ODM0NTc4MjAsMTAwOT
+cxMDE0OCwtNzU1MTc5MTcwLC05MDUzMjA4NzUsNzAwNzY0Njkx
+LC0zMTg5MTEwMzMsLTE4MTI5MTkwMDQsNTkwMjI1MDA2LDI2ND
+kyMzE3MSwtNTcxOTIzMDI2LDE0MzUyMTc2NjUsLTE5NTUzMDY3
+NTksMTk5Nzk2NDUxMCwxMTA0NzI4MzksLTgyNTQ3MDU5MSwtMT
+kzMDM3OTY1MCwtNzI3NTY3OTUyLC0xMTgyMjAyNDcxLC0xOTM4
+NTAxODA0XX0=
 -->
