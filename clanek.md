@@ -47,7 +47,7 @@ When an unsupervised, outlier detection algorithm tries to analyze such data, it
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_outlier_if.svg) 
 > Figure X Dataset with regular observations. 
 
-Let *x* be regular observations and *y* regular observations, 
+Let *x* be regular observations and *y* false positive regular observations, figure x clearly shows that approx.  8% of 
 
 
 
@@ -165,11 +165,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDM1MDc4MDMsNzAwNzY0NjkxLC0zMT
-g5MTEwMzMsLTE4MTI5MTkwMDQsNTkwMjI1MDA2LDI2NDkyMzE3
-MSwtNTcxOTIzMDI2LDE0MzUyMTc2NjUsLTE5NTUzMDY3NTksMT
-k5Nzk2NDUxMCwxMTA0NzI4MzksLTgyNTQ3MDU5MSwtMTkzMDM3
-OTY1MCwtNzI3NTY3OTUyLC0xMTgyMjAyNDcxLC0xOTM4NTAxOD
-A0LDIwMTEyMTE5NDgsLTE0MDc5NDAzODYsMTc3MTQ0NDAwMywx
-NjQzODQ2MzIyXX0=
+eyJoaXN0b3J5IjpbLTMyOTc0NDcyOCw3MDA3NjQ2OTEsLTMxOD
+kxMTAzMywtMTgxMjkxOTAwNCw1OTAyMjUwMDYsMjY0OTIzMTcx
+LC01NzE5MjMwMjYsMTQzNTIxNzY2NSwtMTk1NTMwNjc1OSwxOT
+k3OTY0NTEwLDExMDQ3MjgzOSwtODI1NDcwNTkxLC0xOTMwMzc5
+NjUwLC03Mjc1Njc5NTIsLTExODIyMDI0NzEsLTE5Mzg1MDE4MD
+QsMjAxMTIxMTk0OCwtMTQwNzk0MDM4NiwxNzcxNDQ0MDAzLDE2
+NDM4NDYzMjJdfQ==
 -->
