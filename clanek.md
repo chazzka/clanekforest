@@ -51,7 +51,8 @@ Figure X shows the result of evaluating classical Isolation Forest on such datas
 > Figure X Dataset with regular observations. 
 
 Let *x* be regular observations and *y* false positive regular observations, figure x clearly shows that approx. 10% of observations are marked as anomalies.
-This is not unwanted behavior in the sense of outlier detection, but
+This is not unwanted behavior in the sense of outlier detection but is undesired in the sense of novelty detection.
+
 
 
 
@@ -169,11 +170,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIyMDMwNzA5LDcwMDc2NDY5MSwtMzE4OT
-ExMDMzLC0xODEyOTE5MDA0LDU5MDIyNTAwNiwyNjQ5MjMxNzEs
-LTU3MTkyMzAyNiwxNDM1MjE3NjY1LC0xOTU1MzA2NzU5LDE5OT
-c5NjQ1MTAsMTEwNDcyODM5LC04MjU0NzA1OTEsLTE5MzAzNzk2
-NTAsLTcyNzU2Nzk1MiwtMTE4MjIwMjQ3MSwtMTkzODUwMTgwNC
-wyMDExMjExOTQ4LC0xNDA3OTQwMzg2LDE3NzE0NDQwMDMsMTY0
-Mzg0NjMyMl19
+eyJoaXN0b3J5IjpbMTYzMTA2MzEzNyw3MDA3NjQ2OTEsLTMxOD
+kxMTAzMywtMTgxMjkxOTAwNCw1OTAyMjUwMDYsMjY0OTIzMTcx
+LC01NzE5MjMwMjYsMTQzNTIxNzY2NSwtMTk1NTMwNjc1OSwxOT
+k3OTY0NTEwLDExMDQ3MjgzOSwtODI1NDcwNTkxLC0xOTMwMzc5
+NjUwLC03Mjc1Njc5NTIsLTExODIyMDI0NzEsLTE5Mzg1MDE4MD
+QsMjAxMTIxMTk0OCwtMTQwNzk0MDM4NiwxNzcxNDQ0MDAzLDE2
+NDM4NDYzMjJdfQ==
 -->
