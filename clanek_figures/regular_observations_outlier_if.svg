@@ -1,0 +1,692 @@
+<svg width='500' height='300' viewBox='0 0 500 300' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:a3='http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/' a3:scriptImplementation='Adobe'>
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+<!-- Created with SVG::Graph -->
+<!-- SVG::Graph by Sean E. Russell -->
+<!-- Losely based on SVG::TT::Graph for Perl by Leo Lapworth & Stephan Morgan -->
+<!-- //////////////////////////////////////////////////////////////////-->
+<defs>
+<style type='text/css'>
+<![CDATA[/* Copy from here for external style sheet */
+.svgBackground{
+  fill:#ffffff;
+}
+.graphBackground{
+  fill:#f0f0f0;
+}
+
+/* graphs titles */
+.mainTitle{
+  text-anchor: middle;
+  fill: #000000;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+.subTitle{
+  text-anchor: middle;
+  fill: #999999;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.axis{
+  stroke: #000000;
+  stroke-width: 1px;
+}
+
+.guideLines{
+  stroke: #666666;
+  stroke-width: 1px;
+  stroke-dasharray: 5 5;
+}
+
+.xAxisLabels{
+  text-anchor: middle;
+  fill: #000000;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.yAxisLabels{
+  text-anchor: end;
+  fill: #000000;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.xAxisTitle{
+  text-anchor: middle;
+  fill: #ff0000;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.yAxisTitle{
+  fill: #ff0000;
+  text-anchor: middle;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.dataPointLabel, .dataPointLabelBackground, .dataPointPopup, .dataPointPopupMask{
+  fill: #000000;
+  text-anchor:middle;
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.dataPointLabelBackground{
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+.dataPointPopupMask{
+  stroke: white;
+  stroke-width: 7;
+}
+
+.dataPointPopup{
+  fill: black;
+  stroke-width: 2;
+}
+
+.staggerGuideLine{
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.5px;
+}
+
+/* default line styles */
+.line1{
+	fill: none;
+	stroke: #ff0000;
+	stroke-width: 1px;
+}
+.line2{
+	fill: none;
+	stroke: #0000ff;
+	stroke-width: 1px;
+}
+.line3{
+	fill: none;
+	stroke: #00ff00;
+	stroke-width: 1px;
+}
+.line4{
+	fill: none;
+	stroke: #ffcc00;
+	stroke-width: 1px;
+}
+.line5{
+	fill: none;
+	stroke: #00ccff;
+	stroke-width: 1px;
+}
+.line6{
+	fill: none;
+	stroke: #ff00ff;
+	stroke-width: 1px;
+}
+.line7{
+	fill: none;
+	stroke: #00ffff;
+	stroke-width: 1px;
+}
+.line8{
+	fill: none;
+	stroke: #ffff00;
+	stroke-width: 1px;
+}
+.line9{
+	fill: none;
+	stroke: #cc6666;
+	stroke-width: 1px;
+}
+.line10{
+	fill: none;
+	stroke: #663399;
+	stroke-width: 1px;
+}
+.line11{
+	fill: none;
+	stroke: #339900;
+	stroke-width: 1px;
+}
+.line12{
+	fill: none;
+	stroke: #9966FF;
+	stroke-width: 1px;
+}
+/* default fill styles */
+.fill1{
+	fill: #cc0000;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill2{
+	fill: #0000cc;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill3{
+	fill: #00cc00;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill4{
+	fill: #ffcc00;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill5{
+	fill: #00ccff;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill6{
+	fill: #ff00ff;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill7{
+	fill: #00ffff;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill8{
+	fill: #ffff00;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill9{
+	fill: #cc6666;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill10{
+	fill: #663399;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill11{
+	fill: #339900;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+.fill12{
+	fill: #9966FF;
+	fill-opacity: 0.2;
+	stroke: none;
+}
+/* default line styles */
+.key1,.dataPoint1{
+	fill: #ff0000;
+	stroke: none;
+	stroke-width: 1px;
+}
+.key2,.dataPoint2{
+	fill: #0000ff;
+	stroke: none;
+	stroke-width: 1px;
+}
+.key3,.dataPoint3{
+	fill: #00ff00;
+	stroke: none;
+	stroke-width: 1px;
+}
+.key4,.dataPoint4{
+	fill: #ffcc00;
+	stroke: none;
+	stroke-width: 1px;
+}
+.key5,.dataPoint5{
+	fill: #00ccff;
+	stroke: none;
+	stroke-width: 1px;
+}
+.key6,.dataPoint6{
+	fill: #ff00ff;
+	stroke: none;
+	stroke-width: 1px;
+}
+.key7,.dataPoint7{
+	fill: #00ffff;
+	stroke: none;
+	stroke-width: 1px;
+}
+.key8,.dataPoint8{
+	fill: #ffff00;
+	stroke: none;
+	stroke-width: 1px;
+}
+.key9,.dataPoint9{
+	fill: #cc6666;
+	stroke: none;
+	stroke-width: 1px;
+}
+.key10,.dataPoint10{
+	fill: #663399;
+	stroke: none;
+	stroke-width: 1px;
+}
+.key11,.dataPoint11{
+	fill: #339900;
+	stroke: none;
+	stroke-width: 1px;
+}
+.key12,.dataPoint12{
+	fill: #9966FF;
+	stroke: none;
+	stroke-width: 1px;
+}
+
+
+.keyText{
+  fill: #000000;
+  text-anchor:start;
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+/* End copy for external style sheet */
+]]>
+</style>
+</defs>
+<!-- include default stylesheet if none specified -->
+<!--SVG Background-->
+<rect width='500' height='300' x='0' y='0' class='svgBackground'/>
+<g transform='translate( 65.0 10 )'>
+<rect x='0' y='0' width='400.0' height='249' class='graphBackground'/>
+<path d='M 0 249 h400.0' class='axis' id='yAxis'/>
+<path d='M 0.0 0 v249' class='axis' id='xAxis'/>
+<text class='xAxisLabels' x='0.0' y='264' style='text-anchor: middle'>11.00</text>
+<text class='xAxisLabels' x='57.142857142857146' y='264' style='text-anchor: middle'>13.00</text>
+<text class='xAxisLabels' x='114.28571428571429' y='264' style='text-anchor: middle'>15.00</text>
+<text class='xAxisLabels' x='171.42857142857144' y='264' style='text-anchor: middle'>17.00</text>
+<text class='xAxisLabels' x='228.57142857142858' y='264' style='text-anchor: middle'>19.00</text>
+<text class='xAxisLabels' x='285.7142857142857' y='264' style='text-anchor: middle'>21.00</text>
+<text class='xAxisLabels' x='342.8571428571429' y='264' style='text-anchor: middle'>23.00</text>
+<text class='xAxisLabels' x='400.0' y='264' style='text-anchor: middle'>25.00</text>
+<text x='3' y='253.0' class='yAxisLabels' style='text-anchor: end' transform='translate( -12 0 ) rotate( 0 3 253.0 ) '>2.00</text>
+<text x='3' y='211.5' class='yAxisLabels' style='text-anchor: end' transform='translate( -12 0 ) rotate( 0 3 211.5 ) '>3.00</text>
+<path d='M0 207.5 h400.0' class='guideLines'/>
+<text x='3' y='170.0' class='yAxisLabels' style='text-anchor: end' transform='translate( -12 0 ) rotate( 0 3 170.0 ) '>4.00</text>
+<path d='M0 166.0 h400.0' class='guideLines'/>
+<text x='3' y='128.5' class='yAxisLabels' style='text-anchor: end' transform='translate( -12 0 ) rotate( 0 3 128.5 ) '>5.00</text>
+<path d='M0 124.5 h400.0' class='guideLines'/>
+<text x='3' y='87.0' class='yAxisLabels' style='text-anchor: end' transform='translate( -12 0 ) rotate( 0 3 87.0 ) '>6.00</text>
+<path d='M0 83.0 h400.0' class='guideLines'/>
+<text x='3' y='45.5' class='yAxisLabels' style='text-anchor: end' transform='translate( -12 0 ) rotate( 0 3 45.5 ) '>7.00</text>
+<path d='M0 41.5 h400.0' class='guideLines'/>
+<text x='3' y='4.0' class='yAxisLabels' style='text-anchor: end' transform='translate( -12 0 ) rotate( 0 3 4.0 ) '>8.00</text>
+<path d='M0 0.0 h400.0' class='guideLines'/>
+<circle cx='27.142857142857125' cy='122.42500000000001' r='2.5' class='dataPoint1'/>
+<circle cx='45.71428571428571' cy='124.5' r='2.5' class='dataPoint1'/>
+<circle cx='45.71428571428571' cy='199.2' r='2.5' class='dataPoint1'/>
+<circle cx='52.85714285714285' cy='126.57499999999999' r='2.5' class='dataPoint1'/>
+<circle cx='54.2857142857143' cy='174.3' r='2.5' class='dataPoint1'/>
+<circle cx='58.5714285714286' cy='195.05' r='2.5' class='dataPoint1'/>
+<circle cx='58.5714285714286' cy='188.825' r='2.5' class='dataPoint1'/>
+<circle cx='61.428571428571445' cy='136.95' r='2.5' class='dataPoint1'/>
+<circle cx='62.85714285714284' cy='78.85000000000002' r='2.5' class='dataPoint1'/>
+<circle cx='92.85714285714286' cy='70.55000000000001' r='2.5' class='dataPoint1'/>
+<circle cx='95.71428571428571' cy='145.25' r='2.5' class='dataPoint1'/>
+<circle cx='98.57142857142856' cy='116.19999999999999' r='2.5' class='dataPoint1'/>
+<circle cx='100.0' cy='201.275' r='2.5' class='dataPoint1'/>
+<circle cx='100.0' cy='176.375' r='2.5' class='dataPoint1'/>
+<circle cx='110.0' cy='147.325' r='2.5' class='dataPoint1'/>
+<circle cx='110.0' cy='53.95000000000002' r='2.5' class='dataPoint1'/>
+<circle cx='121.42857142857143' cy='147.325' r='2.5' class='dataPoint1'/>
+<circle cx='122.85714285714289' cy='101.67500000000001' r='2.5' class='dataPoint1'/>
+<circle cx='132.85714285714286' cy='91.30000000000001' r='2.5' class='dataPoint1'/>
+<circle cx='132.85714285714286' cy='195.05' r='2.5' class='dataPoint1'/>
+<circle cx='138.57142857142856' cy='168.075' r='2.5' class='dataPoint1'/>
+<circle cx='141.42857142857142' cy='120.35000000000002' r='2.5' class='dataPoint1'/>
+<circle cx='141.42857142857142' cy='70.55000000000001' r='2.5' class='dataPoint1'/>
+<circle cx='154.28571428571425' cy='176.375' r='2.5' class='dataPoint1'/>
+<circle cx='157.14285714285714' cy='122.42500000000001' r='2.5' class='dataPoint1'/>
+<circle cx='162.85714285714283' cy='139.02499999999998' r='2.5' class='dataPoint1'/>
+<circle cx='162.85714285714283' cy='195.05' r='2.5' class='dataPoint1'/>
+<circle cx='164.2857142857143' cy='120.35000000000002' r='2.5' class='dataPoint1'/>
+<circle cx='174.28571428571433' cy='97.52499999999998' r='2.5' class='dataPoint1'/>
+<circle cx='175.7142857142857' cy='215.8' r='2.5' class='dataPoint1'/>
+<circle cx='180.00000000000003' cy='153.55' r='2.5' class='dataPoint1'/>
+<circle cx='187.14285714285717' cy='118.27499999999998' r='2.5' class='dataPoint1'/>
+<circle cx='189.99999999999997' cy='60.17500000000004' r='2.5' class='dataPoint1'/>
+<circle cx='191.42857142857142' cy='174.3' r='2.5' class='dataPoint1'/>
+<circle cx='194.2857142857143' cy='91.30000000000001' r='2.5' class='dataPoint1'/>
+<circle cx='197.1428571428571' cy='128.64999999999998' r='2.5' class='dataPoint1'/>
+<circle cx='205.7142857142857' cy='147.325' r='2.5' class='dataPoint1'/>
+<circle cx='207.14285714285717' cy='213.725' r='2.5' class='dataPoint1'/>
+<circle cx='211.4285714285714' cy='176.375' r='2.5' class='dataPoint1'/>
+<circle cx='212.85714285714286' cy='99.60000000000002' r='2.5' class='dataPoint1'/>
+<circle cx='218.57142857142856' cy='192.975' r='2.5' class='dataPoint1'/>
+<circle cx='231.42857142857147' cy='139.02499999999998' r='2.5' class='dataPoint1'/>
+<circle cx='234.28571428571428' cy='60.17500000000004' r='2.5' class='dataPoint1'/>
+<circle cx='237.14285714285717' cy='201.275' r='2.5' class='dataPoint1'/>
+<circle cx='241.42857142857142' cy='166.0' r='2.5' class='dataPoint1'/>
+<circle cx='245.71428571428578' cy='166.0' r='2.5' class='dataPoint1'/>
+<circle cx='247.1428571428571' cy='83.0' r='2.5' class='dataPoint1'/>
+<circle cx='248.57142857142856' cy='192.975' r='2.5' class='dataPoint1'/>
+<circle cx='254.28571428571425' cy='205.425' r='2.5' class='dataPoint1'/>
+<circle cx='255.7142857142857' cy='114.125' r='2.5' class='dataPoint1'/>
+<circle cx='255.7142857142857' cy='224.1' r='2.5' class='dataPoint1'/>
+<circle cx='258.5714285714286' cy='51.875' r='2.5' class='dataPoint1'/>
+<circle cx='261.4285714285714' cy='128.64999999999998' r='2.5' class='dataPoint1'/>
+<circle cx='264.2857142857143' cy='130.72500000000002' r='2.5' class='dataPoint1'/>
+<circle cx='271.42857142857144' cy='170.15' r='2.5' class='dataPoint1'/>
+<circle cx='274.28571428571433' cy='118.27499999999998' r='2.5' class='dataPoint1'/>
+<circle cx='282.85714285714283' cy='80.92500000000001' r='2.5' class='dataPoint1'/>
+<circle cx='285.7142857142857' cy='70.55000000000001' r='2.5' class='dataPoint1'/>
+<circle cx='287.14285714285717' cy='143.175' r='2.5' class='dataPoint1'/>
+<circle cx='288.5714285714286' cy='197.125' r='2.5' class='dataPoint1'/>
+<circle cx='291.42857142857144' cy='147.325' r='2.5' class='dataPoint1'/>
+<circle cx='291.42857142857144' cy='161.85000000000002' r='2.5' class='dataPoint1'/>
+<circle cx='294.28571428571433' cy='130.72500000000002' r='2.5' class='dataPoint1'/>
+<circle cx='305.7142857142857' cy='170.15' r='2.5' class='dataPoint1'/>
+<circle cx='315.7142857142858' cy='128.64999999999998' r='2.5' class='dataPoint1'/>
+<circle cx='317.1428571428572' cy='170.15' r='2.5' class='dataPoint1'/>
+<circle cx='320.0' cy='83.0' r='2.5' class='dataPoint1'/>
+<circle cx='322.8571428571429' cy='60.17500000000004' r='2.5' class='dataPoint1'/>
+<circle cx='324.28571428571433' cy='188.825' r='2.5' class='dataPoint1'/>
+<circle cx='324.28571428571433' cy='205.425' r='2.5' class='dataPoint1'/>
+<circle cx='327.14285714285717' cy='105.82499999999999' r='2.5' class='dataPoint1'/>
+<circle cx='341.42857142857144' cy='147.325' r='2.5' class='dataPoint1'/>
+<circle cx='344.28571428571433' cy='172.225' r='2.5' class='dataPoint1'/>
+<circle cx='344.28571428571433' cy='190.9' r='2.5' class='dataPoint1'/>
+<circle cx='352.8571428571429' cy='155.625' r='2.5' class='dataPoint1'/>
+<circle cx='355.7142857142857' cy='101.67500000000001' r='2.5' class='dataPoint1'/>
+<circle cx='358.5714285714286' cy='128.64999999999998' r='2.5' class='dataPoint1'/>
+<circle cx='364.2857142857143' cy='203.35' r='2.5' class='dataPoint1'/>
+<circle cx='367.1428571428572' cy='132.8' r='2.5' class='dataPoint1'/>
+<circle cx='375.71428571428567' cy='136.95' r='2.5' class='dataPoint1'/>
+<circle cx='375.71428571428567' cy='163.925' r='2.5' class='dataPoint1'/>
+<circle cx='14.285714285714286' cy='205.425' r='2.5' class='dataPoint2'/>
+<circle cx='17.142857142857135' cy='159.77499999999998' r='2.5' class='dataPoint2'/>
+<circle cx='78.57142857142857' cy='222.025' r='2.5' class='dataPoint2'/>
+<circle cx='135.71428571428572' cy='29.05000000000004' r='2.5' class='dataPoint2'/>
+<circle cx='201.42857142857147' cy='26.975000000000023' r='2.5' class='dataPoint2'/>
+<circle cx='297.1428571428571' cy='234.475' r='2.5' class='dataPoint2'/>
+<circle cx='385.7142857142857' cy='107.89999999999998' r='2.5' class='dataPoint2'/>
+<g>
+<a xlink:href=''>
+<circle cx='27.142857142857125' cy='122.42500000000001' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='45.71428571428571' cy='124.5' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='45.71428571428571' cy='199.2' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='52.85714285714285' cy='126.57499999999999' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='54.2857142857143' cy='174.3' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='58.5714285714286' cy='195.05' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='58.5714285714286' cy='188.825' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='61.428571428571445' cy='136.95' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='62.85714285714284' cy='78.85000000000002' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='92.85714285714286' cy='70.55000000000001' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='95.71428571428571' cy='145.25' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='98.57142857142856' cy='116.19999999999999' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='100.0' cy='201.275' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='100.0' cy='176.375' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='110.0' cy='147.325' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='110.0' cy='53.95000000000002' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='121.42857142857143' cy='147.325' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='122.85714285714289' cy='101.67500000000001' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='132.85714285714286' cy='91.30000000000001' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='132.85714285714286' cy='195.05' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='138.57142857142856' cy='168.075' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='141.42857142857142' cy='120.35000000000002' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='141.42857142857142' cy='70.55000000000001' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='154.28571428571425' cy='176.375' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='157.14285714285714' cy='122.42500000000001' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='162.85714285714283' cy='139.02499999999998' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='162.85714285714283' cy='195.05' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='164.2857142857143' cy='120.35000000000002' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='174.28571428571433' cy='97.52499999999998' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='175.7142857142857' cy='215.8' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='180.00000000000003' cy='153.55' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='187.14285714285717' cy='118.27499999999998' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='189.99999999999997' cy='60.17500000000004' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='191.42857142857142' cy='174.3' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='194.2857142857143' cy='91.30000000000001' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='197.1428571428571' cy='128.64999999999998' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='205.7142857142857' cy='147.325' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='207.14285714285717' cy='213.725' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='211.4285714285714' cy='176.375' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='212.85714285714286' cy='99.60000000000002' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='218.57142857142856' cy='192.975' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='231.42857142857147' cy='139.02499999999998' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='234.28571428571428' cy='60.17500000000004' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='237.14285714285717' cy='201.275' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='241.42857142857142' cy='166.0' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='245.71428571428578' cy='166.0' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='247.1428571428571' cy='83.0' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='248.57142857142856' cy='192.975' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='254.28571428571425' cy='205.425' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='255.7142857142857' cy='114.125' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='255.7142857142857' cy='224.1' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='258.5714285714286' cy='51.875' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='261.4285714285714' cy='128.64999999999998' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='264.2857142857143' cy='130.72500000000002' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='271.42857142857144' cy='170.15' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='274.28571428571433' cy='118.27499999999998' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='282.85714285714283' cy='80.92500000000001' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='285.7142857142857' cy='70.55000000000001' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='287.14285714285717' cy='143.175' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='288.5714285714286' cy='197.125' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='291.42857142857144' cy='147.325' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='291.42857142857144' cy='161.85000000000002' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='294.28571428571433' cy='130.72500000000002' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='305.7142857142857' cy='170.15' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='315.7142857142858' cy='128.64999999999998' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='317.1428571428572' cy='170.15' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='320.0' cy='83.0' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='322.8571428571429' cy='60.17500000000004' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='324.28571428571433' cy='188.825' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='324.28571428571433' cy='205.425' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='327.14285714285717' cy='105.82499999999999' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='341.42857142857144' cy='147.325' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='344.28571428571433' cy='172.225' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='344.28571428571433' cy='190.9' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='352.8571428571429' cy='155.625' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='355.7142857142857' cy='101.67500000000001' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='358.5714285714286' cy='128.64999999999998' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='364.2857142857143' cy='203.35' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='367.1428571428572' cy='132.8' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='375.71428571428567' cy='136.95' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='375.71428571428567' cy='163.925' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='14.285714285714286' cy='205.425' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='17.142857142857135' cy='159.77499999999998' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='78.57142857142857' cy='222.025' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='135.71428571428572' cy='29.05000000000004' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='201.42857142857147' cy='26.975000000000023' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='297.1428571428571' cy='234.475' r='10' style='opacity: 0'/>
+</a>
+<a xlink:href=''>
+<circle cx='385.7142857142857' cy='107.89999999999998' r='10' style='opacity: 0'/>
+</a>
+</g>
+</g>
+<text x='265.0' y='288' class='xAxisTitle'>X Field names</text>
+<text x='17' y='134' class='yAxisTitle' transform='rotate( -90, 17, 134 )'>Y Scale</text>
+<g transform='translate(475.0 20)'>
+<rect x='0' y='0' width='12' height='12' class='key1'/>
+<text x='17' y='12' class='keyText'>x</text>
+<rect x='0' y='17' width='12' height='12' class='key2'/>
+<text x='17' y='29' class='keyText'>y</text>
+</g>
+</svg>
