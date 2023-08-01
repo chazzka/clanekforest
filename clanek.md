@@ -52,6 +52,12 @@ Figure X shows the result of evaluating classical Isolation Forest on such datas
 
 Let *x* be regular observations and *y* false positive regular observations marked by Isolation Forest (batch_size 128, trees_count: 100, zbytek default), figure x shows that approx. 10% of observations are marked as anomalies.
 This is not unwanted behavior in the sense of outlier detection but is undesired in the sense of novelty detection, because the false positive marked data are regular observations which should not be omitted.
+Another problem is with the unsupervised separation itself.
+Consider data polluted by anomalies in close to 1:1 ratio.
+Even human will find it nearly impossible to differentiate between these two classes when given plotted dataset.
+Finding the line itself is obvious.
+Deciding which observations are anomalies, without some domain knowledge on the other hand is close to impossible.
+
 
 ### Isolation Forest
 Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"), [2](https://doi.org/10.1016/j.patcog.2023.109334 "article 2")) is an outlier detection, semi-supervised ensemble algorithm. 
@@ -95,11 +101,6 @@ The Scikit-Learn platform (scikit-learn.org) offers several implemented, documen
 This kind of issue is widely known amongst AutoML community.
 Some tools have already been implemented that try to deal with the issue of automatic hyperparameter tuning, namely H20 (h2o.ai) or AutoGluon (auto.gluon.ai). 
 
-The last problem is with the unsupervised separation itself.
-Consider data polluted by anomalies in close to 1:1 ratio.
-Even human will find it nearly impossible to differentiate between these two classes when given plotted dataset.
-Finding the line itself is obvious.
-Deciding which observations are anomalies, without some domain knowledge on the other hand is close to impossible.
 
 The final question is if it is somehow possible to teach Isolation Forest how regular observation look like. 
 Can we use Isolation Forest for novelty detection despite it not being primarily novelty detection algorithm? 
@@ -166,11 +167,11 @@ Figure X demonstrates this by adding two novel points (considering the learning 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzQzMDE0MjAsNzgzNDU3ODIwLDEwMD
-k3MTAxNDgsLTc1NTE3OTE3MCwtOTA1MzIwODc1LDcwMDc2NDY5
-MSwtMzE4OTExMDMzLC0xODEyOTE5MDA0LDU5MDIyNTAwNiwyNj
-Q5MjMxNzEsLTU3MTkyMzAyNiwxNDM1MjE3NjY1LC0xOTU1MzA2
-NzU5LDE5OTc5NjQ1MTAsMTEwNDcyODM5LC04MjU0NzA1OTEsLT
-E5MzAzNzk2NTAsLTcyNzU2Nzk1MiwtMTE4MjIwMjQ3MSwtMTkz
-ODUwMTgwNF19
+eyJoaXN0b3J5IjpbLTkyODU5MjkwOCwtMTM3NDMwMTQyMCw3OD
+M0NTc4MjAsMTAwOTcxMDE0OCwtNzU1MTc5MTcwLC05MDUzMjA4
+NzUsNzAwNzY0NjkxLC0zMTg5MTEwMzMsLTE4MTI5MTkwMDQsNT
+kwMjI1MDA2LDI2NDkyMzE3MSwtNTcxOTIzMDI2LDE0MzUyMTc2
+NjUsLTE5NTUzMDY3NTksMTk5Nzk2NDUxMCwxMTA0NzI4MzksLT
+gyNTQ3MDU5MSwtMTkzMDM3OTY1MCwtNzI3NTY3OTUyLC0xMTgy
+MjAyNDcxXX0=
 -->
