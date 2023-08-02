@@ -28,7 +28,7 @@ One of the successful methods dealing with novelty detection is OneClass SVM alg
 The One-class SVM algorithm is the unsupervised outlier detection algorithm which can also be used for novelty detection.
 It computes a binary function which is supposed to capture regions in input space where the probability density lives (its support), i.e. a function such that most of the data will live in the region where the function is nonzero (Schölkopf et al., 1999).
 
-Another method, 
+Another method, initially used for outlier detection but capable of being used as a novelty detection 
 ####
 
 
@@ -191,11 +191,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDQ0MTQ0NjcsLTE0MDYwMzY5MSwtMj
-UxNzkyNDcyLDM3MjMzMDQ3OSwtMTYxMzIyMTQ1LC0xNjAzMDgw
-Njc2LDE5MDA4Mzc0MCwtMTA5MTkzMjU1MCwxNDI1MDMxNzgwLC
-05MDM5MDYxNDgsLTEzNzQzMDE0MjAsNzgzNDU3ODIwLDEwMDk3
-MTAxNDgsLTc1NTE3OTE3MCwtOTA1MzIwODc1LDcwMDc2NDY5MS
-wtMzE4OTExMDMzLC0xODEyOTE5MDA0LDU5MDIyNTAwNiwyNjQ5
-MjMxNzFdfQ==
+eyJoaXN0b3J5IjpbLTEwODEyNzQ0NiwtMTQwNjAzNjkxLC0yNT
+E3OTI0NzIsMzcyMzMwNDc5LC0xNjEzMjIxNDUsLTE2MDMwODA2
+NzYsMTkwMDgzNzQwLC0xMDkxOTMyNTUwLDE0MjUwMzE3ODAsLT
+kwMzkwNjE0OCwtMTM3NDMwMTQyMCw3ODM0NTc4MjAsMTAwOTcx
+MDE0OCwtNzU1MTc5MTcwLC05MDUzMjA4NzUsNzAwNzY0NjkxLC
+0zMTg5MTEwMzMsLTE4MTI5MTkwMDQsNTkwMjI1MDA2LDI2NDky
+MzE3MV19
 -->
