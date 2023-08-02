@@ -120,7 +120,7 @@ Can we use Isolation Forest for novelty detection despite it not being primarily
 
 
 ### Proposed novelty isolation forest enhancement
-In this section, we propose a new enhancement of the original Isolation Forest algorithm for make it possible to detect novel observations. 
+In this section, we propose a new enhancement of the original Isolation Forest algorithm for making it possible to detect novel observations. 
 The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
 The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
 Figure X demonstrates this by creating a first node of a forest with dataset consisting of a sample from range (0,100), successfully creating a node and a random split point of 80. 
@@ -136,7 +136,7 @@ This results in 5000 being in the same node as numbers >80, making the novelty d
  - [ ] TODO: tady popíšeme naši isolation servisku
  
 In our proposed enhancement, we clearly have to deal with this issue.
-The problem is to somehow evaluate the sparseness of the data, differentiating between datapoint being >80 and somehow "far bigger than 80", making the latter novelty.
+The problem is the evaluation of the sparseness of the data, differentiating between datapoint being >80 and somehow "far bigger than 80", making the latter novelty.
 The proposed solution is altering the concept of evaluation of a split point.
 Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on the whole range.
 For this to work, several alterations to the split point evaluation and form of data passed between nodes has to be done, but the overall concept of the forest stays the same. 
@@ -195,7 +195,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjQwNzkwMDMsMTUyNTY0NTkwNCwtMT
+eyJoaXN0b3J5IjpbLTExMTM0MDA3MTIsMTUyNTY0NTkwNCwtMT
 g3NjQ1OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0
 MjMsMTQwNTQ5NjYwLC0xNDA2MDM2OTEsLTI1MTc5MjQ3MiwzNz
 IzMzA0NzksLTE2MTMyMjE0NSwtMTYwMzA4MDY3NiwxOTAwODM3
