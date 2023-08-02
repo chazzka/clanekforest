@@ -150,9 +150,11 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
  1. When selecting a sample from the given data, to randomly selecting the sample of a given *batch size*, the evaluation of range for each dimension was added.
  2. When the split point is calculated, random dimension is chosen, and the split point is taken from the evaluated range (and not the data itself).
 
+- [ ]  TODO: TENTO PROCES NĚJAK POPSAT ROVNICEMI
+
 The evaluation of a range starts by simply selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly.
-After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, like in the original article) and a random value is selected out of the selected range. 
+After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, as in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
 Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
 For example, if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
@@ -195,11 +197,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE1MzUyMjY1LDE1MjU2NDU5MDQsLTE4Nz
-Y0NTkxNDUsMjAyODEyNTk2Miw2MzQ2NTU0ODQsNTA4MTk1NDIz
-LDE0MDU0OTY2MCwtMTQwNjAzNjkxLC0yNTE3OTI0NzIsMzcyMz
-MwNDc5LC0xNjEzMjIxNDUsLTE2MDMwODA2NzYsMTkwMDgzNzQw
-LC0xMDkxOTMyNTUwLDE0MjUwMzE3ODAsLTkwMzkwNjE0OCwtMT
-M3NDMwMTQyMCw3ODM0NTc4MjAsMTAwOTcxMDE0OCwtNzU1MTc5
-MTcwXX0=
+eyJoaXN0b3J5IjpbNTAwMzMwNDcyLDYxNTM1MjI2NSwxNTI1Nj
+Q1OTA0LC0xODc2NDU5MTQ1LDIwMjgxMjU5NjIsNjM0NjU1NDg0
+LDUwODE5NTQyMywxNDA1NDk2NjAsLTE0MDYwMzY5MSwtMjUxNz
+kyNDcyLDM3MjMzMDQ3OSwtMTYxMzIyMTQ1LC0xNjAzMDgwNjc2
+LDE5MDA4Mzc0MCwtMTA5MTkzMjU1MCwxNDI1MDMxNzgwLC05MD
+M5MDYxNDgsLTEzNzQzMDE0MjAsNzgzNDU3ODIwLDEwMDk3MTAx
+NDhdfQ==
 -->
