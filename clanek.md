@@ -114,11 +114,6 @@ The Scikit-Learn platform (scikit-learn.org) offers several implemented, documen
 This kind of issue is widely known amongst AutoML community.
 Some tools have already been implemented that try to deal with the issue of automatic hyperparameter tuning, namely H20 (h2o.ai) or AutoGluon (auto.gluon.ai). 
 
-
-The final question is if it is somehow possible to teach Isolation Forest how regular observation look like. 
-Can we use Isolation Forest for novelty detection despite it not being primarily novelty detection algorithm? 
-
-
 ### Proposed novelty isolation forest enhancement
 In this section, we propose a new enhancement of the original Isolation Forest algorithm for making it possible to detect novel observations. 
 The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
@@ -198,11 +193,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNTQwMDkzNyw2MTUzNTIyNjUsMTUyNT
-Y0NTkwNCwtMTg3NjQ1OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4
-NCw1MDgxOTU0MjMsMTQwNTQ5NjYwLC0xNDA2MDM2OTEsLTI1MT
-c5MjQ3MiwzNzIzMzA0NzksLTE2MTMyMjE0NSwtMTYwMzA4MDY3
-NiwxOTAwODM3NDAsLTEwOTE5MzI1NTAsMTQyNTAzMTc4MCwtOT
-AzOTA2MTQ4LC0xMzc0MzAxNDIwLDc4MzQ1NzgyMCwxMDA5NzEw
-MTQ4XX0=
+eyJoaXN0b3J5IjpbLTE5MTA2MTgyNzEsNjE1MzUyMjY1LDE1Mj
+U2NDU5MDQsLTE4NzY0NTkxNDUsMjAyODEyNTk2Miw2MzQ2NTU0
+ODQsNTA4MTk1NDIzLDE0MDU0OTY2MCwtMTQwNjAzNjkxLC0yNT
+E3OTI0NzIsMzcyMzMwNDc5LC0xNjEzMjIxNDUsLTE2MDMwODA2
+NzYsMTkwMDgzNzQwLC0xMDkxOTMyNTUwLDE0MjUwMzE3ODAsLT
+kwMzkwNjE0OCwtMTM3NDMwMTQyMCw3ODM0NTc4MjAsMTAwOTcx
+MDE0OF19
 -->
