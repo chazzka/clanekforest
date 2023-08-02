@@ -31,7 +31,9 @@ It computes a binary function which is supposed to capture regions in input spac
 Another method, initially used for unsupervised outlier detection but capable of being used as a novelty detection is the Local Outlier Factor algorithm.
 #### Local Outlier Factor
 The Local Outlier Factor (LOF) algorithm (https://doi.org/10.1145/335191.335388) assigns each point in the dataset a degree of outlier-ness.
-Whereas previous attempts assigned datapoints a binary property (outlier/not), LOF algorithm assigns a real value, following a k-distance neighborhood. It first calculates the reachability distance from all the neighbors
+Whereas previous attempts assigned datapoints a binary property (outlier/not), LOF algorithm assigns a real value, following a k-distance neighborhood. 
+It first calculates the reachability distance from all the neighbors.
+Based on this, the LOF algorithm calculates the LOF score of the point 
 
 
 Isolation forest on the other hand, has been widely used for outlier detection. 
@@ -192,11 +194,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzg1NDI4MjQsNjM0NjU1NDg0LDUwOD
-E5NTQyMywxNDA1NDk2NjAsLTE0MDYwMzY5MSwtMjUxNzkyNDcy
-LDM3MjMzMDQ3OSwtMTYxMzIyMTQ1LC0xNjAzMDgwNjc2LDE5MD
-A4Mzc0MCwtMTA5MTkzMjU1MCwxNDI1MDMxNzgwLC05MDM5MDYx
-NDgsLTEzNzQzMDE0MjAsNzgzNDU3ODIwLDEwMDk3MTAxNDgsLT
-c1NTE3OTE3MCwtOTA1MzIwODc1LDcwMDc2NDY5MSwtMzE4OTEx
-MDMzXX0=
+eyJoaXN0b3J5IjpbMTc3NTg4MTA0LDYzNDY1NTQ4NCw1MDgxOT
+U0MjMsMTQwNTQ5NjYwLC0xNDA2MDM2OTEsLTI1MTc5MjQ3Miwz
+NzIzMzA0NzksLTE2MTMyMjE0NSwtMTYwMzA4MDY3NiwxOTAwOD
+M3NDAsLTEwOTE5MzI1NTAsMTQyNTAzMTc4MCwtOTAzOTA2MTQ4
+LC0xMzc0MzAxNDIwLDc4MzQ1NzgyMCwxMDA5NzEwMTQ4LC03NT
+UxNzkxNzAsLTkwNTMyMDg3NSw3MDA3NjQ2OTEsLTMxODkxMTAz
+M119
 -->
