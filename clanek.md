@@ -133,17 +133,17 @@ This results in 5000 being in the same node as numbers >80, making the novelty d
 
 
  - [ ] TODO:  blabla tady pokračujeme že možná nějaký obrázek jak to funguje že neustále se zmenšuje ten frame, to nám vlastně zapříčiní že 100,100 je stjeně novelty jako 1000,1000.
+
  - [ ] TODO: tady popíšeme naši isolation servisku
  
  
 In our proposed enhancement, we clearly have to deal with this issue.
-The problem is the evaluation of the sparseness of the data, differentiating between datapoint being >80 and somehow "far bigger than 80", making the latter novelty.
 The proposed solution is altering the concept of evaluation of a split point.
-Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on the whole range.
+Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on a range.
 For this to work, several alterations to the split point evaluation and form of data passed between nodes has to be done, but the overall concept of the forest stays the same. 
 This is demonstrated by simply adding a new service to our proposed algorithm.
 
-  - [ ] TODO: šup sem odkaz na ruby algorithm s dokumentací
+  - [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
 
  We encourage you to try it and maybe create your own service based on our already implemented ones.
  This service called Novelty is making two main alteration concepts:
@@ -198,7 +198,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNjI5MDEwNiw2MTUzNTIyNjUsMTUyNT
+eyJoaXN0b3J5IjpbMTQzNTQwMDkzNyw2MTUzNTIyNjUsMTUyNT
 Y0NTkwNCwtMTg3NjQ1OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4
 NCw1MDgxOTU0MjMsMTQwNTQ5NjYwLC0xNDA2MDM2OTEsLTI1MT
 c5MjQ3MiwzNzIzMzA0NzksLTE2MTMyMjE0NSwtMTYwMzA4MDY3
