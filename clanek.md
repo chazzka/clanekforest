@@ -168,6 +168,8 @@ simple_novelty : http.csv - hodně dobře funguje, až moc
 simple_novelty: shuttle.csv - nic moc
 naše novelty: http.csv - slušné
 naše novelty: shuttle.csv - horší ale OK
+lof: http.csv - super
+lof: shuttle.csv - super
 
 - [ ] TODO: stanovit ranges na základě střední hodnoty a odchylky (doteď děláme mezikvart. odcyhlku) 
 
@@ -186,11 +188,11 @@ naše novelty: shuttle.csv - horší ale OK
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MTc5MjQ3MiwzNzIzMzA0NzksLTE2MT
-MyMjE0NSwtMTYwMzA4MDY3NiwxOTAwODM3NDAsLTEwOTE5MzI1
-NTAsMTQyNTAzMTc4MCwtOTAzOTA2MTQ4LC0xMzc0MzAxNDIwLD
-c4MzQ1NzgyMCwxMDA5NzEwMTQ4LC03NTUxNzkxNzAsLTkwNTMy
-MDg3NSw3MDA3NjQ2OTEsLTMxODkxMTAzMywtMTgxMjkxOTAwNC
-w1OTAyMjUwMDYsMjY0OTIzMTcxLC01NzE5MjMwMjYsMTQzNTIx
-NzY2NV19
+eyJoaXN0b3J5IjpbLTE0MDYwMzY5MSwtMjUxNzkyNDcyLDM3Mj
+MzMDQ3OSwtMTYxMzIyMTQ1LC0xNjAzMDgwNjc2LDE5MDA4Mzc0
+MCwtMTA5MTkzMjU1MCwxNDI1MDMxNzgwLC05MDM5MDYxNDgsLT
+EzNzQzMDE0MjAsNzgzNDU3ODIwLDEwMDk3MTAxNDgsLTc1NTE3
+OTE3MCwtOTA1MzIwODc1LDcwMDc2NDY5MSwtMzE4OTExMDMzLC
+0xODEyOTE5MDA0LDU5MDIyNTAwNiwyNjQ5MjMxNzEsLTU3MTky
+MzAyNl19
 -->
