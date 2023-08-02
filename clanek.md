@@ -135,6 +135,7 @@ This results in 5000 being in the same node as numbers >80, making the novelty d
  - [ ] TODO:  blabla tady pokračujeme že možná nějaký obrázek jak to funguje že neustále se zmenšuje ten frame, to nám vlastně zapříčiní že 100,100 je stjeně novelty jako 1000,1000.
  - [ ] TODO: tady popíšeme naši isolation servisku
  
+ 
 In our proposed enhancement, we clearly have to deal with this issue.
 The problem is the evaluation of the sparseness of the data, differentiating between datapoint being >80 and somehow "far bigger than 80", making the latter novelty.
 The proposed solution is altering the concept of evaluation of a split point.
@@ -197,11 +198,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAwMzMwNDcyLDYxNTM1MjI2NSwxNTI1Nj
-Q1OTA0LC0xODc2NDU5MTQ1LDIwMjgxMjU5NjIsNjM0NjU1NDg0
-LDUwODE5NTQyMywxNDA1NDk2NjAsLTE0MDYwMzY5MSwtMjUxNz
-kyNDcyLDM3MjMzMDQ3OSwtMTYxMzIyMTQ1LC0xNjAzMDgwNjc2
-LDE5MDA4Mzc0MCwtMTA5MTkzMjU1MCwxNDI1MDMxNzgwLC05MD
-M5MDYxNDgsLTEzNzQzMDE0MjAsNzgzNDU3ODIwLDEwMDk3MTAx
-NDhdfQ==
+eyJoaXN0b3J5IjpbMjAwNjI5MDEwNiw2MTUzNTIyNjUsMTUyNT
+Y0NTkwNCwtMTg3NjQ1OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4
+NCw1MDgxOTU0MjMsMTQwNTQ5NjYwLC0xNDA2MDM2OTEsLTI1MT
+c5MjQ3MiwzNzIzMzA0NzksLTE2MTMyMjE0NSwtMTYwMzA4MDY3
+NiwxOTAwODM3NDAsLTEwOTE5MzI1NTAsMTQyNTAzMTc4MCwtOT
+AzOTA2MTQ4LC0xMzc0MzAxNDIwLDc4MzQ1NzgyMCwxMDA5NzEw
+MTQ4XX0=
 -->
