@@ -122,7 +122,7 @@ Can we use Isolation Forest for novelty detection despite it not being primarily
 ### Proposed novelty isolation forest enhancement
 In this section, we propose a new enhancement of the original Isolation Forest algorithm for making it possible to detect novel observations. 
 The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
-The basic problem with isolation forest not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
+The basic problem with Isolation Forest algorithm not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
 Figure X demonstrates this by creating a first node of a forest with dataset consisting of a sample from range (0,100), successfully creating a node and a random split point of 80. 
 Later on, when Isolation Forest is being used for the evaluation of the number 5000 (which is reasonably far away from the initial 0 to 100 range) the previous split point is used to determine its final node.
 This results in 5000 being in the same node as numbers >80, making the novelty detection impossible.
@@ -195,11 +195,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTM0MDA3MTIsMTUyNTY0NTkwNCwtMT
-g3NjQ1OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0
-MjMsMTQwNTQ5NjYwLC0xNDA2MDM2OTEsLTI1MTc5MjQ3MiwzNz
-IzMzA0NzksLTE2MTMyMjE0NSwtMTYwMzA4MDY3NiwxOTAwODM3
-NDAsLTEwOTE5MzI1NTAsMTQyNTAzMTc4MCwtOTAzOTA2MTQ4LC
-0xMzc0MzAxNDIwLDc4MzQ1NzgyMCwxMDA5NzEwMTQ4LC03NTUx
-NzkxNzBdfQ==
+eyJoaXN0b3J5IjpbNjE1MzUyMjY1LDE1MjU2NDU5MDQsLTE4Nz
+Y0NTkxNDUsMjAyODEyNTk2Miw2MzQ2NTU0ODQsNTA4MTk1NDIz
+LDE0MDU0OTY2MCwtMTQwNjAzNjkxLC0yNTE3OTI0NzIsMzcyMz
+MwNDc5LC0xNjEzMjIxNDUsLTE2MDMwODA2NzYsMTkwMDgzNzQw
+LC0xMDkxOTMyNTUwLDE0MjUwMzE3ODAsLTkwMzkwNjE0OCwtMT
+M3NDMwMTQyMCw3ODM0NTc4MjAsMTAwOTcxMDE0OCwtNzU1MTc5
+MTcwXX0=
 -->
