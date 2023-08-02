@@ -29,8 +29,8 @@ The One-class SVM algorithm is the unsupervised outlier detection algorithm whic
 It computes a binary function which is supposed to capture regions in input space where the probability density lives (its support), i.e. a function such that most of the data will live in the region where the function is nonzero (Schölkopf et al., 1999).
 
 Another method, initially used for unsupervised outlier detection but capable of being used as a novelty detection is the Local Outlier Factor algorithm.
-
-####
+#### Local Outlier Factor
+The Local Outlier Factor (LOF) algorithm 
 
 
 
@@ -192,7 +192,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2Njc3MjkxOSwxNDA1NDk2NjAsLTE0MD
+eyJoaXN0b3J5IjpbMTM2MDcwNzI5NywxNDA1NDk2NjAsLTE0MD
 YwMzY5MSwtMjUxNzkyNDcyLDM3MjMzMDQ3OSwtMTYxMzIyMTQ1
 LC0xNjAzMDgwNjc2LDE5MDA4Mzc0MCwtMTA5MTkzMjU1MCwxND
 I1MDMxNzgwLC05MDM5MDYxNDgsLTEzNzQzMDE0MjAsNzgzNDU3
