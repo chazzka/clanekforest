@@ -30,7 +30,7 @@ It computes a binary function which is supposed to capture regions in input spac
 
 Another method, initially used for unsupervised outlier detection but capable of being used as a novelty detection is the Local Outlier Factor algorithm.
 #### Local Outlier Factor
-The Local Outlier Factor (LOF) algorithm (https://doi.org/10.1145/335191.335388). 
+The Local Outlier Factor (LOF) algorithm (https://doi.org/10.1145/335191.335388) 
 
 
 
@@ -192,11 +192,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MzYzNTA1MSwxNDA1NDk2NjAsLTE0MD
-YwMzY5MSwtMjUxNzkyNDcyLDM3MjMzMDQ3OSwtMTYxMzIyMTQ1
-LC0xNjAzMDgwNjc2LDE5MDA4Mzc0MCwtMTA5MTkzMjU1MCwxND
-I1MDMxNzgwLC05MDM5MDYxNDgsLTEzNzQzMDE0MjAsNzgzNDU3
-ODIwLDEwMDk3MTAxNDgsLTc1NTE3OTE3MCwtOTA1MzIwODc1LD
-cwMDc2NDY5MSwtMzE4OTExMDMzLC0xODEyOTE5MDA0LDU5MDIy
-NTAwNl19
+eyJoaXN0b3J5IjpbNTA4MTk1NDIzLDE0MDU0OTY2MCwtMTQwNj
+AzNjkxLC0yNTE3OTI0NzIsMzcyMzMwNDc5LC0xNjEzMjIxNDUs
+LTE2MDMwODA2NzYsMTkwMDgzNzQwLC0xMDkxOTMyNTUwLDE0Mj
+UwMzE3ODAsLTkwMzkwNjE0OCwtMTM3NDMwMTQyMCw3ODM0NTc4
+MjAsMTAwOTcxMDE0OCwtNzU1MTc5MTcwLC05MDUzMjA4NzUsNz
+AwNzY0NjkxLC0zMTg5MTEwMzMsLTE4MTI5MTkwMDQsNTkwMjI1
+MDA2XX0=
 -->
