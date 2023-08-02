@@ -35,6 +35,7 @@ Whereas previous attempts assigned datapoints a binary property (outlier/not), L
 It first calculates the reachability distance from all the neighbors.
 Based on this, the algorithm calculates the LOF score of the point and compares with the threshold.
 This is done for all of the points until each point has its LOF score.
+In the context of novelty detection, novelties/anomalies can form a dense cluster as long as they are in a low-density region of the training data, considered as normal in this context.
 When using this method for novelty detection, the novelty decision function is shifted opposite (large values correspond to inliers, whereas small values are novel datapoints).
 
 
@@ -196,11 +197,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzY0NTkxNDUsMjAyODEyNTk2Miw2Mz
-Q2NTU0ODQsNTA4MTk1NDIzLDE0MDU0OTY2MCwtMTQwNjAzNjkx
-LC0yNTE3OTI0NzIsMzcyMzMwNDc5LC0xNjEzMjIxNDUsLTE2MD
-MwODA2NzYsMTkwMDgzNzQwLC0xMDkxOTMyNTUwLDE0MjUwMzE3
-ODAsLTkwMzkwNjE0OCwtMTM3NDMwMTQyMCw3ODM0NTc4MjAsMT
-AwOTcxMDE0OCwtNzU1MTc5MTcwLC05MDUzMjA4NzUsNzAwNzY0
-NjkxXX0=
+eyJoaXN0b3J5IjpbMTUyNTY0NTkwNCwtMTg3NjQ1OTE0NSwyMD
+I4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjMsMTQwNTQ5NjYw
+LC0xNDA2MDM2OTEsLTI1MTc5MjQ3MiwzNzIzMzA0NzksLTE2MT
+MyMjE0NSwtMTYwMzA4MDY3NiwxOTAwODM3NDAsLTEwOTE5MzI1
+NTAsMTQyNTAzMTc4MCwtOTAzOTA2MTQ4LC0xMzc0MzAxNDIwLD
+c4MzQ1NzgyMCwxMDA5NzEwMTQ4LC03NTUxNzkxNzAsLTkwNTMy
+MDg3NV19
 -->
