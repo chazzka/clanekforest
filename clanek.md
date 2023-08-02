@@ -33,7 +33,8 @@ Another method, initially used for unsupervised outlier detection but capable of
 The Local Outlier Factor (LOF) algorithm (https://doi.org/10.1145/335191.335388) assigns each point in the dataset a degree of outlier-ness.
 Whereas previous attempts assigned datapoints a binary property (outlier/not), LOF algorithm assigns a real value, following a k-distance neighborhood. 
 It first calculates the reachability distance from all the neighbors.
-Based on this, the LOF algorithm calculates the LOF score of the point 
+Based on this, the LOF algorithm calculates the LOF score of the point and compares with the threshold.
+
 
 
 Isolation forest on the other hand, has been widely used for outlier detection. 
@@ -194,11 +195,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NTg4MTA0LDYzNDY1NTQ4NCw1MDgxOT
-U0MjMsMTQwNTQ5NjYwLC0xNDA2MDM2OTEsLTI1MTc5MjQ3Miwz
-NzIzMzA0NzksLTE2MTMyMjE0NSwtMTYwMzA4MDY3NiwxOTAwOD
-M3NDAsLTEwOTE5MzI1NTAsMTQyNTAzMTc4MCwtOTAzOTA2MTQ4
-LC0xMzc0MzAxNDIwLDc4MzQ1NzgyMCwxMDA5NzEwMTQ4LC03NT
-UxNzkxNzAsLTkwNTMyMDg3NSw3MDA3NjQ2OTEsLTMxODkxMTAz
-M119
+eyJoaXN0b3J5IjpbLTkxNzUwNTUwNyw2MzQ2NTU0ODQsNTA4MT
+k1NDIzLDE0MDU0OTY2MCwtMTQwNjAzNjkxLC0yNTE3OTI0NzIs
+MzcyMzMwNDc5LC0xNjEzMjIxNDUsLTE2MDMwODA2NzYsMTkwMD
+gzNzQwLC0xMDkxOTMyNTUwLDE0MjUwMzE3ODAsLTkwMzkwNjE0
+OCwtMTM3NDMwMTQyMCw3ODM0NTc4MjAsMTAwOTcxMDE0OCwtNz
+U1MTc5MTcwLC05MDUzMjA4NzUsNzAwNzY0NjkxLC0zMTg5MTEw
+MzNdfQ==
 -->
