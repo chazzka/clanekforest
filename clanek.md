@@ -35,6 +35,7 @@ Whereas previous attempts assigned datapoints a binary property (outlier/not), L
 It first calculates the reachability distance from all the neighbors.
 Based on this, the algorithm calculates the LOF score of the point and compares with the threshold.
 This is done for all of the points until each point has its LOF score.
+When using this method for novelty detection, the novelty decision function is shifted opposite (large values correspond to inliers, whereas small values are novel datapoints).
 
 
 Isolation forest on the other hand, has been widely used for outlier detection. 
@@ -195,11 +196,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2OTY1ODcyMiwyMDI4MTI1OTYyLDYzND
-Y1NTQ4NCw1MDgxOTU0MjMsMTQwNTQ5NjYwLC0xNDA2MDM2OTEs
-LTI1MTc5MjQ3MiwzNzIzMzA0NzksLTE2MTMyMjE0NSwtMTYwMz
-A4MDY3NiwxOTAwODM3NDAsLTEwOTE5MzI1NTAsMTQyNTAzMTc4
-MCwtOTAzOTA2MTQ4LC0xMzc0MzAxNDIwLDc4MzQ1NzgyMCwxMD
-A5NzEwMTQ4LC03NTUxNzkxNzAsLTkwNTMyMDg3NSw3MDA3NjQ2
-OTFdfQ==
+eyJoaXN0b3J5IjpbLTE4NzY0NTkxNDUsMjAyODEyNTk2Miw2Mz
+Q2NTU0ODQsNTA4MTk1NDIzLDE0MDU0OTY2MCwtMTQwNjAzNjkx
+LC0yNTE3OTI0NzIsMzcyMzMwNDc5LC0xNjEzMjIxNDUsLTE2MD
+MwODA2NzYsMTkwMDgzNzQwLC0xMDkxOTMyNTUwLDE0MjUwMzE3
+ODAsLTkwMzkwNjE0OCwtMTM3NDMwMTQyMCw3ODM0NTc4MjAsMT
+AwOTcxMDE0OCwtNzU1MTc5MTcwLC05MDUzMjA4NzUsNzAwNzY0
+NjkxXX0=
 -->
