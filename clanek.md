@@ -30,7 +30,8 @@ It computes a binary function which is supposed to capture regions in input spac
 
 Another method, initially used for unsupervised outlier detection but capable of being used as a novelty detection is the Local Outlier Factor algorithm.
 #### Local Outlier Factor
-The Local Outlier Factor (LOF) algorithm (https://doi.org/10.1145/335191.335388) assigns each point in the dataset a degree of outlier-ness. Whereas previous attempts assigned outliers 
+The Local Outlier Factor (LOF) algorithm (https://doi.org/10.1145/335191.335388) assigns each point in the dataset a degree of outlier-ness.
+Whereas previous attempts assigned datapoints a binary property (outlier/not), LOF algorithm assigns a real value, following a k-distance neighbo. 
 
 
 Isolation forest on the other hand, has been widely used for outlier detection. 
@@ -191,7 +192,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTU4ODAzNzUsNTA4MTk1NDIzLDE0MD
+eyJoaXN0b3J5IjpbLTE1NzkxMDI4MjgsNTA4MTk1NDIzLDE0MD
 U0OTY2MCwtMTQwNjAzNjkxLC0yNTE3OTI0NzIsMzcyMzMwNDc5
 LC0xNjEzMjIxNDUsLTE2MDMwODA2NzYsMTkwMDgzNzQwLC0xMD
 kxOTMyNTUwLDE0MjUwMzE3ODAsLTkwMzkwNjE0OCwtMTM3NDMw
