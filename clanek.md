@@ -35,9 +35,7 @@ Whereas previous attempts assigned datapoints a binary property (outlier/not), L
 It first calculates the reachability distance from all the neighbors.
 Based on this, the algorithm calculates the LOF score of the point and compares with the threshold.
 This is done for all of the points until each point has its LOF score.
-In the context of novelty detection, novelties/anomalies can form a dense cluster as long as they are in a low-density region of the training data, considered as normal in this context.
 When using this method for novelty detection, the novelty decision function is shifted opposite (large values correspond to inliers, whereas small values are novel datapoints).
-
 
 Isolation forest on the other hand, has been widely used for outlier detection. 
 In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets.
@@ -197,11 +195,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNTY0NTkwNCwtMTg3NjQ1OTE0NSwyMD
-I4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjMsMTQwNTQ5NjYw
-LC0xNDA2MDM2OTEsLTI1MTc5MjQ3MiwzNzIzMzA0NzksLTE2MT
-MyMjE0NSwtMTYwMzA4MDY3NiwxOTAwODM3NDAsLTEwOTE5MzI1
-NTAsMTQyNTAzMTc4MCwtOTAzOTA2MTQ4LC0xMzc0MzAxNDIwLD
-c4MzQ1NzgyMCwxMDA5NzEwMTQ4LC03NTUxNzkxNzAsLTkwNTMy
-MDg3NV19
+eyJoaXN0b3J5IjpbLTExMjQwNzkwMDMsMTUyNTY0NTkwNCwtMT
+g3NjQ1OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0
+MjMsMTQwNTQ5NjYwLC0xNDA2MDM2OTEsLTI1MTc5MjQ3MiwzNz
+IzMzA0NzksLTE2MTMyMjE0NSwtMTYwMzA4MDY3NiwxOTAwODM3
+NDAsLTEwOTE5MzI1NTAsMTQyNTAzMTc4MCwtOTAzOTA2MTQ4LC
+0xMzc0MzAxNDIwLDc4MzQ1NzgyMCwxMDA5NzEwMTQ4LC03NTUx
+NzkxNzBdfQ==
 -->
