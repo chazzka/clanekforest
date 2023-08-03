@@ -158,6 +158,7 @@ I addition to this, we need to add a tolerance layer to contain the later observ
 This is usually done by adding a set of whiskers to a box plot.
 The most straightforward selection of the whiskers the min-max of the dataset.
 
+
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, as in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
 Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
@@ -201,11 +202,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MjgzNjk4NSwyODA0OTM1MzAsLTIwND
-c4NTU0Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYwOCwtMTkxMDYxODI3
-MSw2MTUzNTIyNjUsMTUyNTY0NTkwNCwtMTg3NjQ1OTE0NSwyMD
-I4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjMsMTQwNTQ5NjYw
-LC0xNDA2MDM2OTEsLTI1MTc5MjQ3MiwzNzIzMzA0NzksLTE2MT
-MyMjE0NSwtMTYwMzA4MDY3NiwxOTAwODM3NDAsLTEwOTE5MzI1
-NTBdfQ==
+eyJoaXN0b3J5IjpbNTQwMDY3MTExLDI4MDQ5MzUzMCwtMjA0Nz
+g1NTQ3LDczNzg3NzEyOCwtNDUyNjM5NjA4LC0xOTEwNjE4Mjcx
+LDYxNTM1MjI2NSwxNTI1NjQ1OTA0LC0xODc2NDU5MTQ1LDIwMj
+gxMjU5NjIsNjM0NjU1NDg0LDUwODE5NTQyMywxNDA1NDk2NjAs
+LTE0MDYwMzY5MSwtMjUxNzkyNDcyLDM3MjMzMDQ3OSwtMTYxMz
+IyMTQ1LC0xNjAzMDgwNjc2LDE5MDA4Mzc0MCwtMTA5MTkzMjU1
+MF19
 -->
