@@ -217,9 +217,10 @@ $$range_{right} =  [{SP, r_{max}}] \qquad{(9)}$$
 
 This allows the novel datapoints to make their way through the tree, making novelty detection possible.
 
-Figure X shows, that after three runes (max_depth = 3) we successfully isolated the novel datapoints (y) by fitting them in the regions of a higher path_length.
+Figure X shows, that after three runs (max_depth = 3) we successfully isolated the novel datapoints (y) by fitting them in the regions of a higher path_length.
 
-Consider now point $P_x$ as depicted in Figure X. Using our new approach, $P_x$ is assigned into an area with the 
+Consider now point $P_x$ as depicted in Figure X. 
+Using our new approach, $P_x$ is assigned into an area with the *path length = 2*, making $P_x$ 
 We can see that using our approach we successfully isolated both numbers (5000 and 2000, which are considerably far away from each other) in different nodes.
 - [ ] TODO: OBRÁZEK SE MI PŘESTAL LÍBIT
 
@@ -257,11 +258,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM0MDY0MTc1LDIwMDI2ODc3MzcsMzI3Mz
-I2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3LDE0MzI4Mzk3MDAs
-LTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMTYwNDk3Njg3NywtNz
-UxNTU0NzAxLDE2NDI0NzE0LDE1MzM4NDYyMjcsMTkzODI2NTc1
-LDM3MDM2MzQzOCwxMTQ0MTI4MzMzLC00Mjk2OTc1ODUsLTcwMD
-k4NjM5NiwxMDIzNDMxNTc2LC04ODU3Nzg1NTUsMTA2ODIzNjg0
-N119
+eyJoaXN0b3J5IjpbLTIxMjU1MjU5NTQsMjAwMjY4NzczNywzMj
+czMjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3MDcsMTQzMjgzOTcw
+MCwtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC0xNjA0OTc2ODc3LC
+03NTE1NTQ3MDEsMTY0MjQ3MTQsMTUzMzg0NjIyNywxOTM4MjY1
+NzUsMzcwMzYzNDM4LDExNDQxMjgzMzMsLTQyOTY5NzU4NSwtNz
+AwOTg2Mzk2LDEwMjM0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2
+ODQ3XX0=
 -->
