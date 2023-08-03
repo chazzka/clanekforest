@@ -217,14 +217,12 @@ $$range_{right} =  [{SP, r_{max}}] \qquad{(9)}$$
 
 This allows the novel datapoints to make their way through the tree, making novelty detection possible.
 
-- [ ] - TODO: TOTO UDĚLAT VÍC PROFI, JAK NAHOŘE
-
 Figure X demonstrates this by adding two novel points (considering the learning sample of data beginning with 0 and ending with 100).
 
 We can see that using our approach we successfully isolated both numbers (5000 and 2000, which are considerably far away from each other) in different nodes.
 - [ ] TODO: OBRÁZEK SE MI PŘESTAL LÍBIT
 
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/clanek_5000_novelty.svg)
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_novelty.svg)
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. 
 
 
@@ -258,11 +256,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMzU1OD
-gxNzA3LDE0MzI4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3NjUz
-MiwtMTYwNDk3Njg3NywtNzUxNTU0NzAxLDE2NDI0NzE0LDE1Mz
-M4NDYyMjcsMTkzODI2NTc1LDM3MDM2MzQzOCwxMTQ0MTI4MzMz
-LC00Mjk2OTc1ODUsLTcwMDk4NjM5NiwxMDIzNDMxNTc2LC04OD
-U3Nzg1NTUsMTA2ODIzNjg0NywtODAzMTg1ODE0LDI4MDQ5MzUz
-MF19
+eyJoaXN0b3J5IjpbMjAwMjY4NzczNywzMjczMjY0NDgsLTI1MD
+czMjcyLC0zNTU4ODE3MDcsMTQzMjgzOTcwMCwtMjAwMjM2MTM4
+OSwtNzU2NDc2NTMyLC0xNjA0OTc2ODc3LC03NTE1NTQ3MDEsMT
+Y0MjQ3MTQsMTUzMzg0NjIyNywxOTM4MjY1NzUsMzcwMzYzNDM4
+LDExNDQxMjgzMzMsLTQyOTY5NzU4NSwtNzAwOTg2Mzk2LDEwMj
+M0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2ODQ3LC04MDMxODU4
+MTRdfQ==
 -->
