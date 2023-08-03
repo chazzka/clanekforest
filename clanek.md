@@ -181,7 +181,7 @@ f(x)=
 	(3)
 $$
 
-For a symmetrical distribution
+For symmetrical distributions, the MC value  
 
 - [ ]  TODO: TENTO PROCES NĚJAK POPSAT ROVNICEMI
 
@@ -228,7 +228,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0OTcwODYzNSwxMDY4MjM2ODQ3LC04MD
+eyJoaXN0b3J5IjpbLTg4NTc3ODU1NSwxMDY4MjM2ODQ3LC04MD
 MxODU4MTQsMjgwNDkzNTMwLC0yMDQ3ODU1NDcsNzM3ODc3MTI4
 LC00NTI2Mzk2MDgsLTE5MTA2MTgyNzEsNjE1MzUyMjY1LDE1Mj
 U2NDU5MDQsLTE4NzY0NTkxNDUsMjAyODEyNTk2Miw2MzQ2NTU0
