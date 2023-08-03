@@ -188,7 +188,7 @@ $$f_{MC_0}(x)=1.5 IQR \qquad(4)$$
 
 
 Using above defined functions, the range is generated for each of the dimension of the dataset.
-The appropriate choice of an
+The appropriate choice of the algorithm for the range tolerance selection is a matter of experiments and future research.
 
 $$ranges = map(r_f , D)  \qquad(5),$$
 
@@ -243,7 +243,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MTAxMDQwNiwtNzAwOTg2Mzk2LDEwMj
+eyJoaXN0b3J5IjpbMTY1OTM4MTg5NSwtNzAwOTg2Mzk2LDEwMj
 M0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2ODQ3LC04MDMxODU4
 MTQsMjgwNDkzNTMwLC0yMDQ3ODU1NDcsNzM3ODc3MTI4LC00NT
 I2Mzk2MDgsLTE5MTA2MTgyNzEsNjE1MzUyMjY1LDE1MjU2NDU5
