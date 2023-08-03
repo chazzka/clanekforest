@@ -170,7 +170,7 @@ $$f(x) = \pm \frac{1.58IQR}{\sqrt{n}} \qquad (2)$$
 
 #### Adjusted box
 Adjusted box is useful for describing the skew distributions.
-It relies on the medcouple value (MC) of the dataset.
+It relies on the *medcouple* value (MC) of the dataset.
 The *medcouple* is a statistic to measure the skewness (asymmetry of the prop. distribution) of a univariate distribution. 
 As of Humert et. al (https://www.sciencedirect.com/science/article/pii/S0167947307004434?via%3Dihub)
 for a medcouple value of MC, the lengths of the upper and lower whiskers on the box-plot are respectively defined in (3).
@@ -248,11 +248,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzODI2NTc1LDM3MDM2MzQzOCwxMTQ0MT
-I4MzMzLC00Mjk2OTc1ODUsLTcwMDk4NjM5NiwxMDIzNDMxNTc2
-LC04ODU3Nzg1NTUsMTA2ODIzNjg0NywtODAzMTg1ODE0LDI4MD
-Q5MzUzMCwtMjA0Nzg1NTQ3LDczNzg3NzEyOCwtNDUyNjM5NjA4
-LC0xOTEwNjE4MjcxLDYxNTM1MjI2NSwxNTI1NjQ1OTA0LC0xOD
-c2NDU5MTQ1LDIwMjgxMjU5NjIsNjM0NjU1NDg0LDUwODE5NTQy
-M119
+eyJoaXN0b3J5IjpbMTUzMzg0NjIyNywxOTM4MjY1NzUsMzcwMz
+YzNDM4LDExNDQxMjgzMzMsLTQyOTY5NzU4NSwtNzAwOTg2Mzk2
+LDEwMjM0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2ODQ3LC04MD
+MxODU4MTQsMjgwNDkzNTMwLC0yMDQ3ODU1NDcsNzM3ODc3MTI4
+LC00NTI2Mzk2MDgsLTE5MTA2MTgyNzEsNjE1MzUyMjY1LDE1Mj
+U2NDU5MDQsLTE4NzY0NTkxNDUsMjAyODEyNTk2Miw2MzQ2NTU0
+ODRdfQ==
 -->
