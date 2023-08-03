@@ -34,12 +34,12 @@ The Local Outlier Factor (LOF) algorithm (https://doi.org/10.1145/335191.335388)
 Whereas previous attempts assigned datapoints a binary property (outlier/not), LOF algorithm assigns a real value, following a k-distance neighborhood. 
 It first calculates the reachability distance from all the neighbors.
 Based on this, the algorithm calculates the LOF score of the point and compares with the threshold.
-This is done for all of the points until each point has its LOF score.
+This is done for all of the points until each point has its own LOF score.
 When using this method for novelty detection, the novelty decision function is shifted opposite (large values correspond to inliers, whereas small values are novel datapoints).
 
 Isolation forest on the other hand, has been widely used for outlier detection. 
 In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets.
-Thorough the years, many successful enhancements of the Isolation Forest have been developed. Gałka, Karczmarek, Tokovarov in (https://doi.org/10.1016/j.patrec.2022.09.015) implement Minimal Spanning Tree clustering based enhancement.
+Thorough the years, many successful enhancements of the Isolation Forest have been developed. Gałka, Karczmarek, Tokovarov in (https://doi.org/10.1016/j.patrec.2022.09.015) implement Minimal Spanning Tree clustering-based enhancement.
 Instead of random determination of a split point, first, two clusters are prepared and then a split point is set to the middle of prepared clusters. Another interesting enhancement comes from Chater and al. (https://doi.org/10.1016/j.procs.2022.09.147) where the team deal with the necessity of having precise and crisp data when using basic Isolation Forest approach by implementing Fuzzy adaptation for the Isolation Forest.
 However, there does not seem to be much work regarding using Isolation Forest as a novelty detection tool. 
 
@@ -193,11 +193,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTA2MTgyNzEsNjE1MzUyMjY1LDE1Mj
-U2NDU5MDQsLTE4NzY0NTkxNDUsMjAyODEyNTk2Miw2MzQ2NTU0
-ODQsNTA4MTk1NDIzLDE0MDU0OTY2MCwtMTQwNjAzNjkxLC0yNT
-E3OTI0NzIsMzcyMzMwNDc5LC0xNjEzMjIxNDUsLTE2MDMwODA2
-NzYsMTkwMDgzNzQwLC0xMDkxOTMyNTUwLDE0MjUwMzE3ODAsLT
-kwMzkwNjE0OCwtMTM3NDMwMTQyMCw3ODM0NTc4MjAsMTAwOTcx
-MDE0OF19
+eyJoaXN0b3J5IjpbLTQ1MjYzOTYwOCwtMTkxMDYxODI3MSw2MT
+UzNTIyNjUsMTUyNTY0NTkwNCwtMTg3NjQ1OTE0NSwyMDI4MTI1
+OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjMsMTQwNTQ5NjYwLC0xND
+A2MDM2OTEsLTI1MTc5MjQ3MiwzNzIzMzA0NzksLTE2MTMyMjE0
+NSwtMTYwMzA4MDY3NiwxOTAwODM3NDAsLTEwOTE5MzI1NTAsMT
+QyNTAzMTc4MCwtOTAzOTA2MTQ4LC0xMzc0MzAxNDIwLDc4MzQ1
+NzgyMF19
 -->
