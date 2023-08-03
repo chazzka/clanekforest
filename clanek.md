@@ -158,7 +158,11 @@ I addition to this, we need to add a tolerance layer to contain the later observ
 This is usually done by adding a set of whiskers to a box plot.
 The most straightforward selection of the whiskers the min-max of the dataset.
 This is not desired since the min-max would not cover possible later anomalies.
-Instead, two other variations are tested, Notched box and adjusted box
+Instead, two other variations are tested, the *Notched box* and the *Adjusted box*.
+#### Notched box
+Notched box plots apply a "notch" or narrowing of the box around the median. 
+Notches are useful in offering a rough guide of the significance of the difference of medians; if the notches of two boxes do not overlap, this will provide evidence of a statistically significant difference between the medians.
+The boundaries of the notches can be obtained 
 
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, as in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
@@ -203,11 +207,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzA0NzM0NjYsMjgwNDkzNTMwLC0yMD
-Q3ODU1NDcsNzM3ODc3MTI4LC00NTI2Mzk2MDgsLTE5MTA2MTgy
-NzEsNjE1MzUyMjY1LDE1MjU2NDU5MDQsLTE4NzY0NTkxNDUsMj
-AyODEyNTk2Miw2MzQ2NTU0ODQsNTA4MTk1NDIzLDE0MDU0OTY2
-MCwtMTQwNjAzNjkxLC0yNTE3OTI0NzIsMzcyMzMwNDc5LC0xNj
-EzMjIxNDUsLTE2MDMwODA2NzYsMTkwMDgzNzQwLC0xMDkxOTMy
-NTUwXX0=
+eyJoaXN0b3J5IjpbNzQ5MDc3NjMsMjgwNDkzNTMwLC0yMDQ3OD
+U1NDcsNzM3ODc3MTI4LC00NTI2Mzk2MDgsLTE5MTA2MTgyNzEs
+NjE1MzUyMjY1LDE1MjU2NDU5MDQsLTE4NzY0NTkxNDUsMjAyOD
+EyNTk2Miw2MzQ2NTU0ODQsNTA4MTk1NDIzLDE0MDU0OTY2MCwt
+MTQwNjAzNjkxLC0yNTE3OTI0NzIsMzcyMzMwNDc5LC0xNjEzMj
+IxNDUsLTE2MDMwODA2NzYsMTkwMDgzNzQwLC0xMDkxOTMyNTUw
+XX0=
 -->
