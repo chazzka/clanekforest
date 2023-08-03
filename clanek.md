@@ -82,7 +82,7 @@ The less partitions required to isolate the more probable it is for a particle t
 #### Isolation Tree
 Isolation tree je kořenový binární strom sestaven na základě vybrané podmnožiny $A$ prvků (bodů) o velikosti $s=|A|$.
 
-Isolation Tree is a binary tree constructed with a subset of $A$ 
+Isolation Tree is a binary tree constructed with a subset of $A$ items (datapoints) with the size $s=|A|$.
 
 1. pro sestavení isolation tree není potřeba mít početnou množinu dokonce to může být nežádoucí
 2. dobře zvolené malé $s$ může pomoci odstranit *masking* a *swamping*
@@ -266,7 +266,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTYyODY0MiwtMTgyNjQ5ODczNCwyMD
+eyJoaXN0b3J5IjpbLTgxMDUyOTA1MSwtMTgyNjQ5ODczNCwyMD
 AyNjg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcw
 NywxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLT
 E2MDQ5NzY4NzcsLTc1MTU1NDcwMSwxNjQyNDcxNCwxNTMzODQ2
