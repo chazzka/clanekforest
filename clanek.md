@@ -208,7 +208,9 @@ $$SP = rand(r_f)  \qquad{(6)}$$
 $$group_{l,r}  = group\_by(<=> split\_point) \qquad{(7)}$$
 
 
-Each of the groups is then assigned a new ranges array as in (8).
+Each of the groups is then assigned a new ranges array as in (8,9).
+
+$$range_{left} = $$
 
 For example, if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
 This allows the novel datapoints to make their way through the tree, making novelty detection possible.
@@ -253,11 +255,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNz
-U2NDc2NTMyLC0xNjA0OTc2ODc3LC03NTE1NTQ3MDEsMTY0MjQ3
-MTQsMTUzMzg0NjIyNywxOTM4MjY1NzUsMzcwMzYzNDM4LDExND
-QxMjgzMzMsLTQyOTY5NzU4NSwtNzAwOTg2Mzk2LDEwMjM0MzE1
-NzYsLTg4NTc3ODU1NSwxMDY4MjM2ODQ3LC04MDMxODU4MTQsMj
-gwNDkzNTMwLC0yMDQ3ODU1NDcsNzM3ODc3MTI4LC00NTI2Mzk2
-MDhdfQ==
+eyJoaXN0b3J5IjpbLTU3MTY3MTIzLDE0MzI4Mzk3MDAsLTIwMD
+IzNjEzODksLTc1NjQ3NjUzMiwtMTYwNDk3Njg3NywtNzUxNTU0
+NzAxLDE2NDI0NzE0LDE1MzM4NDYyMjcsMTkzODI2NTc1LDM3MD
+M2MzQzOCwxMTQ0MTI4MzMzLC00Mjk2OTc1ODUsLTcwMDk4NjM5
+NiwxMDIzNDMxNTc2LC04ODU3Nzg1NTUsMTA2ODIzNjg0NywtOD
+AzMTg1ODE0LDI4MDQ5MzUzMCwtMjA0Nzg1NTQ3LDczNzg3NzEy
+OF19
 -->
