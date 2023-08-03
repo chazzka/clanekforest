@@ -122,7 +122,8 @@ The essential problem with Isolation Forest algorithm not being able to detect n
 Let $x$ be regular observations known to the Isolation Forest algorithm a priory and $y$ the novel datapoints provided later. 
 The standard Isolation Forest algorithm as defined by Liu et. al. selects the split point based on the min-max value according to a priory datapoints.
 
-Figure X shows the first two decisions of the Isolation Forest algorithm red a priory data points (left corner) 
+Figure X shows the first two decisions of the Isolation Forest algorithm provided a priory data points (marked red in left corner).
+As we can see, the 
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines.svg)
 > Figure X vanilla Isolation Forest with novelty points. 
@@ -254,11 +255,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDQyNDk4NjUsLTE2MDQ5NzY4NzcsLT
-c1MTU1NDcwMSwxNjQyNDcxNCwxNTMzODQ2MjI3LDE5MzgyNjU3
-NSwzNzAzNjM0MzgsMTE0NDEyODMzMywtNDI5Njk3NTg1LC03MD
-A5ODYzOTYsMTAyMzQzMTU3NiwtODg1Nzc4NTU1LDEwNjgyMzY4
-NDcsLTgwMzE4NTgxNCwyODA0OTM1MzAsLTIwNDc4NTU0Nyw3Mz
-c4NzcxMjgsLTQ1MjYzOTYwOCwtMTkxMDYxODI3MSw2MTUzNTIy
-NjVdfQ==
+eyJoaXN0b3J5IjpbOTcwODgxMzI5LC0xNjA0OTc2ODc3LC03NT
+E1NTQ3MDEsMTY0MjQ3MTQsMTUzMzg0NjIyNywxOTM4MjY1NzUs
+MzcwMzYzNDM4LDExNDQxMjgzMzMsLTQyOTY5NzU4NSwtNzAwOT
+g2Mzk2LDEwMjM0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2ODQ3
+LC04MDMxODU4MTQsMjgwNDkzNTMwLC0yMDQ3ODU1NDcsNzM3OD
+c3MTI4LC00NTI2Mzk2MDgsLTE5MTA2MTgyNzEsNjE1MzUyMjY1
+XX0=
 -->
