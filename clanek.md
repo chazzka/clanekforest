@@ -175,8 +175,8 @@ for a medcouple value of MC, the lengths of the upper and lower whiskers on the 
 $$
 f(x)= 
    \begin{cases}
-    1.5IQR\cdot e^{3MC},  1.5 IQR * e^{-4MC},& \text{if } MC\geq 0\\
-    1.5IQR*e^{4MC},  1.5 IQR * e^{-3MC},& \text{if } MC\leq 0
+    1.5IQR \cdot e^{3MC},  1.5 IQR \cdot e^{-4MC},& \text{if } MC\geq 0\\
+    1.5IQR \cdot e^{4MC},  1.5 IQR \cdot e^{-3MC},& \text{if } MC\leq 0
 	\end{cases}
 	(3)
 $$
@@ -185,8 +185,7 @@ for symmetrical distributions, the MC value being zero, after substitution we ge
 
 $$
 f_mc0(x)= 
-    1.5*e^{3MC},  1.5 IQR * e^{-4MC}
-	(4)
+    1.5 IQR & (4)
 $$
 
 - [ ]  TODO: TENTO PROCES NĚJAK POPSAT ROVNICEMI
@@ -234,11 +233,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNDgyNTc1MywtODg1Nzc4NTU1LDEwNj
-gyMzY4NDcsLTgwMzE4NTgxNCwyODA0OTM1MzAsLTIwNDc4NTU0
-Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYwOCwtMTkxMDYxODI3MSw2MT
-UzNTIyNjUsMTUyNTY0NTkwNCwtMTg3NjQ1OTE0NSwyMDI4MTI1
-OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjMsMTQwNTQ5NjYwLC0xND
-A2MDM2OTEsLTI1MTc5MjQ3MiwzNzIzMzA0NzksLTE2MTMyMjE0
-NV19
+eyJoaXN0b3J5IjpbOTM4NTUxMzIzLC04ODU3Nzg1NTUsMTA2OD
+IzNjg0NywtODAzMTg1ODE0LDI4MDQ5MzUzMCwtMjA0Nzg1NTQ3
+LDczNzg3NzEyOCwtNDUyNjM5NjA4LC0xOTEwNjE4MjcxLDYxNT
+M1MjI2NSwxNTI1NjQ1OTA0LC0xODc2NDU5MTQ1LDIwMjgxMjU5
+NjIsNjM0NjU1NDg0LDUwODE5NTQyMywxNDA1NDk2NjAsLTE0MD
+YwMzY5MSwtMjUxNzkyNDcyLDM3MjMzMDQ3OSwtMTYxMzIyMTQ1
+XX0=
 -->
