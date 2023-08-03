@@ -155,7 +155,7 @@ $IQR = Q3 - Q1 = q_n(0.75) - q_n(0.25)$ (1)
 
 I addition to this, we need to add a tolerance layer to contain the later observed novelties.
 This is usually done by adding a set of whiskers to a box plot.
-The most straightforward selection of the whiskers the min-max of the dataset.
+The most straightforward selection of the whiskers is the min-max of the dataset.
 This is not desired since the min-max would not cover possible later anomalies.
 Instead, two other variations are tested, the *Notched box* and the *Adjusted box*.
 #### Notched box
@@ -230,11 +230,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMzQzMTU3NiwtODg1Nzc4NTU1LDEwNj
-gyMzY4NDcsLTgwMzE4NTgxNCwyODA0OTM1MzAsLTIwNDc4NTU0
-Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYwOCwtMTkxMDYxODI3MSw2MT
-UzNTIyNjUsMTUyNTY0NTkwNCwtMTg3NjQ1OTE0NSwyMDI4MTI1
-OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjMsMTQwNTQ5NjYwLC0xND
-A2MDM2OTEsLTI1MTc5MjQ3MiwzNzIzMzA0NzksLTE2MTMyMjE0
-NV19
+eyJoaXN0b3J5IjpbLTEwMjQxMjQ0MzgsMTAyMzQzMTU3NiwtOD
+g1Nzc4NTU1LDEwNjgyMzY4NDcsLTgwMzE4NTgxNCwyODA0OTM1
+MzAsLTIwNDc4NTU0Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYwOCwtMT
+kxMDYxODI3MSw2MTUzNTIyNjUsMTUyNTY0NTkwNCwtMTg3NjQ1
+OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjMsMT
+QwNTQ5NjYwLC0xNDA2MDM2OTEsLTI1MTc5MjQ3MiwzNzIzMzA0
+NzldfQ==
 -->
