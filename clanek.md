@@ -120,7 +120,7 @@ The proposed enhancement takes the basic idea of an ensemble of trees with depth
 The essential problem with Isolation Forest algorithm not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
 
 Let $x$ be regular observations known to the Isolation Forest algorithm a priory and $y$ the novel datapoints provided later. 
-The standard Isolation Forest algorithm as defined by Liue et. al. selects the split po
+The standard Isolation Forest algorithm as defined by Liu et. al. selects the split point based on the min-max value according to a priory obsevartionsthe  and 
 
 Figure X shows 
 
@@ -254,7 +254,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NTQ1OTQ4MywtMTYwNDk3Njg3NywtNz
+eyJoaXN0b3J5IjpbLTcwMzIxNjIwMiwtMTYwNDk3Njg3NywtNz
 UxNTU0NzAxLDE2NDI0NzE0LDE1MzM4NDYyMjcsMTkzODI2NTc1
 LDM3MDM2MzQzOCwxMTQ0MTI4MzMzLC00Mjk2OTc1ODUsLTcwMD
 k4NjM5NiwxMDIzNDMxNTc2LC04ODU3Nzg1NTUsMTA2ODIzNjg0
