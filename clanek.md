@@ -148,7 +148,7 @@ As a baseline, we select range by constructing a box plot, using interquartile r
 $$IQR = Q3 - Q1 = q_n(0.75) - q_n(0.25) \qquad (1)$$,
 where $Q1$ is the first quartile (also defined as 75th percentile) and $Q2$ second quartile (also defined as 25th percentile).
 
-#### Range tolerance selection
+### Range tolerance selection
 I addition to this, we need to add a tolerance layer to contain the later observed novelties.
 This is usually done by adding a set of whiskers to a box plot.
 The most straightforward selection of the whiskers is the min-max of the dataset.
@@ -182,7 +182,7 @@ for symmetrical distributions, the MC value being zero, after substitution we ge
 
 $$f_{MC_0}(x)=1.5 IQR \qquad(4)$$
 
-
+#### Isolating Novelites
 Using above defined functions, the range is generated for each of the dimension of the dataset.
 The appropriate choice of the algorithm for the range tolerance selection is a matter of experiments and future research.
 
@@ -266,11 +266,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMDUyOTA1MSwtMTgyNjQ5ODczNCwyMD
-AyNjg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcw
-NywxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLT
-E2MDQ5NzY4NzcsLTc1MTU1NDcwMSwxNjQyNDcxNCwxNTMzODQ2
-MjI3LDE5MzgyNjU3NSwzNzAzNjM0MzgsMTE0NDEyODMzMywtND
-I5Njk3NTg1LC03MDA5ODYzOTYsMTAyMzQzMTU3NiwtODg1Nzc4
-NTU1XX0=
+eyJoaXN0b3J5IjpbLTE4MzIwMTQwODcsLTE4MjY0OTg3MzQsMj
+AwMjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3
+MDcsMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC
+0xNjA0OTc2ODc3LC03NTE1NTQ3MDEsMTY0MjQ3MTQsMTUzMzg0
+NjIyNywxOTM4MjY1NzUsMzcwMzYzNDM4LDExNDQxMjgzMzMsLT
+QyOTY5NzU4NSwtNzAwOTg2Mzk2LDEwMjM0MzE1NzYsLTg4NTc3
+ODU1NV19
 -->
