@@ -213,15 +213,13 @@ Each of the nodes is then assigned a new ranges array as in (8,9).
 
 $$range_{left} =  [{r_0, SP}] \qquad{(8)}$$
 $$range_{right} =  [{SP, r_{max}}] \qquad{(9)}$$
-, where $r_0$ is inherited previous range starting point and $r_{max}$ the inherited previous range ending point.
+, where $r_0$ is inherited (previous) range starting point and $r_{max}$ the inherited range ending point.
 
 This allows the novel datapoints to make their way through the tree, making novelty detection possible.
 
 - [ ] - TODO: TOTO UDĚLAT VÍC PROFI, JAK NAHOŘE
 
-
 Figure X demonstrates this by adding two novel points (considering the learning sample of data beginning with 0 and ending with 100).
-
 
 We can see that using our approach we successfully isolated both numbers (5000 and 2000, which are considerably far away from each other) in different nodes.
 - [ ] TODO: OBRÁZEK SE MI PŘESTAL LÍBIT
@@ -260,11 +258,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MDczMjcyLC0zNTU4ODE3MDcsMTQzMj
-gzOTcwMCwtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC0xNjA0OTc2
-ODc3LC03NTE1NTQ3MDEsMTY0MjQ3MTQsMTUzMzg0NjIyNywxOT
-M4MjY1NzUsMzcwMzYzNDM4LDExNDQxMjgzMzMsLTQyOTY5NzU4
-NSwtNzAwOTg2Mzk2LDEwMjM0MzE1NzYsLTg4NTc3ODU1NSwxMD
-Y4MjM2ODQ3LC04MDMxODU4MTQsMjgwNDkzNTMwLC0yMDQ3ODU1
-NDddfQ==
+eyJoaXN0b3J5IjpbMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMzU1OD
+gxNzA3LDE0MzI4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3NjUz
+MiwtMTYwNDk3Njg3NywtNzUxNTU0NzAxLDE2NDI0NzE0LDE1Mz
+M4NDYyMjcsMTkzODI2NTc1LDM3MDM2MzQzOCwxMTQ0MTI4MzMz
+LC00Mjk2OTc1ODUsLTcwMDk4NjM5NiwxMDIzNDMxNTc2LC04OD
+U3Nzg1NTUsMTA2ODIzNjg0NywtODAzMTg1ODE0LDI4MDQ5MzUz
+MF19
 -->
