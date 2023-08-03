@@ -147,7 +147,7 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
  1. When selecting a sample from the given data, to randomly selecting the sample of a given *batch size*, the evaluation of range was added.
  2. When the split point is calculated, random dimension is chosen, and the split point is taken from the evaluated range (and not the data itself).
 
-The evaluation of a range starts by simply selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
+The evaluation of a range starts by selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
 As a baseline, we select range by constructing a box plot, using interquartile range (1).
@@ -206,7 +206,7 @@ $$SP = rand(r_f)  \qquad{(6)}$$
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
 Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
 For example, if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
-Using this, we never loose any data like in the original article, making novelty detection possible.
+Using this, we never lose any data like in the original article, making novelty detection possible.
 Figure X demonstrates this by adding two novel points (considering the learning sample of data beginning with 0 and ending with 100).
 We can see that using our approach we successfully isolated both numbers (5000 and 2000, which are considerably far away from each other) in different nodes.
 - [ ] TODO: OBRÁZEK SE MI PŘESTAL LÍBIT
@@ -245,11 +245,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NDEyODMzMywtNDI5Njk3NTg1LC03MD
-A5ODYzOTYsMTAyMzQzMTU3NiwtODg1Nzc4NTU1LDEwNjgyMzY4
-NDcsLTgwMzE4NTgxNCwyODA0OTM1MzAsLTIwNDc4NTU0Nyw3Mz
-c4NzcxMjgsLTQ1MjYzOTYwOCwtMTkxMDYxODI3MSw2MTUzNTIy
-NjUsMTUyNTY0NTkwNCwtMTg3NjQ1OTE0NSwyMDI4MTI1OTYyLD
-YzNDY1NTQ4NCw1MDgxOTU0MjMsMTQwNTQ5NjYwLC0xNDA2MDM2
-OTFdfQ==
+eyJoaXN0b3J5IjpbMzcwMzYzNDM4LDExNDQxMjgzMzMsLTQyOT
+Y5NzU4NSwtNzAwOTg2Mzk2LDEwMjM0MzE1NzYsLTg4NTc3ODU1
+NSwxMDY4MjM2ODQ3LC04MDMxODU4MTQsMjgwNDkzNTMwLC0yMD
+Q3ODU1NDcsNzM3ODc3MTI4LC00NTI2Mzk2MDgsLTE5MTA2MTgy
+NzEsNjE1MzUyMjY1LDE1MjU2NDU5MDQsLTE4NzY0NTkxNDUsMj
+AyODEyNTk2Miw2MzQ2NTU0ODQsNTA4MTk1NDIzLDE0MDU0OTY2
+MF19
 -->
