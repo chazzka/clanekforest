@@ -206,7 +206,7 @@ $$SP = rand(r_f)  \qquad{(6)}$$
 
 $$group_{l,r}  = group\_by(<=> split\_point) \qquad{(7)}$$
 
-When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
+
 Each of the groups is then assigned a new ranges array where ranges are also grouped according to their split points.
 For example, if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
 Using this, we never lose any data like in the original article, making novelty detection possible.
@@ -248,11 +248,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5ODgxMzA1MywzNzAzNjM0MzgsMTE0ND
-EyODMzMywtNDI5Njk3NTg1LC03MDA5ODYzOTYsMTAyMzQzMTU3
-NiwtODg1Nzc4NTU1LDEwNjgyMzY4NDcsLTgwMzE4NTgxNCwyOD
-A0OTM1MzAsLTIwNDc4NTU0Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYw
-OCwtMTkxMDYxODI3MSw2MTUzNTIyNjUsMTUyNTY0NTkwNCwtMT
-g3NjQ1OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0
-MjNdfQ==
+eyJoaXN0b3J5IjpbMTkzODI2NTc1LDM3MDM2MzQzOCwxMTQ0MT
+I4MzMzLC00Mjk2OTc1ODUsLTcwMDk4NjM5NiwxMDIzNDMxNTc2
+LC04ODU3Nzg1NTUsMTA2ODIzNjg0NywtODAzMTg1ODE0LDI4MD
+Q5MzUzMCwtMjA0Nzg1NTQ3LDczNzg3NzEyOCwtNDUyNjM5NjA4
+LC0xOTEwNjE4MjcxLDYxNTM1MjI2NSwxNTI1NjQ1OTA0LC0xOD
+c2NDU5MTQ1LDIwMjgxMjU5NjIsNjM0NjU1NDg0LDUwODE5NTQy
+M119
 -->
