@@ -204,7 +204,7 @@ $$SP = rand(r_f)  \qquad{(6)}$$
 
 , generating two groups for left and right node respectively (7).
 
-$$group_l, group_r = group\_by(\equiv<=> split\_point)$$
+$$group_l, group_r = group\_by(<=> split\_point) \qquad{(7)}$$
 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
 Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
@@ -248,11 +248,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTY1MDkwMiwzNzAzNjM0MzgsMTE0ND
-EyODMzMywtNDI5Njk3NTg1LC03MDA5ODYzOTYsMTAyMzQzMTU3
-NiwtODg1Nzc4NTU1LDEwNjgyMzY4NDcsLTgwMzE4NTgxNCwyOD
-A0OTM1MzAsLTIwNDc4NTU0Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYw
-OCwtMTkxMDYxODI3MSw2MTUzNTIyNjUsMTUyNTY0NTkwNCwtMT
-g3NjQ1OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0
-MjNdfQ==
+eyJoaXN0b3J5IjpbLTEyOTU5NzA1MDQsMzcwMzYzNDM4LDExND
+QxMjgzMzMsLTQyOTY5NzU4NSwtNzAwOTg2Mzk2LDEwMjM0MzE1
+NzYsLTg4NTc3ODU1NSwxMDY4MjM2ODQ3LC04MDMxODU4MTQsMj
+gwNDkzNTMwLC0yMDQ3ODU1NDcsNzM3ODc3MTI4LC00NTI2Mzk2
+MDgsLTE5MTA2MTgyNzEsNjE1MzUyMjY1LDE1MjU2NDU5MDQsLT
+E4NzY0NTkxNDUsMjAyODEyNTk2Miw2MzQ2NTU0ODQsNTA4MTk1
+NDIzXX0=
 -->
