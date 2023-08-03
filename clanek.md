@@ -150,6 +150,7 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
 
 The evaluation of a range starts by simply selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly.
+As a baseline, we select range with its limits increased from min-max by the deviation.
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, as in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
 Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
@@ -193,11 +194,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MjYzOTYwOCwtMTkxMDYxODI3MSw2MT
-UzNTIyNjUsMTUyNTY0NTkwNCwtMTg3NjQ1OTE0NSwyMDI4MTI1
-OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjMsMTQwNTQ5NjYwLC0xND
-A2MDM2OTEsLTI1MTc5MjQ3MiwzNzIzMzA0NzksLTE2MTMyMjE0
-NSwtMTYwMzA4MDY3NiwxOTAwODM3NDAsLTEwOTE5MzI1NTAsMT
-QyNTAzMTc4MCwtOTAzOTA2MTQ4LC0xMzc0MzAxNDIwLDc4MzQ1
-NzgyMF19
+eyJoaXN0b3J5IjpbLTE0MjAyNDk0MTUsLTQ1MjYzOTYwOCwtMT
+kxMDYxODI3MSw2MTUzNTIyNjUsMTUyNTY0NTkwNCwtMTg3NjQ1
+OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjMsMT
+QwNTQ5NjYwLC0xNDA2MDM2OTEsLTI1MTc5MjQ3MiwzNzIzMzA0
+NzksLTE2MTMyMjE0NSwtMTYwMzA4MDY3NiwxOTAwODM3NDAsLT
+EwOTE5MzI1NTAsMTQyNTAzMTc4MCwtOTAzOTA2MTQ4LC0xMzc0
+MzAxNDIwXX0=
 -->
