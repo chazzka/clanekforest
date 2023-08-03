@@ -141,15 +141,16 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
   - [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
 
  We encourage you to try it and maybe create your own service based on our already implemented ones.
- This service called Novelty is making two main alteration concepts:
+ The service used in this article called Novelty is making two main alteration concepts:
  
- 1. When selecting a sample from the given data, to randomly selecting the sample of a given *batch size*, the evaluation of range for each dimension was added.
+ 1. When selecting a sample from the given data, to randomly selecting the sample of a given *batch size*, the evaluation of range was added.
  2. When the split point is calculated, random dimension is chosen, and the split point is taken from the evaluated range (and not the data itself).
 
+The evaluation of a range starts by simply selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
+This range should be reasonable enough to allow all the domain space to be separated correctly, hence we 
 
 #### Range tolerance selection
-The evaluation of a range starts by simply selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
-This range should be reasonable enough to allow all the domain space to be separated correctly.
+
 As a baseline, we select range by constructing a box plot, using interquartile range (1).
 
 $IQR = Q3 - Q1 = q_n(0.75) - q_n(0.25)$ (1)
@@ -244,7 +245,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUxNzU2NjE3LC03MDA5ODYzOTYsMTAyMz
+eyJoaXN0b3J5IjpbNzcxNjY1NDcxLC03MDA5ODYzOTYsMTAyMz
 QzMTU3NiwtODg1Nzc4NTU1LDEwNjgyMzY4NDcsLTgwMzE4NTgx
 NCwyODA0OTM1MzAsLTIwNDc4NTU0Nyw3Mzc4NzcxMjgsLTQ1Mj
 YzOTYwOCwtMTkxMDYxODI3MSw2MTUzNTIyNjUsMTUyNTY0NTkw
