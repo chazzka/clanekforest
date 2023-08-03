@@ -202,7 +202,10 @@ During the ITree initialization, a random range $r_f$ from the mapping (5) is ch
 Each node is grouped by a split point (SP), obtained as in (6).
 $$SP = rand(r_f)  \qquad{(6)}$$
 
-, 
+, generating two groups for left and right node respectively (7).
+
+$$group_l, group_r = group_by(<=> split_point)
+
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
 Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
 For example, if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
@@ -245,11 +248,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY4NjI3MywzNzAzNjM0MzgsMTE0NDEyOD
-MzMywtNDI5Njk3NTg1LC03MDA5ODYzOTYsMTAyMzQzMTU3Niwt
-ODg1Nzc4NTU1LDEwNjgyMzY4NDcsLTgwMzE4NTgxNCwyODA0OT
-M1MzAsLTIwNDc4NTU0Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYwOCwt
-MTkxMDYxODI3MSw2MTUzNTIyNjUsMTUyNTY0NTkwNCwtMTg3Nj
-Q1OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjNd
-fQ==
+eyJoaXN0b3J5IjpbMTUwMjg2NDAyMCwzNzAzNjM0MzgsMTE0ND
+EyODMzMywtNDI5Njk3NTg1LC03MDA5ODYzOTYsMTAyMzQzMTU3
+NiwtODg1Nzc4NTU1LDEwNjgyMzY4NDcsLTgwMzE4NTgxNCwyOD
+A0OTM1MzAsLTIwNDc4NTU0Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYw
+OCwtMTkxMDYxODI3MSw2MTUzNTIyNjUsMTUyNTY0NTkwNCwtMT
+g3NjQ1OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0
+MjNdfQ==
 -->
