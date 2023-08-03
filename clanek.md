@@ -124,7 +124,8 @@ The standard Isolation Forest algorithm as defined by Liu et. al. selects the sp
 
 Figure X shows the first two decisions of the Isolation Forest algorithm provided a priory data points (marked red in left corner).
 First, the dimension X and split point approx. around value 20 is chosen, orphaning most of the observations on the left side.
-In the second decision, dimension Y was chosen, 
+In the second decision, dimension Y was chosen, cracking the area on the right in two parts.
+
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines.svg)
 > Figure X vanilla Isolation Forest with novelty points. 
@@ -256,11 +257,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU4NTg2NDc3LC0xNjA0OTc2ODc3LC03NT
-E1NTQ3MDEsMTY0MjQ3MTQsMTUzMzg0NjIyNywxOTM4MjY1NzUs
-MzcwMzYzNDM4LDExNDQxMjgzMzMsLTQyOTY5NzU4NSwtNzAwOT
-g2Mzk2LDEwMjM0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2ODQ3
-LC04MDMxODU4MTQsMjgwNDkzNTMwLC0yMDQ3ODU1NDcsNzM3OD
-c3MTI4LC00NTI2Mzk2MDgsLTE5MTA2MTgyNzEsNjE1MzUyMjY1
-XX0=
+eyJoaXN0b3J5IjpbLTgwMzM0NTMyNCwtMTYwNDk3Njg3NywtNz
+UxNTU0NzAxLDE2NDI0NzE0LDE1MzM4NDYyMjcsMTkzODI2NTc1
+LDM3MDM2MzQzOCwxMTQ0MTI4MzMzLC00Mjk2OTc1ODUsLTcwMD
+k4NjM5NiwxMDIzNDMxNTc2LC04ODU3Nzg1NTUsMTA2ODIzNjg0
+NywtODAzMTg1ODE0LDI4MDQ5MzUzMCwtMjA0Nzg1NTQ3LDczNz
+g3NzEyOCwtNDUyNjM5NjA4LC0xOTEwNjE4MjcxLDYxNTM1MjI2
+NV19
 -->
