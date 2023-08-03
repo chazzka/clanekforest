@@ -141,7 +141,8 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
   - [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
 
  We encourage you to try it and maybe create your own service based on our already implemented ones.
- The service used in this article, called Novelty, is making two main alteration concepts:
+
+ The service used in this article is making two main alteration concepts:
  
  1. When selecting a sample from the given data, to randomly selecting the sample of a given *batch size*, the evaluation of range was added.
  2. When the split point is calculated, random dimension is chosen, and the split point is taken from the evaluated range (and not the data itself).
@@ -244,7 +245,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MjQ3MjcxMSwtNzAwOTg2Mzk2LDEwMj
+eyJoaXN0b3J5IjpbLTQyOTY5NzU4NSwtNzAwOTg2Mzk2LDEwMj
 M0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2ODQ3LC04MDMxODU4
 MTQsMjgwNDkzNTMwLC0yMDQ3ODU1NDcsNzM3ODc3MTI4LC00NT
 I2Mzk2MDgsLTE5MTA2MTgyNzEsNjE1MzUyMjY1LDE1MjU2NDU5
