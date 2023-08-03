@@ -175,8 +175,8 @@ for a medcouple value of MC, the lengths of the upper and lower whiskers on the 
 $$
 f(x)= 
    \begin{cases}
-    1.5*e^{3MC},  1.5 IQR * e^{-4MC},& \text{if } MC\geq 0\\
-    1.5*e^{4MC},  1.5 IQR * e^{-3MC},& \text{if } MC\leq 0
+    1.5IQR\cdot e^{3MC},  1.5 IQR * e^{-4MC},& \text{if } MC\geq 0\\
+    1.5IQR*e^{4MC},  1.5 IQR * e^{-3MC},& \text{if } MC\leq 0
 	\end{cases}
 	(3)
 $$
@@ -234,7 +234,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMzMxNzg1NSwtODg1Nzc4NTU1LDEwNj
+eyJoaXN0b3J5IjpbMTcxNDgyNTc1MywtODg1Nzc4NTU1LDEwNj
 gyMzY4NDcsLTgwMzE4NTgxNCwyODA0OTM1MzAsLTIwNDc4NTU0
 Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYwOCwtMTkxMDYxODI3MSw2MT
 UzNTIyNjUsMTUyNTY0NTkwNCwtMTg3NjQ1OTE0NSwyMDI4MTI1
