@@ -182,7 +182,7 @@ for symmetrical distributions, the MC value being zero, after substitution we ge
 
 $$f_{MC_0}(x)=1.5 IQR \qquad(4)$$
 
-Using above defined functions, the range is generated for each of the dimension of the dataset.
+Using above defined functions, the range is generated for each of the dimensions of the dataset.
 The appropriate choice of the algorithm for the range tolerance selection is a matter of experiments and future research.
 
 $$ranges = map(r_f , D)  \qquad(5),$$
@@ -265,7 +265,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ4Nzg5NTU2LC0xODI2NDk4NzM0LDIwMD
+eyJoaXN0b3J5IjpbMzkxNzgzNzAxLC0xODI2NDk4NzM0LDIwMD
 I2ODc3MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3
 LDE0MzI4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMT
 YwNDk3Njg3NywtNzUxNTU0NzAxLDE2NDI0NzE0LDE1MzM4NDYy
