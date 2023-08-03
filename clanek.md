@@ -196,13 +196,13 @@ $$ranges = map(r_f , D)  \qquad(5),$$
 
 where $r_f$ being a random range generated using one of the above-defined functions and D being all of the dimensions of a given dataset.
 
-This is because individual dimensions can differ in their statistical distributions.
+This is due to a fact that individual dimensions can differ in their statistical distributions.
 
 During the ITree initialization, a random range $r_f$ from the mapping (5) is chosen. 
 Each node is grouped by a split point (SP), obtained as in (6).
 $$SP = rand(r_f)  \qquad{(6)}$$
 
-
+, 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
 Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
 For example, if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
@@ -245,11 +245,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcwMzYzNDM4LDExNDQxMjgzMzMsLTQyOT
-Y5NzU4NSwtNzAwOTg2Mzk2LDEwMjM0MzE1NzYsLTg4NTc3ODU1
-NSwxMDY4MjM2ODQ3LC04MDMxODU4MTQsMjgwNDkzNTMwLC0yMD
-Q3ODU1NDcsNzM3ODc3MTI4LC00NTI2Mzk2MDgsLTE5MTA2MTgy
-NzEsNjE1MzUyMjY1LDE1MjU2NDU5MDQsLTE4NzY0NTkxNDUsMj
-AyODEyNTk2Miw2MzQ2NTU0ODQsNTA4MTk1NDIzLDE0MDU0OTY2
-MF19
+eyJoaXN0b3J5IjpbNTY4NjI3MywzNzAzNjM0MzgsMTE0NDEyOD
+MzMywtNDI5Njk3NTg1LC03MDA5ODYzOTYsMTAyMzQzMTU3Niwt
+ODg1Nzc4NTU1LDEwNjgyMzY4NDcsLTgwMzE4NTgxNCwyODA0OT
+M1MzAsLTIwNDc4NTU0Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYwOCwt
+MTkxMDYxODI3MSw2MTUzNTIyNjUsMTUyNTY0NTkwNCwtMTg3Nj
+Q1OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjNd
+fQ==
 -->
