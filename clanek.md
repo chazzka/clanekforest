@@ -146,7 +146,6 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
  1. When selecting a sample from the given data, to randomly selecting the sample of a given *batch size*, the evaluation of range for each dimension was added.
  2. When the split point is calculated, random dimension is chosen, and the split point is taken from the evaluated range (and not the data itself).
 
-- [ ]  TODO: TENTO PROCES NĚJAK POPSAT ROVNICEMI
 
 The evaluation of a range starts by simply selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly.
@@ -183,6 +182,8 @@ f(x)=
 $$
 
 
+
+- [ ]  TODO: TENTO PROCES NĚJAK POPSAT ROVNICEMI
 
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, as in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
@@ -227,11 +228,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2ODIzNjg0NywtODAzMTg1ODE0LDI4MD
-Q5MzUzMCwtMjA0Nzg1NTQ3LDczNzg3NzEyOCwtNDUyNjM5NjA4
-LC0xOTEwNjE4MjcxLDYxNTM1MjI2NSwxNTI1NjQ1OTA0LC0xOD
-c2NDU5MTQ1LDIwMjgxMjU5NjIsNjM0NjU1NDg0LDUwODE5NTQy
-MywxNDA1NDk2NjAsLTE0MDYwMzY5MSwtMjUxNzkyNDcyLDM3Mj
-MzMDQ3OSwtMTYxMzIyMTQ1LC0xNjAzMDgwNjc2LDE5MDA4Mzc0
-MF19
+eyJoaXN0b3J5IjpbLTIwNzk1NzcwNTksMTA2ODIzNjg0NywtOD
+AzMTg1ODE0LDI4MDQ5MzUzMCwtMjA0Nzg1NTQ3LDczNzg3NzEy
+OCwtNDUyNjM5NjA4LC0xOTEwNjE4MjcxLDYxNTM1MjI2NSwxNT
+I1NjQ1OTA0LC0xODc2NDU5MTQ1LDIwMjgxMjU5NjIsNjM0NjU1
+NDg0LDUwODE5NTQyMywxNDA1NDk2NjAsLTE0MDYwMzY5MSwtMj
+UxNzkyNDcyLDM3MjMzMDQ3OSwtMTYxMzIyMTQ1LC0xNjAzMDgw
+Njc2XX0=
 -->
