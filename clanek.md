@@ -221,6 +221,7 @@ Figure X shows, that after three runs (max_depth = 3) we successfully isolated t
 
 Consider now point $P_x$ as depicted in Figure X. 
 Using our new approach, $P_x$ is assigned into an area (node) with the *path length = 2*, assigning $P_x$ different path length.
+This allows the distinctions between the points, making later novelty evaluation
 
 - [ ] TODO: OBRÁZEK SE MI PŘESTAL LÍBIT
 
@@ -258,11 +259,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE3MjYzMDI2LDIwMDI2ODc3MzcsMzI3Mz
-I2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3LDE0MzI4Mzk3MDAs
-LTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMTYwNDk3Njg3NywtNz
-UxNTU0NzAxLDE2NDI0NzE0LDE1MzM4NDYyMjcsMTkzODI2NTc1
-LDM3MDM2MzQzOCwxMTQ0MTI4MzMzLC00Mjk2OTc1ODUsLTcwMD
-k4NjM5NiwxMDIzNDMxNTc2LC04ODU3Nzg1NTUsMTA2ODIzNjg0
-N119
+eyJoaXN0b3J5IjpbLTE2NTkyMDk3NDQsMjAwMjY4NzczNywzMj
+czMjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3MDcsMTQzMjgzOTcw
+MCwtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC0xNjA0OTc2ODc3LC
+03NTE1NTQ3MDEsMTY0MjQ3MTQsMTUzMzg0NjIyNywxOTM4MjY1
+NzUsMzcwMzYzNDM4LDExNDQxMjgzMzMsLTQyOTY5NzU4NSwtNz
+AwOTg2Mzk2LDEwMjM0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2
+ODQ3XX0=
 -->
