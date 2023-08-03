@@ -217,8 +217,7 @@ $$range_{right} =  [{SP, r_{max}}] \qquad{(9)}$$
 
 This allows the novel datapoints to make their way through the tree, making novelty detection possible.
 
-Figure X demonstrates this by adding two novel points (considering the learning sample of data beginning with 0 and ending with 100).
-
+Figure X shows, how the 
 We can see that using our approach we successfully isolated both numbers (5000 and 2000, which are considerably far away from each other) in different nodes.
 - [ ] TODO: OBRÁZEK SE MI PŘESTAL LÍBIT
 
@@ -256,11 +255,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMjY4NzczNywzMjczMjY0NDgsLTI1MD
-czMjcyLC0zNTU4ODE3MDcsMTQzMjgzOTcwMCwtMjAwMjM2MTM4
-OSwtNzU2NDc2NTMyLC0xNjA0OTc2ODc3LC03NTE1NTQ3MDEsMT
-Y0MjQ3MTQsMTUzMzg0NjIyNywxOTM4MjY1NzUsMzcwMzYzNDM4
-LDExNDQxMjgzMzMsLTQyOTY5NzU4NSwtNzAwOTg2Mzk2LDEwMj
-M0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2ODQ3LC04MDMxODU4
-MTRdfQ==
+eyJoaXN0b3J5IjpbMTkzODY1NzI3MiwyMDAyNjg3NzM3LDMyNz
+MyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNywxNDMyODM5NzAw
+LC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2MDQ5NzY4NzcsLT
+c1MTU1NDcwMSwxNjQyNDcxNCwxNTMzODQ2MjI3LDE5MzgyNjU3
+NSwzNzAzNjM0MzgsMTE0NDEyODMzMywtNDI5Njk3NTg1LC03MD
+A5ODYzOTYsMTAyMzQzMTU3NiwtODg1Nzc4NTU1LDEwNjgyMzY4
+NDddfQ==
 -->
