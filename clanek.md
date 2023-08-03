@@ -154,7 +154,8 @@ As a baseline, we select range as if we wanted to construct a box plot, using in
 
 $IQR = Q3 - Q1 = q_n(0.75) - q_n(0.25)$ (1)
 
-I addition to this, we need to add tolerance 
+I addition to this, we need to add a tolerance layer to contain the later observed novelties.
+This is usually done by adding a set of whiskers to the 
 
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, as in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
@@ -199,11 +200,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgwNDkzNTMwLC0yMDQ3ODU1NDcsNzM3OD
-c3MTI4LC00NTI2Mzk2MDgsLTE5MTA2MTgyNzEsNjE1MzUyMjY1
-LDE1MjU2NDU5MDQsLTE4NzY0NTkxNDUsMjAyODEyNTk2Miw2Mz
-Q2NTU0ODQsNTA4MTk1NDIzLDE0MDU0OTY2MCwtMTQwNjAzNjkx
-LC0yNTE3OTI0NzIsMzcyMzMwNDc5LC0xNjEzMjIxNDUsLTE2MD
-MwODA2NzYsMTkwMDgzNzQwLC0xMDkxOTMyNTUwLDE0MjUwMzE3
-ODBdfQ==
+eyJoaXN0b3J5IjpbNTMyNTA1NzYwLDI4MDQ5MzUzMCwtMjA0Nz
+g1NTQ3LDczNzg3NzEyOCwtNDUyNjM5NjA4LC0xOTEwNjE4Mjcx
+LDYxNTM1MjI2NSwxNTI1NjQ1OTA0LC0xODc2NDU5MTQ1LDIwMj
+gxMjU5NjIsNjM0NjU1NDg0LDUwODE5NTQyMywxNDA1NDk2NjAs
+LTE0MDYwMzY5MSwtMjUxNzkyNDcyLDM3MjMzMDQ3OSwtMTYxMz
+IyMTQ1LC0xNjAzMDgwNjc2LDE5MDA4Mzc0MCwtMTA5MTkzMjU1
+MF19
 -->
