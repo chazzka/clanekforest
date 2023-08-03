@@ -190,8 +190,10 @@ $f_{MC_0}(x)=1.5 IQR$ (4)
 
 Using above defined functions, the range is generated for each of the dimension of the dataset.
 
-$ranges = map(r_f , D)$, \
+$ranges = map(r_f , D)$,  (5)
+
 where $r_f$ being a random range generated using one of the above-defined functions and D being all of the dimensions of a given dataset.
+
 This is because individual dimensions can differ in their statistical distributions.
 
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, as in the original article) and a random value is selected out of the selected range. 
@@ -237,11 +239,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODgwMjUxMDQsLTcwMDk4NjM5NiwxMD
-IzNDMxNTc2LC04ODU3Nzg1NTUsMTA2ODIzNjg0NywtODAzMTg1
-ODE0LDI4MDQ5MzUzMCwtMjA0Nzg1NTQ3LDczNzg3NzEyOCwtND
-UyNjM5NjA4LC0xOTEwNjE4MjcxLDYxNTM1MjI2NSwxNTI1NjQ1
-OTA0LC0xODc2NDU5MTQ1LDIwMjgxMjU5NjIsNjM0NjU1NDg0LD
-UwODE5NTQyMywxNDA1NDk2NjAsLTE0MDYwMzY5MSwtMjUxNzky
-NDcyXX0=
+eyJoaXN0b3J5IjpbMTk2NDc1ODYwNCwtNzAwOTg2Mzk2LDEwMj
+M0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2ODQ3LC04MDMxODU4
+MTQsMjgwNDkzNTMwLC0yMDQ3ODU1NDcsNzM3ODc3MTI4LC00NT
+I2Mzk2MDgsLTE5MTA2MTgyNzEsNjE1MzUyMjY1LDE1MjU2NDU5
+MDQsLTE4NzY0NTkxNDUsMjAyODEyNTk2Miw2MzQ2NTU0ODQsNT
+A4MTk1NDIzLDE0MDU0OTY2MCwtMTQwNjAzNjkxLC0yNTE3OTI0
+NzJdfQ==
 -->
