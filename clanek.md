@@ -167,6 +167,8 @@ Let *n* be the amount of data, the boundaries of the notches around the median c
 $B_d =$ +- $\frac{1.58IQR}{\sqrt{n}}$  (2)
 
 #### Adjusted box
+Adjusted box is useful for describing the skew distributions.
+
 
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, as in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
@@ -211,7 +213,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNDk0NDQ3MywyODA0OTM1MzAsLTIwND
+eyJoaXN0b3J5IjpbLTI4NDMzNzY3MSwyODA0OTM1MzAsLTIwND
 c4NTU0Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYwOCwtMTkxMDYxODI3
 MSw2MTUzNTIyNjUsMTUyNTY0NTkwNCwtMTg3NjQ1OTE0NSwyMD
 I4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjMsMTQwNTQ5NjYw
