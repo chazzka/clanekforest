@@ -188,6 +188,7 @@ $f_{MC_0}(x)=1.5 IQR$ (4)
 
 - [ ]  TODO: TENTO PROCES NĚJAK POPSAT ROVNICEMI
 
+Using above tThe range is generated 
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, as in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
 Each group is then assigned a new ranges array where ranges are also grouped according to their split points.
@@ -231,11 +232,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MDMyMTAxOCwxMDIzNDMxNTc2LC04OD
-U3Nzg1NTUsMTA2ODIzNjg0NywtODAzMTg1ODE0LDI4MDQ5MzUz
-MCwtMjA0Nzg1NTQ3LDczNzg3NzEyOCwtNDUyNjM5NjA4LC0xOT
-EwNjE4MjcxLDYxNTM1MjI2NSwxNTI1NjQ1OTA0LC0xODc2NDU5
-MTQ1LDIwMjgxMjU5NjIsNjM0NjU1NDg0LDUwODE5NTQyMywxND
-A1NDk2NjAsLTE0MDYwMzY5MSwtMjUxNzkyNDcyLDM3MjMzMDQ3
-OV19
+eyJoaXN0b3J5IjpbLTE0MDAwNDQ2MDAsMTAyMzQzMTU3NiwtOD
+g1Nzc4NTU1LDEwNjgyMzY4NDcsLTgwMzE4NTgxNCwyODA0OTM1
+MzAsLTIwNDc4NTU0Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYwOCwtMT
+kxMDYxODI3MSw2MTUzNTIyNjUsMTUyNTY0NTkwNCwtMTg3NjQ1
+OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjMsMT
+QwNTQ5NjYwLC0xNDA2MDM2OTEsLTI1MTc5MjQ3MiwzNzIzMzA0
+NzldfQ==
 -->
