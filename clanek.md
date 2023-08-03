@@ -186,9 +186,9 @@ for symmetrical distributions, the MC value being zero, after substitution we ge
 
 $$f_{MC_0}(x)=1.5 IQR \qquad(4)$$
 
-- [ ]  TODO: TENTO PROCES NĚJAK POPSAT ROVNICEMI
 
 Using above defined functions, the range is generated for each of the dimension of the dataset.
+The appropriate choice of an
 
 $$ranges = map(r_f , D)  \qquad(5),$$
 
@@ -243,11 +243,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzODY4MDQxLC03MDA5ODYzOTYsMTAyMz
-QzMTU3NiwtODg1Nzc4NTU1LDEwNjgyMzY4NDcsLTgwMzE4NTgx
-NCwyODA0OTM1MzAsLTIwNDc4NTU0Nyw3Mzc4NzcxMjgsLTQ1Mj
-YzOTYwOCwtMTkxMDYxODI3MSw2MTUzNTIyNjUsMTUyNTY0NTkw
-NCwtMTg3NjQ1OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4NCw1MD
-gxOTU0MjMsMTQwNTQ5NjYwLC0xNDA2MDM2OTEsLTI1MTc5MjQ3
-Ml19
+eyJoaXN0b3J5IjpbMjA1MTAxMDQwNiwtNzAwOTg2Mzk2LDEwMj
+M0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2ODQ3LC04MDMxODU4
+MTQsMjgwNDkzNTMwLC0yMDQ3ODU1NDcsNzM3ODc3MTI4LC00NT
+I2Mzk2MDgsLTE5MTA2MTgyNzEsNjE1MzUyMjY1LDE1MjU2NDU5
+MDQsLTE4NzY0NTkxNDUsMjAyODEyNTk2Miw2MzQ2NTU0ODQsNT
+A4MTk1NDIzLDE0MDU0OTY2MCwtMTQwNjAzNjkxLC0yNTE3OTI0
+NzJdfQ==
 -->
