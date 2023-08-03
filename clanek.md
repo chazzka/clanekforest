@@ -175,6 +175,13 @@ for a medcouple value of MC, the lengths of the upper and lower whiskers on the 
 
 $1.5*e^{3MC},  1.5IQR * e^{-4MC}$
 
+$$
+   \begin{cases}
+    \frac{x^2-x}{x},& \text{if } x\geq 1\\
+    0,              & \text{otherwise}
+\end{cases}
+
+$$
 
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, as in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
@@ -219,7 +226,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMzNjUwNTIwLC04MDMxODU4MTQsMjgwND
+eyJoaXN0b3J5IjpbNzgwMTM1OTY2LC04MDMxODU4MTQsMjgwND
 kzNTMwLC0yMDQ3ODU1NDcsNzM3ODc3MTI4LC00NTI2Mzk2MDgs
 LTE5MTA2MTgyNzEsNjE1MzUyMjY1LDE1MjU2NDU5MDQsLTE4Nz
 Y0NTkxNDUsMjAyODEyNTk2Miw2MzQ2NTU0ODQsNTA4MTk1NDIz
