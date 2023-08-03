@@ -148,13 +148,13 @@ As a baseline, we select range by constructing a box plot, using interquartile r
 $$IQR = Q3 - Q1 = q_n(0.75) - q_n(0.25) \qquad (1)$$,
 where $Q1$ is the first quartile (also defined as 75th percentile) and $Q2$ second quartile (also defined as 25th percentile).
 
-### Range tolerance selection
+#### Range tolerance selection
 I addition to this, we need to add a tolerance layer to contain the later observed novelties.
 This is usually done by adding a set of whiskers to a box plot.
 The most straightforward selection of the whiskers is the min-max of the dataset.
 This is not desired since the min-max would not cover possible later anomalies.
 Instead, two other variations are tested, the *Notched box* and the *Adjusted box*.
-#### Notched box
+##### Notched box
 Notched box plots apply a "notch" or narrowing of the box around the median. 
 Notches are useful in offering a rough guide of the significance of the difference of medians; if the notches of two boxes do not overlap, this will provide evidence of a statistically significant difference between the medians.
 
@@ -162,7 +162,7 @@ Let *n* be the amount of data, the boundaries of the notches around the median c
 
 $$f(x) = \pm \frac{1.58IQR}{\sqrt{n}} \qquad (2)$$
 
-#### Adjusted box
+##### Adjusted box
 Adjusted box is useful for describing the skew distributions.
 It relies on the *medcouple* value (MC) of the dataset.
 The *medcouple* is a statistic to measure the skewness (asymmetry of the prop. distribution) of a univariate distribution. 
@@ -182,7 +182,6 @@ for symmetrical distributions, the MC value being zero, after substitution we ge
 
 $$f_{MC_0}(x)=1.5 IQR \qquad(4)$$
 
-#### Isolating Novelites
 Using above defined functions, the range is generated for each of the dimension of the dataset.
 The appropriate choice of the algorithm for the range tolerance selection is a matter of experiments and future research.
 
@@ -219,7 +218,7 @@ This allows the distinctions between the points, making later novelty evaluation
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
 
 
-### Experiments using IF as a Novelty detection tool
+## Experiments
 
 The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
 
@@ -266,11 +265,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzIwMTQwODcsLTE4MjY0OTg3MzQsMj
-AwMjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3
-MDcsMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC
-0xNjA0OTc2ODc3LC03NTE1NTQ3MDEsMTY0MjQ3MTQsMTUzMzg0
-NjIyNywxOTM4MjY1NzUsMzcwMzYzNDM4LDExNDQxMjgzMzMsLT
-QyOTY5NzU4NSwtNzAwOTg2Mzk2LDEwMjM0MzE1NzYsLTg4NTc3
-ODU1NV19
+eyJoaXN0b3J5IjpbNjQ4Nzg5NTU2LC0xODI2NDk4NzM0LDIwMD
+I2ODc3MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3
+LDE0MzI4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMT
+YwNDk3Njg3NywtNzUxNTU0NzAxLDE2NDI0NzE0LDE1MzM4NDYy
+MjcsMTkzODI2NTc1LDM3MDM2MzQzOCwxMTQ0MTI4MzMzLC00Mj
+k2OTc1ODUsLTcwMDk4NjM5NiwxMDIzNDMxNTc2LC04ODU3Nzg1
+NTVdfQ==
 -->
