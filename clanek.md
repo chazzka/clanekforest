@@ -127,7 +127,7 @@ First, the dimension X and split point approx. around value 20 is chosen, orphan
 In the second decision, dimension Y was chosen, cracking the area on the right in two parts.
 As we can see, the theoretical novel observations $y$ get assigned the same *path_length* as a priory known, non-novel regular observations. 
 
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines.svg)
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares.svg)
 > Figure X standard Isolation Forest with novelty points. 
 
 
@@ -254,11 +254,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMT
-YwNDk3Njg3NywtNzUxNTU0NzAxLDE2NDI0NzE0LDE1MzM4NDYy
-MjcsMTkzODI2NTc1LDM3MDM2MzQzOCwxMTQ0MTI4MzMzLC00Mj
-k2OTc1ODUsLTcwMDk4NjM5NiwxMDIzNDMxNTc2LC04ODU3Nzg1
-NTUsMTA2ODIzNjg0NywtODAzMTg1ODE0LDI4MDQ5MzUzMCwtMj
-A0Nzg1NTQ3LDczNzg3NzEyOCwtNDUyNjM5NjA4LC0xOTEwNjE4
-MjcxXX0=
+eyJoaXN0b3J5IjpbLTIwMjgyODUzMTYsLTIwMDIzNjEzODksLT
+c1NjQ3NjUzMiwtMTYwNDk3Njg3NywtNzUxNTU0NzAxLDE2NDI0
+NzE0LDE1MzM4NDYyMjcsMTkzODI2NTc1LDM3MDM2MzQzOCwxMT
+Q0MTI4MzMzLC00Mjk2OTc1ODUsLTcwMDk4NjM5NiwxMDIzNDMx
+NTc2LC04ODU3Nzg1NTUsMTA2ODIzNjg0NywtODAzMTg1ODE0LD
+I4MDQ5MzUzMCwtMjA0Nzg1NTQ3LDczNzg3NzEyOCwtNDUyNjM5
+NjA4XX0=
 -->
