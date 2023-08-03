@@ -205,14 +205,15 @@ $$SP = rand(r_f)  \qquad{(6)}$$
 
 , generating two groups for left and right node respectively (7).
 
-$$group_{l,r}  = group\_by(<=> split\_point) \qquad{(7)}$$
+$$group_{l,r}  = group\_by(<=> SP) \qquad{(7)}$$
 
 
 Each of the groups is then assigned a new ranges array as in (8,9).
 
-$$range_{left} =  [{r_0, split\_point}] \qquad{(8)}$$
-$$range_{right} =  [{split\_point, r_{max}}] \qquad{(9)}$$
-, where $r_0$ is inherited previous range starting point and 
+$$range_{left} =  [{r_0, SP}] \qquad{(8)}$$
+$$range_{right} =  [{SP, r_{max}}] \qquad{(9)}$$
+, where $r_0$ is inherited previous range starting point and $r_{max}$ the inherited previous range ending point.
+
 For example, if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
 This allows the novel datapoints to make their way through the tree, making novelty detection possible.
 Figure X demonstrates this by adding two novel points (considering the learning sample of data beginning with 0 and ending with 100).
@@ -256,7 +257,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MzQ1OTcwNiwxNDMyODM5NzAwLC0yMD
+eyJoaXN0b3J5IjpbMjEwODE3Mjk1MSwxNDMyODM5NzAwLC0yMD
 AyMzYxMzg5LC03NTY0NzY1MzIsLTE2MDQ5NzY4NzcsLTc1MTU1
 NDcwMSwxNjQyNDcxNCwxNTMzODQ2MjI3LDE5MzgyNjU3NSwzNz
 AzNjM0MzgsMTE0NDEyODMzMywtNDI5Njk3NTg1LC03MDA5ODYz
