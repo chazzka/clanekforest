@@ -189,7 +189,9 @@ $f_{MC_0}(x)=1.5 IQR$ (4)
 - [ ]  TODO: TENTO PROCES NĚJAK POPSAT ROVNICEMI
 
 Using above defined functions, the range is generated for each of the dimension of the dataset.
-This is because dimensions can vary in their statistical distributions.
+
+$ranges = map($
+This is because individual dimensions can differ in their statistical distributions.
 
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, as in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
@@ -234,11 +236,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMDk4NjM5NiwxMDIzNDMxNTc2LC04OD
-U3Nzg1NTUsMTA2ODIzNjg0NywtODAzMTg1ODE0LDI4MDQ5MzUz
-MCwtMjA0Nzg1NTQ3LDczNzg3NzEyOCwtNDUyNjM5NjA4LC0xOT
-EwNjE4MjcxLDYxNTM1MjI2NSwxNTI1NjQ1OTA0LC0xODc2NDU5
-MTQ1LDIwMjgxMjU5NjIsNjM0NjU1NDg0LDUwODE5NTQyMywxND
-A1NDk2NjAsLTE0MDYwMzY5MSwtMjUxNzkyNDcyLDM3MjMzMDQ3
-OV19
+eyJoaXN0b3J5IjpbLTE1MTA1NjU2MzIsLTcwMDk4NjM5NiwxMD
+IzNDMxNTc2LC04ODU3Nzg1NTUsMTA2ODIzNjg0NywtODAzMTg1
+ODE0LDI4MDQ5MzUzMCwtMjA0Nzg1NTQ3LDczNzg3NzEyOCwtND
+UyNjM5NjA4LC0xOTEwNjE4MjcxLDYxNTM1MjI2NSwxNTI1NjQ1
+OTA0LC0xODc2NDU5MTQ1LDIwMjgxMjU5NjIsNjM0NjU1NDg0LD
+UwODE5NTQyMywxNDA1NDk2NjAsLTE0MDYwMzY5MSwtMjUxNzky
+NDcyXX0=
 -->
