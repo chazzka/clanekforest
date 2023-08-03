@@ -229,6 +229,12 @@ Some tools have already been implemented that try to deal with the issue of auto
 
 - [ ] TODO: prvně bychom měli vyhodnotit experimenty s odchylkou
 
+| statistics:          | 1.5IQR | notch |   |   |
+|----------------------|--------|-------|---|---|
+| % anomalies/ % found |        |       |   |   |
+| % false positive     |        |       |   |   |
+|                      |        |       |   |   |
+
 - [ ] TODO: tady experimenty, heatmapa atp., nějaký SOTA novelty algoritmus ze scikitu na porovnání
 
 - [ ] TODO: přídáme i porovnání s bin/simple_novelty.rb
@@ -258,11 +264,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjY0OTg3MzQsMjAwMjY4NzczNywzMj
-czMjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3MDcsMTQzMjgzOTcw
-MCwtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC0xNjA0OTc2ODc3LC
-03NTE1NTQ3MDEsMTY0MjQ3MTQsMTUzMzg0NjIyNywxOTM4MjY1
-NzUsMzcwMzYzNDM4LDExNDQxMjgzMzMsLTQyOTY5NzU4NSwtNz
-AwOTg2Mzk2LDEwMjM0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2
-ODQ3XX0=
+eyJoaXN0b3J5IjpbLTk1MDgyNzMzNywtMTgyNjQ5ODczNCwyMD
+AyNjg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcw
+NywxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLT
+E2MDQ5NzY4NzcsLTc1MTU1NDcwMSwxNjQyNDcxNCwxNTMzODQ2
+MjI3LDE5MzgyNjU3NSwzNzAzNjM0MzgsMTE0NDEyODMzMywtND
+I5Njk3NTg1LC03MDA5ODYzOTYsMTAyMzQzMTU3NiwtODg1Nzc4
+NTU1XX0=
 -->
