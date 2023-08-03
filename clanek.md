@@ -117,7 +117,7 @@ Some tools have already been implemented that try to deal with the issue of auto
 ### Proposed novelty isolation forest enhancement
 In this section, we propose a new enhancement of the original Isolation Forest algorithm for making it possible to detect novel observations. 
 The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
-The basic problem with Isolation Forest algorithm not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
+The essential problem with Isolation Forest algorithm not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
 
 Let $x$ be regular observations known to the Isolation Forest algorithm a priory and $y$ the novel datapoints provided later. (základní) isolation forest by to udělal takto:
 
@@ -253,11 +253,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MTU1NDcwMSwxNjQyNDcxNCwxNTMzOD
-Q2MjI3LDE5MzgyNjU3NSwzNzAzNjM0MzgsMTE0NDEyODMzMywt
-NDI5Njk3NTg1LC03MDA5ODYzOTYsMTAyMzQzMTU3NiwtODg1Nz
-c4NTU1LDEwNjgyMzY4NDcsLTgwMzE4NTgxNCwyODA0OTM1MzAs
-LTIwNDc4NTU0Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYwOCwtMTkxMD
-YxODI3MSw2MTUzNTIyNjUsMTUyNTY0NTkwNCwtMTg3NjQ1OTE0
-NV19
+eyJoaXN0b3J5IjpbLTE2MDQ5NzY4NzcsLTc1MTU1NDcwMSwxNj
+QyNDcxNCwxNTMzODQ2MjI3LDE5MzgyNjU3NSwzNzAzNjM0Mzgs
+MTE0NDEyODMzMywtNDI5Njk3NTg1LC03MDA5ODYzOTYsMTAyMz
+QzMTU3NiwtODg1Nzc4NTU1LDEwNjgyMzY4NDcsLTgwMzE4NTgx
+NCwyODA0OTM1MzAsLTIwNDc4NTU0Nyw3Mzc4NzcxMjgsLTQ1Mj
+YzOTYwOCwtMTkxMDYxODI3MSw2MTUzNTIyNjUsMTUyNTY0NTkw
+NF19
 -->
