@@ -210,8 +210,8 @@ $$group_{l,r}  = group\_by(<=> split\_point) \qquad{(7)}$$
 
 Each of the groups is then assigned a new ranges array as in (8,9).
 
-$$range_{left} =  \interval[{a,b}]<r_o, split\_point> \qquad{(8)}$$
-$$range_{right} = <r_o, split\_point> \qquad{(8)}$$
+$$range_{left} =  [{r_o, split\_point}] \qquad{(8)}$$
+$$range_{right} =  [{r_o, split\_point}] \qquad{(9)}$$
 
 For example, if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
 This allows the novel datapoints to make their way through the tree, making novelty detection possible.
@@ -256,11 +256,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzk5MDA4NzQsMTQzMjgzOTcwMCwtMj
-AwMjM2MTM4OSwtNzU2NDc2NTMyLC0xNjA0OTc2ODc3LC03NTE1
-NTQ3MDEsMTY0MjQ3MTQsMTUzMzg0NjIyNywxOTM4MjY1NzUsMz
-cwMzYzNDM4LDExNDQxMjgzMzMsLTQyOTY5NzU4NSwtNzAwOTg2
-Mzk2LDEwMjM0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2ODQ3LC
-04MDMxODU4MTQsMjgwNDkzNTMwLC0yMDQ3ODU1NDcsNzM3ODc3
-MTI4XX0=
+eyJoaXN0b3J5IjpbLTY1MjE4MjU5LDE0MzI4Mzk3MDAsLTIwMD
+IzNjEzODksLTc1NjQ3NjUzMiwtMTYwNDk3Njg3NywtNzUxNTU0
+NzAxLDE2NDI0NzE0LDE1MzM4NDYyMjcsMTkzODI2NTc1LDM3MD
+M2MzQzOCwxMTQ0MTI4MzMzLC00Mjk2OTc1ODUsLTcwMDk4NjM5
+NiwxMDIzNDMxNTc2LC04ODU3Nzg1NTUsMTA2ODIzNjg0NywtOD
+AzMTg1ODE0LDI4MDQ5MzUzMCwtMjA0Nzg1NTQ3LDczNzg3NzEy
+OF19
 -->
