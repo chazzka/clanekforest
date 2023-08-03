@@ -173,7 +173,7 @@ The *medcouple* is a statistic to measure the skewness (asymmetry of the prop. d
 As of Humert et. al (https://www.sciencedirect.com/science/article/pii/S0167947307004434?via%3Dihub)
 for a medcouple value of MC, the lengths of the upper and lower whiskers on the box-plot are respectively defined in (3) and (4).
 
-$1.5*e^{3MC},  1.5IQR $
+$1.5*e^{3MC},  1.5IQR * e^{-4MC}$
 
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, as in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
@@ -218,11 +218,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTI2NzAzMTQsMjgwNDkzNTMwLC0yMD
-Q3ODU1NDcsNzM3ODc3MTI4LC00NTI2Mzk2MDgsLTE5MTA2MTgy
-NzEsNjE1MzUyMjY1LDE1MjU2NDU5MDQsLTE4NzY0NTkxNDUsMj
-AyODEyNTk2Miw2MzQ2NTU0ODQsNTA4MTk1NDIzLDE0MDU0OTY2
-MCwtMTQwNjAzNjkxLC0yNTE3OTI0NzIsMzcyMzMwNDc5LC0xNj
-EzMjIxNDUsLTE2MDMwODA2NzYsMTkwMDgzNzQwLC0xMDkxOTMy
-NTUwXX0=
+eyJoaXN0b3J5IjpbLTgwMzE4NTgxNCwyODA0OTM1MzAsLTIwND
+c4NTU0Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYwOCwtMTkxMDYxODI3
+MSw2MTUzNTIyNjUsMTUyNTY0NTkwNCwtMTg3NjQ1OTE0NSwyMD
+I4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjMsMTQwNTQ5NjYw
+LC0xNDA2MDM2OTEsLTI1MTc5MjQ3MiwzNzIzMzA0NzksLTE2MT
+MyMjE0NSwtMTYwMzA4MDY3NiwxOTAwODM3NDAsLTEwOTE5MzI1
+NTBdfQ==
 -->
