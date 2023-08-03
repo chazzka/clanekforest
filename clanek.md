@@ -104,14 +104,6 @@ Isolation tree je kořenový binární strom sestaven na základě vybrané podm
 - [ ] TODO: další možnost výzkumu (jinej článek) jak udělat isolation forest, 
   když data (features) nebudou hodnoty z intervalu, ale třeba hodnoty z konečné podmnožiny 
 
-The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
-
-- [ ] TODO:  popíšeme že scikit má nějaké novelty detection algortimy, budeme to s nimi porovnávat
-- [ ] TODO:  popíšeme že challenge je dobře nastavit hyperparametry
-
-This kind of issue is widely known amongst AutoML community.
-Some tools have already been implemented that try to deal with the issue of automatic hyperparameter tuning, namely H20 (h2o.ai) or AutoGluon (auto.gluon.ai). 
-
 ### Proposed novelty isolation forest enhancement
 In this section, we propose a new enhancement of the original Isolation Forest algorithm for making it possible to detect novel observations. 
 The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
@@ -226,9 +218,19 @@ This allows the distinctions between the points, making later novelty evaluation
 
 
 ### Experiments using IF as a Novelty detection tool
+
+The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
+
+- [ ] TODO:  popíšeme že scikit má nějaké novelty detection algortimy, budeme to s nimi porovnávat
+- [ ] TODO:  popíšeme že challenge je dobře nastavit hyperparametry
+
+This kind of issue is widely known amongst AutoML community.
+Some tools have already been implemented that try to deal with the issue of automatic hyperparameter tuning, namely H20 (h2o.ai) or AutoGluon (auto.gluon.ai). 
+
 - [ ] TODO: prvně bychom měli vyhodnotit experimenty s odchylkou
 
 - [ ] TODO: tady experimenty, heatmapa atp., nějaký SOTA novelty algoritmus ze scikitu na porovnání
+
 - [ ] TODO: přídáme i porovnání s bin/simple_novelty.rb
 SVM: http.csv - anomalie všechny, ale pulku regularů označil jako ochylky
 SVM: shuttle.csv - najde anomalie správně, ale pulku regularů označí jako anomálie
@@ -256,7 +258,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzU1MTc5ODIsMjAwMjY4NzczNywzMj
+eyJoaXN0b3J5IjpbLTE4MjY0OTg3MzQsMjAwMjY4NzczNywzMj
 czMjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3MDcsMTQzMjgzOTcw
 MCwtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC0xNjA0OTc2ODc3LC
 03NTE1NTQ3MDEsMTY0MjQ3MTQsMTUzMzg0NjIyNywxOTM4MjY1
