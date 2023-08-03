@@ -122,10 +122,10 @@ The essential problem with Isolation Forest algorithm not being able to detect n
 Let $x$ be regular observations known to the Isolation Forest algorithm a priory and $y$ the novel datapoints provided later. 
 The standard Isolation Forest algorithm as defined by Liu et. al. selects the split point based on the min-max value according to a priory datapoints.
 
-Figure X shows the first two decisions of the Isolation Forest algorithm provided a priory data points (marked red in left corner).
+Figure X shows the first two decisions (*max_depth=2*) of the Isolation Forest algorithm provided a priory data points (marked red in left corner).
 First, the dimension X and split point approx. around value 20 is chosen, orphaning most of the observations on the left side.
 In the second decision, dimension Y was chosen, cracking the area on the right in two parts.
-As we can see, the theoretical novel observations $y$ get assigned the same $path length$ as a priory known, non-novel regular observations. 
+As we can see, the theoretical novel observations $y$ get assigned the same *path_length* as a priory known, non-novel regular observations. 
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines.svg)
 > Figure X standard Isolation Forest with novelty points. 
@@ -254,11 +254,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NjQ3NjUzMiwtMTYwNDk3Njg3NywtNz
-UxNTU0NzAxLDE2NDI0NzE0LDE1MzM4NDYyMjcsMTkzODI2NTc1
-LDM3MDM2MzQzOCwxMTQ0MTI4MzMzLC00Mjk2OTc1ODUsLTcwMD
-k4NjM5NiwxMDIzNDMxNTc2LC04ODU3Nzg1NTUsMTA2ODIzNjg0
-NywtODAzMTg1ODE0LDI4MDQ5MzUzMCwtMjA0Nzg1NTQ3LDczNz
-g3NzEyOCwtNDUyNjM5NjA4LC0xOTEwNjE4MjcxLDYxNTM1MjI2
-NV19
+eyJoaXN0b3J5IjpbLTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMT
+YwNDk3Njg3NywtNzUxNTU0NzAxLDE2NDI0NzE0LDE1MzM4NDYy
+MjcsMTkzODI2NTc1LDM3MDM2MzQzOCwxMTQ0MTI4MzMzLC00Mj
+k2OTc1ODUsLTcwMDk4NjM5NiwxMDIzNDMxNTc2LC04ODU3Nzg1
+NTUsMTA2ODIzNjg0NywtODAzMTg1ODE0LDI4MDQ5MzUzMCwtMj
+A0Nzg1NTQ3LDczNzg3NzEyOCwtNDUyNjM5NjA4LC0xOTEwNjE4
+MjcxXX0=
 -->
