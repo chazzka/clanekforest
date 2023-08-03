@@ -220,12 +220,12 @@ This allows the novel datapoints to make their way through the tree, making nove
 Figure X shows, that after three runs (max_depth = 3) we successfully isolated the novel datapoints (y) by fitting them in the regions of a higher path_length.
 
 Consider now point $P_x$ as depicted in Figure X. 
-Using our new approach, $P_x$ is assigned into an area with the *path length = 2*, making $P_x$ 
-We can see that using our approach we successfully isolated both numbers (5000 and 2000, which are considerably far away from each other) in different nodes.
+Using our new approach, $P_x$ is assigned into an area (node) with the *path length = 2*, assigning $P_x$ different path length.
+
 - [ ] TODO: OBRÁZEK SE MI PŘESTAL LÍBIT
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_novelty.svg)
-> Figure X Isolation Forest novelty point insertion on using our novelty approach. 
+> Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
 
 
 ### Experiments using IF as a Novelty detection tool
@@ -258,11 +258,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjU1MjU5NTQsMjAwMjY4NzczNywzMj
-czMjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3MDcsMTQzMjgzOTcw
-MCwtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC0xNjA0OTc2ODc3LC
-03NTE1NTQ3MDEsMTY0MjQ3MTQsMTUzMzg0NjIyNywxOTM4MjY1
-NzUsMzcwMzYzNDM4LDExNDQxMjgzMzMsLTQyOTY5NzU4NSwtNz
-AwOTg2Mzk2LDEwMjM0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2
-ODQ3XX0=
+eyJoaXN0b3J5IjpbODE3MjYzMDI2LDIwMDI2ODc3MzcsMzI3Mz
+I2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3LDE0MzI4Mzk3MDAs
+LTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMTYwNDk3Njg3NywtNz
+UxNTU0NzAxLDE2NDI0NzE0LDE1MzM4NDYyMjcsMTkzODI2NTc1
+LDM3MDM2MzQzOCwxMTQ0MTI4MzMzLC00Mjk2OTc1ODUsLTcwMD
+k4NjM5NiwxMDIzNDMxNTc2LC04ODU3Nzg1NTUsMTA2ODIzNjg0
+N119
 -->
