@@ -210,8 +210,11 @@ $$group_{l,r}  = group\_by(<=> split\_point) \qquad{(7)}$$
 Each of the groups is then assigned a new ranges array as in (8).
 
 For example, if the selected split point was X, then the new range for the left node becomes (previous range starting point ... X) and for the right node it would become (X ... previous range ... ending point).
-Using this, we never lose any data like in the original article, making novelty detection possible.
+This allows the novel datapoints to make their way through the tree, making novelty detection possible.
 Figure X demonstrates this by adding two novel points (considering the learning sample of data beginning with 0 and ending with 100).
+
+
+
 We can see that using our approach we successfully isolated both numbers (5000 and 2000, which are considerably far away from each other) in different nodes.
 - [ ] TODO: OBRÁZEK SE MI PŘESTAL LÍBIT
 
@@ -249,7 +252,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MTQyNTQyOSwxNTMzODQ2MjI3LDE5Mz
+eyJoaXN0b3J5IjpbMjA5MTc3NzkyMCwxNTMzODQ2MjI3LDE5Mz
 gyNjU3NSwzNzAzNjM0MzgsMTE0NDEyODMzMywtNDI5Njk3NTg1
 LC03MDA5ODYzOTYsMTAyMzQzMTU3NiwtODg1Nzc4NTU1LDEwNj
 gyMzY4NDcsLTgwMzE4NTgxNCwyODA0OTM1MzAsLTIwNDc4NTU0
