@@ -164,7 +164,9 @@ Notched box plots apply a "notch" or narrowing of the box around the median.
 Notches are useful in offering a rough guide of the significance of the difference of medians; if the notches of two boxes do not overlap, this will provide evidence of a statistically significant difference between the medians.
 Let *n* be the amount of data, the boundaries of the notches around the median can be obtained as in (2).
 
-$boundary =$ +- $\frac{1.58IQR}{\sqrt{n}}$  (2)
+$B_d =$ +- $\frac{1.58IQR}{\sqrt{n}}$  (2)
+
+#### Adjusted box
 
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, as in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
@@ -209,11 +211,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzg3ODc2OTksMjgwNDkzNTMwLC0yMD
-Q3ODU1NDcsNzM3ODc3MTI4LC00NTI2Mzk2MDgsLTE5MTA2MTgy
-NzEsNjE1MzUyMjY1LDE1MjU2NDU5MDQsLTE4NzY0NTkxNDUsMj
-AyODEyNTk2Miw2MzQ2NTU0ODQsNTA4MTk1NDIzLDE0MDU0OTY2
-MCwtMTQwNjAzNjkxLC0yNTE3OTI0NzIsMzcyMzMwNDc5LC0xNj
-EzMjIxNDUsLTE2MDMwODA2NzYsMTkwMDgzNzQwLC0xMDkxOTMy
-NTUwXX0=
+eyJoaXN0b3J5IjpbMTAyNDk0NDQ3MywyODA0OTM1MzAsLTIwND
+c4NTU0Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYwOCwtMTkxMDYxODI3
+MSw2MTUzNTIyNjUsMTUyNTY0NTkwNCwtMTg3NjQ1OTE0NSwyMD
+I4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjMsMTQwNTQ5NjYw
+LC0xNDA2MDM2OTEsLTI1MTc5MjQ3MiwzNzIzMzA0NzksLTE2MT
+MyMjE0NSwtMTYwMzA4MDY3NiwxOTAwODM3NDAsLTEwOTE5MzI1
+NTBdfQ==
 -->
