@@ -147,9 +147,10 @@ This is demonstrated by simply adding a new service to our proposed algorithm.
  2. When the split point is calculated, random dimension is chosen, and the split point is taken from the evaluated range (and not the data itself).
 
 
+#### Range tolerance selection
 The evaluation of a range starts by simply selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly.
-As a baseline, we select range as if we wanted to construct a box plot, using interquartile range (1).
+As a baseline, we select range by constructing a box plot, using interquartile range (1).
 
 $IQR = Q3 - Q1 = q_n(0.75) - q_n(0.25)$ (1)
 
@@ -243,11 +244,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1OTM4MTg5NSwtNzAwOTg2Mzk2LDEwMj
-M0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2ODQ3LC04MDMxODU4
-MTQsMjgwNDkzNTMwLC0yMDQ3ODU1NDcsNzM3ODc3MTI4LC00NT
-I2Mzk2MDgsLTE5MTA2MTgyNzEsNjE1MzUyMjY1LDE1MjU2NDU5
-MDQsLTE4NzY0NTkxNDUsMjAyODEyNTk2Miw2MzQ2NTU0ODQsNT
-A4MTk1NDIzLDE0MDU0OTY2MCwtMTQwNjAzNjkxLC0yNTE3OTI0
-NzJdfQ==
+eyJoaXN0b3J5IjpbNzUxNzU2NjE3LC03MDA5ODYzOTYsMTAyMz
+QzMTU3NiwtODg1Nzc4NTU1LDEwNjgyMzY4NDcsLTgwMzE4NTgx
+NCwyODA0OTM1MzAsLTIwNDc4NTU0Nyw3Mzc4NzcxMjgsLTQ1Mj
+YzOTYwOCwtMTkxMDYxODI3MSw2MTUzNTIyNjUsMTUyNTY0NTkw
+NCwtMTg3NjQ1OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4NCw1MD
+gxOTU0MjMsMTQwNTQ5NjYwLC0xNDA2MDM2OTEsLTI1MTc5MjQ3
+Ml19
 -->
