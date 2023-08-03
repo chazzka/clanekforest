@@ -161,6 +161,7 @@ Instead, two other variations are tested, the *Notched box* and the *Adjusted bo
 #### Notched box
 Notched box plots apply a "notch" or narrowing of the box around the median. 
 Notches are useful in offering a rough guide of the significance of the difference of medians; if the notches of two boxes do not overlap, this will provide evidence of a statistically significant difference between the medians.
+
 Let *n* be the amount of data, the boundaries of the notches around the median can be obtained as in (2).
 
 $B_d =$ +- $\frac{1.58IQR}{\sqrt{n}}$  (2)
@@ -181,7 +182,7 @@ f(x)=
 	(3)
 $$
 
-for symmetrical distributions, the MC value being zero, after substitution we get
+for symmetrical distributions, the MC value being zero, after substitution we get:
 
 $f_{MC_0}(x)=1.5 IQR$ (4)
 
@@ -230,11 +231,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjQxMjQ0MzgsMTAyMzQzMTU3NiwtOD
-g1Nzc4NTU1LDEwNjgyMzY4NDcsLTgwMzE4NTgxNCwyODA0OTM1
-MzAsLTIwNDc4NTU0Nyw3Mzc4NzcxMjgsLTQ1MjYzOTYwOCwtMT
-kxMDYxODI3MSw2MTUzNTIyNjUsMTUyNTY0NTkwNCwtMTg3NjQ1
-OTE0NSwyMDI4MTI1OTYyLDYzNDY1NTQ4NCw1MDgxOTU0MjMsMT
-QwNTQ5NjYwLC0xNDA2MDM2OTEsLTI1MTc5MjQ3MiwzNzIzMzA0
-NzldfQ==
+eyJoaXN0b3J5IjpbMTk2MDMyMTAxOCwxMDIzNDMxNTc2LC04OD
+U3Nzg1NTUsMTA2ODIzNjg0NywtODAzMTg1ODE0LDI4MDQ5MzUz
+MCwtMjA0Nzg1NTQ3LDczNzg3NzEyOCwtNDUyNjM5NjA4LC0xOT
+EwNjE4MjcxLDYxNTM1MjI2NSwxNTI1NjQ1OTA0LC0xODc2NDU5
+MTQ1LDIwMjgxMjU5NjIsNjM0NjU1NDg0LDUwODE5NTQyMywxND
+A1NDk2NjAsLTE0MDYwMzY5MSwtMjUxNzkyNDcyLDM3MjMzMDQ3
+OV19
 -->
