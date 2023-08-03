@@ -171,7 +171,9 @@ Adjusted box is useful for describing the skew distributions.
 It relies on the medcouple value (MC) of the dataset.
 The *medcouple* is a statistic to measure the skewness (asymmetry of the prop. distribution) of a univariate distribution. 
 As of Humert et. al (https://www.sciencedirect.com/science/article/pii/S0167947307004434?via%3Dihub)
-the 
+for a medcouple value of MC, the lengths of the upper and lower whiskers on the box-plot are respectively defined in (3) and (4).
+
+$1.5*e^{3MC},  1.5IQR $
 
 After that, during tree initialization, a random range out of N is chosen (if presented only one-dimensional data, we take one dimension, as in the original article) and a random value is selected out of the selected range. 
 When selecting groups for next nodes, groups are evaluated by grouping the given dataset according to given split point.
@@ -216,11 +218,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMzNDc2NTgxLDI4MDQ5MzUzMCwtMjA0Nz
-g1NTQ3LDczNzg3NzEyOCwtNDUyNjM5NjA4LC0xOTEwNjE4Mjcx
-LDYxNTM1MjI2NSwxNTI1NjQ1OTA0LC0xODc2NDU5MTQ1LDIwMj
-gxMjU5NjIsNjM0NjU1NDg0LDUwODE5NTQyMywxNDA1NDk2NjAs
-LTE0MDYwMzY5MSwtMjUxNzkyNDcyLDM3MjMzMDQ3OSwtMTYxMz
-IyMTQ1LC0xNjAzMDgwNjc2LDE5MDA4Mzc0MCwtMTA5MTkzMjU1
-MF19
+eyJoaXN0b3J5IjpbLTE2OTI2NzAzMTQsMjgwNDkzNTMwLC0yMD
+Q3ODU1NDcsNzM3ODc3MTI4LC00NTI2Mzk2MDgsLTE5MTA2MTgy
+NzEsNjE1MzUyMjY1LDE1MjU2NDU5MDQsLTE4NzY0NTkxNDUsMj
+AyODEyNTk2Miw2MzQ2NTU0ODQsNTA4MTk1NDIzLDE0MDU0OTY2
+MCwtMTQwNjAzNjkxLC0yNTE3OTI0NzIsMzcyMzMwNDc5LC0xNj
+EzMjIxNDUsLTE2MDMwODA2NzYsMTkwMDgzNzQwLC0xMDkxOTMy
+NTUwXX0=
 -->
