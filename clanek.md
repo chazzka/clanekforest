@@ -123,7 +123,8 @@ Let $x$ be regular observations known to the Isolation Forest algorithm a priory
 The standard Isolation Forest algorithm as defined by Liu et. al. selects the split point based on the min-max value according to a priory datapoints.
 
 Figure X shows the first two decisions of the Isolation Forest algorithm provided a priory data points (marked red in left corner).
-First, the dimension X and split point approx. around value 20 is chosen, making  
+First, the dimension X and split point approx. around value 20 is chosen, orphaning most of the observations on the left side.
+In the second decision, dimension Y was chosen, 
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines.svg)
 > Figure X vanilla Isolation Forest with novelty points. 
@@ -255,7 +256,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMyODk3ODg4LC0xNjA0OTc2ODc3LC03NT
+eyJoaXN0b3J5IjpbOTU4NTg2NDc3LC0xNjA0OTc2ODc3LC03NT
 E1NTQ3MDEsMTY0MjQ3MTQsMTUzMzg0NjIyNywxOTM4MjY1NzUs
 MzcwMzYzNDM4LDExNDQxMjgzMzMsLTQyOTY5NzU4NSwtNzAwOT
 g2Mzk2LDEwMjM0MzE1NzYsLTg4NTc3ODU1NSwxMDY4MjM2ODQ3
