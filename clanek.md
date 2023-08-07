@@ -172,8 +172,8 @@ for a medcouple value of MC, the lengths of the upper and lower whiskers on the 
 $$
 f(x)= 
    \begin{cases}
-    1.5IQR \cdot e^{3MC},  1.5 IQR \cdot e^{-4MC},& \text{if } MC\geq 0\\
-    1.5IQR \cdot e^{4MC},  1.5 IQR \cdot e^{-3MC},& \text{if } MC\leq 0
+    [Q_1 - 1.5IQR \cdot e^{-4MC},  Q_3 + 1.5 IQR \cdot e^{3MC}],& \text{if } MC\geq 0\\
+    [Q_1 1.5IQR \cdot e^{4MC},  1.5 IQR \cdot e^{-3MC},& \text{if } MC\leq 0
 	\end{cases}
 	\qquad(3)
 $$
@@ -265,11 +265,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA1MzYyMTA2LDM5MTc4MzcwMSwtMTgyNj
-Q5ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIs
-LTM1NTg4MTcwNywxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NT
-Y0NzY1MzIsLTE2MDQ5NzY4NzcsLTc1MTU1NDcwMSwxNjQyNDcx
-NCwxNTMzODQ2MjI3LDE5MzgyNjU3NSwzNzAzNjM0MzgsMTE0ND
-EyODMzMywtNDI5Njk3NTg1LC03MDA5ODYzOTYsMTAyMzQzMTU3
-Nl19
+eyJoaXN0b3J5IjpbLTY0MTQ1OTczMiwzOTE3ODM3MDEsLTE4Mj
+Y0OTg3MzQsMjAwMjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcy
+LC0zNTU4ODE3MDcsMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNz
+U2NDc2NTMyLC0xNjA0OTc2ODc3LC03NTE1NTQ3MDEsMTY0MjQ3
+MTQsMTUzMzg0NjIyNywxOTM4MjY1NzUsMzcwMzYzNDM4LDExND
+QxMjgzMzMsLTQyOTY5NzU4NSwtNzAwOTg2Mzk2LDEwMjM0MzE1
+NzZdfQ==
 -->
