@@ -175,17 +175,17 @@ f(x)=
     [Q_1 - 1.5\,IQR \cdot e^{-4\,MC},  Q_3 + 1.5\,IQR \cdot e^{3\,MC}],& \text{if } MC\geq 0\\
     [Q_1 - 1.5\,IQR \cdot e^{-3\,MC},  Q_3 + 1.5\,IQR \cdot e^{4\,MC}],& \text{if } MC\leq 0
 	\end{cases}
-	\qquad(3)
+	\tag{3}
 $$
 
 for symmetrical distributions, the MC value being zero, after substitution we get:
 
-$$f_{MC_0}(x)=1.5\,IQR \qquad(4)$$
+$$f_{MC_0}(x)=1.5\,IQR \tag{4}$$
 
 Using above defined functions, the range is generated for each of the dimensions of the dataset.
 The appropriate choice of the algorithm for the range tolerance selection is a matter of experiments and future research.
 
-$$ranges = map(r_f , D)  \qquad(5),$$
+$$ranges = map(r_f , D)  \tag{5},$$
 
 where $r_f$ being a random range generated using one of the above-defined functions and D being all of the dimensions of a given dataset.
 
@@ -193,17 +193,17 @@ This is due to a fact that individual dimensions can differ in their statistical
 
 During the ITree initialization, a random range $r_f$ from the mapping (5) is chosen. 
 Each node is grouped by a split point (SP), obtained as in (6).
-$$SP = rand(r_f)  \qquad{(6)}$$
+$$SP = rand(r_f)  \tag{6}$$
 
 , generating two groups for left and right node respectively (7).
 
-$$group_{l,r}  = group\_by(<=> SP) \qquad{(7)}$$
+$$group_{l,r}  = group\_by( SP) \tag{7}$$
 
 
 Each of the nodes is then assigned a new ranges array as in (8,9).
 
-$$range_{left} =  [{r_0, SP}] \qquad{(8)}$$
-$$range_{right} =  [{SP, r_{max}}] \qquad{(9)}$$
+$$range_{left} =  [{r_0, SP}] \tag{8}$$
+$$range_{right} =  [{SP, r_{max}}] \tag{9}$$
 , where $r_0$ is inherited (previous) range starting point and $r_{max}$ the inherited range ending point.
 
 This allows the novel datapoints to make their way through the tree, making novelty detection possible.
@@ -265,11 +265,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNDk0NDU0MCwzOTE3ODM3MDEsLTE4Mj
-Y0OTg3MzQsMjAwMjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcy
-LC0zNTU4ODE3MDcsMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNz
-U2NDc2NTMyLC0xNjA0OTc2ODc3LC03NTE1NTQ3MDEsMTY0MjQ3
-MTQsMTUzMzg0NjIyNywxOTM4MjY1NzUsMzcwMzYzNDM4LDExND
-QxMjgzMzMsLTQyOTY5NzU4NSwtNzAwOTg2Mzk2LDEwMjM0MzE1
-NzZdfQ==
+eyJoaXN0b3J5IjpbODEwNzc4NjA0LDM5MTc4MzcwMSwtMTgyNj
+Q5ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIs
+LTM1NTg4MTcwNywxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NT
+Y0NzY1MzIsLTE2MDQ5NzY4NzcsLTc1MTU1NDcwMSwxNjQyNDcx
+NCwxNTMzODQ2MjI3LDE5MzgyNjU3NSwzNzAzNjM0MzgsMTE0ND
+EyODMzMywtNDI5Njk3NTg1LC03MDA5ODYzOTYsMTAyMzQzMTU3
+Nl19
 -->
