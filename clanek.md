@@ -197,7 +197,7 @@ $$SP = rand(r_f)  \tag{6}$$
 
 , generating two groups for left and right node respectively (7).
 
-$$group_{l,r}  = group\_by( SP) \tag{7}$$
+$$group_{l,r}  = group\_by(<, SP) \tag{7}$$
 
 
 Each of the nodes is then assigned a new ranges array as in (8,9).
@@ -265,11 +265,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEwNzc4NjA0LDM5MTc4MzcwMSwtMTgyNj
-Q5ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIs
-LTM1NTg4MTcwNywxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NT
-Y0NzY1MzIsLTE2MDQ5NzY4NzcsLTc1MTU1NDcwMSwxNjQyNDcx
-NCwxNTMzODQ2MjI3LDE5MzgyNjU3NSwzNzAzNjM0MzgsMTE0ND
-EyODMzMywtNDI5Njk3NTg1LC03MDA5ODYzOTYsMTAyMzQzMTU3
-Nl19
+eyJoaXN0b3J5IjpbLTU2NDE3NDY5MiwzOTE3ODM3MDEsLTE4Mj
+Y0OTg3MzQsMjAwMjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcy
+LC0zNTU4ODE3MDcsMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNz
+U2NDc2NTMyLC0xNjA0OTc2ODc3LC03NTE1NTQ3MDEsMTY0MjQ3
+MTQsMTUzMzg0NjIyNywxOTM4MjY1NzUsMzcwMzYzNDM4LDExND
+QxMjgzMzMsLTQyOTY5NzU4NSwtNzAwOTg2Mzk2LDEwMjM0MzE1
+NzZdfQ==
 -->
