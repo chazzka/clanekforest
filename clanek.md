@@ -172,15 +172,15 @@ for a medcouple value of MC, the lengths of the upper and lower whiskers on the 
 $$
 f(x)= 
    \begin{cases}
-    [Q_1 - 1.5IQR \cdot e^{-4MC},  Q_3 + 1.5 IQR \cdot e^{3MC}],& \text{if } MC\geq 0\\
-    [Q_1 1.5IQR \cdot e^{4MC},  1.5 IQR \cdot e^{-3MC},& \text{if } MC\leq 0
+    [Q_1 - 1.5\,IQR \cdot e^{-4\,MC},  Q_3 + 1.5\,IQR \cdot e^{3\,MC}],& \text{if } MC\geq 0\\
+    [Q_1 - 1.5\,IQR \cdot e^{-3\,MC},  Q_3 + 1.5\,IQR \cdot e^{4\,MC}],& \text{if } MC\leq 0
 	\end{cases}
 	\qquad(3)
 $$
 
 for symmetrical distributions, the MC value being zero, after substitution we get:
 
-$$f_{MC_0}(x)=1.5 IQR \qquad(4)$$
+$$f_{MC_0}(x)=1.5\,IQR \qquad(4)$$
 
 Using above defined functions, the range is generated for each of the dimensions of the dataset.
 The appropriate choice of the algorithm for the range tolerance selection is a matter of experiments and future research.
@@ -265,7 +265,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MTQ1OTczMiwzOTE3ODM3MDEsLTE4Mj
+eyJoaXN0b3J5IjpbLTUwNDk0NDU0MCwzOTE3ODM3MDEsLTE4Mj
 Y0OTg3MzQsMjAwMjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcy
 LC0zNTU4ODE3MDcsMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNz
 U2NDc2NTMyLC0xNjA0OTc2ODc3LC03NTE1NTQ3MDEsMTY0MjQ3
