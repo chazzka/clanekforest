@@ -145,7 +145,7 @@ This range should be reasonable enough to allow all the domain space to be separ
 
 As a baseline, we select range by constructing a box plot, using interquartile range (1).
 
-$$IQR = Q3 - Q1 = q_n(0.75) - q_n(0.25) \qquad (1)$$,
+$$IQR = Q_ - Q1 = q_n(0.75) - q_n(0.25) \qquad (1)$$,
 where $Q1$ is the first quartile (also defined as 75th percentile) and $Q2$ second quartile (also defined as 25th percentile).
 
 #### Range tolerance selection
@@ -265,11 +265,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkxNzgzNzAxLC0xODI2NDk4NzM0LDIwMD
-I2ODc3MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3
-LDE0MzI4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMT
-YwNDk3Njg3NywtNzUxNTU0NzAxLDE2NDI0NzE0LDE1MzM4NDYy
-MjcsMTkzODI2NTc1LDM3MDM2MzQzOCwxMTQ0MTI4MzMzLC00Mj
-k2OTc1ODUsLTcwMDk4NjM5NiwxMDIzNDMxNTc2LC04ODU3Nzg1
-NTVdfQ==
+eyJoaXN0b3J5IjpbLTU1OTg0NjI5NSwzOTE3ODM3MDEsLTE4Mj
+Y0OTg3MzQsMjAwMjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcy
+LC0zNTU4ODE3MDcsMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNz
+U2NDc2NTMyLC0xNjA0OTc2ODc3LC03NTE1NTQ3MDEsMTY0MjQ3
+MTQsMTUzMzg0NjIyNywxOTM4MjY1NzUsMzcwMzYzNDM4LDExND
+QxMjgzMzMsLTQyOTY5NzU4NSwtNzAwOTg2Mzk2LDEwMjM0MzE1
+NzZdfQ==
 -->
