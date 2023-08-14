@@ -142,7 +142,7 @@ The standard Isolation Forest algorithm as defined by Liu et. al. selects the sp
 
 Figure X shows the first two decisions (`max_depth=2`) of the Isolation Forest algorithm provided a priory data points (marked $x$) in the left corner.
 First, random dimension X and a split point approx. around value 20 are chosen, orphaning most of the observations on the left side.
-In the second decision, dimension Y was chosen, cracking the area on the right in two parts.
+In the second step, in the rigth node, dimension Y was chosen, splitting the area on the right in two parts.
 As we can see, the theoretical novel observations $y$ get assigned the same *path_length* as a priory known, non-novel regular observations. 
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares.svg)
@@ -291,11 +291,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNjMzMzE2LC0xNjQwMTExNzkzLDE3OT
-M1MTI1NjAsLTMyMTMyODQxMywtMTU3Mzc3NDYwOCwxOTM4MTk3
-OTA0LC0xMTM5MTk5MDkwLDIxNDE1NjU4NTksLTU2NDE3NDY5Mi
-wzOTE3ODM3MDEsLTE4MjY0OTg3MzQsMjAwMjY4NzczNywzMjcz
-MjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3MDcsMTQzMjgzOTcwMC
-wtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC0xNjA0OTc2ODc3LC03
-NTE1NTQ3MDFdfQ==
+eyJoaXN0b3J5IjpbNTk2MDI5MDYwLC03MDYzMzMxNiwtMTY0MD
+ExMTc5MywxNzkzNTEyNTYwLC0zMjEzMjg0MTMsLTE1NzM3NzQ2
+MDgsMTkzODE5NzkwNCwtMTEzOTE5OTA5MCwyMTQxNTY1ODU5LC
+01NjQxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4NzM0LDIwMDI2
+ODc3MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3LD
+E0MzI4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMTYw
+NDk3Njg3N119
 -->
