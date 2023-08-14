@@ -127,9 +127,7 @@ Isolation Tree is a binary tree constructed with a subset of $A$ items (datapoin
    vnější (list)
    : vzniká pokud podmínky rodičů splňuje (resp. nesplňuje) jeden nebo žádný prvek ze samplu, nebo je dosažena maximální hloubka stromu $l$ zpravidla $l=\ln_2(s)$. Obsahuje ohodnocení $h(x)$ pomocí vzdálenosti od kořene, pokud je dosaženo  max. délky stromu je *vzdálenost* odhadnuta pomocí $h(x)=e+c(n)$, $e$ je vzdálenost od kořene, $n$ je počet prvků ze samplu splňující podmínky rodičů, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ a $H_{n-1}$ je $n-1$ harmonické číslo. 
    
-- [ ] TODO: ověřit $c(n)$ nějak mi to furt nesedí
-- [ ] TODO: Budeme to vysvětlovat obecně, nebo jen tak jak mi potřebujeme (2 dimenze x,y)?
- - [ ] TODO: co ovlivňuje contanimation v kódu
+- [ ] TODO: Budeme to vysvětlovat obecně.
 - [ ] TODO: další možnost výzkumu (jinej článek) jak udělat isolation forest, 
   když data (features) nebudou hodnoty z intervalu, ale třeba hodnoty z konečné podmnožiny 
 
@@ -292,11 +290,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDI1MjU1ODcsMTc5MzUxMjU2MCwtMz
-IxMzI4NDEzLC0xNTczNzc0NjA4LDE5MzgxOTc5MDQsLTExMzkx
-OTkwOTAsMjE0MTU2NTg1OSwtNTY0MTc0NjkyLDM5MTc4MzcwMS
-wtMTgyNjQ5ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMjUw
-NzMyNzIsLTM1NTg4MTcwNywxNDMyODM5NzAwLC0yMDAyMzYxMz
-g5LC03NTY0NzY1MzIsLTE2MDQ5NzY4NzcsLTc1MTU1NDcwMSwx
-NjQyNDcxNF19
+eyJoaXN0b3J5IjpbMTAzODk1NDM4NCwxNzkzNTEyNTYwLC0zMj
+EzMjg0MTMsLTE1NzM3NzQ2MDgsMTkzODE5NzkwNCwtMTEzOTE5
+OTA5MCwyMTQxNTY1ODU5LC01NjQxNzQ2OTIsMzkxNzgzNzAxLC
+0xODI2NDk4NzM0LDIwMDI2ODc3MzcsMzI3MzI2NDQ4LC0yNTA3
+MzI3MiwtMzU1ODgxNzA3LDE0MzI4Mzk3MDAsLTIwMDIzNjEzOD
+ksLTc1NjQ3NjUzMiwtMTYwNDk3Njg3NywtNzUxNTU0NzAxLDE2
+NDI0NzE0XX0=
 -->
