@@ -177,13 +177,14 @@ This is demonstrated by a new service (TODO: odkaz) which was created by modifyi
 The evaluation of a range starts by selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
+
+
 As a baseline, we select range by constructing a box plot, using interquartile range (1).
 
 $$IQR = Q_3 - Q_1 = q_{.75} - q_{.25} \qquad (1)$$,
 where $Q_1$ is the first quartile (also defined as 75th percentile) and $Q_3$ second quartile (also defined as 25th percentile).
 
-další článek
--------------------
+
 
 #### Range tolerance selection
 I addition to this, we need to add a tolerance layer to contain the later observed novelties.
@@ -220,6 +221,9 @@ for symmetrical distributions, the MC value being zero, after substitution we ge
 $$f_{MC_0}(x)=1.5\,IQR \tag{4}$$
 
 Using above defined functions, the range is generated for each of the dimensions of the dataset.
+
+#end další článek
+-------------------------------------------------------------------
 The appropriate choice of the algorithm for the range tolerance selection is a matter of experiments and future research.
 
 $$ranges = map(r_f , D)  \tag{5},$$
@@ -302,7 +306,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTIxNzQ3NTEsLTcwNjMzMzE2LC0xNj
+eyJoaXN0b3J5IjpbLTE1MTY2NTI1MzksLTcwNjMzMzE2LC0xNj
 QwMTExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQxMywtMTU3Mzc3
 NDYwOCwxOTM4MTk3OTA0LC0xMTM5MTk5MDkwLDIxNDE1NjU4NT
 ksLTU2NDE3NDY5MiwzOTE3ODM3MDEsLTE4MjY0OTg3MzQsMjAw
