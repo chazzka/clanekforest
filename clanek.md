@@ -66,7 +66,8 @@ Novelty detection is a semi-supervised anomaly detection technique, whereas outl
 With novelty detection, the training data is not polluted by anomalous elements, and we are interested in detecting whether a new observation is an anomaly. 
 In this context such points are also called novelties.
 This is a crucial distinction. 
-Whereas the outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them, novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision. 
+The outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them. 
+The novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision. 
 
 Consider following example. 
 Figure X contains random datapoints arranged in a way they form a cluster like shape. 
@@ -282,11 +283,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTg2NjE5MTIsLTExMzkxOTkwOTAsMj
-E0MTU2NTg1OSwtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5
-ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLT
-M1NTg4MTcwNywxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0
-NzY1MzIsLTE2MDQ5NzY4NzcsLTc1MTU1NDcwMSwxNjQyNDcxNC
-wxNTMzODQ2MjI3LDE5MzgyNjU3NSwzNzAzNjM0MzgsMTE0NDEy
-ODMzM119
+eyJoaXN0b3J5IjpbMTkzODE5NzkwNCwtMTEzOTE5OTA5MCwyMT
+QxNTY1ODU5LC01NjQxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4
+NzM0LDIwMDI2ODc3MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMz
+U1ODgxNzA3LDE0MzI4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3
+NjUzMiwtMTYwNDk3Njg3NywtNzUxNTU0NzAxLDE2NDI0NzE0LD
+E1MzM4NDYyMjcsMTkzODI2NTc1LDM3MDM2MzQzOCwxMTQ0MTI4
+MzMzXX0=
 -->
