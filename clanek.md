@@ -171,7 +171,8 @@ This is demonstrated by a new service (TODO: odkaz) which was created by modifyi
  The Novelty service is making two main alteration concepts:
  
  1. For each of the features, Isolation Forest was added a *range*.
- 2. When the split point is calculated, random dimension is chosen, and the split point is evaluated based on the given *range* (and not the minmax of the data).
+ 2. When the split point is calculated, random dimension is chosen, and the split point is evaluated based on the given *range*.
+
 
 The evaluation of a range starts by selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
@@ -180,6 +181,9 @@ As a baseline, we select range by constructing a box plot, using interquartile r
 
 $$IQR = Q_3 - Q_1 = q_{.75} - q_{.25} \qquad (1)$$,
 where $Q_1$ is the first quartile (also defined as 75th percentile) and $Q_3$ second quartile (also defined as 25th percentile).
+
+další článek
+-------------------
 
 #### Range tolerance selection
 I addition to this, we need to add a tolerance layer to contain the later observed novelties.
@@ -298,11 +302,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNjQyMjc1NSwtNzA2MzMzMTYsLTE2ND
-AxMTE3OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNTczNzc0
-NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2NTg1OS
-wtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAy
-Njg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNy
-wxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2
-MDQ5NzY4NzddfQ==
+eyJoaXN0b3J5IjpbLTEzNTIxNzQ3NTEsLTcwNjMzMzE2LC0xNj
+QwMTExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQxMywtMTU3Mzc3
+NDYwOCwxOTM4MTk3OTA0LC0xMTM5MTk5MDkwLDIxNDE1NjU4NT
+ksLTU2NDE3NDY5MiwzOTE3ODM3MDEsLTE4MjY0OTg3MzQsMjAw
+MjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3MD
+csMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC0x
+NjA0OTc2ODc3XX0=
 -->
