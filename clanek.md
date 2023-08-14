@@ -46,10 +46,11 @@ However, there does not seem to be much work regarding using Isolation Forest as
 
 ## Theory
 Datapoint
-: Datapoint is any observable data.
+: Datapoint is any observable data with $n$ features.
 
 Outlier
-: Outlier is a datapoint, which is situated on the border.
+: Outlier is a data point that differs significantly from other observations. 
+Outlier i
 
 Novelty
 : Outlier is an out-lying point.
@@ -281,7 +282,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTc2MzE0ODEsMjE0MTU2NTg1OSwtNT
+eyJoaXN0b3J5IjpbLTIwMDM1OTU4NTAsMjE0MTU2NTg1OSwtNT
 Y0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAyNjg3
 NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNywxND
 MyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2MDQ5
