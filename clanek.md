@@ -57,6 +57,16 @@ Outlier
 Novelty
 : Novelty is an anomaly that is not present in the given dataset during learning. Novelties are usually supplied later during evaluation.
 
+Supervised algortihm
+: Supervised algorithm is to je to co chceme aby to bylo
+
+Unsupervised algortihm
+: Supervised algorithm is to je to co chceme aby to bylo
+
+Semisupervised algortihm
+: Semi-supervised algorithm to je že máš labely jen napůl
+
+
 
 ## Methods
 
@@ -283,7 +293,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NTkyMjA0OSwtMzIxMzI4NDEzLC0xNT
+eyJoaXN0b3J5IjpbMTQ3OTAxODAyMywtMzIxMzI4NDEzLC0xNT
 czNzc0NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2
 NTg1OSwtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNC
 wyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4
