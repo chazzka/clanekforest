@@ -168,7 +168,7 @@ This is demonstrated by a new service (TODO: odkaz) which was created by modifyi
  
  We encourage you to try it and maybe create your own service based on our already implemented ones.
 
- The service used in this article is making two main alteration concepts:
+ The Novelty service is making two main alteration concepts:
  
  1. When selecting a sample from the given data, to randomly selecting the sample of a given *batch size*, the evaluation of range was added.
  2. When the split point is calculated, random dimension is chosen, and the split point is taken from the evaluated range (and not the data itself).
@@ -298,7 +298,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMjE1MTA0OSwtNzA2MzMzMTYsLTE2ND
+eyJoaXN0b3J5IjpbLTE5OTE2MDAwOCwtNzA2MzMzMTYsLTE2ND
 AxMTE3OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNTczNzc0
 NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2NTg1OS
 wtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAy
