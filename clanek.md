@@ -37,6 +37,7 @@ Based on this, the algorithm calculates the LOF score of the point and compares 
 This is done for all of the points until each point has its own LOF score.
 When using this method for novelty detection, the novelty decision function is shifted opposite (large values correspond to inliers, whereas small values are novel datapoints).
 
+#### Isolation Forest
 Isolation forest on the other hand, has been widely used for outlier detection. 
 In (https://doi.org/10.1016/j.patrec.2022.09.015) Xu, Yang and Rahardja show Isolation Forest outperforming other 12 state-of-the-art outlier detectors by running the experiments on public outlier detection datasets.
 Thorough the years, many successful enhancements of the Isolation Forest have been developed. Gałka, Karczmarek, Tokovarov in (https://doi.org/10.1016/j.patrec.2022.09.015) implement Minimal Spanning Tree clustering-based enhancement.
@@ -265,11 +266,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MTU2NTg1OSwtNTY0MTc0NjkyLDM5MT
-c4MzcwMSwtMTgyNjQ5ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0
-OCwtMjUwNzMyNzIsLTM1NTg4MTcwNywxNDMyODM5NzAwLC0yMD
-AyMzYxMzg5LC03NTY0NzY1MzIsLTE2MDQ5NzY4NzcsLTc1MTU1
-NDcwMSwxNjQyNDcxNCwxNTMzODQ2MjI3LDE5MzgyNjU3NSwzNz
-AzNjM0MzgsMTE0NDEyODMzMywtNDI5Njk3NTg1LC03MDA5ODYz
-OTZdfQ==
+eyJoaXN0b3J5IjpbLTMyODA2NTgzMiwyMTQxNTY1ODU5LC01Nj
+QxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4NzM0LDIwMDI2ODc3
+MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3LDE0Mz
+I4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMTYwNDk3
+Njg3NywtNzUxNTU0NzAxLDE2NDI0NzE0LDE1MzM4NDYyMjcsMT
+kzODI2NTc1LDM3MDM2MzQzOCwxMTQ0MTI4MzMzLC00Mjk2OTc1
+ODVdfQ==
 -->
