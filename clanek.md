@@ -153,15 +153,13 @@ Even after reaching the stopping criterion, the novelty point remains in the sam
 #### Proposed solution
 In our proposed enhancement, we clearly have to deal with this issue.
 ##### Isolation Forest 
+For the ease of implementing and experimenting, we created a Ruby Gem implementing the Isolation Forest algorithm. It is open-source available online.
 - [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
 
-
+##### Novelty service
 The proposed solution is altering the concept of evaluation of a split point.
 Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on a range.
 For this to work, several alterations to the split point evaluation and the form of data passed between nodes has to be done, but the overall concept of the forest stays the same. 
-
-##### Novelty service
- - [ ] TODO: tady popisujeme naši isolation servisku
 
 This is demonstrated by simply adding a new service to our proposed algorithm.
   
@@ -299,7 +297,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgwNjA2NDMwLC03MDYzMzMxNiwtMTY0MD
+eyJoaXN0b3J5IjpbODc2NTI2MzcyLC03MDYzMzMxNiwtMTY0MD
 ExMTc5MywxNzkzNTEyNTYwLC0zMjEzMjg0MTMsLTE1NzM3NzQ2
 MDgsMTkzODE5NzkwNCwtMTEzOTE5OTA5MCwyMTQxNTY1ODU5LC
 01NjQxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4NzM0LDIwMDI2
