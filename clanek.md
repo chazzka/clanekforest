@@ -178,6 +178,8 @@ The evaluation of a range starts by selecting some initial (either random or use
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
 
+#další článek
+-------------------
 
 As a baseline, we select range by constructing a box plot, using interquartile range (1).
 
@@ -263,6 +265,8 @@ This allows the distinctions between the points, making later novelty evaluation
 
 The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
 
+- [ ] TODO: TADY JEN NAPÍŠEME NĚJAKÉ KECY ŽE JSME POUŽILI AUTOKONFIGURACI PRO NASTASVENÍ RANGES
+
 - [ ] TODO:  popíšeme že scikit má nějaké novelty detection algortimy, budeme to s nimi porovnávat
 - [ ] TODO:  popíšeme že challenge je dobře nastavit hyperparametry
 
@@ -306,11 +310,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTY2NTI1MzksLTcwNjMzMzE2LC0xNj
-QwMTExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQxMywtMTU3Mzc3
-NDYwOCwxOTM4MTk3OTA0LC0xMTM5MTk5MDkwLDIxNDE1NjU4NT
-ksLTU2NDE3NDY5MiwzOTE3ODM3MDEsLTE4MjY0OTg3MzQsMjAw
-MjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3MD
-csMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC0x
-NjA0OTc2ODc3XX0=
+eyJoaXN0b3J5IjpbMTE0NjQ3OTE2OCwtNzA2MzMzMTYsLTE2ND
+AxMTE3OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNTczNzc0
+NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2NTg1OS
+wtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAy
+Njg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNy
+wxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2
+MDQ5NzY4NzddfQ==
 -->
