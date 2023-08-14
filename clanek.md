@@ -58,9 +58,6 @@ Novelty
 : Novelty is an anomaly that is not present in the given dataset during learning. Novelties are usually supplied later during evaluation.
 
 
-
-
-
 ## Methods
 
 Traditional approaches for anomaly separation consist of either novelty detection or outlier detection.
@@ -283,7 +280,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzY4MDY2OTYsMjE0MTU2NTg1OSwtNT
+eyJoaXN0b3J5IjpbLTExMzkxOTkwOTAsMjE0MTU2NTg1OSwtNT
 Y0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAyNjg3
 NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNywxND
 MyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2MDQ5
