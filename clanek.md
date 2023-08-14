@@ -49,15 +49,15 @@ Datapoint
 : Datapoint is any observable data with $n$ features.
 
 Outlier
-: Outlier is a data point that differs significantly from other observations. 
-Outlier i
+: Outlier is a datapoint included in the given dataset. 
+
 
 Novelty
-: Outlier is an out-lying point.
+: Novelty is an out-lying point.
 
 
 Anomaly
-: Anomaly point is a point which is different can be any (both Outlier and Novelty) datapoint.
+: Anomaly differs significantly from other observations.
 
 
 ## Methods
@@ -282,11 +282,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDM1OTU4NTAsMjE0MTU2NTg1OSwtNT
-Y0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAyNjg3
-NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNywxND
-MyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2MDQ5
-NzY4NzcsLTc1MTU1NDcwMSwxNjQyNDcxNCwxNTMzODQ2MjI3LD
-E5MzgyNjU3NSwzNzAzNjM0MzgsMTE0NDEyODMzMywtNDI5Njk3
-NTg1XX0=
+eyJoaXN0b3J5IjpbNTU1NTQ3NzIsMjE0MTU2NTg1OSwtNTY0MT
+c0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAyNjg3NzM3
+LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNywxNDMyOD
+M5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2MDQ5NzY4
+NzcsLTc1MTU1NDcwMSwxNjQyNDcxNCwxNTMzODQ2MjI3LDE5Mz
+gyNjU3NSwzNzAzNjM0MzgsMTE0NDEyODMzMywtNDI5Njk3NTg1
+XX0=
 -->
