@@ -132,6 +132,7 @@ Isolation Tree is a binary tree constructed with a subset of $A$ items (datapoin
   když data (features) nebudou hodnoty z intervalu, ale třeba hodnoty z konečné podmnožiny 
 
 ### Proposed novelty isolation forest enhancement
+#### Initial problem
 In this section, we propose a new enhancement of the original Isolation Forest algorithm for making it possible to detect novelty observations. 
 The proposed enhancement takes the basic idea of an ensemble of trees with various depths but is taking it further to make supervised novelty detection possible.
 The standard Isolation Forest algorithm cannot be used for novelty detection.
@@ -149,8 +150,8 @@ Even after reaching the stopping criterion, the novelty point remains in the sam
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares.svg)
 > Figure X standard Isolation Forest with novelty points. 
 
-
- - [ ] TODO: tady popíšeme naši isolation servisku
+#### Proposed solution
+ - [ ] TODO: tady popisujeme naši isolation servisku
  
 In our proposed enhancement, we clearly have to deal with this issue.
 The proposed solution is altering the concept of evaluation of a split point.
@@ -292,11 +293,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjY3NTYwMjAsLTcwNjMzMzE2LC0xNj
-QwMTExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQxMywtMTU3Mzc3
-NDYwOCwxOTM4MTk3OTA0LC0xMTM5MTk5MDkwLDIxNDE1NjU4NT
-ksLTU2NDE3NDY5MiwzOTE3ODM3MDEsLTE4MjY0OTg3MzQsMjAw
-MjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3MD
-csMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC0x
-NjA0OTc2ODc3XX0=
+eyJoaXN0b3J5IjpbMTA5NjkwNzAwNywtNzA2MzMzMTYsLTE2ND
+AxMTE3OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNTczNzc0
+NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2NTg1OS
+wtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAy
+Njg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNy
+wxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2
+MDQ5NzY4NzddfQ==
 -->
