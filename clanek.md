@@ -133,8 +133,8 @@ Isolation Tree is a binary tree constructed with a subset of $A$ items (datapoin
 
 ### Proposed novelty isolation forest enhancement
 In this section, we propose a new enhancement of the original Isolation Forest algorithm for making it possible to detect novelty observations. 
-The proposed enhancement takes the basic idea of an ensemble of trees with depths but is taking it further to make supervised novel detection possible.
-The essential problem with Isolation Forest algorithm not being able to detect novel observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
+The proposed enhancement takes the basic idea of an ensemble of trees with various depths but is taking it further to make supervised novelty detection possible.
+The essential problem with Isolation Forest algorithm not being able to detect novelty observations is caused by the fact that with every new separation, isolation forest uses the separated data to evaluate next separation.
 
 Let $x$ be regular observations known to the Isolation Forest algorithm a priory and $y$ the novel datapoints provided later. 
 The standard Isolation Forest algorithm as defined by Liu et. al. selects the split point based on the min-max value according to a priory datapoints.
@@ -290,7 +290,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTIwNjYzOTksMTc5MzUxMjU2MCwtMz
+eyJoaXN0b3J5IjpbLTExMzYwMjE4MjQsMTc5MzUxMjU2MCwtMz
 IxMzI4NDEzLC0xNTczNzc0NjA4LDE5MzgxOTc5MDQsLTExMzkx
 OTkwOTAsMjE0MTU2NTg1OSwtNTY0MTc0NjkyLDM5MTc4MzcwMS
 wtMTgyNjQ5ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMjUw
