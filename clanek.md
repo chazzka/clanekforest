@@ -140,8 +140,8 @@ This is because in each step, it limits the observation with the previously sepa
 Let $x$ be regular observations known to the Isolation Forest algorithm a priory and $y$ the novel datapoints provided later. 
 The standard Isolation Forest algorithm as defined by Liu et. al. selects the split point based on the min-max value according to a priory datapoints.
 
-Figure X shows the first two decisions (`max_depth=2`) of the Isolation Forest algorithm provided a priory data points (marked $x$) in left corner.
-First, random dimension X and a split point approx. around value 20 is chosen, orphaning most of the observations on the left side.
+Figure X shows the first two decisions (`max_depth=2`) of the Isolation Forest algorithm provided a priory data points (marked $x$) in the left corner.
+First, random dimension X and a split point approx. around value 20 are chosen, orphaning most of the observations on the left side.
 In the second decision, dimension Y was chosen, cracking the area on the right in two parts.
 As we can see, the theoretical novel observations $y$ get assigned the same *path_length* as a priory known, non-novel regular observations. 
 
@@ -291,11 +291,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NzYzOTY0MSwtMTY0MDExMTc5MywxNz
-kzNTEyNTYwLC0zMjEzMjg0MTMsLTE1NzM3NzQ2MDgsMTkzODE5
-NzkwNCwtMTEzOTE5OTA5MCwyMTQxNTY1ODU5LC01NjQxNzQ2OT
-IsMzkxNzgzNzAxLC0xODI2NDk4NzM0LDIwMDI2ODc3MzcsMzI3
-MzI2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3LDE0MzI4Mzk3MD
-AsLTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMTYwNDk3Njg3Nywt
-NzUxNTU0NzAxXX0=
+eyJoaXN0b3J5IjpbLTcwNjMzMzE2LC0xNjQwMTExNzkzLDE3OT
+M1MTI1NjAsLTMyMTMyODQxMywtMTU3Mzc3NDYwOCwxOTM4MTk3
+OTA0LC0xMTM5MTk5MDkwLDIxNDE1NjU4NTksLTU2NDE3NDY5Mi
+wzOTE3ODM3MDEsLTE4MjY0OTg3MzQsMjAwMjY4NzczNywzMjcz
+MjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3MDcsMTQzMjgzOTcwMC
+wtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC0xNjA0OTc2ODc3LC03
+NTE1NTQ3MDFdfQ==
 -->
