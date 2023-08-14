@@ -157,9 +157,10 @@ In our proposed enhancement, we clearly have to deal with this issue.
 The proposed solution is altering the concept of evaluation of a split point.
 Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on a range.
 For this to work, several alterations to the split point evaluation and the form of data passed between nodes has to be done, but the overall concept of the forest stays the same. 
-This is demonstrated by simply adding a new service to our proposed algorithm.
 
-  - [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
+This is demonstrated by simply adding a new service to our proposed algorithm.
+  
+- [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
 
  We encourage you to try it and maybe create your own service based on our already implemented ones.
 
@@ -293,7 +294,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4ODc2MDQ0NSwtNzA2MzMzMTYsLTE2ND
+eyJoaXN0b3J5IjpbLTMxMTUwMTE0MSwtNzA2MzMzMTYsLTE2ND
 AxMTE3OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNTczNzc0
 NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2NTg1OS
 wtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAy
