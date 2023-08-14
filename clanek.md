@@ -82,10 +82,10 @@ Figure X shows the result of evaluating classical Isolation Forest on such datas
 
 Figure x shows regular observations $x$ and anomaly observations $y$ marked by Isolation Forest (`batch_size 128, trees_count: 100, zbytek default`). 
 Figure x shows that approx. $10\%$ of observations are anomalies.
-This is not unwanted behavior in the sense of outlier detection but is undesired in the sense of novelty detection, because the false positive marked data are regular observations which should be marked so.
+This is not unwanted behavior in the sense of outlier detection but is false positive observation in the sense of novelty detection, because this data are regular observations which should be marked so.
 
 Another problem is with the unsupervised separation itself.
-Consider data polluted by anomalies in close to 1:1 ratio.
+Consider data polluted by anomalies in close to $1:1$ ratio.
 Even human will find it nearly impossible to differentiate between these two classes when given plotted dataset.
 Finding the line itself is obvious.
 Deciding which observations are anomalies, without some domain knowledge on the other hand is close to impossible.
@@ -284,7 +284,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMzkzMTM0MywtMTU3Mzc3NDYwOCwxOT
+eyJoaXN0b3J5IjpbMTE4MTQzMDcxOSwtMTU3Mzc3NDYwOCwxOT
 M4MTk3OTA0LC0xMTM5MTk5MDkwLDIxNDE1NjU4NTksLTU2NDE3
 NDY5MiwzOTE3ODM3MDEsLTE4MjY0OTg3MzQsMjAwMjY4NzczNy
 wzMjczMjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3MDcsMTQzMjgz
