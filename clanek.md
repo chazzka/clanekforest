@@ -63,7 +63,8 @@ Novelty
 Traditional approaches for anomaly detection consist of either novelty detection or outlier detection.
 Novelty detection is an anomaly detection mechanism, where we search for unusual observations, which are discovered due to their differences from the training data.
 Novelty detection is a semi-supervised anomaly detection technique, whereas outlier detection uses unsupervised methods.
-With novelty detection, the training data is not polluted by anomalous elements, and we are interested in detecting whether a new observation is an anomaly. In this context also called a novelty.
+With novelty detection, the training data is not polluted by anomalous elements, and we are interested in detecting whether a new observation is an anomaly. 
+In this context such points are also called novelties.
 This is a crucial distinction, due to a fact that whereas the outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them, novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision. 
 
 Consider following example. 
@@ -280,11 +281,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjM4NzQwMiwtMTEzOTE5OTA5MCwyMT
-QxNTY1ODU5LC01NjQxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4
-NzM0LDIwMDI2ODc3MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMz
-U1ODgxNzA3LDE0MzI4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3
-NjUzMiwtMTYwNDk3Njg3NywtNzUxNTU0NzAxLDE2NDI0NzE0LD
-E1MzM4NDYyMjcsMTkzODI2NTc1LDM3MDM2MzQzOCwxMTQ0MTI4
-MzMzXX0=
+eyJoaXN0b3J5IjpbLTE1Njg3MzM0NTUsLTExMzkxOTkwOTAsMj
+E0MTU2NTg1OSwtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5
+ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLT
+M1NTg4MTcwNywxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0
+NzY1MzIsLTE2MDQ5NzY4NzcsLTc1MTU1NDcwMSwxNjQyNDcxNC
+wxNTMzODQ2MjI3LDE5MzgyNjU3NSwzNzAzNjM0MzgsMTE0NDEy
+ODMzM119
 -->
