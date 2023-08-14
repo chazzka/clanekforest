@@ -228,6 +228,8 @@ Using above defined functions, the range is generated for each of the dimensions
 -------------------------------------------------------------------
 The appropriate choice of the algorithm for the range tolerance selection is a matter of experiments and future research.
 
+- [ ] TODO: POKRAČOVAT VE ČTENÍ ZDE
+
 $$ranges = map(r_f , D)  \tag{5},$$
 
 where $r_f$ being a random range generated using one of the above-defined functions and D being all of the dimensions of a given dataset.
@@ -310,11 +312,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NjUwMTU2MSwtNzA2MzMzMTYsLTE2ND
-AxMTE3OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNTczNzc0
-NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2NTg1OS
-wtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAy
-Njg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNy
-wxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2
-MDQ5NzY4NzddfQ==
+eyJoaXN0b3J5IjpbOTQyNDgzNzI3LC05NjY1MDE1NjEsLTcwNj
+MzMzE2LC0xNjQwMTExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQx
+MywtMTU3Mzc3NDYwOCwxOTM4MTk3OTA0LC0xMTM5MTk5MDkwLD
+IxNDE1NjU4NTksLTU2NDE3NDY5MiwzOTE3ODM3MDEsLTE4MjY0
+OTg3MzQsMjAwMjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcyLC
+0zNTU4ODE3MDcsMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNzU2
+NDc2NTMyXX0=
 -->
