@@ -80,7 +80,7 @@ Figure X shows the result of evaluating classical Isolation Forest on such datas
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_outlier_if.svg) 
 > Figure X Dataset with regular observations. 
 
-Figure x shows regular observations $x$ and false positive regular observations $y$ marked by Isolation Forest (`batch_size 128, trees_count: 100, zbytek default`). 
+Figure x shows regular observations $x$ and anomaly observations $y$ marked by Isolation Forest (`batch_size 128, trees_count: 100, zbytek default`). 
 Figure x shows that approx. $10\%$ of observations are anomalies.
 This is not unwanted behavior in the sense of outlier detection but is undesired in the sense of novelty detection, because the false positive marked data are regular observations which should be marked so.
 
@@ -284,11 +284,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzM3NzQ2MDgsMTkzODE5NzkwNCwtMT
-EzOTE5OTA5MCwyMTQxNTY1ODU5LC01NjQxNzQ2OTIsMzkxNzgz
-NzAxLC0xODI2NDk4NzM0LDIwMDI2ODc3MzcsMzI3MzI2NDQ4LC
-0yNTA3MzI3MiwtMzU1ODgxNzA3LDE0MzI4Mzk3MDAsLTIwMDIz
-NjEzODksLTc1NjQ3NjUzMiwtMTYwNDk3Njg3NywtNzUxNTU0Nz
-AxLDE2NDI0NzE0LDE1MzM4NDYyMjcsMTkzODI2NTc1LDM3MDM2
-MzQzOF19
+eyJoaXN0b3J5IjpbMTEwMzkzMTM0MywtMTU3Mzc3NDYwOCwxOT
+M4MTk3OTA0LC0xMTM5MTk5MDkwLDIxNDE1NjU4NTksLTU2NDE3
+NDY5MiwzOTE3ODM3MDEsLTE4MjY0OTg3MzQsMjAwMjY4NzczNy
+wzMjczMjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3MDcsMTQzMjgz
+OTcwMCwtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC0xNjA0OTc2OD
+c3LC03NTE1NTQ3MDEsMTY0MjQ3MTQsMTUzMzg0NjIyNywxOTM4
+MjY1NzVdfQ==
 -->
