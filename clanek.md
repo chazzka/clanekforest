@@ -69,7 +69,7 @@ This is a crucial distinction.
 The outlier detection is usually presented with data containing both anomalies and regular observation, it then uses mathematical models that try to make distinction between them. 
 The novelty detection on the other hand is usually presented data with little to zero anomalies (the proportion of anomalies in the dataset is called a contamination) and later, when conferred with an anomalous observation, it makes a decision. 
 
-Consider following example. 
+Consider the following example:
 Figure X contains random datapoints arranged in a way they form a cluster like shape. 
 Say this data is our regular observations. 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/9047b936158e6320e0b4b942ab0d65c8e12f280f/clanek_figures/regular_observations_no_novelites.svg) 
@@ -283,11 +283,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzODE5NzkwNCwtMTEzOTE5OTA5MCwyMT
-QxNTY1ODU5LC01NjQxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4
-NzM0LDIwMDI2ODc3MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMz
-U1ODgxNzA3LDE0MzI4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3
-NjUzMiwtMTYwNDk3Njg3NywtNzUxNTU0NzAxLDE2NDI0NzE0LD
-E1MzM4NDYyMjcsMTkzODI2NTc1LDM3MDM2MzQzOCwxMTQ0MTI4
-MzMzXX0=
+eyJoaXN0b3J5IjpbMTg3OTU0NzIyNSwxOTM4MTk3OTA0LC0xMT
+M5MTk5MDkwLDIxNDE1NjU4NTksLTU2NDE3NDY5MiwzOTE3ODM3
+MDEsLTE4MjY0OTg3MzQsMjAwMjY4NzczNywzMjczMjY0NDgsLT
+I1MDczMjcyLC0zNTU4ODE3MDcsMTQzMjgzOTcwMCwtMjAwMjM2
+MTM4OSwtNzU2NDc2NTMyLC0xNjA0OTc2ODc3LC03NTE1NTQ3MD
+EsMTY0MjQ3MTQsMTUzMzg0NjIyNywxOTM4MjY1NzUsMzcwMzYz
+NDM4XX0=
 -->
