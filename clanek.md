@@ -47,8 +47,13 @@ However, there does not seem to be much work regarding using Isolation Forest as
 ## Theory
 Outlier
 : Outlier is an out-lying point.
+
 Novelty
-:
+: Outlier is an out-lying point.
+
+Anomaly
+: Anomaly point is a point which is statist can be any (both Outlier and Novelty) datapoint.
+
 
 ## Methods
 
@@ -272,7 +277,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNDUxNzczOSwyMTQxNTY1ODU5LC01Nj
+eyJoaXN0b3J5IjpbMTEzMjA2NTc3MSwyMTQxNTY1ODU5LC01Nj
 QxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4NzM0LDIwMDI2ODc3
 MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3LDE0Mz
 I4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMTYwNDk3
