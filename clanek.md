@@ -144,7 +144,7 @@ Figure X shows the first two decisions (`max_depth=2`) of the Isolation Forest a
 First, random dimension X and a split point approx. around value 20 are chosen, orphaning most of the observations on the left side.
 In the second step, in the right node, dimension Y was chosen, splitting the area in two parts.
 As we can see, the theoretical novelty observations $y$ get assigned the same *path_length* as a priory known, regular observations.
-
+Even after reaching the stopping criterion, the novelty point remains in the same node with a regular datapoint.
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares.svg)
 > Figure X standard Isolation Forest with novelty points. 
@@ -292,11 +292,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzODM5LC03MDYzMzMxNiwtMTY0MDExMT
-c5MywxNzkzNTEyNTYwLC0zMjEzMjg0MTMsLTE1NzM3NzQ2MDgs
-MTkzODE5NzkwNCwtMTEzOTE5OTA5MCwyMTQxNTY1ODU5LC01Nj
-QxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4NzM0LDIwMDI2ODc3
-MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3LDE0Mz
-I4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMTYwNDk3
-Njg3N119
+eyJoaXN0b3J5IjpbLTE5NjY3NTYwMjAsLTcwNjMzMzE2LC0xNj
+QwMTExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQxMywtMTU3Mzc3
+NDYwOCwxOTM4MTk3OTA0LC0xMTM5MTk5MDkwLDIxNDE1NjU4NT
+ksLTU2NDE3NDY5MiwzOTE3ODM3MDEsLTE4MjY0OTg3MzQsMjAw
+MjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3MD
+csMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC0x
+NjA0OTc2ODc3XX0=
 -->
