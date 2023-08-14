@@ -81,8 +81,7 @@ Figure X shows the result of evaluating classical Isolation Forest on such datas
 > Figure X Dataset with regular observations. 
 
 Figure x shows regular observations $x$ and false positive regular observations $y$ marked by Isolation Forest (`batch_size 128, trees_count: 100, zbytek default`). 
-
-Figure x shows that approx. $10\%$ (marked $y$ in the figure) of observations are outliers.
+Figure x shows that approx. $10\%$ of observations are outliers.
 This is not unwanted behavior in the sense of outlier detection but is undesired in the sense of novelty detection, because the false positive marked data are regular observations which should not be omitted.
 
 Another problem is with the unsupervised separation itself.
@@ -285,11 +284,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQxNzU2MTkxLDE5MzgxOTc5MDQsLTExMz
-kxOTkwOTAsMjE0MTU2NTg1OSwtNTY0MTc0NjkyLDM5MTc4Mzcw
-MSwtMTgyNjQ5ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMj
-UwNzMyNzIsLTM1NTg4MTcwNywxNDMyODM5NzAwLC0yMDAyMzYx
-Mzg5LC03NTY0NzY1MzIsLTE2MDQ5NzY4NzcsLTc1MTU1NDcwMS
-wxNjQyNDcxNCwxNTMzODQ2MjI3LDE5MzgyNjU3NSwzNzAzNjM0
-MzhdfQ==
+eyJoaXN0b3J5IjpbLTE0NDQwMjk1MTUsMTkzODE5NzkwNCwtMT
+EzOTE5OTA5MCwyMTQxNTY1ODU5LC01NjQxNzQ2OTIsMzkxNzgz
+NzAxLC0xODI2NDk4NzM0LDIwMDI2ODc3MzcsMzI3MzI2NDQ4LC
+0yNTA3MzI3MiwtMzU1ODgxNzA3LDE0MzI4Mzk3MDAsLTIwMDIz
+NjEzODksLTc1NjQ3NjUzMiwtMTYwNDk3Njg3NywtNzUxNTU0Nz
+AxLDE2NDI0NzE0LDE1MzM4NDYyMjcsMTkzODI2NTc1LDM3MDM2
+MzQzOF19
 -->
