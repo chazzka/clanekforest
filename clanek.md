@@ -125,7 +125,7 @@ Isolation Tree is a binary tree constructed with a subset of $A$ items (datapoin
    : obsahuje podmínku (feature a mez) a dva potomky (jeden reprezentuje splněnou podmínku a druhý naopak nesplněnou) 
    
    vnější (list)
-   : vzniká pokud podmínky rodičů splňuje (resp. nesplňuje) jeden nebo žádný prvek ze samplu, nebo je dosažena maximální hloubka stromu $l$ zpravidla $l=\ln_2(s)$. Obsahuje ohodnocení $h(x)$ pomocí vzdálenosti od kořene, pokud je dosaženo  max. délky stromu je *vzdálenost* odhadnuta pomocí $h(x)=e+c(n)$, $e$ je vzdálenost od kořene, $n$ je počet prvků ze samplu splňující podmínky rodičů, $c(n)=2\,(H_{n-1}-\frac{n-1}{N})$ a $H_{n-1}$ je $n-1$ harmonické číslo, $N$ je počet prvků celkově. 
+   : vzniká pokud podmínky rodičů splňuje (resp. nesplňuje) jeden nebo žádný prvek ze samplu, nebo je dosažena maximální hloubka stromu $l$ zpravidla $l=\ln_2(s)$. Obsahuje ohodnocení $h(x)$ pomocí vzdálenosti od kořene, pokud je dosaženo  max. délky stromu je *vzdálenost* odhadnuta pomocí $h(x)=e+c(n)$, $e$ je vzdálenost od kořene, $n$ je počet prvků ze samplu splňující podmínky rodičů, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ a $H_{n-1}$ je $n-1$ harmonické číslo. 
    
 - [ ] TODO: ověřit $c(n)$ nějak mi to furt nesedí
 - [ ] TODO: Budeme to vysvětlovat obecně, nebo jen tak jak mi potřebujeme (2 dimenze x,y)?
@@ -292,11 +292,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNT
-czNzc0NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2
-NTg1OSwtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNC
-wyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4
-MTcwNywxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1Mz
-IsLTE2MDQ5NzY4NzcsLTc1MTU1NDcwMSwxNjQyNDcxNCwxNTMz
-ODQ2MjI3XX0=
+eyJoaXN0b3J5IjpbLTEwMDI1MjU1ODcsMTc5MzUxMjU2MCwtMz
+IxMzI4NDEzLC0xNTczNzc0NjA4LDE5MzgxOTc5MDQsLTExMzkx
+OTkwOTAsMjE0MTU2NTg1OSwtNTY0MTc0NjkyLDM5MTc4MzcwMS
+wtMTgyNjQ5ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMjUw
+NzMyNzIsLTM1NTg4MTcwNywxNDMyODM5NzAwLC0yMDAyMzYxMz
+g5LC03NTY0NzY1MzIsLTE2MDQ5NzY4NzcsLTc1MTU1NDcwMSwx
+NjQyNDcxNF19
 -->
