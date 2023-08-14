@@ -230,7 +230,7 @@ Some tools have already been implemented that try to deal with the issue of auto
 
 - [ ] TODO: prvně bychom měli vyhodnotit experimenty s odchylkou
 
-| statistics:          | 1.5IQR | notch |   |   |
+| statistics:          | http.csv | shuttle.csv |   |   |
 |----------------------|--------|-------|---|---|
 | % anomalies/ % found |        |       |   |   |
 | % false positive     |        |       |   |   |
@@ -265,11 +265,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NDE3NDY5MiwzOTE3ODM3MDEsLTE4Mj
-Y0OTg3MzQsMjAwMjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcy
-LC0zNTU4ODE3MDcsMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNz
-U2NDc2NTMyLC0xNjA0OTc2ODc3LC03NTE1NTQ3MDEsMTY0MjQ3
-MTQsMTUzMzg0NjIyNywxOTM4MjY1NzUsMzcwMzYzNDM4LDExND
-QxMjgzMzMsLTQyOTY5NzU4NSwtNzAwOTg2Mzk2LDEwMjM0MzE1
-NzZdfQ==
+eyJoaXN0b3J5IjpbMjE0MTU2NTg1OSwtNTY0MTc0NjkyLDM5MT
+c4MzcwMSwtMTgyNjQ5ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0
+OCwtMjUwNzMyNzIsLTM1NTg4MTcwNywxNDMyODM5NzAwLC0yMD
+AyMzYxMzg5LC03NTY0NzY1MzIsLTE2MDQ5NzY4NzcsLTc1MTU1
+NDcwMSwxNjQyNDcxNCwxNTMzODQ2MjI3LDE5MzgyNjU3NSwzNz
+AzNjM0MzgsMTE0NDEyODMzMywtNDI5Njk3NTg1LC03MDA5ODYz
+OTZdfQ==
 -->
