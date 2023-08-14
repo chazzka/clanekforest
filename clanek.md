@@ -45,7 +45,10 @@ Instead of random determination of a split point, first, two clusters are prepar
 However, there does not seem to be much work regarding using Isolation Forest as a novelty detection tool. 
 
 ## Theory
-
+Outlier
+: Outlier is an out-lying point.
+Novelty
+:
 
 ## Methods
 
@@ -269,11 +272,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjUzNDY1MjUsMjE0MTU2NTg1OSwtNT
-Y0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAyNjg3
-NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNywxND
-MyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2MDQ5
-NzY4NzcsLTc1MTU1NDcwMSwxNjQyNDcxNCwxNTMzODQ2MjI3LD
-E5MzgyNjU3NSwzNzAzNjM0MzgsMTE0NDEyODMzMywtNDI5Njk3
-NTg1XX0=
+eyJoaXN0b3J5IjpbLTQzNDUxNzczOSwyMTQxNTY1ODU5LC01Nj
+QxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4NzM0LDIwMDI2ODc3
+MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3LDE0Mz
+I4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMTYwNDk3
+Njg3NywtNzUxNTU0NzAxLDE2NDI0NzE0LDE1MzM4NDYyMjcsMT
+kzODI2NTc1LDM3MDM2MzQzOCwxMTQ0MTI4MzMzLC00Mjk2OTc1
+ODVdfQ==
 -->
