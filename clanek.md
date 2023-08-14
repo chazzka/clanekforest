@@ -64,8 +64,7 @@ Unsupervised algortihm
 : Supervised algorithm is to je to co chceme aby to bylo
 
 Semisupervised algortihm
-: Semi-supervised algorithm to je že máš labely jen napůl
-
+: Semi-supervised algorithm to je že máš labely jen napůl a chceš vědět které nedopovídají labelu
 
 
 ## Methods
@@ -102,8 +101,8 @@ Deciding which observations are anomalies, without some domain knowledge on the 
 
 ### Isolation Forest
 Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"), [2](https://doi.org/10.1016/j.patcog.2023.109334 "article 2")) is an outlier detection, unsupervised ensemble algorithm. 
-This approach is well known to successfully isolate outliers by using recursive partitioning (forming a tree-like structure) to decide whether the analyzed particle is an anomaly or not.
-The less partitions required to isolate the more probable it is for a particle to be an anomaly.
+This approach is well known to successfully isolate outliers by using recursive partitioning (forming a tree-like structure) to decide whether the analyzed datapoint is an anomaly or not.
+The less partitions required to isolate the more probable it is for a datapoint to be an anomaly.
 
 - [ ] TODO: Honza tu vysvětlí jak funguje isolation forest, popíše všechny parametry a co dělají
       
@@ -293,7 +292,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3OTAxODAyMywtMzIxMzI4NDEzLC0xNT
+eyJoaXN0b3J5IjpbMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNT
 czNzc0NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2
 NTg1OSwtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNC
 wyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4
