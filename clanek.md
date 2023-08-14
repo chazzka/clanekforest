@@ -91,7 +91,7 @@ Deciding which observations are anomalies, without some domain knowledge on the 
 
 
 ### Isolation Forest
-Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"), [2](https://doi.org/10.1016/j.patcog.2023.109334 "article 2")) is an outlier detection, semi-supervised ensemble algorithm. 
+Isolation Forest ([1](https://doi.org/10.1016/j.engappai.2022.105730 "article 1"), [2](https://doi.org/10.1016/j.patcog.2023.109334 "article 2")) is an outlier detection, unsupervised ensemble algorithm. 
 This approach is well known to successfully isolate outliers by using recursive partitioning (forming a tree-like structure) to decide whether the analyzed particle is an anomaly or not.
 The less partitions required to isolate the more probable it is for a particle to be an anomaly.
 
@@ -283,11 +283,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMTMyODQxMywtMTU3Mzc3NDYwOCwxOT
-M4MTk3OTA0LC0xMTM5MTk5MDkwLDIxNDE1NjU4NTksLTU2NDE3
-NDY5MiwzOTE3ODM3MDEsLTE4MjY0OTg3MzQsMjAwMjY4NzczNy
-wzMjczMjY0NDgsLTI1MDczMjcyLC0zNTU4ODE3MDcsMTQzMjgz
-OTcwMCwtMjAwMjM2MTM4OSwtNzU2NDc2NTMyLC0xNjA0OTc2OD
-c3LC03NTE1NTQ3MDEsMTY0MjQ3MTQsMTUzMzg0NjIyNywxOTM4
-MjY1NzVdfQ==
+eyJoaXN0b3J5IjpbMTE3NTkyMjA0OSwtMzIxMzI4NDEzLC0xNT
+czNzc0NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2
+NTg1OSwtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNC
+wyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4
+MTcwNywxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1Mz
+IsLTE2MDQ5NzY4NzcsLTc1MTU1NDcwMSwxNjQyNDcxNCwxNTMz
+ODQ2MjI3XX0=
 -->
