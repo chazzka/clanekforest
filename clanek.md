@@ -265,7 +265,7 @@ This allows the distinctions between the points, making later novelty evaluation
 
 The Scikit-Learn platform (scikit-learn.org) offers several implemented, documented and tested machine-learning open-source algorithms.
 
-- [ ] TODO: TADY JEN NAPÍŠEME NĚJAKÉ KECY ŽE JSME POUŽILI AUTOKONFIGURACI PRO NASTASVENÍ RANGES
+- [ ] TODO: TADY JEN NAPÍŠEME NĚJAKÉ KECY ŽE JSME POUŽILI AUTOKONFIGURACI PRO NASTAVENÍ RANGES, jinak další článek
 
 - [ ] TODO:  popíšeme že scikit má nějaké novelty detection algortimy, budeme to s nimi porovnávat
 - [ ] TODO:  popíšeme že challenge je dobře nastavit hyperparametry
@@ -310,7 +310,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NjQ3OTE2OCwtNzA2MzMzMTYsLTE2ND
+eyJoaXN0b3J5IjpbLTk2NjUwMTU2MSwtNzA2MzMzMTYsLTE2ND
 AxMTE3OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNTczNzc0
 NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2NTg1OS
 wtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAy
