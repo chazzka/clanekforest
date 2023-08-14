@@ -170,8 +170,8 @@ This is demonstrated by a new service (TODO: odkaz) which was created by modifyi
 
  The Novelty service is making two main alteration concepts:
  
- 1. FIsolation Forest was added a *range* option.
- 2. When the split point is calculated, random dimension is chosen, and the split point is taken from the evaluated range (and not the data itself).
+ 1. For each of the features, Isolation Forest was added a *range*.
+ 2. When the split point is calculated, random dimension is chosen, and the split point is evaluated based on the given *range* (and not the minmax of the data).
 
 The evaluation of a range starts by selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
@@ -298,11 +298,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5MjY4MjMwLC03MDYzMzMxNiwtMTY0MD
-ExMTc5MywxNzkzNTEyNTYwLC0zMjEzMjg0MTMsLTE1NzM3NzQ2
-MDgsMTkzODE5NzkwNCwtMTEzOTE5OTA5MCwyMTQxNTY1ODU5LC
-01NjQxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4NzM0LDIwMDI2
-ODc3MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3LD
-E0MzI4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMTYw
-NDk3Njg3N119
+eyJoaXN0b3J5IjpbMTMxNjQyMjc1NSwtNzA2MzMzMTYsLTE2ND
+AxMTE3OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNTczNzc0
+NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2NTg1OS
+wtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAy
+Njg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNy
+wxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2
+MDQ5NzY4NzddfQ==
 -->
