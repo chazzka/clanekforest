@@ -44,6 +44,9 @@ Thorough the years, many successful enhancements of the Isolation Forest have be
 Instead of random determination of a split point, first, two clusters are prepared and then a split point is set to the middle of prepared clusters. Another interesting enhancement comes from Chater and al. (https://doi.org/10.1016/j.procs.2022.09.147) where the team deal with the necessity of having precise and crisp data when using basic Isolation Forest approach by implementing Fuzzy adaptation for the Isolation Forest.
 However, there does not seem to be much work regarding using Isolation Forest as a novelty detection tool. 
 
+## Theory
+
+
 ## Methods
 
 Traditional approaches for anomaly separation consist of either novelty detection or outlier detection.
@@ -266,11 +269,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyODA2NTgzMiwyMTQxNTY1ODU5LC01Nj
-QxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4NzM0LDIwMDI2ODc3
-MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3LDE0Mz
-I4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMTYwNDk3
-Njg3NywtNzUxNTU0NzAxLDE2NDI0NzE0LDE1MzM4NDYyMjcsMT
-kzODI2NTc1LDM3MDM2MzQzOCwxMTQ0MTI4MzMzLC00Mjk2OTc1
-ODVdfQ==
+eyJoaXN0b3J5IjpbLTE1MjUzNDY1MjUsMjE0MTU2NTg1OSwtNT
+Y0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAyNjg3
+NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNywxND
+MyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2MDQ5
+NzY4NzcsLTc1MTU1NDcwMSwxNjQyNDcxNCwxNTMzODQ2MjI3LD
+E5MzgyNjU3NSwzNzAzNjM0MzgsMTE0NDEyODMzMywtNDI5Njk3
+NTg1XX0=
 -->
