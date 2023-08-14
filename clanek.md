@@ -151,16 +151,21 @@ Even after reaching the stopping criterion, the novelty point remains in the sam
 > Figure X standard Isolation Forest with novelty points. 
 
 #### Proposed solution
- - [ ] TODO: tady popisujeme naši isolation servisku
- 
 In our proposed enhancement, we clearly have to deal with this issue.
+##### Isolation Forest 
+- [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
+
+
 The proposed solution is altering the concept of evaluation of a split point.
 Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on a range.
 For this to work, several alterations to the split point evaluation and the form of data passed between nodes has to be done, but the overall concept of the forest stays the same. 
 
+##### Novelty service
+ - [ ] TODO: tady popisujeme naši isolation servisku
+
 This is demonstrated by simply adding a new service to our proposed algorithm.
   
-- [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
+
 
  We encourage you to try it and maybe create your own service based on our already implemented ones.
 
@@ -294,11 +299,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMTUwMTE0MSwtNzA2MzMzMTYsLTE2ND
-AxMTE3OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNTczNzc0
-NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2NTg1OS
-wtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAy
-Njg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNy
-wxNDMyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2
-MDQ5NzY4NzddfQ==
+eyJoaXN0b3J5IjpbNTgwNjA2NDMwLC03MDYzMzMxNiwtMTY0MD
+ExMTc5MywxNzkzNTEyNTYwLC0zMjEzMjg0MTMsLTE1NzM3NzQ2
+MDgsMTkzODE5NzkwNCwtMTEzOTE5OTA5MCwyMTQxNTY1ODU5LC
+01NjQxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4NzM0LDIwMDI2
+ODc3MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMzU1ODgxNzA3LD
+E0MzI4Mzk3MDAsLTIwMDIzNjEzODksLTc1NjQ3NjUzMiwtMTYw
+NDk3Njg3N119
 -->
