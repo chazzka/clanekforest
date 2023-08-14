@@ -48,16 +48,17 @@ However, there does not seem to be much work regarding using Isolation Forest as
 Datapoint
 : Datapoint is any observable data with $n$ features.
 
-Outlier
-: Outlier is a datapoint included in the given dataset. 
+Anomaly
+: Anomaly is a datapoint, that differs significantly from other observations.
 
+Outlier
+: Outlier is an anomaly included in the given dataset. 
 
 Novelty
-: Novelty is an out-lying point.
+: Novelty is an anomaly that is not present in the given dataset during learning. Novelties are usually supplied later during evaluation.
 
 
-Anomaly
-: Anomaly differs significantly from other observations.
+
 
 
 ## Methods
@@ -282,11 +283,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU1NTQ3NzIsMjE0MTU2NTg1OSwtNTY0MT
-c0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAyNjg3NzM3
-LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNywxNDMyOD
-M5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2MDQ5NzY4
-NzcsLTc1MTU1NDcwMSwxNjQyNDcxNCwxNTMzODQ2MjI3LDE5Mz
-gyNjU3NSwzNzAzNjM0MzgsMTE0NDEyODMzMywtNDI5Njk3NTg1
-XX0=
+eyJoaXN0b3J5IjpbLTE5MzY4MDY2OTYsMjE0MTU2NTg1OSwtNT
+Y0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAyNjg3
+NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNywxND
+MyODM5NzAwLC0yMDAyMzYxMzg5LC03NTY0NzY1MzIsLTE2MDQ5
+NzY4NzcsLTc1MTU1NDcwMSwxNjQyNDcxNCwxNTMzODQ2MjI3LD
+E5MzgyNjU3NSwzNzAzNjM0MzgsMTE0NDEyODMzMywtNDI5Njk3
+NTg1XX0=
 -->
