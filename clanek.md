@@ -233,8 +233,8 @@ In this section we describe the Isolation Forest, pinpointing the changes made b
 First, the correct hyperparameters setting is needed in order to properly use the Novelty service.
 For the Novelty service to work, it is necessary to set the following set of attributes:
 
-fdsfsd
-: fdsfds
+max_depth
+: The maximum depth of a tree. Stopping criterion.
 
 We begin with a dataset of regular, conceivably little contaminated observations.
 Out of these observations, the batch of $n$ items is selected.
@@ -322,7 +322,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NzQwMjg3NywtMTg5NDYyNjUxOCwtOT
+eyJoaXN0b3J5IjpbMTk2NjY4MTc0MiwtMTg5NDYyNjUxOCwtOT
 Y2NTAxNTYxLDk0MjQ4MzcyNywtNzA2MzMzMTYsLTE2NDAxMTE3
 OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNTczNzc0NjA4LD
 E5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2NTg1OSwtNTY0
