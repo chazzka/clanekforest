@@ -234,13 +234,18 @@ First, the correct hyperparameters setting is needed in order to properly use th
 For the Novelty service to work, it is necessary to set the following set of attributes:
 These attributes apply to a single tree.
 
+batch_size
+: The size of a batch to be selected as a random sample.
+Each  
+
+
 max_depth
 : The maximum depth of a tree. 
 Stopping criterion.
 For high-dimensionality problems it is advised to be set a higher value than in the standard implementation.
 
 
-Moreover, the number of trees can be set during the Forest initizalization.
+Moreover, the number of trees can be set during the Forest initialization.
 
 trees
 : The number of trees of a forest. 
@@ -331,11 +336,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNTc2MDI0LC02MDg2NDgxMTUsLTE4OT
-Q2MjY1MTgsLTk2NjUwMTU2MSw5NDI0ODM3MjcsLTcwNjMzMzE2
-LC0xNjQwMTExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQxMywtMT
-U3Mzc3NDYwOCwxOTM4MTk3OTA0LC0xMTM5MTk5MDkwLDIxNDE1
-NjU4NTksLTU2NDE3NDY5MiwzOTE3ODM3MDEsLTE4MjY0OTg3Mz
-QsMjAwMjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcyLC0zNTU4
-ODE3MDddfQ==
+eyJoaXN0b3J5IjpbMTQ1OTUwNTI2MiwtNjA4NjQ4MTE1LC0xOD
+k0NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgzNzI3LC03MDYzMzMx
+NiwtMTY0MDExMTc5MywxNzkzNTEyNTYwLC0zMjEzMjg0MTMsLT
+E1NzM3NzQ2MDgsMTkzODE5NzkwNCwtMTEzOTE5OTA5MCwyMTQx
+NTY1ODU5LC01NjQxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4Nz
+M0LDIwMDI2ODc3MzcsMzI3MzI2NDQ4LC0yNTA3MzI3MiwtMzU1
+ODgxNzA3XX0=
 -->
