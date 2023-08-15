@@ -274,11 +274,9 @@ generating two ranges $r_l = \langle R_s, S )$; $r_r = \langle  S, R_e \rangle$ 
 $$B_l  = \{ x \in B; x \in r_l \}; \quad B_r  = \{ x \in B; x \in r_r \} \tag{7}$$
 
 
-Each of the nodes is then assigned a new ranges array as in (8,9).
+This process is recursively repeated for each of the branches of a tree.
+The left branch gets assigned 
 
-$$range_{left} =  [{r_0, SP}] \tag{8}$$
-$$range_{right} =  [{SP, r_{max}}] \tag{9}$$
-, where $r_0$ is inherited (previous) range starting point and $r_{max}$ the inherited range ending point.
 
 This allows the novel datapoints to make their way through the tree, making novelty detection possible.
 
@@ -341,11 +339,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTk1ODc0OTEsMTI4ODQ4MjIwMSwtMT
-I0NDE3NzMwNSwtNjA4NjQ4MTE1LC0xODk0NjI2NTE4LC05NjY1
-MDE1NjEsOTQyNDgzNzI3LC03MDYzMzMxNiwtMTY0MDExMTc5My
-wxNzkzNTEyNTYwLC0zMjEzMjg0MTMsLTE1NzM3NzQ2MDgsMTkz
-ODE5NzkwNCwtMTEzOTE5OTA5MCwyMTQxNTY1ODU5LC01NjQxNz
-Q2OTIsMzkxNzgzNzAxLC0xODI2NDk4NzM0LDIwMDI2ODc3Mzcs
-MzI3MzI2NDQ4XX0=
+eyJoaXN0b3J5IjpbLTE0NDkwMTY1MCwtMTA1OTU4NzQ5MSwxMj
+g4NDgyMjAxLC0xMjQ0MTc3MzA1LC02MDg2NDgxMTUsLTE4OTQ2
+MjY1MTgsLTk2NjUwMTU2MSw5NDI0ODM3MjcsLTcwNjMzMzE2LC
+0xNjQwMTExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQxMywtMTU3
+Mzc3NDYwOCwxOTM4MTk3OTA0LC0xMTM5MTk5MDkwLDIxNDE1Nj
+U4NTksLTU2NDE3NDY5MiwzOTE3ODM3MDEsLTE4MjY0OTg3MzQs
+MjAwMjY4NzczN119
 -->
