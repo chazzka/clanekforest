@@ -275,7 +275,7 @@ $$B_l  = \{ x \in B; x \in r_l \}; \quad B_r  = \{ x \in B; x \in r_r \} \tag{7}
 
 
 This process is recursively repeated for each of the branches of a tree.
-The left branch gets assigned 
+The left branch gets assigned new batch $B_l$ and a new range $r_l$ and the information about current depth.
 
 
 This allows the novel datapoints to make their way through the tree, making novelty detection possible.
@@ -339,7 +339,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDkwMTY1MCwtMTA1OTU4NzQ5MSwxMj
+eyJoaXN0b3J5IjpbMTIxMTQ4OTIzMCwtMTA1OTU4NzQ5MSwxMj
 g4NDgyMjAxLC0xMjQ0MTc3MzA1LC02MDg2NDgxMTUsLTE4OTQ2
 MjY1MTgsLTk2NjUwMTU2MSw5NDI0ODM3MjcsLTcwNjMzMzE2LC
 0xNjQwMTExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQxMywtMTU3
