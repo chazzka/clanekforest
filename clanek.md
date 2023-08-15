@@ -253,10 +253,9 @@ trees
 : The number of trees of a forest. 
 
 We begin with a dataset of regular, conceivably little contaminated observations.
+
 Out of these observations, the batch of *batch_size* items is selected.
  
-
-$$ranges = map(r_f , D)  \tag{5},$$
 
 where $r_f$ being a random range generated using one of the above-defined functions and D being all of the dimensions of a given dataset.
 
@@ -338,7 +337,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NDk0MjY5OSwtMTI0NDE3NzMwNSwtNj
+eyJoaXN0b3J5IjpbMTUyNzEzNDI2NSwtMTI0NDE3NzMwNSwtNj
 A4NjQ4MTE1LC0xODk0NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgz
 NzI3LC03MDYzMzMxNiwtMTY0MDExMTc5MywxNzkzNTEyNTYwLC
 0zMjEzMjg0MTMsLTE1NzM3NzQ2MDgsMTkzODE5NzkwNCwtMTEz
