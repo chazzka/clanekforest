@@ -269,7 +269,7 @@ Each node is grouped by a split point $S$, obtained as the middle of the range $
 
 $$S = \frac{r_s + r_e}{2}, \tag{6}$$
 
-generating two ranges $r_l$ for left and right node respectively (7).
+generating two ranges $r_l = \langle R_s, S \rangle$; $r_r = \langle  S, R_e \rangle$ for left and right node respectively (7).
 
 $$group_{l,r}  = group\_by(<, SP) \tag{7}$$
 
@@ -341,7 +341,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5OTkwMjg3MSwtMTI0NDE3NzMwNSwtNj
+eyJoaXN0b3J5IjpbMTI4ODQ4MjIwMSwtMTI0NDE3NzMwNSwtNj
 A4NjQ4MTE1LC0xODk0NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgz
 NzI3LC03MDYzMzMxNiwtMTY0MDExMTc5MywxNzkzNTEyNTYwLC
 0zMjEzMjg0MTMsLTE1NzM3NzQ2MDgsMTkzODE5NzkwNCwtMTEz
