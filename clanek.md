@@ -271,7 +271,7 @@ $$S = \frac{r_s + r_e}{2}, \tag{6}$$
 
 generating two ranges $r_l = \langle R_s, S )$; $r_r = \langle  S, R_e \rangle$ for left and right node respectively (7).
 
-$$group_l  = \{ x \in B; x \in r_l \}group\_by(<, SP) \tag{7}$$
+$$B_l  = \{ x \in B; x \in r_l \}; \quad B_r  = \{ x \in B; x \in r_r \} \tag{7}$$
 
 
 Each of the nodes is then assigned a new ranges array as in (8,9).
@@ -341,7 +341,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODUxOTk5OTksMTI4ODQ4MjIwMSwtMT
+eyJoaXN0b3J5IjpbLTEwNTk1ODc0OTEsMTI4ODQ4MjIwMSwtMT
 I0NDE3NzMwNSwtNjA4NjQ4MTE1LC0xODk0NjI2NTE4LC05NjY1
 MDE1NjEsOTQyNDgzNzI3LC03MDYzMzMxNiwtMTY0MDExMTc5My
 wxNzkzNTEyNTYwLC0zMjEzMjg0MTMsLTE1NzM3NzQ2MDgsMTkz
