@@ -269,9 +269,9 @@ Each node is grouped by a split point $S$, obtained as the middle of the range $
 
 $$S = \frac{r_s + r_e}{2}, \tag{6}$$
 
-generating two ranges $r_l = \langle R_s, S \rangle$; $r_r = \langle  S, R_e \rangle$ for left and right node respectively (7).
+generating two ranges $r_l = \langle R_s, S )$; $r_r = \langle  S, R_e \rangle$ for left and right node respectively (7).
 
-$$group_{l,r}  = group\_by(<, SP) \tag{7}$$
+$$group_l  = group\_by(<, SP) \tag{7}$$
 
 
 Each of the nodes is then assigned a new ranges array as in (8,9).
@@ -341,11 +341,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4ODQ4MjIwMSwtMTI0NDE3NzMwNSwtNj
-A4NjQ4MTE1LC0xODk0NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgz
-NzI3LC03MDYzMzMxNiwtMTY0MDExMTc5MywxNzkzNTEyNTYwLC
-0zMjEzMjg0MTMsLTE1NzM3NzQ2MDgsMTkzODE5NzkwNCwtMTEz
-OTE5OTA5MCwyMTQxNTY1ODU5LC01NjQxNzQ2OTIsMzkxNzgzNz
-AxLC0xODI2NDk4NzM0LDIwMDI2ODc3MzcsMzI3MzI2NDQ4LC0y
-NTA3MzI3Ml19
+eyJoaXN0b3J5IjpbLTE1MzUxNzYyNzEsMTI4ODQ4MjIwMSwtMT
+I0NDE3NzMwNSwtNjA4NjQ4MTE1LC0xODk0NjI2NTE4LC05NjY1
+MDE1NjEsOTQyNDgzNzI3LC03MDYzMzMxNiwtMTY0MDExMTc5My
+wxNzkzNTEyNTYwLC0zMjEzMjg0MTMsLTE1NzM3NzQ2MDgsMTkz
+ODE5NzkwNCwtMTEzOTE5OTA5MCwyMTQxNTY1ODU5LC01NjQxNz
+Q2OTIsMzkxNzgzNzAxLC0xODI2NDk4NzM0LDIwMDI2ODc3Mzcs
+MzI3MzI2NDQ4XX0=
 -->
