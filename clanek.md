@@ -266,7 +266,8 @@ end
 
 We start by randomly selecting a feature $f$ of a datapoint.
 Each node is grouped by a split point (SP), obtained as the middle of the range $R=\langle r_s, r_e\rangle$ corresponding to selected feature $f$ as in (6).
-$$SP = r_s + r_e / 2  (r_f)  \tag{6}$$
+
+$$SP = \frac{r_s + r_e}{2} \tag{6}$$
 
 , generating two groups for left and right node respectively (7).
 
@@ -340,11 +341,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODgzNjA3NDIsLTEyNDQxNzczMDUsLT
-YwODY0ODExNSwtMTg5NDYyNjUxOCwtOTY2NTAxNTYxLDk0MjQ4
-MzcyNywtNzA2MzMzMTYsLTE2NDAxMTE3OTMsMTc5MzUxMjU2MC
-wtMzIxMzI4NDEzLC0xNTczNzc0NjA4LDE5MzgxOTc5MDQsLTEx
-MzkxOTkwOTAsMjE0MTU2NTg1OSwtNTY0MTc0NjkyLDM5MTc4Mz
-cwMSwtMTgyNjQ5ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OCwt
-MjUwNzMyNzJdfQ==
+eyJoaXN0b3J5IjpbMTMzNDQwMzM4MSwtMTI0NDE3NzMwNSwtNj
+A4NjQ4MTE1LC0xODk0NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgz
+NzI3LC03MDYzMzMxNiwtMTY0MDExMTc5MywxNzkzNTEyNTYwLC
+0zMjEzMjg0MTMsLTE1NzM3NzQ2MDgsMTkzODE5NzkwNCwtMTEz
+OTE5OTA5MCwyMTQxNTY1ODU5LC01NjQxNzQ2OTIsMzkxNzgzNz
+AxLC0xODI2NDk4NzM0LDIwMDI2ODc3MzcsMzI3MzI2NDQ4LC0y
+NTA3MzI3Ml19
 -->
