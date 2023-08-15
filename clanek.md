@@ -256,11 +256,16 @@ We begin with a dataset of regular, conceivably little contaminated observations
 Out of these observations, the batch of *batch_size* items is selected.
  
 
-## 
+ jiny clanek/diskuze
+---------
 where $r_f$ being a random range generated using one of the above-defined functions and D being all of the dimensions of a given dataset.
 This is due to a fact that individual dimensions can differ in their statistical distributions.
 
+end
+----
+
 During the ITree initialization, a random range $r_f$ from the mapping (5) is chosen. 
+We start by randomly selecting a feature of a datapoint.
 Each node is grouped by a split point (SP), obtained as in (6).
 $$SP = rand(r_f)  \tag{6}$$
 
@@ -336,11 +341,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0Nzc1NzAxOCwtMTI0NDE3NzMwNSwtNj
-A4NjQ4MTE1LC0xODk0NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgz
-NzI3LC03MDYzMzMxNiwtMTY0MDExMTc5MywxNzkzNTEyNTYwLC
-0zMjEzMjg0MTMsLTE1NzM3NzQ2MDgsMTkzODE5NzkwNCwtMTEz
-OTE5OTA5MCwyMTQxNTY1ODU5LC01NjQxNzQ2OTIsMzkxNzgzNz
-AxLC0xODI2NDk4NzM0LDIwMDI2ODc3MzcsMzI3MzI2NDQ4LC0y
-NTA3MzI3Ml19
+eyJoaXN0b3J5IjpbODg2OTU0ODQ0LC0xMjQ0MTc3MzA1LC02MD
+g2NDgxMTUsLTE4OTQ2MjY1MTgsLTk2NjUwMTU2MSw5NDI0ODM3
+MjcsLTcwNjMzMzE2LC0xNjQwMTExNzkzLDE3OTM1MTI1NjAsLT
+MyMTMyODQxMywtMTU3Mzc3NDYwOCwxOTM4MTk3OTA0LC0xMTM5
+MTk5MDkwLDIxNDE1NjU4NTksLTU2NDE3NDY5MiwzOTE3ODM3MD
+EsLTE4MjY0OTg3MzQsMjAwMjY4NzczNywzMjczMjY0NDgsLTI1
+MDczMjcyXX0=
 -->
