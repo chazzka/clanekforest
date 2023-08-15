@@ -228,6 +228,10 @@ Using above defined functions, the range is generated for each of the dimensions
 -------------------------------------------------------------------
 The appropriate choice of the algorithm for the range tolerance selection is a matter of experiments and future research.
 
+In this section we describe the Isolation Forest, pi
+We begin with a sample of datapoints.
+
+
 $$ranges = map(r_f , D)  \tag{5},$$
 
 where $r_f$ being a random range generated using one of the above-defined functions and D being all of the dimensions of a given dataset.
@@ -310,8 +314,8 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NjUwMTU2MSw5NDI0ODM3MjcsLTk2Nj
-UwMTU2MSwtNzA2MzMzMTYsLTE2NDAxMTE3OTMsMTc5MzUxMjU2
+eyJoaXN0b3J5IjpbLTIyNzkzNTUxMSwtOTY2NTAxNTYxLDk0Mj
+Q4MzcyNywtNzA2MzMzMTYsLTE2NDAxMTE3OTMsMTc5MzUxMjU2
 MCwtMzIxMzI4NDEzLC0xNTczNzc0NjA4LDE5MzgxOTc5MDQsLT
 ExMzkxOTkwOTAsMjE0MTU2NTg1OSwtNTY0MTc0NjkyLDM5MTc4
 MzcwMSwtMTgyNjQ5ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OC
