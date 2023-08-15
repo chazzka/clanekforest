@@ -230,7 +230,11 @@ The appropriate choice of the algorithm for the range tolerance selection is a m
 
 In this section we describe the Isolation Forest, pinpointing the changes made by Novelty Service.
 
-First, we need to set the attributes to the Novelty Service.
+First, the correct hyperparameters setting is needed in order to properly use the Novelty service.
+For the Novelty service to work, it is necessary to set the following set of attributes:
+
+fdsfsd
+: fdsfds
 
 We begin with a dataset of regular, conceivably little contaminated observations.
 Out of these observations, the batch of $n$ items is selected.
@@ -318,7 +322,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMzI4MDI0NCwtMTg5NDYyNjUxOCwtOT
+eyJoaXN0b3J5IjpbLTY3NzQwMjg3NywtMTg5NDYyNjUxOCwtOT
 Y2NTAxNTYxLDk0MjQ4MzcyNywtNzA2MzMzMTYsLTE2NDAxMTE3
 OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNTczNzc0NjA4LD
 E5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2NTg1OSwtNTY0
