@@ -238,12 +238,13 @@ batch_size
 : Each of the trees gets assigned a random sample of *batch_size* datapoints. 
 
 ranges
- : An approriate range of values for each of the features of a dataset. 
+ : An appropriate range of values for each of the features of a dataset. 
 
 max_depth
 : The maximum depth of a tree. 
 Stopping criterion.
 For high-dimensionality problems it is advised to be set a higher value than in the standard implementation.
+Matter of a future research.
 
 
 Moreover, the number of trees can be set during the Forest initialization.
@@ -337,7 +338,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzI1OTI3NzAsLTYwODY0ODExNSwtMT
+eyJoaXN0b3J5IjpbLTEyNDQxNzczMDUsLTYwODY0ODExNSwtMT
 g5NDYyNjUxOCwtOTY2NTAxNTYxLDk0MjQ4MzcyNywtNzA2MzMz
 MTYsLTE2NDAxMTE3OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC
 0xNTczNzc0NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0
