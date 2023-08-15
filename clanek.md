@@ -238,7 +238,7 @@ batch_size
 : Each of the trees gets assigned a random sample of *batch_size* datapoints. 
 
 ranges
- : An array of size 
+ : An approriate range of values for each of the features of a dataset. 
 
 max_depth
 : The maximum depth of a tree. 
@@ -337,11 +337,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ3NTUwMTA3LC02MDg2NDgxMTUsLTE4OT
-Q2MjY1MTgsLTk2NjUwMTU2MSw5NDI0ODM3MjcsLTcwNjMzMzE2
-LC0xNjQwMTExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQxMywtMT
-U3Mzc3NDYwOCwxOTM4MTk3OTA0LC0xMTM5MTk5MDkwLDIxNDE1
-NjU4NTksLTU2NDE3NDY5MiwzOTE3ODM3MDEsLTE4MjY0OTg3Mz
-QsMjAwMjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcyLC0zNTU4
-ODE3MDddfQ==
+eyJoaXN0b3J5IjpbLTE4NzI1OTI3NzAsLTYwODY0ODExNSwtMT
+g5NDYyNjUxOCwtOTY2NTAxNTYxLDk0MjQ4MzcyNywtNzA2MzMz
+MTYsLTE2NDAxMTE3OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC
+0xNTczNzc0NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0
+MTU2NTg1OSwtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5OD
+czNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1
+NTg4MTcwN119
 -->
