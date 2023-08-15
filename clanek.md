@@ -264,6 +264,8 @@ This is due to a fact that individual dimensions can differ in their statistical
 end
 ----
 
+- [ ] TODO: TADy radsi revize pismenek, konsitence! 
+
 We start by randomly selecting a feature $f$ of a datapoint.
 Each node is grouped by a split point $S$, obtained as the middle of the range $r=\langle R_s, R_e\rangle$ corresponding to selected feature $f$ as in (6).
 
@@ -278,6 +280,7 @@ This process is recursively repeated for each of the branches of a tree.
 The left branch gets assigned new batch $B_l$ and a new range $r_l$ and the information about current depth $d + 1$.
 Analogously, the right branch gets assigned new batch $B_r$ and a new range $r_r$ with the information about current depth.
 
+# TODO: TADY POKRAČUJ
 
 This allows the novel datapoints to make their way through the tree, making novelty detection possible.
 
@@ -340,11 +343,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MTc1MTY1NywtMTA1OTU4NzQ5MSwxMj
-g4NDgyMjAxLC0xMjQ0MTc3MzA1LC02MDg2NDgxMTUsLTE4OTQ2
-MjY1MTgsLTk2NjUwMTU2MSw5NDI0ODM3MjcsLTcwNjMzMzE2LC
-0xNjQwMTExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQxMywtMTU3
-Mzc3NDYwOCwxOTM4MTk3OTA0LC0xMTM5MTk5MDkwLDIxNDE1Nj
-U4NTksLTU2NDE3NDY5MiwzOTE3ODM3MDEsLTE4MjY0OTg3MzQs
-MjAwMjY4NzczN119
+eyJoaXN0b3J5IjpbLTIwMjI5Mzk1MjksLTEwNTk1ODc0OTEsMT
+I4ODQ4MjIwMSwtMTI0NDE3NzMwNSwtNjA4NjQ4MTE1LC0xODk0
+NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgzNzI3LC03MDYzMzMxNi
+wtMTY0MDExMTc5MywxNzkzNTEyNTYwLC0zMjEzMjg0MTMsLTE1
+NzM3NzQ2MDgsMTkzODE5NzkwNCwtMTEzOTE5OTA5MCwyMTQxNT
+Y1ODU5LC01NjQxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4NzM0
+LDIwMDI2ODc3MzddfQ==
 -->
