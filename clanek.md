@@ -232,6 +232,7 @@ In this section we describe the Isolation Forest, pinpointing the changes made b
 
 First, the correct hyperparameters setting is needed in order to properly use the Novelty service.
 For the Novelty service to work, it is necessary to set the following set of attributes:
+These attributes 
 
 max_depth
 : The maximum depth of a tree. 
@@ -325,11 +326,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwODY0ODExNSwtMTg5NDYyNjUxOCwtOT
-Y2NTAxNTYxLDk0MjQ4MzcyNywtNzA2MzMzMTYsLTE2NDAxMTE3
-OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNTczNzc0NjA4LD
-E5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2NTg1OSwtNTY0
-MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5ODczNCwyMDAyNjg3Nz
-M3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1NTg4MTcwNywxNDMy
-ODM5NzAwXX0=
+eyJoaXN0b3J5IjpbNjY1MzAyMDk5LC02MDg2NDgxMTUsLTE4OT
+Q2MjY1MTgsLTk2NjUwMTU2MSw5NDI0ODM3MjcsLTcwNjMzMzE2
+LC0xNjQwMTExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQxMywtMT
+U3Mzc3NDYwOCwxOTM4MTk3OTA0LC0xMTM5MTk5MDkwLDIxNDE1
+NjU4NTksLTU2NDE3NDY5MiwzOTE3ODM3MDEsLTE4MjY0OTg3Mz
+QsMjAwMjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcyLC0zNTU4
+ODE3MDddfQ==
 -->
