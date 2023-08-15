@@ -228,7 +228,6 @@ Using above defined functions, the range is generated for each of the dimensions
 -------------------------------------------------------------------
 The appropriate choice of the algorithm for the range tolerance selection is a matter of experiments and future research.
 
-- [ ] TODO: POKRAČOVAT VE ČTENÍ ZDE
 
 $$ranges = map(r_f , D)  \tag{5},$$
 
@@ -312,11 +311,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQyNDgzNzI3LC05NjY1MDE1NjEsLTcwNj
-MzMzE2LC0xNjQwMTExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQx
-MywtMTU3Mzc3NDYwOCwxOTM4MTk3OTA0LC0xMTM5MTk5MDkwLD
-IxNDE1NjU4NTksLTU2NDE3NDY5MiwzOTE3ODM3MDEsLTE4MjY0
-OTg3MzQsMjAwMjY4NzczNywzMjczMjY0NDgsLTI1MDczMjcyLC
-0zNTU4ODE3MDcsMTQzMjgzOTcwMCwtMjAwMjM2MTM4OSwtNzU2
-NDc2NTMyXX0=
+eyJoaXN0b3J5IjpbMTkxNDQxNzExMyw5NDI0ODM3MjcsLTk2Nj
+UwMTU2MSwtNzA2MzMzMTYsLTE2NDAxMTE3OTMsMTc5MzUxMjU2
+MCwtMzIxMzI4NDEzLC0xNTczNzc0NjA4LDE5MzgxOTc5MDQsLT
+ExMzkxOTkwOTAsMjE0MTU2NTg1OSwtNTY0MTc0NjkyLDM5MTc4
+MzcwMSwtMTgyNjQ5ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OC
+wtMjUwNzMyNzIsLTM1NTg4MTcwNywxNDMyODM5NzAwLC0yMDAy
+MzYxMzg5XX0=
 -->
