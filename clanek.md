@@ -230,7 +230,8 @@ The appropriate choice of the algorithm for the range tolerance selection is a m
 
 In this section we describe the Isolation Forest, pinpointing the changes made by Novelty Service.
 
-We begin with a dataset of regular, possibly little contaminated observations.
+We begin with a dataset of regular, conceivably little contaminated observations.
+Out of these observations, the batch of $$ 
 
 $$ranges = map(r_f , D)  \tag{5},$$
 
@@ -314,7 +315,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjI2NDk2NTMsLTE4OTQ2MjY1MTgsLT
+eyJoaXN0b3J5IjpbLTE2ODAyMDY2NTIsLTE4OTQ2MjY1MTgsLT
 k2NjUwMTU2MSw5NDI0ODM3MjcsLTcwNjMzMzE2LC0xNjQwMTEx
 NzkzLDE3OTM1MTI1NjAsLTMyMTMyODQxMywtMTU3Mzc3NDYwOC
 wxOTM4MTk3OTA0LC0xMTM5MTk5MDkwLDIxNDE1NjU4NTksLTU2
