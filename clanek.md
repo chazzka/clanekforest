@@ -252,13 +252,12 @@ Moreover, the number of trees can be set during the Forest initialization.
 trees
 : The number of trees of a forest. 
 
-We begin with a dataset of regular, conceivably little contaminated observations.
-
+We begin with a dataset of regular, conceivably little contaminated observations and a set of above defined parameters.
 Out of these observations, the batch of *batch_size* items is selected.
  
 
+## 
 where $r_f$ being a random range generated using one of the above-defined functions and D being all of the dimensions of a given dataset.
-
 This is due to a fact that individual dimensions can differ in their statistical distributions.
 
 During the ITree initialization, a random range $r_f$ from the mapping (5) is chosen. 
@@ -337,7 +336,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNzEzNDI2NSwtMTI0NDE3NzMwNSwtNj
+eyJoaXN0b3J5IjpbLTk0Nzc1NzAxOCwtMTI0NDE3NzMwNSwtNj
 A4NjQ4MTE1LC0xODk0NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgz
 NzI3LC03MDYzMzMxNiwtMTY0MDExMTc5MywxNzkzNTEyNTYwLC
 0zMjEzMjg0MTMsLTE1NzM3NzQ2MDgsMTkzODE5NzkwNCwtMTEz
