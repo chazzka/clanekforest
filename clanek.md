@@ -265,7 +265,7 @@ end
 ----
 
 We start by randomly selecting a feature $f$ of a datapoint.
-Each node is grouped by a split point (SP), obtained as in (6).
+Each node is grouped by a split point (SP), obtained as the middle of the range $r$ corresponding to selected $f$ in (6).
 $$SP = rand(r_f)  \tag{6}$$
 
 , generating two groups for left and right node respectively (7).
@@ -340,7 +340,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0ODQ3NjUzNCwtMTI0NDE3NzMwNSwtNj
+eyJoaXN0b3J5IjpbMTkyMzAzODk4NiwtMTI0NDE3NzMwNSwtNj
 A4NjQ4MTE1LC0xODk0NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgz
 NzI3LC03MDYzMzMxNiwtMTY0MDExMTc5MywxNzkzNTEyNTYwLC
 0zMjEzMjg0MTMsLTE1NzM3NzQ2MDgsMTkzODE5NzkwNCwtMTEz
