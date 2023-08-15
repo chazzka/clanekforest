@@ -253,7 +253,7 @@ trees
 : The number of trees of a forest. 
 
 We begin with a dataset of regular, conceivably little contaminated observations.
-Out of these observations, the batch of $n$ items is selected.
+Out of these observations, the batch of $batch_size$ items is selected.
  
 
 $$ranges = map(r_f , D)  \tag{5},$$
@@ -338,11 +338,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDQxNzczMDUsLTYwODY0ODExNSwtMT
-g5NDYyNjUxOCwtOTY2NTAxNTYxLDk0MjQ4MzcyNywtNzA2MzMz
-MTYsLTE2NDAxMTE3OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC
-0xNTczNzc0NjA4LDE5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0
-MTU2NTg1OSwtNTY0MTc0NjkyLDM5MTc4MzcwMSwtMTgyNjQ5OD
-czNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OCwtMjUwNzMyNzIsLTM1
-NTg4MTcwN119
+eyJoaXN0b3J5IjpbLTM1MzY5MTMwNywtMTI0NDE3NzMwNSwtNj
+A4NjQ4MTE1LC0xODk0NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgz
+NzI3LC03MDYzMzMxNiwtMTY0MDExMTc5MywxNzkzNTEyNTYwLC
+0zMjEzMjg0MTMsLTE1NzM3NzQ2MDgsMTkzODE5NzkwNCwtMTEz
+OTE5OTA5MCwyMTQxNTY1ODU5LC01NjQxNzQ2OTIsMzkxNzgzNz
+AxLC0xODI2NDk4NzM0LDIwMDI2ODc3MzcsMzI3MzI2NDQ4LC0y
+NTA3MzI3Ml19
 -->
