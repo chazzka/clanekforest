@@ -234,7 +234,9 @@ First, the correct hyperparameters setting is needed in order to properly use th
 For the Novelty service to work, it is necessary to set the following set of attributes:
 
 max_depth
-: The maximum depth of a tree. Stopping criterion.
+: The maximum depth of a tree. 
+Stopping criterion.
+For high-dimensionality problems it is advised to be set a higher value than in the standard 
 
 We begin with a dataset of regular, conceivably little contaminated observations.
 Out of these observations, the batch of $n$ items is selected.
@@ -322,7 +324,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NjY4MTc0MiwtMTg5NDYyNjUxOCwtOT
+eyJoaXN0b3J5IjpbMTI0NjI0NDI2NywtMTg5NDYyNjUxOCwtOT
 Y2NTAxNTYxLDk0MjQ4MzcyNywtNzA2MzMzMTYsLTE2NDAxMTE3
 OTMsMTc5MzUxMjU2MCwtMzIxMzI4NDEzLC0xNTczNzc0NjA4LD
 E5MzgxOTc5MDQsLTExMzkxOTkwOTAsMjE0MTU2NTg1OSwtNTY0
