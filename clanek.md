@@ -228,7 +228,8 @@ Using above defined functions, the range is generated for each of the dimensions
 -------------------------------------------------------------------
 The appropriate choice of the algorithm for the range tolerance selection is a matter of experiments and future research.
 
-In this section we describe the Isolation Forest, pi
+In this section we describe the Isolation Forest, stressing out the changes made by Novelty Service.
+
 We begin with a sample of datapoints.
 
 
@@ -314,11 +315,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNzkzNTUxMSwtOTY2NTAxNTYxLDk0Mj
-Q4MzcyNywtNzA2MzMzMTYsLTE2NDAxMTE3OTMsMTc5MzUxMjU2
-MCwtMzIxMzI4NDEzLC0xNTczNzc0NjA4LDE5MzgxOTc5MDQsLT
-ExMzkxOTkwOTAsMjE0MTU2NTg1OSwtNTY0MTc0NjkyLDM5MTc4
-MzcwMSwtMTgyNjQ5ODczNCwyMDAyNjg3NzM3LDMyNzMyNjQ0OC
-wtMjUwNzMyNzIsLTM1NTg4MTcwNywxNDMyODM5NzAwLC0yMDAy
-MzYxMzg5XX0=
+eyJoaXN0b3J5IjpbLTE4OTQ2MjY1MTgsLTk2NjUwMTU2MSw5ND
+I0ODM3MjcsLTcwNjMzMzE2LC0xNjQwMTExNzkzLDE3OTM1MTI1
+NjAsLTMyMTMyODQxMywtMTU3Mzc3NDYwOCwxOTM4MTk3OTA0LC
+0xMTM5MTk5MDkwLDIxNDE1NjU4NTksLTU2NDE3NDY5MiwzOTE3
+ODM3MDEsLTE4MjY0OTg3MzQsMjAwMjY4NzczNywzMjczMjY0ND
+gsLTI1MDczMjcyLC0zNTU4ODE3MDcsMTQzMjgzOTcwMCwtMjAw
+MjM2MTM4OV19
 -->
