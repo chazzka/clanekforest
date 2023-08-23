@@ -162,7 +162,7 @@ Consider now point $P_a$ as depicted in Figure X.
 In the proposed solution, $P_a$ falls into an area (node) with the *depth = 3*, isolating $P_a$ from the rest of the anomalies.
 This allows the distinction between the points, making later novelty evaluation much more feasible.
 
-Figure X shows, that after three runs (max_depth = 3) the novel datapoints had been isolated by fitting them in the regions of larger depth.
+Figure X shows, that after three runs (max_depth = 3) the novel datapoints had been isolated by being fitted in the regions of greater depth.
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_novelty.svg)
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
@@ -357,7 +357,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyOTAwMTM5NSwxOTYzMDE2MTc3LC04Nj
+eyJoaXN0b3J5IjpbMTQ5OTk1MzY4MCwxOTYzMDE2MTc3LC04Nj
 AxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkwNDUzMywyMDk2ODY5
 MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3MzQyLC0xNzk3MTQ2MT
 M2LDEzNTE0MjI3NzQsLTEzNTQ4MzIwMzIsLTE0MDg2ODA4Miwx
