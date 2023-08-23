@@ -174,7 +174,7 @@ The proposed solution is altering the concept of the split point evaluation.
 Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on a range.
 For this to work, several alterations to the split point evaluation and the form of data passed between nodes has to be done however, the overall concept of the forest stays the same. 
 
- The Novelty service is making two main alteration concepts:
+In the proposed solution, there are two main alteration concepts to the original solution.
  
  1. For each of the features, Isolation Forest was added a *range*.
  2. When the split point is calculated, random dimension is chosen, and the split point is evaluated based on the given *range*.
@@ -244,6 +244,10 @@ The standard Isolation Forest service can be found in the standalone package at.
 The appropriate choice of the algorithm for the range tolerance selection is a matter of experiments and future research.
 
 In this section we describe the Isolation Forest, pinpointing the changes made by Novelty Service.
+
+This is demonstrated by a new service (TODO: odkaz) which was created by modifying the standard the Isolation Forest implementation in [odkaz na kapitolu].
+ 
+ We encourage you to try it and maybe create your own service based on our already implemented ones.
 
 First, the correct hyperparameters setting is needed in order to properly use the Novelty service.
 For the Novelty service to work, it is necessary to set the following set of attributes:
@@ -356,7 +360,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE5MDg1MTIxLDI1MzcwMTMzNCwtMTU3Mj
+eyJoaXN0b3J5IjpbMjEwMTc1NDgxLDI1MzcwMTMzNCwtMTU3Mj
 g0ODc5MywxOTYzMDE2MTc3LC04NjAxNjM3OTEsLTE5NjA3MDk5
 OTIsMTYyMzkwNDUzMywyMDk2ODY5MzcxLC0xMTgyNzg4MTI2LC
 0xNDQ0NTc3MzQyLC0xNzk3MTQ2MTM2LDEzNTE0MjI3NzQsLTEz
