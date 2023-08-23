@@ -154,11 +154,12 @@ After reaching the stopping criterion, the novelty point remains in the same nod
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_outlier.svg)
 > Figure X Isolation Forest novelty point insertion using original approach. Squares being points fed after the learning.
 
+#### Proposed solution
 The proposed solution comes from an idea, that the original tree lacks the option to isolate more datapoints than it currently observes. 
 The observed space is bounded by minimum and maximum in each feature.
 
 Consider now point $P_a$ as depicted in Figure X.
-Using our new approach, $P_a$ falls into an area (node) with the *depth = 2*, isolating $P_a$ from the rest of the anomalies.
+Using our new approach, $P_a$ falls into an area (node) with the *depth = 3*, isolating $P_a$ from the rest of the anomalies.
 This allows the distinctions between the points, making later novelty evaluation much more feasible.
 
 Figure X shows, that after three runs (max_depth = 3) we successfully isolated the novel datapoints by fitting them in the regions of larger depth.
@@ -166,9 +167,6 @@ Figure X shows, that after three runs (max_depth = 3) we successfully isolated t
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_novelty.svg)
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
 
-
-#### Proposed solution
-In our proposed enhancement, we clearly have to deal with this issue.
 ##### Isolation Forest 
 For the ease of implementing and experimenting, we created a Ruby Gem implementing the Isolation Forest algorithm. It is open-source and available online at.
 - [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
@@ -359,11 +357,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MzAxNjE3NywtODYwMTYzNzkxLC0xOT
-YwNzA5OTkyLDE2MjM5MDQ1MzMsMjA5Njg2OTM3MSwtMTE4Mjc4
-ODEyNiwtMTQ0NDU3NzM0MiwtMTc5NzE0NjEzNiwxMzUxNDIyNz
-c0LC0xMzU0ODMyMDMyLC0xNDA4NjgwODIsMTg2NTgxNjAwMCwt
-ODkxOTIzMjg0LC0yMDIyOTM5NTI5LC0xMDU5NTg3NDkxLDEyOD
-g0ODIyMDEsLTEyNDQxNzczMDUsLTYwODY0ODExNSwtMTg5NDYy
-NjUxOCwtOTY2NTAxNTYxXX0=
+eyJoaXN0b3J5IjpbMTE3NDU0MjAzMSwxOTYzMDE2MTc3LC04Nj
+AxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkwNDUzMywyMDk2ODY5
+MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3MzQyLC0xNzk3MTQ2MT
+M2LDEzNTE0MjI3NzQsLTEzNTQ4MzIwMzIsLTE0MDg2ODA4Miwx
+ODY1ODE2MDAwLC04OTE5MjMyODQsLTIwMjI5Mzk1MjksLTEwNT
+k1ODc0OTEsMTI4ODQ4MjIwMSwtMTI0NDE3NzMwNSwtNjA4NjQ4
+MTE1LC0xODk0NjI2NTE4XX0=
 -->
