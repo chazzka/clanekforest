@@ -150,7 +150,7 @@ In the second step, in the right node, dimension Y was chosen, splitting the are
 As we can see, the theoretical novelty observations $y$ get assigned the same *path_length* as a priory known, regular observations.
 Even after reaching the stopping criterion, the novelty point remains in the same node with a regular datapoint.
 
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares.svg)
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_novelty.svg)
 > Figure X standard Isolation Forest with novelty points. 
 
 #### Proposed solution
@@ -287,10 +287,10 @@ Analogously, the right branch gets assigned new batch $B_r$ and a new range $r_r
 
 This allows the novel datapoints to make their way through the tree, making novelty detection possible.
 
-Figure X shows, that after three runs (max_depth = 3) we successfully isolated the novel datapoints (y) by fitting them in the regions of larger depth.
+Figure X shows, that after three runs (max_depth = 3) we successfully isolated the novel datapoints by fitting them in the regions of larger depth.
 
-Consider now point $P_x$ as depicted in Figure X. 
-Using our new approach, $P_x$ falls into an area (node) with the *depth = 2*, isolating $P_x$ from the rest of the anomalies $y$.
+Consider now point $P_a$ as depicted in Figure X. 
+Using our new approach, $P_a$ falls into an area (node) with the *depth = 2*, isolating $P_a$ from the rest of the anomalies.
 This allows the distinctions between the points, making later novelty evaluation much more feasible.
 
 
@@ -347,11 +347,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwtMT
-QwODY4MDgyLDE4NjU4MTYwMDAsLTg5MTkyMzI4NCwtMjAyMjkz
-OTUyOSwtMTA1OTU4NzQ5MSwxMjg4NDgyMjAxLC0xMjQ0MTc3Mz
-A1LC02MDg2NDgxMTUsLTE4OTQ2MjY1MTgsLTk2NjUwMTU2MSw5
-NDI0ODM3MjcsLTcwNjMzMzE2LC0xNjQwMTExNzkzLDE3OTM1MT
-I1NjAsLTMyMTMyODQxMywtMTU3Mzc3NDYwOCwxOTM4MTk3OTA0
-LC0xMTM5MTk5MDkwXX0=
+eyJoaXN0b3J5IjpbLTEyMTg0MjIxMjIsMTM1MTQyMjc3NCwtMT
+M1NDgzMjAzMiwtMTQwODY4MDgyLDE4NjU4MTYwMDAsLTg5MTky
+MzI4NCwtMjAyMjkzOTUyOSwtMTA1OTU4NzQ5MSwxMjg4NDgyMj
+AxLC0xMjQ0MTc3MzA1LC02MDg2NDgxMTUsLTE4OTQ2MjY1MTgs
+LTk2NjUwMTU2MSw5NDI0ODM3MjcsLTcwNjMzMzE2LC0xNjQwMT
+ExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQxMywtMTU3Mzc3NDYw
+OCwxOTM4MTk3OTA0XX0=
 -->
