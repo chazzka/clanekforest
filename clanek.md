@@ -49,7 +49,7 @@ Datapoint
 : Datapoint is any observable data with $n$ features.
 
 Regular
-: Regular is a datapoint included in the given dataset, does not differ significantly from other observations.
+: Regular is a datapoint included in the given dataset. Its features are expectable.
 
 Anomaly
 : Anomaly is a datapoint, that differs significantly from other observations.
@@ -347,11 +347,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg2NTg0NzAxLC0xMzU0ODMyMDMyLC0xND
-A4NjgwODIsMTg2NTgxNjAwMCwtODkxOTIzMjg0LC0yMDIyOTM5
-NTI5LC0xMDU5NTg3NDkxLDEyODg0ODIyMDEsLTEyNDQxNzczMD
-UsLTYwODY0ODExNSwtMTg5NDYyNjUxOCwtOTY2NTAxNTYxLDk0
-MjQ4MzcyNywtNzA2MzMzMTYsLTE2NDAxMTE3OTMsMTc5MzUxMj
-U2MCwtMzIxMzI4NDEzLC0xNTczNzc0NjA4LDE5MzgxOTc5MDQs
-LTExMzkxOTkwOTBdfQ==
+eyJoaXN0b3J5IjpbMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwtMT
+QwODY4MDgyLDE4NjU4MTYwMDAsLTg5MTkyMzI4NCwtMjAyMjkz
+OTUyOSwtMTA1OTU4NzQ5MSwxMjg4NDgyMjAxLC0xMjQ0MTc3Mz
+A1LC02MDg2NDgxMTUsLTE4OTQ2MjY1MTgsLTk2NjUwMTU2MSw5
+NDI0ODM3MjcsLTcwNjMzMzE2LC0xNjQwMTExNzkzLDE3OTM1MT
+I1NjAsLTMyMTMyODQxMywtMTU3Mzc3NDYwOCwxOTM4MTk3OTA0
+LC0xMTM5MTk5MDkwXX0=
 -->
