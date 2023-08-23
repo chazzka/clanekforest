@@ -176,10 +176,10 @@ The standard Isolation Forest service can be found in the standalone package at.
 - [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
 
 ##### Novelty service
-Like in the original article, we use the concept of binary decision tree, 
+Like in the original article, we use the concept of binary decision tree.
 The proposed solution is altering the concept of evaluation of a split point.
 Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on a range.
-For this to work, several alterations to the split point evaluation and the form of data passed between nodes has to be done, but the overall concept of the forest stays the same. 
+For this to work, several alterations to the split point evaluation and the form of data passed between nodes has to be done however, the overall concept of the forest stays the same. 
 
 This is demonstrated by a new service (TODO: odkaz) which was created by modifying the standard the Isolation Forest implementation in [odkaz na kapitolu].
  
@@ -358,11 +358,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NTQ3ODE2MSwxNjIzOTA0NTMzLDIwOT
-Y4NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1NzczNDIsLTE3OTcx
-NDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwtMTQwODY4MD
-gyLDE4NjU4MTYwMDAsLTg5MTkyMzI4NCwtMjAyMjkzOTUyOSwt
-MTA1OTU4NzQ5MSwxMjg4NDgyMjAxLC0xMjQ0MTc3MzA1LC02MD
-g2NDgxMTUsLTE4OTQ2MjY1MTgsLTk2NjUwMTU2MSw5NDI0ODM3
-MjcsLTcwNjMzMzE2XX0=
+eyJoaXN0b3J5IjpbLTE5NjA3MDk5OTIsMTYyMzkwNDUzMywyMD
+k2ODY5MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3MzQyLC0xNzk3
+MTQ2MTM2LDEzNTE0MjI3NzQsLTEzNTQ4MzIwMzIsLTE0MDg2OD
+A4MiwxODY1ODE2MDAwLC04OTE5MjMyODQsLTIwMjI5Mzk1Mjks
+LTEwNTk1ODc0OTEsMTI4ODQ4MjIwMSwtMTI0NDE3NzMwNSwtNj
+A4NjQ4MTE1LC0xODk0NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgz
+NzI3LC03MDYzMzMxNl19
 -->
