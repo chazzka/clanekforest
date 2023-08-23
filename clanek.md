@@ -187,10 +187,16 @@ $$R =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
 Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 
 ##### Recursive step
+pro každý list: 
+
+1.  splňuje koncovou podmínku, dopočítej depth
+2. nesplňuje, z listu udělej inner vertex
+
  The set of vertices $V$ is created 
 
 The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given observations. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
+
 
 
 
@@ -364,11 +370,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjYwNjk5NjksMTA1Mjc3OTc2NSwtMT
-U2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4
-NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLD
-E5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIz
-OTA0NTMzLDIwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1Nz
-czNDIsLTE3OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAz
-MiwtMTQwODY4MDgyXX0=
+eyJoaXN0b3J5IjpbLTIwMDA0MjAyMjQsLTEwNjYwNjk5NjksMT
+A1Mjc3OTc2NSwtMTU2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODky
+OTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC
+0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2
+MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4NjkzNzEsLTExODI3OD
+gxMjYsLTE0NDQ1NzczNDIsLTE3OTcxNDYxMzYsMTM1MTQyMjc3
+NCwtMTM1NDgzMjAzMl19
 -->
