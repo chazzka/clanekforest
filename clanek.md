@@ -185,6 +185,8 @@ This range should be reasonable enough to allow all the domain space to be separ
 Random father's son.   
 Father's random son.  
 
+Random colorful point
+
 In each construction step, random feature's range of a datapoint is obtained. 
 , obtained as the middle of the range $r=\langle R_s, R_e\rangle$ as in (6). 
 
@@ -356,11 +358,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODkyOTM4NDAsMTEwOTI4NTIwNiwyMT
-AxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5NjMwMTYx
-NzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLD
-IwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1NzczNDIsLTE3
-OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwtMTQwOD
-Y4MDgyLDE4NjU4MTYwMDAsLTg5MTkyMzI4NCwtMjAyMjkzOTUy
-OSwtMTA1OTU4NzQ5MV19
+eyJoaXN0b3J5IjpbLTEzOTk0MjUxODEsLTE5ODkyOTM4NDAsMT
+EwOTI4NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4
+NzkzLDE5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5Mi
+wxNjIzOTA0NTMzLDIwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0
+NDQ1NzczNDIsLTE3OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1ND
+gzMjAzMiwtMTQwODY4MDgyLDE4NjU4MTYwMDAsLTg5MTkyMzI4
+NCwtMjAyMjkzOTUyOV19
 -->
