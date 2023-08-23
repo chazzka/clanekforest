@@ -177,11 +177,11 @@ For this to work, several alterations to the split point evaluation and the form
 In the proposed solution, there are two main alteration concepts to the original solution.
 
 
- 1. Each of the vertices gets assigned a space bounded by ranges.
-This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
+ 1. Each of the vertices gets assigned a space bounded by ranges.\
+Each range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
- 2. The split point is in the middle of the given feature's *range*.
- 3. The input observations are only used to detect leaves.
+ 3. The split point is in the middle of the given feature's *range*.
+ 4. The input observations are only used to detect leaves.
 
 
 
@@ -369,11 +369,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTM0MDg0NDQsLTE3MDA1MTY0NTksLT
-EwNjYwNjk5NjksMTA1Mjc3OTc2NSwtMTU2OTg3NDAzMiw4NDUy
-NTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0OD
-EsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLTg2
-MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4Nj
-kzNzEsLTExODI3ODgxMjYsLTE0NDQ1NzczNDIsLTE3OTcxNDYx
-MzYsMTM1MTQyMjc3NF19
+eyJoaXN0b3J5IjpbLTY3NzY2MDQxMywtMTcwMDUxNjQ1OSwtMT
+A2NjA2OTk2OSwxMDUyNzc5NzY1LC0xNTY5ODc0MDMyLDg0NTI1
+MjgxNCwtMTk4OTI5Mzg0MCwxMTA5Mjg1MjA2LDIxMDE3NTQ4MS
+wyNTM3MDEzMzQsLTE1NzI4NDg3OTMsMTk2MzAxNjE3NywtODYw
+MTYzNzkxLC0xOTYwNzA5OTkyLDE2MjM5MDQ1MzMsMjA5Njg2OT
+M3MSwtMTE4Mjc4ODEyNiwtMTQ0NDU3NzM0MiwtMTc5NzE0NjEz
+NiwxMzUxNDIyNzc0XX0=
 -->
