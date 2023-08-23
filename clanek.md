@@ -290,18 +290,6 @@ This allows the novel datapoints to make their way through the tree, making nove
 
 
 
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_outlier.svg)
-> Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning.
-
-
-Consider now point $P_a$ as depicted in Figure X. 
-Using our new approach, $P_a$ falls into an area (node) with the *depth = 2*, isolating $P_a$ from the rest of the anomalies.
-This allows the distinctions between the points, making later novelty evaluation much more feasible.
-
-Figure X shows, that after three runs (max_depth = 3) we successfully isolated the novel datapoints by fitting them in the regions of larger depth.
-
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_novelty.svg)
-> Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
 
 
 
@@ -356,11 +344,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDQ1NzczNDIsLTE3OTcxNDYxMzYsMT
-M1MTQyMjc3NCwtMTM1NDgzMjAzMiwtMTQwODY4MDgyLDE4NjU4
-MTYwMDAsLTg5MTkyMzI4NCwtMjAyMjkzOTUyOSwtMTA1OTU4Nz
-Q5MSwxMjg4NDgyMjAxLC0xMjQ0MTc3MzA1LC02MDg2NDgxMTUs
-LTE4OTQ2MjY1MTgsLTk2NjUwMTU2MSw5NDI0ODM3MjcsLTcwNj
-MzMzE2LC0xNjQwMTExNzkzLDE3OTM1MTI1NjAsLTMyMTMyODQx
-MywtMTU3Mzc3NDYwOF19
+eyJoaXN0b3J5IjpbLTExODI3ODgxMjYsLTE0NDQ1NzczNDIsLT
+E3OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwtMTQw
+ODY4MDgyLDE4NjU4MTYwMDAsLTg5MTkyMzI4NCwtMjAyMjkzOT
+UyOSwtMTA1OTU4NzQ5MSwxMjg4NDgyMjAxLC0xMjQ0MTc3MzA1
+LC02MDg2NDgxMTUsLTE4OTQ2MjY1MTgsLTk2NjUwMTU2MSw5ND
+I0ODM3MjcsLTcwNjMzMzE2LC0xNjQwMTExNzkzLDE3OTM1MTI1
+NjAsLTMyMTMyODQxM119
 -->
