@@ -124,7 +124,7 @@ Isolation Tree is a binary tree constructed with a subset of $A$ items (datapoin
    : problém normal bodů na okraji (normálního clusteru), které se jeví jako anomálie protože ty uvnitř clusteru mají moc velké ohodnocení 
 3. isolation tree má dva druhy uzlů
    
-   vnitřní (inte
+   vnitřní (internal vertex)
    : obsahuje podmínku (feature a mez) a dva potomky (jeden reprezentuje splněnou podmínku a druhý naopak nesplněnou) 
    
    vnější (list) (leaf)
@@ -185,7 +185,7 @@ These observations are fed into the forest as datapoints.
 The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given observations. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
-
+Basic step: 
 
 In each construction step, the random feature's range is obtained. 
 The splint point $S$ is obtained as the middle of the range $r=\langle R_s, R_e\rangle$ as in (6). 
@@ -195,7 +195,6 @@ $$S = \frac{r_s + r_e}{2}, \tag{6}$$
 generating two ranges $r_l = \langle R_s, S )$; $r_r = \langle  S, R_e \rangle$ for left and right vertex respectively (7).
 
 $$B_l  = \{ x \in B; x \in r_l \}; \quad B_r  = \{ x \in B; x \in r_r \} \tag{7}$$
-
 
 
 This process is recursively repeated for each of the branches of a tree.
@@ -358,11 +357,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3OTIzODI5NCw4NDUyNTI4MTQsLTE5OD
-kyOTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0
-LC0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMT
-k2MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4NjkzNzEsLTExODI3
-ODgxMjYsLTE0NDQ1NzczNDIsLTE3OTcxNDYxMzYsMTM1MTQyMj
-c3NCwtMTM1NDgzMjAzMiwtMTQwODY4MDgyLDE4NjU4MTYwMDAs
-LTg5MTkyMzI4NF19
+eyJoaXN0b3J5IjpbLTE1Njk4NzQwMzIsODQ1MjUyODE0LC0xOT
+g5MjkzODQwLDExMDkyODUyMDYsMjEwMTc1NDgxLDI1MzcwMTMz
+NCwtMTU3Mjg0ODc5MywxOTYzMDE2MTc3LC04NjAxNjM3OTEsLT
+E5NjA3MDk5OTIsMTYyMzkwNDUzMywyMDk2ODY5MzcxLC0xMTgy
+Nzg4MTI2LC0xNDQ0NTc3MzQyLC0xNzk3MTQ2MTM2LDEzNTE0Mj
+I3NzQsLTEzNTQ4MzIwMzIsLTE0MDg2ODA4MiwxODY1ODE2MDAw
+LC04OTE5MjMyODRdfQ==
 -->
