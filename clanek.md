@@ -184,13 +184,12 @@ In the proposed solution, there are two main alteration concepts to the original
 Basis step
 : The only vertex $v$ is a trivial binary tree. For each $i \in\{1, \dots, n\}$, feature $f_i$ is bounded by the range $r_i$. The ranges form the possibility space $R$ as in (xx).
 
- $$R =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
-
+$$R =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
 
 Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 
 Recursive step
- :  The set of vertices $V$ is created as 
+ :  The set of vertices $V$ is created by the space 
 
 The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given observations. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
@@ -367,11 +366,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjUxMjk3NTksMTA1Mjc3OTc2NSwtMT
-U2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4
-NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLD
-E5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIz
-OTA0NTMzLDIwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1Nz
-czNDIsLTE3OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAz
-MiwtMTQwODY4MDgyXX0=
+eyJoaXN0b3J5IjpbLTQzNzA2MTU5NSwxMDUyNzc5NzY1LC0xNT
+Y5ODc0MDMyLDg0NTI1MjgxNCwtMTk4OTI5Mzg0MCwxMTA5Mjg1
+MjA2LDIxMDE3NTQ4MSwyNTM3MDEzMzQsLTE1NzI4NDg3OTMsMT
+k2MzAxNjE3NywtODYwMTYzNzkxLC0xOTYwNzA5OTkyLDE2MjM5
+MDQ1MzMsMjA5Njg2OTM3MSwtMTE4Mjc4ODEyNiwtMTQ0NDU3Nz
+M0MiwtMTc5NzE0NjEzNiwxMzUxNDIyNzc0LC0xMzU0ODMyMDMy
+LC0xNDA4NjgwODJdfQ==
 -->
