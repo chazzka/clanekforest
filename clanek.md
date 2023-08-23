@@ -314,11 +314,6 @@ This is due to a fact that individual dimensions can differ in their statistical
 end jiny clanek/diskuze
 ----
 
-- [ ] TODO: TADy radsi revize pismenek, konsitence! 
-
-
-
-
 
 ## Experiments
 
@@ -360,7 +355,8 @@ lof: shuttle.csv - super
 - tady můžeme zkusit tabulku kde budeme ukazovat kolik procent novelty to našlo apt možná porovnání s nějakým buď expertem nebo nějakými referenčními olabelovanými daty
 - zde napíšeme co se povedlo, jak to neni vubec lehke najit dva či více algoritmů které spolu dobře fungují a velký problem je jejich validace a verifikace, zkus navhrnout nějaké řešení verifikace
 
-
+## Drawbacks, todos
+-  [ ] TODO: TADY POPIŠ například ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD, když by se to lišilo jen v jedné tak je to naprd...
 
 ## Conclusion
 
@@ -371,7 +367,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczODg3NTI3OCwtNjc3NjYwNDEzLC0xNz
+eyJoaXN0b3J5IjpbMTAwNDQ4NTM1NiwtNjc3NjYwNDEzLC0xNz
 AwNTE2NDU5LC0xMDY2MDY5OTY5LDEwNTI3Nzk3NjUsLTE1Njk4
 NzQwMzIsODQ1MjUyODE0LC0xOTg5MjkzODQwLDExMDkyODUyMD
 YsMjEwMTc1NDgxLDI1MzcwMTMzNCwtMTU3Mjg0ODc5MywxOTYz
