@@ -179,8 +179,7 @@ In the proposed solution, there are two main alteration concepts to the original
  1. For each of the features, Isolation Forest was added a *range*.
  2. The split point is in the middle of the given feature's *range*.
 
-
-The evaluation of a range starts by selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
+The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
 
@@ -360,7 +359,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMTI5Mzk4NywyMTAxNzU0ODEsMjUzNz
+eyJoaXN0b3J5IjpbMTEwOTI4NTIwNiwyMTAxNzU0ODEsMjUzNz
 AxMzM0LC0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLTg2MDE2Mzc5
 MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4NjkzNzEsLT
 ExODI3ODgxMjYsLTE0NDQ1NzczNDIsLTE3OTcxNDYxMzYsMTM1
