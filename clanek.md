@@ -190,7 +190,7 @@ Basis step
 Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 
 Recursive step
- :  
+ :  The set of vertices $V$ is created as 
 
 The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given observations. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
@@ -367,11 +367,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk0ODA0NTYsMTA1Mjc3OTc2NSwtMTU2OT
-g3NDAzMiw4NDUyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4NTIw
-NiwyMTAxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5Nj
-MwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0
-NTMzLDIwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1NzczND
-IsLTE3OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwt
-MTQwODY4MDgyXX0=
+eyJoaXN0b3J5IjpbLTIwNjUxMjk3NTksMTA1Mjc3OTc2NSwtMT
+U2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4
+NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLD
+E5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIz
+OTA0NTMzLDIwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1Nz
+czNDIsLTE3OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAz
+MiwtMTQwODY4MDgyXX0=
 -->
