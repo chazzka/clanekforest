@@ -141,17 +141,29 @@ The proposed enhancement takes the basic idea of an ensemble of trees with vario
 The standard Isolation Forest algorithm cannot be used for novelty detection.
 This is because in each step, it limits the observation with the previously separated data.
 
-Let $x$ be regular observations known to the Isolation Forest algorithm a priory and $y$ the novel datapoints provided later. 
+Consider *regular$ observations known to the Isolation Forest algorithm a priory and $y$ the novel datapoints provided later. 
 The standard Isolation Forest algorithm as defined by Liu et. al. selects the split point based on the min-max value according to a priory datapoints.
 
-Figure X shows the first two decisions (`max_depth=2`) of the Isolation Forest algorithm provided a priory data points (marked $x$) in the left corner.
+Figure X shows the first three decisions (`max_depth=3`) of the Isolation Forest algorithm provided a priory data points (marked $x$) in the left corner.
 First, random dimension $X$ and a split point approx. around $SP  = 20$ are chosen, orphaning most of the observations on the left side.
 In the second step, in the right node, dimension Y was chosen, splitting the area in two parts.
 As we can see, the theoretical novelty observations $y$ get assigned the same *path_length* as a priory known, regular observations.
 Even after reaching the stopping criterion, the novelty point remains in the same node with a regular datapoint.
 
+
+![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_outlier.svg)
+> Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning.
+
+
+Consider now point $P_a$ as depicted in Figure X. 
+Using our new approach, $P_a$ falls into an area (node) with the *depth = 2*, isolating $P_a$ from the rest of the anomalies.
+This allows the distinctions between the points, making later novelty evaluation much more feasible.
+
+Figure X shows, that after three runs (max_depth = 3) we successfully isolated the novel datapoints by fitting them in the regions of larger depth.
+
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_novelty.svg)
-> Figure X standard Isolation Forest with novelty points. 
+> Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
+
 
 #### Proposed solution
 In our proposed enhancement, we clearly have to deal with this issue.
@@ -344,11 +356,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODI3ODgxMjYsLTE0NDQ1NzczNDIsLT
-E3OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwtMTQw
-ODY4MDgyLDE4NjU4MTYwMDAsLTg5MTkyMzI4NCwtMjAyMjkzOT
-UyOSwtMTA1OTU4NzQ5MSwxMjg4NDgyMjAxLC0xMjQ0MTc3MzA1
-LC02MDg2NDgxMTUsLTE4OTQ2MjY1MTgsLTk2NjUwMTU2MSw5ND
-I0ODM3MjcsLTcwNjMzMzE2LC0xNjQwMTExNzkzLDE3OTM1MTI1
-NjAsLTMyMTMyODQxM119
+eyJoaXN0b3J5IjpbMTE5MzYwODYwNCwtMTE4Mjc4ODEyNiwtMT
+Q0NDU3NzM0MiwtMTc5NzE0NjEzNiwxMzUxNDIyNzc0LC0xMzU0
+ODMyMDMyLC0xNDA4NjgwODIsMTg2NTgxNjAwMCwtODkxOTIzMj
+g0LC0yMDIyOTM5NTI5LC0xMDU5NTg3NDkxLDEyODg0ODIyMDEs
+LTEyNDQxNzczMDUsLTYwODY0ODExNSwtMTg5NDYyNjUxOCwtOT
+Y2NTAxNTYxLDk0MjQ4MzcyNywtNzA2MzMzMTYsLTE2NDAxMTE3
+OTMsMTc5MzUxMjU2MF19
 -->
