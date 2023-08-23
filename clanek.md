@@ -148,11 +148,11 @@ Figure X shows the first three decisions (`max_depth=3`) of the Isolation Forest
 First, random dimension $X$ and a split point approx. $S  = 16$ are chosen, orphaning most of the observations on the left side.
 In the second step, in the right node, dimension *Y* was chosen, splitting the area in two parts.
 As we can see, the theoretical novelty observations get assigned the same *depth* (the value of 3) as a priory known, regular observations.
-After reaching the stopping criterion, the novelty point remains in the same node with regular datapoints.
+After reaching the stopping criterion, the novelty point remains in the same node with a regular datapoint.
 
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_outlier.svg)
-> Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning.
+> Figure X Isolation Forest novelty point insertion on using approach. Squares being points fed after the learning.
 
 
 Consider now point $P_a$ as depicted in Figure X. 
@@ -356,7 +356,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0OTkwNDc0MCwyMDk2ODY5MzcxLC0xMT
+eyJoaXN0b3J5IjpbLTQ2NjI3MTI3NywyMDk2ODY5MzcxLC0xMT
 gyNzg4MTI2LC0xNDQ0NTc3MzQyLC0xNzk3MTQ2MTM2LDEzNTE0
 MjI3NzQsLTEzNTQ4MzIwMzIsLTE0MDg2ODA4MiwxODY1ODE2MD
 AwLC04OTE5MjMyODQsLTIwMjI5Mzk1MjksLTEwNTk1ODc0OTEs
