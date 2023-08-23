@@ -256,7 +256,7 @@ We begin with a dataset of regular, conceivably little contaminated observations
 Out of these observations, the set $B$ of *batch_size* items is selected.
  
 
- jiny clanek/diskuze
+begin jiny clanek/diskuze
 ---------
 where $r_f$ being a random range generated using one of the above-defined functions and D being all of the dimensions of a given dataset.
 This is due to a fact that individual dimensions can differ in their statistical distributions.
@@ -343,11 +343,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MjI5MjYzLC0yMDIyOTM5NTI5LC0xMD
-U5NTg3NDkxLDEyODg0ODIyMDEsLTEyNDQxNzczMDUsLTYwODY0
-ODExNSwtMTg5NDYyNjUxOCwtOTY2NTAxNTYxLDk0MjQ4MzcyNy
-wtNzA2MzMzMTYsLTE2NDAxMTE3OTMsMTc5MzUxMjU2MCwtMzIx
-MzI4NDEzLC0xNTczNzc0NjA4LDE5MzgxOTc5MDQsLTExMzkxOT
-kwOTAsMjE0MTU2NTg1OSwtNTY0MTc0NjkyLDM5MTc4MzcwMSwt
-MTgyNjQ5ODczNF19
+eyJoaXN0b3J5IjpbLTg5MTkyMzI4NCwtMjAyMjkzOTUyOSwtMT
+A1OTU4NzQ5MSwxMjg4NDgyMjAxLC0xMjQ0MTc3MzA1LC02MDg2
+NDgxMTUsLTE4OTQ2MjY1MTgsLTk2NjUwMTU2MSw5NDI0ODM3Mj
+csLTcwNjMzMzE2LC0xNjQwMTExNzkzLDE3OTM1MTI1NjAsLTMy
+MTMyODQxMywtMTU3Mzc3NDYwOCwxOTM4MTk3OTA0LC0xMTM5MT
+k5MDkwLDIxNDE1NjU4NTksLTU2NDE3NDY5MiwzOTE3ODM3MDEs
+LTE4MjY0OTg3MzRdfQ==
 -->
