@@ -184,7 +184,7 @@ In the proposed solution, there are two main alteration concepts to the original
 Basis step
 : The only vertex $v$ is a trivial binary tree. Ranges $r$ are the limits in the initial observed space $R$ corresponding to its feature $f$ as in (xx).
 
- $$R =  \times_{f \in F} r_{f_b}, \tag{6}$$
+ $$R =  \times_{f \in F} r_{f}, \tag{6}$$
 
 Every problem starts with a user-defined space of observations. 
 These observations are fed into the forest as datapoints.
@@ -363,11 +363,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE0ODIwOTEwLDEwNTI3Nzk3NjUsLTE1Nj
-k4NzQwMzIsODQ1MjUyODE0LC0xOTg5MjkzODQwLDExMDkyODUy
-MDYsMjEwMTc1NDgxLDI1MzcwMTMzNCwtMTU3Mjg0ODc5MywxOT
-YzMDE2MTc3LC04NjAxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkw
-NDUzMywyMDk2ODY5MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3Mz
-QyLC0xNzk3MTQ2MTM2LDEzNTE0MjI3NzQsLTEzNTQ4MzIwMzIs
-LTE0MDg2ODA4Ml19
+eyJoaXN0b3J5IjpbMTE2MTM4MzU2MywxMDUyNzc5NzY1LC0xNT
+Y5ODc0MDMyLDg0NTI1MjgxNCwtMTk4OTI5Mzg0MCwxMTA5Mjg1
+MjA2LDIxMDE3NTQ4MSwyNTM3MDEzMzQsLTE1NzI4NDg3OTMsMT
+k2MzAxNjE3NywtODYwMTYzNzkxLC0xOTYwNzA5OTkyLDE2MjM5
+MDQ1MzMsMjA5Njg2OTM3MSwtMTE4Mjc4ODEyNiwtMTQ0NDU3Nz
+M0MiwtMTc5NzE0NjEzNiwxMzUxNDIyNzc0LC0xMzU0ODMyMDMy
+LC0xNDA4NjgwODJdfQ==
 -->
