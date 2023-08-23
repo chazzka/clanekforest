@@ -187,6 +187,8 @@ Basis step
  $$R =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
 
 
+For each datapoint $d \in R$ 
+
 Every problem starts with a user-defined space of observations. 
 These observations are fed into the forest as datapoints.
 The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given observations. 
@@ -364,11 +366,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNjYxNTk4OCwxMDUyNzc5NzY1LC0xNT
-Y5ODc0MDMyLDg0NTI1MjgxNCwtMTk4OTI5Mzg0MCwxMTA5Mjg1
-MjA2LDIxMDE3NTQ4MSwyNTM3MDEzMzQsLTE1NzI4NDg3OTMsMT
-k2MzAxNjE3NywtODYwMTYzNzkxLC0xOTYwNzA5OTkyLDE2MjM5
-MDQ1MzMsMjA5Njg2OTM3MSwtMTE4Mjc4ODEyNiwtMTQ0NDU3Nz
-M0MiwtMTc5NzE0NjEzNiwxMzUxNDIyNzc0LC0xMzU0ODMyMDMy
-LC0xNDA4NjgwODJdfQ==
+eyJoaXN0b3J5IjpbLTE5MTA4MzI5LDEwNTI3Nzk3NjUsLTE1Nj
+k4NzQwMzIsODQ1MjUyODE0LC0xOTg5MjkzODQwLDExMDkyODUy
+MDYsMjEwMTc1NDgxLDI1MzcwMTMzNCwtMTU3Mjg0ODc5MywxOT
+YzMDE2MTc3LC04NjAxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkw
+NDUzMywyMDk2ODY5MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3Mz
+QyLC0xNzk3MTQ2MTM2LDEzNTE0MjI3NzQsLTEzNTQ4MzIwMzIs
+LTE0MDg2ODA4Ml19
 -->
