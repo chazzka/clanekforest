@@ -21,11 +21,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="2"
-     inkscape:cx="261"
+     inkscape:cx="260.75"
      inkscape:cy="164.75"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
-     inkscape:window-x="1912"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="g1" />
@@ -2172,15 +2172,15 @@
        class="xAxisTitle"
        id="svg_337"
        x="432"
-       y="288"
-       style="fill:#1a1a1a">X features</text>
+       y="292"
+       style="fill:#1a1a1a">X feature</text>
     <text
        class="yAxisTitle"
        id="svg_338"
        transform="rotate(-90)"
        x="-38"
        y="17"
-       style="fill:#1a1a1a">Y features</text>
+       style="fill:#1a1a1a">Y feature</text>
     <g
        id="svg_339"
        transform="translate(475.0 20)">
