@@ -169,9 +169,8 @@ Although $P_a$ has the same depth as the regular observations, later will be sho
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
 
 
-
-Like in the original article, we use the concept of binary decision tree.
-The proposed solution is altering the concept of evaluation of a split point.
+As in the original article, we use the concept of a binary decision tree.
+The proposed solution is altering the concept of the split point evaluation.
 Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on a range.
 For this to work, several alterations to the split point evaluation and the form of data passed between nodes has to be done however, the overall concept of the forest stays the same. 
 
@@ -360,11 +359,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NTY2MjYzOSwtMTU3Mjg0ODc5MywxOT
-YzMDE2MTc3LC04NjAxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkw
-NDUzMywyMDk2ODY5MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3Mz
-QyLC0xNzk3MTQ2MTM2LDEzNTE0MjI3NzQsLTEzNTQ4MzIwMzIs
-LTE0MDg2ODA4MiwxODY1ODE2MDAwLC04OTE5MjMyODQsLTIwMj
-I5Mzk1MjksLTEwNTk1ODc0OTEsMTI4ODQ4MjIwMSwtMTI0NDE3
-NzMwNSwtNjA4NjQ4MTE1XX0=
+eyJoaXN0b3J5IjpbMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5Nj
+MwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0
+NTMzLDIwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1NzczND
+IsLTE3OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwt
+MTQwODY4MDgyLDE4NjU4MTYwMDAsLTg5MTkyMzI4NCwtMjAyMj
+kzOTUyOSwtMTA1OTU4NzQ5MSwxMjg4NDgyMjAxLC0xMjQ0MTc3
+MzA1LC02MDg2NDgxMTVdfQ==
 -->
