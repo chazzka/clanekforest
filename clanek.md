@@ -183,7 +183,7 @@ The evaluation of a range starts by selecting some initial (either random or use
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
 In each construction step random feature $f$ of a datapoint is selected.
-Each node is grouped by a split point $S$, obtained as the middle of the range $r=\langle R_s, R_e\rangle$ corresponding to selected feature $f$ as in (6).
+Each node is grouped by a split point $S$, obtained as the middle of the range $r=\langle R_s, R_e\rangle$ as in (6) corresponding to selected feature $f$ as in (6).
 
 $$S = \frac{r_s + r_e}{2}, \tag{6}$$
 
@@ -352,11 +352,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTMzMjE4NzMsMTEwOTI4NTIwNiwyMT
-AxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5NjMwMTYx
-NzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLD
-IwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1NzczNDIsLTE3
-OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwtMTQwOD
-Y4MDgyLDE4NjU4MTYwMDAsLTg5MTkyMzI4NCwtMjAyMjkzOTUy
-OSwtMTA1OTU4NzQ5MV19
+eyJoaXN0b3J5IjpbNjAyNzMxMDczLDExMDkyODUyMDYsMjEwMT
+c1NDgxLDI1MzcwMTMzNCwtMTU3Mjg0ODc5MywxOTYzMDE2MTc3
+LC04NjAxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkwNDUzMywyMD
+k2ODY5MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3MzQyLC0xNzk3
+MTQ2MTM2LDEzNTE0MjI3NzQsLTEzNTQ4MzIwMzIsLTE0MDg2OD
+A4MiwxODY1ODE2MDAwLC04OTE5MjMyODQsLTIwMjI5Mzk1Mjks
+LTEwNTk1ODc0OTFdfQ==
 -->
