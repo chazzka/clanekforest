@@ -178,8 +178,12 @@ In the proposed solution, there are two main alteration concepts to the original
 
 
  1. Each of the vertices gets assigned a space bounded by ranges.
+This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
+
  2. The split point is in the middle of the given feature's *range*.
  3. The input observations are only used to detect leaves.
+
+
 
 ##### Basis step
 The only vertex $v$ is a trivial binary tree. For each $i \in\{1, \dots, n\}$, feature $f_i$ is bounded by the range $r_i$. The ranges form the possibility space $R$ as in (xx). 
@@ -194,14 +198,7 @@ pro každý list:
 
 opakuj dokud všechny listy nesplňují podmínku
 
- The set of vertices $V$ is created 
-
-The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given observations. 
-This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
-
-
-
-
+ 
 In each construction step, the random feature's range is obtained. 
 The splint point $S$ is obtained as the middle of the range $r=\langle R_s, R_e\rangle$ as in (6). 
 
@@ -372,11 +369,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDA1MTY0NTksLTEwNjYwNjk5NjksMT
-A1Mjc3OTc2NSwtMTU2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODky
-OTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC
-0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2
-MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4NjkzNzEsLTExODI3OD
-gxMjYsLTE0NDQ1NzczNDIsLTE3OTcxNDYxMzYsMTM1MTQyMjc3
-NCwtMTM1NDgzMjAzMl19
+eyJoaXN0b3J5IjpbLTE3OTM0MDg0NDQsLTE3MDA1MTY0NTksLT
+EwNjYwNjk5NjksMTA1Mjc3OTc2NSwtMTU2OTg3NDAzMiw4NDUy
+NTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0OD
+EsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLTg2
+MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4Nj
+kzNzEsLTExODI3ODgxMjYsLTE0NDQ1NzczNDIsLTE3OTcxNDYx
+MzYsMTM1MTQyMjc3NF19
 -->
