@@ -163,7 +163,7 @@ In the proposed solution, $P_a$ falls into an area (node) with the *depth = 3*, 
 This allows the distinction between the points, making later novelty evaluation much more feasible.
 
 Figure X shows, that after three runs (max_depth = 3) the regular datapoints had been isolated by being fitted in the regions of greater depth.
-Although $P_a$ has not distanced from the regular observation yet, it is likel
+Although $P_a$ has the same depth as the regular observations, it is likely to be isolated in the later splits. 
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_novelty.svg)
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
@@ -358,11 +358,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MjIxODA3LDE5NjMwMTYxNzcsLTg2MD
-E2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4Njkz
-NzEsLTExODI3ODgxMjYsLTE0NDQ1NzczNDIsLTE3OTcxNDYxMz
-YsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwtMTQwODY4MDgyLDE4
-NjU4MTYwMDAsLTg5MTkyMzI4NCwtMjAyMjkzOTUyOSwtMTA1OT
-U4NzQ5MSwxMjg4NDgyMjAxLC0xMjQ0MTc3MzA1LC02MDg2NDgx
-MTUsLTE4OTQ2MjY1MThdfQ==
+eyJoaXN0b3J5IjpbLTE1NzI4NDg3OTMsMTk2MzAxNjE3NywtOD
+YwMTYzNzkxLC0xOTYwNzA5OTkyLDE2MjM5MDQ1MzMsMjA5Njg2
+OTM3MSwtMTE4Mjc4ODEyNiwtMTQ0NDU3NzM0MiwtMTc5NzE0Nj
+EzNiwxMzUxNDIyNzc0LC0xMzU0ODMyMDMyLC0xNDA4NjgwODIs
+MTg2NTgxNjAwMCwtODkxOTIzMjg0LC0yMDIyOTM5NTI5LC0xMD
+U5NTg3NDkxLDEyODg0ODIyMDEsLTEyNDQxNzczMDUsLTYwODY0
+ODExNSwtMTg5NDYyNjUxOF19
 -->
