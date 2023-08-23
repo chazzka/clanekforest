@@ -181,7 +181,7 @@ In the proposed solution, there are two main alteration concepts to the original
  3. The input observations are only used to detect leaves.
 
 Basic step
-: The only vertex *v* is a trivial binary tree. 
+: The only vertex $v$ is a trivial binary tree. The vertex $v$ has initial 
 
 Every problem starts with a user-defined space of observations. 
 These observations are fed into the forest as datapoints.
@@ -360,7 +360,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMzk3MDQ3NCwtMTU2OTg3NDAzMiw4ND
+eyJoaXN0b3J5IjpbMjA3NDE4OTg2MywtMTU2OTg3NDAzMiw4ND
 UyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0
 ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLT
 g2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4
