@@ -176,9 +176,9 @@ For this to work, several alterations to the split point evaluation and the form
 
 In the proposed solution, there are two main alteration concepts to the original solution.
 
- 1. For each of the features, Isolation Forest was added a *range*. 
  1. Each of the nodes gets assigned a space bounded by ranges.
  2. The split point is in the middle of the given feature's *range*.
+ 3. The input observations are only used in final 
 
 
 Every problem starts with a user-defined space of observations. 
@@ -359,11 +359,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQzNTM3NjcsODQ1MjUyODE0LC0xOTg5Mj
-kzODQwLDExMDkyODUyMDYsMjEwMTc1NDgxLDI1MzcwMTMzNCwt
-MTU3Mjg0ODc5MywxOTYzMDE2MTc3LC04NjAxNjM3OTEsLTE5Nj
-A3MDk5OTIsMTYyMzkwNDUzMywyMDk2ODY5MzcxLC0xMTgyNzg4
-MTI2LC0xNDQ0NTc3MzQyLC0xNzk3MTQ2MTM2LDEzNTE0MjI3Nz
-QsLTEzNTQ4MzIwMzIsLTE0MDg2ODA4MiwxODY1ODE2MDAwLC04
-OTE5MjMyODRdfQ==
+eyJoaXN0b3J5IjpbMjE4MzkyODUwLDg0NTI1MjgxNCwtMTk4OT
+I5Mzg0MCwxMTA5Mjg1MjA2LDIxMDE3NTQ4MSwyNTM3MDEzMzQs
+LTE1NzI4NDg3OTMsMTk2MzAxNjE3NywtODYwMTYzNzkxLC0xOT
+YwNzA5OTkyLDE2MjM5MDQ1MzMsMjA5Njg2OTM3MSwtMTE4Mjc4
+ODEyNiwtMTQ0NDU3NzM0MiwtMTc5NzE0NjEzNiwxMzUxNDIyNz
+c0LC0xMzU0ODMyMDMyLC0xNDA4NjgwODIsMTg2NTgxNjAwMCwt
+ODkxOTIzMjg0XX0=
 -->
