@@ -182,6 +182,9 @@ In the proposed solution, there are two main alteration concepts to the original
 The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
+Random father's son.   
+Father's random son.  
+
 In each construction step, random feature's range of a datapoint is obtained. 
 , obtained as the middle of the range $r=\langle R_s, R_e\rangle$ as in (6). 
 
@@ -353,11 +356,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE3MTUxOTUwLDExMDkyODUyMDYsMjEwMT
-c1NDgxLDI1MzcwMTMzNCwtMTU3Mjg0ODc5MywxOTYzMDE2MTc3
-LC04NjAxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkwNDUzMywyMD
-k2ODY5MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3MzQyLC0xNzk3
-MTQ2MTM2LDEzNTE0MjI3NzQsLTEzNTQ4MzIwMzIsLTE0MDg2OD
-A4MiwxODY1ODE2MDAwLC04OTE5MjMyODQsLTIwMjI5Mzk1Mjks
-LTEwNTk1ODc0OTFdfQ==
+eyJoaXN0b3J5IjpbLTE5ODkyOTM4NDAsMTEwOTI4NTIwNiwyMT
+AxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5NjMwMTYx
+NzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLD
+IwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1NzczNDIsLTE3
+OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwtMTQwOD
+Y4MDgyLDE4NjU4MTYwMDAsLTg5MTkyMzI4NCwtMjAyMjkzOTUy
+OSwtMTA1OTU4NzQ5MV19
 -->
