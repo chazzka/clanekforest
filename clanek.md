@@ -187,7 +187,7 @@ Basis step
  $$R =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
 
 
-For each datapoint $d \in R$ 
+SSet of datapoint $d$ such that $d \in R$ 
 
 Every problem starts with a user-defined space of observations. 
 These observations are fed into the forest as datapoints.
@@ -366,11 +366,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTA4MzI5LDEwNTI3Nzk3NjUsLTE1Nj
-k4NzQwMzIsODQ1MjUyODE0LC0xOTg5MjkzODQwLDExMDkyODUy
-MDYsMjEwMTc1NDgxLDI1MzcwMTMzNCwtMTU3Mjg0ODc5MywxOT
-YzMDE2MTc3LC04NjAxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkw
-NDUzMywyMDk2ODY5MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3Mz
-QyLC0xNzk3MTQ2MTM2LDEzNTE0MjI3NzQsLTEzNTQ4MzIwMzIs
-LTE0MDg2ODA4Ml19
+eyJoaXN0b3J5IjpbLTE2MTk2OTY4OTUsMTA1Mjc3OTc2NSwtMT
+U2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4
+NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLD
+E5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIz
+OTA0NTMzLDIwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1Nz
+czNDIsLTE3OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAz
+MiwtMTQwODY4MDgyXX0=
 -->
