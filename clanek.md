@@ -184,7 +184,7 @@ In the proposed solution, there are two main alteration concepts to the original
 Basis step
 : The only vertex $v$ is a trivial binary tree. Ranges $r_i$, corresponding to their features $f_i$, are the bounds in the initial observed space $R$  as in (xx).
 
-For $i \in {$Feature $f_i$ is bounded by the range $r_i$. corresponding to their features $f_i$, are the bounds in the initial observed space $R$  as in (xx).
+For every $i \in\{1, \dots, n\}$, feature $f_i$ is bounded by the range $r_i$. corresponding to their features $f_i$, are the bounds in the initial observed space $R$  as in (xx).
 
 
  $$R =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
@@ -366,11 +366,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMjMzOTgzNCwxMDUyNzc5NzY1LC0xNT
-Y5ODc0MDMyLDg0NTI1MjgxNCwtMTk4OTI5Mzg0MCwxMTA5Mjg1
-MjA2LDIxMDE3NTQ4MSwyNTM3MDEzMzQsLTE1NzI4NDg3OTMsMT
-k2MzAxNjE3NywtODYwMTYzNzkxLC0xOTYwNzA5OTkyLDE2MjM5
-MDQ1MzMsMjA5Njg2OTM3MSwtMTE4Mjc4ODEyNiwtMTQ0NDU3Nz
-M0MiwtMTc5NzE0NjEzNiwxMzUxNDIyNzc0LC0xMzU0ODMyMDMy
-LC0xNDA4NjgwODJdfQ==
+eyJoaXN0b3J5IjpbLTE4OTM0NjgxNjksMTA1Mjc3OTc2NSwtMT
+U2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4
+NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLD
+E5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIz
+OTA0NTMzLDIwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1Nz
+czNDIsLTE3OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAz
+MiwtMTQwODY4MDgyXX0=
 -->
