@@ -154,7 +154,8 @@ After reaching the stopping criterion, the novelty point remains in the same nod
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_outlier.svg)
 > Figure X Isolation Forest novelty point insertion using original approach. Squares being points fed after the learning.
 
-The proposed solution comes from an idea, that the original tree lacks the option to 
+The proposed solution comes from an idea, that the original tree lacks the option to isolate more datapoints than it currently observes. 
+The observed space is always the space o
 
 Consider now point $P_a$ as depicted in Figure X. 
 Using our new approach, $P_a$ falls into an area (node) with the *depth = 2*, isolating $P_a$ from the rest of the anomalies.
@@ -358,11 +359,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MTg2NTkyNywtODYwMTYzNzkxLC0xOT
-YwNzA5OTkyLDE2MjM5MDQ1MzMsMjA5Njg2OTM3MSwtMTE4Mjc4
-ODEyNiwtMTQ0NDU3NzM0MiwtMTc5NzE0NjEzNiwxMzUxNDIyNz
-c0LC0xMzU0ODMyMDMyLC0xNDA4NjgwODIsMTg2NTgxNjAwMCwt
-ODkxOTIzMjg0LC0yMDIyOTM5NTI5LC0xMDU5NTg3NDkxLDEyOD
-g0ODIyMDEsLTEyNDQxNzczMDUsLTYwODY0ODExNSwtMTg5NDYy
-NjUxOCwtOTY2NTAxNTYxXX0=
+eyJoaXN0b3J5IjpbLTE5ODI5NjMzMDUsLTg2MDE2Mzc5MSwtMT
+k2MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4NjkzNzEsLTExODI3
+ODgxMjYsLTE0NDQ1NzczNDIsLTE3OTcxNDYxMzYsMTM1MTQyMj
+c3NCwtMTM1NDgzMjAzMiwtMTQwODY4MDgyLDE4NjU4MTYwMDAs
+LTg5MTkyMzI4NCwtMjAyMjkzOTUyOSwtMTA1OTU4NzQ5MSwxMj
+g4NDgyMjAxLC0xMjQ0MTc3MzA1LC02MDg2NDgxMTUsLTE4OTQ2
+MjY1MTgsLTk2NjUwMTU2MV19
 -->
