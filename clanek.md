@@ -185,7 +185,7 @@ These observations are fed into the forest as datapoints.
 The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given observations. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
-Basic step: The only vertex *v* is a root of a binary tree. 
+Basic step: The only vertex *v* is a trivial binary tree. 
 
 In each construction step, the random feature's range is obtained. 
 The splint point $S$ is obtained as the middle of the range $r=\langle R_s, R_e\rangle$ as in (6). 
@@ -357,11 +357,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNTE3ODY0OSwtMTU2OTg3NDAzMiw4ND
-UyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0
-ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLT
-g2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4
-NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1NzczNDIsLTE3OTcxND
-YxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwtMTQwODY4MDgy
-LDE4NjU4MTYwMDBdfQ==
+eyJoaXN0b3J5IjpbLTE2NjY3ODA3MjQsLTE1Njk4NzQwMzIsOD
+Q1MjUyODE0LC0xOTg5MjkzODQwLDExMDkyODUyMDYsMjEwMTc1
+NDgxLDI1MzcwMTMzNCwtMTU3Mjg0ODc5MywxOTYzMDE2MTc3LC
+04NjAxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkwNDUzMywyMDk2
+ODY5MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3MzQyLC0xNzk3MT
+Q2MTM2LDEzNTE0MjI3NzQsLTEzNTQ4MzIwMzIsLTE0MDg2ODA4
+MiwxODY1ODE2MDAwXX0=
 -->
