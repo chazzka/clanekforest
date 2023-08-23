@@ -141,11 +141,11 @@ The proposed enhancement takes the basic idea of an ensemble of trees with vario
 The standard Isolation Forest algorithm cannot be used for novelty detection.
 This is because in each step, it limits the observation with the previously separated data.
 
-Consider *regular$ observations known to the Isolation Forest algorithm a priory and $y$ the novel datapoints provided later. 
+Consider *regular* observations known to the Isolation Forest algorithm a priory and *anomaly* the novelty datapoints provided later. 
 The standard Isolation Forest algorithm as defined by Liu et. al. selects the split point based on the min-max value according to a priory datapoints.
 
-Figure X shows the first three decisions (`max_depth=3`) of the Isolation Forest algorithm provided a priory data points (marked $x$) in the left corner.
-First, random dimension $X$ and a split point approx. around $SP  = 20$ are chosen, orphaning most of the observations on the left side.
+Figure X shows the first three decisions (`max_depth=3`) of the Isolation Forest algorithm provided a priory *regular* data points in the left bottom corner.
+First, random dimension $X$ and a split point approx. around $SP  = $ are chosen, orphaning most of the observations on the left side.
 In the second step, in the right node, dimension Y was chosen, splitting the area in two parts.
 As we can see, the theoretical novelty observations $y$ get assigned the same *path_length* as a priory known, regular observations.
 Even after reaching the stopping criterion, the novelty point remains in the same node with a regular datapoint.
@@ -356,7 +356,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MzYwODYwNCwtMTE4Mjc4ODEyNiwtMT
+eyJoaXN0b3J5IjpbMjA5Njg2OTM3MSwtMTE4Mjc4ODEyNiwtMT
 Q0NDU3NzM0MiwtMTc5NzE0NjEzNiwxMzUxNDIyNzc0LC0xMzU0
 ODMyMDMyLC0xNDA4NjgwODIsMTg2NTgxNjAwMCwtODkxOTIzMj
 g0LC0yMDIyOTM5NTI5LC0xMDU5NTg3NDkxLDEyODg0ODIyMDEs
