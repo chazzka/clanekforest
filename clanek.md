@@ -124,10 +124,10 @@ Isolation Tree is a binary tree constructed with a subset of $A$ items (datapoin
    : problém normal bodů na okraji (normálního clusteru), které se jeví jako anomálie protože ty uvnitř clusteru mají moc velké ohodnocení 
 3. isolation tree má dva druhy uzlů
    
-   vnitřní
+   vnitřní (inte
    : obsahuje podmínku (feature a mez) a dva potomky (jeden reprezentuje splněnou podmínku a druhý naopak nesplněnou) 
    
-   vnější (list)
+   vnější (list) (leaf)
    : vzniká pokud podmínky rodičů splňuje (resp. nesplňuje) jeden nebo žádný prvek ze samplu, nebo je dosažena maximální hloubka stromu $l$ zpravidla $l=\ln_2(s)$. Obsahuje ohodnocení $h(x)$ pomocí vzdálenosti od kořene, pokud je dosaženo  max. délky stromu je *vzdálenost* odhadnuta pomocí $h(x)=e+c(n)$, $e$ je vzdálenost od kořene, $n$ je počet prvků ze samplu splňující podmínky rodičů, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ a $H_{n-1}$ je $n-1$ harmonické číslo. 
    
 - [ ] TODO: Honza to tu vysvětlí obecně.
@@ -148,7 +148,7 @@ Figure X shows the first three decisions (`max_depth=3`) of the Isolation Forest
 First, random feature $X$ and a random split point approx. $S  = 16$ are chosen, orphaning most of the observations on the left side.
 In the second step, in the right area, feature *Y* was chosen, splitting the area in two parts. Observe, that the split point is always located between area-datapoint's minimum and maximum of the given feature.
 As we can see, the theoretical novelty observations get assigned the same *depth* (the value of 3) as a priory known, regular observations.
-After reaching the stopping criterion, the novelty point remains in the same node with a regular datapoint. This is true for any depth up until any chosen *max_depth*.
+After reaching the stopping criterion, the novelty point remains in the same vertex with a regular datapoint. This is true for any depth up until any chosen *max_depth*.
 
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_outlier.svg)
@@ -159,7 +159,7 @@ The proposed solution comes from an idea, that the original tree lacks the optio
 The observed space is bounded by minimum and maximum in each feature.
 
 Consider now point $P_a$ as depicted in Figure X.
-In the proposed solution, $P_a$ falls into an area (node) with the *depth = 3*, isolating $P_a$ from the rest of the anomalies.
+In the proposed solution, $P_a$ falls into an area (vertex) with the *depth = 3*, isolating $P_a$ from the rest of the anomalies.
 This allows the distinction between the points, making later novelty evaluation much more feasible.
 
 Figure X shows, that after three runs (max_depth = 3) the regular datapoints had been isolated by being fitted in the regions of greater depth.
@@ -172,7 +172,7 @@ Although $P_a$ has the same depth as the regular observations, later will be sho
 As in the original article, we use the concept of a binary decision tree.
 The proposed solution is altering the concept of the split point evaluation.
 Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on a range.
-For this to work, several alterations to the split point evaluation and the form of data passed between verticeshas to be done however, the overall concept of the forest stays the same. 
+For this to work, several alterations to the split point evaluation and the form of data passed between vertices has to be done however, the overall concept of the forest stays the same. 
 
 In the proposed solution, there are two main alteration concepts to the original solution.
 
@@ -192,7 +192,7 @@ The splint point $S$ is obtained as the middle of the range $r=\langle R_s, R_e\
 
 $$S = \frac{r_s + r_e}{2}, \tag{6}$$
 
-generating two ranges $r_l = \langle R_s, S )$; $r_r = \langle  S, R_e \rangle$ for left and right node respectively (7).
+generating two ranges $r_l = \langle R_s, S )$; $r_r = \langle  S, R_e \rangle$ for left and right vertex respectively (7).
 
 $$B_l  = \{ x \in B; x \in r_l \}; \quad B_r  = \{ x \in B; x \in r_r \} \tag{7}$$
 
@@ -358,11 +358,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc3ODEyODgzLDg0NTI1MjgxNCwtMTk4OT
-I5Mzg0MCwxMTA5Mjg1MjA2LDIxMDE3NTQ4MSwyNTM3MDEzMzQs
-LTE1NzI4NDg3OTMsMTk2MzAxNjE3NywtODYwMTYzNzkxLC0xOT
-YwNzA5OTkyLDE2MjM5MDQ1MzMsMjA5Njg2OTM3MSwtMTE4Mjc4
-ODEyNiwtMTQ0NDU3NzM0MiwtMTc5NzE0NjEzNiwxMzUxNDIyNz
-c0LC0xMzU0ODMyMDMyLC0xNDA4NjgwODIsMTg2NTgxNjAwMCwt
-ODkxOTIzMjg0XX0=
+eyJoaXN0b3J5IjpbLTI3OTIzODI5NCw4NDUyNTI4MTQsLTE5OD
+kyOTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0
+LC0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMT
+k2MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4NjkzNzEsLTExODI3
+ODgxMjYsLTE0NDQ1NzczNDIsLTE3OTcxNDYxMzYsMTM1MTQyMj
+c3NCwtMTM1NDgzMjAzMiwtMTQwODY4MDgyLDE4NjU4MTYwMDAs
+LTg5MTkyMzI4NF19
 -->
