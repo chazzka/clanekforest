@@ -287,7 +287,7 @@ This allows the novel datapoints to make their way through the tree, making nove
 Figure X shows, that after three runs (max_depth = 3) we successfully isolated the novel datapoints (y) by fitting them in the regions of larger depth.
 
 Consider now point $P_x$ as depicted in Figure X. 
-Using our new approach, $P_x$ falls into an area (node) with the *depth = 2*, assigning $P_x$ different path length.
+Using our new approach, $P_x$ falls into an area (node) with the *depth = 2*, isolating $P_x$ from the rest of the anomalies $y$.
 This allows the distinctions between the points, making later novelty evaluation much more feasible.
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_novelty.svg)
@@ -343,7 +343,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3Njc2NDQ1OCwxODY1ODE2MDAwLC04OT
+eyJoaXN0b3J5IjpbLTE0MDg2ODA4MiwxODY1ODE2MDAwLC04OT
 E5MjMyODQsLTIwMjI5Mzk1MjksLTEwNTk1ODc0OTEsMTI4ODQ4
 MjIwMSwtMTI0NDE3NzMwNSwtNjA4NjQ4MTE1LC0xODk0NjI2NT
 E4LC05NjY1MDE1NjEsOTQyNDgzNzI3LC03MDYzMzMxNiwtMTY0
