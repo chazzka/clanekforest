@@ -168,14 +168,8 @@ Although $P_a$ has the same depth as the regular observations, later will be sho
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_novelty.svg)
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
 
-##### Isolation Forest 
-For the ease of implementing and experimenting, we created a Ruby Gem implementing the Isolation Forest algorithm. It is open-source and available online at.
-- [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
 
-The standard Isolation Forest service can be found in the standalone package at. 
-- [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
 
-##### Novelty service
 Like in the original article, we use the concept of binary decision tree.
 The proposed solution is altering the concept of evaluation of a split point.
 Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on a range.
@@ -243,6 +237,14 @@ Using above defined functions, the range is generated for each of the dimensions
 
 #end další článek
 -------------------------------------------------------------------
+
+##### Implementation
+For the ease of implementing and experimenting, we created a Ruby Gem implementing the Isolation Forest algorithm. It is open-source and available online at.
+- [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
+
+The standard Isolation Forest service can be found in the standalone package at. 
+- [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
+
 The appropriate choice of the algorithm for the range tolerance selection is a matter of experiments and future research.
 
 In this section we describe the Isolation Forest, pinpointing the changes made by Novelty Service.
@@ -358,11 +360,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0NzY5MDgzLC0xNTcyODQ4NzkzLDE5Nj
-MwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0
-NTMzLDIwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1NzczND
-IsLTE3OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwt
-MTQwODY4MDgyLDE4NjU4MTYwMDAsLTg5MTkyMzI4NCwtMjAyMj
-kzOTUyOSwtMTA1OTU4NzQ5MSwxMjg4NDgyMjAxLC0xMjQ0MTc3
-MzA1LC02MDg2NDgxMTVdfQ==
+eyJoaXN0b3J5IjpbMTA1NTY2MjYzOSwtMTU3Mjg0ODc5MywxOT
+YzMDE2MTc3LC04NjAxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkw
+NDUzMywyMDk2ODY5MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3Mz
+QyLC0xNzk3MTQ2MTM2LDEzNTE0MjI3NzQsLTEzNTQ4MzIwMzIs
+LTE0MDg2ODA4MiwxODY1ODE2MDAwLC04OTE5MjMyODQsLTIwMj
+I5Mzk1MjksLTEwNTk1ODc0OTEsMTI4ODQ4MjIwMSwtMTI0NDE3
+NzMwNSwtNjA4NjQ4MTE1XX0=
 -->
