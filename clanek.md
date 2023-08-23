@@ -178,8 +178,7 @@ In the proposed solution, there are two main alteration concepts to the original
 
  1. Each of the nodes gets assigned a space bounded by ranges.
  2. The split point is in the middle of the given feature's *range*.
- 3. The input observations are only used in final 
-
+ 3. The input observations are only used to detect leaves.
 
 Every problem starts with a user-defined space of observations. 
 These observations are fed into the forest as datapoints.
@@ -359,11 +358,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE4MzkyODUwLDg0NTI1MjgxNCwtMTk4OT
-I5Mzg0MCwxMTA5Mjg1MjA2LDIxMDE3NTQ4MSwyNTM3MDEzMzQs
-LTE1NzI4NDg3OTMsMTk2MzAxNjE3NywtODYwMTYzNzkxLC0xOT
-YwNzA5OTkyLDE2MjM5MDQ1MzMsMjA5Njg2OTM3MSwtMTE4Mjc4
-ODEyNiwtMTQ0NDU3NzM0MiwtMTc5NzE0NjEzNiwxMzUxNDIyNz
-c0LC0xMzU0ODMyMDMyLC0xNDA4NjgwODIsMTg2NTgxNjAwMCwt
-ODkxOTIzMjg0XX0=
+eyJoaXN0b3J5IjpbLTEyOTM3NjQ4ODEsODQ1MjUyODE0LC0xOT
+g5MjkzODQwLDExMDkyODUyMDYsMjEwMTc1NDgxLDI1MzcwMTMz
+NCwtMTU3Mjg0ODc5MywxOTYzMDE2MTc3LC04NjAxNjM3OTEsLT
+E5NjA3MDk5OTIsMTYyMzkwNDUzMywyMDk2ODY5MzcxLC0xMTgy
+Nzg4MTI2LC0xNDQ0NTc3MzQyLC0xNzk3MTQ2MTM2LDEzNTE0Mj
+I3NzQsLTEzNTQ4MzIwMzIsLTE0MDg2ODA4MiwxODY1ODE2MDAw
+LC04OTE5MjMyODRdfQ==
 -->
