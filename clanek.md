@@ -352,10 +352,6 @@ naše novelty: shuttle.csv - horší ale OK
 lof: http.csv - super
 lof: shuttle.csv - super
 
-- [ ] TODO: stanovit ranges na základě střední hodnoty a odchylky (doteď děláme mezikvart. odcyhlku) 
-
-### Drawbacks, todos
--  [ ] TODO: TADY POPIŠ například ŽE PRO MOC DIMENZÍ KDYŽ BY JICH BYLO HODNĚ STEJNÝCH TAK JE TO NAPRD, když by se to lišilo jen v jedné tak je to naprd...
  
 ### automl hyperparameter tuning for IF - v jinem članku
 
@@ -363,17 +359,23 @@ lof: shuttle.csv - super
 ## Results and discussion
 - tady můžeme zkusit tabulku kde budeme ukazovat kolik procent novelty to našlo apt možná porovnání s nějakým buď expertem nebo nějakými referenčními olabelovanými daty
 - zde napíšeme co se povedlo, jak to neni vubec lehke najit dva či více algoritmů které spolu dobře fungují a velký problem je jejich validace a verifikace, zkus navhrnout nějaké řešení verifikace
+
+
+
 ## Conclusion
 
 
 
 
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NzY2MDQxMywtMTcwMDUxNjQ1OSwtMT
-A2NjA2OTk2OSwxMDUyNzc5NzY1LC0xNTY5ODc0MDMyLDg0NTI1
-MjgxNCwtMTk4OTI5Mzg0MCwxMTA5Mjg1MjA2LDIxMDE3NTQ4MS
-wyNTM3MDEzMzQsLTE1NzI4NDg3OTMsMTk2MzAxNjE3NywtODYw
-MTYzNzkxLC0xOTYwNzA5OTkyLDE2MjM5MDQ1MzMsMjA5Njg2OT
-M3MSwtMTE4Mjc4ODEyNiwtMTQ0NDU3NzM0MiwtMTc5NzE0NjEz
-NiwxMzUxNDIyNzc0XX0=
+eyJoaXN0b3J5IjpbMTczODg3NTI3OCwtNjc3NjYwNDEzLC0xNz
+AwNTE2NDU5LC0xMDY2MDY5OTY5LDEwNTI3Nzk3NjUsLTE1Njk4
+NzQwMzIsODQ1MjUyODE0LC0xOTg5MjkzODQwLDExMDkyODUyMD
+YsMjEwMTc1NDgxLDI1MzcwMTMzNCwtMTU3Mjg0ODc5MywxOTYz
+MDE2MTc3LC04NjAxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkwND
+UzMywyMDk2ODY5MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3MzQy
+LC0xNzk3MTQ2MTM2XX0=
 -->
