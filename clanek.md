@@ -182,6 +182,20 @@ In the proposed solution, there are two main alteration concepts to the original
 The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
+We start by randomly selecting a feature $f$ of a datapoint.
+Each node is grouped by a split point $S$, obtained as the middle of the range $r=\langle R_s, R_e\rangle$ corresponding to selected feature $f$ as in (6).
+
+$$S = \frac{r_s + r_e}{2}, \tag{6}$$
+
+generating two ranges $r_l = \langle R_s, S )$; $r_r = \langle  S, R_e \rangle$ for left and right node respectively (7).
+
+$$B_l  = \{ x \in B; x \in r_l \}; \quad B_r  = \{ x \in B; x \in r_r \} \tag{7}$$
+
+
+This process is recursively repeated for each of the branches of a tree.
+The left branch gets assigned new batch $B_l$ and a new range $r_l$ and the information about current depth $d + 1$.
+Analogously, the right branch gets assigned new batch $B_r$ and a new range $r_r$ with the information about current depth.
+
 
 #begin další článek
 -------------------
@@ -231,6 +245,7 @@ Using above defined functions, the range is generated for each of the dimensions
 
 #end další článek
 -------------------------------------------------------------------
+
 
 ##### Implementation
 
@@ -283,28 +298,6 @@ end jiny clanek/diskuze
 ----
 
 - [ ] TODO: TADy radsi revize pismenek, konsitence! 
-
-We start by randomly selecting a feature $f$ of a datapoint.
-Each node is grouped by a split point $S$, obtained as the middle of the range $r=\langle R_s, R_e\rangle$ corresponding to selected feature $f$ as in (6).
-
-$$S = \frac{r_s + r_e}{2}, \tag{6}$$
-
-generating two ranges $r_l = \langle R_s, S )$; $r_r = \langle  S, R_e \rangle$ for left and right node respectively (7).
-
-$$B_l  = \{ x \in B; x \in r_l \}; \quad B_r  = \{ x \in B; x \in r_r \} \tag{7}$$
-
-
-This process is recursively repeated for each of the branches of a tree.
-The left branch gets assigned new batch $B_l$ and a new range $r_l$ and the information about current depth $d + 1$.
-Analogously, the right branch gets assigned new batch $B_r$ and a new range $r_r$ with the information about current depth.
-
-# TODO: HONZA TADY POKRAČUJE
-
-This allows the novel datapoints to make their way through the tree, making novelty detection possible.
-
-
-
-
 
 
 
@@ -359,11 +352,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwOTI4NTIwNiwyMTAxNzU0ODEsMjUzNz
-AxMzM0LC0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLTg2MDE2Mzc5
-MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4NjkzNzEsLT
-ExODI3ODgxMjYsLTE0NDQ1NzczNDIsLTE3OTcxNDYxMzYsMTM1
-MTQyMjc3NCwtMTM1NDgzMjAzMiwtMTQwODY4MDgyLDE4NjU4MT
-YwMDAsLTg5MTkyMzI4NCwtMjAyMjkzOTUyOSwtMTA1OTU4NzQ5
-MSwxMjg4NDgyMjAxXX0=
+eyJoaXN0b3J5IjpbMTAyOTA2ODI1MCwxMTA5Mjg1MjA2LDIxMD
+E3NTQ4MSwyNTM3MDEzMzQsLTE1NzI4NDg3OTMsMTk2MzAxNjE3
+NywtODYwMTYzNzkxLC0xOTYwNzA5OTkyLDE2MjM5MDQ1MzMsMj
+A5Njg2OTM3MSwtMTE4Mjc4ODEyNiwtMTQ0NDU3NzM0MiwtMTc5
+NzE0NjEzNiwxMzUxNDIyNzc0LC0xMzU0ODMyMDMyLC0xNDA4Nj
+gwODIsMTg2NTgxNjAwMCwtODkxOTIzMjg0LC0yMDIyOTM5NTI5
+LC0xMDU5NTg3NDkxXX0=
 -->
