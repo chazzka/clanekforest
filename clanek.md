@@ -175,8 +175,9 @@ Whereas the original Isolation Forest is evaluating the split point based on the
 For this to work, several alterations to the split point evaluation and the form of data passed between nodes has to be done however, the overall concept of the forest stays the same. 
 
 In the proposed solution, there are two main alteration concepts to the original solution.
- 
- 1. For each of the features, Isolation Forest was added a *range*.
+
+ 1. For each of the features, Isolation Forest was added a *range*. 
+ 1. Each of the nodes gets assigned a space bounded by ranges.
  2. The split point is in the middle of the given feature's *range*.
 
 
@@ -358,11 +359,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ1MjUyODE0LC0xOTg5MjkzODQwLDExMD
-kyODUyMDYsMjEwMTc1NDgxLDI1MzcwMTMzNCwtMTU3Mjg0ODc5
-MywxOTYzMDE2MTc3LC04NjAxNjM3OTEsLTE5NjA3MDk5OTIsMT
-YyMzkwNDUzMywyMDk2ODY5MzcxLC0xMTgyNzg4MTI2LC0xNDQ0
-NTc3MzQyLC0xNzk3MTQ2MTM2LDEzNTE0MjI3NzQsLTEzNTQ4Mz
-IwMzIsLTE0MDg2ODA4MiwxODY1ODE2MDAwLC04OTE5MjMyODQs
-LTIwMjI5Mzk1MjldfQ==
+eyJoaXN0b3J5IjpbNDQzNTM3NjcsODQ1MjUyODE0LC0xOTg5Mj
+kzODQwLDExMDkyODUyMDYsMjEwMTc1NDgxLDI1MzcwMTMzNCwt
+MTU3Mjg0ODc5MywxOTYzMDE2MTc3LC04NjAxNjM3OTEsLTE5Nj
+A3MDk5OTIsMTYyMzkwNDUzMywyMDk2ODY5MzcxLC0xMTgyNzg4
+MTI2LC0xNDQ0NTc3MzQyLC0xNzk3MTQ2MTM2LDEzNTE0MjI3Nz
+QsLTEzNTQ4MzIwMzIsLTE0MDg2ODA4MiwxODY1ODE2MDAwLC04
+OTE5MjMyODRdfQ==
 -->
