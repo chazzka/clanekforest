@@ -290,6 +290,7 @@ Consider now point $P_x$ as depicted in Figure X.
 Using our new approach, $P_x$ falls into an area (node) with the *depth = 2*, isolating $P_x$ from the rest of the anomalies $y$.
 This allows the distinctions between the points, making later novelty evaluation much more feasible.
 
+
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_novelty.svg)
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
 
@@ -343,11 +344,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDg2ODA4MiwxODY1ODE2MDAwLC04OT
-E5MjMyODQsLTIwMjI5Mzk1MjksLTEwNTk1ODc0OTEsMTI4ODQ4
-MjIwMSwtMTI0NDE3NzMwNSwtNjA4NjQ4MTE1LC0xODk0NjI2NT
-E4LC05NjY1MDE1NjEsOTQyNDgzNzI3LC03MDYzMzMxNiwtMTY0
-MDExMTc5MywxNzkzNTEyNTYwLC0zMjEzMjg0MTMsLTE1NzM3Nz
-Q2MDgsMTkzODE5NzkwNCwtMTEzOTE5OTA5MCwyMTQxNTY1ODU5
-LC01NjQxNzQ2OTJdfQ==
+eyJoaXN0b3J5IjpbLTEzNTQ4MzIwMzIsLTE0MDg2ODA4MiwxOD
+Y1ODE2MDAwLC04OTE5MjMyODQsLTIwMjI5Mzk1MjksLTEwNTk1
+ODc0OTEsMTI4ODQ4MjIwMSwtMTI0NDE3NzMwNSwtNjA4NjQ4MT
+E1LC0xODk0NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgzNzI3LC03
+MDYzMzMxNiwtMTY0MDExMTc5MywxNzkzNTEyNTYwLC0zMjEzMj
+g0MTMsLTE1NzM3NzQ2MDgsMTkzODE5NzkwNCwtMTEzOTE5OTA5
+MCwyMTQxNTY1ODU5XX0=
 -->
