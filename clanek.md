@@ -48,6 +48,9 @@ However, there does not seem to be much work regarding using Isolation Forest as
 Datapoint
 : Datapoint is any observable data with $n$ features.
 
+Regular
+: Regular is a datapoint included in the given dataset, does not differ significantly from other observations.
+
 Anomaly
 : Anomaly is a datapoint, that differs significantly from other observations.
 
@@ -344,11 +347,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTQ4MzIwMzIsLTE0MDg2ODA4MiwxOD
-Y1ODE2MDAwLC04OTE5MjMyODQsLTIwMjI5Mzk1MjksLTEwNTk1
-ODc0OTEsMTI4ODQ4MjIwMSwtMTI0NDE3NzMwNSwtNjA4NjQ4MT
-E1LC0xODk0NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgzNzI3LC03
-MDYzMzMxNiwtMTY0MDExMTc5MywxNzkzNTEyNTYwLC0zMjEzMj
-g0MTMsLTE1NzM3NzQ2MDgsMTkzODE5NzkwNCwtMTEzOTE5OTA5
-MCwyMTQxNTY1ODU5XX0=
+eyJoaXN0b3J5IjpbMzg2NTg0NzAxLC0xMzU0ODMyMDMyLC0xND
+A4NjgwODIsMTg2NTgxNjAwMCwtODkxOTIzMjg0LC0yMDIyOTM5
+NTI5LC0xMDU5NTg3NDkxLDEyODg0ODIyMDEsLTEyNDQxNzczMD
+UsLTYwODY0ODExNSwtMTg5NDYyNjUxOCwtOTY2NTAxNTYxLDk0
+MjQ4MzcyNywtNzA2MzMzMTYsLTE2NDAxMTE3OTMsMTc5MzUxMj
+U2MCwtMzIxMzI4NDEzLC0xNTczNzc0NjA4LDE5MzgxOTc5MDQs
+LTExMzkxOTkwOTBdfQ==
 -->
