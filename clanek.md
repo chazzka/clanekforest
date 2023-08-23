@@ -182,9 +182,9 @@ In the proposed solution, there are two main alteration concepts to the original
  3. The input observations are only used to detect leaves.
 
 Basis step
-: The only vertex $v$ is a trivial binary tree. Ranges $r$ are the limits in the initial observed space corresponding to its feature $f$ as in (xx).
+: The only vertex $v$ is a trivial binary tree. Ranges $r$ are the limits in the initial observed space $R$ corresponding to its feature $f$ as in (xx).
 
- $$r_f = r_{f_a}  \times r_{f_b}, \tag{6}$$
+ $$R =  \times_{f \in F} r_{f_b}, \tag{6}$$
 
 Every problem starts with a user-defined space of observations. 
 These observations are fed into the forest as datapoints.
@@ -363,7 +363,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY2OTIyMjQ4LDEwNTI3Nzk3NjUsLTE1Nj
+eyJoaXN0b3J5IjpbOTE0ODIwOTEwLDEwNTI3Nzk3NjUsLTE1Nj
 k4NzQwMzIsODQ1MjUyODE0LC0xOTg5MjkzODQwLDExMDkyODUy
 MDYsMjEwMTc1NDgxLDI1MzcwMTMzNCwtMTU3Mjg0ODc5MywxOT
 YzMDE2MTc3LC04NjAxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkw
