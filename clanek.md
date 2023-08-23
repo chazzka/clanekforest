@@ -190,7 +190,9 @@ Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 pro každý list: 
 
 1.  splňuje koncovou podmínku, dopočítej depth
-2. nesplňuje, z listu udělej inner vertex
+2. nesplňuje, z listu udělej internal vertex, který si bude nést rozhodovací podmínku a bude mít dva nové listy, 
+
+opakuj dokud 
 
  The set of vertices $V$ is created 
 
@@ -370,7 +372,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDA0MjAyMjQsLTEwNjYwNjk5NjksMT
+eyJoaXN0b3J5IjpbLTEzNzA2NzQwMDEsLTEwNjYwNjk5NjksMT
 A1Mjc3OTc2NSwtMTU2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODky
 OTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC
 0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2
