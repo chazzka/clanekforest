@@ -155,7 +155,7 @@ After reaching the stopping criterion, the novelty point remains in the same nod
 > Figure X Isolation Forest novelty point insertion using original approach. Squares being points fed after the learning.
 
 The proposed solution comes from an idea, that the original tree lacks the option to isolate more datapoints than it currently observes. 
-The observed space is always the space of a currently observed hyperplane, constrained by minimum and maximum datapoints.
+The observed space is the , constrained by minimum and maximum datapoints.
 
 Consider now point $P_a$ as depicted in Figure X. 
 Using our new approach, $P_a$ falls into an area (node) with the *depth = 2*, isolating $P_a$ from the rest of the anomalies.
@@ -359,11 +359,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQzMTEyMDMsLTg2MDE2Mzc5MSwtMTk2MD
-cwOTk5MiwxNjIzOTA0NTMzLDIwOTY4NjkzNzEsLTExODI3ODgx
-MjYsLTE0NDQ1NzczNDIsLTE3OTcxNDYxMzYsMTM1MTQyMjc3NC
-wtMTM1NDgzMjAzMiwtMTQwODY4MDgyLDE4NjU4MTYwMDAsLTg5
-MTkyMzI4NCwtMjAyMjkzOTUyOSwtMTA1OTU4NzQ5MSwxMjg4ND
-gyMjAxLC0xMjQ0MTc3MzA1LC02MDg2NDgxMTUsLTE4OTQ2MjY1
-MTgsLTk2NjUwMTU2MV19
+eyJoaXN0b3J5IjpbLTE4MTg3MjA4NTIsLTg2MDE2Mzc5MSwtMT
+k2MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4NjkzNzEsLTExODI3
+ODgxMjYsLTE0NDQ1NzczNDIsLTE3OTcxNDYxMzYsMTM1MTQyMj
+c3NCwtMTM1NDgzMjAzMiwtMTQwODY4MDgyLDE4NjU4MTYwMDAs
+LTg5MTkyMzI4NCwtMjAyMjkzOTUyOSwtMTA1OTU4NzQ5MSwxMj
+g4NDgyMjAxLC0xMjQ0MTc3MzA1LC02MDg2NDgxMTUsLTE4OTQ2
+MjY1MTgsLTk2NjUwMTU2MV19
 -->
