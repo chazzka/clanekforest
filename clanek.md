@@ -180,7 +180,7 @@ In the proposed solution, there are two main alteration concepts to the original
  2. The split point is in the middle of the given feature's *range*.
  3. The input observations are only used to detect leaves.
 
-Basic step
+Basis step
 : The only vertex $v$ is a trivial binary tree. The datapoints are the points in the user-defined space. 
 
 Every problem starts with a user-defined space of observations. 
@@ -360,7 +360,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NTg4MjU1MywtMTU2OTg3NDAzMiw4ND
+eyJoaXN0b3J5IjpbLTYxNTA2NjE5OSwtMTU2OTg3NDAzMiw4ND
 UyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0
 ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLT
 g2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4
