@@ -152,7 +152,7 @@ After reaching the stopping criterion, the novelty point remains in the same nod
 
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_outlier.svg)
-> Figure X Isolation Forest novelty point insertion on using approach. Squares being points fed after the learning.
+> Figure X Isolation Forest novelty point insertion using original approach. Squares being points fed after the learning.
 
 
 Consider now point $P_a$ as depicted in Figure X. 
@@ -356,11 +356,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NjI3MTI3NywyMDk2ODY5MzcxLC0xMT
-gyNzg4MTI2LC0xNDQ0NTc3MzQyLC0xNzk3MTQ2MTM2LDEzNTE0
-MjI3NzQsLTEzNTQ4MzIwMzIsLTE0MDg2ODA4MiwxODY1ODE2MD
-AwLC04OTE5MjMyODQsLTIwMjI5Mzk1MjksLTEwNTk1ODc0OTEs
-MTI4ODQ4MjIwMSwtMTI0NDE3NzMwNSwtNjA4NjQ4MTE1LC0xOD
-k0NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgzNzI3LC03MDYzMzMx
-NiwtMTY0MDExMTc5M119
+eyJoaXN0b3J5IjpbODIxMTM1OTcsMjA5Njg2OTM3MSwtMTE4Mj
+c4ODEyNiwtMTQ0NDU3NzM0MiwtMTc5NzE0NjEzNiwxMzUxNDIy
+Nzc0LC0xMzU0ODMyMDMyLC0xNDA4NjgwODIsMTg2NTgxNjAwMC
+wtODkxOTIzMjg0LC0yMDIyOTM5NTI5LC0xMDU5NTg3NDkxLDEy
+ODg0ODIyMDEsLTEyNDQxNzczMDUsLTYwODY0ODExNSwtMTg5ND
+YyNjUxOCwtOTY2NTAxNTYxLDk0MjQ4MzcyNywtNzA2MzMzMTYs
+LTE2NDAxMTE3OTNdfQ==
 -->
