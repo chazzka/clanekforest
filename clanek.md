@@ -178,7 +178,7 @@ The evaluation of a range starts by selecting some initial (either random or use
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
 
-#další článek
+#begin další článek
 -------------------
 
 As a baseline, we select range by constructing a box plot, using interquartile range (1).
@@ -261,7 +261,7 @@ Out of these observations, the set $B$ of *batch_size* items is selected.
 where $r_f$ being a random range generated using one of the above-defined functions and D being all of the dimensions of a given dataset.
 This is due to a fact that individual dimensions can differ in their statistical distributions.
 
-end
+end jiny clanek/diskuze
 ----
 
 - [ ] TODO: TADy radsi revize pismenek, konsitence! 
@@ -280,7 +280,7 @@ This process is recursively repeated for each of the branches of a tree.
 The left branch gets assigned new batch $B_l$ and a new range $r_l$ and the information about current depth $d + 1$.
 Analogously, the right branch gets assigned new batch $B_r$ and a new range $r_r$ with the information about current depth.
 
-# TODO: TADY POKRAČUJ
+# TODO: HONZA TADY POKRAČUJE
 
 This allows the novel datapoints to make their way through the tree, making novelty detection possible.
 
@@ -343,11 +343,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjI5Mzk1MjksLTEwNTk1ODc0OTEsMT
-I4ODQ4MjIwMSwtMTI0NDE3NzMwNSwtNjA4NjQ4MTE1LC0xODk0
-NjI2NTE4LC05NjY1MDE1NjEsOTQyNDgzNzI3LC03MDYzMzMxNi
-wtMTY0MDExMTc5MywxNzkzNTEyNTYwLC0zMjEzMjg0MTMsLTE1
-NzM3NzQ2MDgsMTkzODE5NzkwNCwtMTEzOTE5OTA5MCwyMTQxNT
-Y1ODU5LC01NjQxNzQ2OTIsMzkxNzgzNzAxLC0xODI2NDk4NzM0
-LDIwMDI2ODc3MzddfQ==
+eyJoaXN0b3J5IjpbMTg5MjI5MjYzLC0yMDIyOTM5NTI5LC0xMD
+U5NTg3NDkxLDEyODg0ODIyMDEsLTEyNDQxNzczMDUsLTYwODY0
+ODExNSwtMTg5NDYyNjUxOCwtOTY2NTAxNTYxLDk0MjQ4MzcyNy
+wtNzA2MzMzMTYsLTE2NDAxMTE3OTMsMTc5MzUxMjU2MCwtMzIx
+MzI4NDEzLC0xNTczNzc0NjA4LDE5MzgxOTc5MDQsLTExMzkxOT
+kwOTAsMjE0MTU2NTg1OSwtNTY0MTc0NjkyLDM5MTc4MzcwMSwt
+MTgyNjQ5ODczNF19
 -->
