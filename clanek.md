@@ -294,6 +294,7 @@ Using our new approach, $P_a$ falls into an area (node) with the *depth = 2*, is
 This allows the distinctions between the points, making later novelty evaluation much more feasible.
 
 
+
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_novelty.svg)
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
 
@@ -347,7 +348,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTg0MjIxMjIsMTM1MTQyMjc3NCwtMT
+eyJoaXN0b3J5IjpbLTE3OTcxNDYxMzYsMTM1MTQyMjc3NCwtMT
 M1NDgzMjAzMiwtMTQwODY4MDgyLDE4NjU4MTYwMDAsLTg5MTky
 MzI4NCwtMjAyMjkzOTUyOSwtMTA1OTU4NzQ5MSwxMjg4NDgyMj
 AxLC0xMjQ0MTc3MzA1LC02MDg2NDgxMTUsLTE4OTQ2MjY1MTgs
