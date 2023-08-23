@@ -19,9 +19,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="2.71"
-     inkscape:cx="521.21771"
-     inkscape:cy="135.23985"
+     inkscape:zoom="1.9162594"
+     inkscape:cx="257.01114"
+     inkscape:cy="134.89823"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="1912"
@@ -428,10 +428,6 @@
          transform="translate(-12 0)"
          x="74"
          y="231.88">5.00</text>
-      <path
-         class="guideLines"
-         d="m71,227.88l394,0"
-         id="svg_15" />
       <text
          class="yAxisLabels"
          id="svg_16"
@@ -439,10 +435,6 @@
          transform="translate(-12 0)"
          x="74"
          y="200.75">9.00</text>
-      <path
-         class="guideLines"
-         d="m71,196.75l394,0"
-         id="svg_17" />
       <text
          class="yAxisLabels"
          id="svg_18"
@@ -450,10 +442,6 @@
          transform="translate(-12 0)"
          x="74"
          y="169.63">13.00</text>
-      <path
-         class="guideLines"
-         d="m71,165.63l394,0"
-         id="svg_19" />
       <text
          class="yAxisLabels"
          id="svg_20"
@@ -461,10 +449,6 @@
          transform="translate(-12 0)"
          x="74"
          y="138.5">17.00</text>
-      <path
-         class="guideLines"
-         d="m71,134.5l394,0"
-         id="svg_21" />
       <text
          class="yAxisLabels"
          id="svg_22"
@@ -472,10 +456,6 @@
          transform="translate(-12 0)"
          x="74"
          y="107.38">21.00</text>
-      <path
-         class="guideLines"
-         d="m71,103.38l394,0"
-         id="svg_23" />
       <text
          class="yAxisLabels"
          id="svg_24"
@@ -483,10 +463,6 @@
          transform="translate(-12 0)"
          x="74"
          y="76.25">25.00</text>
-      <path
-         class="guideLines"
-         d="m71,72.25l394,0"
-         id="svg_25" />
       <text
          class="yAxisLabels"
          id="svg_26"
@@ -494,10 +470,6 @@
          transform="translate(-12 0)"
          x="74"
          y="45.13">29.00</text>
-      <path
-         class="guideLines"
-         d="m71,41.13l394,0"
-         id="svg_27" />
       <text
          class="yAxisLabels"
          id="svg_28"
@@ -2147,19 +2119,19 @@
       <text
          xml:space="preserve"
          style="fill:#000000"
-         x="192.68636"
-         y="139.28412"
+         x="200.68636"
+         y="153.28412"
          id="text1"><tspan
            sodipodi:role="line"
            id="tspan1"
-           x="192.68636"
-           y="139.28412">Pa</tspan></text>
+           x="200.68636"
+           y="153.28412">Pa</tspan></text>
     </g>
     <text
        class="xAxisTitle"
        id="svg_337"
        x="432"
-       y="288"
+       y="290"
        style="fill:#1a1a1a">X features</text>
     <text
        class="yAxisTitle"
@@ -2203,28 +2175,28 @@
        id="svg_346"
        stroke="#000000"
        stroke-width="2"
-       x1="251.17999"
-       x2="251.17999"
+       x1="269.17999"
+       x2="269.17999"
        y1="9.71"
        y2="259" />
     <line
        fill="none"
        id="svg_346-7"
        stroke="#000000"
-       stroke-width="1.04822"
-       x1="136.05167"
-       x2="136.05167"
-       y1="189.99261"
+       stroke-width="1.40927"
+       x1="169.96936"
+       x2="169.96936"
+       y1="134.6937"
        y2="258.47083" />
     <line
        fill="none"
        id="svg_345"
        stroke="#000000"
-       stroke-width="1.50288"
-       x1="251.40158"
+       stroke-width="1.57278"
+       x1="268.62262"
        x2="70.478561"
-       y1="190.46001"
-       y2="190.46001" />
+       y1="135.24278"
+       y2="135.24278" />
     <text
        fill="#000000"
        font-family="Courier"
@@ -2233,9 +2205,9 @@
        stroke="#000000"
        stroke-width="0"
        text-anchor="middle"
-       x="203.8017"
+       x="217.8017"
        xml:space="preserve"
-       y="254.24072">depth = 3</text>
+       y="198.24072">depth = 3</text>
     <text
        fill="#000000"
        font-family="Courier"
@@ -2244,9 +2216,20 @@
        stroke="#000000"
        stroke-width="0"
        text-anchor="middle"
-       x="127.80579"
+       x="115.80579"
        xml:space="preserve"
-       y="152.80391">depth = 2</text>
+       y="172.80391">depth = 3</text>
+    <text
+       fill="#000000"
+       font-family="Courier"
+       font-size="10px"
+       id="svg_356-7-7"
+       stroke="#000000"
+       stroke-width="0"
+       text-anchor="middle"
+       x="165.53046"
+       xml:space="preserve"
+       y="62.737263">depth = 2</text>
     <text
        fill="#000000"
        font-family="Courier"
@@ -2255,8 +2238,8 @@
        stroke="#000000"
        stroke-width="0"
        text-anchor="middle"
-       x="330.74472"
+       x="372.74472"
        xml:space="preserve"
-       y="149.94664">depth = 1</text>
+       y="141.94664">depth = 1</text>
   </g>
 </svg>
