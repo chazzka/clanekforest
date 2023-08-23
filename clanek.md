@@ -181,7 +181,7 @@ In the proposed solution, there are two main alteration concepts to the original
  3. The input observations are only used to detect leaves.
 
 Basis step
-: The only vertex $v$ is a trivial binary tree. The datapoints are the points in the user-defined space. 
+: The only vertex $v$ is a trivial binary tree. The datapoints are the points in the user-defined space. The space is bounded by 
 
 Every problem starts with a user-defined space of observations. 
 These observations are fed into the forest as datapoints.
@@ -360,11 +360,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNTA2NjE5OSwtMTU2OTg3NDAzMiw4ND
-UyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0
-ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLT
-g2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4
-NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1NzczNDIsLTE3OTcxND
-YxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwtMTQwODY4MDgy
-LDE4NjU4MTYwMDBdfQ==
+eyJoaXN0b3J5IjpbNTQxODg5NDI0LC0xNTY5ODc0MDMyLDg0NT
+I1MjgxNCwtMTk4OTI5Mzg0MCwxMTA5Mjg1MjA2LDIxMDE3NTQ4
+MSwyNTM3MDEzMzQsLTE1NzI4NDg3OTMsMTk2MzAxNjE3NywtOD
+YwMTYzNzkxLC0xOTYwNzA5OTkyLDE2MjM5MDQ1MzMsMjA5Njg2
+OTM3MSwtMTE4Mjc4ODEyNiwtMTQ0NDU3NzM0MiwtMTc5NzE0Nj
+EzNiwxMzUxNDIyNzc0LC0xMzU0ODMyMDMyLC0xNDA4NjgwODIs
+MTg2NTgxNjAwMF19
 -->
