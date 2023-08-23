@@ -184,6 +184,9 @@ In the proposed solution, there are two main alteration concepts to the original
 Basis step
 : The only vertex $v$ is a trivial binary tree. Ranges $r_i$, corresponding to their features $f_i$, are the bounds in the initial observed space $R$  as in (xx).
 
+Features $f_i$ Ranges $r_i$, corresponding to their features $f_i$, are the bounds in the initial observed space $R$  as in (xx).
+
+
  $$R =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
 
 Every problem starts with a user-defined space of observations. 
@@ -363,11 +366,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg0NzU0OTkzLDEwNTI3Nzk3NjUsLTE1Nj
-k4NzQwMzIsODQ1MjUyODE0LC0xOTg5MjkzODQwLDExMDkyODUy
-MDYsMjEwMTc1NDgxLDI1MzcwMTMzNCwtMTU3Mjg0ODc5MywxOT
-YzMDE2MTc3LC04NjAxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkw
-NDUzMywyMDk2ODY5MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3Mz
-QyLC0xNzk3MTQ2MTM2LDEzNTE0MjI3NzQsLTEzNTQ4MzIwMzIs
-LTE0MDg2ODA4Ml19
+eyJoaXN0b3J5IjpbMTEyNDg5MDQ2NywxMDUyNzc5NzY1LC0xNT
+Y5ODc0MDMyLDg0NTI1MjgxNCwtMTk4OTI5Mzg0MCwxMTA5Mjg1
+MjA2LDIxMDE3NTQ4MSwyNTM3MDEzMzQsLTE1NzI4NDg3OTMsMT
+k2MzAxNjE3NywtODYwMTYzNzkxLC0xOTYwNzA5OTkyLDE2MjM5
+MDQ1MzMsMjA5Njg2OTM3MSwtMTE4Mjc4ODEyNiwtMTQ0NDU3Nz
+M0MiwtMTc5NzE0NjEzNiwxMzUxNDIyNzc0LC0xMzU0ODMyMDMy
+LC0xNDA4NjgwODJdfQ==
 -->
