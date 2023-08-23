@@ -182,7 +182,7 @@ In the proposed solution, there are two main alteration concepts to the original
 The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
-We start by randomly selecting a feature $f$ of a datapoint.
+The construction of such treeby randomly selecting a feature $f$ of a datapoint.
 Each node is grouped by a split point $S$, obtained as the middle of the range $r=\langle R_s, R_e\rangle$ corresponding to selected feature $f$ as in (6).
 
 $$S = \frac{r_s + r_e}{2}, \tag{6}$$
@@ -352,11 +352,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyOTA2ODI1MCwxMTA5Mjg1MjA2LDIxMD
-E3NTQ4MSwyNTM3MDEzMzQsLTE1NzI4NDg3OTMsMTk2MzAxNjE3
-NywtODYwMTYzNzkxLC0xOTYwNzA5OTkyLDE2MjM5MDQ1MzMsMj
-A5Njg2OTM3MSwtMTE4Mjc4ODEyNiwtMTQ0NDU3NzM0MiwtMTc5
-NzE0NjEzNiwxMzUxNDIyNzc0LC0xMzU0ODMyMDMyLC0xNDA4Nj
-gwODIsMTg2NTgxNjAwMCwtODkxOTIzMjg0LC0yMDIyOTM5NTI5
-LC0xMDU5NTg3NDkxXX0=
+eyJoaXN0b3J5IjpbLTExODUyMTI5MDQsMTEwOTI4NTIwNiwyMT
+AxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5NjMwMTYx
+NzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLD
+IwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1NzczNDIsLTE3
+OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwtMTQwOD
+Y4MDgyLDE4NjU4MTYwMDAsLTg5MTkyMzI4NCwtMjAyMjkzOTUy
+OSwtMTA1OTU4NzQ5MV19
 -->
