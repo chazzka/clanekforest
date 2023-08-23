@@ -182,7 +182,7 @@ In the proposed solution, there are two main alteration concepts to the original
 The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given problem. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
-In each construction step, the random feature's range of a datapoint is obtained. 
+In each construction step, the random feature's range is obtained. 
 The splint point $S$ is obtained as the middle of the range $r=\langle R_s, R_e\rangle$ as in (6). 
 
 $$S = \frac{r_s + r_e}{2}, \tag{6}$$
@@ -353,7 +353,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTA3NjM0NDksLTE5ODkyOTM4NDAsMT
+eyJoaXN0b3J5IjpbLTE5MjcwODUzNjEsLTE5ODkyOTM4NDAsMT
 EwOTI4NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4
 NzkzLDE5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5Mi
 wxNjIzOTA0NTMzLDIwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0
