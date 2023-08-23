@@ -184,7 +184,7 @@ In the proposed solution, there are two main alteration concepts to the original
 Basis step
 : The only vertex $v$ is a trivial binary tree. Ranges $r_i$, corresponding to their features $f_i$, are the bounds in the initial observed space $R$  as in (xx).
 
-For every $i \in\{1, \dots, n\}$, feature $f_i$ is bounded by the range $r_i$. corresponding to their features $f_i$, are the bounds in the initial observed space $R$  as in (xx).
+For each $i \in\{1, \dots, n\}$, feature $f_i$ is bounded by the range $r_i$. The ranges .
 
 
  $$R =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
@@ -366,7 +366,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTM0NjgxNjksMTA1Mjc3OTc2NSwtMT
+eyJoaXN0b3J5IjpbLTE4OTgxNzU0ODEsMTA1Mjc3OTc2NSwtMT
 U2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4
 NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLD
 E5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIz
