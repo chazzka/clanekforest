@@ -284,7 +284,7 @@ Analogously, the right branch gets assigned new batch $B_r$ and a new range $r_r
 
 This allows the novel datapoints to make their way through the tree, making novelty detection possible.
 
-Figure X shows, that after three runs (max_depth = 3) we successfully isolated the novel datapoints (y) by fitting them in the regions of a higher path_length.
+Figure X shows, that after three runs (max_depth = 3) we successfully isolated the novel datapoints (y) by fitting them in the regions of larger depth.
 
 Consider now point $P_x$ as depicted in Figure X. 
 Using our new approach, $P_x$ is assigned into an area (node) with the *path length = 2*, assigning $P_x$ different path length.
@@ -343,11 +343,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MTkyMzI4NCwtMjAyMjkzOTUyOSwtMT
-A1OTU4NzQ5MSwxMjg4NDgyMjAxLC0xMjQ0MTc3MzA1LC02MDg2
-NDgxMTUsLTE4OTQ2MjY1MTgsLTk2NjUwMTU2MSw5NDI0ODM3Mj
-csLTcwNjMzMzE2LC0xNjQwMTExNzkzLDE3OTM1MTI1NjAsLTMy
-MTMyODQxMywtMTU3Mzc3NDYwOCwxOTM4MTk3OTA0LC0xMTM5MT
-k5MDkwLDIxNDE1NjU4NTksLTU2NDE3NDY5MiwzOTE3ODM3MDEs
-LTE4MjY0OTg3MzRdfQ==
+eyJoaXN0b3J5IjpbMTg2NTgxNjAwMCwtODkxOTIzMjg0LC0yMD
+IyOTM5NTI5LC0xMDU5NTg3NDkxLDEyODg0ODIyMDEsLTEyNDQx
+NzczMDUsLTYwODY0ODExNSwtMTg5NDYyNjUxOCwtOTY2NTAxNT
+YxLDk0MjQ4MzcyNywtNzA2MzMzMTYsLTE2NDAxMTE3OTMsMTc5
+MzUxMjU2MCwtMzIxMzI4NDEzLC0xNTczNzc0NjA4LDE5MzgxOT
+c5MDQsLTExMzkxOTkwOTAsMjE0MTU2NTg1OSwtNTY0MTc0Njky
+LDM5MTc4MzcwMV19
 -->
