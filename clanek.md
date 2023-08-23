@@ -177,7 +177,7 @@ For this to work, several alterations to the split point evaluation and the form
 In the proposed solution, there are two main alteration concepts to the original solution.
  
  1. For each of the features, Isolation Forest was added a *range*.
- 2. When the split point is calculated, random dimension is chosen, and the split point is evaluated based on the given *range*.
+ 2. The split point is evaluated based on the given feature's *range*.
 
 
 The evaluation of a range starts by selecting some initial (either random or user defined) range for each dimension of N-dimensional problem. 
@@ -360,11 +360,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMTc1NDgxLDI1MzcwMTMzNCwtMTU3Mj
-g0ODc5MywxOTYzMDE2MTc3LC04NjAxNjM3OTEsLTE5NjA3MDk5
-OTIsMTYyMzkwNDUzMywyMDk2ODY5MzcxLC0xMTgyNzg4MTI2LC
-0xNDQ0NTc3MzQyLC0xNzk3MTQ2MTM2LDEzNTE0MjI3NzQsLTEz
-NTQ4MzIwMzIsLTE0MDg2ODA4MiwxODY1ODE2MDAwLC04OTE5Mj
-MyODQsLTIwMjI5Mzk1MjksLTEwNTk1ODc0OTEsMTI4ODQ4MjIw
-MSwtMTI0NDE3NzMwNV19
+eyJoaXN0b3J5IjpbLTc5MDEzMDYsMjEwMTc1NDgxLDI1MzcwMT
+MzNCwtMTU3Mjg0ODc5MywxOTYzMDE2MTc3LC04NjAxNjM3OTEs
+LTE5NjA3MDk5OTIsMTYyMzkwNDUzMywyMDk2ODY5MzcxLC0xMT
+gyNzg4MTI2LC0xNDQ0NTc3MzQyLC0xNzk3MTQ2MTM2LDEzNTE0
+MjI3NzQsLTEzNTQ4MzIwMzIsLTE0MDg2ODA4MiwxODY1ODE2MD
+AwLC04OTE5MjMyODQsLTIwMjI5Mzk1MjksLTEwNTk1ODc0OTEs
+MTI4ODQ4MjIwMV19
 -->
