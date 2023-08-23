@@ -176,6 +176,7 @@ For this to work, several alterations to the split point evaluation and the form
 
 In the proposed solution, there are two main alteration concepts to the original solution.
 
+
  1. Each of the vertices gets assigned a space bounded by ranges.
  2. The split point is in the middle of the given feature's *range*.
  3. The input observations are only used to detect leaves.
@@ -360,11 +361,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkyMTUwNDcsLTE1Njk4NzQwMzIsODQ1Mj
-UyODE0LC0xOTg5MjkzODQwLDExMDkyODUyMDYsMjEwMTc1NDgx
-LDI1MzcwMTMzNCwtMTU3Mjg0ODc5MywxOTYzMDE2MTc3LC04Nj
-AxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkwNDUzMywyMDk2ODY5
-MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3MzQyLC0xNzk3MTQ2MT
-M2LDEzNTE0MjI3NzQsLTEzNTQ4MzIwMzIsLTE0MDg2ODA4Miwx
-ODY1ODE2MDAwXX0=
+eyJoaXN0b3J5IjpbMTA1Mjc3OTc2NSwtMTU2OTg3NDAzMiw4ND
+UyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0
+ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLT
+g2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLDIwOTY4
+NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1NzczNDIsLTE3OTcxND
+YxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwtMTQwODY4MDgy
+LDE4NjU4MTYwMDBdfQ==
 -->
