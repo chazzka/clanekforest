@@ -180,9 +180,9 @@ In the proposed solution, there are two main alteration concepts to the original
  2. The split point is in the middle of the given feature's *range*.
 
 
-Every problem starts with a user-defined set of observations. 
+Every problem starts with a user-defined space of observations. 
 These observations are fed into the forest as datapoints.
-The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given problem. 
+The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given observations. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
 
@@ -358,11 +358,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTM2MjE2NTIsLTE5ODkyOTM4NDAsMT
-EwOTI4NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4
-NzkzLDE5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5Mi
-wxNjIzOTA0NTMzLDIwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0
-NDQ1NzczNDIsLTE3OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1ND
-gzMjAzMiwtMTQwODY4MDgyLDE4NjU4MTYwMDAsLTg5MTkyMzI4
-NCwtMjAyMjkzOTUyOV19
+eyJoaXN0b3J5IjpbODQ1MjUyODE0LC0xOTg5MjkzODQwLDExMD
+kyODUyMDYsMjEwMTc1NDgxLDI1MzcwMTMzNCwtMTU3Mjg0ODc5
+MywxOTYzMDE2MTc3LC04NjAxNjM3OTEsLTE5NjA3MDk5OTIsMT
+YyMzkwNDUzMywyMDk2ODY5MzcxLC0xMTgyNzg4MTI2LC0xNDQ0
+NTc3MzQyLC0xNzk3MTQ2MTM2LDEzNTE0MjI3NzQsLTEzNTQ4Mz
+IwMzIsLTE0MDg2ODA4MiwxODY1ODE2MDAwLC04OTE5MjMyODQs
+LTIwMjI5Mzk1MjldfQ==
 -->
