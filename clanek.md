@@ -187,10 +187,11 @@ Basis step
  $$R =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
 
 
-Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \} d_i \in R$.
+Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 
-Every problem starts with a user-defined space of observations. 
-These observations are fed into the forest as datapoints.
+Recursive step
+ : 
+
 The evaluation of a range starts by selecting some initial (either random or user-defined) range for each feature of the given observations. 
 This range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
 
@@ -366,7 +367,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDMyNDY1MjQsMTA1Mjc3OTc2NSwtMT
+eyJoaXN0b3J5IjpbLTE0NzUyMDIwODAsMTA1Mjc3OTc2NSwtMT
 U2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4
 NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLD
 E5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIz
