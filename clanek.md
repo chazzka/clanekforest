@@ -174,10 +174,6 @@ The proposed solution is altering the concept of the split point evaluation.
 Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on a range.
 For this to work, several alterations to the split point evaluation and the form of data passed between nodes has to be done however, the overall concept of the forest stays the same. 
 
-This is demonstrated by a new service (TODO: odkaz) which was created by modifying the standard the Isolation Forest implementation in [odkaz na kapitolu].
- 
- We encourage you to try it and maybe create your own service based on our already implemented ones.
-
  The Novelty service is making two main alteration concepts:
  
  1. For each of the features, Isolation Forest was added a *range*.
@@ -238,6 +234,7 @@ Using above defined functions, the range is generated for each of the dimensions
 -------------------------------------------------------------------
 
 ##### Implementation
+
 For the ease of implementing and experimenting, we created a Ruby Gem implementing the Isolation Forest algorithm. It is open-source and available online at.
 - [ ] TODO: šup sem odkaz na ruby algoritmus s dokumentací
 
@@ -359,11 +356,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5Nj
-MwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0
-NTMzLDIwOTY4NjkzNzEsLTExODI3ODgxMjYsLTE0NDQ1NzczND
-IsLTE3OTcxNDYxMzYsMTM1MTQyMjc3NCwtMTM1NDgzMjAzMiwt
-MTQwODY4MDgyLDE4NjU4MTYwMDAsLTg5MTkyMzI4NCwtMjAyMj
-kzOTUyOSwtMTA1OTU4NzQ5MSwxMjg4NDgyMjAxLC0xMjQ0MTc3
-MzA1LC02MDg2NDgxMTVdfQ==
+eyJoaXN0b3J5IjpbMjE5MDg1MTIxLDI1MzcwMTMzNCwtMTU3Mj
+g0ODc5MywxOTYzMDE2MTc3LC04NjAxNjM3OTEsLTE5NjA3MDk5
+OTIsMTYyMzkwNDUzMywyMDk2ODY5MzcxLC0xMTgyNzg4MTI2LC
+0xNDQ0NTc3MzQyLC0xNzk3MTQ2MTM2LDEzNTE0MjI3NzQsLTEz
+NTQ4MzIwMzIsLTE0MDg2ODA4MiwxODY1ODE2MDAwLC04OTE5Mj
+MyODQsLTIwMjI5Mzk1MjksLTEwNTk1ODc0OTEsMTI4ODQ4MjIw
+MSwtMTI0NDE3NzMwNV19
 -->
