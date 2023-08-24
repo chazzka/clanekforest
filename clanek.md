@@ -207,9 +207,8 @@ $$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{(v, v_l), (v,v_r)\} \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx}$$
 
 
- Let $v_l$ be the left leaf of $v$ and $v_r$ right leaf of $v$.  The possibility space $R_{vl} = f$  
+ Let $v_l$ be the left leaf of $v$ and $v_r$ right leaf of $v$. 
  
- Next possibility space $R_l$ is obtained as  
  
 The splint point $S$ is obtained as the middle of the range $r=\langle R_s, R_e\rangle$ as in (6). 
 
@@ -387,11 +386,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU1MTU3MjE5LC0xNzg4MzkzNjA4LDE3Nj
-M1MDYxMDAsLTE5NTYzNjE4MTgsLTE5NjM4NDg3NjIsNjQxNDk2
-Mjg4LC0xMzE2NzM5NjE2LDE5NzEyODQzNDAsOTkwNjkwOTI3LD
-EwMDQ0ODUzNTYsLTY3NzY2MDQxMywtMTcwMDUxNjQ1OSwtMTA2
-NjA2OTk2OSwxMDUyNzc5NzY1LC0xNTY5ODc0MDMyLDg0NTI1Mj
-gxNCwtMTk4OTI5Mzg0MCwxMTA5Mjg1MjA2LDIxMDE3NTQ4MSwy
-NTM3MDEzMzRdfQ==
+eyJoaXN0b3J5IjpbNTI2OTE4MDA2LDU1NTE1NzIxOSwtMTc4OD
+M5MzYwOCwxNzYzNTA2MTAwLC0xOTU2MzYxODE4LC0xOTYzODQ4
+NzYyLDY0MTQ5NjI4OCwtMTMxNjczOTYxNiwxOTcxMjg0MzQwLD
+k5MDY5MDkyNywxMDA0NDg1MzU2LC02Nzc2NjA0MTMsLTE3MDA1
+MTY0NTksLTEwNjYwNjk5NjksMTA1Mjc3OTc2NSwtMTU2OTg3ND
+AzMiw4NDUyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4NTIwNiwy
+MTAxNzU0ODFdfQ==
 -->
