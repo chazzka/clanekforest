@@ -193,7 +193,7 @@ Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 ##### Recursive step
 pro každý list: 
 
-for each leaf v not satisftining the ending condition create two new vertices $v_l, v_r$ and same amount of edges.as in (xx).
+for each leaf v not satisftining the ending condition create two new vertices $v_l, v_r$ and same amount of edges $(v,v_l ), (v, v_r)$ as in (xx).
 $$fds$$
  
 internal vertex vT, 
@@ -371,11 +371,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5ODA4OTM3MSwxOTcxMjg0MzQwLDk5MD
-Y5MDkyNywxMDA0NDg1MzU2LC02Nzc2NjA0MTMsLTE3MDA1MTY0
-NTksLTEwNjYwNjk5NjksMTA1Mjc3OTc2NSwtMTU2OTg3NDAzMi
-w4NDUyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4NTIwNiwyMTAx
-NzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4NzkzLDE5NjMwMTYxNz
-csLTg2MDE2Mzc5MSwtMTk2MDcwOTk5MiwxNjIzOTA0NTMzLDIw
-OTY4NjkzNzFdfQ==
+eyJoaXN0b3J5IjpbODkyNTIwODAxLDE5NzEyODQzNDAsOTkwNj
+kwOTI3LDEwMDQ0ODUzNTYsLTY3NzY2MDQxMywtMTcwMDUxNjQ1
+OSwtMTA2NjA2OTk2OSwxMDUyNzc5NzY1LC0xNTY5ODc0MDMyLD
+g0NTI1MjgxNCwtMTk4OTI5Mzg0MCwxMTA5Mjg1MjA2LDIxMDE3
+NTQ4MSwyNTM3MDEzMzQsLTE1NzI4NDg3OTMsMTk2MzAxNjE3Ny
+wtODYwMTYzNzkxLC0xOTYwNzA5OTkyLDE2MjM5MDQ1MzMsMjA5
+Njg2OTM3MV19
 -->
