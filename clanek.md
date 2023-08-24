@@ -207,15 +207,6 @@ $$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{(v, v_l), (v,v_r)\} \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx}$$
 
  
- - [ ] TODO: vyřešsme splitpoint
-In Tj+1, v becomes an internal vertex $v_j \mapsto (f)$, where $f$ is the mapping $f \colon $
- 
-1.  splňuje koncovou podmínku, dopočítej depth
-2. nesplňuje, z listu udělej internal vertex, který si bude nést rozhodovací podmínku a bude mít dva nové listy, 
-
-opakuj dokud všechny listy nesplňují podmínku
-
- 
 In each construction step, the random feature's range is obtained. 
 The splint point $S$ is obtained as the middle of the range $r=\langle R_s, R_e\rangle$ as in (6). 
 
@@ -226,9 +217,18 @@ generating two ranges $r_l = \langle R_s, S )$; $r_r = \langle  S, R_e \rangle$ 
 $$B_l  = \{ x \in B; x \in r_l \}; \quad B_r  = \{ x \in B; x \in r_r \} \tag{7}$$
 
 
-This process is recursively repeated for each of the branches of a tree.
 The left branch gets assigned new batch $B_l$ and a new range $r_l$ and the information about current depth $d + 1$.
 Analogously, the right branch gets assigned new batch $B_r$ and a new range $r_r$ with the information about current depth.
+
+ - [ ] TODO: vyřešsme splitpoint
+In Tj+1, v becomes an internal vertex $v_j \mapsto (f)$, where $f$ is the mapping $f \colon $
+
+ 
+1.  splňuje koncovou podmínku, dopočítej depth
+2. nesplňuje, z listu udělej internal vertex, který si bude nést rozhodovací podmínku a bude mít dva nové listy, 
+
+opakuj dokud všechny listy nesplňují podmínku
+
 
 
 #begin další článek
@@ -384,11 +384,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzQ4ODY3MTUsMTc2MzUwNjEwMCwtMT
-k1NjM2MTgxOCwtMTk2Mzg0ODc2Miw2NDE0OTYyODgsLTEzMTY3
-Mzk2MTYsMTk3MTI4NDM0MCw5OTA2OTA5MjcsMTAwNDQ4NTM1Ni
-wtNjc3NjYwNDEzLC0xNzAwNTE2NDU5LC0xMDY2MDY5OTY5LDEw
-NTI3Nzk3NjUsLTE1Njk4NzQwMzIsODQ1MjUyODE0LC0xOTg5Mj
-kzODQwLDExMDkyODUyMDYsMjEwMTc1NDgxLDI1MzcwMTMzNCwt
-MTU3Mjg0ODc5M119
+eyJoaXN0b3J5IjpbMjcyNTU4ODAzLDE3NjM1MDYxMDAsLTE5NT
+YzNjE4MTgsLTE5NjM4NDg3NjIsNjQxNDk2Mjg4LC0xMzE2NzM5
+NjE2LDE5NzEyODQzNDAsOTkwNjkwOTI3LDEwMDQ0ODUzNTYsLT
+Y3NzY2MDQxMywtMTcwMDUxNjQ1OSwtMTA2NjA2OTk2OSwxMDUy
+Nzc5NzY1LC0xNTY5ODc0MDMyLDg0NTI1MjgxNCwtMTk4OTI5Mz
+g0MCwxMTA5Mjg1MjA2LDIxMDE3NTQ4MSwyNTM3MDEzMzQsLTE1
+NzI4NDg3OTNdfQ==
 -->
