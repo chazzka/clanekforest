@@ -200,7 +200,7 @@ Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 The steps to reach the tree $T_{j+1}$ from $T_{j}$ are as follows:
 
 Let $L_j \subseteq V_j$ be a subset of leaves not satisfying the ending condition.
-For each leaf $v \in L_j$ create two new vertices $v_l, v_r$ and same amount of edges $(v,v_l ), (v, ßv_r)$ as in (x...xxx).
+For each leaf $v \in L_j$ create two new vertices $v_l, v_r$ and same amount of edges $(v,v_l ), (v, v_r)$ as in (x...xxx).
 
 $$V_{j+1} = V_j \cup \bigcup_{v \in L_j} \{v_l, v_r\} \tag{x}$$
 $$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{(v, v_l), (v,v_r)\} \tag{xx}$$
@@ -382,7 +382,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODk2MjQ1OTcsNjQxNDk2Mjg4LC0xMz
+eyJoaXN0b3J5IjpbLTE5NjM4NDg3NjIsNjQxNDk2Mjg4LC0xMz
 E2NzM5NjE2LDE5NzEyODQzNDAsOTkwNjkwOTI3LDEwMDQ0ODUz
 NTYsLTY3NzY2MDQxMywtMTcwMDUxNjQ1OSwtMTA2NjA2OTk2OS
 wxMDUyNzc5NzY1LC0xNTY5ODc0MDMyLDg0NTI1MjgxNCwtMTk4
