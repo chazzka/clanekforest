@@ -188,7 +188,8 @@ Each range should be reasonable enough to allow all the domain space to be separ
 ##### Basis step
 The only root vertex $r$ is a trivial binary tree $T_0$ with vertices $V_0 = \{r\}$ and edges $E_0 = \emptyset$, i.e.
 $$T_0= (V_0, E_0) = (\{r\},\emptyset).$$ 
-For each $i \in\{1, \dots, n\}$$
+
+For each $i \in\{1, \dots, n\}$
 , feature $f_i$ is bounded by the range $r_i$. The ranges form the possibility space $R$ as in (xx). 
 $$R =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
 Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
@@ -374,7 +375,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjQxNzQ5MTAsMTk3MTI4NDM0MCw5OT
+eyJoaXN0b3J5IjpbLTEzMTY3Mzk2MTYsMTk3MTI4NDM0MCw5OT
 A2OTA5MjcsMTAwNDQ4NTM1NiwtNjc3NjYwNDEzLC0xNzAwNTE2
 NDU5LC0xMDY2MDY5OTY5LDEwNTI3Nzk3NjUsLTE1Njk4NzQwMz
 IsODQ1MjUyODE0LC0xOTg5MjkzODQwLDExMDkyODUyMDYsMjEw
