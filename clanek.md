@@ -188,6 +188,10 @@ Each range should be reasonable enough to allow all the domain space to be separ
 
 - [ ] TODO: what is ending condition?
 
+Jak dostat D do leafu abychom mohli ukoncit?
+
+jak popsat konstrukci stromu abychom vysvetlili propagaci ranges a subspace?
+
 
 
 Let us construct the decision tree such that:
@@ -399,11 +403,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM1MjAxNjgwLC02NDEzMzc0MjAsMTk1Nz
-Y3Mzc4LDUyNjkxODAwNiw1NTUxNTcyMTksLTE3ODgzOTM2MDgs
-MTc2MzUwNjEwMCwtMTk1NjM2MTgxOCwtMTk2Mzg0ODc2Miw2ND
-E0OTYyODgsLTEzMTY3Mzk2MTYsMTk3MTI4NDM0MCw5OTA2OTA5
-MjcsMTAwNDQ4NTM1NiwtNjc3NjYwNDEzLC0xNzAwNTE2NDU5LC
-0xMDY2MDY5OTY5LDEwNTI3Nzk3NjUsLTE1Njk4NzQwMzIsODQ1
-MjUyODE0XX0=
+eyJoaXN0b3J5IjpbMjAxNzczMTM3NywtNjQxMzM3NDIwLDE5NT
+c2NzM3OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC0xNzg4MzkzNjA4
+LDE3NjM1MDYxMDAsLTE5NTYzNjE4MTgsLTE5NjM4NDg3NjIsNj
+QxNDk2Mjg4LC0xMzE2NzM5NjE2LDE5NzEyODQzNDAsOTkwNjkw
+OTI3LDEwMDQ0ODUzNTYsLTY3NzY2MDQxMywtMTcwMDUxNjQ1OS
+wtMTA2NjA2OTk2OSwxMDUyNzc5NzY1LC0xNTY5ODc0MDMyLDg0
+NTI1MjgxNF19
 -->
