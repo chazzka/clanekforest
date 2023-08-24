@@ -187,8 +187,8 @@ Each range should be reasonable enough to allow all the domain space to be separ
 - [ ] TODO: what is ending condition?
 
 ##### Basis step
-The only root vertex $r$ is a trivial binary tree $T_0$ with vertices $V_0 = \{r\}$ and edges $E_0 = \emptyset$, i.e.
-$$T_0= (V_0, E_0) = (\{r\},\emptyset).$$ 
+The only root vertex $v$ is a trivial binary tree $T_0$ with vertices $V_0 = \{v\}$ and edges $E_0 = \emptyset$, i.e.
+$$T_0= (V_0, E_0) = (\{v\},\emptyset).$$ 
 
 For each $i \in\{1, \dots, n\}$
 , feature $f_i$ is bounded by the range $r_i$. The ranges form the possibility space $R_0$ as in (xx). 
@@ -207,7 +207,7 @@ $$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{(v, v_l), (v,v_r)\} \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx}$$
 
  
- Next possibility space $R_j$ is obtained as 
+ Next possibility space $R_{j}$ is obtained as 
  
 The splint point $S$ is obtained as the middle of the range $r=\langle R_s, R_e\rangle$ as in (6). 
 
@@ -385,7 +385,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1Nzg0MTIzNiwxNzYzNTA2MTAwLC0xOT
+eyJoaXN0b3J5IjpbMTYyMzg3NTQyOCwxNzYzNTA2MTAwLC0xOT
 U2MzYxODE4LC0xOTYzODQ4NzYyLDY0MTQ5NjI4OCwtMTMxNjcz
 OTYxNiwxOTcxMjg0MzQwLDk5MDY5MDkyNywxMDA0NDg1MzU2LC
 02Nzc2NjA0MTMsLTE3MDA1MTY0NTksLTEwNjYwNjk5NjksMTA1
