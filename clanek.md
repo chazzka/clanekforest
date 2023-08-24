@@ -196,10 +196,9 @@ Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 
 ##### Recursive step
  
+The steps to reach the tree $T_{j+1}$ from $T_{j}$ are as follows:
+
 Let $L_j \subseteq V_j$ be a subset of leaves satisfying the ending condition.
-
-The steps to reach $T_{j+1}$ from 
-
 For each leaf $v \in L_j$ create two new vertices $v_l, v_r$ and same amount of edges $(v,v_l ), (v, v_r)$.
 
 $$V_{j+1} = V_j \cup \bigcup_{v \in L_j} \{v_l, v_r\} \tag{xx}$$
@@ -382,7 +381,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNjY2NTgyOSw2NDE0OTYyODgsLTEzMT
+eyJoaXN0b3J5IjpbMTU0OTUzMDY0Myw2NDE0OTYyODgsLTEzMT
 Y3Mzk2MTYsMTk3MTI4NDM0MCw5OTA2OTA5MjcsMTAwNDQ4NTM1
 NiwtNjc3NjYwNDEzLC0xNzAwNTE2NDU5LC0xMDY2MDY5OTY5LD
 EwNTI3Nzk3NjUsLTE1Njk4NzQwMzIsODQ1MjUyODE0LC0xOTg5
