@@ -207,7 +207,7 @@ $$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{(v, v_l), (v,v_r)\} \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx}$$
 
  
-In Tj+1, v becomes an internal vertex $v_j \mapsto (S, )$, 
+In Tj+1, v becomes an internal vertex $v_j \mapsto (fun)$, where $fun$ is the map
  
 1.  splňuje koncovou podmínku, dopočítej depth
 2. nesplňuje, z listu udělej internal vertex, který si bude nést rozhodovací podmínku a bude mít dva nové listy, 
@@ -383,7 +383,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NzM3ODY5NywxNzYzNTA2MTAwLC0xOT
+eyJoaXN0b3J5IjpbLTY3NzM2NzUzMCwxNzYzNTA2MTAwLC0xOT
 U2MzYxODE4LC0xOTYzODQ4NzYyLDY0MTQ5NjI4OCwtMTMxNjcz
 OTYxNiwxOTcxMjg0MzQwLDk5MDY5MDkyNywxMDA0NDg1MzU2LC
 02Nzc2NjA0MTMsLTE3MDA1MTY0NTksLTEwNjYwNjk5NjksMTA1
