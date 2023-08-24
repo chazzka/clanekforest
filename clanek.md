@@ -192,7 +192,7 @@ Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 
 ##### Recursive step
 pro každý list: 
-
+internal vertex vT, 
 1.  splňuje koncovou podmínku, dopočítej depth
 2. nesplňuje, z listu udělej internal vertex, který si bude nést rozhodovací podmínku a bude mít dva nové listy, 
 
@@ -367,11 +367,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkwNjkwOTI3LDEwMDQ0ODUzNTYsLTY3Nz
-Y2MDQxMywtMTcwMDUxNjQ1OSwtMTA2NjA2OTk2OSwxMDUyNzc5
-NzY1LC0xNTY5ODc0MDMyLDg0NTI1MjgxNCwtMTk4OTI5Mzg0MC
-wxMTA5Mjg1MjA2LDIxMDE3NTQ4MSwyNTM3MDEzMzQsLTE1NzI4
-NDg3OTMsMTk2MzAxNjE3NywtODYwMTYzNzkxLC0xOTYwNzA5OT
-kyLDE2MjM5MDQ1MzMsMjA5Njg2OTM3MSwtMTE4Mjc4ODEyNiwt
-MTQ0NDU3NzM0Ml19
+eyJoaXN0b3J5IjpbMTk3MTg3NTYyMCw5OTA2OTA5MjcsMTAwND
+Q4NTM1NiwtNjc3NjYwNDEzLC0xNzAwNTE2NDU5LC0xMDY2MDY5
+OTY5LDEwNTI3Nzk3NjUsLTE1Njk4NzQwMzIsODQ1MjUyODE0LC
+0xOTg5MjkzODQwLDExMDkyODUyMDYsMjEwMTc1NDgxLDI1Mzcw
+MTMzNCwtMTU3Mjg0ODc5MywxOTYzMDE2MTc3LC04NjAxNjM3OT
+EsLTE5NjA3MDk5OTIsMTYyMzkwNDUzMywyMDk2ODY5MzcxLC0x
+MTgyNzg4MTI2XX0=
 -->
