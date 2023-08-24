@@ -188,6 +188,11 @@ Each range should be reasonable enough to allow all the domain space to be separ
 
 - [ ] TODO: what is ending condition?
 
+
+In the following we suppose an Euclidean type of space.
+
+- [ ] TODO: tady POKRACUJ
+
 Jak dostat D do leafu abychom mohli ukoncit? - nemusime nic delit, proste jen rekneme ze to konci pokud ten space odpovida ukoncovaci podmince
 
 jak popsat konstrukci stromu abychom vysvetlili propagaci ranges a subspace?
@@ -404,7 +409,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNTEzODI2NiwxNTEyNjAyOTkzLDIwMT
+eyJoaXN0b3J5IjpbLTQ2MjI5MzM3MCwxNTEyNjAyOTkzLDIwMT
 c3MzEzNzcsLTY0MTMzNzQyMCwxOTU3NjczNzgsNTI2OTE4MDA2
 LDU1NTE1NzIxOSwtMTc4ODM5MzYwOCwxNzYzNTA2MTAwLC0xOT
 U2MzYxODE4LC0xOTYzODQ4NzYyLDY0MTQ5NjI4OCwtMTMxNjcz
