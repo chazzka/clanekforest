@@ -198,7 +198,7 @@ Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 pro každý list: 
 
 for each leaf $v \in V_j$ not satanistčin the ending condition create two new vertices $v_l, v_r$ and same amount of edges $(v,v_l ), (v, v_r)$ as in (xx).
-$$v_{n}, E_{v} = [V_0 \cup \{v_l, v_r\}, E_0 \cup \{(v,v_l ), (v, v_r)\}]$$
+$$v_{n+1}= [v_n \cup \{v_l, v_r\}, E_0 \cup \{(v,v_l ), (v, v_r)\}]$$
  
 internal vertex vT, 
 1.  splňuje koncovou podmínku, dopočítej depth
@@ -375,11 +375,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NTYxMTAyMCwtMTMxNjczOTYxNiwxOT
-cxMjg0MzQwLDk5MDY5MDkyNywxMDA0NDg1MzU2LC02Nzc2NjA0
-MTMsLTE3MDA1MTY0NTksLTEwNjYwNjk5NjksMTA1Mjc3OTc2NS
-wtMTU2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODkyOTM4NDAsMTEw
-OTI4NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC0xNTcyODQ4Nz
-kzLDE5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2MDcwOTk5Miwx
-NjIzOTA0NTMzXX0=
+eyJoaXN0b3J5IjpbNjQxNDk2Mjg4LC0xMzE2NzM5NjE2LDE5Nz
+EyODQzNDAsOTkwNjkwOTI3LDEwMDQ0ODUzNTYsLTY3NzY2MDQx
+MywtMTcwMDUxNjQ1OSwtMTA2NjA2OTk2OSwxMDUyNzc5NzY1LC
+0xNTY5ODc0MDMyLDg0NTI1MjgxNCwtMTk4OTI5Mzg0MCwxMTA5
+Mjg1MjA2LDIxMDE3NTQ4MSwyNTM3MDEzMzQsLTE1NzI4NDg3OT
+MsMTk2MzAxNjE3NywtODYwMTYzNzkxLC0xOTYwNzA5OTkyLDE2
+MjM5MDQ1MzNdfQ==
 -->
