@@ -207,7 +207,7 @@ $$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{(v, v_l), (v,v_r)\} \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx}$$
 
 
- Let $v_l$ be the left leaf of $v$ and $v_r$ right leaf of $v$. $R_{i+1} = $  
+ Let $v_l$ be the left leaf of $v$ and $v_r$ right leaf of $v$.  The possibility space $R_{vl} = f$  
  
  Next possibility space $R_l$ is obtained as  
  
@@ -387,7 +387,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI4ODY5Mjk4LC0xNzg4MzkzNjA4LDE3Nj
+eyJoaXN0b3J5IjpbNTU1MTU3MjE5LC0xNzg4MzkzNjA4LDE3Nj
 M1MDYxMDAsLTE5NTYzNjE4MTgsLTE5NjM4NDg3NjIsNjQxNDk2
 Mjg4LC0xMzE2NzM5NjE2LDE5NzEyODQzNDAsOTkwNjkwOTI3LD
 EwMDQ0ODUzNTYsLTY3NzY2MDQxMywtMTcwMDUxNjQ1OSwtMTA2
