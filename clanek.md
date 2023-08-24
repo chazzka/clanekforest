@@ -189,7 +189,8 @@ Each range should be reasonable enough to allow all the domain space to be separ
 - [ ] TODO: what is ending condition?
 
 Let us construct the decision tree such that:
--  leaves (external vertices) $L \subseteq V$contain the possibility space $R$ and a subset $D$ of all datapoints $D \in R$.
+-  leaves (external vertices) $L \subseteq V$contain the possibility space $R$ and a subset $D$ of all datapoints. 
+Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$..
 -  internal vertices contain the decison function $f$ as in (x).
 
 $$f = $$
@@ -204,7 +205,7 @@ $$T_0= (V_0, E_0) = (\{v\},\emptyset).$$
 For each $i \in\{1, \dots, n\}$
 , feature $f_i$ is bounded by the range $r_i$. The ranges form the possibility space $R_0$ as in (xx). 
 $$R_0 =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
-Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
+
 
 ##### Recursive step
  
@@ -397,11 +398,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTM0MjE2ODUsNTI2OTE4MDA2LDU1NT
-E1NzIxOSwtMTc4ODM5MzYwOCwxNzYzNTA2MTAwLC0xOTU2MzYx
-ODE4LC0xOTYzODQ4NzYyLDY0MTQ5NjI4OCwtMTMxNjczOTYxNi
-wxOTcxMjg0MzQwLDk5MDY5MDkyNywxMDA0NDg1MzU2LC02Nzc2
-NjA0MTMsLTE3MDA1MTY0NTksLTEwNjYwNjk5NjksMTA1Mjc3OT
-c2NSwtMTU2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODkyOTM4NDAs
-MTEwOTI4NTIwNl19
+eyJoaXN0b3J5IjpbMTYwNjAyNzIyNiw1MjY5MTgwMDYsNTU1MT
+U3MjE5LC0xNzg4MzkzNjA4LDE3NjM1MDYxMDAsLTE5NTYzNjE4
+MTgsLTE5NjM4NDg3NjIsNjQxNDk2Mjg4LC0xMzE2NzM5NjE2LD
+E5NzEyODQzNDAsOTkwNjkwOTI3LDEwMDQ0ODUzNTYsLTY3NzY2
+MDQxMywtMTcwMDUxNjQ1OSwtMTA2NjA2OTk2OSwxMDUyNzc5Nz
+Y1LC0xNTY5ODc0MDMyLDg0NTI1MjgxNCwtMTk4OTI5Mzg0MCwx
+MTA5Mjg1MjA2XX0=
 -->
