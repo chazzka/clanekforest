@@ -189,10 +189,10 @@ Each range should be reasonable enough to allow all the domain space to be separ
 - [ ] TODO: what is ending condition?
 
 Let us construct the decision tree such that:
--  leaves (external vertices) contain the possibility space and a subset $D$ of all datapoints.
--  internal vertices contain the possibility space and the decison function $f$ as in (x).
+-  leaves (external vertices) $L \subseteqV$contain the possibility space and a subset $D$ of all datapoints.
+-  internal vertices contain the decison function $f$ as in (x).
 
-$$f $$
+$$f = $$
 
 Let $l$ be the leaf of the tree such that it contains space and D.
 
@@ -397,11 +397,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNzgxMDc1OCw1MjY5MTgwMDYsNTU1MT
-U3MjE5LC0xNzg4MzkzNjA4LDE3NjM1MDYxMDAsLTE5NTYzNjE4
-MTgsLTE5NjM4NDg3NjIsNjQxNDk2Mjg4LC0xMzE2NzM5NjE2LD
-E5NzEyODQzNDAsOTkwNjkwOTI3LDEwMDQ0ODUzNTYsLTY3NzY2
-MDQxMywtMTcwMDUxNjQ1OSwtMTA2NjA2OTk2OSwxMDUyNzc5Nz
-Y1LC0xNTY5ODc0MDMyLDg0NTI1MjgxNCwtMTk4OTI5Mzg0MCwx
-MTA5Mjg1MjA2XX0=
+eyJoaXN0b3J5IjpbLTEzNTY0MjMyMTgsNTI2OTE4MDA2LDU1NT
+E1NzIxOSwtMTc4ODM5MzYwOCwxNzYzNTA2MTAwLC0xOTU2MzYx
+ODE4LC0xOTYzODQ4NzYyLDY0MTQ5NjI4OCwtMTMxNjczOTYxNi
+wxOTcxMjg0MzQwLDk5MDY5MDkyNywxMDA0NDg1MzU2LC02Nzc2
+NjA0MTMsLTE3MDA1MTY0NTksLTEwNjYwNjk5NjksMTA1Mjc3OT
+c2NSwtMTU2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODkyOTM4NDAs
+MTEwOTI4NTIwNl19
 -->
