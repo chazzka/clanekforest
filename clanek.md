@@ -207,7 +207,8 @@ $$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{(v, v_l), (v,v_r)\} \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx}$$
 
  
-internal vertex vT, 
+In Tj+1
+ 
 1.  splňuje koncovou podmínku, dopočítej depth
 2. nesplňuje, z listu udělej internal vertex, který si bude nést rozhodovací podmínku a bude mít dva nové listy, 
 
@@ -382,11 +383,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTYzNjE4MTgsLTE5NjM4NDg3NjIsNj
-QxNDk2Mjg4LC0xMzE2NzM5NjE2LDE5NzEyODQzNDAsOTkwNjkw
-OTI3LDEwMDQ0ODUzNTYsLTY3NzY2MDQxMywtMTcwMDUxNjQ1OS
-wtMTA2NjA2OTk2OSwxMDUyNzc5NzY1LC0xNTY5ODc0MDMyLDg0
-NTI1MjgxNCwtMTk4OTI5Mzg0MCwxMTA5Mjg1MjA2LDIxMDE3NT
-Q4MSwyNTM3MDEzMzQsLTE1NzI4NDg3OTMsMTk2MzAxNjE3Nywt
-ODYwMTYzNzkxXX0=
+eyJoaXN0b3J5IjpbMTg2NjQwNzM4NiwtMTk1NjM2MTgxOCwtMT
+k2Mzg0ODc2Miw2NDE0OTYyODgsLTEzMTY3Mzk2MTYsMTk3MTI4
+NDM0MCw5OTA2OTA5MjcsMTAwNDQ4NTM1NiwtNjc3NjYwNDEzLC
+0xNzAwNTE2NDU5LC0xMDY2MDY5OTY5LDEwNTI3Nzk3NjUsLTE1
+Njk4NzQwMzIsODQ1MjUyODE0LC0xOTg5MjkzODQwLDExMDkyOD
+UyMDYsMjEwMTc1NDgxLDI1MzcwMTMzNCwtMTU3Mjg0ODc5Mywx
+OTYzMDE2MTc3XX0=
 -->
