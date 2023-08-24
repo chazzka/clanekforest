@@ -207,7 +207,7 @@ $$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{(v, v_l), (v,v_r)\} \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx}$$
 
  
-In Tj+1
+In Tj+1, v becomes an internal vertex, 
  
 1.  splňuje koncovou podmínku, dopočítej depth
 2. nesplňuje, z listu udělej internal vertex, který si bude nést rozhodovací podmínku a bude mít dva nové listy, 
@@ -383,7 +383,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NjQwNzM4NiwtMTk1NjM2MTgxOCwtMT
+eyJoaXN0b3J5IjpbMTc2MzUwNjEwMCwtMTk1NjM2MTgxOCwtMT
 k2Mzg0ODc2Miw2NDE0OTYyODgsLTEzMTY3Mzk2MTYsMTk3MTI4
 NDM0MCw5OTA2OTA5MjcsMTAwNDQ4NTM1NiwtNjc3NjYwNDEzLC
 0xNzAwNTE2NDU5LC0xMDY2MDY5OTY5LDEwNTI3Nzk3NjUsLTE1
