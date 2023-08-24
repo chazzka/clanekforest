@@ -186,7 +186,7 @@ Each range should be reasonable enough to allow all the domain space to be separ
 
 
 ##### Basis step
-The only vertex $v$ is a trivial binary tree. For each $i \in\{1, \dots, n\}$, feature $f_i$ is bounded by the range $r_i$. The ranges form the possibility space $R$ as in (xx). 
+The only vertex $v$ is a trivial binary tree $T_0$. For each $i \in\{1, \dots, n\}$, feature $f_i$ is bounded by the range $r_i$. The ranges form the possibility space $R$ as in (xx). 
 $$R =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
 Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 
@@ -367,11 +367,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDQ4NTM1NiwtNjc3NjYwNDEzLC0xNz
-AwNTE2NDU5LC0xMDY2MDY5OTY5LDEwNTI3Nzk3NjUsLTE1Njk4
-NzQwMzIsODQ1MjUyODE0LC0xOTg5MjkzODQwLDExMDkyODUyMD
-YsMjEwMTc1NDgxLDI1MzcwMTMzNCwtMTU3Mjg0ODc5MywxOTYz
-MDE2MTc3LC04NjAxNjM3OTEsLTE5NjA3MDk5OTIsMTYyMzkwND
-UzMywyMDk2ODY5MzcxLC0xMTgyNzg4MTI2LC0xNDQ0NTc3MzQy
-LC0xNzk3MTQ2MTM2XX0=
+eyJoaXN0b3J5IjpbOTkwNjkwOTI3LDEwMDQ0ODUzNTYsLTY3Nz
+Y2MDQxMywtMTcwMDUxNjQ1OSwtMTA2NjA2OTk2OSwxMDUyNzc5
+NzY1LC0xNTY5ODc0MDMyLDg0NTI1MjgxNCwtMTk4OTI5Mzg0MC
+wxMTA5Mjg1MjA2LDIxMDE3NTQ4MSwyNTM3MDEzMzQsLTE1NzI4
+NDg3OTMsMTk2MzAxNjE3NywtODYwMTYzNzkxLC0xOTYwNzA5OT
+kyLDE2MjM5MDQ1MzMsMjA5Njg2OTM3MSwtMTE4Mjc4ODEyNiwt
+MTQ0NDU3NzM0Ml19
 -->
