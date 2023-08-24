@@ -203,7 +203,7 @@ For each leaf $v \in L_j$ create two new vertices $v_l, v_r$ and same amount of 
 
 $$V_{j+1} = V_j \cup \bigcup_{v \in L_j} \{v_l, v_r\} \tag{xx}$$
 $$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{(v, v_l), (v,v_r)\} \tag{xx}$$
-
+$$T_{j+1} = (V_{j+1}, E_{j+1})$$
 
  
 internal vertex vT, 
@@ -381,11 +381,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1MDI3ODg4LDY0MTQ5NjI4OCwtMTMxNj
-czOTYxNiwxOTcxMjg0MzQwLDk5MDY5MDkyNywxMDA0NDg1MzU2
-LC02Nzc2NjA0MTMsLTE3MDA1MTY0NTksLTEwNjYwNjk5NjksMT
-A1Mjc3OTc2NSwtMTU2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODky
-OTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC
-0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2
-MDcwOTk5Ml19
+eyJoaXN0b3J5IjpbMTQzOTI2Nzk2NCw2NDE0OTYyODgsLTEzMT
+Y3Mzk2MTYsMTk3MTI4NDM0MCw5OTA2OTA5MjcsMTAwNDQ4NTM1
+NiwtNjc3NjYwNDEzLC0xNzAwNTE2NDU5LC0xMDY2MDY5OTY5LD
+EwNTI3Nzk3NjUsLTE1Njk4NzQwMzIsODQ1MjUyODE0LC0xOTg5
+MjkzODQwLDExMDkyODUyMDYsMjEwMTc1NDgxLDI1MzcwMTMzNC
+wtMTU3Mjg0ODc5MywxOTYzMDE2MTc3LC04NjAxNjM3OTEsLTE5
+NjA3MDk5OTJdfQ==
 -->
