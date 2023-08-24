@@ -200,9 +200,9 @@ pro každý list:
 Let $L_j \subseteq V_j$ be a subset of leaves satisfying the ending condition.
 
 $$V_{j+1} = V_j \cup \bigcup_{v \in L_j} \{v_l, v_r\} \tag{xx}$$
-$$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{v_l, v_r\} \tag{xx}$$
+$$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{(v, v_l), (v,v_r)\} \tag{xx}$$
 
-for each leaf $v \in V_j$ not satanistčin the ending condition create two new vertices $v_l, v_r$ and same amount of edges $(v,v_l ), (v, v_r)$ as in (xx).
+for each leaf $v \in L_j$ create two new vertices $v_l, v_r$ and same amount of edges $(v,v_l ), (v, v_r)$ as in (xx).
 $$v_{n+1}= [v_n \cup \{v_l, v_r\}, E_0 \cup \{(v,v_l ), (v, v_r)\}]$$
  
 internal vertex vT, 
@@ -380,11 +380,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzUxMjAxNTgsNjQxNDk2Mjg4LC0xMz
-E2NzM5NjE2LDE5NzEyODQzNDAsOTkwNjkwOTI3LDEwMDQ0ODUz
-NTYsLTY3NzY2MDQxMywtMTcwMDUxNjQ1OSwtMTA2NjA2OTk2OS
-wxMDUyNzc5NzY1LC0xNTY5ODc0MDMyLDg0NTI1MjgxNCwtMTk4
-OTI5Mzg0MCwxMTA5Mjg1MjA2LDIxMDE3NTQ4MSwyNTM3MDEzMz
-QsLTE1NzI4NDg3OTMsMTk2MzAxNjE3NywtODYwMTYzNzkxLC0x
-OTYwNzA5OTkyXX0=
+eyJoaXN0b3J5IjpbNDEwNjY4MjI3LDY0MTQ5NjI4OCwtMTMxNj
+czOTYxNiwxOTcxMjg0MzQwLDk5MDY5MDkyNywxMDA0NDg1MzU2
+LC02Nzc2NjA0MTMsLTE3MDA1MTY0NTksLTEwNjYwNjk5NjksMT
+A1Mjc3OTc2NSwtMTU2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODky
+OTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC
+0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2
+MDcwOTk5Ml19
 -->
