@@ -207,6 +207,7 @@ $$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{(v, v_l), (v,v_r)\} \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx}$$
 
  
+ - [ ] TODO: vyřešsme splitpoint
 In Tj+1, v becomes an internal vertex $v_j \mapsto (f)$, where $f$ is the mapping $f \colon $
  
 1.  splňuje koncovou podmínku, dopočítej depth
@@ -383,7 +384,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTYzMjM2OTksMTc2MzUwNjEwMCwtMT
+eyJoaXN0b3J5IjpbLTIwMzQ4ODY3MTUsMTc2MzUwNjEwMCwtMT
 k1NjM2MTgxOCwtMTk2Mzg0ODc2Miw2NDE0OTYyODgsLTEzMTY3
 Mzk2MTYsMTk3MTI4NDM0MCw5OTA2OTA5MjcsMTAwNDQ4NTM1Ni
 wtNjc3NjYwNDEzLC0xNzAwNTE2NDU5LC0xMDY2MDY5OTY5LDEw
