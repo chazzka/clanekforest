@@ -186,7 +186,7 @@ Each range should be reasonable enough to allow all the domain space to be separ
 
 - [ ] TODO: what is ending condition?
 
-Let $l$ 
+Let $l$ be the leaf of the tree such that it contains space and D.
 
 ##### Basis step
 The only root vertex $v$ is a trivial binary tree $T_0$ with vertices $V_0 = \{v\}$ and edges $E_0 = \emptyset$, i.e.
@@ -388,7 +388,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTczMTI4MDQxLDUyNjkxODAwNiw1NTUxNT
+eyJoaXN0b3J5IjpbNTMxMzU4ODk2LDUyNjkxODAwNiw1NTUxNT
 cyMTksLTE3ODgzOTM2MDgsMTc2MzUwNjEwMCwtMTk1NjM2MTgx
 OCwtMTk2Mzg0ODc2Miw2NDE0OTYyODgsLTEzMTY3Mzk2MTYsMT
 k3MTI4NDM0MCw5OTA2OTA5MjcsMTAwNDQ4NTM1NiwtNjc3NjYw
