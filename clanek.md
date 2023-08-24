@@ -206,9 +206,9 @@ $$V_{j+1} = V_j \cup \bigcup_{v \in L_j} \{v_l, v_r\} \tag{x}$$
 $$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{(v, v_l), (v,v_r)\} \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx}$$
 
- Let $v_l$ be the left leaf of and $v_r$ right leaf. 
+ Let $v_l$ be the left leaf of $v$ and $v_r$ right leaf of $v$.  
  
- Next possibility space $R_{j+1}$ is obtained as  
+ Next possibility space $R_l$ is obtained as  
  
 The splint point $S$ is obtained as the middle of the range $r=\langle R_s, R_e\rangle$ as in (6). 
 
@@ -386,7 +386,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NDQxMDE1MiwtMTc4ODM5MzYwOCwxNz
+eyJoaXN0b3J5IjpbLTg0MTMxOTU0MSwtMTc4ODM5MzYwOCwxNz
 YzNTA2MTAwLC0xOTU2MzYxODE4LC0xOTYzODQ4NzYyLDY0MTQ5
 NjI4OCwtMTMxNjczOTYxNiwxOTcxMjg0MzQwLDk5MDY5MDkyNy
 wxMDA0NDg1MzU2LC02Nzc2NjA0MTMsLTE3MDA1MTY0NTksLTEw
