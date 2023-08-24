@@ -197,6 +197,8 @@ Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 ##### Recursive step
 pro každý list: 
 
+Let $l$ be leaves satisfying the ending condition.
+$$\forall l, l \subseteq $$
 
 for each leaf $v \in V_j$ not satanistčin the ending condition create two new vertices $v_l, v_r$ and same amount of edges $(v,v_l ), (v, v_r)$ as in (xx).
 $$v_{n+1}= [v_n \cup \{v_l, v_r\}, E_0 \cup \{(v,v_l ), (v, v_r)\}]$$
@@ -376,7 +378,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NDg3ODc5OCw2NDE0OTYyODgsLTEzMT
+eyJoaXN0b3J5IjpbLTk5MjkzMTg5OCw2NDE0OTYyODgsLTEzMT
 Y3Mzk2MTYsMTk3MTI4NDM0MCw5OTA2OTA5MjcsMTAwNDQ4NTM1
 NiwtNjc3NjYwNDEzLC0xNzAwNTE2NDU5LC0xMDY2MDY5OTY5LD
 EwNTI3Nzk3NjUsLTE1Njk4NzQwMzIsODQ1MjUyODE0LC0xOTg5
