@@ -186,6 +186,8 @@ Each range should be reasonable enough to allow all the domain space to be separ
 
 - [ ] TODO: what is ending condition?
 
+Let $l$ 
+
 ##### Basis step
 The only root vertex $v$ is a trivial binary tree $T_0$ with vertices $V_0 = \{v\}$ and edges $E_0 = \emptyset$, i.e.
 $$T_0= (V_0, E_0) = (\{v\},\emptyset).$$ 
@@ -386,11 +388,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI2OTE4MDA2LDU1NTE1NzIxOSwtMTc4OD
-M5MzYwOCwxNzYzNTA2MTAwLC0xOTU2MzYxODE4LC0xOTYzODQ4
-NzYyLDY0MTQ5NjI4OCwtMTMxNjczOTYxNiwxOTcxMjg0MzQwLD
-k5MDY5MDkyNywxMDA0NDg1MzU2LC02Nzc2NjA0MTMsLTE3MDA1
-MTY0NTksLTEwNjYwNjk5NjksMTA1Mjc3OTc2NSwtMTU2OTg3ND
-AzMiw4NDUyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4NTIwNiwy
-MTAxNzU0ODFdfQ==
+eyJoaXN0b3J5IjpbOTczMTI4MDQxLDUyNjkxODAwNiw1NTUxNT
+cyMTksLTE3ODgzOTM2MDgsMTc2MzUwNjEwMCwtMTk1NjM2MTgx
+OCwtMTk2Mzg0ODc2Miw2NDE0OTYyODgsLTEzMTY3Mzk2MTYsMT
+k3MTI4NDM0MCw5OTA2OTA5MjcsMTAwNDQ4NTM1NiwtNjc3NjYw
+NDEzLC0xNzAwNTE2NDU5LC0xMDY2MDY5OTY5LDEwNTI3Nzk3Nj
+UsLTE1Njk4NzQwMzIsODQ1MjUyODE0LC0xOTg5MjkzODQwLDEx
+MDkyODUyMDZdfQ==
 -->
