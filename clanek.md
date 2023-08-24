@@ -193,7 +193,8 @@ Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 ##### Recursive step
 pro každý list: 
 
-for e
+for each leaf v not satisftining the ending condition create two new vertices as in (xx)
+$$fds$$
  
 internal vertex vT, 
 1.  splňuje koncovou podmínku, dopočítej depth
@@ -370,7 +371,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MzQ4ODk2MCwxOTcxMjg0MzQwLDk5MD
+eyJoaXN0b3J5IjpbMTgxMDMzNzk3NywxOTcxMjg0MzQwLDk5MD
 Y5MDkyNywxMDA0NDg1MzU2LC02Nzc2NjA0MTMsLTE3MDA1MTY0
 NTksLTEwNjYwNjk5NjksMTA1Mjc3OTc2NSwtMTU2OTg3NDAzMi
 w4NDUyNTI4MTQsLTE5ODkyOTM4NDAsMTEwOTI4NTIwNiwyMTAx
