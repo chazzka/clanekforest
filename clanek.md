@@ -188,7 +188,7 @@ Each range should be reasonable enough to allow all the domain space to be separ
 
 - [ ] TODO: what is ending condition?
 
-Jak dostat D do leafu abychom mohli ukoncit?
+Jak dostat D do leafu abychom mohli ukoncit? - nemusime nic delit, proste jen rekneme ze to konci pokud ten space odpovida ukoncovaci podmince
 
 jak popsat konstrukci stromu abychom vysvetlili propagaci ranges a subspace?
 
@@ -403,11 +403,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNzczMTM3NywtNjQxMzM3NDIwLDE5NT
-c2NzM3OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC0xNzg4MzkzNjA4
-LDE3NjM1MDYxMDAsLTE5NTYzNjE4MTgsLTE5NjM4NDg3NjIsNj
-QxNDk2Mjg4LC0xMzE2NzM5NjE2LDE5NzEyODQzNDAsOTkwNjkw
-OTI3LDEwMDQ0ODUzNTYsLTY3NzY2MDQxMywtMTcwMDUxNjQ1OS
-wtMTA2NjA2OTk2OSwxMDUyNzc5NzY1LC0xNTY5ODc0MDMyLDg0
-NTI1MjgxNF19
+eyJoaXN0b3J5IjpbMTUxMjYwMjk5MywyMDE3NzMxMzc3LC02ND
+EzMzc0MjAsMTk1NzY3Mzc4LDUyNjkxODAwNiw1NTUxNTcyMTks
+LTE3ODgzOTM2MDgsMTc2MzUwNjEwMCwtMTk1NjM2MTgxOCwtMT
+k2Mzg0ODc2Miw2NDE0OTYyODgsLTEzMTY3Mzk2MTYsMTk3MTI4
+NDM0MCw5OTA2OTA5MjcsMTAwNDQ4NTM1NiwtNjc3NjYwNDEzLC
+0xNzAwNTE2NDU5LC0xMDY2MDY5OTY5LDEwNTI3Nzk3NjUsLTE1
+Njk4NzQwMzJdfQ==
 -->
