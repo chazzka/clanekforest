@@ -191,8 +191,8 @@ The only root vertex $r$ is a trivial binary tree $T_0$ with vertices $V_0 = \{r
 $$T_0= (V_0, E_0) = (\{r\},\emptyset).$$ 
 
 For each $i \in\{1, \dots, n\}$
-, feature $f_i$ is bounded by the range $r_i$. The ranges form the possibility space $R$ as in (xx). 
-$$R =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
+, feature $f_i$ is bounded by the range $r_i$. The ranges form the possibility space $R_0$ as in (xx). 
+$$R_0 =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
 Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 
 ##### Recursive step
@@ -382,11 +382,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjM4NDg3NjIsNjQxNDk2Mjg4LC0xMz
-E2NzM5NjE2LDE5NzEyODQzNDAsOTkwNjkwOTI3LDEwMDQ0ODUz
-NTYsLTY3NzY2MDQxMywtMTcwMDUxNjQ1OSwtMTA2NjA2OTk2OS
-wxMDUyNzc5NzY1LC0xNTY5ODc0MDMyLDg0NTI1MjgxNCwtMTk4
-OTI5Mzg0MCwxMTA5Mjg1MjA2LDIxMDE3NTQ4MSwyNTM3MDEzMz
-QsLTE1NzI4NDg3OTMsMTk2MzAxNjE3NywtODYwMTYzNzkxLC0x
-OTYwNzA5OTkyXX0=
+eyJoaXN0b3J5IjpbLTE5NTYzNjE4MTgsLTE5NjM4NDg3NjIsNj
+QxNDk2Mjg4LC0xMzE2NzM5NjE2LDE5NzEyODQzNDAsOTkwNjkw
+OTI3LDEwMDQ0ODUzNTYsLTY3NzY2MDQxMywtMTcwMDUxNjQ1OS
+wtMTA2NjA2OTk2OSwxMDUyNzc5NzY1LC0xNTY5ODc0MDMyLDg0
+NTI1MjgxNCwtMTk4OTI5Mzg0MCwxMTA5Mjg1MjA2LDIxMDE3NT
+Q4MSwyNTM3MDEzMzQsLTE1NzI4NDg3OTMsMTk2MzAxNjE3Nywt
+ODYwMTYzNzkxXX0=
 -->
