@@ -192,7 +192,8 @@ Jak dostat D do leafu abychom mohli ukoncit? - nemusime nic delit, proste jen re
 
 jak popsat konstrukci stromu abychom vysvetlili propagaci ranges a subspace?
 
-
+vertices are Hyperrectangles
+pokud bod padne do hyperrectangle
 
 Let us construct the decision tree such that:
 -  leaves (external vertices) $L \subseteq V$contain the possibility space $R$ and a subset $D$ of all datapoints, such that $D = \{d; d \in R \}$.
@@ -403,11 +404,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMjYwMjk5MywyMDE3NzMxMzc3LC02ND
-EzMzc0MjAsMTk1NzY3Mzc4LDUyNjkxODAwNiw1NTUxNTcyMTks
-LTE3ODgzOTM2MDgsMTc2MzUwNjEwMCwtMTk1NjM2MTgxOCwtMT
-k2Mzg0ODc2Miw2NDE0OTYyODgsLTEzMTY3Mzk2MTYsMTk3MTI4
-NDM0MCw5OTA2OTA5MjcsMTAwNDQ4NTM1NiwtNjc3NjYwNDEzLC
-0xNzAwNTE2NDU5LC0xMDY2MDY5OTY5LDEwNTI3Nzk3NjUsLTE1
-Njk4NzQwMzJdfQ==
+eyJoaXN0b3J5IjpbLTYyNTEzODI2NiwxNTEyNjAyOTkzLDIwMT
+c3MzEzNzcsLTY0MTMzNzQyMCwxOTU3NjczNzgsNTI2OTE4MDA2
+LDU1NTE1NzIxOSwtMTc4ODM5MzYwOCwxNzYzNTA2MTAwLC0xOT
+U2MzYxODE4LC0xOTYzODQ4NzYyLDY0MTQ5NjI4OCwtMTMxNjcz
+OTYxNiwxOTcxMjg0MzQwLDk5MDY5MDkyNywxMDA0NDg1MzU2LC
+02Nzc2NjA0MTMsLTE3MDA1MTY0NTksLTEwNjYwNjk5NjksMTA1
+Mjc3OTc2NV19
 -->
