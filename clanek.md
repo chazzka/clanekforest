@@ -192,6 +192,9 @@ Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 
 ##### Recursive step
 pro každý list: 
+
+leaf 
+ 
 internal vertex vT, 
 1.  splňuje koncovou podmínku, dopočítej depth
 2. nesplňuje, z listu udělej internal vertex, který si bude nést rozhodovací podmínku a bude mít dva nové listy, 
@@ -367,7 +370,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MTg3NTYyMCw5OTA2OTA5MjcsMTAwND
+eyJoaXN0b3J5IjpbMTk3MTI4NDM0MCw5OTA2OTA5MjcsMTAwND
 Q4NTM1NiwtNjc3NjYwNDEzLC0xNzAwNTE2NDU5LC0xMDY2MDY5
 OTY5LDEwNTI3Nzk3NjUsLTE1Njk4NzQwMzIsODQ1MjUyODE0LC
 0xOTg5MjkzODQwLDExMDkyODUyMDYsMjEwMTc1NDgxLDI1Mzcw
