@@ -198,7 +198,7 @@ Subset $D$ is a set of all datapoints, such that $D = \{d; d \in R \}$.
 pro každý list: 
 
 Let $l$ be leaves satisfying the ending condition.
-$$\forall l, l \subseteq $$
+$$\forall l, l \subseteq V, l <- R$$
 
 for each leaf $v \in V_j$ not satanistčin the ending condition create two new vertices $v_l, v_r$ and same amount of edges $(v,v_l ), (v, v_r)$ as in (xx).
 $$v_{n+1}= [v_n \cup \{v_l, v_r\}, E_0 \cup \{(v,v_l ), (v, v_r)\}]$$
@@ -378,11 +378,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MjkzMTg5OCw2NDE0OTYyODgsLTEzMT
-Y3Mzk2MTYsMTk3MTI4NDM0MCw5OTA2OTA5MjcsMTAwNDQ4NTM1
-NiwtNjc3NjYwNDEzLC0xNzAwNTE2NDU5LC0xMDY2MDY5OTY5LD
-EwNTI3Nzk3NjUsLTE1Njk4NzQwMzIsODQ1MjUyODE0LC0xOTg5
-MjkzODQwLDExMDkyODUyMDYsMjEwMTc1NDgxLDI1MzcwMTMzNC
-wtMTU3Mjg0ODc5MywxOTYzMDE2MTc3LC04NjAxNjM3OTEsLTE5
-NjA3MDk5OTJdfQ==
+eyJoaXN0b3J5IjpbLTQ4ODg0OTI1LDY0MTQ5NjI4OCwtMTMxNj
+czOTYxNiwxOTcxMjg0MzQwLDk5MDY5MDkyNywxMDA0NDg1MzU2
+LC02Nzc2NjA0MTMsLTE3MDA1MTY0NTksLTEwNjYwNjk5NjksMT
+A1Mjc3OTc2NSwtMTU2OTg3NDAzMiw4NDUyNTI4MTQsLTE5ODky
+OTM4NDAsMTEwOTI4NTIwNiwyMTAxNzU0ODEsMjUzNzAxMzM0LC
+0xNTcyODQ4NzkzLDE5NjMwMTYxNzcsLTg2MDE2Mzc5MSwtMTk2
+MDcwOTk5Ml19
 -->
