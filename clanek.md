@@ -188,18 +188,13 @@ Each range should be reasonable enough to allow all the domain space to be separ
 
 - [ ] TODO: what is ending condition?
 
-
 In the following we suppose a Euclidean type of space.
-
-- [ ] TODO: tady POKRACUJ
-
-Jak dostat D do leafu abychom mohli ukoncit? - nemusime nic delit, proste jen rekneme ze to konci pokud ten space odpovida ukoncovaci podmince
 
 Let us construct the decision tree such that:
 - maximal possible height of a tree is controlled by the *max_depth* parameter
 - the sample $S$ contains *batch_size* number of input datapoints.
 - leaves and internal vertices are possibility-space hyperrectangles.
-
+- leaves' ending condition 
 
 ##### Basis step
 
@@ -239,11 +234,6 @@ i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $R$ in the new tree $
 
 Note: Tree $T_{j}$ is actually a Hasse diagram of the ordered set $(V_j,\subseteq)$.
  
-1.  splňuje koncovou podmínku, dopočítej depth
-
-opakuj dokud všechny listy nesplňují podmínku
-
-
 
 #begin další článek
 -------------------
@@ -398,11 +388,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDA2MTcwNDEsMTczMjc2NjczOSwtMT
-A5NDg5NTQ2NCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLTE0OTgw
-MTkzNzAsLTE1NzM1MTY1NDYsLTQ2MjI5MzM3MCwxNTEyNjAyOT
-kzLDIwMTc3MzEzNzcsLTY0MTMzNzQyMCwxOTU3NjczNzgsNTI2
-OTE4MDA2LDU1NTE1NzIxOSwtMTc4ODM5MzYwOCwxNzYzNTA2MT
-AwLC0xOTU2MzYxODE4LC0xOTYzODQ4NzYyLDY0MTQ5NjI4OCwt
-MTMxNjczOTYxNl19
+eyJoaXN0b3J5IjpbMjAzNTE3OTk1MCwxNzMyNzY2NzM5LC0xMD
+k0ODk1NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAx
+OTM3MCwtMTU3MzUxNjU0NiwtNDYyMjkzMzcwLDE1MTI2MDI5OT
+MsMjAxNzczMTM3NywtNjQxMzM3NDIwLDE5NTc2NzM3OCw1MjY5
+MTgwMDYsNTU1MTU3MjE5LC0xNzg4MzkzNjA4LDE3NjM1MDYxMD
+AsLTE5NTYzNjE4MTgsLTE5NjM4NDg3NjIsNjQxNDk2Mjg4LC0x
+MzE2NzM5NjE2XX0=
 -->
