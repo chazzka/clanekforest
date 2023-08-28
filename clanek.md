@@ -346,6 +346,8 @@ Moreover, the number of trees can be set during the Forest initialization.
 trees
 : The number of trees of a forest. 
 
+- [ ] TODO: nuance oproti teorii
+
 We begin with a dataset of regular, conceivably little contaminated observations and a set of above defined parameters.
 Out of these observations, the set $B$ of *batch_size* items is selected.
  
@@ -411,11 +413,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk1NzM2MTE1LDE1Njk1NjQxNzcsMTg5MD
-YwNTMwMywyMDYwNjEzNzcxLDIwMzUxNzk5NTAsMTczMjc2Njcz
-OSwtMTA5NDg5NTQ2NCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLT
-E0OTgwMTkzNzAsLTE1NzM1MTY1NDYsLTQ2MjI5MzM3MCwxNTEy
-NjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMzNzQyMCwxOTU3NjczNz
-gsNTI2OTE4MDA2LDU1NTE1NzIxOSwtMTc4ODM5MzYwOCwxNzYz
-NTA2MTAwXX0=
+eyJoaXN0b3J5IjpbLTg4OTgxODcsMTU2OTU2NDE3NywxODkwNj
+A1MzAzLDIwNjA2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNzY2NzM5
+LC0xMDk0ODk1NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQwOSwtMT
+Q5ODAxOTM3MCwtMTU3MzUxNjU0NiwtNDYyMjkzMzcwLDE1MTI2
+MDI5OTMsMjAxNzczMTM3NywtNjQxMzM3NDIwLDE5NTc2NzM3OC
+w1MjY5MTgwMDYsNTU1MTU3MjE5LC0xNzg4MzkzNjA4LDE3NjM1
+MDYxMDBdfQ==
 -->
