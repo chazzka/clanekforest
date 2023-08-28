@@ -226,7 +226,7 @@ $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx}$$
  Let $v_l$ be the left leaf of $v$ and $v_r$ right leaf of $v$. 
  
  
-The splint point $S$ is obtained as the middle of the range $r=\langle R_s, R_e\rangle$ as in (6). 
+The splint point $S$ is a number obtained as the middle of the range $r=\langle R_s, R_e\rangle$ as in (6). 
 
 $$S = \frac{r_s + r_e}{2}, \tag{6}$$
 
@@ -402,11 +402,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzM1MTY1NDYsLTQ2MjI5MzM3MCwxNT
-EyNjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMzNzQyMCwxOTU3Njcz
-NzgsNTI2OTE4MDA2LDU1NTE1NzIxOSwtMTc4ODM5MzYwOCwxNz
-YzNTA2MTAwLC0xOTU2MzYxODE4LC0xOTYzODQ4NzYyLDY0MTQ5
-NjI4OCwtMTMxNjczOTYxNiwxOTcxMjg0MzQwLDk5MDY5MDkyNy
-wxMDA0NDg1MzU2LC02Nzc2NjA0MTMsLTE3MDA1MTY0NTksLTEw
-NjYwNjk5NjldfQ==
+eyJoaXN0b3J5IjpbLTU1MTE0NzI2NCwtMTU3MzUxNjU0NiwtND
+YyMjkzMzcwLDE1MTI2MDI5OTMsMjAxNzczMTM3NywtNjQxMzM3
+NDIwLDE5NTc2NzM3OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC0xNz
+g4MzkzNjA4LDE3NjM1MDYxMDAsLTE5NTYzNjE4MTgsLTE5NjM4
+NDg3NjIsNjQxNDk2Mjg4LC0xMzE2NzM5NjE2LDE5NzEyODQzND
+AsOTkwNjkwOTI3LDEwMDQ0ODUzNTYsLTY3NzY2MDQxMywtMTcw
+MDUxNjQ1OV19
 -->
