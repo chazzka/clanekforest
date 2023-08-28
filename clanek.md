@@ -250,10 +250,13 @@ D --> G{25..39, 1..17}
  
 
 ### evaluate tree
+
+- jak se získá jedna hodnota
  
 ### neni to tree ale les
 
- 
+ - jak se získá výsledná hodnota
+ - takové ty šílené rovnice c
 
 #begin další článek
 -------------------
@@ -302,7 +305,7 @@ $$f_{MC_0}(x)=1.5\,IQR \tag{4}$$
 Using above defined functions, the range is generated for each of the dimensions of the dataset.
 
 #end další článek
--------------------------------------------------------------------
+------------
 
 
 ##### Implementation
@@ -408,7 +411,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcyMjM4MTgxLDE1Njk1NjQxNzcsMTg5MD
+eyJoaXN0b3J5IjpbNzk1NzM2MTE1LDE1Njk1NjQxNzcsMTg5MD
 YwNTMwMywyMDYwNjEzNzcxLDIwMzUxNzk5NTAsMTczMjc2Njcz
 OSwtMTA5NDg5NTQ2NCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLT
 E0OTgwMTkzNzAsLTE1NzM1MTY1NDYsLTQ2MjI5MzM3MCwxNTEy
