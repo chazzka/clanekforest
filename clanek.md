@@ -216,7 +216,9 @@ $$T_0= (V_0, E_0) = (\{R_0\},\emptyset).$$
 The steps to reach the tree $T_{j+1}$ from $T_{j}$ are as follows:
 
 Let $L_j \subseteq V_j$ be a subset of leaves not satisfying the ending condition.
-For each leaf $R \in L_j$ create two new vertices $R_l, R_r$ and same number of edges $(R,R_l ), (R, R_r)$ as in (x...xxx).
+For each leaf $R \in L_j$ create two new vertices $R_l, R_r$ as in (xx) and same number of edges $(R,R_l ), (R, R_r)$ as in (x...xxx).
+
+$$$$
 
 $$V_{j+1} = V_j \cup \bigcup_{v \in L_j} \{v_l, v_r\} \tag{x}$$
 $$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{(v, v_l), (v,v_r)\} \tag{xx}$$
@@ -402,11 +404,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MTE0NzI2NCwtMTU3MzUxNjU0NiwtND
-YyMjkzMzcwLDE1MTI2MDI5OTMsMjAxNzczMTM3NywtNjQxMzM3
-NDIwLDE5NTc2NzM3OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC0xNz
-g4MzkzNjA4LDE3NjM1MDYxMDAsLTE5NTYzNjE4MTgsLTE5NjM4
-NDg3NjIsNjQxNDk2Mjg4LC0xMzE2NzM5NjE2LDE5NzEyODQzND
-AsOTkwNjkwOTI3LDEwMDQ0ODUzNTYsLTY3NzY2MDQxMywtMTcw
-MDUxNjQ1OV19
+eyJoaXN0b3J5IjpbLTE1NjIzMjkzNjAsLTE1NzM1MTY1NDYsLT
+Q2MjI5MzM3MCwxNTEyNjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMz
+NzQyMCwxOTU3NjczNzgsNTI2OTE4MDA2LDU1NTE1NzIxOSwtMT
+c4ODM5MzYwOCwxNzYzNTA2MTAwLC0xOTU2MzYxODE4LC0xOTYz
+ODQ4NzYyLDY0MTQ5NjI4OCwtMTMxNjczOTYxNiwxOTcxMjg0Mz
+QwLDk5MDY5MDkyNywxMDA0NDg1MzU2LC02Nzc2NjA0MTMsLTE3
+MDA1MTY0NTldfQ==
 -->
