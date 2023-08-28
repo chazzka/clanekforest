@@ -232,7 +232,7 @@ y \rangle$ and $s$ is a number obtained as the middle of the range $r_d$ as in (
 $$s = \frac{x + y}{2}\tag{x}$$
 Each vertex $R$ is assigned two new edges $(R,R_l ), (R, R_r)$ as in (x...xxx).
 
-$$V_{j+1} = V_j \cup \bigcup_{v \in L_j} \{v_l, v_r\} \tag{x}$$
+$$V_{j+1} = V_j \cup \bigcup_{R \in L_j} \{R_l, _r\} \tag{x}$$
 $$E_{j+1} = E_j \cup \bigcup_{v \in L_j} \{(v, v_l), (v,v_r)\} \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx}$$
 
@@ -419,8 +419,8 @@ F9IFxcdGltZXMgIHJfciBcXHRpbWVzIHJfe2QrMX0gXFx0aW1l
 cyBcXGNk4oCmIn19LCJjb21tZW50cyI6eyIwdHJxemF2SUVybF
 p1dGVYIjp7ImRpc2N1c3Npb25JZCI6Im8wVW1KOWU4ZTlKM3hl
 YU8iLCJzdWIiOiJnaDoyNjI5NjI5NCIsInRleHQiOiI/IiwiY3
-JlYXRlZCI6MTY5MzIzMjkxMzMxOX19LCJoaXN0b3J5IjpbLTc0
-MzkxMzY1MCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLTE0OTgwMT
+JlYXRlZCI6MTY5MzIzMjkxMzMxOX19LCJoaXN0b3J5IjpbMTQx
+ODYzODQ5NCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLTE0OTgwMT
 kzNzAsLTE1NzM1MTY1NDYsLTQ2MjI5MzM3MCwxNTEyNjAyOTkz
 LDIwMTc3MzEzNzcsLTY0MTMzNzQyMCwxOTU3NjczNzgsNTI2OT
 E4MDA2LDU1NTE1NzIxOSwtMTc4ODM5MzYwOCwxNzYzNTA2MTAw
