@@ -197,7 +197,7 @@ Jak dostat D do leafu abychom mohli ukoncit? - nemusime nic delit, proste jen re
 
 Let us construct the decision tree such that:
 - maximal possible height of a tree is controlled by the *max_depth* parameter
-- the sample $D$ contains *batch_size* number of input datapoints.
+- the sample $S$ contains *batch_size* number of input datapoints.
 - leaves and internal vertices are possibility-space hyperrectangles.
 
 
@@ -239,8 +239,8 @@ i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $R$ in the new tree $
 
 Note: Tree $T_{j}$ is actually a Hasse diagram of the ordered set $(V,\subseteq)$.
 
-If $R_l$ or $R_r$ satisfies the ending condition the depth is calculated as
-$$$$
+If $R_l$ or $R_r$ satisfies the ending condition the depth $p$ is calculated as
+$$p = $$
  
 1.  splňuje koncovou podmínku, dopočítej depth
 
@@ -401,7 +401,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NDYzODEwOSwtMTA5NDg5NTQ2NCwtNj
+eyJoaXN0b3J5IjpbMTczMjc2NjczOSwtMTA5NDg5NTQ2NCwtNj
 ExNTQzNTQ2LC01NDY3NTM0MDksLTE0OTgwMTkzNzAsLTE1NzM1
 MTY1NDYsLTQ2MjI5MzM3MCwxNTEyNjAyOTkzLDIwMTc3MzEzNz
 csLTY0MTMzNzQyMCwxOTU3NjczNzgsNTI2OTE4MDA2LDU1NTE1
