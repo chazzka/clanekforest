@@ -202,8 +202,8 @@ pokud bod padne do hyperrectangle
 
 Let us construct the decision tree such that:
 - the sample $D$ contains *batch_size* number of input datapoints.
-- external and internal vertices are hyperrectangles of possibility space $R$.
--  leaves (external vertices) $L \subseteq V$contain the possibility space $R$. 
+- leaves and internal vertices are possibility space hyperrectangles.
+-  leaves $L \subseteq V$contain the possibility space $R$. 
 -  internal vertices contain the decison function $f$ as in (x).
 
 $$f = $$
@@ -411,7 +411,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NzI3NTcyNSwtNDYyMjkzMzcwLDE1MT
+eyJoaXN0b3J5IjpbMTMwOTA3MDc2OCwtNDYyMjkzMzcwLDE1MT
 I2MDI5OTMsMjAxNzczMTM3NywtNjQxMzM3NDIwLDE5NTc2NzM3
 OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC0xNzg4MzkzNjA4LDE3Nj
 M1MDYxMDAsLTE5NTYzNjE4MTgsLTE5NjM4NDg3NjIsNjQxNDk2
