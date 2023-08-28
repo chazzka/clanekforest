@@ -238,7 +238,15 @@ i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $R$ in the new tree $
 
 Note: Tree $T_{j}$ is actually a Hasse diagram of the ordered set $(V_j,\subseteq)$.
 
-Example x shows the Hasse diagram 
+Example x shows the Isolation Tree diagram of an example from the Figure X.
+
+```mermaid
+graph TB
+A[Square Rect] -- Link text --> B((Circle))
+A --> C(Round Rect)
+B --> D{Rhombus}
+C --> D
+```
  
 
 #begin další článek
@@ -394,7 +402,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1NzQxNDcxLDIwNjA2MTM3NzEsMjAzNT
+eyJoaXN0b3J5IjpbNzk1MjcwMTkwLDIwNjA2MTM3NzEsMjAzNT
 E3OTk1MCwxNzMyNzY2NzM5LC0xMDk0ODk1NDY0LC02MTE1NDM1
 NDYsLTU0Njc1MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUxNjU0Ni
 wtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAxNzczMTM3NywtNjQx
