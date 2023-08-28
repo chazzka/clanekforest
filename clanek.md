@@ -219,6 +219,10 @@ Let $L_j \subseteq V_j$ be a subset of leaves not satisfying the ending conditio
 
 For each leaf $R \in L_j$ create two new vertices $R_l, R_r$ by selecting a random dimension $d$ as in (x).
 
+$$R = r_1 \times  \cdots \times r_{d-1} \times  r_d\times r_{d+1} \times \cdots \times r_n  \tag{x}$$
+
+$$R_l = r_1 \times  \cdots \times r_{d-1} \times  adam \times r_{d+1} \times \cdots \times r_n  \tag{x}$$
+
 $$R_l = r_1 \times  \cdots \times r_{d-1} \times  adam \times r_{d+1} \times \cdots \times r_n  \tag{x}$$
 
 Each vertex $R$ is assigned two new edges $(R,R_l ), (R, R_r)$ as in (x...xxx).
@@ -409,7 +413,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTU2MzExNTMsLTE1NzM1MTY1NDYsLT
+eyJoaXN0b3J5IjpbLTE0OTgwMTkzNzAsLTE1NzM1MTY1NDYsLT
 Q2MjI5MzM3MCwxNTEyNjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMz
 NzQyMCwxOTU3NjczNzgsNTI2OTE4MDA2LDU1NTE1NzIxOSwtMT
 c4ODM5MzYwOCwxNzYzNTA2MTAwLC0xOTU2MzYxODE4LC0xOTYz
