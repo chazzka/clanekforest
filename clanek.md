@@ -204,11 +204,11 @@ Let us construct the decision tree such that:
 ##### Basis step
 
 For each $i \in\{1, \dots, n\}$
-, feature $f_i$ is bounded by the range $r_i$. The ranges form the possibility space $R_0$ as in (xx). 
+, feature $f_i$ is bounded by the range $r_i$. The ranges form the possibility-space hyperrectangle $R_0$ as in (xx). 
 $$R_0 =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
 
-The only root vertex $v$ is a trivial binary tree $T_0$ with vertices $V_0 = \{v\}$ and edges $E_0 = \emptyset$, i.e.
-$$T_0= (V_0, E_0) = (\{v\},\emptyset).$$ 
+The only root vertex $R_0$ is a trivial binary tree $T_0$ with vertices $V_0 = \{R_0\}$ and edges $E_0 = \emptyset$, i.e.
+$$T_0= (V_0, E_0) = (\{R_0\},\emptyset).$$ 
 
 
 
@@ -404,7 +404,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTQyNDM4MjQsLTQ2MjI5MzM3MCwxNT
+eyJoaXN0b3J5IjpbLTExMTYyMTkyMTksLTQ2MjI5MzM3MCwxNT
 EyNjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMzNzQyMCwxOTU3Njcz
 NzgsNTI2OTE4MDA2LDU1NTE1NzIxOSwtMTc4ODM5MzYwOCwxNz
 YzNTA2MTAwLC0xOTU2MzYxODE4LC0xOTYzODQ4NzYyLDY0MTQ5
