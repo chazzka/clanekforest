@@ -145,8 +145,8 @@ Consider *regular* observations known to the Isolation Forest algorithm a priory
 The standard Isolation Forest algorithm as defined by Liu et. al. selects the split point based on the min-max value according to a priory datapoints.
 
 Figure X shows the first three decisions (`max_depth=3`) of the Isolation Forest algorithm provided a priory *regular* data points in the left bottom corner.
-First, random feature $X$ and a random split point approx. $S  = 16$ are chosen, orphaning most of the observations on the left side.
-In the second step, in the right area, feature *Y* was chosen, splitting the area in two parts. Observe, that the split point is always located between area-datapoint's minimum and maximum of the given feature.
+First, random dimension $X$ and a random split point approx. $s  = 16$ are chosen, orphaning most of the observations on the left side.
+In the second step, in the right area, feature $Y$ was chosen, splitting the area in two parts. Observe, that the split point is always located between area-datapoint's minimum and maximum of the given feature.
 As we can see, the theoretical novelty observations get assigned the same *depth* (the value of 3) as a priory known, regular observations.
 After reaching the stopping criterion, the novelty point remains in the same vertex with a regular datapoint. This is true for any depth up until any chosen *max_depth*.
 
@@ -392,11 +392,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMTUxNjI2MywyMDYwNjEzNzcxLDIwMz
-UxNzk5NTAsMTczMjc2NjczOSwtMTA5NDg5NTQ2NCwtNjExNTQz
-NTQ2LC01NDY3NTM0MDksLTE0OTgwMTkzNzAsLTE1NzM1MTY1ND
-YsLTQ2MjI5MzM3MCwxNTEyNjAyOTkzLDIwMTc3MzEzNzcsLTY0
-MTMzNzQyMCwxOTU3NjczNzgsNTI2OTE4MDA2LDU1NTE1NzIxOS
-wtMTc4ODM5MzYwOCwxNzYzNTA2MTAwLC0xOTU2MzYxODE4LC0x
-OTYzODQ4NzYyXX0=
+eyJoaXN0b3J5IjpbMTE0Njc2Mzg3LDIwNjA2MTM3NzEsMjAzNT
+E3OTk1MCwxNzMyNzY2NzM5LC0xMDk0ODk1NDY0LC02MTE1NDM1
+NDYsLTU0Njc1MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUxNjU0Ni
+wtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAxNzczMTM3NywtNjQx
+MzM3NDIwLDE5NTc2NzM3OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC
+0xNzg4MzkzNjA4LDE3NjM1MDYxMDAsLTE5NTYzNjE4MTgsLTE5
+NjM4NDg3NjJdfQ==
 -->
