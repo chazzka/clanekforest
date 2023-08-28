@@ -216,7 +216,11 @@ $$T_0= (V_0, E_0) = (\{R_0\},\emptyset).$$
 The steps to reach the tree $T_{j+1}$ from $T_{j}$ are as follows:
 
 Let $L_j \subseteq V_j$ be a subset of leaves not satisfying the ending condition.
-For each leaf $R \in L_j$ create two new vertices $R_l, R_r$ as in (xx) and same number of edges $(R,R_l ), (R, R_r)$ as in (x...xxx).
+For each leaf $R \in L_j$ create two new vertices $R_l, R_r$ as in (x).
+
+$$$$
+
+Each vertex is assigned two new edges $(R,R_l ), (R, R_r)$ as in (x...xxx).
 
 $$$$
 
@@ -404,7 +408,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjIzMjkzNjAsLTE1NzM1MTY1NDYsLT
+eyJoaXN0b3J5IjpbLTIwNTIzODI5MjIsLTE1NzM1MTY1NDYsLT
 Q2MjI5MzM3MCwxNTEyNjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMz
 NzQyMCwxOTU3NjczNzgsNTI2OTE4MDA2LDU1NTE1NzIxOSwtMT
 c4ODM5MzYwOCwxNzYzNTA2MTAwLC0xOTU2MzYxODE4LC0xOTYz
