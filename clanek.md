@@ -194,7 +194,9 @@ Let us construct the decision tree such that:
 - maximal possible height of a tree is controlled by the *max_depth* parameter
 - the sample $S$ contains *batch_size* number of input datapoints.
 - leaves and internal vertices are possibility-space hyperrectangles.
-- leaves' ending condition 
+- leaves' ending condition is satisfied by either 
+	- leaf is left with no datapoints
+	- leaf's 
 
 ##### Basis step
 
@@ -388,11 +390,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTE3OTk1MCwxNzMyNzY2NzM5LC0xMD
-k0ODk1NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAx
-OTM3MCwtMTU3MzUxNjU0NiwtNDYyMjkzMzcwLDE1MTI2MDI5OT
-MsMjAxNzczMTM3NywtNjQxMzM3NDIwLDE5NTc2NzM3OCw1MjY5
-MTgwMDYsNTU1MTU3MjE5LC0xNzg4MzkzNjA4LDE3NjM1MDYxMD
-AsLTE5NTYzNjE4MTgsLTE5NjM4NDg3NjIsNjQxNDk2Mjg4LC0x
-MzE2NzM5NjE2XX0=
+eyJoaXN0b3J5IjpbLTEzMDU3MjgwMjksMjAzNTE3OTk1MCwxNz
+MyNzY2NzM5LC0xMDk0ODk1NDY0LC02MTE1NDM1NDYsLTU0Njc1
+MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUxNjU0NiwtNDYyMjkzMz
+cwLDE1MTI2MDI5OTMsMjAxNzczMTM3NywtNjQxMzM3NDIwLDE5
+NTc2NzM3OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC0xNzg4MzkzNj
+A4LDE3NjM1MDYxMDAsLTE5NTYzNjE4MTgsLTE5NjM4NDg3NjIs
+NjQxNDk2Mjg4XX0=
 -->
