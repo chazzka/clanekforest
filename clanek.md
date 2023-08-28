@@ -242,7 +242,7 @@ Example x shows the Isolation Tree diagram of an example from the Figure X.
 
 ```mermaid
 graph TB
-A[Square Rect] -- Link text --> B((Circle))
+A[1 $\langle 1, 33\rangle$ ] -- Link text --> B((Circle))
 A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
@@ -402,11 +402,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk1MjcwMTkwLDIwNjA2MTM3NzEsMjAzNT
-E3OTk1MCwxNzMyNzY2NzM5LC0xMDk0ODk1NDY0LC02MTE1NDM1
-NDYsLTU0Njc1MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUxNjU0Ni
-wtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAxNzczMTM3NywtNjQx
-MzM3NDIwLDE5NTc2NzM3OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC
-0xNzg4MzkzNjA4LDE3NjM1MDYxMDAsLTE5NTYzNjE4MTgsLTE5
-NjM4NDg3NjJdfQ==
+eyJoaXN0b3J5IjpbMTg5MDYwNTMwMywyMDYwNjEzNzcxLDIwMz
+UxNzk5NTAsMTczMjc2NjczOSwtMTA5NDg5NTQ2NCwtNjExNTQz
+NTQ2LC01NDY3NTM0MDksLTE0OTgwMTkzNzAsLTE1NzM1MTY1ND
+YsLTQ2MjI5MzM3MCwxNTEyNjAyOTkzLDIwMTc3MzEzNzcsLTY0
+MTMzNzQyMCwxOTU3NjczNzgsNTI2OTE4MDA2LDU1NTE1NzIxOS
+wtMTc4ODM5MzYwOCwxNzYzNTA2MTAwLC0xOTU2MzYxODE4LC0x
+OTYzODQ4NzYyXX0=
 -->
