@@ -221,7 +221,7 @@ For each leaf $R \in L_j$ create two new vertices $R_l, R_r$ by selecting a rand
 
 Let 
 $$R = r_1 \times  \cdots \times r_{d-1} \times  r_d\times r_{d+1} \times \cdots \times r_n  \tag{x}$$
-and $r_d = \langle x, y \rangle$.
+and $r_d = \langle x, y )$.
 
 Then we obtain the left and right hyperrectangles $R_l$, $R_r$ as follows:  $$R_l = r_1 \times  \cdots \times r_{d-1} \times  r_l \times r_{d+1} \times \cdots \times r_n  \tag{x}$$
 
@@ -410,7 +410,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MzkyMjA5NSwtNjExNTQzNTQ2LC01ND
+eyJoaXN0b3J5IjpbLTUyMjM2NDI4NywtNjExNTQzNTQ2LC01ND
 Y3NTM0MDksLTE0OTgwMTkzNzAsLTE1NzM1MTY1NDYsLTQ2MjI5
 MzM3MCwxNTEyNjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMzNzQyMC
 wxOTU3NjczNzgsNTI2OTE4MDA2LDU1NTE1NzIxOSwtMTc4ODM5
