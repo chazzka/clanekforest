@@ -219,14 +219,18 @@ Let $L_j \subseteq V_j$ be a subset of leaves not satisfying the ending conditio
 
 For each leaf $R \in L_j$ create two new vertices $R_l, R_r$ by selecting a random dimension $d$ as in (x).
 
+
+Let $s =$
+
 Let 
 $$R = r_1 \times  \cdots \times r_{d-1} \times  r_d\times r_{d+1} \times \cdots \times r_n  \tag{x}$$
 and $r_d = \langle x, y \rangle$.
 
 Then $$R_l = r_1 \times  \cdots \times r_{d-1} \times  r_l \times r_{d+1} \times \cdots \times r_n  \tag{x}$$
-where $r_l =  \langle x, s \rangle$.
 
 $$R_r = r_1 \times  \cdots \times r_{d-1} \times  r_r \times r_{d+1} \times \cdots \times r_n  \tag{x}$$
+where $r_l =  \langle x, s \rangle$ and  $r_r =  \langle s, 
+y \rangle$ and $$.
 
 Each vertex $R$ is assigned two new edges $(R,R_l ), (R, R_r)$ as in (x...xxx).
 
@@ -416,11 +420,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NDkyOTY1MiwtMTQ5ODAxOTM3MCwtMT
-U3MzUxNjU0NiwtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAxNzcz
-MTM3NywtNjQxMzM3NDIwLDE5NTc2NzM3OCw1MjY5MTgwMDYsNT
-U1MTU3MjE5LC0xNzg4MzkzNjA4LDE3NjM1MDYxMDAsLTE5NTYz
-NjE4MTgsLTE5NjM4NDg3NjIsNjQxNDk2Mjg4LC0xMzE2NzM5Nj
-E2LDE5NzEyODQzNDAsOTkwNjkwOTI3LDEwMDQ0ODUzNTYsLTY3
-NzY2MDQxM119
+eyJoaXN0b3J5IjpbLTEzMDM0NTc0MjEsLTE0OTgwMTkzNzAsLT
+E1NzM1MTY1NDYsLTQ2MjI5MzM3MCwxNTEyNjAyOTkzLDIwMTc3
+MzEzNzcsLTY0MTMzNzQyMCwxOTU3NjczNzgsNTI2OTE4MDA2LD
+U1NTE1NzIxOSwtMTc4ODM5MzYwOCwxNzYzNTA2MTAwLC0xOTU2
+MzYxODE4LC0xOTYzODQ4NzYyLDY0MTQ5NjI4OCwtMTMxNjczOT
+YxNiwxOTcxMjg0MzQwLDk5MDY5MDkyNywxMDA0NDg1MzU2LC02
+Nzc2NjA0MTNdfQ==
 -->
