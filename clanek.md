@@ -217,7 +217,7 @@ The steps to reach the tree $T_{j+1}$ from $T_{j}$ are as follows:
 
 Let $L_j \subseteq V_j$ be a subset of leaves not satisfying the ending condition.
 
-For each leaf $R \in L_j$ create two new vertices $R_l, R_r$ by selecting a random dimension $d$ as in (x).
+For each leaf $R \in L_j$ create two new vertices $R_l, R_r$ by selecting a random dimension $d$.
 
 Let 
 $$R = r_1 \times  \cdots \times r_{d-1} \times  r_d\times r_{d+1} \times \cdots \times r_n  \tag{x}$$
@@ -227,7 +227,7 @@ Then we obtain the left and right hyperrectangles $R_l$, $R_r$ as follows:  $$R_
 
 $$R_r = r_1 \times  \cdots \times r_{d-1} \times  r_r \times r_{d+1} \times \cdots \times r_n  \tag{x}$$
 where $r_l =  \langle x, s \rangle$ and  $r_r =  \langle s, 
-y \rangle$ and $s$ is a number obtained as the middle of the range $r_d$ as in (x). 
+y \rangle$ and $s$ is a number obtained as the middle of the range $r_d$: 
 
 $$s = \frac{x + y}{2}\tag{x}$$
 Each vertex $R$ is assigned two new edges $(R,R_l ), (R, R_r)$ as in (x...xxx).
@@ -410,7 +410,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjU3MjE4MTEsLTYxMTU0MzU0NiwtNT
+eyJoaXN0b3J5IjpbLTEwNDA4OTk2OTUsLTYxMTU0MzU0NiwtNT
 Q2NzUzNDA5LC0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00NjIy
 OTMzNzAsMTUxMjYwMjk5MywyMDE3NzMxMzc3LC02NDEzMzc0Mj
 AsMTk1NzY3Mzc4LDUyNjkxODAwNiw1NTUxNTcyMTksLTE3ODgz
