@@ -195,7 +195,7 @@ Let us construct the decision tree such that:
 - the sample $S$ contains *batch_size* number of input datapoints.
 - leaves and internal vertices are possibility-space hyperrectangles $R$.
 - leaves' ending condition is satisfied by either 
-	- leaf is left with sample S 
+	- leaf is left with space $R$ such that $S \cap R = \emptyset$
 	- leaf's depth reached the *max_depth* value
 
 ##### Basis step
@@ -390,11 +390,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzY0NTQxODksMjAzNTE3OTk1MCwxNz
-MyNzY2NzM5LC0xMDk0ODk1NDY0LC02MTE1NDM1NDYsLTU0Njc1
-MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUxNjU0NiwtNDYyMjkzMz
-cwLDE1MTI2MDI5OTMsMjAxNzczMTM3NywtNjQxMzM3NDIwLDE5
-NTc2NzM3OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC0xNzg4MzkzNj
-A4LDE3NjM1MDYxMDAsLTE5NTYzNjE4MTgsLTE5NjM4NDg3NjIs
-NjQxNDk2Mjg4XX0=
+eyJoaXN0b3J5IjpbLTQ2MjI5NDAyMywyMDM1MTc5OTUwLDE3Mz
+I3NjY3MzksLTEwOTQ4OTU0NjQsLTYxMTU0MzU0NiwtNTQ2NzUz
+NDA5LC0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00NjIyOTMzNz
+AsMTUxMjYwMjk5MywyMDE3NzMxMzc3LC02NDEzMzc0MjAsMTk1
+NzY3Mzc4LDUyNjkxODAwNiw1NTUxNTcyMTksLTE3ODgzOTM2MD
+gsMTc2MzUwNjEwMCwtMTk1NjM2MTgxOCwtMTk2Mzg0ODc2Miw2
+NDE0OTYyODhdfQ==
 -->
