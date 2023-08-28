@@ -193,10 +193,10 @@ In the following we suppose a Euclidean type of space.
 Let us construct the decision tree such that:
 - maximal possible height of a tree is controlled by the *max_depth* parameter
 - the sample $S$ contains *batch_size* number of input datapoints.
-- leaves and internal vertices are possibility-space hyperrectangles.
+- leaves and internal vertices are possibility-space hyperrectangles $R$.
 - leaves' ending condition is satisfied by either 
-	- leaf is left with no datapoints
-	- leaf's 
+	- leaf is left with sample S 
+	- leaf's depth reached the *max_depth* value
 
 ##### Basis step
 
@@ -390,7 +390,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDU3MjgwMjksMjAzNTE3OTk1MCwxNz
+eyJoaXN0b3J5IjpbLTEzMzY0NTQxODksMjAzNTE3OTk1MCwxNz
 MyNzY2NzM5LC0xMDk0ODk1NDY0LC02MTE1NDM1NDYsLTU0Njc1
 MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUxNjU0NiwtNDYyMjkzMz
 cwLDE1MTI2MDI5OTMsMjAxNzczMTM3NywtNjQxMzM3NDIwLDE5
