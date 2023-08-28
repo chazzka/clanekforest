@@ -235,7 +235,7 @@ Each vertex $R$ is assigned two new edges $(R,R_l ), (R, R_r)$ as in (x...xxx).
 $$V_{j+1} = V_j \cup \bigcup_{R \in L_j} \{R_l, R_r\}, \tag{x}$$
 $$E_{j+1} = E_j \cup \bigcup_{R \in L_j} \{(R, R_l), (R,R_r)\}, \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx},$$
-i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $R$ in $T_{j+1}$. 
+i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $R$ in the new tree $T_{j+1}$. 
  
  
 generating two ranges $r_l = \langle R_s, S )$; $r_r = \langle  S, R_e \rangle$ for left and right vertex respectively (7).
@@ -410,18 +410,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJkaXNjdXNzaW9ucyI6eyJvMFVtSjllOGU5SjN4ZWFPIjp7In
-N0YXJ0IjoxNDQzNCwiZW5kIjoxNDYzOSwidGV4dCI6IiQkUl9y
-ID0gcl8xIFxcdGltZXMgIFxcY2RvdHMgXFx0aW1lcyByX3tkLT
-F9IFxcdGltZXMgIHJfciBcXHRpbWVzIHJfe2QrMX0gXFx0aW1l
-cyBcXGNk4oCmIn19LCJjb21tZW50cyI6eyIwdHJxemF2SUVybF
-p1dGVYIjp7ImRpc2N1c3Npb25JZCI6Im8wVW1KOWU4ZTlKM3hl
-YU8iLCJzdWIiOiJnaDoyNjI5NjI5NCIsInRleHQiOiI/IiwiY3
-JlYXRlZCI6MTY5MzIzMjkxMzMxOX19LCJoaXN0b3J5IjpbLTE0
-NzkyODMwMjQsLTYxMTU0MzU0NiwtNTQ2NzUzNDA5LC0xNDk4MD
-E5MzcwLC0xNTczNTE2NTQ2LC00NjIyOTMzNzAsMTUxMjYwMjk5
-MywyMDE3NzMxMzc3LC02NDEzMzc0MjAsMTk1NzY3Mzc4LDUyNj
-kxODAwNiw1NTUxNTcyMTksLTE3ODgzOTM2MDgsMTc2MzUwNjEw
-MCwtMTk1NjM2MTgxOCwtMTk2Mzg0ODc2Miw2NDE0OTYyODgsLT
-EzMTY3Mzk2MTYsMTk3MTI4NDM0MCw5OTA2OTA5MjddfQ==
+eyJoaXN0b3J5IjpbLTE3NjU3MjE4MTEsLTYxMTU0MzU0NiwtNT
+Q2NzUzNDA5LC0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00NjIy
+OTMzNzAsMTUxMjYwMjk5MywyMDE3NzMxMzc3LC02NDEzMzc0Mj
+AsMTk1NzY3Mzc4LDUyNjkxODAwNiw1NTUxNTcyMTksLTE3ODgz
+OTM2MDgsMTc2MzUwNjEwMCwtMTk1NjM2MTgxOCwtMTk2Mzg0OD
+c2Miw2NDE0OTYyODgsLTEzMTY3Mzk2MTYsMTk3MTI4NDM0MCw5
+OTA2OTA5MjddfQ==
 -->
