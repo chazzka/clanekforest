@@ -227,7 +227,7 @@ Then we obtain the left and right hyperrectangles $R_l$, $R_r$ as follows:  $$R_
 
 $$R_r = r_1 \times  \cdots \times r_{d-1} \times  r_r \times r_{d+1} \times \cdots \times r_n  \tag{x}$$
 where $r_l =  \langle x, s )$ and  $r_r =  \langle s, 
-y \rangle$ and $s$ is a number obtained as the middle of the range $r_d\,$:
+y )$ and $s$ is a number obtained as the middle of the range $r_d\,$:
 
 $$s = \frac{x + y}{2}\tag{x}.$$
 Each vertex $R$ is assigned two new edges $(R,R_l ), (R, R_r)$ as in (x...xxx).
@@ -410,11 +410,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMjM2NDI4NywtNjExNTQzNTQ2LC01ND
-Y3NTM0MDksLTE0OTgwMTkzNzAsLTE1NzM1MTY1NDYsLTQ2MjI5
-MzM3MCwxNTEyNjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMzNzQyMC
-wxOTU3NjczNzgsNTI2OTE4MDA2LDU1NTE1NzIxOSwtMTc4ODM5
-MzYwOCwxNzYzNTA2MTAwLC0xOTU2MzYxODE4LC0xOTYzODQ4Nz
-YyLDY0MTQ5NjI4OCwtMTMxNjczOTYxNiwxOTcxMjg0MzQwLDk5
-MDY5MDkyN119
+eyJoaXN0b3J5IjpbMTQwNTY1MzQzLC02MTE1NDM1NDYsLTU0Nj
+c1MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUxNjU0NiwtNDYyMjkz
+MzcwLDE1MTI2MDI5OTMsMjAxNzczMTM3NywtNjQxMzM3NDIwLD
+E5NTc2NzM3OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC0xNzg4Mzkz
+NjA4LDE3NjM1MDYxMDAsLTE5NTYzNjE4MTgsLTE5NjM4NDg3Nj
+IsNjQxNDk2Mjg4LC0xMzE2NzM5NjE2LDE5NzEyODQzNDAsOTkw
+NjkwOTI3XX0=
 -->
