@@ -242,14 +242,14 @@ Example x shows the Isolation Tree diagram of an example from the Figure X.
 
 ```mermaid
 graph TB
-A((11..67 x 1..33)) --> B((11..39, 1..33))
-A --> C((39..67, 1..33))
+A((11..67, 1..33)) --> B((11..39, 1..33))
+A --> C{39..67, 1..33}
 B --> D((11..39, 1..17))
-B --> E((11..39, 17..33))
-D --> F((11..25, 1..17))
-D --> G[25..39, 1..17]
-
+B --> E{11..39, 17..33}
+D --> F{11..25, 1..17}
+D --> G{25..39, 1..17}
 ```
+> Figure X. Isolation Hasse diagram.
  
 
 #begin další článek
@@ -405,7 +405,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4Njc0Mzk5NCwxODkwNjA1MzAzLDIwNj
+eyJoaXN0b3J5IjpbMjA0MDE5NTUzNSwxODkwNjA1MzAzLDIwNj
 A2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNzY2NzM5LC0xMDk0ODk1
 NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAxOTM3MC
 wtMTU3MzUxNjU0NiwtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAx
