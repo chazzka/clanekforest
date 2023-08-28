@@ -232,10 +232,10 @@ y \rangle$ and $s$ is a number obtained as the middle of the range $r_d$ as in (
 $$s = \frac{x + y}{2}\tag{x}$$
 Each vertex $R$ is assigned two new edges $(R,R_l ), (R, R_r)$ as in (x...xxx).
 
-$$V_{j+1} = V_j \cup \bigcup_{R \in L_j} \{R_l, R_r\} \tag{x}$$
-$$E_{j+1} = E_j \cup \bigcup_{R \in L_j} \{(R, R_l), (R,R_r)\} \tag{xx}$$
-$$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx}$$,
-i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $v$. 
+$$V_{j+1} = V_j \cup \bigcup_{R \in L_j} \{R_l, R_r\}, \tag{x}$$
+$$E_{j+1} = E_j \cup \bigcup_{R \in L_j} \{(R, R_l), (R,R_r)\}, \tag{xx}$$
+$$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx},$$
+i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $R$ in $T_{j+1}$. 
  
  
 generating two ranges $r_l = \langle R_s, S )$; $r_r = \langle  S, R_e \rangle$ for left and right vertex respectively (7).
@@ -417,11 +417,11 @@ F9IFxcdGltZXMgIHJfciBcXHRpbWVzIHJfe2QrMX0gXFx0aW1l
 cyBcXGNk4oCmIn19LCJjb21tZW50cyI6eyIwdHJxemF2SUVybF
 p1dGVYIjp7ImRpc2N1c3Npb25JZCI6Im8wVW1KOWU4ZTlKM3hl
 YU8iLCJzdWIiOiJnaDoyNjI5NjI5NCIsInRleHQiOiI/IiwiY3
-JlYXRlZCI6MTY5MzIzMjkxMzMxOX19LCJoaXN0b3J5IjpbLTgy
-MDkzMzE0OCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLTE0OTgwMT
-kzNzAsLTE1NzM1MTY1NDYsLTQ2MjI5MzM3MCwxNTEyNjAyOTkz
-LDIwMTc3MzEzNzcsLTY0MTMzNzQyMCwxOTU3NjczNzgsNTI2OT
-E4MDA2LDU1NTE1NzIxOSwtMTc4ODM5MzYwOCwxNzYzNTA2MTAw
-LC0xOTU2MzYxODE4LC0xOTYzODQ4NzYyLDY0MTQ5NjI4OCwtMT
-MxNjczOTYxNiwxOTcxMjg0MzQwLDk5MDY5MDkyN119
+JlYXRlZCI6MTY5MzIzMjkxMzMxOX19LCJoaXN0b3J5IjpbLTE0
+NzkyODMwMjQsLTYxMTU0MzU0NiwtNTQ2NzUzNDA5LC0xNDk4MD
+E5MzcwLC0xNTczNTE2NTQ2LC00NjIyOTMzNzAsMTUxMjYwMjk5
+MywyMDE3NzMxMzc3LC02NDEzMzc0MjAsMTk1NzY3Mzc4LDUyNj
+kxODAwNiw1NTUxNTcyMTksLTE3ODgzOTM2MDgsMTc2MzUwNjEw
+MCwtMTk1NjM2MTgxOCwtMTk2Mzg0ODc2Miw2NDE0OTYyODgsLT
+EzMTY3Mzk2MTYsMTk3MTI4NDM0MCw5OTA2OTA5MjddfQ==
 -->
