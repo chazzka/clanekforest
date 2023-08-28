@@ -188,8 +188,6 @@ Each range should be reasonable enough to allow all the domain space to be separ
 
 - [ ] TODO: Teorie grafů
 
-- [ ] TODO: what is ending condition?
-
 In the following we suppose a Euclidean type of space.
 
 Let us construct the decision tree such that:
@@ -215,6 +213,7 @@ $$T_0= (V_0, E_0) = (\{R_0\},\emptyset).$$
 The steps to reach the tree $T_{j+1}$ from $T_{j}$ are as follows:
 
 Let $L_j \subseteq V_j$ be a subset of leaves not satisfying the ending condition.
+If 
 
 For each leaf $R \in L_j$ create two new vertices $R_l, R_r$ by selecting a random dimension $d$.
 
@@ -249,7 +248,8 @@ B --> E{11..39, 17..33}
 D --> F{11..25, 1..17}
 D --> G{25..39, 1..17}
 ```
-> Figure X. Isolation Hasse diagram.
+> Figure X. Isolation Tree diagram for figure X.
+ 
  
 
 #begin další článek
@@ -405,11 +405,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MDE5NTUzNSwxODkwNjA1MzAzLDIwNj
-A2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNzY2NzM5LC0xMDk0ODk1
-NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAxOTM3MC
-wtMTU3MzUxNjU0NiwtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAx
-NzczMTM3NywtNjQxMzM3NDIwLDE5NTc2NzM3OCw1MjY5MTgwMD
-YsNTU1MTU3MjE5LC0xNzg4MzkzNjA4LDE3NjM1MDYxMDAsLTE5
-NTYzNjE4MThdfQ==
+eyJoaXN0b3J5IjpbMzg0NDMwMTc3LDE4OTA2MDUzMDMsMjA2MD
+YxMzc3MSwyMDM1MTc5OTUwLDE3MzI3NjY3MzksLTEwOTQ4OTU0
+NjQsLTYxMTU0MzU0NiwtNTQ2NzUzNDA5LC0xNDk4MDE5MzcwLC
+0xNTczNTE2NTQ2LC00NjIyOTMzNzAsMTUxMjYwMjk5MywyMDE3
+NzMxMzc3LC02NDEzMzc0MjAsMTk1NzY3Mzc4LDUyNjkxODAwNi
+w1NTUxNTcyMTksLTE3ODgzOTM2MDgsMTc2MzUwNjEwMCwtMTk1
+NjM2MTgxOF19
 -->
