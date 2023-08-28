@@ -237,9 +237,10 @@ $$E_{j+1} = E_j \cup \bigcup_{R \in L_j} \{(R, R_l), (R,R_r)\}, \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx},$$
 i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $R$ in the new tree $T_{j+1}$. 
 
-Note: Tree $T_{j}$ is actually a Hasse diagram uspořádané množiny (V,\subseteq)
+Note: Tree $T_{j}$ is actually a Hasse diagram of the ordered set $(V,\subseteq)$.
 
-If R_l or R_r satisfies the ending condition 
+If $R_l$ or $R_r$ satisfies the ending condition the depth is calculated as
+$$$$
  
 1.  splňuje koncovou podmínku, dopočítej depth
 
@@ -400,11 +401,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNzA0NzIxLC0xMDk0ODk1NDY0LC02MT
-E1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUx
-NjU0NiwtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAxNzczMTM3Ny
-wtNjQxMzM3NDIwLDE5NTc2NzM3OCw1MjY5MTgwMDYsNTU1MTU3
-MjE5LC0xNzg4MzkzNjA4LDE3NjM1MDYxMDAsLTE5NTYzNjE4MT
-gsLTE5NjM4NDg3NjIsNjQxNDk2Mjg4LC0xMzE2NzM5NjE2LDE5
-NzEyODQzNDBdfQ==
+eyJoaXN0b3J5IjpbMTM2NDYzODEwOSwtMTA5NDg5NTQ2NCwtNj
+ExNTQzNTQ2LC01NDY3NTM0MDksLTE0OTgwMTkzNzAsLTE1NzM1
+MTY1NDYsLTQ2MjI5MzM3MCwxNTEyNjAyOTkzLDIwMTc3MzEzNz
+csLTY0MTMzNzQyMCwxOTU3NjczNzgsNTI2OTE4MDA2LDU1NTE1
+NzIxOSwtMTc4ODM5MzYwOCwxNzYzNTA2MTAwLC0xOTU2MzYxOD
+E4LC0xOTYzODQ4NzYyLDY0MTQ5NjI4OCwtMTMxNjczOTYxNiwx
+OTcxMjg0MzQwXX0=
 -->
