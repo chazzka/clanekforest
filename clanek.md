@@ -237,6 +237,8 @@ $$E_{j+1} = E_j \cup \bigcup_{R \in L_j} \{(R, R_l), (R,R_r)\}, \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx},$$
 i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $R$ in the new tree $T_{j+1}$. 
 
+Note: Tree $T_{j}$  Hasseuv diagram uspořádané množiny (V,\subseteq)
+
 If R_l or R_r satisfies the ending condition 
  
 1.  splňuje koncovou podmínku, dopočítej depth
@@ -398,11 +400,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MTExNjc0MSwtNjExNTQzNTQ2LC01ND
-Y3NTM0MDksLTE0OTgwMTkzNzAsLTE1NzM1MTY1NDYsLTQ2MjI5
-MzM3MCwxNTEyNjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMzNzQyMC
-wxOTU3NjczNzgsNTI2OTE4MDA2LDU1NTE1NzIxOSwtMTc4ODM5
-MzYwOCwxNzYzNTA2MTAwLC0xOTU2MzYxODE4LC0xOTYzODQ4Nz
-YyLDY0MTQ5NjI4OCwtMTMxNjczOTYxNiwxOTcxMjg0MzQwLDk5
-MDY5MDkyN119
+eyJoaXN0b3J5IjpbLTEwOTQ4OTU0NjQsLTYxMTU0MzU0NiwtNT
+Q2NzUzNDA5LC0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00NjIy
+OTMzNzAsMTUxMjYwMjk5MywyMDE3NzMxMzc3LC02NDEzMzc0Mj
+AsMTk1NzY3Mzc4LDUyNjkxODAwNiw1NTUxNTcyMTksLTE3ODgz
+OTM2MDgsMTc2MzUwNjEwMCwtMTk1NjM2MTgxOCwtMTk2Mzg0OD
+c2Miw2NDE0OTYyODgsLTEzMTY3Mzk2MTYsMTk3MTI4NDM0MCw5
+OTA2OTA5MjddfQ==
 -->
