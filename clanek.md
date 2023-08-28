@@ -237,7 +237,7 @@ $$E_{j+1} = E_j \cup \bigcup_{R \in L_j} \{(R, R_l), (R,R_r)\}, \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx},$$
 i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $R$ in the new tree $T_{j+1}$. 
 
-Note: Tree $T_{j}$  Hasseuv diagram uspořádané množiny (V,\subseteq)
+Note: Tree $T_{j}$ is actually a Hasse diagram uspořádané množiny (V,\subseteq)
 
 If R_l or R_r satisfies the ending condition 
  
@@ -400,11 +400,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTQ4OTU0NjQsLTYxMTU0MzU0NiwtNT
-Q2NzUzNDA5LC0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00NjIy
-OTMzNzAsMTUxMjYwMjk5MywyMDE3NzMxMzc3LC02NDEzMzc0Mj
-AsMTk1NzY3Mzc4LDUyNjkxODAwNiw1NTUxNTcyMTksLTE3ODgz
-OTM2MDgsMTc2MzUwNjEwMCwtMTk1NjM2MTgxOCwtMTk2Mzg0OD
-c2Miw2NDE0OTYyODgsLTEzMTY3Mzk2MTYsMTk3MTI4NDM0MCw5
-OTA2OTA5MjddfQ==
+eyJoaXN0b3J5IjpbMTkwNzA0NzIxLC0xMDk0ODk1NDY0LC02MT
+E1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUx
+NjU0NiwtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAxNzczMTM3Ny
+wtNjQxMzM3NDIwLDE5NTc2NzM3OCw1MjY5MTgwMDYsNTU1MTU3
+MjE5LC0xNzg4MzkzNjA4LDE3NjM1MDYxMDAsLTE5NTYzNjE4MT
+gsLTE5NjM4NDg3NjIsNjQxNDk2Mjg4LC0xMzE2NzM5NjE2LDE5
+NzEyODQzNDBdfQ==
 -->
