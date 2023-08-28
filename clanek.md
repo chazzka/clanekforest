@@ -201,8 +201,9 @@ vertices are Hyperrectangles
 pokud bod padne do hyperrectangle
 
 Let us construct the decision tree such that:
-- the sample $D$ contains *batch_size* number of input datapoints. 
--  leaves (external vertices) $L \subseteq V$contain the possibility space $R$ and a subset $D$ of all datapoints, such that $D = \{d; d \in R \}$.
+- the sample $D$ contains *batch_size* number of input datapoints.
+- external verticies and internal 
+-  leaves (external vertices) $L \subseteq V$contain the possibility space $R$. 
 -  internal vertices contain the decison function $f$ as in (x).
 
 $$f = $$
@@ -410,11 +411,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5ODYxODI4NiwtNDYyMjkzMzcwLDE1MT
-I2MDI5OTMsMjAxNzczMTM3NywtNjQxMzM3NDIwLDE5NTc2NzM3
-OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC0xNzg4MzkzNjA4LDE3Nj
-M1MDYxMDAsLTE5NTYzNjE4MTgsLTE5NjM4NDg3NjIsNjQxNDk2
-Mjg4LC0xMzE2NzM5NjE2LDE5NzEyODQzNDAsOTkwNjkwOTI3LD
-EwMDQ0ODUzNTYsLTY3NzY2MDQxMywtMTcwMDUxNjQ1OSwtMTA2
-NjA2OTk2OV19
+eyJoaXN0b3J5IjpbNzIwMDc0OTAwLC00NjIyOTMzNzAsMTUxMj
+YwMjk5MywyMDE3NzMxMzc3LC02NDEzMzc0MjAsMTk1NzY3Mzc4
+LDUyNjkxODAwNiw1NTUxNTcyMTksLTE3ODgzOTM2MDgsMTc2Mz
+UwNjEwMCwtMTk1NjM2MTgxOCwtMTk2Mzg0ODc2Miw2NDE0OTYy
+ODgsLTEzMTY3Mzk2MTYsMTk3MTI4NDM0MCw5OTA2OTA5MjcsMT
+AwNDQ4NTM1NiwtNjc3NjYwNDEzLC0xNzAwNTE2NDU5LC0xMDY2
+MDY5OTY5XX0=
 -->
