@@ -230,8 +230,9 @@ Then $$R_l = r_1 \times  \cdots \times r_{d-1} \times  r_l \times r_{d+1} \times
 
 $$R_r = r_1 \times  \cdots \times r_{d-1} \times  r_r \times r_{d+1} \times \cdots \times r_n  \tag{x}$$
 where $r_l =  \langle x, s \rangle$ and  $r_r =  \langle s, 
-y \rangle$ and $s= \frac{r_d}{2}$.
+y \rangle$ and $s$ is a number obtained as the middle of the range $r_d$ as in (x). 
 
+$$S = \frac{r_s + r_e}{2}\tag{x}$$
 Each vertex $R$ is assigned two new edges $(R,R_l ), (R, R_r)$ as in (x...xxx).
 
 $$$$
@@ -244,10 +245,6 @@ $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx}$$
  Let $v_l$ be the left leaf of $v$ and $v_r$ right leaf of $v$. 
  
  
-The splint point $S$ is a number obtained as the middle of the range $r=\langle R_s, R_e\rangle$ as in (6). 
-
-$$S = \frac{r_s + r_e}{2}, \tag{6}$$
-
 generating two ranges $r_l = \langle R_s, S )$; $r_r = \langle  S, R_e \rangle$ for left and right vertex respectively (7).
 
 $$B_l  = \{ x \in B; x \in r_l \}; \quad B_r  = \{ x \in B; x \in r_r \} \tag{7}$$
@@ -420,7 +417,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTE0NzQ2NCwtMTQ5ODAxOTM3MCwtMT
+eyJoaXN0b3J5IjpbLTM1NTc4NzM3OCwtMTQ5ODAxOTM3MCwtMT
 U3MzUxNjU0NiwtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAxNzcz
 MTM3NywtNjQxMzM3NDIwLDE5NTc2NzM3OCw1MjY5MTgwMDYsNT
 U1MTU3MjE5LC0xNzg4MzkzNjA4LDE3NjM1MDYxMDAsLTE5NTYz
