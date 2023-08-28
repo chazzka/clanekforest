@@ -169,8 +169,6 @@ Although $P_a$ has the same depth as the regular observations, later will be sho
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
 
 
-
-
 As in the original article, we use the concept of a binary decision tree.
 The proposed solution is altering the concept of the split point evaluation.
 Whereas the original Isolation Forest is evaluating the split point based on the previous data, in our proposed solution we evaluate the split point based on a range.
@@ -213,7 +211,7 @@ $$T_0= (V_0, E_0) = (\{R_0\},\emptyset).$$
 The steps to reach the tree $T_{j+1}$ from $T_{j}$ are as follows:
 
 Let $L_j \subseteq V_j$ be a subset of leaves not satisfying the ending condition.
-If 
+If $L_j = \emptyset$, do not continue further.
 
 For each leaf $R \in L_j$ create two new vertices $R_l, R_r$ by selecting a random dimension $d$.
 
@@ -405,11 +403,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg0NDMwMTc3LDE4OTA2MDUzMDMsMjA2MD
-YxMzc3MSwyMDM1MTc5OTUwLDE3MzI3NjY3MzksLTEwOTQ4OTU0
-NjQsLTYxMTU0MzU0NiwtNTQ2NzUzNDA5LC0xNDk4MDE5MzcwLC
-0xNTczNTE2NTQ2LC00NjIyOTMzNzAsMTUxMjYwMjk5MywyMDE3
-NzMxMzc3LC02NDEzMzc0MjAsMTk1NzY3Mzc4LDUyNjkxODAwNi
-w1NTUxNTcyMTksLTE3ODgzOTM2MDgsMTc2MzUwNjEwMCwtMTk1
-NjM2MTgxOF19
+eyJoaXN0b3J5IjpbMTU2OTU2NDE3NywxODkwNjA1MzAzLDIwNj
+A2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNzY2NzM5LC0xMDk0ODk1
+NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAxOTM3MC
+wtMTU3MzUxNjU0NiwtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAx
+NzczMTM3NywtNjQxMzM3NDIwLDE5NTc2NzM3OCw1MjY5MTgwMD
+YsNTU1MTU3MjE5LC0xNzg4MzkzNjA4LDE3NjM1MDYxMDAsLTE5
+NTYzNjE4MThdfQ==
 -->
