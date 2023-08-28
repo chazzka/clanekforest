@@ -195,24 +195,22 @@ In the following we suppose an Euclidean type of space.
 
 Jak dostat D do leafu abychom mohli ukoncit? - nemusime nic delit, proste jen rekneme ze to konci pokud ten space odpovida ukoncovaci podmince
 
-jak popsat konstrukci stromu abychom vysvetlili propagaci ranges a subspace?
-
-vertices are Hyperrectangles
-pokud bod padne do hyperrectangle
-
 Let us construct the decision tree such that:
 - maximal possible height of a tree is controlled by the *max_depth* parameter
 - the sample $D$ contains *batch_size* number of input datapoints.
-- leaves and internal vertices are possibility space hyperrectangles.
+- leaves and internal vertices are possibility-space hyperrectangles.
 
 
 ##### Basis step
-The only root vertex $v$ is a trivial binary tree $T_0$ with vertices $V_0 = \{v\}$ and edges $E_0 = \emptyset$, i.e.
-$$T_0= (V_0, E_0) = (\{v\},\emptyset).$$ 
 
 For each $i \in\{1, \dots, n\}$
 , feature $f_i$ is bounded by the range $r_i$. The ranges form the possibility space $R_0$ as in (xx). 
 $$R_0 =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}$$
+
+The only root vertex $v$ is a trivial binary tree $T_0$ with vertices $V_0 = \{v\}$ and edges $E_0 = \emptyset$, i.e.
+$$T_0= (V_0, E_0) = (\{v\},\emptyset).$$ 
+
+
 
 
 ##### Recursive step
@@ -406,11 +404,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwODUyMDg5MCwtNDYyMjkzMzcwLDE1MT
-I2MDI5OTMsMjAxNzczMTM3NywtNjQxMzM3NDIwLDE5NTc2NzM3
-OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC0xNzg4MzkzNjA4LDE3Nj
-M1MDYxMDAsLTE5NTYzNjE4MTgsLTE5NjM4NDg3NjIsNjQxNDk2
-Mjg4LC0xMzE2NzM5NjE2LDE5NzEyODQzNDAsOTkwNjkwOTI3LD
-EwMDQ0ODUzNTYsLTY3NzY2MDQxMywtMTcwMDUxNjQ1OSwtMTA2
-NjA2OTk2OV19
+eyJoaXN0b3J5IjpbLTE4MTQyNDM4MjQsLTQ2MjI5MzM3MCwxNT
+EyNjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMzNzQyMCwxOTU3Njcz
+NzgsNTI2OTE4MDA2LDU1NTE1NzIxOSwtMTc4ODM5MzYwOCwxNz
+YzNTA2MTAwLC0xOTU2MzYxODE4LC0xOTYzODQ4NzYyLDY0MTQ5
+NjI4OCwtMTMxNjczOTYxNiwxOTcxMjg0MzQwLDk5MDY5MDkyNy
+wxMDA0NDg1MzU2LC02Nzc2NjA0MTMsLTE3MDA1MTY0NTksLTEw
+NjYwNjk5NjldfQ==
 -->
