@@ -218,9 +218,9 @@ The steps to reach the tree $T_{j+1}$ from $T_{j}$ are as follows:
 Let $L_j \subseteq V_j$ be a subset of leaves not satisfying the ending condition.
 For each leaf $R \in L_j$ create two new vertices $R_l, R_r$ as in (x).
 
-$$$$
+$$R_l_ = $$
 
-Each vertex is assigned two new edges $(R,R_l ), (R, R_r)$ as in (x...xxx).
+Each vertex $R$ is assigned two new edges $(R,R_l ), (R, R_r)$ as in (x...xxx).
 
 $$$$
 
@@ -408,11 +408,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTIzODI5MjIsLTE1NzM1MTY1NDYsLT
-Q2MjI5MzM3MCwxNTEyNjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMz
-NzQyMCwxOTU3NjczNzgsNTI2OTE4MDA2LDU1NTE1NzIxOSwtMT
-c4ODM5MzYwOCwxNzYzNTA2MTAwLC0xOTU2MzYxODE4LC0xOTYz
-ODQ4NzYyLDY0MTQ5NjI4OCwtMTMxNjczOTYxNiwxOTcxMjg0Mz
-QwLDk5MDY5MDkyNywxMDA0NDg1MzU2LC02Nzc2NjA0MTMsLTE3
-MDA1MTY0NTldfQ==
+eyJoaXN0b3J5IjpbMTU3ODc5MzM5MywtMTU3MzUxNjU0NiwtND
+YyMjkzMzcwLDE1MTI2MDI5OTMsMjAxNzczMTM3NywtNjQxMzM3
+NDIwLDE5NTc2NzM3OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC0xNz
+g4MzkzNjA4LDE3NjM1MDYxMDAsLTE5NTYzNjE4MTgsLTE5NjM4
+NDg3NjIsNjQxNDk2Mjg4LC0xMzE2NzM5NjE2LDE5NzEyODQzND
+AsOTkwNjkwOTI3LDEwMDQ0ODUzNTYsLTY3NzY2MDQxMywtMTcw
+MDUxNjQ1OV19
 -->
