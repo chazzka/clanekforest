@@ -237,7 +237,7 @@ $$E_{j+1} = E_j \cup \bigcup_{R \in L_j} \{(R, R_l), (R,R_r)\}, \tag{xx}$$
 $$T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx},$$
 i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $R$ in the new tree $T_{j+1}$. 
 
-If R_l or R_r satisfies the ending con 
+If R_l or R_r satisfies the ending condition 
  
 1.  splňuje koncovou podmínku, dopočítej depth
 
@@ -398,11 +398,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUyODk5NDM2LC02MTE1NDM1NDYsLTU0Nj
-c1MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUxNjU0NiwtNDYyMjkz
-MzcwLDE1MTI2MDI5OTMsMjAxNzczMTM3NywtNjQxMzM3NDIwLD
-E5NTc2NzM3OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC0xNzg4Mzkz
-NjA4LDE3NjM1MDYxMDAsLTE5NTYzNjE4MTgsLTE5NjM4NDg3Nj
-IsNjQxNDk2Mjg4LC0xMzE2NzM5NjE2LDE5NzEyODQzNDAsOTkw
-NjkwOTI3XX0=
+eyJoaXN0b3J5IjpbMTM5MTExNjc0MSwtNjExNTQzNTQ2LC01ND
+Y3NTM0MDksLTE0OTgwMTkzNzAsLTE1NzM1MTY1NDYsLTQ2MjI5
+MzM3MCwxNTEyNjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMzNzQyMC
+wxOTU3NjczNzgsNTI2OTE4MDA2LDU1NTE1NzIxOSwtMTc4ODM5
+MzYwOCwxNzYzNTA2MTAwLC0xOTU2MzYxODE4LC0xOTYzODQ4Nz
+YyLDY0MTQ5NjI4OCwtMTMxNjczOTYxNiwxOTcxMjg0MzQwLDk5
+MDY5MDkyN119
 -->
