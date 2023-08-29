@@ -259,7 +259,7 @@ The evaluation phasis starts with a constructed tree and the datapoint recursive
 
 As the datapoint reaches the leaf its path_length is calculated as follows:
 + If max_depth is not reached, the path_length is the depth of the leaf.
-+ If max_depth is reached, the path_length $h(x)$ is obtained as in
++ If max_depth is reached, but, the path_length $h(x)$ is obtained as in
 $$h(x)=e+c(n),$$
 where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is the size of sample $S$ fitting into possibility space $R$, i.e., $n=| S \cap R |$,  and $c(n)$ is obtained using harmonic number $H_{n-1}$ such that $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$. 
 
@@ -268,7 +268,8 @@ Suppose the evaluation of datapoint $Px = [28,16]$:
 - In the first step, the point fits into the possibilty space of the left vertex $\langle 11,39 ) \times \langle 1,33)$
 - In the second step, the point fits into the space of a left vertex $\langle 11,39 ) \times \langle 1,17)$
 - in the final step, the point fits into the space of a right leaf $\langle 25,39 ) \times \langle 1,17)$, reaching the stopping criterion
-- since we reached the stopping criterion, the path_length is obtained as $h(P_x) = $
+- since we reached the stopping criterion, the path_length is obtained as $h(P_x) = 3 + c(0)$
+
 
 
 ### neni to tree ale les
@@ -431,11 +432,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE2MTY5ODAzLDEzNTMyNTU1ODksMTU0ND
-g3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNjQwNTMwODcx
-LC04ODk4MTg3LDE1Njk1NjQxNzcsMTg5MDYwNTMwMywyMDYwNj
-EzNzcxLDIwMzUxNzk5NTAsMTczMjc2NjczOSwtMTA5NDg5NTQ2
-NCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLTE0OTgwMTkzNzAsLT
-E1NzM1MTY1NDYsLTQ2MjI5MzM3MCwxNTEyNjAyOTkzLDIwMTc3
-MzEzNzddfQ==
+eyJoaXN0b3J5IjpbLTE2MTE0MjI2OTQsMTM1MzI1NTU4OSwxNT
+Q0ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5MTEwLDE2NDA1MzA4
+NzEsLTg4OTgxODcsMTU2OTU2NDE3NywxODkwNjA1MzAzLDIwNj
+A2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNzY2NzM5LC0xMDk0ODk1
+NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAxOTM3MC
+wtMTU3MzUxNjU0NiwtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAx
+NzczMTM3N119
 -->
