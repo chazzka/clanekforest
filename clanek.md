@@ -285,13 +285,14 @@ Basic and recursive steps are repeated for each of the trees in a forest.
 The number of trees is set experimentally, usually around 100.
 
 Let forest $F$ be the set of trees $F =(T_1, T_2 \dots ,T_k)$. The expected value $E$ of path_lengths $h_T(X)$  for the respective tress $T_i$ is obtained as
-$$E(h(X)) = \frac{h_{T_1}(X) + h_{T_1}(X) + \cdots + h_{T_k}(X)}{k} .$$
+$$E(h(X)) = \frac{h_{T_1}(X) + h_{T_2}(X) + \cdots + h_{T_k}(X)}{k} .$$
 
 The novelty score $s_F(X)$ is then
 $$s_F(X) = 	2^{-\frac{E(h(X))}{c(X)}}.$$
 
 
-Consider the following example
+Consider the following example.
+
 
 
 #begin další článek
@@ -449,11 +450,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzUyOTI0MDgsMjUxMDIzNzg4LDIwMz
-A0OTA1NzgsNDU4MDUzMjQwLC02MTIyODUzMjYsLTE2MTE0MjI2
-OTQsMTM1MzI1NTU4OSwxNTQ0ODc2MzA3LDE1NDgwNTIwMzgsLT
-I4MTU5MTEwLDE2NDA1MzA4NzEsLTg4OTgxODcsMTU2OTU2NDE3
-NywxODkwNjA1MzAzLDIwNjA2MTM3NzEsMjAzNTE3OTk1MCwxNz
-MyNzY2NzM5LC0xMDk0ODk1NDY0LC02MTE1NDM1NDYsLTU0Njc1
-MzQwOV19
+eyJoaXN0b3J5IjpbLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNT
+EwMjM3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMy
+NiwtMTYxMTQyMjY5NCwxMzUzMjU1NTg5LDE1NDQ4NzYzMDcsMT
+U0ODA1MjAzOCwtMjgxNTkxMTAsMTY0MDUzMDg3MSwtODg5ODE4
+NywxNTY5NTY0MTc3LDE4OTA2MDUzMDMsMjA2MDYxMzc3MSwyMD
+M1MTc5OTUwLDE3MzI3NjY3MzksLTEwOTQ4OTU0NjQsLTYxMTU0
+MzU0Nl19
 -->
