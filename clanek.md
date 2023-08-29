@@ -267,10 +267,12 @@ Consider the example from Figure X.
 Suppose the evaluation of datapoint $P_a = [28,16]$:
 - In the first step, the point fits into the possibilty space of the left vertex $\langle 11,39 ) \times \langle 1,33)$
 - In the second step, the point fits into the space of a left vertex $\langle 11,39 ) \times \langle 1,17)$
-- in the final step, the point fits into the space of a right leaf $\langle 25,39 ) \times \langle 1,17)$, satisfying the first stopping criterion,the path_length is obtained as depth of a leaf as $h(P_x) = 3$.
+- in the final step, the point fits into the space of a right leaf $\langle 25,39 ) \times \langle 1,17)$, satisfying the first stopping criterion
+- the path_length is obtained as depth of a leaf as $h(P_a) = 3$.
 
 Suppose the evaluation of datapoint $P_b = [18,5]$:
-Traversing the tree, the datapoint reaches the leaf  $\langle 11,25 ) \times \langle 1,17)$.
+Traversing the tree, the datapoint reaches the leaf  $\langle 11,25 ) \times \langle 1,17)$, satisfying the second stopping criterion
+- the path_length is obtained as $h(P_b) = 3 + c$
 
 
 ### neni to tree ale les
@@ -433,7 +435,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MDQxMjIzNiwtNjEyMjg1MzI2LC0xNj
+eyJoaXN0b3J5IjpbMTYyMDIyMjY2NSwtNjEyMjg1MzI2LC0xNj
 ExNDIyNjk0LDEzNTMyNTU1ODksMTU0NDg3NjMwNywxNTQ4MDUy
 MDM4LC0yODE1OTExMCwxNjQwNTMwODcxLC04ODk4MTg3LDE1Nj
 k1NjQxNzcsMTg5MDYwNTMwMywyMDYwNjEzNzcxLDIwMzUxNzk5
