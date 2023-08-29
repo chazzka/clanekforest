@@ -280,7 +280,7 @@ Traversing the tree, the datapoint reaches the leaf  $\langle 11,25 ) \times \la
 
 
 ### neni to tree ale les
-
+ - 
  - jak se získá výsledná hodnota
  - takové ty šílené rovnice c
 
@@ -439,11 +439,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMj
-I4NTMyNiwtMTYxMTQyMjY5NCwxMzUzMjU1NTg5LDE1NDQ4NzYz
-MDcsMTU0ODA1MjAzOCwtMjgxNTkxMTAsMTY0MDUzMDg3MSwtOD
-g5ODE4NywxNTY5NTY0MTc3LDE4OTA2MDUzMDMsMjA2MDYxMzc3
-MSwyMDM1MTc5OTUwLDE3MzI3NjY3MzksLTEwOTQ4OTU0NjQsLT
-YxMTU0MzU0NiwtNTQ2NzUzNDA5LC0xNDk4MDE5MzcwLC0xNTcz
-NTE2NTQ2XX0=
+eyJoaXN0b3J5IjpbMTIyMzUzODUxOSwyMDMwNDkwNTc4LDQ1OD
+A1MzI0MCwtNjEyMjg1MzI2LC0xNjExNDIyNjk0LDEzNTMyNTU1
+ODksMTU0NDg3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNj
+QwNTMwODcxLC04ODk4MTg3LDE1Njk1NjQxNzcsMTg5MDYwNTMw
+MywyMDYwNjEzNzcxLDIwMzUxNzk5NTAsMTczMjc2NjczOSwtMT
+A5NDg5NTQ2NCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLTE0OTgw
+MTkzNzBdfQ==
 -->
