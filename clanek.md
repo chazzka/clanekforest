@@ -263,6 +263,8 @@ As the datapoint reaches the leaf its path_length is calculated as follows:
 $$h(x)=e+c(n),$$
 where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is the size of sample $S$ fitting into possibility space $R$, i.e., $n=| S \cap R |$,  and $c(n)$ is obtained using harmonic number $H_{n-1}$ such that $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$. 
 
+Consider the example from Figure X.
+Suppose we evaluate datapoint $Px$:
 
  
 ### neni to tree ale les
@@ -425,11 +427,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MzI1NTU4OSwxNTQ0ODc2MzA3LDE1ND
-gwNTIwMzgsLTI4MTU5MTEwLDE2NDA1MzA4NzEsLTg4OTgxODcs
-MTU2OTU2NDE3NywxODkwNjA1MzAzLDIwNjA2MTM3NzEsMjAzNT
-E3OTk1MCwxNzMyNzY2NzM5LC0xMDk0ODk1NDY0LC02MTE1NDM1
-NDYsLTU0Njc1MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUxNjU0Ni
-wtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAxNzczMTM3NywtNjQx
-MzM3NDIwXX0=
+eyJoaXN0b3J5IjpbMTQxNzg4OTQzLDEzNTMyNTU1ODksMTU0ND
+g3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNjQwNTMwODcx
+LC04ODk4MTg3LDE1Njk1NjQxNzcsMTg5MDYwNTMwMywyMDYwNj
+EzNzcxLDIwMzUxNzk5NTAsMTczMjc2NjczOSwtMTA5NDg5NTQ2
+NCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLTE0OTgwMTkzNzAsLT
+E1NzM1MTY1NDYsLTQ2MjI5MzM3MCwxNTEyNjAyOTkzLDIwMTc3
+MzEzNzddfQ==
 -->
