@@ -284,8 +284,10 @@ Due to the random selection of samples and a dimension, the evaluation is distri
 Basic and recursive steps are repeated for each of the trees in a forest.
 The number of trees is set experimentally, usually around 100.
 
-The final novelty score of datapoint $$is then evaluated on a forest as
-$$e() = \overline{h(F_i)} $$
+Let forest 
+The final novelty score of datapoint $X$ is then evaluated on a forest as
+$$e(X) = \overline{h(X)} $$,
+where 
 
 
 
@@ -450,7 +452,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NjY3MzkzMSwyMDMwNDkwNTc4LDQ1OD
+eyJoaXN0b3J5IjpbLTU2MDMzMzQxMCwyMDMwNDkwNTc4LDQ1OD
 A1MzI0MCwtNjEyMjg1MzI2LC0xNjExNDIyNjk0LDEzNTMyNTU1
 ODksMTU0NDg3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNj
 QwNTMwODcxLC04ODk4MTg3LDE1Njk1NjQxNzcsMTg5MDYwNTMw
