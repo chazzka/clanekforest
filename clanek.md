@@ -279,8 +279,8 @@ Traversing the tree, the datapoint reaches the leaf  $\langle 11,25 ) \times \la
 - the path_length is obtained as $h(P_b) = 3 + c(4) = 3+ 2 \cdot (H_3 - \frac{3}{4}) = 3 +2 \cdot [\bigl(1 + \frac{1}{2} + \frac{1}{3}\bigr) - \frac{3}{4}] = \frac{31}{6}$
 
 
-### neni to tree ale les
- - 
+### From a tree to the forest
+
  - jak se získá výsledná hodnota
  - takové ty šílené rovnice c
 
@@ -439,11 +439,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMzUzODUxOSwyMDMwNDkwNTc4LDQ1OD
-A1MzI0MCwtNjEyMjg1MzI2LC0xNjExNDIyNjk0LDEzNTMyNTU1
-ODksMTU0NDg3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNj
-QwNTMwODcxLC04ODk4MTg3LDE1Njk1NjQxNzcsMTg5MDYwNTMw
-MywyMDYwNjEzNzcxLDIwMzUxNzk5NTAsMTczMjc2NjczOSwtMT
-A5NDg5NTQ2NCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLTE0OTgw
-MTkzNzBdfQ==
+eyJoaXN0b3J5IjpbLTIwODY3NjQwMzksMjAzMDQ5MDU3OCw0NT
+gwNTMyNDAsLTYxMjI4NTMyNiwtMTYxMTQyMjY5NCwxMzUzMjU1
+NTg5LDE1NDQ4NzYzMDcsMTU0ODA1MjAzOCwtMjgxNTkxMTAsMT
+Y0MDUzMDg3MSwtODg5ODE4NywxNTY5NTY0MTc3LDE4OTA2MDUz
+MDMsMjA2MDYxMzc3MSwyMDM1MTc5OTUwLDE3MzI3NjY3MzksLT
+EwOTQ4OTU0NjQsLTYxMTU0MzU0NiwtNTQ2NzUzNDA5LC0xNDk4
+MDE5MzcwXX0=
 -->
