@@ -284,8 +284,8 @@ Due to the random selection of samples and a dimension, the evaluation is distri
 Basic and recursive steps are repeated for each of the trees in a forest.
 The number of trees is set experimentally, usually around 100.
 
-Let forest 
-The final novelty score of datapoint $X$ is then evaluated on a forest as
+Let forest $F$ be the set of trees $F =(T_1, T_2 \dots ,T_k)$.
+The final novelty score of datapoint $X$ is then evaluated on $F$ as
 $$e(X) = \overline{h(X)} $$,
 where 
 
@@ -452,11 +452,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MDMzMzQxMCwyMDMwNDkwNTc4LDQ1OD
-A1MzI0MCwtNjEyMjg1MzI2LC0xNjExNDIyNjk0LDEzNTMyNTU1
-ODksMTU0NDg3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNj
-QwNTMwODcxLC04ODk4MTg3LDE1Njk1NjQxNzcsMTg5MDYwNTMw
-MywyMDYwNjEzNzcxLDIwMzUxNzk5NTAsMTczMjc2NjczOSwtMT
-A5NDg5NTQ2NCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLTE0OTgw
-MTkzNzBdfQ==
+eyJoaXN0b3J5IjpbMzU0NTEyMjg3LDIwMzA0OTA1NzgsNDU4MD
+UzMjQwLC02MTIyODUzMjYsLTE2MTE0MjI2OTQsMTM1MzI1NTU4
+OSwxNTQ0ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5MTEwLDE2ND
+A1MzA4NzEsLTg4OTgxODcsMTU2OTU2NDE3NywxODkwNjA1MzAz
+LDIwNjA2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNzY2NzM5LC0xMD
+k0ODk1NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAx
+OTM3MF19
 -->
