@@ -266,7 +266,9 @@ where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is 
 Consider the example from Figure X.
 Suppose the evaluation of datapoint $Px = [28,16]$:
 - In the first step, the point fits into the possibilty space of the left vertex $\langle 11,39 ) \times \langle 1,33)$
-- In the second step, the points fits into the space of a le
+- In the second step, the point fits into the space of a left vertex $\langle 11,39 ) \times \langle 1,17)$
+- in the final step, the point fits into the space of a right leaf, reaching the stopping criterion
+
 
  
 ### neni to tree ale les
@@ -429,11 +431,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDg1ODk0NDIsMTM1MzI1NTU4OSwxNT
-Q0ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5MTEwLDE2NDA1MzA4
-NzEsLTg4OTgxODcsMTU2OTU2NDE3NywxODkwNjA1MzAzLDIwNj
-A2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNzY2NzM5LC0xMDk0ODk1
-NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAxOTM3MC
-wtMTU3MzUxNjU0NiwtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAx
-NzczMTM3N119
+eyJoaXN0b3J5IjpbMTEwNDQwNDc5NiwxMzUzMjU1NTg5LDE1ND
+Q4NzYzMDcsMTU0ODA1MjAzOCwtMjgxNTkxMTAsMTY0MDUzMDg3
+MSwtODg5ODE4NywxNTY5NTY0MTc3LDE4OTA2MDUzMDMsMjA2MD
+YxMzc3MSwyMDM1MTc5OTUwLDE3MzI3NjY3MzksLTEwOTQ4OTU0
+NjQsLTYxMTU0MzU0NiwtNTQ2NzUzNDA5LC0xNDk4MDE5MzcwLC
+0xNTczNTE2NTQ2LC00NjIyOTMzNzAsMTUxMjYwMjk5MywyMDE3
+NzMxMzc3XX0=
 -->
