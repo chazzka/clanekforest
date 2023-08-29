@@ -253,7 +253,7 @@ D --> G{25..39, 1..17}
 Now, with the tree constructed, we can move on to the evaluation part.
 The goal of the evaluation is to get the novelty value of a datapoint.
 The evaluation phasis starts with a constructed tree and recursively moves to the leaf so that:
-1. 
+1. In each node, the decision is made according to the 
 
 - jak se získá jedna hodnota
  
@@ -417,7 +417,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDg0MTYzMzgsLTg4OTgxODcsMTU2OT
+eyJoaXN0b3J5IjpbLTExMDUyNTcyNjAsLTg4OTgxODcsMTU2OT
 U2NDE3NywxODkwNjA1MzAzLDIwNjA2MTM3NzEsMjAzNTE3OTk1
 MCwxNzMyNzY2NzM5LC0xMDk0ODk1NDY0LC02MTE1NDM1NDYsLT
 U0Njc1MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUxNjU0NiwtNDYy
