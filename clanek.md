@@ -288,7 +288,8 @@ Let forest $F$ be the set of trees $F =(T_1, T_2 \dots ,T_k)$. The expected valu
 $$E(h(X)) = \frac{h_{T_1}(X) + h_{T_1}(X) + \cdots + h_{T_k}(X)}{k} .$$
 
 The novelty score $s_F(X)$ is then
-$$s_F(X) = 	2^{-\frac{E(h(X))}{c(X)}}$$
+$$s_F(X) = 	2^{-\frac{E(h(X))}{c(X)}}.$$
+
 
  - jak se získá výsledná hodnota
  - takové ty šílené rovnice c
@@ -448,11 +449,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjI2Mzk1NzIsMjAzMDQ5MDU3OCw0NT
-gwNTMyNDAsLTYxMjI4NTMyNiwtMTYxMTQyMjY5NCwxMzUzMjU1
-NTg5LDE1NDQ4NzYzMDcsMTU0ODA1MjAzOCwtMjgxNTkxMTAsMT
-Y0MDUzMDg3MSwtODg5ODE4NywxNTY5NTY0MTc3LDE4OTA2MDUz
-MDMsMjA2MDYxMzc3MSwyMDM1MTc5OTUwLDE3MzI3NjY3MzksLT
-EwOTQ4OTU0NjQsLTYxMTU0MzU0NiwtNTQ2NzUzNDA5LC0xNDk4
-MDE5MzcwXX0=
+eyJoaXN0b3J5IjpbMjUxMDIzNzg4LDIwMzA0OTA1NzgsNDU4MD
+UzMjQwLC02MTIyODUzMjYsLTE2MTE0MjI2OTQsMTM1MzI1NTU4
+OSwxNTQ0ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5MTEwLDE2ND
+A1MzA4NzEsLTg4OTgxODcsMTU2OTU2NDE3NywxODkwNjA1MzAz
+LDIwNjA2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNzY2NzM5LC0xMD
+k0ODk1NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAx
+OTM3MF19
 -->
