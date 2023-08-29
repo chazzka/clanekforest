@@ -284,10 +284,10 @@ Due to the random selection of samples and a dimension, the evaluation is distri
 Basic and recursive steps are repeated for each of the trees in a forest.
 The number of trees is set experimentally, usually around 100.
 
-Let forest $F$ be the set of trees $F =(T_1, T_2 \dots ,T_k)$. The expepted value $E$ of path_lengths $h_T(x)$  for the respective tress $T_i$ is obtained as
-$$E(h(X)) = \frac{h_{T_1}(X) + h_{T_1}(X) + \cdots + h_{T_k}(X)}{k} ,$$
+Let forest $F$ be the set of trees $F =(T_1, T_2 \dots ,T_k)$. The expected value $E$ of path_lengths $h_T(x)$  for the respective tress $T_i$ is obtained as
+$$E(h(X)) = \frac{h_{T_1}(X) + h_{T_1}(X) + \cdots + h_{T_k}(X)}{k} .$$
 
-
+The novelty score $s_F(X)$ 
 
 
  
@@ -451,11 +451,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc1NTM5NjcsMjAzMDQ5MDU3OCw0NTgwNT
-MyNDAsLTYxMjI4NTMyNiwtMTYxMTQyMjY5NCwxMzUzMjU1NTg5
-LDE1NDQ4NzYzMDcsMTU0ODA1MjAzOCwtMjgxNTkxMTAsMTY0MD
-UzMDg3MSwtODg5ODE4NywxNTY5NTY0MTc3LDE4OTA2MDUzMDMs
-MjA2MDYxMzc3MSwyMDM1MTc5OTUwLDE3MzI3NjY3MzksLTEwOT
-Q4OTU0NjQsLTYxMTU0MzU0NiwtNTQ2NzUzNDA5LC0xNDk4MDE5
-MzcwXX0=
+eyJoaXN0b3J5IjpbLTg4NDQ4NDE3LDIwMzA0OTA1NzgsNDU4MD
+UzMjQwLC02MTIyODUzMjYsLTE2MTE0MjI2OTQsMTM1MzI1NTU4
+OSwxNTQ0ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5MTEwLDE2ND
+A1MzA4NzEsLTg4OTgxODcsMTU2OTU2NDE3NywxODkwNjA1MzAz
+LDIwNjA2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNzY2NzM5LC0xMD
+k0ODk1NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAx
+OTM3MF19
 -->
