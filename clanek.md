@@ -264,7 +264,7 @@ $$h(x)=e+c(n),$$
 where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is the size of sample $S$ fitting into possibility space $R$, i.e., $n=| S \cap R |$,  and $c(n)$ is obtained using harmonic number $H_{n-1}$ such that $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$. 
 
 Consider the example from Figure X.
-Suppose we evaluate datapoint $Px$:
+Suppose the evaluation of datapoint $Px = [28,16]$:
 
  
 ### neni to tree ale les
@@ -427,11 +427,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzg4OTQzLDEzNTMyNTU1ODksMTU0ND
-g3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNjQwNTMwODcx
-LC04ODk4MTg3LDE1Njk1NjQxNzcsMTg5MDYwNTMwMywyMDYwNj
-EzNzcxLDIwMzUxNzk5NTAsMTczMjc2NjczOSwtMTA5NDg5NTQ2
-NCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLTE0OTgwMTkzNzAsLT
-E1NzM1MTY1NDYsLTQ2MjI5MzM3MCwxNTEyNjAyOTkzLDIwMTc3
-MzEzNzddfQ==
+eyJoaXN0b3J5IjpbLTE4NDI3MzQ3OTAsMTM1MzI1NTU4OSwxNT
+Q0ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5MTEwLDE2NDA1MzA4
+NzEsLTg4OTgxODcsMTU2OTU2NDE3NywxODkwNjA1MzAzLDIwNj
+A2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNzY2NzM5LC0xMDk0ODk1
+NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAxOTM3MC
+wtMTU3MzUxNjU0NiwtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAx
+NzczMTM3N119
 -->
