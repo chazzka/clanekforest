@@ -270,7 +270,8 @@ Suppose the evaluation of datapoint $P_a = [28,16]$:
 - in the final step, the point fits into the space of a right leaf $\langle 25,39 ) \times \langle 1,17)$, satisfying the first stopping criterion
 - the path_length is obtained as depth of a leaf as $h(P_a) = 3$.
 
-Suppose the evaluation of datapoint $P_b = [18,5]$:
+Suppose the evaluation of datapoint $P_b = [18,5]$ on the tree  constructed with sample $|S| = 4$:\
+
 Traversing the tree, the datapoint reaches the leaf  $\langle 11,25 ) \times \langle 1,17)$, satisfying the second stopping criterion
 - the path_length is obtained as $h(P_b) = 3 + c$
 
@@ -435,7 +436,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMDIyMjY2NSwtNjEyMjg1MzI2LC0xNj
+eyJoaXN0b3J5IjpbMTcwNTY2NDQ0MywtNjEyMjg1MzI2LC0xNj
 ExNDIyNjk0LDEzNTMyNTU1ODksMTU0NDg3NjMwNywxNTQ4MDUy
 MDM4LC0yODE1OTExMCwxNjQwNTMwODcxLC04ODk4MTg3LDE1Nj
 k1NjQxNzcsMTg5MDYwNTMwMywyMDYwNjEzNzcxLDIwMzUxNzk5
