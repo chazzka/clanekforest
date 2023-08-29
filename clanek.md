@@ -282,7 +282,11 @@ Traversing the tree, the datapoint reaches the leaf  $\langle 11,25 ) \times \la
 ### From a tree to the forest
 Due to the random selection of samples and a dimension, the evaluation is distributed to the set of trees - a forest.
 Basic and recursive steps are repeated for each of the trees in a forest.
-The number of trees is set experimentally, usually ranges between 1-100.
+The number of trees is set experimentally, usually around 100.
+
+The final novelty score is then evaluated on a forest as
+$$n()$$
+
 
 
  
@@ -446,11 +450,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzE3OTg1NDAsMjAzMDQ5MDU3OCw0NT
-gwNTMyNDAsLTYxMjI4NTMyNiwtMTYxMTQyMjY5NCwxMzUzMjU1
-NTg5LDE1NDQ4NzYzMDcsMTU0ODA1MjAzOCwtMjgxNTkxMTAsMT
-Y0MDUzMDg3MSwtODg5ODE4NywxNTY5NTY0MTc3LDE4OTA2MDUz
-MDMsMjA2MDYxMzc3MSwyMDM1MTc5OTUwLDE3MzI3NjY3MzksLT
-EwOTQ4OTU0NjQsLTYxMTU0MzU0NiwtNTQ2NzUzNDA5LC0xNDk4
-MDE5MzcwXX0=
+eyJoaXN0b3J5IjpbLTkwNTMxOTE2MywyMDMwNDkwNTc4LDQ1OD
+A1MzI0MCwtNjEyMjg1MzI2LC0xNjExNDIyNjk0LDEzNTMyNTU1
+ODksMTU0NDg3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNj
+QwNTMwODcxLC04ODk4MTg3LDE1Njk1NjQxNzcsMTg5MDYwNTMw
+MywyMDYwNjEzNzcxLDIwMzUxNzk5NTAsMTczMjc2NjczOSwtMT
+A5NDg5NTQ2NCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLTE0OTgw
+MTkzNzBdfQ==
 -->
