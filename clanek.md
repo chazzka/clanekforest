@@ -268,7 +268,7 @@ Suppose the evaluation of datapoint $Px = [28,16]$:
 - In the first step, the point fits into the possibilty space of the left vertex $\langle 11,39 ) \times \langle 1,33)$
 - In the second step, the point fits into the space of a left vertex $\langle 11,39 ) \times \langle 1,17)$
 - in the final step, the point fits into the space of a right leaf $\langle 25,39 ) \times \langle 1,17)$, reaching the first stopping criterion
-- since we reached the stopping criterion, the path_length is obtained as $h(P_x) = 3 + c(0)$
+- since we reached the first stopping criterion, the path_length is obtained as depth of a leaf $h(P_x) = 3$
 
 
 
@@ -432,11 +432,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTYxOTc4MDUsLTYxMjI4NTMyNiwtMT
-YxMTQyMjY5NCwxMzUzMjU1NTg5LDE1NDQ4NzYzMDcsMTU0ODA1
-MjAzOCwtMjgxNTkxMTAsMTY0MDUzMDg3MSwtODg5ODE4NywxNT
-Y5NTY0MTc3LDE4OTA2MDUzMDMsMjA2MDYxMzc3MSwyMDM1MTc5
-OTUwLDE3MzI3NjY3MzksLTEwOTQ4OTU0NjQsLTYxMTU0MzU0Ni
-wtNTQ2NzUzNDA5LC0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00
-NjIyOTMzNzBdfQ==
+eyJoaXN0b3J5IjpbNDEyMTM5Mjc3LC02MTIyODUzMjYsLTE2MT
+E0MjI2OTQsMTM1MzI1NTU4OSwxNTQ0ODc2MzA3LDE1NDgwNTIw
+MzgsLTI4MTU5MTEwLDE2NDA1MzA4NzEsLTg4OTgxODcsMTU2OT
+U2NDE3NywxODkwNjA1MzAzLDIwNjA2MTM3NzEsMjAzNTE3OTk1
+MCwxNzMyNzY2NzM5LC0xMDk0ODk1NDY0LC02MTE1NDM1NDYsLT
+U0Njc1MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUxNjU0NiwtNDYy
+MjkzMzcwXX0=
 -->
