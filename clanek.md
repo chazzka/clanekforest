@@ -253,9 +253,10 @@ D --> G{25..39, 1..17}
 Now, with the tree constructed, we can move on to the evaluation part.
 The goal of the evaluation is to get the novelty value of a datapoint.
 The evaluation phasis starts with a constructed tree and recursively moves to the leaf so that:
+
 1. The datapoint is traversed down the tree.
-2. If the datapoint fits in the 
-3. The datapoint traverses to the left or right vertex depending on its observable space
+2. The datapoint traverses left, if the it fits into the observable space of the left vertex
+3. The datapoint traverses right, if it fits into the observable space of the right vertex
 
 - jak se získá jedna hodnota
  
@@ -419,7 +420,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA2NzUwNTYzLC04ODk4MTg3LDE1Njk1Nj
+eyJoaXN0b3J5IjpbMTMwMTQ5MTkwLC04ODk4MTg3LDE1Njk1Nj
 QxNzcsMTg5MDYwNTMwMywyMDYwNjEzNzcxLDIwMzUxNzk5NTAs
 MTczMjc2NjczOSwtMTA5NDg5NTQ2NCwtNjExNTQzNTQ2LC01ND
 Y3NTM0MDksLTE0OTgwMTkzNzAsLTE1NzM1MTY1NDYsLTQ2MjI5
