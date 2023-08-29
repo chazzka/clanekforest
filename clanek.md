@@ -257,8 +257,9 @@ The evaluation phasis starts with a constructed tree and the datapoint recursive
 1. The datapoint traverses left, if it fits into the observable space of the left vertex
 2. The datapoint traverses right, if it fits into the observable space of the right vertex
 
-As the datapoint reaches the leaft its path_length is calculated as follows:
-$$d $$ 
+As the datapoint reaches the leaf its path_length is calculated as follows:
+If max_depth is not reached, the path_length is a depth of the leaf.
+$$pl = d + $$ 
 - jak se získá jedna hodnota
  
 ### neni to tree ale les
@@ -421,11 +422,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NjMzNjkwMCwtODg5ODE4NywxNTY5NT
-Y0MTc3LDE4OTA2MDUzMDMsMjA2MDYxMzc3MSwyMDM1MTc5OTUw
-LDE3MzI3NjY3MzksLTEwOTQ4OTU0NjQsLTYxMTU0MzU0NiwtNT
-Q2NzUzNDA5LC0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00NjIy
-OTMzNzAsMTUxMjYwMjk5MywyMDE3NzMxMzc3LC02NDEzMzc0Mj
-AsMTk1NzY3Mzc4LDUyNjkxODAwNiw1NTUxNTcyMTksLTE3ODgz
-OTM2MDhdfQ==
+eyJoaXN0b3J5IjpbMzA3OTM3ODY3LC04ODk4MTg3LDE1Njk1Nj
+QxNzcsMTg5MDYwNTMwMywyMDYwNjEzNzcxLDIwMzUxNzk5NTAs
+MTczMjc2NjczOSwtMTA5NDg5NTQ2NCwtNjExNTQzNTQ2LC01ND
+Y3NTM0MDksLTE0OTgwMTkzNzAsLTE1NzM1MTY1NDYsLTQ2MjI5
+MzM3MCwxNTEyNjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMzNzQyMC
+wxOTU3NjczNzgsNTI2OTE4MDA2LDU1NTE1NzIxOSwtMTc4ODM5
+MzYwOF19
 -->
