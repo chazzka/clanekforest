@@ -254,7 +254,8 @@ Now, with the tree constructed, we can move on to the evaluation part.
 The goal of the evaluation is to get the novelty value of a datapoint.
 The evaluation phasis starts with a constructed tree and recursively moves to the leaf so that:
 1. The datapoint is traversed down the tree.
-2. The datapoint traverses to the left or right tree depending on the  observable space of a vertex
+2. If the datapoint fits in the 
+3. The datapoint traverses to the left or right vertex depending on its observable space
 
 - jak se získá jedna hodnota
  
@@ -418,11 +419,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4OTkzNzI0NywtODg5ODE4NywxNTY5NT
-Y0MTc3LDE4OTA2MDUzMDMsMjA2MDYxMzc3MSwyMDM1MTc5OTUw
-LDE3MzI3NjY3MzksLTEwOTQ4OTU0NjQsLTYxMTU0MzU0NiwtNT
-Q2NzUzNDA5LC0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00NjIy
-OTMzNzAsMTUxMjYwMjk5MywyMDE3NzMxMzc3LC02NDEzMzc0Mj
-AsMTk1NzY3Mzc4LDUyNjkxODAwNiw1NTUxNTcyMTksLTE3ODgz
-OTM2MDhdfQ==
+eyJoaXN0b3J5IjpbODA2NzUwNTYzLC04ODk4MTg3LDE1Njk1Nj
+QxNzcsMTg5MDYwNTMwMywyMDYwNjEzNzcxLDIwMzUxNzk5NTAs
+MTczMjc2NjczOSwtMTA5NDg5NTQ2NCwtNjExNTQzNTQ2LC01ND
+Y3NTM0MDksLTE0OTgwMTkzNzAsLTE1NzM1MTY1NDYsLTQ2MjI5
+MzM3MCwxNTEyNjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMzNzQyMC
+wxOTU3NjczNzgsNTI2OTE4MDA2LDU1NTE1NzIxOSwtMTc4ODM5
+MzYwOF19
 -->
