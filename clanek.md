@@ -285,7 +285,7 @@ Basic and recursive steps are repeated for each of the trees in a forest.
 The number of trees is set experimentally, usually around 100.
 
 The final novelty score is then evaluated on a forest as
-$$n()$$
+$$n(F) = \overline{h(x)} $$
 
 
 
@@ -450,7 +450,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNTMxOTE2MywyMDMwNDkwNTc4LDQ1OD
+eyJoaXN0b3J5IjpbMTk3NTg2MTIzMSwyMDMwNDkwNTc4LDQ1OD
 A1MzI0MCwtNjEyMjg1MzI2LC0xNjExNDIyNjk0LDEzNTMyNTU1
 ODksMTU0NDg3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNj
 QwNTMwODcxLC04ODk4MTg3LDE1Njk1NjQxNzcsMTg5MDYwNTMw
