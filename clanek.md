@@ -270,10 +270,10 @@ Suppose the evaluation of datapoint $P_a = [28,16]$:
 - in the final step, the point fits into the space of a right leaf $\langle 25,39 ) \times \langle 1,17)$, satisfying the first stopping criterion
 - the path_length is obtained as depth of a leaf as $h(P_a) = 3$.
 
-Suppose the evaluation of datapoint $P_b = [18,5]$ on the tree  constructed with sample $|S| = 4$:\
+Suppose the evaluation of datapoint $P_b = [18,5]$ on the tree  constructed with sample $|S| = 4$:
 
 Traversing the tree, the datapoint reaches the leaf  $\langle 11,25 ) \times \langle 1,17)$, satisfying the second stopping criterion
-- the path_length is obtained as $h(P_b) = 3 + c$
+- the path_length is obtained as $h(P_b) = 3 + c(4) = H_3 - $
 
 
 ### neni to tree ale les
@@ -436,11 +436,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNTY2NDQ0MywtNjEyMjg1MzI2LC0xNj
-ExNDIyNjk0LDEzNTMyNTU1ODksMTU0NDg3NjMwNywxNTQ4MDUy
-MDM4LC0yODE1OTExMCwxNjQwNTMwODcxLC04ODk4MTg3LDE1Nj
-k1NjQxNzcsMTg5MDYwNTMwMywyMDYwNjEzNzcxLDIwMzUxNzk5
-NTAsMTczMjc2NjczOSwtMTA5NDg5NTQ2NCwtNjExNTQzNTQ2LC
-01NDY3NTM0MDksLTE0OTgwMTkzNzAsLTE1NzM1MTY1NDYsLTQ2
-MjI5MzM3MF19
+eyJoaXN0b3J5IjpbLTEzOTM3NjEzODQsLTYxMjI4NTMyNiwtMT
+YxMTQyMjY5NCwxMzUzMjU1NTg5LDE1NDQ4NzYzMDcsMTU0ODA1
+MjAzOCwtMjgxNTkxMTAsMTY0MDUzMDg3MSwtODg5ODE4NywxNT
+Y5NTY0MTc3LDE4OTA2MDUzMDMsMjA2MDYxMzc3MSwyMDM1MTc5
+OTUwLDE3MzI3NjY3MzksLTEwOTQ4OTU0NjQsLTYxMTU0MzU0Ni
+wtNTQ2NzUzNDA5LC0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00
+NjIyOTMzNzBdfQ==
 -->
