@@ -264,12 +264,14 @@ $$h(x)=e+c(n),$$
 where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is the size of sample $S$ fitting into possibility space $R$, i.e., $n=| S \cap R |>1$,  and $c(n)$ is obtained using harmonic number $H_{n-1}$ such that $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$. 
 
 Consider the example from Figure X.
-Suppose the evaluation of datapoint $Px = [28,16]$:
+Suppose the evaluation of datapoint $P_a = [28,16]$:
 - In the first step, the point fits into the possibilty space of the left vertex $\langle 11,39 ) \times \langle 1,33)$
 - In the second step, the point fits into the space of a left vertex $\langle 11,39 ) \times \langle 1,17)$
 - in the final step, the point fits into the space of a right leaf $\langle 25,39 ) \times \langle 1,17)$, reaching the first stopping criterion
 - since we reached the first stopping criterion, the path_length is obtained as depth of a leaf as $h(P_x) = 3$.
 
+Suppose the evaluation of datapoint $P_b = [18,5]$:
+Traversing the tree, the datapoint reaches the leaf 
 
 
 ### neni to tree ale les
@@ -432,7 +434,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTE0ODYzNTUsLTYxMjI4NTMyNiwtMT
+eyJoaXN0b3J5IjpbLTE2NjIxMjQ3OTcsLTYxMjI4NTMyNiwtMT
 YxMTQyMjY5NCwxMzUzMjU1NTg5LDE1NDQ4NzYzMDcsMTU0ODA1
 MjAzOCwtMjgxNTkxMTAsMTY0MDUzMDg3MSwtODg5ODE4NywxNT
 Y5NTY0MTc3LDE4OTA2MDUzMDMsMjA2MDYxMzc3MSwyMDM1MTc5
