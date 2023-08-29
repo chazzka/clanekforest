@@ -250,7 +250,8 @@ D --> G{25..39, 1..17}
  
 
 ### evaluate tree
-
+Now, with the tree constructed, we can move on to the evaluation part.
+The
 
 - jak se získá jedna hodnota
  
@@ -414,7 +415,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1OTM0MjY2MywtODg5ODE4NywxNTY5NT
+eyJoaXN0b3J5IjpbMjA4ODg4NTAwMiwtODg5ODE4NywxNTY5NT
 Y0MTc3LDE4OTA2MDUzMDMsMjA2MDYxMzc3MSwyMDM1MTc5OTUw
 LDE3MzI3NjY3MzksLTEwOTQ4OTU0NjQsLTYxMTU0MzU0NiwtNT
 Q2NzUzNDA5LC0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00NjIy
