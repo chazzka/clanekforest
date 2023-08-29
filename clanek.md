@@ -254,15 +254,15 @@ Now, with the tree constructed, we can move on to the evaluation part.
 The goal of the evaluation is to get the novelty value of a datapoint.
 The evaluation phasis starts with a constructed tree and the datapoint recursively traverses from the root down the tree up to the leaf so that:
 
-1. The datapoint traverses left, if it fits into the observable space of the left vertex
-2. The datapoint traverses right, if it fits into the observable space of the right vertex
+1. The datapoint traverses left, if it fits into the possibility space of the left vertex
+2. The datapoint traverses right, if it fits into the possibility space of the right vertex
 
 As the datapoint reaches the leaf its path_length is calculated as follows:
 If max_depth is not reached, the path_length is the depth of the leaf.
 If max_depth is reached, the path_length $h(x)$ is obtained as in
  
 $$h(x)=e+c(n),$$
-where $e$ is the depth of the reached leaf (max_depth in this case), and $n$ is a number of sample of datapoints satisfying  $n=| S \cap R |$, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ a $H_{n-1}$ je $n-1$ harmonické číslo. 
+where $e$ is the depth of the reached leaf (max_depth in this case), and $n$ is a number of sample of datapoints $S$ fitting into possibility space  $n=| S \cap R |$, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ a $H_{n-1}$ je $n-1$ harmonické číslo. 
 
 - jak se získá jedna hodnota
  
@@ -426,7 +426,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NTQxODU3MCwtMjgxNTkxMTAsMTY0MD
+eyJoaXN0b3J5IjpbMTU0ODA1MjAzOCwtMjgxNTkxMTAsMTY0MD
 UzMDg3MSwtODg5ODE4NywxNTY5NTY0MTc3LDE4OTA2MDUzMDMs
 MjA2MDYxMzc3MSwyMDM1MTc5OTUwLDE3MzI3NjY3MzksLTEwOT
 Q4OTU0NjQsLTYxMTU0MzU0NiwtNTQ2NzUzNDA5LC0xNDk4MDE5
