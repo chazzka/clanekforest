@@ -265,7 +265,7 @@ where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is 
 
 Consider the example from Figure X.
 Suppose the evaluation of datapoint $Px = [28,16]$:
-- f
+- In the first step, the point fits into the possibilty space of the left node $\langle 11..39, 1..33)$
 
  
 ### neni to tree ale les
@@ -428,11 +428,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTcyMzExMywxMzUzMjU1NTg5LDE1ND
-Q4NzYzMDcsMTU0ODA1MjAzOCwtMjgxNTkxMTAsMTY0MDUzMDg3
-MSwtODg5ODE4NywxNTY5NTY0MTc3LDE4OTA2MDUzMDMsMjA2MD
-YxMzc3MSwyMDM1MTc5OTUwLDE3MzI3NjY3MzksLTEwOTQ4OTU0
-NjQsLTYxMTU0MzU0NiwtNTQ2NzUzNDA5LC0xNDk4MDE5MzcwLC
-0xNTczNTE2NTQ2LC00NjIyOTMzNzAsMTUxMjYwMjk5MywyMDE3
-NzMxMzc3XX0=
+eyJoaXN0b3J5IjpbLTE5MDAwMDQ0OTcsMTM1MzI1NTU4OSwxNT
+Q0ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5MTEwLDE2NDA1MzA4
+NzEsLTg4OTgxODcsMTU2OTU2NDE3NywxODkwNjA1MzAzLDIwNj
+A2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNzY2NzM5LC0xMDk0ODk1
+NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAxOTM3MC
+wtMTU3MzUxNjU0NiwtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAx
+NzczMTM3N119
 -->
