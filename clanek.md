@@ -261,8 +261,8 @@ As the datapoint reaches the leaf its path_length is calculated as follows:
 If max_depth is not reached, the path_length is the depth of the leaf.
 If max_depth is reached, the path_length $h(x)$ is obtained as in (x).
  
-$$h(x)=e+c(n)$$,
- $e$ je vzdálenost od kořene, $n$ je počet prvků ze samplu splňující podmínky rodičů, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ a $H_{n-1}$ je $n-1$ harmonické číslo. 
+$$h(x)=e+c(n),$$
+where $e$ is the depth of the reached leaf (max_depth in this case), $n$ je počet prvků ze samplu splňující podmínky rodičů, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ a $H_{n-1}$ je $n-1$ harmonické číslo. 
 
 - jak se získá jedna hodnota
  
@@ -426,11 +426,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MDc5OTUsLTg4OTgxODcsMTU2OTU2ND
-E3NywxODkwNjA1MzAzLDIwNjA2MTM3NzEsMjAzNTE3OTk1MCwx
-NzMyNzY2NzM5LC0xMDk0ODk1NDY0LC02MTE1NDM1NDYsLTU0Nj
-c1MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUxNjU0NiwtNDYyMjkz
-MzcwLDE1MTI2MDI5OTMsMjAxNzczMTM3NywtNjQxMzM3NDIwLD
-E5NTc2NzM3OCw1MjY5MTgwMDYsNTU1MTU3MjE5LC0xNzg4Mzkz
-NjA4XX0=
+eyJoaXN0b3J5IjpbMTY0MDUzMDg3MSwtODg5ODE4NywxNTY5NT
+Y0MTc3LDE4OTA2MDUzMDMsMjA2MDYxMzc3MSwyMDM1MTc5OTUw
+LDE3MzI3NjY3MzksLTEwOTQ4OTU0NjQsLTYxMTU0MzU0NiwtNT
+Q2NzUzNDA5LC0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00NjIy
+OTMzNzAsMTUxMjYwMjk5MywyMDE3NzMxMzc3LC02NDEzMzc0Mj
+AsMTk1NzY3Mzc4LDUyNjkxODAwNiw1NTUxNTcyMTksLTE3ODgz
+OTM2MDhdfQ==
 -->
