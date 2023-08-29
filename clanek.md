@@ -258,11 +258,11 @@ The evaluation phasis starts with a constructed tree and the datapoint recursive
 2. The datapoint traverses right, if it fits into the possibility space of the right vertex
 
 As the datapoint reaches the leaf its path_length is calculated as follows:
-If max_depth is not reached, the path_length is the depth of the leaf.
-If max_depth is reached, the path_length $h(x)$ is obtained as in
++ If max_depth is not reached, the path_length is the depth of the leaf.
++ If max_depth is reached, the path_length $h(x)$ is obtained as in
  
 $$h(x)=e+c(n),$$
-where $e$ is the depth of the reached leaf (max_depth in this case), and $n$ is a number of sample of datapoints $S$ fitting into possibility space $R$, i.e., $n=| S \cap R |$,  and $c(n)$ i $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ a $H_{n-1}$ je $n-1$ harmonické číslo. 
+where $e$ is the depth of the reached leaf (max_depth in this case), and $n$ is a number of sample of datapoints $S$ fitting into possibility space $R$, i.e., $n=| S \cap R |$,  and $c(n)$ is obtained using harmonic number $H_{n-1}$ such that $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$. 
 
 - jak se získá jedna hodnota
  
@@ -426,11 +426,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDUzNjUwMjAsMTU0ODA1MjAzOCwtMj
-gxNTkxMTAsMTY0MDUzMDg3MSwtODg5ODE4NywxNTY5NTY0MTc3
-LDE4OTA2MDUzMDMsMjA2MDYxMzc3MSwyMDM1MTc5OTUwLDE3Mz
-I3NjY3MzksLTEwOTQ4OTU0NjQsLTYxMTU0MzU0NiwtNTQ2NzUz
-NDA5LC0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00NjIyOTMzNz
-AsMTUxMjYwMjk5MywyMDE3NzMxMzc3LC02NDEzMzc0MjAsMTk1
-NzY3Mzc4XX0=
+eyJoaXN0b3J5IjpbMTI3MjYxNTQ4MiwxNTQ4MDUyMDM4LC0yOD
+E1OTExMCwxNjQwNTMwODcxLC04ODk4MTg3LDE1Njk1NjQxNzcs
+MTg5MDYwNTMwMywyMDYwNjEzNzcxLDIwMzUxNzk5NTAsMTczMj
+c2NjczOSwtMTA5NDg5NTQ2NCwtNjExNTQzNTQ2LC01NDY3NTM0
+MDksLTE0OTgwMTkzNzAsLTE1NzM1MTY1NDYsLTQ2MjI5MzM3MC
+wxNTEyNjAyOTkzLDIwMTc3MzEzNzcsLTY0MTMzNzQyMCwxOTU3
+NjczNzhdfQ==
 -->
