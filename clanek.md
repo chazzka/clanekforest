@@ -262,7 +262,7 @@ If max_depth is not reached, the path_length is the depth of the leaf.
 If max_depth is reached, the path_length $h(x)$ is obtained as in
  
 $$h(x)=e+c(n),$$
-where $e$ is the depth of the reached leaf (max_depth in this case), and $n$ is a number of sample of datapoints $S$ fitting into possibility space $n=| S \cap R |$, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ a $H_{n-1}$ je $n-1$ harmonické číslo. 
+where $e$ is the depth of the reached leaf (max_depth in this case), and $n$ is a number of sample of datapoints $S$ fitting into possibility space $R$, i.e., $n=| S \cap R |$,  and $c(n)$ i $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ a $H_{n-1}$ je $n-1$ harmonické číslo. 
 
 - jak se získá jedna hodnota
  
@@ -426,11 +426,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEwMzgzNzU0LDE1NDgwNTIwMzgsLTI4MT
-U5MTEwLDE2NDA1MzA4NzEsLTg4OTgxODcsMTU2OTU2NDE3Nywx
-ODkwNjA1MzAzLDIwNjA2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNz
-Y2NzM5LC0xMDk0ODk1NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQw
-OSwtMTQ5ODAxOTM3MCwtMTU3MzUxNjU0NiwtNDYyMjkzMzcwLD
-E1MTI2MDI5OTMsMjAxNzczMTM3NywtNjQxMzM3NDIwLDE5NTc2
-NzM3OF19
+eyJoaXN0b3J5IjpbLTE2MDUzNjUwMjAsMTU0ODA1MjAzOCwtMj
+gxNTkxMTAsMTY0MDUzMDg3MSwtODg5ODE4NywxNTY5NTY0MTc3
+LDE4OTA2MDUzMDMsMjA2MDYxMzc3MSwyMDM1MTc5OTUwLDE3Mz
+I3NjY3MzksLTEwOTQ4OTU0NjQsLTYxMTU0MzU0NiwtNTQ2NzUz
+NDA5LC0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00NjIyOTMzNz
+AsMTUxMjYwMjk5MywyMDE3NzMxMzc3LC02NDEzMzc0MjAsMTk1
+NzY3Mzc4XX0=
 -->
