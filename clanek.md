@@ -285,7 +285,7 @@ Basic and recursive steps are repeated for each of the trees in a forest.
 The number of trees is set experimentally, usually around 100.
 
 Let forest $F$ be the set of trees $F =(T_1, T_2 \dots ,T_k)$.
-The final novelty score of datapoint $X$ is of the h(x) scores for the rethe mean then evaluated on $F$ as
+	 $h_T(x)$ scores for the respective tress $T_k$ . the mean then evaluated on $F$ as
 $$e(X) = \frac{h_{T_1}(X) + h_{T_1}(X) + \cdots + h_{T_k}(X)}{k} ,$$
 where 
 
@@ -452,7 +452,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgzMTU1NzQzLDIwMzA0OTA1NzgsNDU4MD
+eyJoaXN0b3J5IjpbNjk1ODA4MTk3LDIwMzA0OTA1NzgsNDU4MD
 UzMjQwLC02MTIyODUzMjYsLTE2MTE0MjI2OTQsMTM1MzI1NTU4
 OSwxNTQ0ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5MTEwLDE2ND
 A1MzA4NzEsLTg4OTgxODcsMTU2OTU2NDE3NywxODkwNjA1MzAz
