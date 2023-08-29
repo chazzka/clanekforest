@@ -259,7 +259,7 @@ The evaluation phasis starts with a constructed tree and the datapoint recursive
 
 As the datapoint reaches the leaf its path_length is calculated as follows:
 If max_depth is not reached, the path_length is the depth of the leaf.
-If max_depth is reached, the path_length $h(x)$ is obtained as in (x).
+If max_depth is reached, the path_length $h(x)$ is obtained as in
  
 $$h(x)=e+c(n),$$
 where $e$ is the depth of the reached leaf (max_depth in this case), $n$ je počet prvků ze samplu splňující podmínky rodičů, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ a $H_{n-1}$ je $n-1$ harmonické číslo. 
@@ -426,11 +426,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MDUzMDg3MSwtODg5ODE4NywxNTY5NT
-Y0MTc3LDE4OTA2MDUzMDMsMjA2MDYxMzc3MSwyMDM1MTc5OTUw
-LDE3MzI3NjY3MzksLTEwOTQ4OTU0NjQsLTYxMTU0MzU0NiwtNT
-Q2NzUzNDA5LC0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00NjIy
-OTMzNzAsMTUxMjYwMjk5MywyMDE3NzMxMzc3LC02NDEzMzc0Mj
-AsMTk1NzY3Mzc4LDUyNjkxODAwNiw1NTUxNTcyMTksLTE3ODgz
-OTM2MDhdfQ==
+eyJoaXN0b3J5IjpbLTI4MTU5MTEwLDE2NDA1MzA4NzEsLTg4OT
+gxODcsMTU2OTU2NDE3NywxODkwNjA1MzAzLDIwNjA2MTM3NzEs
+MjAzNTE3OTk1MCwxNzMyNzY2NzM5LC0xMDk0ODk1NDY0LC02MT
+E1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAxOTM3MCwtMTU3MzUx
+NjU0NiwtNDYyMjkzMzcwLDE1MTI2MDI5OTMsMjAxNzczMTM3Ny
+wtNjQxMzM3NDIwLDE5NTc2NzM3OCw1MjY5MTgwMDYsNTU1MTU3
+MjE5XX0=
 -->
