@@ -259,7 +259,7 @@ The evaluation phasis starts with a constructed tree and the datapoint recursive
 
 As the datapoint reaches the leaf its path_length is calculated as follows:
 + If the first stopping criterion is satisfied, the path_length is the depth of the leaf.
-+ Otherv max_depth is reached, but, the path_length $h(x)$ is obtained as in
++ Otherwise (max_depth is reached), the path_length $h(x)$ is obtained as in
 $$h(x)=e+c(n),$$
 where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is the size of sample $S$ fitting into possibility space $R$, i.e., $n=| S \cap R |$,  and $c(n)$ is obtained using harmonic number $H_{n-1}$ such that $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$. 
 
@@ -432,11 +432,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzOTQ0NDExNywtMTYxMTQyMjY5NCwxMz
-UzMjU1NTg5LDE1NDQ4NzYzMDcsMTU0ODA1MjAzOCwtMjgxNTkx
-MTAsMTY0MDUzMDg3MSwtODg5ODE4NywxNTY5NTY0MTc3LDE4OT
-A2MDUzMDMsMjA2MDYxMzc3MSwyMDM1MTc5OTUwLDE3MzI3NjY3
-MzksLTEwOTQ4OTU0NjQsLTYxMTU0MzU0NiwtNTQ2NzUzNDA5LC
-0xNDk4MDE5MzcwLC0xNTczNTE2NTQ2LC00NjIyOTMzNzAsMTUx
-MjYwMjk5M119
+eyJoaXN0b3J5IjpbNzk0MTg3NzgxLC0xNjExNDIyNjk0LDEzNT
+MyNTU1ODksMTU0NDg3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTEx
+MCwxNjQwNTMwODcxLC04ODk4MTg3LDE1Njk1NjQxNzcsMTg5MD
+YwNTMwMywyMDYwNjEzNzcxLDIwMzUxNzk5NTAsMTczMjc2Njcz
+OSwtMTA5NDg5NTQ2NCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLT
+E0OTgwMTkzNzAsLTE1NzM1MTY1NDYsLTQ2MjI5MzM3MCwxNTEy
+NjAyOTkzXX0=
 -->
