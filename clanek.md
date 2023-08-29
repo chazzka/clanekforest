@@ -276,7 +276,7 @@ Suppose the evaluation of datapoint $P_b = [18,5]$ on the tree  constructed with
 - [ ] todo: Honza dá Pb do obrazku
 
 Traversing the tree, the datapoint reaches the leaf  $\langle 11,25 ) \times \langle 1,17)$, satisfying the second stopping criterion
-- the path_length is obtained as $h(P_b) = 3 + c(4) = 3+ 2 \cdot (H_3 - \frac{3}{4}) = 3 +2 \cdot [\bigl(1 + \frac{1}{2} + \frac{1}{3}\bigr) - \frac{3}{4}] = \frac{31}{6}$
+- the path_length is obtained as $h_T(P_b) = 3 + c(4) = 3+ 2 \cdot (H_3 - \frac{3}{4}) = 3 +2 \cdot [\bigl(1 + \frac{1}{2} + \frac{1}{3}\bigr) - \frac{3}{4}] = \frac{31}{6}$
 
 
 ### From a tree to the forest
@@ -285,8 +285,8 @@ Basic and recursive steps are repeated for each of the trees in a forest.
 The number of trees is set experimentally, usually around 100.
 
 Let forest $F$ be the set of trees $F =(T_1, T_2 \dots ,T_k)$.
-The final novelty score of datapoint $X$ is then evaluated on $F$ as
-$$e(X) = h_{T_1}(X) + h_{T_1}(X) + \cdots + h_{T_n}(X) $$,
+The final novelty score of datapoint $X$ is of the h(x) scores for the rethe mean then evaluated on $F$ as
+$$e(X) = \frac{h_{T_1}(X) + h_{T_1}(X) + \cdots + h_{T_k}(X)}{k} ,$$
 where 
 
 
@@ -452,11 +452,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MTk1NTczNSwyMDMwNDkwNTc4LDQ1OD
-A1MzI0MCwtNjEyMjg1MzI2LC0xNjExNDIyNjk0LDEzNTMyNTU1
-ODksMTU0NDg3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNj
-QwNTMwODcxLC04ODk4MTg3LDE1Njk1NjQxNzcsMTg5MDYwNTMw
-MywyMDYwNjEzNzcxLDIwMzUxNzk5NTAsMTczMjc2NjczOSwtMT
-A5NDg5NTQ2NCwtNjExNTQzNTQ2LC01NDY3NTM0MDksLTE0OTgw
-MTkzNzBdfQ==
+eyJoaXN0b3J5IjpbNTgzMTU1NzQzLDIwMzA0OTA1NzgsNDU4MD
+UzMjQwLC02MTIyODUzMjYsLTE2MTE0MjI2OTQsMTM1MzI1NTU4
+OSwxNTQ0ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5MTEwLDE2ND
+A1MzA4NzEsLTg4OTgxODcsMTU2OTU2NDE3NywxODkwNjA1MzAz
+LDIwNjA2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNzY2NzM5LC0xMD
+k0ODk1NDY0LC02MTE1NDM1NDYsLTU0Njc1MzQwOSwtMTQ5ODAx
+OTM3MF19
 -->
