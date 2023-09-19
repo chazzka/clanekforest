@@ -89,6 +89,7 @@ Say this data is our regular observations.
 
 When an unsupervised, outlier detection algorithm tries to analyze such data, it sees the datapoints as a cluster containing both regular and anomalous observations. 
 Figure X shows the result of evaluating classical Isolation Forest on such dataset.
+
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_outlier_if.svg) 
 > Figure X Dataset with regular observations. 
 
@@ -450,11 +451,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNT
-EwMjM3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMy
-NiwtMTYxMTQyMjY5NCwxMzUzMjU1NTg5LDE1NDQ4NzYzMDcsMT
-U0ODA1MjAzOCwtMjgxNTkxMTAsMTY0MDUzMDg3MSwtODg5ODE4
-NywxNTY5NTY0MTc3LDE4OTA2MDUzMDMsMjA2MDYxMzc3MSwyMD
-M1MTc5OTUwLDE3MzI3NjY3MzksLTEwOTQ4OTU0NjQsLTYxMTU0
-MzU0Nl19
+eyJoaXN0b3J5IjpbLTM4NTE5MzQ5NSwtNDk5NzMxNjI1LC0xMj
+M1MjkyNDA4LDI1MTAyMzc4OCwyMDMwNDkwNTc4LDQ1ODA1MzI0
+MCwtNjEyMjg1MzI2LC0xNjExNDIyNjk0LDEzNTMyNTU1ODksMT
+U0NDg3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNjQwNTMw
+ODcxLC04ODk4MTg3LDE1Njk1NjQxNzcsMTg5MDYwNTMwMywyMD
+YwNjEzNzcxLDIwMzUxNzk5NTAsMTczMjc2NjczOSwtMTA5NDg5
+NTQ2NF19
 -->
