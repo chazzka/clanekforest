@@ -84,7 +84,7 @@ The novelty detection on the other hand is usually presented data with little to
 Consider the following example:
 Figure X contains random datapoints arranged in a way they form a cluster like shape. 
 Say this data is our regular observations. 
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/9047b936158e6320e0b4b942ab0d65c8e12f280f/clanek_figures/regular_observations_no_novelites.svg) 
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example0_gnu.svg) 
 > Figure X Dataset with regular observations. 
 
 When an unsupervised, outlier detection algorithm tries to analyze such data, it sees the datapoints as a cluster containing both regular and anomalous observations. 
@@ -451,11 +451,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NTE5MzQ5NSwtNDk5NzMxNjI1LC0xMj
-M1MjkyNDA4LDI1MTAyMzc4OCwyMDMwNDkwNTc4LDQ1ODA1MzI0
-MCwtNjEyMjg1MzI2LC0xNjExNDIyNjk0LDEzNTMyNTU1ODksMT
-U0NDg3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNjQwNTMw
-ODcxLC04ODk4MTg3LDE1Njk1NjQxNzcsMTg5MDYwNTMwMywyMD
-YwNjEzNzcxLDIwMzUxNzk5NTAsMTczMjc2NjczOSwtMTA5NDg5
-NTQ2NF19
+eyJoaXN0b3J5IjpbMTgzMzk5MTQyNiwtMzg1MTkzNDk1LC00OT
+k3MzE2MjUsLTEyMzUyOTI0MDgsMjUxMDIzNzg4LDIwMzA0OTA1
+NzgsNDU4MDUzMjQwLC02MTIyODUzMjYsLTE2MTE0MjI2OTQsMT
+M1MzI1NTU4OSwxNTQ0ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5
+MTEwLDE2NDA1MzA4NzEsLTg4OTgxODcsMTU2OTU2NDE3NywxOD
+kwNjA1MzAzLDIwNjA2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNzY2
+NzM5XX0=
 -->
