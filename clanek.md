@@ -90,7 +90,7 @@ Say this data is our regular observations.
 When an unsupervised, outlier detection algorithm tries to analyze such data, it sees the datapoints as a cluster containing both regular and anomalous observations. 
 Figure X shows the result of evaluating classical Isolation Forest on such dataset.
 
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_outlier_if.svg) 
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example0_5_gnu.svg) 
 > Figure X Dataset with regular observations. 
 
 Figure x shows regular observations $x$ and anomaly observations $y$ marked by Isolation Forest (`batch_size 128, trees_count: 100, zbytek default`). 
@@ -451,7 +451,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMzk5MTQyNiwtMzg1MTkzNDk1LC00OT
+eyJoaXN0b3J5IjpbLTk0NDY0MDAyNSwtMzg1MTkzNDk1LC00OT
 k3MzE2MjUsLTEyMzUyOTI0MDgsMjUxMDIzNzg4LDIwMzA0OTA1
 NzgsNDU4MDUzMjQwLC02MTIyODUzMjYsLTE2MTE0MjI2OTQsMT
 M1MzI1NTU4OSwxNTQ0ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5
