@@ -168,7 +168,7 @@ na druhou stranu nase novelty - pokracuj v proposed solution
 The proposed solution comes from an idea, that the original tree lacks the option to isolate more datapoints than it currently observes. 
 The observed space is bounded by minimum and maximum in each feature.
 
-- [ ] todo, ne point ale oblast bodů, novy obraz
+- [ ] todo, ne point ale oblast bodů, novy obrazek z example 1
 
 Consider now point $P_a$ as depicted in Figure X.
 In the proposed solution, $P_a$ falls into an area (vertex) with the *depth = 3*, isolating $P_a$ from the rest of the anomalies.
@@ -462,11 +462,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMjc0MTAzNiwtOTQ0NjQwMDI1LC0zOD
-UxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMjM3
-ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNiwtMT
-YxMTQyMjY5NCwxMzUzMjU1NTg5LDE1NDQ4NzYzMDcsMTU0ODA1
-MjAzOCwtMjgxNTkxMTAsMTY0MDUzMDg3MSwtODg5ODE4NywxNT
-Y5NTY0MTc3LDE4OTA2MDUzMDMsMjA2MDYxMzc3MSwyMDM1MTc5
-OTUwXX0=
+eyJoaXN0b3J5IjpbLTE3NDc1NTMwMTcsLTk0NDY0MDAyNSwtMz
+g1MTkzNDk1LC00OTk3MzE2MjUsLTEyMzUyOTI0MDgsMjUxMDIz
+Nzg4LDIwMzA0OTA1NzgsNDU4MDUzMjQwLC02MTIyODUzMjYsLT
+E2MTE0MjI2OTQsMTM1MzI1NTU4OSwxNTQ0ODc2MzA3LDE1NDgw
+NTIwMzgsLTI4MTU5MTEwLDE2NDA1MzA4NzEsLTg4OTgxODcsMT
+U2OTU2NDE3NywxODkwNjA1MzAzLDIwNjA2MTM3NzEsMjAzNTE3
+OTk1MF19
 -->
