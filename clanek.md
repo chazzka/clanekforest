@@ -151,12 +151,12 @@ In the second step, in the right area, feature $Y$ was chosen, splitting the are
 As we can see, the theoretical novelty observations get assigned the same *depth* (the value of 3) as a priory known, regular observations.
 After reaching the stopping criterion, the novelty point remains in the same vertex with a regular datapoint. This is true for any depth up until any chosen *max_depth*.
 
-### obrazek outlier novy
+- [ ] TODO: OBRAZEK OUTLIER NOVY\
 podivejte se na ty body v oblasti px
 vidite ze je oznacil blbe, je to proto ze ackoli se můze zdat ze na ne vidí (mozna porovnani s obrazkem z wiki)
 ve skutecnosti na ne nevidi a jen je oznacil stejne jako ty nejblizsi sousedy na které vidí, to není moc dobré pro novelty
 
-bla bla nejaké závery kecy k tomu doborné
+bla bla nejaké závery kecy k tomu odborne
 
 na druhou stranu nase novelty - pokracuj v proposed solution
 
@@ -167,6 +167,8 @@ na druhou stranu nase novelty - pokracuj v proposed solution
 #### Proposed solution
 The proposed solution comes from an idea, that the original tree lacks the option to isolate more datapoints than it currently observes. 
 The observed space is bounded by minimum and maximum in each feature.
+
+- [ ] todo, ne point ale oblast bodů, novy obraz
 
 Consider now point $P_a$ as depicted in Figure X.
 In the proposed solution, $P_a$ falls into an area (vertex) with the *depth = 3*, isolating $P_a$ from the rest of the anomalies.
@@ -460,7 +462,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwOTIwODc1MSwtOTQ0NjQwMDI1LC0zOD
+eyJoaXN0b3J5IjpbMTcxMjc0MTAzNiwtOTQ0NjQwMDI1LC0zOD
 UxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMjM3
 ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNiwtMT
 YxMTQyMjY5NCwxMzUzMjU1NTg5LDE1NDQ4NzYzMDcsMTU0ODA1
