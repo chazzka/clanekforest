@@ -151,6 +151,15 @@ In the second step, in the right area, feature $Y$ was chosen, splitting the are
 As we can see, the theoretical novelty observations get assigned the same *depth* (the value of 3) as a priory known, regular observations.
 After reaching the stopping criterion, the novelty point remains in the same vertex with a regular datapoint. This is true for any depth up until any chosen *max_depth*.
 
+### obrazek outlier novy
+podivejte se na ty body v oblasti px
+vidite ze je oznacil blbe, je to proto ze ackoli se můze zdat ze na ne vidí (mozna porovnani s obrazkem z wiki)
+ve skutecnosti na ne nevidi a jen je oznacil stejne jako ty nejblizsi sousedy na které vidí, to není moc dobré pro novelty
+
+bla bla nejaké závery kecy k tomu doborné
+
+na druhou stranu nase novelty - pokracuj v proposed solution
+
 
 ![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_outlier.svg)
 > Figure X Isolation Forest novelty point insertion using original approach. Squares being points fed after the learning.
@@ -451,11 +460,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NDY0MDAyNSwtMzg1MTkzNDk1LC00OT
-k3MzE2MjUsLTEyMzUyOTI0MDgsMjUxMDIzNzg4LDIwMzA0OTA1
-NzgsNDU4MDUzMjQwLC02MTIyODUzMjYsLTE2MTE0MjI2OTQsMT
-M1MzI1NTU4OSwxNTQ0ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5
-MTEwLDE2NDA1MzA4NzEsLTg4OTgxODcsMTU2OTU2NDE3NywxOD
-kwNjA1MzAzLDIwNjA2MTM3NzEsMjAzNTE3OTk1MCwxNzMyNzY2
-NzM5XX0=
+eyJoaXN0b3J5IjpbMTQwOTIwODc1MSwtOTQ0NjQwMDI1LC0zOD
+UxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMjM3
+ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNiwtMT
+YxMTQyMjY5NCwxMzUzMjU1NTg5LDE1NDQ4NzYzMDcsMTU0ODA1
+MjAzOCwtMjgxNTkxMTAsMTY0MDUzMDg3MSwtODg5ODE4NywxNT
+Y5NTY0MTc3LDE4OTA2MDUzMDMsMjA2MDYxMzc3MSwyMDM1MTc5
+OTUwXX0=
 -->
