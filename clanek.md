@@ -175,7 +175,8 @@ Consider now point $P_a$ as depicted in Figure X.
 In the proposed solution, $P_a$ falls into an area (vertex) with the *depth = 5*, isolating $P_a$ and its adjacent datapoints from the rest of the anomalies.
 This allows the distinction between the points, making later novelty evaluation much more feasible.
 
-Obrazek x ukazuje, stále máme tři runy, že  narozdíl od ukázky nahoře s outlierem, kde prostě body byly blízko hranice s 8.94 depth tak jsou taky regulary, tady se nám body usadili do oblasti s depth = 3 (asi budeme muset zas dopočítat), zatímco
+Obrazek x ukazuje, stále máme tři runy, že  narozdíl od ukázky nahoře s outlierem, kde prostě body byly blízko hranice s 8.94 depth tak jsou taky regulary, tady se nám body usadili do oblasti s depth = 5, zatímco ostatni kolem jsou 9.05, 6.54 (po dopočítání path_lenght, tak jak bylo vysvětleno výše)
+
 
 - [ ] TODO: toto se smaze
 Figure X shows, that after three runs (max_depth = 3) the regular datapoints had been isolated by being fitted in the regions of greater depth.
@@ -466,11 +467,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODk2MTU1MDEsLTE3NDc1NTMwMTcsLT
-k0NDY0MDAyNSwtMzg1MTkzNDk1LC00OTk3MzE2MjUsLTEyMzUy
-OTI0MDgsMjUxMDIzNzg4LDIwMzA0OTA1NzgsNDU4MDUzMjQwLC
-02MTIyODUzMjYsLTE2MTE0MjI2OTQsMTM1MzI1NTU4OSwxNTQ0
-ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5MTEwLDE2NDA1MzA4Nz
-EsLTg4OTgxODcsMTU2OTU2NDE3NywxODkwNjA1MzAzLDIwNjA2
-MTM3NzFdfQ==
+eyJoaXN0b3J5IjpbNjY4MDMwODYsLTE1ODk2MTU1MDEsLTE3ND
+c1NTMwMTcsLTk0NDY0MDAyNSwtMzg1MTkzNDk1LC00OTk3MzE2
+MjUsLTEyMzUyOTI0MDgsMjUxMDIzNzg4LDIwMzA0OTA1NzgsND
+U4MDUzMjQwLC02MTIyODUzMjYsLTE2MTE0MjI2OTQsMTM1MzI1
+NTU4OSwxNTQ0ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5MTEwLD
+E2NDA1MzA4NzEsLTg4OTgxODcsMTU2OTU2NDE3NywxODkwNjA1
+MzAzXX0=
 -->
