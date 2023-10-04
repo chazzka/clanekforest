@@ -170,10 +170,14 @@ The observed space is bounded by minimum and maximum in each feature.
 
 - [ ] todo, ne point ale oblast bodů, novy obrazek z example 1
 
+
 Consider now point $P_a$ as depicted in Figure X.
-In the proposed solution, $P_a$ falls into an area (vertex) with the *depth = 3*, isolating $P_a$ from the rest of the anomalies.
+In the proposed solution, $P_a$ falls into an area (vertex) with the *depth = 5*, isolating $P_a$ and its adjacent datapoints from the rest of the anomalies.
 This allows the distinction between the points, making later novelty evaluation much more feasible.
 
+Obrazek x ukazuje
+
+- [ ] TODO: toto se smaze
 Figure X shows, that after three runs (max_depth = 3) the regular datapoints had been isolated by being fitted in the regions of greater depth.
 Although $P_a$ has the same depth as the regular observations, later will be shown that the final novelty score will differ. 
 
@@ -462,11 +466,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDc1NTMwMTcsLTk0NDY0MDAyNSwtMz
-g1MTkzNDk1LC00OTk3MzE2MjUsLTEyMzUyOTI0MDgsMjUxMDIz
-Nzg4LDIwMzA0OTA1NzgsNDU4MDUzMjQwLC02MTIyODUzMjYsLT
-E2MTE0MjI2OTQsMTM1MzI1NTU4OSwxNTQ0ODc2MzA3LDE1NDgw
-NTIwMzgsLTI4MTU5MTEwLDE2NDA1MzA4NzEsLTg4OTgxODcsMT
-U2OTU2NDE3NywxODkwNjA1MzAzLDIwNjA2MTM3NzEsMjAzNTE3
-OTk1MF19
+eyJoaXN0b3J5IjpbLTQyMzY0ODY2NSwtMTc0NzU1MzAxNywtOT
+Q0NjQwMDI1LC0zODUxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNTI5
+MjQwOCwyNTEwMjM3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLT
+YxMjI4NTMyNiwtMTYxMTQyMjY5NCwxMzUzMjU1NTg5LDE1NDQ4
+NzYzMDcsMTU0ODA1MjAzOCwtMjgxNTkxMTAsMTY0MDUzMDg3MS
+wtODg5ODE4NywxNTY5NTY0MTc3LDE4OTA2MDUzMDMsMjA2MDYx
+Mzc3MV19
 -->
