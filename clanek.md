@@ -175,7 +175,7 @@ Consider now point $P_a$ as depicted in Figure X.
 In the proposed solution, $P_a$ falls into an area (vertex) with the *depth = 5*, isolating $P_a$ and its adjacent datapoints from the rest of the anomalies.
 This allows the distinction between the points, making later novelty evaluation much more feasible.
 
-Obrazek x ukazuje, stále máme tři runy, že 
+Obrazek x ukazuje, stále máme tři runy, že  narozdíl od ukázky nahoře s outlierem, kde prostě body byly blízko hranice s 
 
 - [ ] TODO: toto se smaze
 Figure X shows, that after three runs (max_depth = 3) the regular datapoints had been isolated by being fitted in the regions of greater depth.
@@ -466,11 +466,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY1NzU5NTkzLC0xNzQ3NTUzMDE3LC05ND
-Q2NDAwMjUsLTM4NTE5MzQ5NSwtNDk5NzMxNjI1LC0xMjM1Mjky
-NDA4LDI1MTAyMzc4OCwyMDMwNDkwNTc4LDQ1ODA1MzI0MCwtNj
-EyMjg1MzI2LC0xNjExNDIyNjk0LDEzNTMyNTU1ODksMTU0NDg3
-NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNjQwNTMwODcxLC
-04ODk4MTg3LDE1Njk1NjQxNzcsMTg5MDYwNTMwMywyMDYwNjEz
-NzcxXX0=
+eyJoaXN0b3J5IjpbMTg1NDIxOTU3NCwtMTc0NzU1MzAxNywtOT
+Q0NjQwMDI1LC0zODUxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNTI5
+MjQwOCwyNTEwMjM3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLT
+YxMjI4NTMyNiwtMTYxMTQyMjY5NCwxMzUzMjU1NTg5LDE1NDQ4
+NzYzMDcsMTU0ODA1MjAzOCwtMjgxNTkxMTAsMTY0MDUzMDg3MS
+wtODg5ODE4NywxNTY5NTY0MTc3LDE4OTA2MDUzMDMsMjA2MDYx
+Mzc3MV19
 -->
