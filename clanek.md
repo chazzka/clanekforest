@@ -147,7 +147,9 @@ This is because in each step, it limits the observation with the previously sepa
 Consider *regular* observations known to the Isolation Forest algorithm a priory and *anomaly* the novelty datapoints provided later. 
 The standard Isolation Forest algorithm as defined by Liu et. al. selects the split point based on the min-max value according to a priory datapoints.
 
-Example X in Figure X shows the outcome of the Isolation Forest algorithm with `max_depth=3` provided a priory *regular* data points.
+Example X:
+Consider the sample of regular datapoints, which can be seen on the Figure X.
+Example X in Figure X shows the outcome of the Isolation Forest algorithm with `max_depth=3` when provided a priory *regular* data points.
 First, random dimension $X$ and a random split point approx. $s  = 21$ are chosen, orphaning most of the observations on the left side.
 In the second step, in the right area, feature $Y$ was chosen, splitting the area in two parts. Observe, that the split point is always located between area-datapoint's minimum and maximum of the given feature.
 
@@ -465,11 +467,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMTg0NDEwNywxMTYwNjMxOTAxLDEyMD
-E4MjE1MTMsLTEwMzgwMDEzOTAsLTExMTg2NDk1MTIsLTY4MDM0
-NDc0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMSwtMTc0NzU1MzAxNy
-wtOTQ0NjQwMDI1LC0zODUxOTM0OTUsLTQ5OTczMTYyNSwtMTIz
-NTI5MjQwOCwyNTEwMjM3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyND
-AsLTYxMjI4NTMyNiwtMTYxMTQyMjY5NCwxMzUzMjU1NTg5LDE1
-NDQ4NzYzMDddfQ==
+eyJoaXN0b3J5IjpbLTEwNzE4NDA2MTIsMTE2MDYzMTkwMSwxMj
+AxODIxNTEzLC0xMDM4MDAxMzkwLC0xMTE4NjQ5NTEyLC02ODAz
+NDQ3NDQsNjY4MDMwODYsLTE1ODk2MTU1MDEsLTE3NDc1NTMwMT
+csLTk0NDY0MDAyNSwtMzg1MTkzNDk1LC00OTk3MzE2MjUsLTEy
+MzUyOTI0MDgsMjUxMDIzNzg4LDIwMzA0OTA1NzgsNDU4MDUzMj
+QwLC02MTIyODUzMjYsLTE2MTE0MjI2OTQsMTM1MzI1NTU4OSwx
+NTQ0ODc2MzA3XX0=
 -->
