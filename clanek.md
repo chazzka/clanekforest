@@ -153,7 +153,8 @@ Consider now the area of datapoints Px.
 The common misunderstanding is that the Isolation Forest isolates all of the datapoints based on the split point.
 This is, however, just a part of the algorithm.
 The Isolation Forest isolates the minmax area on the left/right side of the split point based on the datapoints provided in the respective area.
-If the evaluated datapoints
+If the evaluated datapoints or the whole area is out of the bounds of the isolation, this area is not immediately assigned outlier.
+Instead, the area is not seen by the algorithm at all and hence is assigned the most similar value it 
 vidite ze je oznacil blbe, je to proto ze ackoli se můze zdat ze na ne vidí (mozna porovnani s obrazkem z wiki)
 ve skutecnosti na ne nevidi a jen je oznacil stejne jako ty nejblizsi sousedy na které vidí, to není moc dobré pro novelty
 
@@ -468,7 +469,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODk2MzA3MzksLTExMTg2NDk1MTIsLT
+eyJoaXN0b3J5IjpbLTE3MTU0ODk4ODYsLTExMTg2NDk1MTIsLT
 Y4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMSwtMTc0NzU1
 MzAxNywtOTQ0NjQwMDI1LC0zODUxOTM0OTUsLTQ5OTczMTYyNS
 wtMTIzNTI5MjQwOCwyNTEwMjM3ODgsMjAzMDQ5MDU3OCw0NTgw
