@@ -115,11 +115,11 @@ Isolation tree je kořenový binární strom sestaven na základě vybrané podm
 
 Isolation Tree is a binary tree constructed with a subset of $A$ items (datapoints) with the size $s=|A|$.
 
-1. pro sestavení isolation tree není potřeba mít početnou množinu dokonce to může být nežádoucí
-2. dobře zvolené malé $s$ může pomoci odstranit *masking* a *swamping*
+1. to build an isolation tree it is not necessary to have a large set; it may even be undesirable
+2. well-chosen small $s$ can help eliminate *masking* and *swamping*
 
    masking 
-   : problém anomálií v clusteru (aby byli označeny jako anomálie)
+   : When the number of anomalies is high it is possible that some of those aggregate in a dense and large cluster, making it more difficult to separate the single anomalies and, in turn, to detect such points as anomalous.
    
    swamping
    : problém normal bodů na okraji (normálního clusteru), které se jeví jako anomálie protože ty uvnitř clusteru mají moc velké ohodnocení 
@@ -463,11 +463,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMTgyMTUxMywtMTAzODAwMTM5MCwtMT
-ExODY0OTUxMiwtNjgwMzQ0NzQ0LDY2ODAzMDg2LC0xNTg5NjE1
-NTAxLC0xNzQ3NTUzMDE3LC05NDQ2NDAwMjUsLTM4NTE5MzQ5NS
-wtNDk5NzMxNjI1LC0xMjM1MjkyNDA4LDI1MTAyMzc4OCwyMDMw
-NDkwNTc4LDQ1ODA1MzI0MCwtNjEyMjg1MzI2LC0xNjExNDIyNj
-k0LDEzNTMyNTU1ODksMTU0NDg3NjMwNywxNTQ4MDUyMDM4LC0y
-ODE1OTExMF19
+eyJoaXN0b3J5IjpbNjQ2MDg5Mzc2LDEyMDE4MjE1MTMsLTEwMz
+gwMDEzOTAsLTExMTg2NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4
+NiwtMTU4OTYxNTUwMSwtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC
+0zODUxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEw
+MjM3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNi
+wtMTYxMTQyMjY5NCwxMzUzMjU1NTg5LDE1NDQ4NzYzMDcsMTU0
+ODA1MjAzOF19
 -->
