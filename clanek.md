@@ -149,10 +149,11 @@ Figure X shows the first three decisions (`max_depth=3`) of the Isolation Forest
 First, random dimension $X$ and a random split point approx. $s  = 21$ are chosen, orphaning most of the observations on the left side.
 In the second step, in the right area, feature $Y$ was chosen, splitting the area in two parts. Observe, that the split point is always located between area-datapoint's minimum and maximum of the given feature.
 
-Consider now the area of points Px.
+Consider now the area of datapoints Px.
 The common misunderstanding is that the Isolation Forest isolates all of the datapoints based on the split point.
 This is, however, just a part of the algorithm.
-The Isolation Forest isola
+The Isolation Forest isolates the minmax area on the left/right side of the split point based on the datapoints provided in the respective area.
+If the evaluated datapoints
 vidite ze je oznacil blbe, je to proto ze ackoli se můze zdat ze na ne vidí (mozna porovnani s obrazkem z wiki)
 ve skutecnosti na ne nevidi a jen je oznacil stejne jako ty nejblizsi sousedy na které vidí, to není moc dobré pro novelty
 
@@ -467,11 +468,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQxMzY2MzAyLC0xMTE4NjQ5NTEyLC02OD
-AzNDQ3NDQsNjY4MDMwODYsLTE1ODk2MTU1MDEsLTE3NDc1NTMw
-MTcsLTk0NDY0MDAyNSwtMzg1MTkzNDk1LC00OTk3MzE2MjUsLT
-EyMzUyOTI0MDgsMjUxMDIzNzg4LDIwMzA0OTA1NzgsNDU4MDUz
-MjQwLC02MTIyODUzMjYsLTE2MTE0MjI2OTQsMTM1MzI1NTU4OS
-wxNTQ0ODc2MzA3LDE1NDgwNTIwMzgsLTI4MTU5MTEwLDE2NDA1
-MzA4NzFdfQ==
+eyJoaXN0b3J5IjpbLTEzODk2MzA3MzksLTExMTg2NDk1MTIsLT
+Y4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMSwtMTc0NzU1
+MzAxNywtOTQ0NjQwMDI1LC0zODUxOTM0OTUsLTQ5OTczMTYyNS
+wtMTIzNTI5MjQwOCwyNTEwMjM3ODgsMjAzMDQ5MDU3OCw0NTgw
+NTMyNDAsLTYxMjI4NTMyNiwtMTYxMTQyMjY5NCwxMzUzMjU1NT
+g5LDE1NDQ4NzYzMDcsMTU0ODA1MjAzOCwtMjgxNTkxMTAsMTY0
+MDUzMDg3MV19
 -->
