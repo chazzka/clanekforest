@@ -174,15 +174,9 @@ This allows the distinction between the points, making later novelty evaluation 
 
 
 Consider now the same area Px of three datapoints as in the previous example.
-Figure X shows, that after three runs, as opposed to the previous Outlier detection example, where the Px area was assigned regular, it is assigned novelty now.
 The Px area gets assigned the depth of 5, which is lower than the adjoining areas.
-This is crucial disti
-Obrazek x ukazuje, stále máme tři runy, že  narozdíl od ukázky nahoře s outlierem, kde prostě body byly blízko hranice s 8.94 depth tak jsou taky regulary, tady se nám body usadili do oblasti s depth = 5, zatímco ostatni kolem jsou 9.05, 6.54 (po dopočítání path_lenght, tak jak bylo vysvětleno výše)
-
-
-- [ ] TODO: toto se smaze
-Figure X shows, that after three runs (max_depth = 3) the regular datapoints had been isolated by being fitted in the regions of greater depth.
-Although $P_a$ has the same depth as the regular observations, later will be shown that the final novelty score will differ. 
+This is crucial distinction which makes the novelty detection possible.
+Figure X shows, that after three runs, as opposed to the previous Outlier detection example, where the Px area was assigned regular, it is assigned novelty now.
 
 ![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example1_gnu.svg)
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
@@ -469,11 +463,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTkzODk5NzEsLTEwMzgwMDEzOTAsLT
-ExMTg2NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OTYx
-NTUwMSwtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC0zODUxOTM0OT
-UsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMjM3ODgsMjAz
-MDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNiwtMTYxMTQyMj
-Y5NCwxMzUzMjU1NTg5LDE1NDQ4NzYzMDcsMTU0ODA1MjAzOCwt
-MjgxNTkxMTBdfQ==
+eyJoaXN0b3J5IjpbMTIwMTgyMTUxMywtMTAzODAwMTM5MCwtMT
+ExODY0OTUxMiwtNjgwMzQ0NzQ0LDY2ODAzMDg2LC0xNTg5NjE1
+NTAxLC0xNzQ3NTUzMDE3LC05NDQ2NDAwMjUsLTM4NTE5MzQ5NS
+wtNDk5NzMxNjI1LC0xMjM1MjkyNDA4LDI1MTAyMzc4OCwyMDMw
+NDkwNTc4LDQ1ODA1MzI0MCwtNjEyMjg1MzI2LC0xNjExNDIyNj
+k0LDEzNTMyNTU1ODksMTU0NDg3NjMwNywxNTQ4MDUyMDM4LC0y
+ODE1OTExMF19
 -->
