@@ -127,12 +127,11 @@ Isolation Tree is a binary tree constructed with a subset of $A$ items (datapoin
    
    internal vertex
    : contains a condition (a feature and a limit) and two children (one representing a fulfilled condition and the other an unfulfilled one)
-   
+  
    external vertex (leaf)
-   : vzniká pokud podmínky rodičů splňuje (resp. nesplňuje) jeden nebo žádný prvek ze samplu, nebo je dosažena maximální hloubka stromu $l$ zpravidla $l=\ln_2(s)$. Obsahuje ohodnocení $h(x)$ pomocí vzdálenosti od kořene, pokud je dosaženo  max. délky stromu je *vzdálenost* odhadnuta pomocí $h(x)=e+c(n)$, $e$ je vzdálenost od kořene, $n$ je počet prvků ze samplu splňující podmínky rodičů, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ a $H_{n-1}$ je $n-1$ harmonické číslo. 
+   : it is created if the conditions of the parents are met (or not met) by one or none of the elements from the sample, or the maximum depth of the tree $l$ is reached, usually $l=\ln_2(s)$. It contains the evaluation of $h(x)$ using the distance from the root. If the max length of the tree is reached the *distance* is estimated using $h(x)=e+c(n)$, where $e$ is the distance from the root, $n$ is the number of elements from the sample satisfying the conditions of the parents, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ and $H_{n-1}$ is $n-1$ harmonic number.
  
-external vertex
- : it is created if the conditions of the parents are met (or not met) by one or none of the elements from the sample, or the maximum depth of the tree $l$ is reached, usually $l=\ln_2(s)$. It contains the evaluation of $h(x)$ using the distance from the root, if the max length of the tree is reached the *distance* is estimated using $h(x)=e+c(n)$, where $e$ is the distance from the root, $n$ is the number of elements from the sample satisfying the conditions of the parents, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ and $H_{n-1}$ is $n-1$ harmonic number.
+
    
 - [ ] TODO: Honza to tu vysvětlí obecně.
 - [ ] TODO: další možnost výzkumu (jinej článek) jak udělat isolation forest, 
@@ -466,11 +465,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk4NDc1NDI0LDEyMDE4MjE1MTMsLTEwMz
-gwMDEzOTAsLTExMTg2NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4
-NiwtMTU4OTYxNTUwMSwtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC
-0zODUxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEw
-MjM3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNi
-wtMTYxMTQyMjY5NCwxMzUzMjU1NTg5LDE1NDQ4NzYzMDcsMTU0
-ODA1MjAzOF19
+eyJoaXN0b3J5IjpbMTE2MDYzMTkwMSwxMjAxODIxNTEzLC0xMD
+M4MDAxMzkwLC0xMTE4NjQ5NTEyLC02ODAzNDQ3NDQsNjY4MDMw
+ODYsLTE1ODk2MTU1MDEsLTE3NDc1NTMwMTcsLTk0NDY0MDAyNS
+wtMzg1MTkzNDk1LC00OTk3MzE2MjUsLTEyMzUyOTI0MDgsMjUx
+MDIzNzg4LDIwMzA0OTA1NzgsNDU4MDUzMjQwLC02MTIyODUzMj
+YsLTE2MTE0MjI2OTQsMTM1MzI1NTU4OSwxNTQ0ODc2MzA3LDE1
+NDgwNTIwMzhdfQ==
 -->
