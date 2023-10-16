@@ -161,7 +161,7 @@ bla bla nejaké závery kecy k tomu odborne
 na druhou stranu nase novelty - pokracuj v proposed solution
 
 
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_outlier.svg)
+![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example2_gnu_clanek.svg)
 > Figure X Isolation Forest novelty point insertion using original approach. Squares being points fed after the learning.
 
 #### Proposed solution
@@ -467,11 +467,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OT
-YxNTUwMSwtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC0zODUxOTM0
-OTUsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMjM3ODgsMj
-AzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNiwtMTYxMTQy
-MjY5NCwxMzUzMjU1NTg5LDE1NDQ4NzYzMDcsMTU0ODA1MjAzOC
-wtMjgxNTkxMTAsMTY0MDUzMDg3MSwtODg5ODE4NywxNTY5NTY0
-MTc3XX0=
+eyJoaXN0b3J5IjpbNDc1MjQzODI2LC02ODAzNDQ3NDQsNjY4MD
+MwODYsLTE1ODk2MTU1MDEsLTE3NDc1NTMwMTcsLTk0NDY0MDAy
+NSwtMzg1MTkzNDk1LC00OTk3MzE2MjUsLTEyMzUyOTI0MDgsMj
+UxMDIzNzg4LDIwMzA0OTA1NzgsNDU4MDUzMjQwLC02MTIyODUz
+MjYsLTE2MTE0MjI2OTQsMTM1MzI1NTU4OSwxNTQ0ODc2MzA3LD
+E1NDgwNTIwMzgsLTI4MTU5MTEwLDE2NDA1MzA4NzEsLTg4OTgx
+ODddfQ==
 -->
