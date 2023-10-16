@@ -146,7 +146,7 @@ Consider *regular* observations known to the Isolation Forest algorithm a priory
 The standard Isolation Forest algorithm as defined by Liu et. al. selects the split point based on the min-max value according to a priory datapoints.
 
 Figure X shows the first three decisions (`max_depth=3`) of the Isolation Forest algorithm provided a priory *regular* data points in the left bottom corner.
-First, random dimension $X$ and a random split point approx. $s  = 16$ are chosen, orphaning most of the observations on the left side.
+First, random dimension $X$ and a random split point approx. $s  = 11$ are chosen, orphaning most of the observations on the right side.
 In the second step, in the right area, feature $Y$ was chosen, splitting the area in two parts. Observe, that the split point is always located between area-datapoint's minimum and maximum of the given feature.
 As we can see, the theoretical novelty observations get assigned the same *depth* (the value of 3) as a priory known, regular observations.
 After reaching the stopping criterion, the novelty point remains in the same vertex with a regular datapoint. This is true for any depth up until any chosen *max_depth*.
@@ -467,11 +467,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc1MjQzODI2LC02ODAzNDQ3NDQsNjY4MD
-MwODYsLTE1ODk2MTU1MDEsLTE3NDc1NTMwMTcsLTk0NDY0MDAy
-NSwtMzg1MTkzNDk1LC00OTk3MzE2MjUsLTEyMzUyOTI0MDgsMj
-UxMDIzNzg4LDIwMzA0OTA1NzgsNDU4MDUzMjQwLC02MTIyODUz
-MjYsLTE2MTE0MjI2OTQsMTM1MzI1NTU4OSwxNTQ0ODc2MzA3LD
-E1NDgwNTIwMzgsLTI4MTU5MTEwLDE2NDA1MzA4NzEsLTg4OTgx
-ODddfQ==
+eyJoaXN0b3J5IjpbMTM5MTI4NzU2MiwtNjgwMzQ0NzQ0LDY2OD
+AzMDg2LC0xNTg5NjE1NTAxLC0xNzQ3NTUzMDE3LC05NDQ2NDAw
+MjUsLTM4NTE5MzQ5NSwtNDk5NzMxNjI1LC0xMjM1MjkyNDA4LD
+I1MTAyMzc4OCwyMDMwNDkwNTc4LDQ1ODA1MzI0MCwtNjEyMjg1
+MzI2LC0xNjExNDIyNjk0LDEzNTMyNTU1ODksMTU0NDg3NjMwNy
+wxNTQ4MDUyMDM4LC0yODE1OTExMCwxNjQwNTMwODcxLC04ODk4
+MTg3XX0=
 -->
