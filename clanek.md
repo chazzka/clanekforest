@@ -155,7 +155,9 @@ This is, however, just a part of the algorithm.
 The Isolation Forest isolates the minmax area on the left/right side of the split point based on the datapoints provided in the respective area.
 If the evaluated datapoints or the whole area is out of the bounds of the isolation, this area is not immediately assigned outlier.
 Instead, the area is not seen by the algorithm at all and hence is marked the same as the nearest points.
-This is undesirable in the context of novelty detection, since every novelty datapoint would had been assigned 
+This is undesirable in the context of novelty detection, since every novelty datapoint would have been assigned according to the nearest points, even though the distance would be marginal.
+
+It is therefore clear, that the novelty detection algorithm needs to deal with the whole range, not only the minmax value of the learning points.
 
 na druhou stranu nase novelty - pokracuj v proposed solution
 
@@ -466,7 +468,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NjI5NTI1MywtMTExODY0OTUxMiwtNj
+eyJoaXN0b3J5IjpbMTY0MTU4MTI1MSwtMTExODY0OTUxMiwtNj
 gwMzQ0NzQ0LDY2ODAzMDg2LC0xNTg5NjE1NTAxLC0xNzQ3NTUz
 MDE3LC05NDQ2NDAwMjUsLTM4NTE5MzQ5NSwtNDk5NzMxNjI1LC
 0xMjM1MjkyNDA4LDI1MTAyMzc4OCwyMDMwNDkwNTc4LDQ1ODA1
