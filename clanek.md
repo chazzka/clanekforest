@@ -148,10 +148,8 @@ The standard Isolation Forest algorithm as defined by Liu et. al. selects the sp
 Figure X shows the first three decisions (`max_depth=3`) of the Isolation Forest algorithm provided a priory *regular* data points in the left bottom corner.
 First, random dimension $X$ and a random split point approx. $s  = 21$ are chosen, orphaning most of the observations on the left side.
 In the second step, in the right area, feature $Y$ was chosen, splitting the area in two parts. Observe, that the split point is always located between area-datapoint's minimum and maximum of the given feature.
-As we can see, the theoretical novelty observations get assigned the same *depth* (the value of 3) as a priory known, regular observations.
-After reaching the stopping criterion, the novelty point remains in the same vertex with a regular datapoint. This is true for any depth up until any chosen *max_depth*.
 
-- [ ] TODO: OBRAZEK OUTLIER NOVY\
+Consider now 
 podivejte se na ty body v oblasti px
 vidite ze je oznacil blbe, je to proto ze ackoli se můze zdat ze na ne vidí (mozna porovnani s obrazkem z wiki)
 ve skutecnosti na ne nevidi a jen je oznacil stejne jako ty nejblizsi sousedy na které vidí, to není moc dobré pro novelty
@@ -467,11 +465,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTg2NDk1MTIsLTY4MDM0NDc0NCw2Nj
-gwMzA4NiwtMTU4OTYxNTUwMSwtMTc0NzU1MzAxNywtOTQ0NjQw
-MDI1LC0zODUxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOC
-wyNTEwMjM3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4
-NTMyNiwtMTYxMTQyMjY5NCwxMzUzMjU1NTg5LDE1NDQ4NzYzMD
-csMTU0ODA1MjAzOCwtMjgxNTkxMTAsMTY0MDUzMDg3MSwtODg5
-ODE4N119
+eyJoaXN0b3J5IjpbLTEwNTQ2ODQxOTcsLTExMTg2NDk1MTIsLT
+Y4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMSwtMTc0NzU1
+MzAxNywtOTQ0NjQwMDI1LC0zODUxOTM0OTUsLTQ5OTczMTYyNS
+wtMTIzNTI5MjQwOCwyNTEwMjM3ODgsMjAzMDQ5MDU3OCw0NTgw
+NTMyNDAsLTYxMjI4NTMyNiwtMTYxMTQyMjY5NCwxMzUzMjU1NT
+g5LDE1NDQ4NzYzMDcsMTU0ODA1MjAzOCwtMjgxNTkxMTAsMTY0
+MDUzMDg3MV19
 -->
