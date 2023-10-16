@@ -154,11 +154,8 @@ The common misunderstanding is that the Isolation Forest isolates all of the dat
 This is, however, just a part of the algorithm.
 The Isolation Forest isolates the minmax area on the left/right side of the split point based on the datapoints provided in the respective area.
 If the evaluated datapoints or the whole area is out of the bounds of the isolation, this area is not immediately assigned outlier.
-Instead, the area is not seen by the algorithm at all and hence is assigned the most similar value it 
-vidite ze je oznacil blbe, je to proto ze ackoli se můze zdat ze na ne vidí (mozna porovnani s obrazkem z wiki)
-ve skutecnosti na ne nevidi a jen je oznacil stejne jako ty nejblizsi sousedy na které vidí, to není moc dobré pro novelty
-
-bla bla nejaké závery kecy k tomu odborne
+Instead, the area is not seen by the algorithm at all and hence is marked the same as the nearest points.
+This is undesirable in the context of novelty detection, since every novelty datapoint would had been assigned 
 
 na druhou stranu nase novelty - pokracuj v proposed solution
 
@@ -469,11 +466,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTU0ODk4ODYsLTExMTg2NDk1MTIsLT
-Y4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMSwtMTc0NzU1
-MzAxNywtOTQ0NjQwMDI1LC0zODUxOTM0OTUsLTQ5OTczMTYyNS
-wtMTIzNTI5MjQwOCwyNTEwMjM3ODgsMjAzMDQ5MDU3OCw0NTgw
-NTMyNDAsLTYxMjI4NTMyNiwtMTYxMTQyMjY5NCwxMzUzMjU1NT
-g5LDE1NDQ4NzYzMDcsMTU0ODA1MjAzOCwtMjgxNTkxMTAsMTY0
-MDUzMDg3MV19
+eyJoaXN0b3J5IjpbLTc2NjI5NTI1MywtMTExODY0OTUxMiwtNj
+gwMzQ0NzQ0LDY2ODAzMDg2LC0xNTg5NjE1NTAxLC0xNzQ3NTUz
+MDE3LC05NDQ2NDAwMjUsLTM4NTE5MzQ5NSwtNDk5NzMxNjI1LC
+0xMjM1MjkyNDA4LDI1MTAyMzc4OCwyMDMwNDkwNTc4LDQ1ODA1
+MzI0MCwtNjEyMjg1MzI2LC0xNjExNDIyNjk0LDEzNTMyNTU1OD
+ksMTU0NDg3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNjQw
+NTMwODcxXX0=
 -->
