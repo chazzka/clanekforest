@@ -159,18 +159,12 @@ This is undesirable in the context of novelty detection, since every novelty dat
 
 It is therefore clear, that the novelty detection algorithm needs to deal with the whole range, not only the minmax value of the learning points.
 
-na druhou stranu nase novelty - pokracuj v proposed solution
-
-
 ![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example2_gnu.svg)
 > Figure X Isolation Forest novelty point insertion using original approach. Squares being points fed after the learning.
 
 #### Proposed solution
 The proposed solution comes from an idea, that the original tree lacks the option to isolate more datapoints than it currently observes. 
 The observed space is bounded by minimum and maximum in each feature.
-
-- [ ] todo, ne point ale oblast bodů, novy obrazek z example 1
-
 
 Consider now point $P_a$ as depicted in Figure X.
 In the proposed solution, $P_a$ falls into an area (vertex) with the *depth = 5*, isolating $P_a$ and its adjacent datapoints from the rest of the anomalies.
@@ -183,7 +177,7 @@ Obrazek x ukazuje, stále máme tři runy, že  narozdíl od ukázky nahoře s o
 Figure X shows, that after three runs (max_depth = 3) the regular datapoints had been isolated by being fitted in the regions of greater depth.
 Although $P_a$ has the same depth as the regular observations, later will be shown that the final novelty score will differ. 
 
-![](https://raw.githubusercontent.com/chazzka/clanekcluster/master/clanek_figures/regular_observations_with_novelties_lines_squares_novelty.svg)
+![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example1_gnu.svg)
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
 
 
@@ -468,11 +462,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MTU4MTI1MSwtMTExODY0OTUxMiwtNj
-gwMzQ0NzQ0LDY2ODAzMDg2LC0xNTg5NjE1NTAxLC0xNzQ3NTUz
-MDE3LC05NDQ2NDAwMjUsLTM4NTE5MzQ5NSwtNDk5NzMxNjI1LC
-0xMjM1MjkyNDA4LDI1MTAyMzc4OCwyMDMwNDkwNTc4LDQ1ODA1
-MzI0MCwtNjEyMjg1MzI2LC0xNjExNDIyNjk0LDEzNTMyNTU1OD
-ksMTU0NDg3NjMwNywxNTQ4MDUyMDM4LC0yODE1OTExMCwxNjQw
-NTMwODcxXX0=
+eyJoaXN0b3J5IjpbLTEwMzgwMDEzOTAsLTExMTg2NDk1MTIsLT
+Y4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMSwtMTc0NzU1
+MzAxNywtOTQ0NjQwMDI1LC0zODUxOTM0OTUsLTQ5OTczMTYyNS
+wtMTIzNTI5MjQwOCwyNTEwMjM3ODgsMjAzMDQ5MDU3OCw0NTgw
+NTMyNDAsLTYxMjI4NTMyNiwtMTYxMTQyMjY5NCwxMzUzMjU1NT
+g5LDE1NDQ4NzYzMDcsMTU0ODA1MjAzOCwtMjgxNTkxMTAsMTY0
+MDUzMDg3MV19
 -->
