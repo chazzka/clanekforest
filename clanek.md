@@ -173,7 +173,8 @@ This allows the distinction between the points, making later novelty evaluation 
 */
 
 
-Consider now area of
+Consider now the same area Px of three datapoints as in the previous example.
+Figure X shows, that after three runs, as opposed to the previous Outlier detection example, where the Px area was assigned regular bec
 Obrazek x ukazuje, stále máme tři runy, že  narozdíl od ukázky nahoře s outlierem, kde prostě body byly blízko hranice s 8.94 depth tak jsou taky regulary, tady se nám body usadili do oblasti s depth = 5, zatímco ostatni kolem jsou 9.05, 6.54 (po dopočítání path_lenght, tak jak bylo vysvětleno výše)
 
 
@@ -466,7 +467,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDQ0NTkwMzUsLTEwMzgwMDEzOTAsLT
+eyJoaXN0b3J5IjpbLTIwMTA1NTQwMjksLTEwMzgwMDEzOTAsLT
 ExMTg2NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OTYx
 NTUwMSwtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC0zODUxOTM0OT
 UsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMjM3ODgsMjAz
