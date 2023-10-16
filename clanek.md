@@ -149,8 +149,8 @@ Figure X shows the first three decisions (`max_depth=3`) of the Isolation Forest
 First, random dimension $X$ and a random split point approx. $s  = 21$ are chosen, orphaning most of the observations on the left side.
 In the second step, in the right area, feature $Y$ was chosen, splitting the area in two parts. Observe, that the split point is always located between area-datapoint's minimum and maximum of the given feature.
 
-Consider now 
-podivejte se na ty body v oblasti px
+Consider now the area of points Px.
+
 vidite ze je oznacil blbe, je to proto ze ackoli se můze zdat ze na ne vidí (mozna porovnani s obrazkem z wiki)
 ve skutecnosti na ne nevidi a jen je oznacil stejne jako ty nejblizsi sousedy na které vidí, to není moc dobré pro novelty
 
@@ -159,7 +159,7 @@ bla bla nejaké závery kecy k tomu odborne
 na druhou stranu nase novelty - pokracuj v proposed solution
 
 
-![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example2_gnu_clanek.svg)
+![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example2_gnu.svg)
 > Figure X Isolation Forest novelty point insertion using original approach. Squares being points fed after the learning.
 
 #### Proposed solution
@@ -465,7 +465,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTQ2ODQxOTcsLTExMTg2NDk1MTIsLT
+eyJoaXN0b3J5IjpbLTE0MzAzNDMwNTQsLTExMTg2NDk1MTIsLT
 Y4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMSwtMTc0NzU1
 MzAxNywtOTQ0NjQwMDI1LC0zODUxOTM0OTUsLTQ5OTczMTYyNS
 wtMTIzNTI5MjQwOCwyNTEwMjM3ODgsMjAzMDQ5MDU3OCw0NTgw
