@@ -130,7 +130,9 @@ Isolation Tree is a binary tree constructed with a subset of $A$ items (datapoin
    
    external vertex (leaf)
    : vzniká pokud podmínky rodičů splňuje (resp. nesplňuje) jeden nebo žádný prvek ze samplu, nebo je dosažena maximální hloubka stromu $l$ zpravidla $l=\ln_2(s)$. Obsahuje ohodnocení $h(x)$ pomocí vzdálenosti od kořene, pokud je dosaženo  max. délky stromu je *vzdálenost* odhadnuta pomocí $h(x)=e+c(n)$, $e$ je vzdálenost od kořene, $n$ je počet prvků ze samplu splňující podmínky rodičů, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ a $H_{n-1}$ je $n-1$ harmonické číslo. 
-: it is created if the conditions of the parents are met (or not met) by one or none of the elements from the sample, or the maximum depth of the tree $l$ is reached, usually $l=\ln_2(s)$. It contains the evaluation of $h(x)$ using the distance from the root, if the max length of the tree is reached the *distance* is estimated using $h(x)=e+c(n)$, $e$ is the distance from the root, $n $ is the number of elements from the sample satisfying the conditions of the parents, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ and $H_{n-1}$ is $ n-1$ harmonic number.
+ 
+external vertex
+ : it is created if the conditions of the parents are met (or not met) by one or none of the elements from the sample, or the maximum depth of the tree $l$ is reached, usually $l=\ln_2(s)$. It contains the evaluation of $h(x)$ using the distance from the root, if the max length of the tree is reached the *distance* is estimated using $h(x)=e+c(n)$, $e$ is the distance from the root, $n$ is the number of elements from the sample satisfying the conditions of the parents, $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$ and $H_{n-1}$ is $ n-1$ harmonic number.
    
 - [ ] TODO: Honza to tu vysvětlí obecně.
 - [ ] TODO: další možnost výzkumu (jinej článek) jak udělat isolation forest, 
@@ -464,11 +466,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTk4MTg5MjAsMTIwMTgyMTUxMywtMT
-AzODAwMTM5MCwtMTExODY0OTUxMiwtNjgwMzQ0NzQ0LDY2ODAz
-MDg2LC0xNTg5NjE1NTAxLC0xNzQ3NTUzMDE3LC05NDQ2NDAwMj
-UsLTM4NTE5MzQ5NSwtNDk5NzMxNjI1LC0xMjM1MjkyNDA4LDI1
-MTAyMzc4OCwyMDMwNDkwNTc4LDQ1ODA1MzI0MCwtNjEyMjg1Mz
-I2LC0xNjExNDIyNjk0LDEzNTMyNTU1ODksMTU0NDg3NjMwNywx
-NTQ4MDUyMDM4XX0=
+eyJoaXN0b3J5IjpbLTQ1Mjc3MjQ1MSwxMjAxODIxNTEzLC0xMD
+M4MDAxMzkwLC0xMTE4NjQ5NTEyLC02ODAzNDQ3NDQsNjY4MDMw
+ODYsLTE1ODk2MTU1MDEsLTE3NDc1NTMwMTcsLTk0NDY0MDAyNS
+wtMzg1MTkzNDk1LC00OTk3MzE2MjUsLTEyMzUyOTI0MDgsMjUx
+MDIzNzg4LDIwMzA0OTA1NzgsNDU4MDUzMjQwLC02MTIyODUzMj
+YsLTE2MTE0MjI2OTQsMTM1MzI1NTU4OSwxNTQ0ODc2MzA3LDE1
+NDgwNTIwMzhdfQ==
 -->
