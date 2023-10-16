@@ -166,10 +166,14 @@ It is therefore clear, that the novelty detection algorithm needs to deal with t
 The proposed solution comes from an idea, that the original tree lacks the option to isolate more datapoints than it currently observes. 
 The observed space is bounded by minimum and maximum in each feature.
 
+/*
 Consider now point $P_a$ as depicted in Figure X.
 In the proposed solution, $P_a$ falls into an area (vertex) with the *depth = 5*, isolating $P_a$ and its adjacent datapoints from the rest of the anomalies.
-This allows the distinction between the points, making later novelty evaluation much more feasible.
+This allows the distinction between the points, making later novelty evaluation much more feasible. 
+*/
 
+
+Consider now area of
 Obrazek x ukazuje, stále máme tři runy, že  narozdíl od ukázky nahoře s outlierem, kde prostě body byly blízko hranice s 8.94 depth tak jsou taky regulary, tady se nám body usadili do oblasti s depth = 5, zatímco ostatni kolem jsou 9.05, 6.54 (po dopočítání path_lenght, tak jak bylo vysvětleno výše)
 
 
@@ -462,11 +466,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzgwMDEzOTAsLTExMTg2NDk1MTIsLT
-Y4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMSwtMTc0NzU1
-MzAxNywtOTQ0NjQwMDI1LC0zODUxOTM0OTUsLTQ5OTczMTYyNS
-wtMTIzNTI5MjQwOCwyNTEwMjM3ODgsMjAzMDQ5MDU3OCw0NTgw
-NTMyNDAsLTYxMjI4NTMyNiwtMTYxMTQyMjY5NCwxMzUzMjU1NT
-g5LDE1NDQ4NzYzMDcsMTU0ODA1MjAzOCwtMjgxNTkxMTAsMTY0
-MDUzMDg3MV19
+eyJoaXN0b3J5IjpbLTE5NDQ0NTkwMzUsLTEwMzgwMDEzOTAsLT
+ExMTg2NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OTYx
+NTUwMSwtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC0zODUxOTM0OT
+UsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMjM3ODgsMjAz
+MDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNiwtMTYxMTQyMj
+Y5NCwxMzUzMjU1NTg5LDE1NDQ4NzYzMDcsMTU0ODA1MjAzOCwt
+MjgxNTkxMTBdfQ==
 -->
