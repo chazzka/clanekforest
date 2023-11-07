@@ -163,7 +163,6 @@ Instead, the area is not seen by the algorithm at all and hence is marked the sa
 This is undesirable in the context of novelty detection, since every novelty datapoint would have been assigned according to the nearest points, even though the distance would be marginal.
 
 In our proposed solution, this problem is dealt with by isolating whole ranges of observed space, instead just the minmax values.
-Those ranges are 
 
 ![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example2_gnu.svg)
 > Figure X Isolation Forest novelty point insertion using original approach. Squares being points fed after the learning.
@@ -469,7 +468,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxODUxMTg3LC0xNjc2ODQ5Mzc1LDExNj
+eyJoaXN0b3J5IjpbNDM4MzM5MTMwLC0xNjc2ODQ5Mzc1LDExNj
 A2MzE5MDEsMTIwMTgyMTUxMywtMTAzODAwMTM5MCwtMTExODY0
 OTUxMiwtNjgwMzQ0NzQ0LDY2ODAzMDg2LC0xNTg5NjE1NTAxLC
 0xNzQ3NTUzMDE3LC05NDQ2NDAwMjUsLTM4NTE5MzQ5NSwtNDk5
