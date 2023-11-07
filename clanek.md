@@ -190,13 +190,6 @@ In our proposed solution, this problem is dealt with by isolating whole ranges o
 The proposed solution comes from an idea, that the original tree lacks the option to isolate more datapoints than it currently observes. 
 The observed space is bounded by minimum and maximum in each feature.
 
-/*
-Consider now point $P_a$ as depicted in Figure X.
-In the proposed solution, $P_a$ falls into an area (vertex) with the *depth = 5*, isolating $P_a$ and its adjacent datapoints from the rest of the anomalies.
-This allows the distinction between the points, making later novelty evaluation much more feasible. 
-*/
-
-
 Consider now the same area Px of three datapoints as in the previous example.
 The Px area gets assigned the depth of 5, which is lower than the adjoining areas.
 This is crucial distinction which makes the novelty detection possible.
@@ -487,7 +480,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMjYzMjU3OSwtMTk0MTI1MTMxOCwtNj
+eyJoaXN0b3J5IjpbLTMzNzg0OTQ0NSwtMTk0MTI1MTMxOCwtNj
 AwNzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2MzE5MDEsMTIwMTgy
 MTUxMywtMTAzODAwMTM5MCwtMTExODY0OTUxMiwtNjgwMzQ0Nz
 Q0LDY2ODAzMDg2LC0xNTg5NjE1NTAxLC0xNzQ3NTUzMDE3LC05
