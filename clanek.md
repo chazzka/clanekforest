@@ -162,10 +162,10 @@ If the evaluated datapoints or the whole area is out of the bounds of the isolat
 Instead, the area is not seen by the algorithm at all and hence is marked the same as the nearest points.
 This is undesirable in the context of novelty detection, since every novelty datapoint would have been assigned according to the nearest points, even though the distance would be marginal.
 
-In our proposed solution, this problem is dealt with by isolating whole ranges of observed space, instead just the minmax values.
-
 ![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example2_gnu.svg)
-> Figure X Isolation Forest novelty point insertion using original approach. Squares being points fed after the learning.
+> Figure X Isolation Forest blabla.
+
+In our proposed solution, this problem is dealt with by isolating whole ranges of observed space, instead just the minmax values.
 
 #### Proposed solution
 The proposed solution comes from an idea, that the original tree lacks the option to isolate more datapoints than it currently observes. 
@@ -468,11 +468,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM4MzM5MTMwLC0xNjc2ODQ5Mzc1LDExNj
-A2MzE5MDEsMTIwMTgyMTUxMywtMTAzODAwMTM5MCwtMTExODY0
-OTUxMiwtNjgwMzQ0NzQ0LDY2ODAzMDg2LC0xNTg5NjE1NTAxLC
-0xNzQ3NTUzMDE3LC05NDQ2NDAwMjUsLTM4NTE5MzQ5NSwtNDk5
-NzMxNjI1LC0xMjM1MjkyNDA4LDI1MTAyMzc4OCwyMDMwNDkwNT
-c4LDQ1ODA1MzI0MCwtNjEyMjg1MzI2LC0xNjExNDIyNjk0LDEz
-NTMyNTU1ODldfQ==
+eyJoaXN0b3J5IjpbLTQ5Mzc3MTcyMywtMTY3Njg0OTM3NSwxMT
+YwNjMxOTAxLDEyMDE4MjE1MTMsLTEwMzgwMDEzOTAsLTExMTg2
+NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMS
+wtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC0zODUxOTM0OTUsLTQ5
+OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMjM3ODgsMjAzMDQ5MD
+U3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNiwtMTYxMTQyMjY5NCwx
+MzUzMjU1NTg5XX0=
 -->
