@@ -176,7 +176,9 @@ If the evaluated datapoints or the whole area is out of the bounds of the isolat
 Instead, the area is not seen by the algorithm at all and hence is marked the same as the nearest points.
 This is undesirable in the context of novelty detection, since every novelty datapoint would have been assigned according to the nearest points, even though the distance would be marginal.
 
-Consider a more robust example, where the observed area is polluted by regular observations on the one side, regular on the other side and polluted by the novelty datapoi
+Consider a more robust example, where the observed area is polluted by regular observations on the one side, regular on the other side and polluted by the novelty datapoints in the middle.
+This is a demanding task for the outlier detection algorithm; hence the points are located between the regular nodes.
+Figure X shows the outlier algorithm experiment wth
 
 In our proposed solution, this problem is dealt with by isolating whole ranges of observed space, instead just the minmax values.
 
@@ -481,7 +483,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTc0MTA1MzgsLTE5NDEyNTEzMTgsLT
+eyJoaXN0b3J5IjpbLTExMzc2OTA0OTcsLTE5NDEyNTEzMTgsLT
 YwMDczMjcyMiwtMTY3Njg0OTM3NSwxMTYwNjMxOTAxLDEyMDE4
 MjE1MTMsLTEwMzgwMDEzOTAsLTExMTg2NDk1MTIsLTY4MDM0ND
 c0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMSwtMTc0NzU1MzAxNywt
