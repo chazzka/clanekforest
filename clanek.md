@@ -155,7 +155,10 @@ First, random dimension $X$ and a random split point approx. $s  = 21$ are chose
 In the second step, in the right area, feature $Y$ was chosen, splitting the area in two parts. Observe, that the split point is always located between area-datapoint's minimum and maximum of the given feature.
 Observe also, that the split point only separates the area where the minmax -outlier are should be evaluated. 
 Hence, as in a binary tree, on each side of a split point the algorithm tries to find exactly one area that would be bounded by the input's minmax.
-Such area is assigned a depth, which is equal to the node's depth in a binary tree (when the max depth is reached, a depth evaluation is taking place
+Such area is assigned a depth, which is equal to the node's depth in a binary tree (note that when the max depth is reached, a depth evaluation is taking place).
+Figure X shows that the outlying Px points are not marked as outlier.
+This is caused by the points being outside the scope of any minmax-bounding rectangle (outside the scope of the 
+
 
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example2_gnu_clanek.svg) 
 > Figure X Isolation Forest blabla.
@@ -471,11 +474,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MjIxMjk4LC02MDA3MzI3MjIsLTE2Nz
-Y4NDkzNzUsMTE2MDYzMTkwMSwxMjAxODIxNTEzLC0xMDM4MDAx
-MzkwLC0xMTE4NjQ5NTEyLC02ODAzNDQ3NDQsNjY4MDMwODYsLT
-E1ODk2MTU1MDEsLTE3NDc1NTMwMTcsLTk0NDY0MDAyNSwtMzg1
-MTkzNDk1LC00OTk3MzE2MjUsLTEyMzUyOTI0MDgsMjUxMDIzNz
-g4LDIwMzA0OTA1NzgsNDU4MDUzMjQwLC02MTIyODUzMjYsLTE2
-MTE0MjI2OTRdfQ==
+eyJoaXN0b3J5IjpbLTEyMjcwMDg3NTcsLTYwMDczMjcyMiwtMT
+Y3Njg0OTM3NSwxMTYwNjMxOTAxLDEyMDE4MjE1MTMsLTEwMzgw
+MDEzOTAsLTExMTg2NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4Ni
+wtMTU4OTYxNTUwMSwtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC0z
+ODUxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMj
+M3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNiwt
+MTYxMTQyMjY5NF19
 -->
