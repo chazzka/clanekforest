@@ -169,13 +169,14 @@ On the other hand, when Px is located within the area of lower depth, it is safe
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example2_gnu_outlier_black.svg) 
 > Figure X Isolation Forest blabla.
 
-Consider now the area of datapoints Px.
 The common misunderstanding is that the Isolation Forest isolates all of the datapoints based on the split point.
 This is, however, just a part of the algorithm.
 The Isolation Forest isolates the minmax area on the left/right side of the split point based on the datapoints provided in the respective area.
 If the evaluated datapoints or the whole area is out of the bounds of the isolation, this area is not immediately assigned outlier.
 Instead, the area is not seen by the algorithm at all and hence is marked the same as the nearest points.
 This is undesirable in the context of novelty detection, since every novelty datapoint would have been assigned according to the nearest points, even though the distance would be marginal.
+
+Consider a more 
 
 In our proposed solution, this problem is dealt with by isolating whole ranges of observed space, instead just the minmax values.
 
@@ -480,11 +481,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMTYyMTkzMiwtNjAwNzMyNzIyLC0xNj
-c2ODQ5Mzc1LDExNjA2MzE5MDEsMTIwMTgyMTUxMywtMTAzODAw
-MTM5MCwtMTExODY0OTUxMiwtNjgwMzQ0NzQ0LDY2ODAzMDg2LC
-0xNTg5NjE1NTAxLC0xNzQ3NTUzMDE3LC05NDQ2NDAwMjUsLTM4
-NTE5MzQ5NSwtNDk5NzMxNjI1LC0xMjM1MjkyNDA4LDI1MTAyMz
-c4OCwyMDMwNDkwNTc4LDQ1ODA1MzI0MCwtNjEyMjg1MzI2LC0x
-NjExNDIyNjk0XX0=
+eyJoaXN0b3J5IjpbLTE5NDEyNTEzMTgsLTYwMDczMjcyMiwtMT
+Y3Njg0OTM3NSwxMTYwNjMxOTAxLDEyMDE4MjE1MTMsLTEwMzgw
+MDEzOTAsLTExMTg2NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4Ni
+wtMTU4OTYxNTUwMSwtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC0z
+ODUxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMj
+M3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNiwt
+MTYxMTQyMjY5NF19
 -->
