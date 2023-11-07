@@ -187,13 +187,9 @@ Observe, that the outlying points around the observed area are still being corre
 In our proposed solution, this problem is dealt with by isolating whole ranges of observed space, instead just the minmax values.
 
 #### Proposed solution
-The proposed solution comes from an idea, that the original tree lacks the option to isolate more datapoints than it currently observes. 
+The proposed solution comes from an idea, that the original tree lacks the possibility to isolate more datapoints than it currently observes. 
 The observed space is bounded by minimum and maximum in each feature.
 
-Consider now the same area Px of three datapoints as in the previous example.
-The Px area gets assigned the depth of 5, which is lower than the adjoining areas.
-This is crucial distinction which makes the novelty detection possible.
-Figure X shows, that after three runs, as opposed to the previous Outlier detection example, where the Px area was assigned regular, it is assigned novelty now.
 
 ![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example1_gnu.svg)
 > Figure X Isolation Forest novelty point insertion on using our novelty approach. Squares being points fed after the learning. 
@@ -480,11 +476,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNzg0OTQ0NSwtMTk0MTI1MTMxOCwtNj
-AwNzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2MzE5MDEsMTIwMTgy
-MTUxMywtMTAzODAwMTM5MCwtMTExODY0OTUxMiwtNjgwMzQ0Nz
-Q0LDY2ODAzMDg2LC0xNTg5NjE1NTAxLC0xNzQ3NTUzMDE3LC05
-NDQ2NDAwMjUsLTM4NTE5MzQ5NSwtNDk5NzMxNjI1LC0xMjM1Mj
-kyNDA4LDI1MTAyMzc4OCwyMDMwNDkwNTc4LDQ1ODA1MzI0MCwt
-NjEyMjg1MzI2XX0=
+eyJoaXN0b3J5IjpbLTE1ODg0MTY2MTMsLTMzNzg0OTQ0NSwtMT
+k0MTI1MTMxOCwtNjAwNzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2
+MzE5MDEsMTIwMTgyMTUxMywtMTAzODAwMTM5MCwtMTExODY0OT
+UxMiwtNjgwMzQ0NzQ0LDY2ODAzMDg2LC0xNTg5NjE1NTAxLC0x
+NzQ3NTUzMDE3LC05NDQ2NDAwMjUsLTM4NTE5MzQ5NSwtNDk5Nz
+MxNjI1LC0xMjM1MjkyNDA4LDI1MTAyMzc4OCwyMDMwNDkwNTc4
+LDQ1ODA1MzI0MF19
 -->
