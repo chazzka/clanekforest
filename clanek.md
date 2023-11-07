@@ -176,7 +176,7 @@ If the evaluated datapoints or the whole area is out of the bounds of the isolat
 Instead, the area is not seen by the algorithm at all and hence is marked the same as the nearest points.
 This is undesirable in the context of novelty detection, since every novelty datapoint would have been assigned according to the nearest points, even though the distance would be marginal.
 
-Consider a more 
+Consider a more robust example, where the observed area is polluted by regular observations on the one side, regular on the other side and polluted by the novelty datapoi
 
 In our proposed solution, this problem is dealt with by isolating whole ranges of observed space, instead just the minmax values.
 
@@ -481,11 +481,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDEyNTEzMTgsLTYwMDczMjcyMiwtMT
-Y3Njg0OTM3NSwxMTYwNjMxOTAxLDEyMDE4MjE1MTMsLTEwMzgw
-MDEzOTAsLTExMTg2NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4Ni
-wtMTU4OTYxNTUwMSwtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC0z
-ODUxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMj
-M3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNiwt
-MTYxMTQyMjY5NF19
+eyJoaXN0b3J5IjpbLTEzMTc0MTA1MzgsLTE5NDEyNTEzMTgsLT
+YwMDczMjcyMiwtMTY3Njg0OTM3NSwxMTYwNjMxOTAxLDEyMDE4
+MjE1MTMsLTEwMzgwMDEzOTAsLTExMTg2NDk1MTIsLTY4MDM0ND
+c0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMSwtMTc0NzU1MzAxNywt
+OTQ0NjQwMDI1LC0zODUxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNT
+I5MjQwOCwyNTEwMjM3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAs
+LTYxMjI4NTMyNl19
 -->
