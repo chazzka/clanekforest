@@ -160,8 +160,13 @@ Figure X shows that the outlying Px points are not marked as outlier.
 This is caused by the points being outside the scope of any minmax-bounding rectangle (outside the scope of the node), hence fall backing to the node with the most similar values.
 As can be seen in Figure X, this is inappropriate for the novelty selection.
 
-
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example2_gnu_clanek.svg) 
+> Figure X Isolation Forest blabla.
+
+
+On the other hand, when 
+
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example2_gnu_outlier_black.svg) 
 > Figure X Isolation Forest blabla.
 
 Consider now the area of datapoints Px.
@@ -475,11 +480,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ3OTU0ODQyLC02MDA3MzI3MjIsLTE2Nz
-Y4NDkzNzUsMTE2MDYzMTkwMSwxMjAxODIxNTEzLC0xMDM4MDAx
-MzkwLC0xMTE4NjQ5NTEyLC02ODAzNDQ3NDQsNjY4MDMwODYsLT
-E1ODk2MTU1MDEsLTE3NDc1NTMwMTcsLTk0NDY0MDAyNSwtMzg1
-MTkzNDk1LC00OTk3MzE2MjUsLTEyMzUyOTI0MDgsMjUxMDIzNz
-g4LDIwMzA0OTA1NzgsNDU4MDUzMjQwLC02MTIyODUzMjYsLTE2
-MTE0MjI2OTRdfQ==
+eyJoaXN0b3J5IjpbLTE2MTYxOTQyODMsLTYwMDczMjcyMiwtMT
+Y3Njg0OTM3NSwxMTYwNjMxOTAxLDEyMDE4MjE1MTMsLTEwMzgw
+MDEzOTAsLTExMTg2NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4Ni
+wtMTU4OTYxNTUwMSwtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC0z
+ODUxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMj
+M3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNiwt
+MTYxMTQyMjY5NF19
 -->
