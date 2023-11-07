@@ -150,9 +150,11 @@ The standard Isolation Forest algorithm as defined by Liu et. al. selects the sp
 Example X - Outlier detection using Isolation Forest:
 Consider the sample of abnormal datapoints, which can be seen on the Figure X.
 These datapoints are marked Px.
-Example X in Figure X shows the outcome of the Isolation Forest algorithm with `max_depth=3` when provided a priory *regular* data points.
+Example X in Figure X shows the outcome of the Isolation Forest algorithm with `max_depth=4` when provided a priory *regular* data points.
 First, random dimension $X$ and a random split point approx. $s  = 21$ are chosen, orphaning most of the observations on the left side.
 In the second step, in the right area, feature $Y$ was chosen, splitting the area in two parts. Observe, that the split point is always located between area-datapoint's minimum and maximum of the given feature.
+Observe also, that the split point only separates the area where the minmax -outlier are should be evaluated. 
+Hence, 
 
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example2_gnu_clanek.svg) 
 > Figure X Isolation Forest blabla.
@@ -468,11 +470,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI0MjEyNTM3LC02MDA3MzI3MjIsLTE2Nz
-Y4NDkzNzUsMTE2MDYzMTkwMSwxMjAxODIxNTEzLC0xMDM4MDAx
-MzkwLC0xMTE4NjQ5NTEyLC02ODAzNDQ3NDQsNjY4MDMwODYsLT
-E1ODk2MTU1MDEsLTE3NDc1NTMwMTcsLTk0NDY0MDAyNSwtMzg1
-MTkzNDk1LC00OTk3MzE2MjUsLTEyMzUyOTI0MDgsMjUxMDIzNz
-g4LDIwMzA0OTA1NzgsNDU4MDUzMjQwLC02MTIyODUzMjYsLTE2
-MTE0MjI2OTRdfQ==
+eyJoaXN0b3J5IjpbLTg3NDg4OTAzOCwtNjAwNzMyNzIyLC0xNj
+c2ODQ5Mzc1LDExNjA2MzE5MDEsMTIwMTgyMTUxMywtMTAzODAw
+MTM5MCwtMTExODY0OTUxMiwtNjgwMzQ0NzQ0LDY2ODAzMDg2LC
+0xNTg5NjE1NTAxLC0xNzQ3NTUzMDE3LC05NDQ2NDAwMjUsLTM4
+NTE5MzQ5NSwtNDk5NzMxNjI1LC0xMjM1MjkyNDA4LDI1MTAyMz
+c4OCwyMDMwNDkwNTc4LDQ1ODA1MzI0MCwtNjEyMjg1MzI2LC0x
+NjExNDIyNjk0XX0=
 -->
