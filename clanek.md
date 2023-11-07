@@ -85,13 +85,13 @@ Consider the following example:
 Figure X contains random datapoints arranged in a way they form a cluster like shape. 
 Say this data is our regular observations. 
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example0_gnu.svg) 
-> Figure X Dataset with regular observations. 
+> Figure 0 Dataset with regular observations. 
 
 When an unsupervised, outlier detection algorithm tries to analyze such data, it sees the datapoints as a cluster containing both regular and anomalous observations. 
 Figure X shows the result of evaluating classical Isolation Forest on such dataset.
 
 ![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example0_5_gnu.svg) 
-> Figure X Dataset with regular observations. 
+> Figure 0.5 Dataset with regular observations. 
 
 Figure x shows regular observations $x$ and anomaly observations $y$ marked by Isolation Forest (`batch_size 128, trees_count: 100, zbytek default`). 
 Figure x shows that approx. $10\%$ of observations are anomalies.
@@ -149,7 +149,7 @@ The standard Isolation Forest algorithm as defined by Liu et. al. selects the sp
 
 Example X - Outlier detection using Isolation Forest:
 Consider the sample of regular datapoints, which can be seen on the Figure X.
-These datapoints are polluted with new, previously unseen novelty datapoints area marked Px.
+These datapoints are polluted with area marked Px.
 Example X in Figure X shows the outcome of the Isolation Forest algorithm with `max_depth=3` when provided a priory *regular* data points.
 First, random dimension $X$ and a random split point approx. $s  = 21$ are chosen, orphaning most of the observations on the left side.
 In the second step, in the right area, feature $Y$ was chosen, splitting the area in two parts. Observe, that the split point is always located between area-datapoint's minimum and maximum of the given feature.
@@ -468,7 +468,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5Mzc3MTcyMywtMTY3Njg0OTM3NSwxMT
+eyJoaXN0b3J5IjpbLTYwMDczMjcyMiwtMTY3Njg0OTM3NSwxMT
 YwNjMxOTAxLDEyMDE4MjE1MTMsLTEwMzgwMDEzOTAsLTExMTg2
 NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMS
 wtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC0zODUxOTM0OTUsLTQ5
