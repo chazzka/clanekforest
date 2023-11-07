@@ -148,11 +148,14 @@ Consider *regular* observations known to the Isolation Forest algorithm a priory
 The standard Isolation Forest algorithm as defined by Liu et. al. selects the split point based on the min-max value according to a priory datapoints.
 
 Example X - Outlier detection using Isolation Forest:
-Consider the sample of regular datapoints, which can be seen on the Figure X.
-These datapoints are polluted with area marked Px.
+Consider the sample of abnormal datapoints, which can be seen on the Figure X.
+These datapoints are marked Px.
 Example X in Figure X shows the outcome of the Isolation Forest algorithm with `max_depth=3` when provided a priory *regular* data points.
 First, random dimension $X$ and a random split point approx. $s  = 21$ are chosen, orphaning most of the observations on the left side.
 In the second step, in the right area, feature $Y$ was chosen, splitting the area in two parts. Observe, that the split point is always located between area-datapoint's minimum and maximum of the given feature.
+
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example2_gnu_clanek.svg) 
+> Figure X Isolation Forest blabla.
 
 Consider now the area of datapoints Px.
 The common misunderstanding is that the Isolation Forest isolates all of the datapoints based on the split point.
@@ -161,9 +164,6 @@ The Isolation Forest isolates the minmax area on the left/right side of the spli
 If the evaluated datapoints or the whole area is out of the bounds of the isolation, this area is not immediately assigned outlier.
 Instead, the area is not seen by the algorithm at all and hence is marked the same as the nearest points.
 This is undesirable in the context of novelty detection, since every novelty datapoint would have been assigned according to the nearest points, even though the distance would be marginal.
-
-![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example2_gnu.svg)
-> Figure X Isolation Forest blabla.
 
 In our proposed solution, this problem is dealt with by isolating whole ranges of observed space, instead just the minmax values.
 
@@ -468,11 +468,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMDczMjcyMiwtMTY3Njg0OTM3NSwxMT
-YwNjMxOTAxLDEyMDE4MjE1MTMsLTEwMzgwMDEzOTAsLTExMTg2
-NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMS
-wtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC0zODUxOTM0OTUsLTQ5
-OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMjM3ODgsMjAzMDQ5MD
-U3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNiwtMTYxMTQyMjY5NCwx
-MzUzMjU1NTg5XX0=
+eyJoaXN0b3J5IjpbMzI0MjEyNTM3LC02MDA3MzI3MjIsLTE2Nz
+Y4NDkzNzUsMTE2MDYzMTkwMSwxMjAxODIxNTEzLC0xMDM4MDAx
+MzkwLC0xMTE4NjQ5NTEyLC02ODAzNDQ3NDQsNjY4MDMwODYsLT
+E1ODk2MTU1MDEsLTE3NDc1NTMwMTcsLTk0NDY0MDAyNSwtMzg1
+MTkzNDk1LC00OTk3MzE2MjUsLTEyMzUyOTI0MDgsMjUxMDIzNz
+g4LDIwMzA0OTA1NzgsNDU4MDUzMjQwLC02MTIyODUzMjYsLTE2
+MTE0MjI2OTRdfQ==
 -->
