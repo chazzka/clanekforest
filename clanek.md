@@ -178,7 +178,11 @@ This is undesirable in the context of novelty detection, since every novelty dat
 
 Consider a more robust example, where the observed area is polluted by regular observations on the one side, regular on the other side and polluted by the novelty datapoints in the middle.
 This is a demanding task for the outlier detection algorithm; hence the points are located between the regular nodes.
-Figure X shows the outlier algorithm experiment wth
+Figure X shows the outlier algorithm experiment with the novelty datapoints in the middle marked regular.
+Observe, that the outlying points around the observed area are still being correctly marked.
+
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example5_gnu.svg) 
+> Figure X Isolation Forest blabla.
 
 In our proposed solution, this problem is dealt with by isolating whole ranges of observed space, instead just the minmax values.
 
@@ -483,11 +487,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzc2OTA0OTcsLTE5NDEyNTEzMTgsLT
-YwMDczMjcyMiwtMTY3Njg0OTM3NSwxMTYwNjMxOTAxLDEyMDE4
-MjE1MTMsLTEwMzgwMDEzOTAsLTExMTg2NDk1MTIsLTY4MDM0ND
-c0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMSwtMTc0NzU1MzAxNywt
-OTQ0NjQwMDI1LC0zODUxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNT
-I5MjQwOCwyNTEwMjM3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAs
-LTYxMjI4NTMyNl19
+eyJoaXN0b3J5IjpbMjAyMjYzMjU3OSwtMTk0MTI1MTMxOCwtNj
+AwNzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2MzE5MDEsMTIwMTgy
+MTUxMywtMTAzODAwMTM5MCwtMTExODY0OTUxMiwtNjgwMzQ0Nz
+Q0LDY2ODAzMDg2LC0xNTg5NjE1NTAxLC0xNzQ3NTUzMDE3LC05
+NDQ2NDAwMjUsLTM4NTE5MzQ5NSwtNDk5NzMxNjI1LC0xMjM1Mj
+kyNDA4LDI1MTAyMzc4OCwyMDMwNDkwNTc4LDQ1ODA1MzI0MCwt
+NjEyMjg1MzI2XX0=
 -->
