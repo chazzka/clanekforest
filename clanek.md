@@ -197,6 +197,10 @@ Again, each node is assigned a depth and the deeper the point is in the tree, th
 ![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example1_gnu.svg)
 > Figure X Isolation Forest novelty point insertion using our novelty approach. Squares being points fed after the learning. 
 
+Consider now again the above-defined example X.
+When run with the new proposed novelty service, it shows that the novelty datapoints between two clusters are now evaluated correctly.
+
+
 
 As in the original article, we use the concept of a binary decision tree.
 The proposed solution is altering the concept of the split point evaluation.
@@ -479,11 +483,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MDE5MzQ4NSwtMzM3ODQ5NDQ1LC0xOT
-QxMjUxMzE4LC02MDA3MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYz
-MTkwMSwxMjAxODIxNTEzLC0xMDM4MDAxMzkwLC0xMTE4NjQ5NT
-EyLC02ODAzNDQ3NDQsNjY4MDMwODYsLTE1ODk2MTU1MDEsLTE3
-NDc1NTMwMTcsLTk0NDY0MDAyNSwtMzg1MTkzNDk1LC00OTk3Mz
-E2MjUsLTEyMzUyOTI0MDgsMjUxMDIzNzg4LDIwMzA0OTA1Nzgs
-NDU4MDUzMjQwXX0=
+eyJoaXN0b3J5IjpbLTE3ODU5MjYxNDgsLTMzNzg0OTQ0NSwtMT
+k0MTI1MTMxOCwtNjAwNzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2
+MzE5MDEsMTIwMTgyMTUxMywtMTAzODAwMTM5MCwtMTExODY0OT
+UxMiwtNjgwMzQ0NzQ0LDY2ODAzMDg2LC0xNTg5NjE1NTAxLC0x
+NzQ3NTUzMDE3LC05NDQ2NDAwMjUsLTM4NTE5MzQ5NSwtNDk5Nz
+MxNjI1LC0xMjM1MjkyNDA4LDI1MTAyMzc4OCwyMDMwNDkwNTc4
+LDQ1ODA1MzI0MF19
 -->
