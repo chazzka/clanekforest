@@ -203,7 +203,9 @@ When run with the new proposed novelty service, it shows that the novelty datapo
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_gnu_no_depth.svg) 
 > Figure X Isolation Forest novelty.
 
-![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_gnu_no_depth.svg) 
+And with depths for concise.
+
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_gnu_pro_clanek.svg) 
 > Figure X Isolation Forest novelty.
 
 As in the original article, we use the concept of a binary decision tree.
@@ -487,7 +489,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxOTQyNzY0OCwtMzM3ODQ5NDQ1LC0xOT
+eyJoaXN0b3J5IjpbMTI1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOT
 QxMjUxMzE4LC02MDA3MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYz
 MTkwMSwxMjAxODIxNTEzLC0xMDM4MDAxMzkwLC0xMTE4NjQ5NT
 EyLC02ODAzNDQ3NDQsNjY4MDMwODYsLTE1ODk2MTU1MDEsLTE3
