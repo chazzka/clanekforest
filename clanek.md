@@ -164,7 +164,7 @@ As can be seen in Figure X, this is inappropriate for the novelty selection.
 > Figure X Isolation Forest blabla.
 
 
-On the other hand, when 
+On the other hand, when Px is located within the area of lower depth, it is safely assigned regular.
 
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example2_gnu_outlier_black.svg) 
 > Figure X Isolation Forest blabla.
@@ -480,11 +480,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTYxOTQyODMsLTYwMDczMjcyMiwtMT
-Y3Njg0OTM3NSwxMTYwNjMxOTAxLDEyMDE4MjE1MTMsLTEwMzgw
-MDEzOTAsLTExMTg2NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4Ni
-wtMTU4OTYxNTUwMSwtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC0z
-ODUxOTM0OTUsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMj
-M3ODgsMjAzMDQ5MDU3OCw0NTgwNTMyNDAsLTYxMjI4NTMyNiwt
-MTYxMTQyMjY5NF19
+eyJoaXN0b3J5IjpbMTYzMTYyMTkzMiwtNjAwNzMyNzIyLC0xNj
+c2ODQ5Mzc1LDExNjA2MzE5MDEsMTIwMTgyMTUxMywtMTAzODAw
+MTM5MCwtMTExODY0OTUxMiwtNjgwMzQ0NzQ0LDY2ODAzMDg2LC
+0xNTg5NjE1NTAxLC0xNzQ3NTUzMDE3LC05NDQ2NDAwMjUsLTM4
+NTE5MzQ5NSwtNDk5NzMxNjI1LC0xMjM1MjkyNDA4LDI1MTAyMz
+c4OCwyMDMwNDkwNTc4LDQ1ODA1MzI0MCwtNjEyMjg1MzI2LC0x
+NjExNDIyNjk0XX0=
 -->
