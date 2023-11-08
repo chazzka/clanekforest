@@ -268,9 +268,10 @@ i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $R$ in the new tree $
 Note: Tree $T_{j}$ is actually a Hasse diagram of the ordered set $(V_j,\subseteq)$.
 
 
-Consider now an area of datapoints PX.
+Consider now the same area Px of three datapoints as in the previous example.
 Figure X shows that the whole space is considered a range, and it is now splitting as we go deeper in the tree.
 Again, each node is assigned a depth and the deeper the point is in the tree, the less probability is for the point to be an anomaly.
+The Px area gets assigned the depth of 5, which is lower than the adjoining areas. This is crucial distinction which makes the novelty detection possible. Figure X shows, that after three runs, as opposed to the previous Outlier detection example, where the Px area was assigned regular, it is assigned novelty now.
 
 ![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example1_gnu.svg)
 > Figure X Isolation Forest novelty point insertion using our novelty approach. Squares being points fed after the learning. 
@@ -490,11 +491,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MDMxMDU5NSwxMjUwNDQwNzEzLC0zMz
-c4NDk0NDUsLTE5NDEyNTEzMTgsLTYwMDczMjcyMiwtMTY3Njg0
-OTM3NSwxMTYwNjMxOTAxLDEyMDE4MjE1MTMsLTEwMzgwMDEzOT
-AsLTExMTg2NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4NiwtMTU4
-OTYxNTUwMSwtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC0zODUxOT
-M0OTUsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMjM3ODgs
-MjAzMDQ5MDU3OF19
+eyJoaXN0b3J5IjpbLTM0ODY3NTQ2MCwxNTkwMzEwNTk1LDEyNT
+A0NDA3MTMsLTMzNzg0OTQ0NSwtMTk0MTI1MTMxOCwtNjAwNzMy
+NzIyLC0xNjc2ODQ5Mzc1LDExNjA2MzE5MDEsMTIwMTgyMTUxMy
+wtMTAzODAwMTM5MCwtMTExODY0OTUxMiwtNjgwMzQ0NzQ0LDY2
+ODAzMDg2LC0xNTg5NjE1NTAxLC0xNzQ3NTUzMDE3LC05NDQ2ND
+AwMjUsLTM4NTE5MzQ5NSwtNDk5NzMxNjI1LC0xMjM1MjkyNDA4
+LDI1MTAyMzc4OF19
 -->
