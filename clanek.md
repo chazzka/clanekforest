@@ -190,13 +190,6 @@ In our proposed solution, this problem is dealt with by isolating whole ranges o
 The proposed solution comes from an idea, that the original tree lacks the possibility to isolate more datapoints than it currently observes. 
 The observed space is bounded by minimum and maximum in each feature.
 
-Consider now an area of datapoints PX.
-Figure X shows that the whole space is considered a range, and it is now splitting as we go deeper in the tree.
-Again, each node is assigned a depth and the deeper the point is in the tree, the less probability is for the point to be an anomaly.
-
-![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example1_gnu.svg)
-> Figure X Isolation Forest novelty point insertion using our novelty approach. Squares being points fed after the learning. 
-
 Consider now again the above-defined example X.
 When run with the new proposed novelty service, it shows that the novelty datapoints between two clusters are now evaluated correctly.
 
@@ -489,11 +482,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOT
-QxMjUxMzE4LC02MDA3MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYz
-MTkwMSwxMjAxODIxNTEzLC0xMDM4MDAxMzkwLC0xMTE4NjQ5NT
-EyLC02ODAzNDQ3NDQsNjY4MDMwODYsLTE1ODk2MTU1MDEsLTE3
-NDc1NTMwMTcsLTk0NDY0MDAyNSwtMzg1MTkzNDk1LC00OTk3Mz
-E2MjUsLTEyMzUyOTI0MDgsMjUxMDIzNzg4LDIwMzA0OTA1Nzgs
-NDU4MDUzMjQwXX0=
+eyJoaXN0b3J5IjpbLTEwMTkzOTI5MjMsMTI1MDQ0MDcxMywtMz
+M3ODQ5NDQ1LC0xOTQxMjUxMzE4LC02MDA3MzI3MjIsLTE2NzY4
+NDkzNzUsMTE2MDYzMTkwMSwxMjAxODIxNTEzLC0xMDM4MDAxMz
+kwLC0xMTE4NjQ5NTEyLC02ODAzNDQ3NDQsNjY4MDMwODYsLTE1
+ODk2MTU1MDEsLTE3NDc1NTMwMTcsLTk0NDY0MDAyNSwtMzg1MT
+kzNDk1LC00OTk3MzE2MjUsLTEyMzUyOTI0MDgsMjUxMDIzNzg4
+LDIwMzA0OTA1NzhdfQ==
 -->
