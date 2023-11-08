@@ -267,6 +267,14 @@ i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $R$ in the new tree $
 
 Note: Tree $T_{j}$ is actually a Hasse diagram of the ordered set $(V_j,\subseteq)$.
 
+
+Consider now an area of datapoints PX.
+Figure X shows that the whole space is considered a range, and it is now splitting as we go deeper in the tree.
+Again, each node is assigned a depth and the deeper the point is in the tree, the less probability is for the point to be an anomaly.
+
+![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/example1_gnu.svg)
+> Figure X Isolation Forest novelty point insertion using our novelty approach. Squares being points fed after the learning. 
+
 Example x shows the Isolation Tree diagram of an example from the Figure X.
 
 ```mermaid
@@ -482,11 +490,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTkzOTI5MjMsMTI1MDQ0MDcxMywtMz
-M3ODQ5NDQ1LC0xOTQxMjUxMzE4LC02MDA3MzI3MjIsLTE2NzY4
-NDkzNzUsMTE2MDYzMTkwMSwxMjAxODIxNTEzLC0xMDM4MDAxMz
-kwLC0xMTE4NjQ5NTEyLC02ODAzNDQ3NDQsNjY4MDMwODYsLTE1
-ODk2MTU1MDEsLTE3NDc1NTMwMTcsLTk0NDY0MDAyNSwtMzg1MT
-kzNDk1LC00OTk3MzE2MjUsLTEyMzUyOTI0MDgsMjUxMDIzNzg4
-LDIwMzA0OTA1NzhdfQ==
+eyJoaXN0b3J5IjpbMTU5MDMxMDU5NSwxMjUwNDQwNzEzLC0zMz
+c4NDk0NDUsLTE5NDEyNTEzMTgsLTYwMDczMjcyMiwtMTY3Njg0
+OTM3NSwxMTYwNjMxOTAxLDEyMDE4MjE1MTMsLTEwMzgwMDEzOT
+AsLTExMTg2NDk1MTIsLTY4MDM0NDc0NCw2NjgwMzA4NiwtMTU4
+OTYxNTUwMSwtMTc0NzU1MzAxNywtOTQ0NjQwMDI1LC0zODUxOT
+M0OTUsLTQ5OTczMTYyNSwtMTIzNTI5MjQwOCwyNTEwMjM3ODgs
+MjAzMDQ5MDU3OF19
 -->
