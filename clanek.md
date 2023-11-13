@@ -184,7 +184,7 @@ Observe, that the outlying points around the observed area are still being corre
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example5_gnu.svg) 
 > Figure X Isolation Forest blabla.
 
-In our proposed solution, this problem is dealt with by isolating whole ranges of observed space, instead just the minmax values.
+In our proposed solution, this problem is dealt with by isolating whole ranges of observed space, instead of the minmax values-separated spaces.
 
 #### Proposed solution
 The proposed solution comes from an idea, that the original tree lacks the possibility to isolate more datapoints than it currently observes. 
@@ -491,11 +491,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0ODY3NTQ2MCwxNTkwMzEwNTk1LDEyNT
-A0NDA3MTMsLTMzNzg0OTQ0NSwtMTk0MTI1MTMxOCwtNjAwNzMy
-NzIyLC0xNjc2ODQ5Mzc1LDExNjA2MzE5MDEsMTIwMTgyMTUxMy
-wtMTAzODAwMTM5MCwtMTExODY0OTUxMiwtNjgwMzQ0NzQ0LDY2
-ODAzMDg2LC0xNTg5NjE1NTAxLC0xNzQ3NTUzMDE3LC05NDQ2ND
-AwMjUsLTM4NTE5MzQ5NSwtNDk5NzMxNjI1LC0xMjM1MjkyNDA4
-LDI1MTAyMzc4OF19
+eyJoaXN0b3J5IjpbLTE1NjM2MTg1NzIsLTM0ODY3NTQ2MCwxNT
+kwMzEwNTk1LDEyNTA0NDA3MTMsLTMzNzg0OTQ0NSwtMTk0MTI1
+MTMxOCwtNjAwNzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2MzE5MD
+EsMTIwMTgyMTUxMywtMTAzODAwMTM5MCwtMTExODY0OTUxMiwt
+NjgwMzQ0NzQ0LDY2ODAzMDg2LC0xNTg5NjE1NTAxLC0xNzQ3NT
+UzMDE3LC05NDQ2NDAwMjUsLTM4NTE5MzQ5NSwtNDk5NzMxNjI1
+LC0xMjM1MjkyNDA4XX0=
 -->
