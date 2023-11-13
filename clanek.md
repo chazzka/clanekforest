@@ -281,7 +281,7 @@ Example x shows the Isolation Tree diagram of an example from the Figure X.
 ```mermaid
 graph TB
 A((\-5.81..22.77, 0.21..7.44))
-A --> B((\-5.81..22.77, 1..33)) 
+A --> B((/5.81..22.77, 0.21..3.83)) 
 A --> C{39..67, 1..33}
 B --> D((11..39, 1..17))
 B --> E{11..39, 17..33}
@@ -492,7 +492,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjA0NTAxMDksLTg2NTYxOTM2MywtMT
+eyJoaXN0b3J5IjpbLTEwNzgxOTg1OTcsLTg2NTYxOTM2MywtMT
 U2MzYxODU3MiwtMzQ4Njc1NDYwLDE1OTAzMTA1OTUsMTI1MDQ0
 MDcxMywtMzM3ODQ5NDQ1LC0xOTQxMjUxMzE4LC02MDA3MzI3Mj
 IsLTE2NzY4NDkzNzUsMTE2MDYzMTkwMSwxMjAxODIxNTEzLC0x
