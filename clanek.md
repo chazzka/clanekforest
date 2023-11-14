@@ -278,7 +278,8 @@ The Px area gets assigned the depth of 5, which is lower than the adjoining area
 
 Example x shows the Isolation Tree diagram of an example from the Figure X.
 
-![](https://raw.githubusercontent.com/chazzka/clanekforest/master/clanek_figures/hello_world.svg)
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/hello_world.svg)
+> Figure X Isolation Forest novelty point insertion using our novelty approach. Binary tree view
 
 ```mermaid
 graph TB
@@ -494,11 +495,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQyMjM3OTM2LDYzMTczMzkwMSw3MjI4MT
-QzOTcsLTg2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYw
-LDE1OTAzMTA1OTUsMTI1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOT
-QxMjUxMzE4LC02MDA3MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYz
-MTkwMSwxMjAxODIxNTEzLC0xMDM4MDAxMzkwLC0xMTE4NjQ5NT
-EyLC02ODAzNDQ3NDQsNjY4MDMwODYsLTE1ODk2MTU1MDEsLTE3
-NDc1NTMwMTddfQ==
+eyJoaXN0b3J5IjpbLTE1ODU0ODMzMDQsNjMxNzMzOTAxLDcyMj
+gxNDM5NywtODY1NjE5MzYzLC0xNTYzNjE4NTcyLC0zNDg2NzU0
+NjAsMTU5MDMxMDU5NSwxMjUwNDQwNzEzLC0zMzc4NDk0NDUsLT
+E5NDEyNTEzMTgsLTYwMDczMjcyMiwtMTY3Njg0OTM3NSwxMTYw
+NjMxOTAxLDEyMDE4MjE1MTMsLTEwMzgwMDEzOTAsLTExMTg2ND
+k1MTIsLTY4MDM0NDc0NCw2NjgwMzA4NiwtMTU4OTYxNTUwMSwt
+MTc0NzU1MzAxN119
 -->
