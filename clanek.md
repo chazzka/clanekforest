@@ -272,7 +272,7 @@ Consider now minified example with less datapoints.
 Figure X the Px datapoint assigned novelty. 
 The whole visible space is considered a range (precomputed in advance), and it is now splitting as we go deeper in the tree.
 Again, each node is assigned a depth and the deeper the point is in the tree, the less probability is for the point to be an anomaly.
-The Px datapoint gets assigned the depth of 3, which is lower than the adjoining areas. This is crucial distinction which makes the novelty detection possible. Figure X shows, that after three runs, as opposed to the previous Outlier detection example, where the Px area was assigned regular, it is assigned novelty now.
+The Px datapoint gets assigned the depth of 3, which is lower than the adjoining area. This is crucial distinction which makes the novelty detection possible. In the example in Figure X the max_depth= shows, that after three runs, as opposed to the previous Outlier detection example, where the Px area was assigned regular, it is assigned novelty now.
 
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_gnu.svg) 
 > Figure X Isolation Forest novelty point insertion using our novelty approach. Squares being points fed after the learning. 
@@ -496,11 +496,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MTI0NDYwMiwxMDc1OTM2MzA5LC0xNT
-g1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQzOTcsLTg2NTYxOTM2
-MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLDE1OTAzMTA1OTUsMT
-I1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOTQxMjUxMzE4LC02MDA3
-MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYzMTkwMSwxMjAxODIxNT
-EzLC0xMDM4MDAxMzkwLC0xMTE4NjQ5NTEyLC02ODAzNDQ3NDQs
-NjY4MDMwODZdfQ==
+eyJoaXN0b3J5IjpbOTk5OTA3MDM4LDEwNzU5MzYzMDksLTE1OD
+U0ODMzMDQsNjMxNzMzOTAxLDcyMjgxNDM5NywtODY1NjE5MzYz
+LC0xNTYzNjE4NTcyLC0zNDg2NzU0NjAsMTU5MDMxMDU5NSwxMj
+UwNDQwNzEzLC0zMzc4NDk0NDUsLTE5NDEyNTEzMTgsLTYwMDcz
+MjcyMiwtMTY3Njg0OTM3NSwxMTYwNjMxOTAxLDEyMDE4MjE1MT
+MsLTEwMzgwMDEzOTAsLTExMTg2NDk1MTIsLTY4MDM0NDc0NCw2
+NjgwMzA4Nl19
 -->
