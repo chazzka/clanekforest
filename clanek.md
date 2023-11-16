@@ -268,10 +268,11 @@ i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $R$ in the new tree $
 Note: Tree $T_{j}$ is actually a Hasse diagram of the ordered set $(V_j,\subseteq)$.
 
 
-Consider now minified example where Px datapoint  .
-Figure X shows that the whole space is considered a range, and it is now splitting as we go deeper in the tree.
+Consider now minified example with less datapoints.
+Figure X the Px datapoint assigned novelty. 
+The whole visible space is considered a range (precomputed in advance), and it is now splitting as we go deeper in the tree.
 Again, each node is assigned a depth and the deeper the point is in the tree, the less probability is for the point to be an anomaly.
-The Px area gets assigned the depth of 5, which is lower than the adjoining areas. This is crucial distinction which makes the novelty detection possible. Figure X shows, that after three runs, as opposed to the previous Outlier detection example, where the Px area was assigned regular, it is assigned novelty now.
+The Px datapoint gets assigned the depth of 3, which is lower than the adjoining areas. This is crucial distinction which makes the novelty detection possible. Figure X shows, that after three runs, as opposed to the previous Outlier detection example, where the Px area was assigned regular, it is assigned novelty now.
 
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_gnu.svg) 
 > Figure X Isolation Forest novelty point insertion using our novelty approach. Squares being points fed after the learning. 
@@ -495,11 +496,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTYxNzI2MDEsMTA3NTkzNjMwOSwtMT
-U4NTQ4MzMwNCw2MzE3MzM5MDEsNzIyODE0Mzk3LC04NjU2MTkz
-NjMsLTE1NjM2MTg1NzIsLTM0ODY3NTQ2MCwxNTkwMzEwNTk1LD
-EyNTA0NDA3MTMsLTMzNzg0OTQ0NSwtMTk0MTI1MTMxOCwtNjAw
-NzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2MzE5MDEsMTIwMTgyMT
-UxMywtMTAzODAwMTM5MCwtMTExODY0OTUxMiwtNjgwMzQ0NzQ0
-LDY2ODAzMDg2XX0=
+eyJoaXN0b3J5IjpbMTE3MTI0NDYwMiwxMDc1OTM2MzA5LC0xNT
+g1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQzOTcsLTg2NTYxOTM2
+MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLDE1OTAzMTA1OTUsMT
+I1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOTQxMjUxMzE4LC02MDA3
+MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYzMTkwMSwxMjAxODIxNT
+EzLC0xMDM4MDAxMzkwLC0xMTE4NjQ5NTEyLC02ODAzNDQ3NDQs
+NjY4MDMwODZdfQ==
 -->
