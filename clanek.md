@@ -287,7 +287,7 @@ Example x shows the Isolation Tree diagram of an example from the Figure X.
 Figure X shows the binary tree diagram created during the learning phase.
 The nodes are representing ranges now.
 By counting the levels of the created tree, we can observe that the max_depth was exactly 5.
-However, in the plot Figure X we can see the postcomputed values of pathlengths.
+However, in the plot Figure X we can see the post-computed values of pathlengths.
 
 
 ```mermaid
@@ -304,9 +304,9 @@ D --> G{25..39, 1..17}
  
 
 ### evaluate tree
-Now, with the tree constructed, we can move on to the evaluation part.
 The goal of the evaluation is to get the novelty value of a datapoint.
-The evaluation phasis starts with a constructed tree and the datapoint recursively traverses from the root down the tree up to the leaf so that:
+The evaluation phasis starts with a constructed tree. 
+The observed datapoint recursively traverses from the root down the tree up to the leaf so that:
 
 1. The datapoint traverses left, if it fits into the possibility space of the left vertex
 2. The datapoint traverses right, if it fits into the possibility space of the right vertex
@@ -504,7 +504,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4Mzc5NzU1OCwxMDc1OTM2MzA5LC0xNT
+eyJoaXN0b3J5IjpbMTg1MDY3OTcxMCwxMDc1OTM2MzA5LC0xNT
 g1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQzOTcsLTg2NTYxOTM2
 MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLDE1OTAzMTA1OTUsMT
 I1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOTQxMjUxMzE4LC02MDA3
