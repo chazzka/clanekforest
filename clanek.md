@@ -284,6 +284,10 @@ Example x shows the Isolation Tree diagram of an example from the Figure X.
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/hello_world.svg)
 > Figure X Isolation Forest novelty point insertion using our novelty approach. Binary tree view
 
+Figure X shows the binary tree diagram created during the learning phase.
+The nodes are representing ranges now.
+As 
+
 ```mermaid
 graph TB
 A(( -5.81..22.77, 0.21..7.44))
@@ -498,11 +502,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDY0MDg3MjMsMTA3NTkzNjMwOSwtMT
-U4NTQ4MzMwNCw2MzE3MzM5MDEsNzIyODE0Mzk3LC04NjU2MTkz
-NjMsLTE1NjM2MTg1NzIsLTM0ODY3NTQ2MCwxNTkwMzEwNTk1LD
-EyNTA0NDA3MTMsLTMzNzg0OTQ0NSwtMTk0MTI1MTMxOCwtNjAw
-NzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2MzE5MDEsMTIwMTgyMT
-UxMywtMTAzODAwMTM5MCwtMTExODY0OTUxMiwtNjgwMzQ0NzQ0
-LDY2ODAzMDg2XX0=
+eyJoaXN0b3J5IjpbNTgyNjk3NzA1LDEwNzU5MzYzMDksLTE1OD
+U0ODMzMDQsNjMxNzMzOTAxLDcyMjgxNDM5NywtODY1NjE5MzYz
+LC0xNTYzNjE4NTcyLC0zNDg2NzU0NjAsMTU5MDMxMDU5NSwxMj
+UwNDQwNzEzLC0zMzc4NDk0NDUsLTE5NDEyNTEzMTgsLTYwMDcz
+MjcyMiwtMTY3Njg0OTM3NSwxMTYwNjMxOTAxLDEyMDE4MjE1MT
+MsLTEwMzgwMDEzOTAsLTExMTg2NDk1MTIsLTY4MDM0NDc0NCw2
+NjgwMzA4Nl19
 -->
