@@ -286,7 +286,9 @@ Example x shows the Isolation Tree diagram of an example from the Figure X.
 
 Figure X shows the binary tree diagram created during the learning phase.
 The nodes are representing ranges now.
-As 
+By counting the levels of the created tree, we can observe that the max_depth was exactly 5.
+However, in the plot Figure X we can see the postcomputed values of pathlengths.
+
 
 ```mermaid
 graph TB
@@ -502,11 +504,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgyNjk3NzA1LDEwNzU5MzYzMDksLTE1OD
-U0ODMzMDQsNjMxNzMzOTAxLDcyMjgxNDM5NywtODY1NjE5MzYz
-LC0xNTYzNjE4NTcyLC0zNDg2NzU0NjAsMTU5MDMxMDU5NSwxMj
-UwNDQwNzEzLC0zMzc4NDk0NDUsLTE5NDEyNTEzMTgsLTYwMDcz
-MjcyMiwtMTY3Njg0OTM3NSwxMTYwNjMxOTAxLDEyMDE4MjE1MT
-MsLTEwMzgwMDEzOTAsLTExMTg2NDk1MTIsLTY4MDM0NDc0NCw2
-NjgwMzA4Nl19
+eyJoaXN0b3J5IjpbMTY4Mzc5NzU1OCwxMDc1OTM2MzA5LC0xNT
+g1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQzOTcsLTg2NTYxOTM2
+MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLDE1OTAzMTA1OTUsMT
+I1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOTQxMjUxMzE4LC02MDA3
+MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYzMTkwMSwxMjAxODIxNT
+EzLC0xMDM4MDAxMzkwLC0xMTE4NjQ5NTEyLC02ODAzNDQ3NDQs
+NjY4MDMwODZdfQ==
 -->
