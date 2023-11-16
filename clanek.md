@@ -288,7 +288,7 @@ Figure X shows the binary tree diagram created during the learning phase.
 The nodes are representing ranges now.
 By counting the levels of the created tree, we can observe that the maximum depth was exactly 5.
 However, in the plot Figure X we can see the post-computed values of pathlengths.
-Observe, that each level is selected a random
+Observe, that each level is selected a random dimension and retains on it until the next level.
 
 
 ```mermaid
@@ -505,11 +505,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzODk2MjA0NiwxMDc1OTM2MzA5LC0xNT
-g1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQzOTcsLTg2NTYxOTM2
-MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLDE1OTAzMTA1OTUsMT
-I1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOTQxMjUxMzE4LC02MDA3
-MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYzMTkwMSwxMjAxODIxNT
-EzLC0xMDM4MDAxMzkwLC0xMTE4NjQ5NTEyLC02ODAzNDQ3NDQs
-NjY4MDMwODZdfQ==
+eyJoaXN0b3J5IjpbLTE2NTgxNzI5MjksMTA3NTkzNjMwOSwtMT
+U4NTQ4MzMwNCw2MzE3MzM5MDEsNzIyODE0Mzk3LC04NjU2MTkz
+NjMsLTE1NjM2MTg1NzIsLTM0ODY3NTQ2MCwxNTkwMzEwNTk1LD
+EyNTA0NDA3MTMsLTMzNzg0OTQ0NSwtMTk0MTI1MTMxOCwtNjAw
+NzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2MzE5MDEsMTIwMTgyMT
+UxMywtMTAzODAwMTM5MCwtMTExODY0OTUxMiwtNjgwMzQ0NzQ0
+LDY2ODAzMDg2XX0=
 -->
