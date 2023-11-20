@@ -293,8 +293,11 @@ Observe, that each level is selected a random dimension and retains on it until 
 Figure X shows the binary tree diagram created during the learning phase of the plain old Outlier detection Isolation Forest.
 Note that the nodes do not hold the ranges now. 
 Instead, since we use original Outlier detection method, the nodes represent minmax values.
-Observe that, the depth was still exactly 5, however 
+Observe that, the depth was still exactly 5, however the topology is slightly different.
 
+
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/hello_world4_outlier.svg)
+> Figure X Isolation Forest novelty point insertion using our novelty approach. Binary tree view
 
  
 ### evaluate tree
@@ -498,11 +501,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTk4MzA4NTUsLTE2NTgxNzI5MjksMT
-A3NTkzNjMwOSwtMTU4NTQ4MzMwNCw2MzE3MzM5MDEsNzIyODE0
-Mzk3LC04NjU2MTkzNjMsLTE1NjM2MTg1NzIsLTM0ODY3NTQ2MC
-wxNTkwMzEwNTk1LDEyNTA0NDA3MTMsLTMzNzg0OTQ0NSwtMTk0
-MTI1MTMxOCwtNjAwNzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2Mz
-E5MDEsMTIwMTgyMTUxMywtMTAzODAwMTM5MCwtMTExODY0OTUx
-MiwtNjgwMzQ0NzQ0XX0=
+eyJoaXN0b3J5IjpbMjExODA4MDQ5OSwtMTY1ODE3MjkyOSwxMD
+c1OTM2MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQz
+OTcsLTg2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLD
+E1OTAzMTA1OTUsMTI1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOTQx
+MjUxMzE4LC02MDA3MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYzMT
+kwMSwxMjAxODIxNTEzLC0xMDM4MDAxMzkwLC0xMTE4NjQ5NTEy
+LC02ODAzNDQ3NDRdfQ==
 -->
