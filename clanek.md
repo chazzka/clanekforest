@@ -294,6 +294,7 @@ Figure X shows the binary tree diagram created during the learning phase of the 
 Note that the nodes do not hold the ranges now. 
 Instead, since we use original Outlier detection method, the nodes represent minmax values.
 Observe that, the depth was still exactly 5, however the topology is slightly different.
+TODO: TED TO MUSI VYJIT TAK ZE TEN MALY BOD MODRY BUDE CERNY
 
 
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/hello_world4_outlier.svg)
@@ -501,11 +502,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExODA4MDQ5OSwtMTY1ODE3MjkyOSwxMD
-c1OTM2MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQz
-OTcsLTg2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLD
-E1OTAzMTA1OTUsMTI1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOTQx
-MjUxMzE4LC02MDA3MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYzMT
-kwMSwxMjAxODIxNTEzLC0xMDM4MDAxMzkwLC0xMTE4NjQ5NTEy
-LC02ODAzNDQ3NDRdfQ==
+eyJoaXN0b3J5IjpbMTE1ODQzOTczLC0xNjU4MTcyOTI5LDEwNz
+U5MzYzMDksLTE1ODU0ODMzMDQsNjMxNzMzOTAxLDcyMjgxNDM5
+NywtODY1NjE5MzYzLC0xNTYzNjE4NTcyLC0zNDg2NzU0NjAsMT
+U5MDMxMDU5NSwxMjUwNDQwNzEzLC0zMzc4NDk0NDUsLTE5NDEy
+NTEzMTgsLTYwMDczMjcyMiwtMTY3Njg0OTM3NSwxMTYwNjMxOT
+AxLDEyMDE4MjE1MTMsLTEwMzgwMDEzOTAsLTExMTg2NDk1MTIs
+LTY4MDM0NDc0NF19
 -->
