@@ -290,20 +290,8 @@ By counting the levels of the created tree, we can observe that the maximum dept
 However, in the plot Figure X we can see the post-computed values of pathlengths.
 Observe, that each level is selected a random dimension and retains on it until the next level.
 
-
-```mermaid
-graph TB
-A(( -5.81..22.77, 0.21..7.44))
-A --> B(( -5.81..22.77, 0.21..3.83)) 
-A --> C{39..67, 1..33}
-B --> D((11..39, 1..17))
-B --> E{11..39, 17..33}
-D --> F{11..25, 1..17}
-D --> G{25..39, 1..17}
-```
-> Figure X. Isolation Tree diagram for figure X.
+Conve
  
-
 ### evaluate tree
 The goal of the evaluation is to get the novelty value of a datapoint.
 The evaluation phasis starts with a constructed tree. 
@@ -505,11 +493,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTgxNzI5MjksMTA3NTkzNjMwOSwtMT
-U4NTQ4MzMwNCw2MzE3MzM5MDEsNzIyODE0Mzk3LC04NjU2MTkz
-NjMsLTE1NjM2MTg1NzIsLTM0ODY3NTQ2MCwxNTkwMzEwNTk1LD
-EyNTA0NDA3MTMsLTMzNzg0OTQ0NSwtMTk0MTI1MTMxOCwtNjAw
-NzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2MzE5MDEsMTIwMTgyMT
-UxMywtMTAzODAwMTM5MCwtMTExODY0OTUxMiwtNjgwMzQ0NzQ0
-LDY2ODAzMDg2XX0=
+eyJoaXN0b3J5IjpbLTExNDYwMTYwNTEsLTE2NTgxNzI5MjksMT
+A3NTkzNjMwOSwtMTU4NTQ4MzMwNCw2MzE3MzM5MDEsNzIyODE0
+Mzk3LC04NjU2MTkzNjMsLTE1NjM2MTg1NzIsLTM0ODY3NTQ2MC
+wxNTkwMzEwNTk1LDEyNTA0NDA3MTMsLTMzNzg0OTQ0NSwtMTk0
+MTI1MTMxOCwtNjAwNzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2Mz
+E5MDEsMTIwMTgyMTUxMywtMTAzODAwMTM5MCwtMTExODY0OTUx
+MiwtNjgwMzQ0NzQ0XX0=
 -->
