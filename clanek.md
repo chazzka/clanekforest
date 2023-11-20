@@ -296,9 +296,11 @@ Instead, since we use original Outlier detection method, the nodes represent min
 Observe that, the depth was still exactly 5, however the topology is slightly different.
 TODO: TED TO MUSI VYJIT TAK ZE TEN MALY BOD MODRY BUDE CERNY
 
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_outlier_gnu_clanek.svg)
+> Figure X Isolation Forest novelty point insertion using our novelty approach. Graphical view.
 
-![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/hello_world4_outlier.svg)
-> Figure X Isolation Forest novelty point insertion using our novelty approach. Binary tree view
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_outlier_tree_clanek.svg)
+> Figure X Isolation Forest novelty point insertion using our novelty approach. Binary tree view.
 
  
 ### evaluate tree
@@ -502,11 +504,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1ODQzOTczLC0xNjU4MTcyOTI5LDEwNz
-U5MzYzMDksLTE1ODU0ODMzMDQsNjMxNzMzOTAxLDcyMjgxNDM5
-NywtODY1NjE5MzYzLC0xNTYzNjE4NTcyLC0zNDg2NzU0NjAsMT
-U5MDMxMDU5NSwxMjUwNDQwNzEzLC0zMzc4NDk0NDUsLTE5NDEy
-NTEzMTgsLTYwMDczMjcyMiwtMTY3Njg0OTM3NSwxMTYwNjMxOT
-AxLDEyMDE4MjE1MTMsLTEwMzgwMDEzOTAsLTExMTg2NDk1MTIs
-LTY4MDM0NDc0NF19
+eyJoaXN0b3J5IjpbLTE0Nzg1NTAzNDAsMTE1ODQzOTczLC0xNj
+U4MTcyOTI5LDEwNzU5MzYzMDksLTE1ODU0ODMzMDQsNjMxNzMz
+OTAxLDcyMjgxNDM5NywtODY1NjE5MzYzLC0xNTYzNjE4NTcyLC
+0zNDg2NzU0NjAsMTU5MDMxMDU5NSwxMjUwNDQwNzEzLC0zMzc4
+NDk0NDUsLTE5NDEyNTEzMTgsLTYwMDczMjcyMiwtMTY3Njg0OT
+M3NSwxMTYwNjMxOTAxLDEyMDE4MjE1MTMsLTEwMzgwMDEzOTAs
+LTExMTg2NDk1MTJdfQ==
 -->
