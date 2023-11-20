@@ -291,6 +291,9 @@ However, in the plot Figure X we can see the post-computed values of pathlengths
 Observe, that each level is selected a random dimension and retains on it until the next level.
 
 Figure X shows the binary tree diagram created during the learning phase of the plain old Outlier detection Isolation Forest.
+Note that the nodes do not hold the ranges now. 
+Instead, since we use original Outlier detection method, the nodes represent minmax values.
+
 
 
  
@@ -495,7 +498,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1ODI1MTQyMywtMTY1ODE3MjkyOSwxMD
+eyJoaXN0b3J5IjpbMTYxOTc3ODA0NiwtMTY1ODE3MjkyOSwxMD
 c1OTM2MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQz
 OTcsLTg2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLD
 E1OTAzMTA1OTUsMTI1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOTQx
