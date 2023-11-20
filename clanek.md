@@ -284,13 +284,13 @@ Example x shows the Isolation Tree diagram of an example from the Figure X.
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/hello_world.svg)
 > Figure X Isolation Forest novelty point insertion using our novelty approach. Binary tree view
 
-Figure X shows the binary tree diagram created during the learning phase.
+Figure X shows the binary tree diagram created during the learning phase of the new Novelty isolation forest.
 The nodes are representing ranges now.
 By counting the levels of the created tree, we can observe that the maximum depth was exactly 5.
 However, in the plot Figure X we can see the post-computed values of pathlengths.
 Observe, that each level is selected a random dimension and retains on it until the next level.
 
-Conve
+Figure X shows the binary tree diagram created during the learning phase of the plain old Outlier 
  
 ### evaluate tree
 The goal of the evaluation is to get the novelty value of a datapoint.
@@ -493,11 +493,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDYwMTYwNTEsLTE2NTgxNzI5MjksMT
-A3NTkzNjMwOSwtMTU4NTQ4MzMwNCw2MzE3MzM5MDEsNzIyODE0
-Mzk3LC04NjU2MTkzNjMsLTE1NjM2MTg1NzIsLTM0ODY3NTQ2MC
-wxNTkwMzEwNTk1LDEyNTA0NDA3MTMsLTMzNzg0OTQ0NSwtMTk0
-MTI1MTMxOCwtNjAwNzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2Mz
-E5MDEsMTIwMTgyMTUxMywtMTAzODAwMTM5MCwtMTExODY0OTUx
-MiwtNjgwMzQ0NzQ0XX0=
+eyJoaXN0b3J5IjpbMTg2Mjk4Njc4NywtMTY1ODE3MjkyOSwxMD
+c1OTM2MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQz
+OTcsLTg2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLD
+E1OTAzMTA1OTUsMTI1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOTQx
+MjUxMzE4LC02MDA3MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYzMT
+kwMSwxMjAxODIxNTEzLC0xMDM4MDAxMzkwLC0xMTE4NjQ5NTEy
+LC02ODAzNDQ3NDRdfQ==
 -->
