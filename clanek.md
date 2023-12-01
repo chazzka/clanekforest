@@ -276,7 +276,7 @@ The Px datapoint gets assigned the depth of 3, which is lower than the adjoining
 This is a crucial distinction which makes the novelty detection possible. 
 In the example in Figure X the max_depth=5 was sufficient to distinguish novelty datapoint. 
 
-![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_gnu.svg) 
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_noutlier_tree.svg) 
 > Figure X Isolation Forest novelty point insertion using our novelty approach. Squares being points fed after the learning. 
 
 Example x shows the Isolation Tree diagram of an example from the Figure X.
@@ -504,11 +504,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Nzg1NTAzNDAsMTE1ODQzOTczLC0xNj
-U4MTcyOTI5LDEwNzU5MzYzMDksLTE1ODU0ODMzMDQsNjMxNzMz
-OTAxLDcyMjgxNDM5NywtODY1NjE5MzYzLC0xNTYzNjE4NTcyLC
-0zNDg2NzU0NjAsMTU5MDMxMDU5NSwxMjUwNDQwNzEzLC0zMzc4
-NDk0NDUsLTE5NDEyNTEzMTgsLTYwMDczMjcyMiwtMTY3Njg0OT
-M3NSwxMTYwNjMxOTAxLDEyMDE4MjE1MTMsLTEwMzgwMDEzOTAs
-LTExMTg2NDk1MTJdfQ==
+eyJoaXN0b3J5IjpbMTUwMzMyMTAyNSwtMTQ3ODU1MDM0MCwxMT
+U4NDM5NzMsLTE2NTgxNzI5MjksMTA3NTkzNjMwOSwtMTU4NTQ4
+MzMwNCw2MzE3MzM5MDEsNzIyODE0Mzk3LC04NjU2MTkzNjMsLT
+E1NjM2MTg1NzIsLTM0ODY3NTQ2MCwxNTkwMzEwNTk1LDEyNTA0
+NDA3MTMsLTMzNzg0OTQ0NSwtMTk0MTI1MTMxOCwtNjAwNzMyNz
+IyLC0xNjc2ODQ5Mzc1LDExNjA2MzE5MDEsMTIwMTgyMTUxMywt
+MTAzODAwMTM5MF19
 -->
