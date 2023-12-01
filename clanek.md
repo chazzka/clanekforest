@@ -275,6 +275,7 @@ Again, each node is assigned a depth and the deeper the point is in the tree, th
 The Px datapoint gets assigned the depth of 3, which is lower than the adjoining area. 
 This is a crucial distinction which makes the novelty detection possible. 
 In the example in Figure X the max_depth=5 was sufficient to distinguish novelty datapoint. 
+The first node here is the experimentally precomputed range.
 
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_noutlier_gnu_clanek.svg) 
 > Figure example 4 Isolation Forest novelty point insertion using our novelty approach. Squares being points fed after the learning. 
@@ -287,11 +288,12 @@ Example x shows the Isolation Tree diagram of an example from the Figure X.
 Figure X shows the binary tree diagram created during the learning phase of the new Novelty isolation forest.
 The nodes are representing ranges now.
 By counting the levels of the created tree, we can observe that the maximum depth was exactly 5.
+
 However, in the plot Figure X we can see the post-computed values of pathlengths.
 Observe, that each level is selected a random dimension and retains on it until the next level.
 
 Figure X shows the binary tree diagram created during the learning phase of the plain old Outlier detection Isolation Forest.
-Note that the nodes do not hold the ranges now. 
+The first node here is the minmax of the dataset.
 Instead, since we use original Outlier detection method, the nodes represent minmax values.
 Observe that, the depth was still exactly 5, however the topology is slightly different.
 TODO: TED TO MUSI VYJIT TAK ZE TEN MALY BOD MODRY BUDE CERNY
@@ -504,11 +506,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMDA1NjY0NiwtMTIwOTkyMjM2NiwtMT
-Q3ODU1MDM0MCwxMTU4NDM5NzMsLTE2NTgxNzI5MjksMTA3NTkz
-NjMwOSwtMTU4NTQ4MzMwNCw2MzE3MzM5MDEsNzIyODE0Mzk3LC
-04NjU2MTkzNjMsLTE1NjM2MTg1NzIsLTM0ODY3NTQ2MCwxNTkw
-MzEwNTk1LDEyNTA0NDA3MTMsLTMzNzg0OTQ0NSwtMTk0MTI1MT
-MxOCwtNjAwNzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2MzE5MDEs
-MTIwMTgyMTUxM119
+eyJoaXN0b3J5IjpbLTExNDE2Nzk2NTUsLTEyMDk5MjIzNjYsLT
+E0Nzg1NTAzNDAsMTE1ODQzOTczLC0xNjU4MTcyOTI5LDEwNzU5
+MzYzMDksLTE1ODU0ODMzMDQsNjMxNzMzOTAxLDcyMjgxNDM5Ny
+wtODY1NjE5MzYzLC0xNTYzNjE4NTcyLC0zNDg2NzU0NjAsMTU5
+MDMxMDU5NSwxMjUwNDQwNzEzLC0zMzc4NDk0NDUsLTE5NDEyNT
+EzMTgsLTYwMDczMjcyMiwtMTY3Njg0OTM3NSwxMTYwNjMxOTAx
+LDEyMDE4MjE1MTNdfQ==
 -->
