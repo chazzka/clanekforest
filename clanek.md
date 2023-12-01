@@ -276,7 +276,7 @@ The Px datapoint gets assigned the depth of 3, which is lower than the adjoining
 This is a crucial distinction which makes the novelty detection possible. 
 In the example in Figure X the max_depth=5 was sufficient to distinguish novelty datapoint. 
 
-![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_noutlier_gnu.svg) 
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_noutlier_gnu_clanek.svg) 
 > Figure example 4 Isolation Forest novelty point insertion using our novelty approach. Squares being points fed after the learning. 
 
 Example x shows the Isolation Tree diagram of an example from the Figure X.
@@ -296,11 +296,11 @@ Instead, since we use original Outlier detection method, the nodes represent min
 Observe that, the depth was still exactly 5, however the topology is slightly different.
 TODO: TED TO MUSI VYJIT TAK ZE TEN MALY BOD MODRY BUDE CERNY
 
-![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_outlier_gnu_clanek.svg)
-> Figure X Isolation Forest novelty point insertion using our novelty approach. Graphical view.
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_noutlier_gnu_clanek.svg)
+> Figure X Isolation Forest novelty point insertion using original approach. Graphical view.
 
-![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_outlier_tree_clanek.svg)
-> Figure X Isolation Forest novelty point insertion using our novelty approach. Binary tree view.
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_noutlier_tree.svg)
+> Figure X Isolation Forest novelty point insertion using original approach. Binary tree view.
 
  
 ### evaluate tree
@@ -504,11 +504,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDk5MjIzNjYsLTE0Nzg1NTAzNDAsMT
-E1ODQzOTczLC0xNjU4MTcyOTI5LDEwNzU5MzYzMDksLTE1ODU0
-ODMzMDQsNjMxNzMzOTAxLDcyMjgxNDM5NywtODY1NjE5MzYzLC
-0xNTYzNjE4NTcyLC0zNDg2NzU0NjAsMTU5MDMxMDU5NSwxMjUw
-NDQwNzEzLC0zMzc4NDk0NDUsLTE5NDEyNTEzMTgsLTYwMDczMj
-cyMiwtMTY3Njg0OTM3NSwxMTYwNjMxOTAxLDEyMDE4MjE1MTMs
-LTEwMzgwMDEzOTBdfQ==
+eyJoaXN0b3J5IjpbNTQ5NDcxNDQyLC0xMjA5OTIyMzY2LC0xND
+c4NTUwMzQwLDExNTg0Mzk3MywtMTY1ODE3MjkyOSwxMDc1OTM2
+MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQzOTcsLT
+g2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLDE1OTAz
+MTA1OTUsMTI1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOTQxMjUxMz
+E4LC02MDA3MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYzMTkwMSwx
+MjAxODIxNTEzXX0=
 -->
