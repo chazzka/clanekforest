@@ -281,7 +281,7 @@ In the example in Figure X the max_depth=5 was sufficient to distinguish novelty
 
 Example x shows the Isolation Tree diagram of an example from the Figure X.
 
-![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_noutlier_tree.svg)
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_novelty_tree.svg)
 > Figure example 4 Isolation Forest novelty point insertion using our novelty approach. Binary tree view
 
 Figure X shows the binary tree diagram created during the learning phase of the new Novelty isolation forest.
@@ -504,11 +504,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ5NDcxNDQyLC0xMjA5OTIyMzY2LC0xND
-c4NTUwMzQwLDExNTg0Mzk3MywtMTY1ODE3MjkyOSwxMDc1OTM2
-MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQzOTcsLT
-g2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLDE1OTAz
-MTA1OTUsMTI1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOTQxMjUxMz
-E4LC02MDA3MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYzMTkwMSwx
-MjAxODIxNTEzXX0=
+eyJoaXN0b3J5IjpbMTU0MzczNzYzNywtMTIwOTkyMjM2NiwtMT
+Q3ODU1MDM0MCwxMTU4NDM5NzMsLTE2NTgxNzI5MjksMTA3NTkz
+NjMwOSwtMTU4NTQ4MzMwNCw2MzE3MzM5MDEsNzIyODE0Mzk3LC
+04NjU2MTkzNjMsLTE1NjM2MTg1NzIsLTM0ODY3NTQ2MCwxNTkw
+MzEwNTk1LDEyNTA0NDA3MTMsLTMzNzg0OTQ0NSwtMTk0MTI1MT
+MxOCwtNjAwNzMyNzIyLC0xNjc2ODQ5Mzc1LDExNjA2MzE5MDEs
+MTIwMTgyMTUxM119
 -->
