@@ -277,7 +277,7 @@ This is a crucial distinction which makes the novelty detection possible.
 In the example in Figure X the max_depth=5 was sufficient to distinguish novelty datapoint. 
 The first node here is the experimentally precomputed range.
 
-![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_noutlier_gnu_clanek.svg) 
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_novelty_gnu_clanek.svg) 
 > Figure example 4 Isolation Forest novelty point insertion using our novelty approach. Squares being points fed after the learning. 
 
 Example x shows the Isolation Tree diagram of an example from the Figure X.
@@ -506,7 +506,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE1Mjc0Nzk4LC0xMjA5OTIyMzY2LC0xND
+eyJoaXN0b3J5IjpbMTM4NDc2OTYxLC0xMjA5OTIyMzY2LC0xND
 c4NTUwMzQwLDExNTg0Mzk3MywtMTY1ODE3MjkyOSwxMDc1OTM2
 MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQzOTcsLT
 g2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLDE1OTAz
