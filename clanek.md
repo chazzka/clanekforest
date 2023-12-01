@@ -296,7 +296,7 @@ Figure X shows the binary tree diagram created during the learning phase of the 
 The first node here is the minmax of the dataset.
 Instead, since we use original Outlier detection method, the nodes represent minmax values.
 Observe that, the depth was still exactly 5, however the topology is slightly different.
-TODO: TED TO MUSI VYJIT TAK ZE TEN MALY BOD MODRY BUDE CERNY
+TODO: TED TO MUSI VYJIT TAK ZE TEN MALY BOD MODRY BUDE CERNY - OK
 
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_noutlier_gnu_clanek.svg)
 > Figure X Isolation Forest novelty point insertion using original approach. Graphical view.
@@ -506,11 +506,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDE2Nzk2NTUsLTEyMDk5MjIzNjYsLT
-E0Nzg1NTAzNDAsMTE1ODQzOTczLC0xNjU4MTcyOTI5LDEwNzU5
-MzYzMDksLTE1ODU0ODMzMDQsNjMxNzMzOTAxLDcyMjgxNDM5Ny
-wtODY1NjE5MzYzLC0xNTYzNjE4NTcyLC0zNDg2NzU0NjAsMTU5
-MDMxMDU5NSwxMjUwNDQwNzEzLC0zMzc4NDk0NDUsLTE5NDEyNT
-EzMTgsLTYwMDczMjcyMiwtMTY3Njg0OTM3NSwxMTYwNjMxOTAx
-LDEyMDE4MjE1MTNdfQ==
+eyJoaXN0b3J5IjpbNjE1Mjc0Nzk4LC0xMjA5OTIyMzY2LC0xND
+c4NTUwMzQwLDExNTg0Mzk3MywtMTY1ODE3MjkyOSwxMDc1OTM2
+MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQzOTcsLT
+g2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLDE1OTAz
+MTA1OTUsMTI1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOTQxMjUxMz
+E4LC02MDA3MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYzMTkwMSwx
+MjAxODIxNTEzXX0=
 -->
