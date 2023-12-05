@@ -305,7 +305,7 @@ TODO: TED TO MUSI VYJIT TAK ZE TEN MALY BOD MODRY BUDE CERNY - OK
 > Figure X Isolation Forest novelty point insertion using original approach. Binary tree view.
 
  
-### evaluate tree
+### evaluate novelty tree
 The goal of the evaluation is to get the novelty value of a datapoint.
 The evaluation phasis starts with a constructed tree. 
 The observed datapoint recursively traverses from the root down the tree up to the leaf so that:
@@ -506,11 +506,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NDc2OTYxLC0xMjA5OTIyMzY2LC0xND
-c4NTUwMzQwLDExNTg0Mzk3MywtMTY1ODE3MjkyOSwxMDc1OTM2
-MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQzOTcsLT
-g2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLDE1OTAz
-MTA1OTUsMTI1MDQ0MDcxMywtMzM3ODQ5NDQ1LC0xOTQxMjUxMz
-E4LC02MDA3MzI3MjIsLTE2NzY4NDkzNzUsMTE2MDYzMTkwMSwx
-MjAxODIxNTEzXX0=
+eyJoaXN0b3J5IjpbODA3NjQxNjIsMTM4NDc2OTYxLC0xMjA5OT
+IyMzY2LC0xNDc4NTUwMzQwLDExNTg0Mzk3MywtMTY1ODE3Mjky
+OSwxMDc1OTM2MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMSw3Mj
+I4MTQzOTcsLTg2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1
+NDYwLDE1OTAzMTA1OTUsMTI1MDQ0MDcxMywtMzM3ODQ5NDQ1LC
+0xOTQxMjUxMzE4LC02MDA3MzI3MjIsLTE2NzY4NDkzNzUsMTE2
+MDYzMTkwMV19
 -->
