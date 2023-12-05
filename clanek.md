@@ -306,6 +306,8 @@ TODO: TED TO MUSI VYJIT TAK ZE TEN MALY BOD MODRY BUDE CERNY - OK
 
  
 ### evaluate novelty tree
+
+# todo: adam ukaze s novym bodem Px
 The goal of the evaluation is to get the novelty value of a datapoint.
 The evaluation phasis starts with a constructed tree. 
 The observed datapoint recursively traverses from the root down the tree up to the leaf so that:
@@ -506,11 +508,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA3NjQxNjIsMTM4NDc2OTYxLC0xMjA5OT
-IyMzY2LC0xNDc4NTUwMzQwLDExNTg0Mzk3MywtMTY1ODE3Mjky
-OSwxMDc1OTM2MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMSw3Mj
-I4MTQzOTcsLTg2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1
-NDYwLDE1OTAzMTA1OTUsMTI1MDQ0MDcxMywtMzM3ODQ5NDQ1LC
-0xOTQxMjUxMzE4LC02MDA3MzI3MjIsLTE2NzY4NDkzNzUsMTE2
-MDYzMTkwMV19
+eyJoaXN0b3J5IjpbLTE5MTg4NTE5NjksMTM4NDc2OTYxLC0xMj
+A5OTIyMzY2LC0xNDc4NTUwMzQwLDExNTg0Mzk3MywtMTY1ODE3
+MjkyOSwxMDc1OTM2MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMS
+w3MjI4MTQzOTcsLTg2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4
+Njc1NDYwLDE1OTAzMTA1OTUsMTI1MDQ0MDcxMywtMzM3ODQ5ND
+Q1LC0xOTQxMjUxMzE4LC02MDA3MzI3MjIsLTE2NzY4NDkzNzUs
+MTE2MDYzMTkwMV19
 -->
