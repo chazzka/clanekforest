@@ -323,9 +323,9 @@ where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is 
 
 Consider the example from Figure X.
 Suppose the evaluation of datapoint $P_a = [368.0,79.15]$:
-- In the first step, after randomly selecting the split_point $s = 42.57$ and dimension $d=0$ the point fits into the possibilty space of the right vertex $\langle 160,95 ) \times \langle 215,83)$. 
+- In the first step, after randomly selecting the dimension $d=0$ and split_point $s = 42.57$, the point fits into the possibilty space of the right vertex $\langle 160,95 ) \times \langle 215,83)$. 
 - Since the observed point is out of the input's minmax, it can therefore exceed the given minmax boundaries.
-- In the second step, the point fits into the space of a left vertex $\langle 11,39 ) \times \langle 1,17)$
+- In the second step, the dimension $d=0$ and the split_point $s = 203.61$ is selected so the point fits into the space of a left vertex $\langle 11,39 ) \times \langle 1,17)$
 - in the final step, the point fits into the space of a right leaf $\langle 25,39 ) \times \langle 1,17)$, satisfying the first stopping criterion
 - the path_length is obtained as depth of a leaf as $h(P_a) = 3$.
 
@@ -509,7 +509,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMTU3Njg2NSwtMTM1MDUyNDIzMCwtOT
+eyJoaXN0b3J5IjpbMTcxMjc3MTE1OSwtMTM1MDUyNDIzMCwtOT
 AzNTEwMDc5LDEzODQ3Njk2MSwtMTIwOTkyMjM2NiwtMTQ3ODU1
 MDM0MCwxMTU4NDM5NzMsLTE2NTgxNzI5MjksMTA3NTkzNjMwOS
 wtMTU4NTQ4MzMwNCw2MzE3MzM5MDEsNzIyODE0Mzk3LC04NjU2
