@@ -331,7 +331,8 @@ Suppose the evaluation of datapoint $P_a = [368.0,79.15]$:
 - in the final step, the dimension $d=0$ and the split_point $s = 215.57$ are selected fitting the point into the space of a left leaf $\langle 215.83 ) \times \langle 215.83)$, satisfying the first stopping criterion.
 - Since there were no more points in the training dataset in this specific node, this is the final leaf and the observed point is assigned a raw depth of 4.
 - the path_length is obtained as depth of a leaf as $h(P_a) = 6$.
-
+- []  TODO: TADY VYPOCET TOHO H?
+This means that the point 
 
 Suppose the evaluation of datapoint $P_b = [18,5]$ on the tree  constructed with sample $|S| = 4$:
 
@@ -512,11 +513,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzODMwNzI3NywtMTgwOTcyNDI4NywtMT
-EzODkwMTQzNywtMTM1MDUyNDIzMCwtOTAzNTEwMDc5LDEzODQ3
-Njk2MSwtMTIwOTkyMjM2NiwtMTQ3ODU1MDM0MCwxMTU4NDM5Nz
-MsLTE2NTgxNzI5MjksMTA3NTkzNjMwOSwtMTU4NTQ4MzMwNCw2
-MzE3MzM5MDEsNzIyODE0Mzk3LC04NjU2MTkzNjMsLTE1NjM2MT
-g1NzIsLTM0ODY3NTQ2MCwxNTkwMzEwNTk1LDEyNTA0NDA3MTMs
-LTMzNzg0OTQ0NV19
+eyJoaXN0b3J5IjpbLTE0OTE1MjA0MzMsLTE4MDk3MjQyODcsLT
+ExMzg5MDE0MzcsLTEzNTA1MjQyMzAsLTkwMzUxMDA3OSwxMzg0
+NzY5NjEsLTEyMDk5MjIzNjYsLTE0Nzg1NTAzNDAsMTE1ODQzOT
+czLC0xNjU4MTcyOTI5LDEwNzU5MzYzMDksLTE1ODU0ODMzMDQs
+NjMxNzMzOTAxLDcyMjgxNDM5NywtODY1NjE5MzYzLC0xNTYzNj
+E4NTcyLC0zNDg2NzU0NjAsMTU5MDMxMDU5NSwxMjUwNDQwNzEz
+LC0zMzc4NDk0NDVdfQ==
 -->
