@@ -301,7 +301,7 @@ TODO: TED TO MUSI VYJIT TAK ZE TEN MALY BOD MODRY BUDE CERNY - OK
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_noutlier_gnu_clanek.svg)
 > Figure X Isolation Forest novelty point insertion using original approach. Graphical view.
 
-![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_noutlier_tree.svg)
+![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_noutlier_tree_clanek.svg)
 > Figure X Isolation Forest novelty point insertion using original approach. Binary tree view.
 
  
@@ -508,11 +508,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMzUxMDA3OSwxMzg0NzY5NjEsLTEyMD
-k5MjIzNjYsLTE0Nzg1NTAzNDAsMTE1ODQzOTczLC0xNjU4MTcy
-OTI5LDEwNzU5MzYzMDksLTE1ODU0ODMzMDQsNjMxNzMzOTAxLD
-cyMjgxNDM5NywtODY1NjE5MzYzLC0xNTYzNjE4NTcyLC0zNDg2
-NzU0NjAsMTU5MDMxMDU5NSwxMjUwNDQwNzEzLC0zMzc4NDk0ND
-UsLTE5NDEyNTEzMTgsLTYwMDczMjcyMiwtMTY3Njg0OTM3NSwx
-MTYwNjMxOTAxXX0=
+eyJoaXN0b3J5IjpbLTEzNTA1MjQyMzAsLTkwMzUxMDA3OSwxMz
+g0NzY5NjEsLTEyMDk5MjIzNjYsLTE0Nzg1NTAzNDAsMTE1ODQz
+OTczLC0xNjU4MTcyOTI5LDEwNzU5MzYzMDksLTE1ODU0ODMzMD
+QsNjMxNzMzOTAxLDcyMjgxNDM5NywtODY1NjE5MzYzLC0xNTYz
+NjE4NTcyLC0zNDg2NzU0NjAsMTU5MDMxMDU5NSwxMjUwNDQwNz
+EzLC0zMzc4NDk0NDUsLTE5NDEyNTEzMTgsLTYwMDczMjcyMiwt
+MTY3Njg0OTM3NV19
 -->
