@@ -321,6 +321,8 @@ As the datapoint reaches the leaf its path_length is calculated as follows:
 $$h(x)=e+c(n),$$
 where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is the size of sample $S$ fitting into possibility space $R$, i.e., $n=| S \cap R |>1$,  and $c(n)$ is obtained using harmonic number $H_{n-1}$ such that $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$. 
 
+## example 1 - novelty approach
+
 ## example 2 - original approach
 Consider the example from Figure X.
 Suppose the evaluation of datapoint $P_a = [368.0,79.15]$:
@@ -331,14 +333,7 @@ Suppose the evaluation of datapoint $P_a = [368.0,79.15]$:
 - in the final step, the dimension $d=0$ and the split_point $s = 215.57$ are selected fitting the point into the space of a left leaf $\langle 215.83 ) \times \langle 215.83)$, satisfying the first stopping criterion.
 - Since there were no more points in the training dataset in this specific node, this is the final leaf and the observed point is assigned a raw depth of 4.
 - the path_length is obtained as depth of a leaf as $h(P_a) = 6$.
-- []  TODO: TADY VYPOCET TOHO H?
-This means that the point 
-
-Suppose the evaluation of datapoint $P_b = [18,5]$ on the tree  constructed with sample $|S| = 4$:
-
-- [ ] todo: Honza dá Pb do obrazku
-
-Traversing the tree, the datapoint reaches the leaf  $\langle 11,25 ) \times \langle 1,17)$, satisfying the second stopping criterion
+- [ ] TODO: TADY VYPOCET TOHO H? - toto je jen ukazka, cisla jsou spatne
 - the path_length is obtained as $h_T(P_b) = 3 + c(4) = 3+ 2 \cdot (H_3 - \frac{3}{4}) = 3 +2 \cdot [\bigl(1 + \frac{1}{2} + \frac{1}{3}\bigr) - \frac{3}{4}] = \frac{31}{6}$
 
 
@@ -513,7 +508,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTE1MjA0MzMsLTE4MDk3MjQyODcsLT
+eyJoaXN0b3J5IjpbLTEzNTI0MTk4OTYsLTE4MDk3MjQyODcsLT
 ExMzg5MDE0MzcsLTEzNTA1MjQyMzAsLTkwMzUxMDA3OSwxMzg0
 NzY5NjEsLTEyMDk5MjIzNjYsLTE0Nzg1NTAzNDAsMTE1ODQzOT
 czLC0xNjU4MTcyOTI5LDEwNzU5MzYzMDksLTE1ODU0ODMzMDQs
