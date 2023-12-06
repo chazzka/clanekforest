@@ -323,7 +323,8 @@ where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is 
 
 Consider the example from Figure X.
 Suppose the evaluation of datapoint $P_a = [368.0,79.15]$:
-- In the first step, after randomly selecting the split_point $s = 42.57$ the point fits into the possibilty space of the right vertex $\langle 11,39 ) \times \langle 1,33)$
+- In the first step, after randomly selecting the split_point $s = 42.57$ and dimension $d=0$ the point fits into the possibilty space of the right vertex $\langle 160,95 ) \times \langle 215,83)$. 
+- Since the observed point is o
 - In the second step, the point fits into the space of a left vertex $\langle 11,39 ) \times \langle 1,17)$
 - in the final step, the point fits into the space of a right leaf $\langle 25,39 ) \times \langle 1,17)$, satisfying the first stopping criterion
 - the path_length is obtained as depth of a leaf as $h(P_a) = 3$.
@@ -508,7 +509,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA4MjE2NjA3LC0xMzUwNTI0MjMwLC05MD
+eyJoaXN0b3J5IjpbMTI5ODQwNjAxLC0xMzUwNTI0MjMwLC05MD
 M1MTAwNzksMTM4NDc2OTYxLC0xMjA5OTIyMzY2LC0xNDc4NTUw
 MzQwLDExNTg0Mzk3MywtMTY1ODE3MjkyOSwxMDc1OTM2MzA5LC
 0xNTg1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQzOTcsLTg2NTYx
