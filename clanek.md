@@ -321,6 +321,7 @@ As the datapoint reaches the leaf its path_length is calculated as follows:
 $$h(x)=e+c(n),$$
 where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is the size of sample $S$ fitting into possibility space $R$, i.e., $n=| S \cap R |>1$,  and $c(n)$ is obtained using harmonic number $H_{n-1}$ such that $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$. 
 
+## example 2 - original approach
 Consider the example from Figure X.
 Suppose the evaluation of datapoint $P_a = [368.0,79.15]$:
 - In the first step, after randomly selecting the dimension $d=0$ and split_point $s = 42.57$, the point fits into the possibilty space of the right vertex $\langle 160,95 ) \times \langle 215,83)$. 
@@ -329,7 +330,7 @@ Suppose the evaluation of datapoint $P_a = [368.0,79.15]$:
 - In the third step, the dimension $d=0$ and the split_point $s = 205.58$ are selected so the point fits into the space of the left vertex $\langle 212.74 ) \times \langle 215.83)$
 - in the final step, the dimension $d=0$ and the split_point $s = 215.57$ are selected fitting the point into the space of a left leaf $\langle 215.83 ) \times \langle 215.83)$, satisfying the first stopping criterion.
 - Since there were no more points in the training dataset in this specific node, this is the final leaf and the observed point is assigned a raw depth of 4.
-- the path_length is obtained as depth of a leaf as $h(P_a) = $.
+- the path_length is obtained as depth of a leaf as $h(P_a) = 6$.
 
 
 Suppose the evaluation of datapoint $P_b = [18,5]$ on the tree  constructed with sample $|S| = 4$:
@@ -511,11 +512,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDk3MjQyODcsLTExMzg5MDE0MzcsLT
-EzNTA1MjQyMzAsLTkwMzUxMDA3OSwxMzg0NzY5NjEsLTEyMDk5
-MjIzNjYsLTE0Nzg1NTAzNDAsMTE1ODQzOTczLC0xNjU4MTcyOT
-I5LDEwNzU5MzYzMDksLTE1ODU0ODMzMDQsNjMxNzMzOTAxLDcy
-MjgxNDM5NywtODY1NjE5MzYzLC0xNTYzNjE4NTcyLC0zNDg2Nz
-U0NjAsMTU5MDMxMDU5NSwxMjUwNDQwNzEzLC0zMzc4NDk0NDUs
-LTE5NDEyNTEzMThdfQ==
+eyJoaXN0b3J5IjpbMTMzODMwNzI3NywtMTgwOTcyNDI4NywtMT
+EzODkwMTQzNywtMTM1MDUyNDIzMCwtOTAzNTEwMDc5LDEzODQ3
+Njk2MSwtMTIwOTkyMjM2NiwtMTQ3ODU1MDM0MCwxMTU4NDM5Nz
+MsLTE2NTgxNzI5MjksMTA3NTkzNjMwOSwtMTU4NTQ4MzMwNCw2
+MzE3MzM5MDEsNzIyODE0Mzk3LC04NjU2MTkzNjMsLTE1NjM2MT
+g1NzIsLTM0ODY3NTQ2MCwxNTkwMzEwNTk1LDEyNTA0NDA3MTMs
+LTMzNzg0OTQ0NV19
 -->
