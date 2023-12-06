@@ -322,7 +322,7 @@ $$h(x)=e+c(n),$$
 where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is the size of sample $S$ fitting into possibility space $R$, i.e., $n=| S \cap R |>1$,  and $c(n)$ is obtained using harmonic number $H_{n-1}$ such that $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$. 
 
 Consider the example from Figure X.
-Suppose the evaluation of datapoint $P_a = [28,16]$:
+Suppose the evaluation of datapoint $P_a = [368.0,79.15]$:
 - In the first step, the point fits into the possibilty space of the left vertex $\langle 11,39 ) \times \langle 1,33)$
 - In the second step, the point fits into the space of a left vertex $\langle 11,39 ) \times \langle 1,17)$
 - in the final step, the point fits into the space of a right leaf $\langle 25,39 ) \times \langle 1,17)$, satisfying the first stopping criterion
@@ -508,11 +508,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTA1MjQyMzAsLTkwMzUxMDA3OSwxMz
-g0NzY5NjEsLTEyMDk5MjIzNjYsLTE0Nzg1NTAzNDAsMTE1ODQz
-OTczLC0xNjU4MTcyOTI5LDEwNzU5MzYzMDksLTE1ODU0ODMzMD
-QsNjMxNzMzOTAxLDcyMjgxNDM5NywtODY1NjE5MzYzLC0xNTYz
-NjE4NTcyLC0zNDg2NzU0NjAsMTU5MDMxMDU5NSwxMjUwNDQwNz
-EzLC0zMzc4NDk0NDUsLTE5NDEyNTEzMTgsLTYwMDczMjcyMiwt
-MTY3Njg0OTM3NV19
+eyJoaXN0b3J5IjpbLTEwMDgwNjA4ODYsLTEzNTA1MjQyMzAsLT
+kwMzUxMDA3OSwxMzg0NzY5NjEsLTEyMDk5MjIzNjYsLTE0Nzg1
+NTAzNDAsMTE1ODQzOTczLC0xNjU4MTcyOTI5LDEwNzU5MzYzMD
+ksLTE1ODU0ODMzMDQsNjMxNzMzOTAxLDcyMjgxNDM5NywtODY1
+NjE5MzYzLC0xNTYzNjE4NTcyLC0zNDg2NzU0NjAsMTU5MDMxMD
+U5NSwxMjUwNDQwNzEzLC0zMzc4NDk0NDUsLTE5NDEyNTEzMTgs
+LTYwMDczMjcyMl19
 -->
