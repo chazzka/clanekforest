@@ -323,7 +323,7 @@ where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is 
 
 Consider the example from Figure X.
 Suppose the evaluation of datapoint $P_a = [368.0,79.15]$:
-- In the first step, the point fits into the possibilty space of the left vertex $\langle 11,39 ) \times \langle 1,33)$
+- In the first step, the point fits into the possibilty space of the right vertex $\langle 11,39 ) \times \langle 1,33)$
 - In the second step, the point fits into the space of a left vertex $\langle 11,39 ) \times \langle 1,17)$
 - in the final step, the point fits into the space of a right leaf $\langle 25,39 ) \times \langle 1,17)$, satisfying the first stopping criterion
 - the path_length is obtained as depth of a leaf as $h(P_a) = 3$.
@@ -508,11 +508,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDgwNjA4ODYsLTEzNTA1MjQyMzAsLT
-kwMzUxMDA3OSwxMzg0NzY5NjEsLTEyMDk5MjIzNjYsLTE0Nzg1
-NTAzNDAsMTE1ODQzOTczLC0xNjU4MTcyOTI5LDEwNzU5MzYzMD
-ksLTE1ODU0ODMzMDQsNjMxNzMzOTAxLDcyMjgxNDM5NywtODY1
-NjE5MzYzLC0xNTYzNjE4NTcyLC0zNDg2NzU0NjAsMTU5MDMxMD
-U5NSwxMjUwNDQwNzEzLC0zMzc4NDk0NDUsLTE5NDEyNTEzMTgs
-LTYwMDczMjcyMl19
+eyJoaXN0b3J5IjpbMTA3ODc1MjAyMywtMTM1MDUyNDIzMCwtOT
+AzNTEwMDc5LDEzODQ3Njk2MSwtMTIwOTkyMjM2NiwtMTQ3ODU1
+MDM0MCwxMTU4NDM5NzMsLTE2NTgxNzI5MjksMTA3NTkzNjMwOS
+wtMTU4NTQ4MzMwNCw2MzE3MzM5MDEsNzIyODE0Mzk3LC04NjU2
+MTkzNjMsLTE1NjM2MTg1NzIsLTM0ODY3NTQ2MCwxNTkwMzEwNT
+k1LDEyNTA0NDA3MTMsLTMzNzg0OTQ0NSwtMTk0MTI1MTMxOCwt
+NjAwNzMyNzIyXX0=
 -->
