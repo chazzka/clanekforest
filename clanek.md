@@ -331,7 +331,7 @@ Before the algortihm starts, the ranges are evaluated.
 - [ ] TODO: TADY VYPOCET TOHO H? - toto je jen ukazka, cisla jsou spatne
 - the path_length is obtained as $h_T(P_b) = 3 + c(4) = 3+ 2 \cdot (H_3 - \frac{3}{4}) = 3 +2 \cdot [\bigl(1 + \frac{1}{2} + \frac{1}{3}\bigr) - \frac{3}{4}] = \frac{31}{6}$
 This was sufficient for the point the be classified novelty.
-Thanks to the ranges evaluation, we were able to 
+Thanks to the ranges evaluation, we were able to classify this novelty point in a very few steps, since the were no points in this specific range during the learning phase.
 ## example 2 - original approach
 Consider the example from Figure X - outlier.
 Suppose again the evaluation of datapoint $P_a = [368.0,79.15]$:
@@ -518,7 +518,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MTcwMzYwOSwtMjMyMjQ2MzcsLTEzNT
+eyJoaXN0b3J5IjpbMTc4OTM3MjUzMCwtMjMyMjQ2MzcsLTEzNT
 I0MTk4OTYsLTE4MDk3MjQyODcsLTExMzg5MDE0MzcsLTEzNTA1
 MjQyMzAsLTkwMzUxMDA3OSwxMzg0NzY5NjEsLTEyMDk5MjIzNj
 YsLTE0Nzg1NTAzNDAsMTE1ODQzOTczLC0xNjU4MTcyOTI5LDEw
