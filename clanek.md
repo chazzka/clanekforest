@@ -325,10 +325,7 @@ where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is 
 Consider the example from Figure X - novelty.
 Suppose the evaluation of datapoint $P_a = [368.0,79.15]$:
 Before the algortihm starts, the ranges are evaluated.
-- In the first step, after randomly selecting the dimension $d=0$ and split_point s as in (x = rovnice s půlením nahoře) $s = 300$, the point fits into the possibilty space of the left vertex $\langle 300) \times \langle 500)$. 
-- In the second step, the dimension $d=0$ and the split_point $s = 212.47$ are selected so the point fits into the space of the left vertex $\langle 212.74 ) \times \langle 238.62)$
-- In the third step, the dimension $d=0$ and the split_point $s = 235.27$ are selected so the point fits into the space of the left vertex $\langle 237.66 ) \times \langle 238.62)$
-- in the final step, the dimension $d=0$ and the split_point $s = 215.57$ are selected fitting the point into the space of a left leaf $\langle 238.62 ) \times \langle 238.62)$, satisfying the first stopping criterion.
+- In the first step, after randomly selecting the dimension $d=0$ and split_point s as in (x = rovnice s půlením nahoře) $s = 300$, the point fits immedietelly in left leaf $\langle 238.62 ) \times \langle 238.62)$, satisfying the first stopping criterion.
 - Since there were no more points in the training dataset in this specific node, this is the final leaf and the observed point is assigned a raw depth of 4.
 - the path_length is obtained as depth of a leaf as $h(P_a) = 6$.
 - [ ] TODO: TADY VYPOCET TOHO H? - toto je jen ukazka, cisla jsou spatne
@@ -520,11 +517,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzk4MDU3NzksLTIzMjI0NjM3LC0xMz
-UyNDE5ODk2LC0xODA5NzI0Mjg3LC0xMTM4OTAxNDM3LC0xMzUw
-NTI0MjMwLC05MDM1MTAwNzksMTM4NDc2OTYxLC0xMjA5OTIyMz
-Y2LC0xNDc4NTUwMzQwLDExNTg0Mzk3MywtMTY1ODE3MjkyOSwx
-MDc1OTM2MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMSw3MjI4MT
-QzOTcsLTg2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYw
-LDE1OTAzMTA1OTVdfQ==
+eyJoaXN0b3J5IjpbNjQ4MjcyMjQ4LC0yMzIyNDYzNywtMTM1Mj
+QxOTg5NiwtMTgwOTcyNDI4NywtMTEzODkwMTQzNywtMTM1MDUy
+NDIzMCwtOTAzNTEwMDc5LDEzODQ3Njk2MSwtMTIwOTkyMjM2Ni
+wtMTQ3ODU1MDM0MCwxMTU4NDM5NzMsLTE2NTgxNzI5MjksMTA3
+NTkzNjMwOSwtMTU4NTQ4MzMwNCw2MzE3MzM5MDEsNzIyODE0Mz
+k3LC04NjU2MTkzNjMsLTE1NjM2MTg1NzIsLTM0ODY3NTQ2MCwx
+NTkwMzEwNTk1XX0=
 -->
