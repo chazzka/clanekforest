@@ -335,7 +335,7 @@ Suppose the evaluation of datapoint $P_a = [368.0,79.15]$:
 - the path_length is obtained as depth of a leaf as $h(P_a) = 6$.
 - [ ] TODO: TADY VYPOCET TOHO H? - toto je jen ukazka, cisla jsou spatne
 - the path_length is obtained as $h_T(P_b) = 3 + c(4) = 3+ 2 \cdot (H_3 - \frac{3}{4}) = 3 +2 \cdot [\bigl(1 + \frac{1}{2} + \frac{1}{3}\bigr) - \frac{3}{4}] = \frac{31}{6}$
-
+As we demonstrated, th
 
 ### From a tree to the forest
 Due to the random selection of samples and a dimension, the evaluation is distributed to the set of trees - a forest.
@@ -508,11 +508,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMjI0NjM3LC0xMzUyNDE5ODk2LC0xOD
-A5NzI0Mjg3LC0xMTM4OTAxNDM3LC0xMzUwNTI0MjMwLC05MDM1
-MTAwNzksMTM4NDc2OTYxLC0xMjA5OTIyMzY2LC0xNDc4NTUwMz
-QwLDExNTg0Mzk3MywtMTY1ODE3MjkyOSwxMDc1OTM2MzA5LC0x
-NTg1NDgzMzA0LDYzMTczMzkwMSw3MjI4MTQzOTcsLTg2NTYxOT
-M2MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYwLDE1OTAzMTA1OTUs
-MTI1MDQ0MDcxM119
+eyJoaXN0b3J5IjpbMTUyNzU0NTA1NSwtMjMyMjQ2MzcsLTEzNT
+I0MTk4OTYsLTE4MDk3MjQyODcsLTExMzg5MDE0MzcsLTEzNTA1
+MjQyMzAsLTkwMzUxMDA3OSwxMzg0NzY5NjEsLTEyMDk5MjIzNj
+YsLTE0Nzg1NTAzNDAsMTE1ODQzOTczLC0xNjU4MTcyOTI5LDEw
+NzU5MzYzMDksLTE1ODU0ODMzMDQsNjMxNzMzOTAxLDcyMjgxND
+M5NywtODY1NjE5MzYzLC0xNTYzNjE4NTcyLC0zNDg2NzU0NjAs
+MTU5MDMxMDU5NV19
 -->
