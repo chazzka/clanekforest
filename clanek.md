@@ -330,7 +330,8 @@ Before the algortihm starts, the ranges are evaluated.
 - the path_length is obtained as depth of a leaf as $h(P_a) = 8.04$.
 - [ ] TODO: TADY VYPOCET TOHO H? - toto je jen ukazka, cisla jsou spatne
 - the path_length is obtained as $h_T(P_b) = 3 + c(4) = 3+ 2 \cdot (H_3 - \frac{3}{4}) = 3 +2 \cdot [\bigl(1 + \frac{1}{2} + \frac{1}{3}\bigr) - \frac{3}{4}] = \frac{31}{6}$
-Remember, the deeper the point, the more regular it is, so the path length of 6 was deep enough for the point to be assigned regular.
+This was sufficient for the point the be classified novelty.
+Thanks to the ranges evaluation, we were able to 
 ## example 2 - original approach
 Consider the example from Figure X - outlier.
 Suppose again the evaluation of datapoint $P_a = [368.0,79.15]$:
@@ -517,11 +518,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTQwMTk1MjIsLTIzMjI0NjM3LC0xMz
-UyNDE5ODk2LC0xODA5NzI0Mjg3LC0xMTM4OTAxNDM3LC0xMzUw
-NTI0MjMwLC05MDM1MTAwNzksMTM4NDc2OTYxLC0xMjA5OTIyMz
-Y2LC0xNDc4NTUwMzQwLDExNTg0Mzk3MywtMTY1ODE3MjkyOSwx
-MDc1OTM2MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMSw3MjI4MT
-QzOTcsLTg2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYw
-LDE1OTAzMTA1OTVdfQ==
+eyJoaXN0b3J5IjpbMTk1MTcwMzYwOSwtMjMyMjQ2MzcsLTEzNT
+I0MTk4OTYsLTE4MDk3MjQyODcsLTExMzg5MDE0MzcsLTEzNTA1
+MjQyMzAsLTkwMzUxMDA3OSwxMzg0NzY5NjEsLTEyMDk5MjIzNj
+YsLTE0Nzg1NTAzNDAsMTE1ODQzOTczLC0xNjU4MTcyOTI5LDEw
+NzU5MzYzMDksLTE1ODU0ODMzMDQsNjMxNzMzOTAxLDcyMjgxND
+M5NywtODY1NjE5MzYzLC0xNTYzNjE4NTcyLC0zNDg2NzU0NjAs
+MTU5MDMxMDU5NV19
 -->
