@@ -330,7 +330,7 @@ Suppose the evaluation of datapoint $P_a = [368.0,79.15]$:
 - Since the observed point is out of the input's minmax, it can therefore exceed the given minmax boundaries.
 - In the second step, the dimension $d=0$ and the split_point $s = 212.47$ are selected so the point fits into the space of the left vertex $\langle 212.74 ) \times \langle 238.62)$
 - In the third step, the dimension $d=0$ and the split_point $s = 235.27$ are selected so the point fits into the space of the left vertex $\langle 237.66 ) \times \langle 238.62)$
-- in the final step, the dimension $d=0$ and the split_point $s = 215.57$ are selected fitting the point into the space of a left leaf $\langle 215.83 ) \times \langle 215.83)$, satisfying the first stopping criterion.
+- in the final step, the dimension $d=0$ and the split_point $s = 215.57$ are selected fitting the point into the space of a left leaf $\langle 238.62 ) \times \langle 238.62)$, satisfying the first stopping criterion.
 - Since there were no more points in the training dataset in this specific node, this is the final leaf and the observed point is assigned a raw depth of 4.
 - the path_length is obtained as depth of a leaf as $h(P_a) = 6$.
 - [ ] TODO: TADY VYPOCET TOHO H? - toto je jen ukazka, cisla jsou spatne
@@ -508,7 +508,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNDQ1MjQ1LC0xMzUyNDE5ODk2LC0xOD
+eyJoaXN0b3J5IjpbLTIzMjI0NjM3LC0xMzUyNDE5ODk2LC0xOD
 A5NzI0Mjg3LC0xMTM4OTAxNDM3LC0xMzUwNTI0MjMwLC05MDM1
 MTAwNzksMTM4NDc2OTYxLC0xMjA5OTIyMzY2LC0xNDc4NTUwMz
 QwLDExNTg0Mzk3MywtMTY1ODE3MjkyOSwxMDc1OTM2MzA5LC0x
