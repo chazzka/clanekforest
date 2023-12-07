@@ -322,10 +322,9 @@ $$h(x)=e+c(n),$$
 where $e$ is the depth of the current leaf (max_depth in this case), and $n$ is the size of sample $S$ fitting into possibility space $R$, i.e., $n=| S \cap R |>1$,  and $c(n)$ is obtained using harmonic number $H_{n-1}$ such that $c(n)=2\,(H_{n-1}-\frac{n-1}{n})$. 
 
 ## example 1 - novelty approach
-
-## example 2 - original approach
-Consider the example from Figure X.
+Consider the example from Figure X - novelty.
 Suppose the evaluation of datapoint $P_a = [368.0,79.15]$:
+Before the algortihm starts, the ranges are evaluated.
 - In the first step, after randomly selecting the dimension $d=0$ and split_point $s = 169.38$, the point fits into the possibilty space of the left vertex $\langle 170.06) \times \langle 238.62)$. 
 - Since the observed point is out of the input's minmax, it can therefore exceed the given minmax boundaries.
 - In the second step, the dimension $d=0$ and the split_point $s = 212.47$ are selected so the point fits into the space of the left vertex $\langle 212.74 ) \times \langle 238.62)$
@@ -335,8 +334,21 @@ Suppose the evaluation of datapoint $P_a = [368.0,79.15]$:
 - the path_length is obtained as depth of a leaf as $h(P_a) = 6$.
 - [ ] TODO: TADY VYPOCET TOHO H? - toto je jen ukazka, cisla jsou spatne
 - the path_length is obtained as $h_T(P_b) = 3 + c(4) = 3+ 2 \cdot (H_3 - \frac{3}{4}) = 3 +2 \cdot [\bigl(1 + \frac{1}{2} + \frac{1}{3}\bigr) - \frac{3}{4}] = \frac{31}{6}$
-The path length of 6 was deep enough for the point to be assigned regular.
-Remember, the deeper the point, the more regular it is.
+Remember, the deeper the point, the more regular it is, so the path length of 6 was deep enough for the point to be assigned regular.
+## example 2 - original approach
+Consider the example from Figure X - outlier.
+Suppose again the evaluation of datapoint $P_a = [368.0,79.15]$:
+- In the first step, after randomly selecting the dimension $d=0$ and split_point $s = 169.38$, the point fits into the possibilty space of the left vertex $\langle 170.06) \times \langle 238.62)$. 
+- Since the observed point is out of the input's minmax, it can therefore exceed the given minmax boundaries.
+- In the second step, the dimension $d=0$ and the split_point $s = 212.47$ are selected so the point fits into the space of the left vertex $\langle 212.74 ) \times \langle 238.62)$
+- In the third step, the dimension $d=0$ and the split_point $s = 235.27$ are selected so the point fits into the space of the left vertex $\langle 237.66 ) \times \langle 238.62)$
+- in the final step, the dimension $d=0$ and the split_point $s = 215.57$ are selected fitting the point into the space of a left leaf $\langle 238.62 ) \times \langle 238.62)$, satisfying the first stopping criterion.
+- Since there were no more points in the training dataset in this specific node, this is the final leaf and the observed point is assigned a raw depth of 4.
+- the path_length is obtained as depth of a leaf as $h(P_a) = 6$.
+- [ ] TODO: TADY VYPOCET TOHO H? - toto je jen ukazka, cisla jsou spatne
+- the path_length is obtained as $h_T(P_b) = 3 + c(4) = 3+ 2 \cdot (H_3 - \frac{3}{4}) = 3 +2 \cdot [\bigl(1 + \frac{1}{2} + \frac{1}{3}\bigr) - \frac{3}{4}] = \frac{31}{6}$
+Remember, the deeper the point, the more regular it is, so the path length of 6 was deep enough for the point to be assigned regular.
+
 
 ### From a tree to the forest
 Due to the random selection of samples and a dimension, the evaluation is distributed to the set of trees - a forest.
@@ -509,11 +521,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NTMzODkxMiwtMjMyMjQ2MzcsLTEzNT
-I0MTk4OTYsLTE4MDk3MjQyODcsLTExMzg5MDE0MzcsLTEzNTA1
-MjQyMzAsLTkwMzUxMDA3OSwxMzg0NzY5NjEsLTEyMDk5MjIzNj
-YsLTE0Nzg1NTAzNDAsMTE1ODQzOTczLC0xNjU4MTcyOTI5LDEw
-NzU5MzYzMDksLTE1ODU0ODMzMDQsNjMxNzMzOTAxLDcyMjgxND
-M5NywtODY1NjE5MzYzLC0xNTYzNjE4NTcyLC0zNDg2NzU0NjAs
-MTU5MDMxMDU5NV19
+eyJoaXN0b3J5IjpbLTE2NTY2MDk2MzAsLTIzMjI0NjM3LC0xMz
+UyNDE5ODk2LC0xODA5NzI0Mjg3LC0xMTM4OTAxNDM3LC0xMzUw
+NTI0MjMwLC05MDM1MTAwNzksMTM4NDc2OTYxLC0xMjA5OTIyMz
+Y2LC0xNDc4NTUwMzQwLDExNTg0Mzk3MywtMTY1ODE3MjkyOSwx
+MDc1OTM2MzA5LC0xNTg1NDgzMzA0LDYzMTczMzkwMSw3MjI4MT
+QzOTcsLTg2NTYxOTM2MywtMTU2MzYxODU3MiwtMzQ4Njc1NDYw
+LDE1OTAzMTA1OTVdfQ==
 -->
