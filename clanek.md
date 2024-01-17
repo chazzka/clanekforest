@@ -240,7 +240,7 @@ $$T_0= (V_0, E_0) = (\{R_0\},\emptyset).$$
 
 ##### Recursive step
  
-The steps to reach the tree $T_{j+1}$ from $T_{j}$ are as follows:
+The steps to reach the tree $T_{j+1}$ from $T_{j} = (V_j, E_j)$  are as follows:
 
 Let $L_j \subseteq V_j$ be a subset of leaves not satisfying the ending condition.
 If $L_j = \emptyset$, do not continue further.
@@ -518,11 +518,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDUyNzc1NjUsLTE0MzYzOTI0NTUsMT
-c4OTM3MjUzMCwtMjMyMjQ2MzcsLTEzNTI0MTk4OTYsLTE4MDk3
-MjQyODcsLTExMzg5MDE0MzcsLTEzNTA1MjQyMzAsLTkwMzUxMD
-A3OSwxMzg0NzY5NjEsLTEyMDk5MjIzNjYsLTE0Nzg1NTAzNDAs
-MTE1ODQzOTczLC0xNjU4MTcyOTI5LDEwNzU5MzYzMDksLTE1OD
-U0ODMzMDQsNjMxNzMzOTAxLDcyMjgxNDM5NywtODY1NjE5MzYz
-LC0xNTYzNjE4NTcyXX0=
+eyJoaXN0b3J5IjpbLTE2ODI2NTEyOTQsLTEzNDUyNzc1NjUsLT
+E0MzYzOTI0NTUsMTc4OTM3MjUzMCwtMjMyMjQ2MzcsLTEzNTI0
+MTk4OTYsLTE4MDk3MjQyODcsLTExMzg5MDE0MzcsLTEzNTA1Mj
+QyMzAsLTkwMzUxMDA3OSwxMzg0NzY5NjEsLTEyMDk5MjIzNjYs
+LTE0Nzg1NTAzNDAsMTE1ODQzOTczLC0xNjU4MTcyOTI5LDEwNz
+U5MzYzMDksLTE1ODU0ODMzMDQsNjMxNzMzOTAxLDcyMjgxNDM5
+NywtODY1NjE5MzYzXX0=
 -->
