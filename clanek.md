@@ -64,7 +64,7 @@ Supervised algortihm
 : Supervised algorithm is to je to co chceme aby to bylo
 
 Unsupervised algortihm
-: Supervised algorithm is to je to co chceme aby to bylo
+: Unsupervised algorithm is to je to co chceme aby to bylo
 
 Semisupervised algortihm
 : Semi-supervised algorithm to je že máš labely jen napůl a chceš vědět které nedopovídají labelu
@@ -518,11 +518,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4OTM3MjUzMCwtMjMyMjQ2MzcsLTEzNT
-I0MTk4OTYsLTE4MDk3MjQyODcsLTExMzg5MDE0MzcsLTEzNTA1
-MjQyMzAsLTkwMzUxMDA3OSwxMzg0NzY5NjEsLTEyMDk5MjIzNj
-YsLTE0Nzg1NTAzNDAsMTE1ODQzOTczLC0xNjU4MTcyOTI5LDEw
-NzU5MzYzMDksLTE1ODU0ODMzMDQsNjMxNzMzOTAxLDcyMjgxND
-M5NywtODY1NjE5MzYzLC0xNTYzNjE4NTcyLC0zNDg2NzU0NjAs
-MTU5MDMxMDU5NV19
+eyJoaXN0b3J5IjpbLTE0MzYzOTI0NTUsMTc4OTM3MjUzMCwtMj
+MyMjQ2MzcsLTEzNTI0MTk4OTYsLTE4MDk3MjQyODcsLTExMzg5
+MDE0MzcsLTEzNTA1MjQyMzAsLTkwMzUxMDA3OSwxMzg0NzY5Nj
+EsLTEyMDk5MjIzNjYsLTE0Nzg1NTAzNDAsMTE1ODQzOTczLC0x
+NjU4MTcyOTI5LDEwNzU5MzYzMDksLTE1ODU0ODMzMDQsNjMxNz
+MzOTAxLDcyMjgxNDM5NywtODY1NjE5MzYzLC0xNTYzNjE4NTcy
+LC0zNDg2NzU0NjBdfQ==
 -->
