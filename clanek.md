@@ -210,7 +210,7 @@ In the proposed solution, there are two main alteration concepts to the original
 
 
  1. Each of the vertices gets assigned a space bounded by ranges.\
-Each range should be reasonable enough to allow all the domain space to be separated correctly, hence some tolerance is needed.
+Each range should be reasonable enough to allow all the domain space to be separated correctly.
 
  3. The split point is in the middle of the given feature's *range*.
  4. The input observations are only used to detect leaves.
@@ -218,7 +218,7 @@ Each range should be reasonable enough to allow all the domain space to be separ
 
 - [ ] TODO: Teorie grafů
 
-In the following we suppose a Euclidean type of space.
+In the following we suppose a Euclidean space.
 
 Let us construct the decision tree such that:
 - maximal possible height of a tree is controlled by the *max_depth* parameter
@@ -518,11 +518,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzYzOTI0NTUsMTc4OTM3MjUzMCwtMj
-MyMjQ2MzcsLTEzNTI0MTk4OTYsLTE4MDk3MjQyODcsLTExMzg5
-MDE0MzcsLTEzNTA1MjQyMzAsLTkwMzUxMDA3OSwxMzg0NzY5Nj
-EsLTEyMDk5MjIzNjYsLTE0Nzg1NTAzNDAsMTE1ODQzOTczLC0x
-NjU4MTcyOTI5LDEwNzU5MzYzMDksLTE1ODU0ODMzMDQsNjMxNz
-MzOTAxLDcyMjgxNDM5NywtODY1NjE5MzYzLC0xNTYzNjE4NTcy
-LC0zNDg2NzU0NjBdfQ==
+eyJoaXN0b3J5IjpbLTEzNDUyNzc1NjUsLTE0MzYzOTI0NTUsMT
+c4OTM3MjUzMCwtMjMyMjQ2MzcsLTEzNTI0MTk4OTYsLTE4MDk3
+MjQyODcsLTExMzg5MDE0MzcsLTEzNTA1MjQyMzAsLTkwMzUxMD
+A3OSwxMzg0NzY5NjEsLTEyMDk5MjIzNjYsLTE0Nzg1NTAzNDAs
+MTE1ODQzOTczLC0xNjU4MTcyOTI5LDEwNzU5MzYzMDksLTE1OD
+U0ODMzMDQsNjMxNzMzOTAxLDcyMjgxNDM5NywtODY1NjE5MzYz
+LC0xNTYzNjE4NTcyXX0=
 -->
