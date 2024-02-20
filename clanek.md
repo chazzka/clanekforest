@@ -298,6 +298,7 @@ Observe, that each level is selected a random dimension and retains on it until 
 Figure X shows the binary tree diagram created during the learning phase of the plain old Outlier detection Isolation Forest.
 The first node here is the minmax of the dataset.
 Instead, since we use original Outlier detection method, the nodes represent minmax values.
+Pozor, musis se divat na cely strom:
 Observe that, the depth was still exactly 5, however the topology is slightly different.
 
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_noutlier_gnu_clanek.svg)
@@ -518,11 +519,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MTk0MjU4NiwtMTkzODMxNTIwOSwtMT
-A0ODY5MDI0NSwxNzU2NTI4NDcxLDg1NzMzMTQyMiwzNjIyMDQ0
-MzEsLTEzNDUyNzc1NjUsLTE0MzYzOTI0NTUsMTc4OTM3MjUzMC
-wtMjMyMjQ2MzcsLTEzNTI0MTk4OTYsLTE4MDk3MjQyODcsLTEx
-Mzg5MDE0MzcsLTEzNTA1MjQyMzAsLTkwMzUxMDA3OSwxMzg0Nz
-Y5NjEsLTEyMDk5MjIzNjYsLTE0Nzg1NTAzNDAsMTE1ODQzOTcz
-LC0xNjU4MTcyOTI5XX0=
+eyJoaXN0b3J5IjpbMTQ5NjgwMDYwMCwtNzQxOTQyNTg2LC0xOT
+M4MzE1MjA5LC0xMDQ4NjkwMjQ1LDE3NTY1Mjg0NzEsODU3MzMx
+NDIyLDM2MjIwNDQzMSwtMTM0NTI3NzU2NSwtMTQzNjM5MjQ1NS
+wxNzg5MzcyNTMwLC0yMzIyNDYzNywtMTM1MjQxOTg5NiwtMTgw
+OTcyNDI4NywtMTEzODkwMTQzNywtMTM1MDUyNDIzMCwtOTAzNT
+EwMDc5LDEzODQ3Njk2MSwtMTIwOTkyMjM2NiwtMTQ3ODU1MDM0
+MCwxMTU4NDM5NzNdfQ==
 -->
