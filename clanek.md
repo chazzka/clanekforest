@@ -271,7 +271,7 @@ Note: Tree $T_{j}$ is actually a Hasse diagram of the ordered set $(V_j,\subsete
 Consider now a minified example with less datapoints.
 Figure X shows that the Px datapoint is assigned novelty. 
 The whole visible space in Figure X is considered a range (precomputed in advance, based on the given training set), and it is now splitting as we go deeper in the tree.
-Consequently, two types of nodes are created.
+Consequently, created nodes can be divided into two types.
 S1 - a set of nodes with ranges, where input data occures
 S2 - a set of nodes with ranges created as remainders of range splitting (these do not play role in novelty decision)
 Again, each node is assigned a depth and the deeper the point is in the tree, the less probable it is for the point to be an anomaly.
@@ -519,11 +519,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMDk1MDAwMiwxNDk2ODAwNjAwLC03ND
-E5NDI1ODYsLTE5MzgzMTUyMDksLTEwNDg2OTAyNDUsMTc1NjUy
-ODQ3MSw4NTczMzE0MjIsMzYyMjA0NDMxLC0xMzQ1Mjc3NTY1LC
-0xNDM2MzkyNDU1LDE3ODkzNzI1MzAsLTIzMjI0NjM3LC0xMzUy
-NDE5ODk2LC0xODA5NzI0Mjg3LC0xMTM4OTAxNDM3LC0xMzUwNT
-I0MjMwLC05MDM1MTAwNzksMTM4NDc2OTYxLC0xMjA5OTIyMzY2
-LC0xNDc4NTUwMzQwXX0=
+eyJoaXN0b3J5IjpbMTg0OTcxODg2MSwyMDAwOTUwMDAyLDE0OT
+Y4MDA2MDAsLTc0MTk0MjU4NiwtMTkzODMxNTIwOSwtMTA0ODY5
+MDI0NSwxNzU2NTI4NDcxLDg1NzMzMTQyMiwzNjIyMDQ0MzEsLT
+EzNDUyNzc1NjUsLTE0MzYzOTI0NTUsMTc4OTM3MjUzMCwtMjMy
+MjQ2MzcsLTEzNTI0MTk4OTYsLTE4MDk3MjQyODcsLTExMzg5MD
+E0MzcsLTEzNTA1MjQyMzAsLTkwMzUxMDA3OSwxMzg0NzY5NjEs
+LTEyMDk5MjIzNjZdfQ==
 -->
