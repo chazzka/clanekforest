@@ -335,18 +335,6 @@ Before the algortihm starts, the ranges are evaluated.
 This was sufficient for the point the be classified novelty.
 Thanks to the ranges evaluation, we were able to classify this novelty point in a very few steps, since the were no points in this specific range during the learning phase.
 ## example 2 - original approach
-Consider the example from Figure X - outlier.
-Suppose again the evaluation of datapoint $P_a = [368.0,79.15]$:
-- In the first step, after randomly selecting the dimension $d=0$ and split_point $s = 169.38$, the point fits into the possibilty space of the left vertex $\langle 170.06) \times \langle 238.62)$. 
-- Since the observed point is out of the input's minmax, it can therefore exceed the given minmax boundaries.
-- In the second step, the dimension $d=0$ and the split_point $s = 212.47$ are selected so the point fits into the space of the left vertex $\langle 212.74 ) \times \langle 238.62)$
-- In the third step, the dimension $d=0$ and the split_point $s = 235.27$ are selected so the point fits into the space of the left vertex $\langle 237.66 ) \times \langle 238.62)$
-- in the final step, the dimension $d=0$ and the split_point $s = 215.57$ are selected fitting the point into the space of a left leaf $\langle 238.62 ) \times \langle 238.62)$, satisfying the first stopping criterion.
-- Since there were no more points in the training dataset in this specific node, this is the final leaf and the observed point is assigned a raw depth of 4.
-- the path_length is obtained as depth of a leaf as $h(P_a) = 6$.
-- [ ] TODO: TADY VYPOCET TOHO H? - toto je jen ukazka, cisla jsou spatne
-- the path_length is obtained as $h_T(P_b) = 3 + c(4) = 3+ 2 \cdot (H_3 - \frac{3}{4}) = 3 +2 \cdot [\bigl(1 + \frac{1}{2} + \frac{1}{3}\bigr) - \frac{3}{4}] = \frac{31}{6}$
-Remember, the deeper the point, the more regular it is, so the path length of 6 was deep enough for the point to be assigned regular.
 
 
 ### From a tree to the forest
@@ -520,11 +508,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDYyMDkwOTcsMTg0OTcxODg2MSwyMD
-AwOTUwMDAyLDE0OTY4MDA2MDAsLTc0MTk0MjU4NiwtMTkzODMx
-NTIwOSwtMTA0ODY5MDI0NSwxNzU2NTI4NDcxLDg1NzMzMTQyMi
-wzNjIyMDQ0MzEsLTEzNDUyNzc1NjUsLTE0MzYzOTI0NTUsMTc4
-OTM3MjUzMCwtMjMyMjQ2MzcsLTEzNTI0MTk4OTYsLTE4MDk3Mj
-QyODcsLTExMzg5MDE0MzcsLTEzNTA1MjQyMzAsLTkwMzUxMDA3
-OSwxMzg0NzY5NjFdfQ==
+eyJoaXN0b3J5IjpbMTAyMTc1MzM3NywtMjE0NjIwOTA5NywxOD
+Q5NzE4ODYxLDIwMDA5NTAwMDIsMTQ5NjgwMDYwMCwtNzQxOTQy
+NTg2LC0xOTM4MzE1MjA5LC0xMDQ4NjkwMjQ1LDE3NTY1Mjg0Nz
+EsODU3MzMxNDIyLDM2MjIwNDQzMSwtMTM0NTI3NzU2NSwtMTQz
+NjM5MjQ1NSwxNzg5MzcyNTMwLC0yMzIyNDYzNywtMTM1MjQxOT
+g5NiwtMTgwOTcyNDI4NywtMTEzODkwMTQzNywtMTM1MDUyNDIz
+MCwtOTAzNTEwMDc5XX0=
 -->
