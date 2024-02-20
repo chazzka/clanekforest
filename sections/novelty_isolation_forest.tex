@@ -1,0 +1,93 @@
+\section{Proposed Range-based Enhancement For Isolation Forest}
+\label{sec:novelty_isolation_forest}
+In this section, we propose a new enhancement of the original Isolation Forest algorithm to make it possible to detect novelty observations.
+The proposed enhancement takes the basic idea of an ensemble of trees with various depths but takes it further to make supervised novelty detection possible.
+
+\subsection{Initial Problem}
+ The standard Isolation Forest algorithm cannot be used for novelty detection. This is because, in each step it limits the observation with the previously separated data.
+
+
+TODO: TADY BYCH ČISTĚ JEN MATEMATICKY POPSAL PROČ NÁM BOD SPADNE DO NODU I KDYŽ TAM NEPATŘÍ
+
+TODO: ANO ok, odkážeme se tady na nějakou rovnici z teorie o isolation forest výše
+
+\subsection{Proposed Solution}
+The proposed solution comes from the idea, that the original tree lacks the possibility to isolate more datapoints than it currently observes.
+The observed space is bounded by the minimum and maximum in each feature.
+
+As in the original article, we use the concept of a binary decision tree. The proposed solution is altering the concept of the split point evaluation. Whereas the original Isolation Forest evaluates the split point based on the previous data, we
+evaluate the split point based on a range in our proposed solution. For this to work, several alterations to the split point evaluation and the form of data passed between vertices must be done; however, the overall concept of the forest stays the same.
+The proposed solution has two main concepts of alteration to the original solution.
+
+\begin{enumerate}
+    \item Each of the vertices gets assigned a space bounded by ranges. Each range should be reasonable enough to separate all the domain space correctly.
+    \item The split point is in the middle of the given feature’s range.
+    \item The input observations are only used to determine ending condition.
+\end{enumerate}
+
+In the following, we suppose an Euclidean space.
+
+Let us construct the decision tree $T$ such that:
+
+\begin{enumerate}
+    \item Maximal possible height of a tree is controlled by the \emph{max\_depth} parameter.
+    \item The sample \(S\) contains \emph{batch\_size} number of input datapoints.
+    \item Leaves and internal vertices are possibility-space hyperrectangles \(R\). 
+    \item Leaves' ending condition is satisfied by one of two criteria: 
+\begin{enumerate}
+    \item Leaf contains space \(R\) such that \(S \cap R = \emptyset\) or \(| S \cap R | = 1\).
+    \item Leaf's depth reached the \emph{max\_depth} value.
+\end{enumerate}
+\end{enumerate}
+
+
+
+\subparagraph{Basis step}
+
+For each \(i \in\{1, \dots, n\}\), dimension \(d_i\) is bounded by the range \(r_i\). The ranges form the possibility-space hyperrectangle \(R_0\) as in:
+
+\[R_0 =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}\,.\]
+
+The trivial binary tree \(T_0\) is a tuple with
+vertices \(V_0 = \{R_0\}\) and edges \(E_0 = \emptyset\), i.e.
+\[T_0= (V_0, E_0) = (\{R_0\},\emptyset).\]
+
+\subparagraph{Recursive step}
+
+The steps to reach the tree \(T_{j+1}\) from \(T_{j} = (V_j, E_j)\) are
+as follows:
+
+Let \(L_j \subseteq V_j\) be a subset of leaves not satisfying the
+ending condition. 
+
+For each leaf \(R \in L_j\) create two new vertices \(R_l, R_r\) by
+selecting a random dimension \(d\).
+
+Let
+\[R = r_1 \times  \cdots \times r_{d-1} \times  r_d\times r_{d+1} \times \cdots \times r_n  \tag{x}\]
+and \(r_d = \langle x, y )\).
+
+Then we obtain the left and right hyperrectangles \(R_l\), \(R_r\) as
+follows:
+\[R_l = r_1 \times  \cdots \times r_{d-1} \times  r_l \times r_{d+1} \times \cdots \times r_n  \tag{x}\]
+
+\[R_r = r_1 \times  \cdots \times r_{d-1} \times  r_r \times r_{d+1} \times \cdots \times r_n  \tag{x}\]
+where \(r_l = \langle x, s )\) and \(r_r = \langle s, y )\) and \(s\) is
+a number obtained as the middle of the range \(r_d\,\):
+
+\[s = \frac{x + y}{2}\tag{x}.\] Each vertex \(R\) is associated with two new
+edges \((R,R_l ), (R, R_r)\) as in (x\ldots xxx).
+
+\[V_{j+1} = V_j \cup \bigcup_{R \in L_j} \{R_l, R_r\}, \tag{x}\]
+\[E_{j+1} = E_j \cup \bigcup_{R \in L_j} \{(R, R_l), (R,R_r)\}, \tag{xx}\]
+\[T_{j+1} = (V_{j+1}, E_{j+1}) \tag{xxx},\] i.e.~${R_l, R_r} \subset R$ are leaves in the new tree
+\(T_{j+1}\).
+
+Recursion is terminated if there is an equality of two consecutive trees \(T_j = T_{j+1}\). This happens when all leaves satisfy ending condition, i.e. \(L_j = \emptyset\).
+
+
+If \(L_j = \emptyset\), then the desired tree $T$ is the tree $T_j$, otherwise
+
+%TODO: do poznamky pod carou
+Note: Tree \(T_{j}\) is actually a Hasse diagram of the ordered set
+\((V_j,\subseteq)\).

@@ -60,13 +60,13 @@ Outlier
 Novelty
 : Novelty is an anomaly that is not present in the given dataset during learning. Novelties are usually supplied later during evaluation.
 
-Supervised algortihm
+Supervised algorithm
 : Supervised algorithm is to je to co chceme aby to bylo
 
-Unsupervised algortihm
+Unsupervised algorithm
 : Unsupervised algorithm is to je to co chceme aby to bylo
 
-Semisupervised algortihm
+Semi-supervised algorithm
 : Semi-supervised algorithm to je že máš labely jen napůl a chceš vědět které nedopovídají labelu
 
 
