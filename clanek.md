@@ -271,8 +271,10 @@ Note: Tree $T_{j}$ is actually a Hasse diagram of the ordered set $(V_j,\subsete
 Consider now a minified example with less datapoints.
 Figure X shows that the Px datapoint is assigned novelty. 
 The whole visible space in Figure X is considered a range (precomputed in advance, based on the given training set), and it is now splitting as we go deeper in the tree.
+Consequntly, two types of nodes are created.
+S1 - a set of nodes with ranges, where input data occures
+S2 - a set of nodes with ranges, where not input data 
 Again, each node is assigned a depth and the deeper the point is in the tree, the less probable it is for the point to be an anomaly.
-
 The Px datapoint gets assigned the depth of 3, which is realatively small compared to the rest of the nodes., které mají nějaké data z minulosti
 This is a crucial distinction which makes the novelty detection possible. 
 In the example in Figure X the max_depth=5 was sufficient to distinguish novelty datapoint. 
@@ -519,7 +521,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDU5MzY3MjcsLTEwNDg2OTAyNDUsMT
+eyJoaXN0b3J5IjpbLTE5MzgzMTUyMDksLTEwNDg2OTAyNDUsMT
 c1NjUyODQ3MSw4NTczMzE0MjIsMzYyMjA0NDMxLC0xMzQ1Mjc3
 NTY1LC0xNDM2MzkyNDU1LDE3ODkzNzI1MzAsLTIzMjI0NjM3LC
 0xMzUyNDE5ODk2LC0xODA5NzI0Mjg3LC0xMTM4OTAxNDM3LC0x
