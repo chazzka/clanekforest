@@ -1,0 +1,51 @@
+\section{Methods}
+\label{sec:methods}
+Traditional approaches for anomaly detection consist of either novelty
+detection or outlier detection. Novelty detection is an anomaly
+detection mechanism where we search for unusual observations that are
+discovered due to their differences from the training data. Novelty
+detection is a semi-supervised anomaly detection technique, whereas
+outlier detection uses unsupervised methods. With novelty detection, the
+training data is not polluted by anomalous elements, and we are
+interested in detecting whether a new observation is an anomaly. In this context, such points are also called novelties. This is a crucial
+distinction. The outlier detection is usually presented with data
+containing both anomalies and regular observation; it then uses
+mathematical models that try to make a distinction between them. The
+novelty detection, on the other hand, is usually presented with data with
+little to zero anomalies (the proportion of anomalies in the dataset is
+called a contamination), and later, when conferred with an anomalous
+observation, it makes a decision.
+
+Consider the following example: Figure \ref{fig:example0} contains random datapoints
+arranged in a way they form a cluster-like shape. Say this data is our
+regular observations.
+
+\begin{figure}[htbp]
+\centering
+\includesvg[width=0.9\textwidth]{figures/example0_gnu.svg}
+\caption{Example figure}
+\label{fig:example0}
+\end{figure}
+
+When an unsupervised, outlier detection algorithm tries to analyze such
+data, it sees the datapoints as a cluster containing both regular and
+anomalous observations. Figure X shows the result of evaluating
+classical Isolation Forest on such a dataset.
+
+\begin{figure}[htbp]
+\centering
+\includesvg[width=0.9\textwidth]{figures/example0_5_gnu.svg}
+\caption{Example figure}
+\label{fig:example05}
+\end{figure}
+
+Figure \ref{fig:example05} shows regular observations \(x\) and anomaly observations \(y\)
+marked by Isolation Forest
+(\texttt{batch\_size\ 128,\ trees\_count:\ 100,\ zbytek\ default}).
+Figure x shows that approx. \(10\%\) of observations are anomalies. This
+is not unwanted behavior in the sense of outlier detection but is false
+positive observation in the sense of novelty detection because this
+data are regular observations that should be marked so.
+
+Another problem is with the unsupervised separation itself. Consider data polluted by anomalies in close to \(1:1\) ratio. Finding the line
+itself is obvious. Deciding which observations are anomalies, without some domain knowledge, on the other hand, is close to impossible.

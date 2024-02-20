@@ -1,0 +1,79 @@
+\section{Isolation Forest}
+\label{sec:isolation_forest}
+
+Isolation Forest
+\cite{liu2008isolation} \cite{liu2012isolation} is an outlier
+detection, unsupervised ensemble algorithm. This approach is well known to successfully isolate outliers by using recursive partitioning (forming a tree-like structure) to decide whether the analyzed datapoint is an anomaly or not. The fewer partitions required to isolate, the more probable it is for a datapoint to be an anomaly.
+
+\paragraph{Isolation tree}
+Isolation Tree is a binary tree constructed with a subset of \(A\) items
+(datapoints) with the size \(s=|A|\).
+
+\begin{enumerate}
+    \item To build an isolation tree, it is not necessary to have a large set; it
+  may even be undesirable
+  \item Well-chosen small \(s\) can help eliminate \emph{masking} and
+  \emph{swamping}
+
+
+\begin{itemize}
+    \item \textbf{Masking} When the number of anomalies is high, it is possible that some of those aggregate in a dense and large cluster, making it more difficult to separate the single anomalies and, in turn, to detect such points as
+  anomalous.
+    \item \textbf{Swamping} When normal instances are too close to anomalies, the number of
+  partitions required to separate anomalies increase, which makes it more difficult for the Isolation Forest to discriminate between
+  anomalies and normal points.
+\end{itemize}
+
+\item There are two types of vertices
+
+\begin{itemize}
+    \item \textbf{Internal vertex} Internal vertex contains a condition (a feature and a limit) and two children (one
+  representing a fulfilled condition and the other an unfulfilled one)
+    \item \textbf{External vertex} External vertex is created if the conditions of the parents are met (or not met) by
+  one or none of the elements from the sample or the maximum depth of
+  the tree \(l\) is reached, usually \(l=\ln_2(s)\). It contains the
+  evaluation of \(h(x)\) using the distance from the root. If the max
+  length of the tree is reached the \emph{distance} is estimated using
+  \(h(x)=e+c(n)\), where \(e\) is the distance from the root, \(n\) is
+  the number of elements from the sample satisfying the conditions of
+  the parents, \(c(n)=2\,(H_{n-1}-\frac{n-1}{n})\) and \(H_{n-1}\) is
+  \(n-1\) harmonic number.
+\end{itemize}
+
+\end{enumerate}
+
+\subsection{Algorithm}
+
+\begin{enumerate}
+    \item Each of the vertices consists of dimension $d$ and a \textit{split point} $s$.
+    %TODO: PROJEKCE NA S -> pak minmax, nějaké \pi i -> do teorie!
+    %TODO: a) co znamená pí(i) z vektoru b) pí(i) z množiny
+    \item The split point is a random number from $\langle min_n, max_n \rangle$.
+\end{enumerate}
+
+In the following, we suppose an Euclidean space.
+
+Let us construct the decision tree $T$ such that:
+
+\begin{enumerate}
+    \item Maximal possible height of a tree is controlled by the \emph{max\_depth} parameter.
+    \item The sample \(S\) contains \emph{batch\_size} number of input datapoints.
+    \item Leaves and internal vertices are possibility-space hyperrectangles \(R\). 
+    \item Leaves' ending condition is satisfied by one of two criteria: 
+\begin{enumerate}
+    \item Leaf contains space \(R\) such that \(S \cap R = \emptyset\) or \(| S \cap R | = 1\).
+    \item Leaf's depth reached the \emph{max\_depth} value.
+\end{enumerate}
+\end{enumerate}
+
+
+% posem setjnÉ, tady musime minmax misto ranges:
+\subparagraph{Basis step}
+
+For each \(i \in\{1, \dots, n\}\), dimension \(d_i\) is bounded by the range \(r_i\). The ranges form the possibility-space hyperrectangle \(R_0\) as in:
+
+\[R_0 =  r_1 \times r_2 \times \cdots \times r_n  \tag{xx}\,.\]
+
+The trivial binary tree \(T_0\) is a tuple with
+vertices \(V_0 = \{R_0\}\) and edges \(E_0 = \emptyset\), i.e.
+\[T_0= (V_0, E_0) = (\{R_0\},\emptyset).\]
