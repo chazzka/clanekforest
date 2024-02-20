@@ -349,6 +349,8 @@ The novelty score $s_F(X)$ is then
 $$s_F(X) = 	2^{-\frac{E(h(X))}{c(X)}}.$$
 
 
+### dukazicek?
+
 Consider the following example.
 
 
@@ -508,7 +510,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMTc1MzM3NywtMjE0NjIwOTA5NywxOD
+eyJoaXN0b3J5IjpbLTM5MTE3MjQyOCwtMjE0NjIwOTA5NywxOD
 Q5NzE4ODYxLDIwMDA5NTAwMDIsMTQ5NjgwMDYwMCwtNzQxOTQy
 NTg2LC0xOTM4MzE1MjA5LC0xMDQ4NjkwMjQ1LDE3NTY1Mjg0Nz
 EsODU3MzMxNDIyLDM2MjIwNDQzMSwtMTM0NTI3NzU2NSwtMTQz
