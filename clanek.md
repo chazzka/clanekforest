@@ -271,11 +271,11 @@ Note: Tree $T_{j}$ is actually a Hasse diagram of the ordered set $(V_j,\subsete
 Consider now a minified example with less datapoints.
 Figure X shows that the Px datapoint is assigned novelty. 
 The whole visible space in Figure X is considered a range (precomputed in advance, based on the given training set), and it is now splitting as we go deeper in the tree.
-Consequntly, two types of nodes are created.
+Consequently, two types of nodes are created.
 S1 - a set of nodes with ranges, where input data occures
-S2 - a set of nodes with ranges, where not input data 
+S2 - a set of nodes with ranges created as remainders of range splitting (these do not play role in novelty decision)
 Again, each node is assigned a depth and the deeper the point is in the tree, the less probable it is for the point to be an anomaly.
-The Px datapoint gets assigned the depth of 3, which is realatively small compared to the rest of the nodes., které mají nějaké data z minulosti
+The Px datapoint gets assigned the depth of 3, which is realatively small compared to the rest of the nodes of S1, 
 This is a crucial distinction which makes the novelty detection possible. 
 In the example in Figure X the max_depth=5 was sufficient to distinguish novelty datapoint. 
 The first node here is the experimentally precomputed range.
@@ -521,11 +521,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzgzMTUyMDksLTEwNDg2OTAyNDUsMT
-c1NjUyODQ3MSw4NTczMzE0MjIsMzYyMjA0NDMxLC0xMzQ1Mjc3
-NTY1LC0xNDM2MzkyNDU1LDE3ODkzNzI1MzAsLTIzMjI0NjM3LC
-0xMzUyNDE5ODk2LC0xODA5NzI0Mjg3LC0xMTM4OTAxNDM3LC0x
-MzUwNTI0MjMwLC05MDM1MTAwNzksMTM4NDc2OTYxLC0xMjA5OT
-IyMzY2LC0xNDc4NTUwMzQwLDExNTg0Mzk3MywtMTY1ODE3Mjky
-OSwxMDc1OTM2MzA5XX0=
+eyJoaXN0b3J5IjpbLTYyMTk4MzM1OSwtMTkzODMxNTIwOSwtMT
+A0ODY5MDI0NSwxNzU2NTI4NDcxLDg1NzMzMTQyMiwzNjIyMDQ0
+MzEsLTEzNDUyNzc1NjUsLTE0MzYzOTI0NTUsMTc4OTM3MjUzMC
+wtMjMyMjQ2MzcsLTEzNTI0MTk4OTYsLTE4MDk3MjQyODcsLTEx
+Mzg5MDE0MzcsLTEzNTA1MjQyMzAsLTkwMzUxMDA3OSwxMzg0Nz
+Y5NjEsLTEyMDk5MjIzNjYsLTE0Nzg1NTAzNDAsMTE1ODQzOTcz
+LC0xNjU4MTcyOTI5XX0=
 -->
