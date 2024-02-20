@@ -278,7 +278,7 @@ Again, each node is assigned a depth and the deeper the point is in the tree, th
 The Px datapoint gets assigned the depth of 3, which is realatively small compared to the rest of the nodes of S1, 
 This is a crucial distinction which makes the novelty detection possible. 
 In the example in Figure X the max_depth=5 was sufficient to distinguish novelty datapoint. 
-The first node here is the experimentally precomputed range.
+The first node here has experimentally precomputed range.
 
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_novelty_gnu_clanek.svg) 
 > Figure example 4 Isolation Forest novelty point insertion using our novelty approach. Squares being points fed after the learning. 
@@ -299,7 +299,6 @@ Figure X shows the binary tree diagram created during the learning phase of the 
 The first node here is the minmax of the dataset.
 Instead, since we use original Outlier detection method, the nodes represent minmax values.
 Observe that, the depth was still exactly 5, however the topology is slightly different.
-TODO: TED TO MUSI VYJIT TAK ZE TEN MALY BOD MODRY BUDE CERNY - OK
 
 ![](https://raw.githubusercontent.com/forest-implementation/ml-experiment/main/figures/example4_noutlier_gnu_clanek.svg)
 > Figure X Isolation Forest novelty point insertion using original approach. Graphical view.
@@ -309,8 +308,6 @@ TODO: TED TO MUSI VYJIT TAK ZE TEN MALY BOD MODRY BUDE CERNY - OK
 
  
 ### evaluate novelty tree
-
-# todo: adam ukaze s novym bodem Px, ukaz jen outlier / novelty
 The goal of the evaluation is to get the novelty value of a datapoint.
 The evaluation phasis starts with a constructed tree. 
 The observed datapoint recursively traverses from the root down the tree up to the leaf so that:
@@ -521,7 +518,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMTk4MzM1OSwtMTkzODMxNTIwOSwtMT
+eyJoaXN0b3J5IjpbLTc0MTk0MjU4NiwtMTkzODMxNTIwOSwtMT
 A0ODY5MDI0NSwxNzU2NTI4NDcxLDg1NzMzMTQyMiwzNjIyMDQ0
 MzEsLTEzNDUyNzc1NjUsLTE0MzYzOTI0NTUsMTc4OTM3MjUzMC
 wtMjMyMjQ2MzcsLTEzNTI0MTk4OTYsLTE4MDk3MjQyODcsLTEx
