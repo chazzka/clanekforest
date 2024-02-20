@@ -272,7 +272,7 @@ Consider now a minified example with less datapoints.
 Figure X shows that the Px datapoint is assigned novelty. 
 The whole visible space in Figure X is considered a range (precomputed in advance, based on the given training set), and it is now splitting as we go deeper in the tree.
 Again, each node is assigned a depth and the deeper the point is in the tree, the less probable it is for the point to be an anomaly.
-The Px datapoint gets assigned the depth of 3, which is lower than the adjoining area. 
+The Px datapoint gets assigned the depth of 3, which is realatively small compared to the rest of the nodes.
 This is a crucial distinction which makes the novelty detection possible. 
 In the example in Figure X the max_depth=5 was sufficient to distinguish novelty datapoint. 
 The first node here is the experimentally precomputed range.
@@ -518,7 +518,7 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNzI3MDA3MSw4NTczMzE0MjIsMzYyMj
+eyJoaXN0b3J5IjpbMTc1NjUyODQ3MSw4NTczMzE0MjIsMzYyMj
 A0NDMxLC0xMzQ1Mjc3NTY1LC0xNDM2MzkyNDU1LDE3ODkzNzI1
 MzAsLTIzMjI0NjM3LC0xMzUyNDE5ODk2LC0xODA5NzI0Mjg3LC
 0xMTM4OTAxNDM3LC0xMzUwNTI0MjMwLC05MDM1MTAwNzksMTM4
