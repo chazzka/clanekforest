@@ -292,9 +292,9 @@ Figure X shows the binary tree diagram created during the learning phase of the 
 The nodes are representing ranges now.
 By counting the levels of the created tree, we can observe that the maximum depth was exactly 5.
 
-However, in the plot Figure X we can see the post-computed values of pathlengths.
-Observe, that each level is selected a random dimension and retains on it until the next level.
+In the plot Figure X we can also see the post-computed values of pathlengths (explained later).
 
+Observe, that each level is selected a random dimension and retains on it until the next level.
 Figure X shows the binary tree diagram created during the learning phase of the plain old Outlier detection Isolation Forest.
 The first node here is the minmax of the dataset.
 Instead, since we use original Outlier detection method, the nodes represent minmax values.
@@ -519,11 +519,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NjgwMDYwMCwtNzQxOTQyNTg2LC0xOT
-M4MzE1MjA5LC0xMDQ4NjkwMjQ1LDE3NTY1Mjg0NzEsODU3MzMx
-NDIyLDM2MjIwNDQzMSwtMTM0NTI3NzU2NSwtMTQzNjM5MjQ1NS
-wxNzg5MzcyNTMwLC0yMzIyNDYzNywtMTM1MjQxOTg5NiwtMTgw
-OTcyNDI4NywtMTEzODkwMTQzNywtMTM1MDUyNDIzMCwtOTAzNT
-EwMDc5LDEzODQ3Njk2MSwtMTIwOTkyMjM2NiwtMTQ3ODU1MDM0
-MCwxMTU4NDM5NzNdfQ==
+eyJoaXN0b3J5IjpbMjAwMDk1MDAwMiwxNDk2ODAwNjAwLC03ND
+E5NDI1ODYsLTE5MzgzMTUyMDksLTEwNDg2OTAyNDUsMTc1NjUy
+ODQ3MSw4NTczMzE0MjIsMzYyMjA0NDMxLC0xMzQ1Mjc3NTY1LC
+0xNDM2MzkyNDU1LDE3ODkzNzI1MzAsLTIzMjI0NjM3LC0xMzUy
+NDE5ODk2LC0xODA5NzI0Mjg3LC0xMTM4OTAxNDM3LC0xMzUwNT
+I0MjMwLC05MDM1MTAwNzksMTM4NDc2OTYxLC0xMjA5OTIyMzY2
+LC0xNDc4NTUwMzQwXX0=
 -->
