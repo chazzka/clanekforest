@@ -267,6 +267,8 @@ i.e. $R_l$ is the left leaf of $R$ and $R_r$ right leaf of $R$ in the new tree $
 
 Note: Tree $T_{j}$ is actually a Hasse diagram of the ordered set $(V_j,\subseteq)$.
 
+
+
 ### example 1 - Novelty
 
 Consider now a minified example with less datapoints.
@@ -510,11 +512,11 @@ lof: shuttle.csv - super
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MTE3MjQyOCwtMjE0NjIwOTA5NywxOD
-Q5NzE4ODYxLDIwMDA5NTAwMDIsMTQ5NjgwMDYwMCwtNzQxOTQy
-NTg2LC0xOTM4MzE1MjA5LC0xMDQ4NjkwMjQ1LDE3NTY1Mjg0Nz
-EsODU3MzMxNDIyLDM2MjIwNDQzMSwtMTM0NTI3NzU2NSwtMTQz
-NjM5MjQ1NSwxNzg5MzcyNTMwLC0yMzIyNDYzNywtMTM1MjQxOT
-g5NiwtMTgwOTcyNDI4NywtMTEzODkwMTQzNywtMTM1MDUyNDIz
-MCwtOTAzNTEwMDc5XX0=
+eyJoaXN0b3J5IjpbLTEzMzI4Mzc4MDAsLTIxNDYyMDkwOTcsMT
+g0OTcxODg2MSwyMDAwOTUwMDAyLDE0OTY4MDA2MDAsLTc0MTk0
+MjU4NiwtMTkzODMxNTIwOSwtMTA0ODY5MDI0NSwxNzU2NTI4ND
+cxLDg1NzMzMTQyMiwzNjIyMDQ0MzEsLTEzNDUyNzc1NjUsLTE0
+MzYzOTI0NTUsMTc4OTM3MjUzMCwtMjMyMjQ2MzcsLTEzNTI0MT
+k4OTYsLTE4MDk3MjQyODcsLTExMzg5MDE0MzcsLTEzNTA1MjQy
+MzAsLTkwMzUxMDA3OV19
 -->
