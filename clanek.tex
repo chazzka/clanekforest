@@ -39,8 +39,11 @@
 \usepackage{amssymb}
 \usepackage{svg}
 \usepackage{amsmath}
+\usepackage{amsthm}
 
-
+\newtheorem{example}{Example}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
 
 %% The amsthm package provides extended theorem environments
 %% \usepackage{amsthm}
@@ -168,7 +171,6 @@ keyword one \sep keyword two
 
 \include{sections/novelty_isolation_forest}
 
-\include{sections/examples}
 
 %% If you have bibdatabase file and want bibtex to generate the
 %% bibitems, please use

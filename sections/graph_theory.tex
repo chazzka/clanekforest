@@ -1,16 +1,39 @@
 \section{Graph Theory}
 \label{sec:graph_theory}
-Tady budeme muset popsat odstaveček k teorii grafů a ujasnit si pojmy, které budeme používat napříč celým článkem
 
-slova co jsme použili:
+The theoretical framework used in this article is centered mainly around the graph theory.
+The definitions used in this section are based on Rosen et.al in \cite{rosen2012discrete}. Since the isolation forest is composed of trees, we define a tree as a directed graph.
 
+\begin{definition}
+Directed graph (or digraph) $D = (V, E)$ consists of a nonempty set of vertices $V$ and a set of directed edges $E \in V \times V$. Each directed edge is an ordered pair of vertices.
+The directed edge $(u, v)$ is said to start at $u$ and end at $v$.
+\end{definition}
+
+A digraph comprises vertices leading from one ancestor to another, forming a path.
+
+\begin{definition}
+For digraph $D = (V,E)$ we define:
 \begin{itemize}
-    \item graph
-    \item vertex
-    \item edges
-    \item depth??
-    \item tree
-    \item associated with - Each vertex \(R\) is associated with two new edges
+    \item Ancestor of vertex $v \in V$ is a vertex $v' \in V$ such that $(v,v') \in E$. We say that $v$ is \emph{associated with} $v'$.
+    \item Path $P$ from vertex $v_0 \in V$ to vertex $v_n \in V$ is finite set of edges $P \subseteq E$, such that: $$P = \{(v_0, v_1),(v_1, v_2),\dots(v_{n-1}, v_n)\}.$$
+      The empty set $P = \emptyset$ is a trivial path from $v$ to $v$ for every $v \in V$.
+    
 \end{itemize}
+\end{definition}
 
-vertex, depth, path length, root, leaf...
+With the isolation tree starting at the root, we define a rooted tree.
+
+\begin{definition}
+Rooted tree is a digraph $T = (V,E)$ with a single vertex $r \in V$ designated as the root, with exactly one path from $r$ to $v$ for each $v \in V$.
+\end{definition}
+
+To be able to evaluate the isolation tree, we have to define several tree-specific attributes.
+
+\begin{definition}
+For rooted tree $T = (V,E)$ we define:
+\begin{itemize}
+    \item depth of $v \in V$ is a size of path $P$ from root to $v$.
+    \item vertex $v \in V$ is called a leaf if it has no ancestors. Vertices that have ancestors are called internal vertices.
+    \item to traverse tree $T$ is to take path $P$ from root to leaf. If $(v,v') \in P$, we say that we \emph{visit} $v$ and $v'$ during traversing.
+\end{itemize}
+\end{definition}
