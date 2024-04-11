@@ -1,3 +1,53 @@
 \section{Introduction}
 \label{sec:introduction}
-Tady popíšeme obecně jak se snažíme detekovat anomalie, proč je to důležité, tisice citací na lidi kteří detekují anomalie, pak už víc k novelty detection, ukázat jak se to dělalo dřív co je cílem a proč to může být problem a nakonec uplně specificky co my chceme udělat
+% Tady popíšeme obecně jak se snažíme detekovat anomalie, proč je to důležité, tisice citací na lidi kteří detekují anomalie, pak už víc k novelty detection, ukázat jak se to dělalo dřív co je cílem a proč to může být problem a nakonec uplně specificky co my chceme udělat
+
+% několik bodů
+
+% general to specific, hodně citací
+
+% 1. nejdřív popíšeme že datamining je nějaké automatizované zpracování dat, může hledat vzory, citace, může hledat clustery, citace, může hledat anomalie
+% ukaž tu hlavně algoritmy, ne konkretni aplikace, možná jednu větu ke každému?
+
+
+Datamining is a vast topic where we use automation mechanisms to process large data in various formats. That could be binary data from numerous electromechanical sensors, numerical data serialized by some processing computer, or even nominal data stored in the database.
+Datamining algorithms can be used to find specific patterns in data, which is a topic of a pattern mining subfield. Algorithms in this subfield solve tasks like sequential mining of patterns \cite{agrawal1995mining} or frequent-itemset mining \cite{agrawal1994fast}. 
+Some solutions lay in mining for similarities in data. Such similarities often form a batch in specific parts of analyzed space. It can be formed when specific attributes correlate. Another subfield of data mining focuses on identifying these batches --- also called clusters in data. Various clustering algorithms have been developed, such as DBSCAN \cite{Ester1996dbscan} or \(k\)-means \cite{lloyd1982kmeans} and their successful derivates.
+With the recent upsurge of IOT, a subfield of anomaly data mining has become popular. Oftentimes, the data obtained is not what we expected it to be. Such data differ significantly from the rest and can be identified as anomalies.
+
+
+% 2. teď popíšu teda co jsou ty anomalie, proč je chceme hledat, furu citaci na članky na algoritmy, kde se hledaji anomalie, opět jednu větu ke každému
+
+Depending on the specific domain, anomaly detection problems can be viewed in various ways. There are anomaly detectors based on statistics (Z-score or Grubbs's test \cite{grubbs1949sample}), clusters \cite{he2003discovering} and density-based methods like Isolation Forest \cite{liu2008isolation}, \cite{liu2012isolation}.
+
+
+% 3. ted už konkretně na outlier vs novelty se zaměřením na novelty, ukaž tu svm, linear svm, lof
+
+Usually, anomaly detection is used to solve one of the following tasks (see Markou et al. in \cite{MARKOU20032481}).
+\begin{description}
+    \item[Outlier Detection]  task with all of the data available in advance, and the algorithm is to identify outlying anomalies. This process is unsupervised since no labels are available in advance for the input data.
+    \item[Novelty Detection]  task with the majority of regular data available in advance and no anomalies. The algorithm is to learn how the regular data looks and later identify anomalies (in this scenario called \emph{novelties}).
+\end{description}
+
+Novelty detection is a semi-supervised technique for detecting anomalies (\emph{novelties}) unavailable in the training set.
+The first algorithm that is mentioned when talking about novelty detection is the One-class SVM algorithm \cite{tax2004support}. This algorithm is often referred to as a novelty detection algorithm. It learns from the input data that it surrounds; hence, it can identify data outside this boundary.
+This algorithm is based on quadratic programming, although there is an enhancement based on linear programming by Zhou et al. in \cite{ZHOU20022927}.
+Another novelty detection algorithm is called the Local Outlier Factor from the family of distance-based algorithms \cite{breunig2000lof} that assigns each object a degree of being an anomaly.
+
+
+
+% 4. a tady už konkrétní problem, proč teda my tvoříme novelty detection algoritmus, protože jsme potřebovali něco jiného než lof a pracovali jsme s isolation forestem, ktery dobře fungoval na outliery a krásně šlo přidávat stromy další a my chtěli zachovat tu myšlenku toho kooperativního algoritmu více stromů ale použít v semi supervised manneru
+Elaborate research in the topic of novelty detectors has highlighted several properties that are determining when dealing with such problems. First of all, the novelty detection algorithm should be semi-supervised (that is, able to be learned on first, and evaluated later). Then, the algorithm should be able to work with \(n\)-dimensional spaces. Last but not least, the algorithm should evaluate both data seen during the learning phase as well as those never seen before. Only then the novelty detector is able to work properly. 
+
+In this article, we propose a new algorithm for novelty detection.
+The core of this algorithm is based on the Liu's et al. Isolation Forest \cite{liu2008isolation}, \cite{liu2012isolation}.
+It builds on the idea of the binary decision tree and alters the process of building and later evaluating the decision tree to be able to isolate novelty anomalies.
+The main task is to utilize the competition of trees and a scalability of the original Isolation Forest in order to come up with a solid and adaptable novelty detector.
+In this article, we provide a description of a new Novelty Isolation Forest algorithm.
+First, we provide a theoretical framework for both original and new Isolation forest algorithm.
+We then contribute with examples of how to use it in order to build and evaluate the tree.
+With this framework brought up, we show the distinction between those two algorithms together with the examples of using them in novelty search scenarios.
+%TODO: ODDELAT pokud se to nepovede
+Lastly, we provide proofs to the proposed methodologies.
+
+

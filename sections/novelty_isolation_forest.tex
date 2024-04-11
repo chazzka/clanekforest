@@ -305,3 +305,175 @@ Now, if we look at the resulting tree in Figure \ref{fig:example_novelty_tree_co
 \caption{Tree constructed using the enhanced novelty approach}
 \label{fig:example_novelty_tree_color}
 \end{figure}
+
+
+\paragraph{Proof: Novelty approach}
+To prove the resulting depth using the novelty approach, we calculate the expected value of depth for each point $p$, considering all possible trees that would isolate $p$ and their respective paths.
+We start with given range $\langle 0, 110.0\rangle \times \langle -5.0, 105.0\rangle$.
+
+% 3Hy
+The first point to consider is the $[25,100]$. Here, there is only one way to isolate this point: using three horizontal splits. Since the vertical splits do not matter in this case, there could be any number of them; hence, we get the expected value of depth as:
+
+$$\sum_{n=3}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n = 6$$    
+
+% 4Vx or 2Vx + 5Hy
+The second point in our sample is $[20,90]$. Here, there are more ways to isolate this point. That is by exactly four vertical splits (and any number of horizontals) or by exactly five horizontal and two vertical splits. To get the expected value for all the possible scenarios, we must calculate their probabilities. 
+
+In the first scenario - exactly four vertical splits - we calculate the probabilities of four vertical splits and any number of horizontal up to five. Five horizontal splits scenario interferes with the second possible isolation:
+
+\begin{center}
+\begin{tabular}{||c c||} 
+ \hline
+ Depth & Probability \\ [1ex] 
+ \hline
+ 4 & $\binom{3}{3}\cdot \frac{1}{2^4}$\\ 
+ \hline
+ 5 & $\binom{4}{3}\cdot \frac{1}{2^5}$  \\
+ \hline
+ 6 & $\binom{5}{3}\cdot \frac{1}{2^6}$  \\
+ \hline
+ 7 & $\binom{6}{3}\cdot \frac{1}{2^7}$  \\
+ \hline
+ 8 & $\binom{7}{3}\cdot \frac{1}{2^8}$ \\ [1ex] 
+ \hline
+\end{tabular}
+\end{center}
+
+We can generalize this as:
+
+$$\sum_{n=4}^{8}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n$$
+
+To simplify the second scenario - two vertical and five horizontal splits - we divide it into two sub-scenarios.
+\begin{enumerate}
+    \item Sub-scenario - the last split is vertical (vysvetli proc zaciname sedmickou)
+
+\begin{center}
+\begin{tabular}{||c c||} 
+ \hline
+ Depth & Probability \\ [1ex] 
+ \hline
+ 7 & $\binom{6}{1}\cdot \frac{1}{2^7}$\\ 
+ \hline
+ 8 & $\binom{7}{1}\cdot \frac{1}{2^8}$  \\
+ \hline
+ 9 & $\binom{8}{1}\cdot \frac{1}{2^9}$  \\
+ \hline
+ ... & ... \\ [1ex] 
+ \hline
+\end{tabular}
+\end{center}
+We generalize this as:
+$$\sum_{n=7}^{\infty}\binom{n-1}{1}\cdot \frac{1}{2^n}\cdot n$$
+\item Sub-scenario - the last split is horizontal
+\begin{center}
+\begin{tabular}{||c c||} 
+ \hline
+ Depth & Probability \\ [1ex] 
+ \hline
+ 7 & $\binom{6}{4}\cdot \frac{1}{2^7}$\\ 
+ \hline
+ 8 & $\binom{7}{4}\cdot \frac{1}{2^8}$  \\[1ex] 
+ \hline
+\end{tabular}
+\end{center}
+We generalize this as: 
+$$\sum_{n=7}^{8}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n$$
+\end{enumerate}
+
+Note that the sum of all the scenarios should equal to 1.
+$$\sum_{n=4}^{8}\binom{n-1}{3}\cdot \frac{1}{2^n} +
+\sum_{n=7}^{\infty}\binom{n-1}{1}\cdot \frac{1}{2^n} +
+\sum_{n=7}^{8}\binom{n-1}{4}\cdot \frac{1}{2^n} = 1
+$$
+
+The third point in the sample is $[15,85]$. We need four vertical splits or two vertical and five horizontal splits to isolate this point. That is the same scenario as the previous point $[20,90]$; hence we omit this.
+
+%4. (30,90) 5Vx or 2Vx + 5Hy
+The fourth point in the sample is $[30,90]$. We need either five vertical splits or two vertical and five horizontal splits to isolate this point.
+
+Similarly to the previous point, we simplify this by creating more sub-scenarios.
+The first scenario - five horizontal splits - is 
+$$\sum_{n=5}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n$$
+
+The second scenario is once more dependent on whether the last split was horizontal or vertical.
+
+\begin{enumerate}
+    \item Sub-scenario - the last split is vertical
+    $$\sum_{n=7}^{\infty}\binom{n-1}{1}\cdot \frac{1}{2^n}\cdot n$$
+    \item Sub-scenario - the last split is horizontal
+    $$\sum_{n=7}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n$$
+\end{enumerate}
+
+The fifth point in the sample is $[35,85]$.  We need four vertical splits to isolate this point. That is four vertical splits and any number of horizontal splits before, generalized as:
+
+$$\sum_{n=4}^{\infty}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n$$
+
+%5Vx + 3Hy || 4Vx + 5Hy
+The sixth point in the sample is $[25,85]$. We need five vertical and three horizontal splits or four vertical and five horizontal splits to isolate this point.
+Let us begin with the first scenario, five vertical and three horizontal splits. We divide it into more sub-scenarios:
+
+\begin{enumerate}
+    \item Sub-scenario - the last split is vertical
+\begin{center}
+\begin{tabular}{||c c||} 
+ \hline
+ Depth & Probability \\ [1ex] 
+ \hline
+ 8 & $\binom{7}{4}\cdot \frac{1}{2^8}$\\ 
+ \hline
+ 9 & $\binom{8}{4}\cdot \frac{1}{2^9}$  \\[1ex] 
+ \hline
+\end{tabular}
+\end{center}
+We generalize this as: 
+$$\sum_{n=8}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n$$
+\item Sub-scenario - the last split is horizontal
+    \begin{center}
+\begin{tabular}{||c c||} 
+ \hline
+ Depth & Probability \\ [1ex] 
+ \hline
+ 8 & $\binom{7}{2}\cdot \frac{1}{2^8}$\\ 
+ \hline
+ 9 & $\binom{8}{2}\cdot \frac{1}{2^9}$  \\[1ex] 
+ \hline
+\end{tabular}
+\end{center}
+We generalize this as: 
+$$\sum_{n=8}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n$$
+\end{enumerate}
+
+In the second scenario, four vertical and five horizontal, we are left with the last two sub-scenarios:
+
+\begin{enumerate}
+    \item Sub-scenario - the last split is vertical
+\begin{center}
+\begin{tabular}{||c c||} 
+ \hline
+ Depth & Probability \\ [1ex] 
+ \hline
+ 9 & $\binom{8}{3}\cdot \frac{1}{2^9}$\\ 
+ \hline
+ 10 & $\binom{9}{3}\cdot \frac{1}{2^10}$  \\
+ \hline
+ ... & ... \\ [1ex] 
+  \hline
+\end{tabular}
+\end{center}
+We generalize this as: 
+$$\sum_{n=9}^{\infty}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n$$
+\item Sub-scenario - the last split is horizontal. Here, only 9 splits are possible since in ten splits, there would be five vertical splits, making it the previous scenario.
+    \begin{center}
+\begin{tabular}{||c c||} 
+ \hline
+ Depth & Probability \\ [1ex] 
+ \hline
+ 9 & $\binom{8}{4}\cdot \frac{1}{2^9}$\\ [1ex]
+ \hline
+\end{tabular}
+\end{center}
+\end{enumerate}
+
+Using this, we can prove that our novelty point $[25,20]$ gets the expected depth of 3:
+
+$$\sum_{n=1}^{\infty}\binom{n+1}{1}\cdot \frac{1}{2^n}\cdot n = 3$$
