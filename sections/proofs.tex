@@ -1,0 +1,518 @@
+\paragraph{Proof: Original approach}
+To show the resulting depth using the original approach, we find all possible paths that would isolate the given point. Then, for each of the possible paths, we calculate its probability.
+
+% Node(Union{Number, Tuple{Vararg{T, N}} where {N, T}}[(25, 100)], BigRationals.BigRational(1,
+% 179159040), 7, @NamedTuple{dim::Int64, range::UnitRange{Int64}}[(dim = 1, range = 95:105), (dim = 2, range = 10:15), (dim = 1, range = 90:95), (dim = 2, range = 20:30), (dim = 1, range = 30:35), (dim = 1, range = 15:20), (dim = 2, range = 90:100)])
+
+% na zacakatu name X moznosti jak vybrat splitpoint
+
+% pro nejaky bod vam ukazeme jak se pocita pravedpodobnost
+% julie nam ukaze split dehpth (12 SP 345)
+% pravepodobnost prvniho splitpointu (geometricka) sprangemax-sprangemin/rangemax - rangemin
+% viz tabule 1/2* cosi minus cosi, jak se pocita je v julii
+% tim poslednim split pointem je bod tedy izolovan
+% jeste to ukazeme pro novelty bod, ukazeme ze zustane v hrnicku s bodem nahore a nebo s bodem vpravo dole
+% tim ukazeme pravdepodobnost pro jeden pripad, je toho moc tak viz tabulka
+% Node.new(data => $($[25, 85],), prob => <11/18662400>, depth => 7, split => [0 => 95..105, 0 => 90..95, 1 => 85..90, 1 => 10..20, 0 => 35..90, 0 => 25..35, 0 => 15..25])
+% 15-105
+% 15-20-25-30-35-90-95-105
+
+For the point $[25,85]$, consider one of the possible paths that orphan the given point.
+
+We start with the whole observable space, a range of $\langle 15, 105\rangle$ for the first dimension $x$ and $\langle 10,100\rangle$ for the dimension $y$.
+First, the dimension $x$ and a split point in the $\langle 95, 105\rangle$ range were chosen. The possible range where the split point could have been chosen was $\langle 15,105\rangle$.
+The probability of selecting $x$ is $0.5$ due to the two-dimensional setting.
+The probability of the split point being from the given range is $\frac{105-95}{105-15}$, where the nominator is the size of the favorable range, and the denominator is the size of the whole possible range.
+% Let $p(\langle 95, 105\rangle_x)$ be the probability of $n$ splits.
+The probability of such event is then $$\frac{1}{2}\cdot\frac{105-95}{105-15} = \frac{1}{18}.$$
+Since the given point is not yet orphaned, we continue this way. The observable space is now scaled down due to the split point to the range of $\langle 15, 95\rangle$ for the first dimension $x$ and $\langle 10,100\rangle$ for the second $y$. Table x shows the rest of the probabilities for this path.
+
+\begin{table}[h]
+\label{prob_table_25_85}
+\centering
+\begin{tblr}{
+    width=\linewidth,
+    hspan=minimal,
+    cells={font=\footnotesize},
+    colspec={c c c c c},
+    %colsep=1pt,
+    row{1}={guard},
+    column{1-5}={mode=math}
+}
+Start space & Dim. & Split range & Probability & End space \\
+\hline
+\langle 15, 105\rangle \times \langle 10, 100\rangle & x & \langle 95, 105\rangle &  \frac{1}{2}\cdot\frac{105-95}{105-15} = \frac{1}{18} & \langle 15, 95\rangle \times \langle 10, 100\rangle \\
+\langle 15, 95\rangle \times \langle 10, 100\rangle & x & \langle 90, 95\rangle &  \frac{1}{2}\cdot\frac{95-90}{95-15} = \frac{1}{32} & \langle 15, 90\rangle \times \langle 10, 100\rangle \\
+\langle 15, 90\rangle \times \langle 10, 100\rangle & y & \langle 85, 90\rangle &  \frac{1}{2}\cdot\frac{90-85}{100-10} = \frac{1}{36} & \langle 15, 90\rangle \times \langle 10, 85\rangle \\
+\langle 15, 90\rangle \times \langle 10, 85\rangle & y & \langle 10, 20\rangle &  \frac{1}{2}\cdot\frac{20-10}{85-10} = \frac{1}{15} & \langle 15, 90\rangle \times \langle 20, 85\rangle \\
+\langle 15, 90\rangle \times \langle 20, 85\rangle & x & \langle 35, 90\rangle &  \frac{1}{2}\cdot\frac{90-35}{90-15} = \frac{11}{30} & \langle 15, 35\rangle \times \langle 85, 85\rangle \\
+\langle 15, 35\rangle \times \langle 85, 85\rangle & x & \langle 25, 35\rangle &  \phantom{\frac{1}{2}\cdot}\frac{35-25}{35-15} = \frac{11}{30} & \langle 15, 25\rangle \times \langle 85, 85\rangle \\
+\langle 15, 25\rangle \times \langle 85, 85\rangle & x & \langle 15, 25\rangle &  \phantom{\frac{1}{2}\cdot}\frac{25-15}{25-15} = \frac{1}{1} & \langle 25, 25\rangle \times \langle 85, 85\rangle
+\end{tblr}
+\caption{Probabilities of depths for point $[25,85]$.}
+\end{table}
+
+
+% cela cesta je pak takto: - vypisu ty vypocty
+% cela pravdepodobnost je pak ze to cele vynasobim
+% a reknu aha path je tedy 7 protoze to dal neslo
+
+Note that rows $6$ and $7$ no longer contain the probability of selecting the dimensions since the second dimension cannot be chosen as it would not isolate any point (see the startspace of $y$ as $\langle 85, 85\rangle$).
+The evaluation ends after seven splits (depth = $7$) since that is the last split to isolate the given point.
+The probability of this case is then $\frac{1}{18}\cdot\frac{1}{32}\cdot\dots\cdot\frac{1}{2}\cdot 1$.
+
+If we do this for all possible cases and points, we get the probabilities for the individual depths that could result in orphaning a given point. Table \ref{table_big_original} shows the probabilities for all possible depths. This is later used to calculate the expected depth value.
+Due to the symetricity, the probabilities for the points in the bottom right corner in the figure \ref{fig:example_noutlier_gnu} are the same as those in the top left corner, so we only show the latter.
+
+Let us recall the initial problem in Section \ref{sec:InitialProblem}.
+If we consider the novelty point $[25,20]$, the evaluation results in the same path as the point $[25,85]$ in Table \ref{prob_table_25_85}. However, the novelty point no longer fits in the start space for the sixth and seventh rows. Nevertheless, because datapoint $[25,20]$ satisfies  $25 \le z \in \langle 25, 35 \rangle$,  $[25,20]$ is assigned to a vertex $\langle 15, 25 \rangle \times \langle 85, 85 \rangle$ even though $[25,20] \notin \langle 15, 25 \rangle \times \langle 85, 85 \rangle$.
+
+Note that the path for the novelty point $[25,20]$ is a path of the $[25,85]$ (the vertical neighbor) or the $[90,20]$ (the horizontal neighbor).
+
+
+
+\begin{sidewaystable}[p]
+\label{table_big_original}
+\begin{tblr}{
+    width=\linewidth,
+    hspan=minimal,
+    cells={font=\footnotesize},
+    cell{1}{1-11}={halign=c},
+    column{odd}={gray9},
+    %colsep=1pt,
+    colspec={
+    c |
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    },
+    row{1}={guard},
+    column{1}={guard, mode=math}
+}
+ \diagbox{Point}{Depth} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\
+ \hline
+\left[25, 100\right] & 5.5555555556E-02 & 2.5103323737E-01 & 2.5570744502E-01 & 2.4773022596E-01 & 1.3819675888E-01 & 4.3771373491E-02 & 7.2084454376E-03 & 7.4839864762E-04 & 4.6942907037E-05 & 1.5970541667E-06 & 1.9690558403E-08\\
+\left[20, 90\right] & 0 & 3.5539215686E-02 & 1.7775615069E-01 & 4.0676493336E-01 & 2.6984418116E-01 & 9.2561204648E-02 & 1.5747066825E-02 & 1.6759728793E-03 & 1.0748807222E-04 & 3.7394349905E-06 & 4.7254206811E-08\\
+\left[30, 90\right] & 0 & 1.3368055556E-02 & 1.6859439869E-01 & 4.1552713020E-01 & 2.8292729344E-01 & 9.9767533944E-02 & 1.7705833609E-02 & 1.9721214421E-03 & 1.3271521257E-04 & 4.8533703768E-06 & 6.4529234241E-08\\
+\left[35, 85\right] & 0 & 9.7486772487E-02 & 2.5792650002E-01 & 3.2462216793E-01 & 2.4112764708E-01 & 6.6916307461E-02 & 1.0752400748E-02 & 1.0967974134E-03 & 6.8988815370E-05 & 2.3864551481E-06 & 3.1601016673E-08 \\
+\left[25, 85\right] & 0 & 0 & 2.4722562636E-02 & 3.0688106140E-01 & 4.7133742736E-01 & 1.6542794157E-01 & 2.8432586746E-02 & 3.0013428173E-03 & 1.9044983168E-04 & 6.5444606635E-06 & 8.3183446589E-08 \\
+\left[15, 85\right] & 2.7777777778E-02 & 1.2482638889E-01 & 2.5516544084E-01 & 3.0935396980E-01 & 2.1892437075E-01 & 5.5415608206E-02 & 7.8217752227E-03 & 6.7869855413E-04 & 3.5013796136E-05 & 9.4653744554E-07 & 9.6253761386E-09\\
+\hline
+\left[20, 25\right] & 0 & 3.5693536674E-02 & 1.8350184759E-01 & 3.4881778276E-01 & 3.4168298237E-01 & 8.0460443076E-02 & 9.2155826505E-03 & 6.0623378611E-04 & 2.1232873030E-05 & 3.5512746939E-07 & 3.0996586909E-09
+\end{tblr}
+\caption{Probabilities for individual data points, original approach.}
+\end{sidewaystable}
+
+
+\paragraph{Proof: Novelty approach}
+To prove the resulting depth using the novelty approach, we calculate the expected value of depth for each point $p$, considering all possible trees that would isolate $p$ and their respective paths. Contrary to the previous proof, we can get infinite splits, resulting in infinite depth.
+We start with given range $\langle 0, 110.0\rangle \times \langle -5.0, 105.0\rangle$.
+
+% 3Hy
+The first point to consider is the $[25,100]$. There is only one way to isolate this point: using three horizontal splits. This is the only scenario S1 for this point. Table \ref{table_25_100} shows the probabilities for individual depths. Since the vertical splits do not matter in this case, there could be any number of them; hence, we get the expected value of depth as:
+
+$$\sum_{n=3}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n = 6$$
+
+%first point 25,100
+\begin{table}[h]
+\label{table_25_100}
+\centering
+\begin{tblr}{
+    width=\linewidth,
+    hspan=minimal,
+    cells={font=\footnotesize},
+    colspec={c| c |c},
+    column{odd}={gray9},
+    %colsep=1pt,
+    row{1}={guard},
+    column{1-3}={guard, mode=math}
+}
+ \diagbox{Depth}{Probab.} & S1 & \sum \\
+ \hline
+3 & \binom{2}{2}\cdot\frac{1}{2^3} & \frac{1}{8} \\
+4 & \binom{3}{2}\cdot\frac{1}{2^4} & \frac{3}{16} \\
+5 & \binom{4}{2}\cdot\frac{1}{2^5} & \frac{3}{16} \\
+\vdots & \vdots & \vdots  \\
+k & \binom{k-1}{2}\cdot \frac{1}{2^k} & \binom{k-1}{2}\cdot \frac{1}{2^k} \\
+\vdots & \vdots & \vdots \\
+\hline
+\sum & 1 & 1
+\end{tblr}
+\caption{Probabilities of depths for point $[25,100]$.}
+\end{table}
+
+
+% 4Vx or 2Vx + 5Hy
+The second point in our sample is $[20,90]$. Here, there are more ways to isolate this point. That is by exactly four vertical splits (and any number of horizontals) or by exactly five horizontal and two vertical splits. To get the expected value for all the possible scenarios, we must calculate their probabilities. Table \ref{table_20_90} shows the probabilities for individual depths.
+
+In the first scenario (S1), we consider exactly four vertical splits. We calculate the probabilities of four vertical splits and any horizontal splits up to five since the five horizontal splits scenario interferes with the second possible isolation.
+To simplify the second scenario - two vertical and five horizontal splits - we divide it into two sub-scenarios.
+\begin{enumerate}
+    \item Sub-scenario (S2V), where the last split is vertical.
+    \item Sub-scenario (S2H), where the last split is horizontal.
+\end{enumerate}
+
+The expected value of depth for the point $[20,90]$ is:
+$$\sum_{n=4}^{8}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n + \sum_{n=7}^{\infty}\binom{n-1}{1}\cdot \frac{1}{2^n}\cdot n + \sum_{n=7}^{8}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n \doteq 6.82$$
+%second point [20,90]
+\begin{table}[h]
+\centering
+\label{table_20_90}
+\begin{tblr}{
+    width=\linewidth,
+    hspan=minimal,
+    cells={font=\footnotesize},
+    colspec={c| c c c | c},
+    column{odd}={gray9},
+    %colsep=1pt,
+    row{1}={guard},
+    column{1-5}={guard, mode=math}
+}
+ \diagbox{Depth}{Probab.} & S1 & S2V & S2H & \sum \\
+ \hline
+4 & \binom{3}{3}\cdot \frac{1}{2^4} & 0 & 0 & \frac{1}{16} \\
+5 & \binom{4}{3}\cdot\frac{1}{2^5}  &  0 & 0 & \frac{1}{8}\\
+6 & \binom{5}{3}\cdot\frac{1}{2^6}  &  0 & 0& \frac{5}{32}\\
+7 & \binom{6}{3}\cdot\frac{1}{2^7}  & \binom{6}{1}\cdot\frac{1}{2^7} & \binom{6}{4}\cdot\frac{1}{2^7} & \frac{41}{128} \\
+8 & \binom{7}{3}\cdot\frac{1}{2^8}  & \binom{7}{1}\cdot\frac{1}{2^8} & \binom{7}{4}\cdot\frac{1}{2^8} & \frac{77}{256}\\
+9 & 0 & \binom{8}{1}\cdot\frac{1}{2^9} & 0 & \frac{1}{64}\\
+\vdots & \vdots & \vdots & \vdots & \vdots\\
+k & 0 & \binom{k-1}{1}\cdot \frac{1}{2^k} & 0 & (k-1)\cdot\frac{1}{2^k}\\
+\vdots & \vdots & \vdots & \vdots & \vdots \\
+\hline
+\sum & \frac{163}{256} & \frac{7}{64} & \frac{65}{256} & 1
+\end{tblr}
+\caption{Probabilities of depths for point $[20,90]$.}
+\end{table}
+
+
+The third point in the sample is $[15,85]$. We need four vertical splits or two vertical and five horizontal splits to isolate this point. That is the same scenario as the previous point $[20,90]$; hence we omit this.
+
+%4. (30,90) 5Vx or 2Vx + 5Hy
+The fourth point in the sample is $[30,90]$. We need either five vertical splits or two vertical and five horizontal splits to isolate this point.
+
+Similarly to the previous point, we simplify this by creating more sub-scenarios. Table \ref{table_30_90} shows the probabilities for individual depths.
+
+
+In the first scenario (S1), we consider exactly five vertical splits.
+To simplify the second scenario - two vertical and five horizontal splits - we divide it into two sub-scenarios.
+\begin{enumerate}
+    \item Sub-scenario (S2V), where the last split is vertical.
+    \item Sub-scenario (S2H), where the last split is horizontal.
+\end{enumerate}
+
+The expected value of depth for the point $[30,90]$ is:
+$$\sum_{n=5}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n + \sum_{n=7}^{\infty}\binom{n-1}{1}\cdot \frac{1}{2^n}\cdot n + \sum_{n=7}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n \doteq 7.82$$
+
+
+
+%ctvrty point [30,90]
+\begin{table}[h]
+\label{table_30_90}
+\centering
+\begin{tblr}{
+    width=\linewidth,
+    hspan=minimal,
+    cells={font=\footnotesize},
+    colspec={c | c c c | c },
+    column{odd}={gray9},
+    %colsep=1pt,
+    row{1}={guard},
+    column{1-5}={guard, mode=math}
+}
+ \diagbox{Depth}{Probab.} & S1 & S21 & S22 & \sum  \\
+ \hline
+5 & \binom{4}{4}\cdot\frac{1}{2^5} & 0 & 0 & \frac{1}{32}\\
+6 & \binom{5}{4}\cdot\frac{1}{2^6} & 0 & 0 & \frac{5}{64}\\
+7 & \binom{6}{4}\cdot\frac{1}{2^7} & \binom{6}{1}\cdot\frac{1}{2^7} & \binom{6}{4}\cdot\frac{1}{2^7} & \frac{9}{32}\\
+8 & \binom{7}{4}\cdot\frac{1}{2^8} & \binom{7}{1}\cdot\frac{1}{2^8} & \binom{7}{4}\cdot\frac{1}{2^8} & \frac{77}{256}\\
+9 & \binom{8}{4}\cdot\frac{1}{2^9} & \binom{8}{1}\cdot\frac{1}{2^9} & \binom{8}{4}\cdot\frac{1}{2^9} & \frac{37}{128}\\
+10 & 0 & \binom{9}{1}\cdot\frac{1}{2^{10}} & 0 & \frac{9}{1024}\\
+\vdots & \vdots & \vdots & \vdots & \vdots \\
+k & 0 & \binom{k-1}{1}\cdot \frac{1}{2^k} & 0 & (k-1)\cdot \frac{1}{2^k} \\
+\vdots & \vdots & \vdots & \vdots & \vdots \\
+\hline
+\sum & \frac{1}{2} & \frac{7}{64} & \frac{25}{64} & 1
+\end{tblr}
+\caption{Probabilities of depths for point $[30,90]$.}
+\end{table}
+
+
+The fifth point in the sample is $[35,85]$.  We need four vertical splits to isolate this point. There are four vertical splits and any number of horizontal splits before. We get the expected value of depth as follows:
+
+$$\sum_{n=4}^{\infty}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n = 8$$
+
+Table \ref{table_35_85} shows the probabilities for individual depths for the fifth point.
+
+%paty point [35,85]
+\begin{table}[h]
+\label{table_35_85}
+\centering
+\begin{tblr}{
+    width=\linewidth,
+    hspan=minimal,
+    cells={font=\footnotesize},
+    colspec={c | c | c},
+    column{odd}={gray9},
+    %colsep=1pt,
+    row{1}={guard},
+    column{1-3}={guard, mode=math}
+}
+ \diagbox{Depth}{Probab.} & S1 & \sum \\
+ \hline
+4 & \binom{3}{3}\cdot\frac{1}{2^4} & \frac{1}{16} \\
+5 & \binom{4}{3}\cdot\frac{1}{2^5} &  \frac{1}{8}\\
+6 & \binom{5}{3}\cdot\frac{1}{2^6} & \frac{5}{32} \\
+\vdots & \vdots & \vdots \\
+k & \binom{k-1}{3}\cdot \frac{1}{2^k} & \binom{k-1}{3}\cdot \frac{1}{2^k}\\
+\vdots & \vdots & \vdots \\
+\hline
+\sum & 1 & 1
+\end{tblr}
+\caption{Probabilities of depths for point $[35,85]$.}
+\end{table}
+
+
+%5Vx + 3Hy || 4Vx + 5Hy
+The sixth point in the sample is $[25,85]$. We need five vertical and three horizontal splits or four vertical and five horizontal splits to isolate this point.
+Table \ref{table_25_85} shows the probabilities for individual depths for the following scenarios.
+Let us begin with the first scenario, five vertical and three horizontal splits. We divide it into more sub-scenarios:
+
+\begin{enumerate}
+    \item Sub-scenario (S1V), where the last split is vertical.
+    \item Sub-scenario (S1H), where the last split is horizontal.
+\end{enumerate}
+
+% \begin{enumerate}
+%     \item Sub-scenario - the last split is vertical - is generalized as: 
+% $$\sum_{n=8}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n$$
+% \item Sub-scenario - the last split is horizontal - is generalized as:  
+% $$\sum_{n=8}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n$$
+% \end{enumerate}
+
+In the second scenario, four vertical and five horizontal splits, we are left with the last two sub-scenarios:
+
+\begin{enumerate}
+    \item Sub-scenario (S2V), where the last split is vertical.
+    \item Sub-scenario (S2H), where the last split is horizontal. Here, only 9 splits are possible since in ten splits, there would be five vertical splits, making it the previous scenario.
+\end{enumerate}
+
+The expected value of depth for the point $[25,85]$ is:
+$$\sum_{n=8}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n + \sum_{n=8}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n + \sum_{n=9}^{\infty}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n + \binom{8}{4}\cdot \frac{1}{2^9} \doteq 9.734$$
+
+
+% \begin{enumerate}
+%     \item Sub-scenario - the last split is vertical - can be generalized as:
+% $$\sum_{n=9}^{\infty}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n$$
+% \item Sub-scenario - the last split is horizontal. ; hence, for the depth of 9, we get:
+% $$\binom{8}{4}\cdot \frac{1}{2^9}$$
+% \end{enumerate}
+
+
+%sesty point [25,85]
+\begin{table}[h]
+\centering
+\label{table_25_85}
+\begin{tblr}{
+    width=\linewidth,
+    hspan=minimal,
+    cells={font=\footnotesize},
+    colspec={c | c c c c | c},
+    column{odd}={gray9},
+    %colsep=1pt,
+    row{1}={guard},
+    column{1-6}={guard, mode=math}
+}
+ \diagbox{Depth}{Probab.} & S1V & S1H & S2V & S2H & \sum \\
+ \hline
+8 & \binom{7}{4}\cdot\frac{1}{2^8} &  \binom{7}{2}\cdot\frac{1}{2^8} & 0 & 0 & \frac{7}{32}\\
+9 & \binom{8}{4}\cdot\frac{1}{2^9} & \binom{8}{2}\cdot\frac{1}{2^9} & \binom{8}{3}\cdot\frac{1}{2^9} & \binom{8}{4}\cdot\frac{1}{2^9} & \frac{7}{16} \\
+10 & 0 & \binom{9}{2}\cdot\frac{1}{2^{10}} & \binom{9}{3}\cdot\frac{1}{2^{10}} & 0 & \frac{15}{128}\\
+\vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
+k & 0 & \binom{k-1}{2}\cdot\frac{1}{2^k} & \binom{k-1}{3}\cdot \frac{1}{2^k} & 0 & \binom{k}{3}\cdot \frac{1}{2^k}  \\
+\vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
+\hline
+\sum & \frac{35}{128} & \frac{29}{128} & \frac{93}{256} & \frac{35}{256} & 1
+\end{tblr}
+\caption{Probabilities of depths for point $[25,85]$.}
+\end{table}
+
+
+
+
+We can prove that our novelty point $[25,20]$ gets the expected depth 3. Table \ref{table_novelty} shows the probabilities for the individual depths. When orphaning this point, we only have two possible scenarios.
+
+If the last split is horizontal, we get:
+
+$$\sum_{n=2}^{\infty}\binom{n-1}{0}\frac{1}{2^{n}}\cdot n = 1.5$$
+
+Conversely, if the last split is vertical, we get:
+$$\sum_{n=2}^{\infty}\binom{n-1}{0}\frac{1}{2^{n}}\cdot n = 1.5$$
+
+This can be simplified as:
+
+$$\sum_{n=2}^{\infty}\frac{1}{2^{n-1}}\cdot n = 3$$
+
+The expected value of depth of $[25,85]$ is 3.
+
+
+%novelty 
+\begin{table}[h]
+\label{table_novelty}
+\centering
+\begin{tblr}{
+    width=\linewidth,
+    hspan=minimal,
+    cells={font=\footnotesize},
+    colspec={c| c c |c},
+    column{odd}={gray9},
+    %colsep=1pt,
+    row{1}={guard},
+    column{2-5}={guard, mode=math}
+}
+ \diagbox{Depth}{Probab.} & S1V & S1H & \sum \\
+ \hline
+2 & \binom{1}{0}\cdot\frac{1}{2^2} &  \binom{1}{0}\cdot\frac{1}{2^2} & \frac{1}{2}\\
+3 & \binom{2}{0}\cdot\frac{1}{2^3} & \binom{2}{0}\cdot\frac{1}{2^3} &  \frac{1}{4}\\
+4 & \binom{3}{0}\cdot\frac{1}{2^4} & \binom{3}{0}\cdot\frac{1}{2^4} & \frac{1}{8}\\
+\vdots & \vdots & \vdots &\vdots \\
+k & \binom{k-1}{0}\cdot\frac{1}{2^k} & \binom{k-1}{0}\cdot\frac{1}{2^k}&\frac{1}{2^{k-1}} \\
+\vdots & \vdots & \vdots & \vdots\\
+\hline
+\sum & \frac{1}{2} & \frac{1}{2} & 1 \\
+\end{tblr}
+\caption{Probabilities of depths for the novelty point $[25,20]$.}
+\end{table}
+
+Table \ref{table_big_novelty} shows the aggregated sums for individual depths for comparison with the expected values for the original approach in table \ref{table_big_original}.
+
+% stars tabulka se zlomky
+% \begin{sidewaystable}[p]
+% \label{table_big_novelty_old}
+% \begin{tblr}{
+%     width=\linewidth,
+%     hspan=minimal,
+%     cells={font=\footnotesize},
+%     cell{1}{1-11}={halign=c},
+%     column{odd}={gray9},
+%     %colsep=1pt,
+%     colspec={
+%     c |
+%     S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+%     S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+%     S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+%     S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+%     S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+%     S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+%     S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+%     S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+%     S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+%     S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+%     S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+%     },
+%     row{1}={guard},
+%     column{2-12}={mode=math},
+%     column{1}={guard, mode=math}
+% }
+%  \diagbox{Point}{Depth} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\
+%  \hline
+% \left[25, 100\right] & 0 & 0 & \frac{1}{8} & \frac{3}{16} & \frac{3}{16} & \frac{5}{32} & \frac{15}{128} & \frac{21}{256} & \frac{7}{128} & \frac{9}{256} & \frac{55}{4096} \\
+% \left[20, 90\right] & 0 & 0 & 0 & \frac{1}{16} & \frac{1}{8} & \frac{5}{32} & \frac{41}{128} & 
+% \frac{77}{256} & \frac{1}{64} & \frac{9}{1024} & \frac{5}{1024}\\
+% \left[30, 90\right] & 0 & 0 & 0 & 0 & \frac{1}{32} & \frac{5}{64} & \frac{9}{32} & \frac{77}{256} & \frac{37}{128} & \frac{9}{1024} & \frac{5}{1024}\\
+% \left[35, 85\right] & 0 & 0 & 0 & \frac{1}{16} & \frac{1}{8} & \frac{5}{32} & \frac{5}{32} & \frac{35}{256} & \frac{7}{64} & \frac{21}{256} & \frac{15}{256} \\
+% \left[25, 85\right] & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \frac{7}{32} & \frac{7}{16} & \frac{15}{128} & \frac{165}{2048} \\
+% \left[15, 85\right] & 0 & 0 & 0 & \frac{1}{16} & \frac{1}{8} & \frac{5}{32} & \frac{41}{128} & 
+% \frac{77}{256} & \frac{1}{64} & \frac{9}{1024} & \frac{5}{1024}\\
+% \hline
+% \left[20, 25\right] & 0 & \frac{1}{2} & \frac{1}{4} & \frac{1}{8} & \frac{1}{16} & \frac{1}{32} & \frac{1}{64} & \frac{1}{128} & \frac{1}{256} & \frac{1}{512} & \frac{1}{1024}
+% \end{tblr}
+% \end{sidewaystable}
+
+
+
+
+
+\begin{sidewaystable}[p]
+\label{table_big_novelty}
+\begin{tblr}{
+    width=\linewidth,
+    hspan=minimal,
+    cells={font=\footnotesize},
+    cell{1}{1-11}={halign=c},
+    column{odd}={gray9},
+    %colsep=1pt,
+    colspec={
+    c |
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    S[round-mode=places ,round-precision=2, output-exponent-marker=E, table-format=1.2e+1]
+    },
+    row{1}={guard},
+    column{2-13}={mode=math},
+    column{1}={guard, mode=math}
+}
+ \diagbox{Point}{Depth} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & >10 \\
+ \hline
+\left[25, 100\right] & 0 & 0 & 1.250e-1 & 1.880e-1 & 1.880e-1 & 1.560e-1 & 1.170e-1 & 8.200e-2 & 5.470e-2 & 3.520e-2 & 4.07e-02 \\
+\left[20, 90\right] & 0 & 0 & 0 & 6.250e-2 & 1.250e-1 & 1.560e-1 & 3.200e-1 & 3.010e-1 & 1.560e-2 & 8.790e-3 & 6.23e-03 \\
+\left[30, 90\right] & 0 & 0 & 0 & 0 & 3.130e-2 & 7.810e-2 & 2.810e-1 & 3.010e-1 & 2.890e-1 & 8.790e-3 & 5.93e-03 \\
+\left[35, 85\right] & 0 & 0 & 0 & 6.250e-2 & 1.250e-1 & 1.560e-1 & 1.560e-1 & 1.370e-1 & 1.090e-1 & 8.200e-2 & 1.14e-01 \\
+\left[25, 85\right] & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2.190e-1 & 4.380e-1 & 1.170e-1 & 1.45e-01 \\
+\left[15, 85\right] & 0 & 0 & 0 & 6.250e-2 & 1.250e-1 & 1.560e-1 & 3.200e-1 & 3.010e-1 & 1.560e-2 & 8.790e-3 & 6.23e-03\\
+\hline
+\left[20, 25\right] & 0 & 5.000e-1 & 2.500e-1 & 1.250e-1 & 6.250e-2 & 3.130e-2 & 1.560e-2 & 7.810e-3 & 3.910e-3 & 1.950e-3 & 9.53e-04\\
+\end{tblr}
+\caption{Probabilities for individual data points, enhanced approach.}
+\end{sidewaystable}
+
+\subsection{Expected value of depth}
+The expected values of depths (EXD) for the enhanced isolation forest algorithm are shown in the section above.
+To compare the values with the expected values of depths for the original isolation forest, we sum the rows in Table \ref{table_big_original} multiplied by respective depth values. Table \ref{table_ex_comparison} shows the side-by-side comparison. The important outcome is the ratio of expected depths in the respective column. As seen in this table, the difference of depth for the novelty point in the case of the original approach is relatively small compared to the difference of enhanced novelty isolation forest.
+This example proved that it is feasible for the enhanced algorithm to encapsulate the previously unseen data points in the higher leaves of the tree, making novelty detection possible.
+Note that a representative example of one possible distribution of data in the hyperplane was chosen for this proof. However, it shares most of the attributes with general novelty detection problems.
+
+\begin{table}[h]
+\label{table_ex_comparison}
+\centering
+\begin{tblr}{
+    width=\linewidth,
+    cells={font=\footnotesize},
+    colspec={c | 
+    S[table-format=1.3, round-mode=places ,round-precision=3] 
+    S[table-format=1.3]},
+    %colsep=1pt,
+    row{1}={guard},
+    column{1-3}={mode=math}
+}
+point & EXD outlier & EXD novelty \\
+\hline
+25,100 & 3.32616229 & 6\\
+20,90 & 4.26063731 & 6.82\\
+30,90 & 4.34883099 & 7.82\\
+35,85& 3.95906409 & 8\\
+25,85 & 4.87576598 & 9.734\\
+15,85 & 3.76796497 & 6.82\\
+\hline
+20,25 & 4.27789495 & 3\\
+
+\hline
+\end{tblr}
+\caption{Expected values of depths for both algorithms.}
+\end{table}

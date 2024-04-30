@@ -30,24 +30,24 @@ Usually, anomaly detection is used to solve one of the following tasks (see Mark
 \end{description}
 
 Novelty detection is a semi-supervised technique for detecting anomalies (\emph{novelties}) unavailable in the training set.
-The first algorithm that is mentioned when talking about novelty detection is the One-class SVM algorithm \cite{tax2004support}. This algorithm is often referred to as a novelty detection algorithm. It learns from the input data that it surrounds; hence, it can identify data outside this boundary.
+The first algorithm mentioned in novelty detection is the One-class SVM algorithm \cite{tax2004support}. This algorithm is often referred to as a novelty detection algorithm. It learns from the input data it surrounds; hence, it can identify data outside this boundary.
 This algorithm is based on quadratic programming, although there is an enhancement based on linear programming by Zhou et al. in \cite{ZHOU20022927}.
 Another novelty detection algorithm is called the Local Outlier Factor from the family of distance-based algorithms \cite{breunig2000lof} that assigns each object a degree of being an anomaly.
 
 
 
 % 4. a tady už konkrétní problem, proč teda my tvoříme novelty detection algoritmus, protože jsme potřebovali něco jiného než lof a pracovali jsme s isolation forestem, ktery dobře fungoval na outliery a krásně šlo přidávat stromy další a my chtěli zachovat tu myšlenku toho kooperativního algoritmu více stromů ale použít v semi supervised manneru
-Elaborate research in the topic of novelty detectors has highlighted several properties that are determining when dealing with such problems. First of all, the novelty detection algorithm should be semi-supervised (that is, able to be learned on first, and evaluated later). Then, the algorithm should be able to work with \(n\)-dimensional spaces. Last but not least, the algorithm should evaluate both data seen during the learning phase as well as those never seen before. Only then the novelty detector is able to work properly. 
+One of the downsides when dealing with above algorithms is their lack of interpretability. It is not trivial to visualize the outcomes and understand the reasons for the point being assigned novelty or otherwise, making it arduous when trying to understand the properties of dataset. That is not the case for the Isolation Forest though, where the visualization is its superiority.
+Elaborate research on novelty detectors has highlighted several properties that are determining when dealing with such problems. First, the novelty detection algorithm should be semi-supervised (that is, able to be learned on a dataset first and evaluated later). Then, the algorithm should be able to work with \(n\)-dimensional spaces. Last, the algorithm should evaluate both data seen during the learning phase and those never seen before. Only then will the novelty detector be able to work properly. 
 
 In this article, we propose a new algorithm for novelty detection.
 The core of this algorithm is based on the Liu's et al. Isolation Forest \cite{liu2008isolation}, \cite{liu2012isolation}.
 It builds on the idea of the binary decision tree and alters the process of building and later evaluating the decision tree to be able to isolate novelty anomalies.
-The main task is to utilize the competition of trees and a scalability of the original Isolation Forest in order to come up with a solid and adaptable novelty detector.
+The main task is to utilize the competition of trees and the scalability of the original Isolation Forest in order to come up with a solid and adaptable novelty detector. One of the upsides of using trees to evaluate data is the visualization. One of our reasons for enhancing the Isolation forest was its ability to visualize the current point's placement in the tree because the level of anomalousness directly depends on the point's depth in the resulting tree.
 In this article, we provide a description of a new Novelty Isolation Forest algorithm.
-First, we provide a theoretical framework for both original and new Isolation forest algorithm.
-We then contribute with examples of how to use it in order to build and evaluate the tree.
+First, we provide a theoretical framework for the original and new Isolation forest algorithms.
+We then contribute examples of using it to build and evaluate the tree.
 With this framework brought up, we show the distinction between those two algorithms together with the examples of using them in novelty search scenarios.
-%TODO: ODDELAT pokud se to nepovede
-Lastly, we provide proofs to the proposed methodologies.
+Lastly, we provide proof of the proposed methodologies.
 
 

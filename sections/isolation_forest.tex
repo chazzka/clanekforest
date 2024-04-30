@@ -141,13 +141,13 @@ Consider now an example of creating a new Isolation tree based on the given inpu
 \begin{figure}[htbp]
 \centering
 \includesvg[width=0.9\textwidth, inkscapelatex=false]{figures/example66_Noutlier_gnu.svg}
-\caption{Popisek}
+\caption{Original solution: Input sample on the finished hyperplane}
 \label{fig:example_noutlier_gnu}
 \end{figure}
 
 After selecting \emph{max depth} of 8 (experimentally), the tree $T$ is created by starting with tree $T_0$ and expanding further as described by the recursive step until the final condition is met.
 
-Figure \ref{fig:example_noutlier_gnu} shows the finished tree $T$, learned on dataset $S$.
+Figure \ref{fig:example_noutlier_tree_color} shows the finished tree $T$, learned on dataset $S$.
 
 \begin{enumerate}
     \item Basis step is to create a tree $T_0$ and a function relation $\rho_0$. 
@@ -292,5 +292,12 @@ This continues recursively until the leaf $R_{llllr}$ is reached. The reached de
 
 Note that each element that was part of the batch during the training --- tree building --- phase is always contained in each vertex it visits.
 See $a \in R_{lr} \subset R_{l} \subset R$ in Example \ref{ex:regular_point_evaluation_original}.
-Note that this is not true for elements that were unseen during the training phase (such as novelty points).
+Note that this is not true for elements unseen during the training phase (such as novelty points).
 See $a' \in R$, but $a' \notin R_l$ (and of course $a' \notin R_r$) in Example \ref{ex:novelty_point_evaluation_original}.
+
+\begin{figure}[htbp]
+\centering
+\includesvg[angle=90,inkscapelatex=false,width=1\textwidth]{figures/example66_Noutlier_tree.svg}
+\caption{Tree constructed using the original approach}
+\label{fig:example_noutlier_tree_color}
+\end{figure}

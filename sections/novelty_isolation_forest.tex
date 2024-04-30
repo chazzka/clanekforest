@@ -4,7 +4,9 @@ In this section, we propose a new enhancement of the original Isolation Forest a
 The proposed enhancement takes the basic idea of an ensemble of trees with various depths but takes it further to make semi-supervised novelty detection possible.
 
 \subsection{Initial Problem}
- The standard Isolation Forest algorithm cannot be used for novelty detection. This is because in each step, it limits the observation with the previously separated data.
+\label{sec:InitialProblem}
+ The standard Isolation Forest algorithm cannot be used for novelty detection. This is because, in each step, the observation space is limited by the previous data.
+
 
 Suppose we now want to use the original tree to evaluate the novelty data point $p$, which is not present in the training set.
 
@@ -20,7 +22,7 @@ Nevertheless, because datapoint $p$ satisfies  $\pi_d(p) \le z$ (or $\pi_d(p) > 
 This is why the original Isolation Forest is a purely unsupervised algorithm. To work properly, the tree has to be constructed concerning all possible input data.
 
 \subsection{Proposed Solution}
-The proposed solution comes from the idea that the original tree lacks the possibility to isolate more datapoints than it currently observes.
+The proposed solution comes from the idea that the original tree lacks the possibility to isolate more data points than it currently observes.
 The observed space is bounded by the minimum and maximum in each feature.
 
 As in the original article, we use the concept of a binary decision tree. The proposed solution is altering the concept of the split point evaluation. Whereas the original Isolation Forest evaluates the split point based on the previous data, we
@@ -104,7 +106,7 @@ Note that tree \(T_{j}\) is actually a Hasse diagram of the ordered set
 
 \begin{example}
 \label{example:novelty_tree_create}
-Consider now an example of creating a new enhanced Isolation tree based on the given input sample $S$.
+Consider now an example of creating a new enhanced Isolation tree based on the given input sample $S$. Figure \ref{fig:example_novelty_gnu} shows $S$ on the finished hyperplane created using an enhanced approach.
 
 \begin{align*}
     S = \{&[25,100],[30,90],[20,90],[35,85],\\
@@ -122,7 +124,7 @@ Consider now an example of creating a new enhanced Isolation tree based on the g
 
 After selecting \emph{max depth} of 8 (experimentally), the tree $T$ is created by starting with tree $T_0$ and expanding further as described by the recursive step until the final condition is met.
 
-Figure \ref{fig:example_novelty_gnu} shows the finished tree $T$, learned on dataset $S$.
+Figure \ref{fig:example_novelty_tree_color} shows the finished tree $T$, learned on dataset $S$.
 
 \begin{enumerate}
     \item Basis step is to create a tree $T_0$ with one root vertex $R = \langle 0,110) \times \langle -5,105)$ with experimentally set initial possibility space and no edges $E_0$, such that
@@ -237,66 +239,8 @@ Hence $a \in R_{rrlr} \subset R_{rrl} \subset R_{rr} \subset R_{r} \subset R$ in
 and $a' \in R_{ll} \subset R_{l} \subset R$ as shown in Example \ref{ex:novelty_point_evaluation_novelty}.
 
 
-Consider a minified example depicted in \ref{fig:example_data}. In this example, two chunks of data are in the top left and bottom right corners, respectively. Then, we selected a specific data point that shares one dimension similar to the first chunk and the other with the second one.
+%z tadyka jsem smazal puvodni evaluaci, je v evaluate_old.tex
 
-Note that the data have no specific distribution. The point at the bottom left has a value of $P_x = [5,5]$ and is not present for the learning phase.
-
-\begin{figure}[htbp]
-\centering
-\includesvg[width=0.9\textwidth]{figures/example6_experiment.svg}
-\caption{Example figure}
-\label{fig:example_data}
-\end{figure}
-
-%TODO: ODTADYKA TO SMAZEME
-
-\paragraph{Solution: Original approach}
-With the original approach being fully unsupervised, we feed the whole input (excluding the $P_x$) to the forest and examine the resulting tree.
-
-First, the trivial binary tree $T_0$ is created (xx), with ranges being the min-max values of input.
-By doing the recursive steps, the whole tree is constructed.
-Figure \ref{fig:example_noutlier_tree_color} shows the constructed binary tree based on the input data.
-
-The evaluation of $P_x$ is as follows:
-\begin{itemize}
-    \item In the first step, after randomly selecting the dimension $d=1$ and split point $z$ as in (x) $z = 64.37$, the $P_x$ visits the node $\langle 102.0, 105.0\rangle \times \langle 3.0, 7.0\rangle$
-    Note that it is enough for the point to fit only the selected dimension.
-    \item In the second step, the point visits the node $\langle 102.0, 105.0\rangle \times \langle 5.0, 7.0\rangle$.
-    \item This continues until the final leaf $\langle 102.0, 105.0\rangle \times \langle 5.0, 5.0\rangle$ marked gray in Figure \ref{fig:example_noutlier_tree_color}) is reached. This leaf has a depth of 4.
-    
-\end{itemize}
-
-
-If we look at the constructed tree in Figure \ref{fig:example_noutlier_tree_color}, we can see that the resulting leaf is relatively deep, considering the depth of the deepest leaf.
-
-
-\begin{figure}[htbp]
-\centering
-\includesvg[angle=90,inkscapelatex=false,width=1\textwidth]{figures/example66_Noutlier_tree.svg}
-\caption{Tree constructed using the original approach}
-\label{fig:example_noutlier_tree_color}
-\end{figure}
-
-
-
-\paragraph{Solution: Novelty approach}
-
-The novelty approach, on the other hand, is a semi-supervised method. We feed the whole input (excluding the $P_x$) to the forest and examine the resulting tree.
-
-First, the trivial binary tree $T_0$ with initial ranges is created (xx).
-By doing the recursive steps, the whole tree is constructed.
-Figure \ref{fig:example_novelty_tree_color} shows the constructed binary tree based on the input data.
-
-The evaluation of $P_x$ is as follows:
-\begin{itemize}
-    \item In the first step, since the root node has dimension $d=1$ and split point $z = 54$ assigned during the training phase, the point visits the node $\langle 3.0, 54.0\rangle \times \langle 3.0, 105.0\rangle$
-    \item In the second step, the point visits the node $\langle 3.0, 28.5\rangle \times \langle 3.0, 105.0\rangle$.
-    \item This continues until the final leaf (marked grey in Figure \ref{fig:example_novelty_tree_color}) is reached. This leaf has a depth of 3.
-    
-\end{itemize}
-
-
-Now, if we look at the resulting tree in Figure \ref{fig:example_novelty_tree_color}, we can see that the resulting leaf is relatively close to the root considering the rest of the leaves.
 
 
 \begin{figure}[htbp]
@@ -307,173 +251,3 @@ Now, if we look at the resulting tree in Figure \ref{fig:example_novelty_tree_co
 \end{figure}
 
 
-\paragraph{Proof: Novelty approach}
-To prove the resulting depth using the novelty approach, we calculate the expected value of depth for each point $p$, considering all possible trees that would isolate $p$ and their respective paths.
-We start with given range $\langle 0, 110.0\rangle \times \langle -5.0, 105.0\rangle$.
-
-% 3Hy
-The first point to consider is the $[25,100]$. Here, there is only one way to isolate this point: using three horizontal splits. Since the vertical splits do not matter in this case, there could be any number of them; hence, we get the expected value of depth as:
-
-$$\sum_{n=3}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n = 6$$    
-
-% 4Vx or 2Vx + 5Hy
-The second point in our sample is $[20,90]$. Here, there are more ways to isolate this point. That is by exactly four vertical splits (and any number of horizontals) or by exactly five horizontal and two vertical splits. To get the expected value for all the possible scenarios, we must calculate their probabilities. 
-
-In the first scenario - exactly four vertical splits - we calculate the probabilities of four vertical splits and any number of horizontal up to five. Five horizontal splits scenario interferes with the second possible isolation:
-
-\begin{center}
-\begin{tabular}{||c c||} 
- \hline
- Depth & Probability \\ [1ex] 
- \hline
- 4 & $\binom{3}{3}\cdot \frac{1}{2^4}$\\ 
- \hline
- 5 & $\binom{4}{3}\cdot \frac{1}{2^5}$  \\
- \hline
- 6 & $\binom{5}{3}\cdot \frac{1}{2^6}$  \\
- \hline
- 7 & $\binom{6}{3}\cdot \frac{1}{2^7}$  \\
- \hline
- 8 & $\binom{7}{3}\cdot \frac{1}{2^8}$ \\ [1ex] 
- \hline
-\end{tabular}
-\end{center}
-
-We can generalize this as:
-
-$$\sum_{n=4}^{8}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n$$
-
-To simplify the second scenario - two vertical and five horizontal splits - we divide it into two sub-scenarios.
-\begin{enumerate}
-    \item Sub-scenario - the last split is vertical (vysvetli proc zaciname sedmickou)
-
-\begin{center}
-\begin{tabular}{||c c||} 
- \hline
- Depth & Probability \\ [1ex] 
- \hline
- 7 & $\binom{6}{1}\cdot \frac{1}{2^7}$\\ 
- \hline
- 8 & $\binom{7}{1}\cdot \frac{1}{2^8}$  \\
- \hline
- 9 & $\binom{8}{1}\cdot \frac{1}{2^9}$  \\
- \hline
- ... & ... \\ [1ex] 
- \hline
-\end{tabular}
-\end{center}
-We generalize this as:
-$$\sum_{n=7}^{\infty}\binom{n-1}{1}\cdot \frac{1}{2^n}\cdot n$$
-\item Sub-scenario - the last split is horizontal
-\begin{center}
-\begin{tabular}{||c c||} 
- \hline
- Depth & Probability \\ [1ex] 
- \hline
- 7 & $\binom{6}{4}\cdot \frac{1}{2^7}$\\ 
- \hline
- 8 & $\binom{7}{4}\cdot \frac{1}{2^8}$  \\[1ex] 
- \hline
-\end{tabular}
-\end{center}
-We generalize this as: 
-$$\sum_{n=7}^{8}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n$$
-\end{enumerate}
-
-Note that the sum of all the scenarios should equal to 1.
-$$\sum_{n=4}^{8}\binom{n-1}{3}\cdot \frac{1}{2^n} +
-\sum_{n=7}^{\infty}\binom{n-1}{1}\cdot \frac{1}{2^n} +
-\sum_{n=7}^{8}\binom{n-1}{4}\cdot \frac{1}{2^n} = 1
-$$
-
-The third point in the sample is $[15,85]$. We need four vertical splits or two vertical and five horizontal splits to isolate this point. That is the same scenario as the previous point $[20,90]$; hence we omit this.
-
-%4. (30,90) 5Vx or 2Vx + 5Hy
-The fourth point in the sample is $[30,90]$. We need either five vertical splits or two vertical and five horizontal splits to isolate this point.
-
-Similarly to the previous point, we simplify this by creating more sub-scenarios.
-The first scenario - five horizontal splits - is 
-$$\sum_{n=5}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n$$
-
-The second scenario is once more dependent on whether the last split was horizontal or vertical.
-
-\begin{enumerate}
-    \item Sub-scenario - the last split is vertical
-    $$\sum_{n=7}^{\infty}\binom{n-1}{1}\cdot \frac{1}{2^n}\cdot n$$
-    \item Sub-scenario - the last split is horizontal
-    $$\sum_{n=7}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n$$
-\end{enumerate}
-
-The fifth point in the sample is $[35,85]$.  We need four vertical splits to isolate this point. That is four vertical splits and any number of horizontal splits before, generalized as:
-
-$$\sum_{n=4}^{\infty}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n$$
-
-%5Vx + 3Hy || 4Vx + 5Hy
-The sixth point in the sample is $[25,85]$. We need five vertical and three horizontal splits or four vertical and five horizontal splits to isolate this point.
-Let us begin with the first scenario, five vertical and three horizontal splits. We divide it into more sub-scenarios:
-
-\begin{enumerate}
-    \item Sub-scenario - the last split is vertical
-\begin{center}
-\begin{tabular}{||c c||} 
- \hline
- Depth & Probability \\ [1ex] 
- \hline
- 8 & $\binom{7}{4}\cdot \frac{1}{2^8}$\\ 
- \hline
- 9 & $\binom{8}{4}\cdot \frac{1}{2^9}$  \\[1ex] 
- \hline
-\end{tabular}
-\end{center}
-We generalize this as: 
-$$\sum_{n=8}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n$$
-\item Sub-scenario - the last split is horizontal
-    \begin{center}
-\begin{tabular}{||c c||} 
- \hline
- Depth & Probability \\ [1ex] 
- \hline
- 8 & $\binom{7}{2}\cdot \frac{1}{2^8}$\\ 
- \hline
- 9 & $\binom{8}{2}\cdot \frac{1}{2^9}$  \\[1ex] 
- \hline
-\end{tabular}
-\end{center}
-We generalize this as: 
-$$\sum_{n=8}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n$$
-\end{enumerate}
-
-In the second scenario, four vertical and five horizontal, we are left with the last two sub-scenarios:
-
-\begin{enumerate}
-    \item Sub-scenario - the last split is vertical
-\begin{center}
-\begin{tabular}{||c c||} 
- \hline
- Depth & Probability \\ [1ex] 
- \hline
- 9 & $\binom{8}{3}\cdot \frac{1}{2^9}$\\ 
- \hline
- 10 & $\binom{9}{3}\cdot \frac{1}{2^10}$  \\
- \hline
- ... & ... \\ [1ex] 
-  \hline
-\end{tabular}
-\end{center}
-We generalize this as: 
-$$\sum_{n=9}^{\infty}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n$$
-\item Sub-scenario - the last split is horizontal. Here, only 9 splits are possible since in ten splits, there would be five vertical splits, making it the previous scenario.
-    \begin{center}
-\begin{tabular}{||c c||} 
- \hline
- Depth & Probability \\ [1ex] 
- \hline
- 9 & $\binom{8}{4}\cdot \frac{1}{2^9}$\\ [1ex]
- \hline
-\end{tabular}
-\end{center}
-\end{enumerate}
-
-Using this, we can prove that our novelty point $[25,20]$ gets the expected depth of 3:
-
-$$\sum_{n=1}^{\infty}\binom{n+1}{1}\cdot \frac{1}{2^n}\cdot n = 3$$

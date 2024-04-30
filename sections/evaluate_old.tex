@@ -1,0 +1,52 @@
+Consider a minified example depicted in \ref{fig:example_data}. In this example, two chunks of data are in the top left and bottom right corners, respectively. Then, we selected a specific data point that shares one dimension similar to the first chunk and the other with the second one.
+
+Note that the data have no specific distribution. The point at the bottom left has a value of $P_x = [5,5]$ and is not present for the learning phase.
+
+\begin{figure}[htbp]
+\centering
+\includesvg[width=0.9\textwidth]{figures/example6_experiment.svg}
+\caption{Example figure}
+\label{fig:example_data}
+\end{figure}
+
+
+
+\paragraph{Solution: Original approach}
+With the original approach being fully unsupervised, we feed the whole input (excluding the $P_x$) to the forest and examine the resulting tree.
+
+First, the trivial binary tree $T_0$ is created (xx), with ranges being the min-max values of input.
+By doing the recursive steps, the whole tree is constructed.
+Figure \ref{fig:example_noutlier_tree_color} shows the constructed binary tree based on the input data.
+
+The evaluation of $P_x$ is as follows:
+\begin{itemize}
+    \item In the first step, after randomly selecting the dimension $d=1$ and split point $z$ as in (x) $z = 64.37$, the $P_x$ visits the node $\langle 102.0, 105.0\rangle \times \langle 3.0, 7.0\rangle$
+    Note that it is enough for the point to fit only the selected dimension.
+    \item In the second step, the point visits the node $\langle 102.0, 105.0\rangle \times \langle 5.0, 7.0\rangle$.
+    \item This continues until the final leaf $\langle 102.0, 105.0\rangle \times \langle 5.0, 5.0\rangle$ marked gray in Figure \ref{fig:example_noutlier_tree_color}) is reached. This leaf has a depth of 4.
+    
+\end{itemize}
+
+
+If we look at the constructed tree in Figure \ref{fig:example_noutlier_tree_color}, we can see that the resulting leaf is relatively deep, considering the depth of the deepest leaf.
+
+
+
+
+
+
+\paragraph{Solution: Novelty approach}
+
+The novelty approach, on the other hand, is a semi-supervised method. We feed the whole input (excluding the $P_x$) to the forest and examine the resulting tree.
+
+First, the trivial binary tree $T_0$ with initial ranges is created (xx).
+By doing the recursive steps, the whole tree is constructed.
+Figure \ref{fig:example_novelty_tree_color} shows the constructed binary tree based on the input data.
+
+The evaluation of $P_x$ is as follows:
+\begin{itemize}
+    \item In the first step, since the root node has dimension $d=1$ and split point $z = 54$ assigned during the training phase, the point visits the node $\langle 3.0, 54.0\rangle \times \langle 3.0, 105.0\rangle$
+    \item In the second step, the point visits the node $\langle 3.0, 28.5\rangle \times \langle 3.0, 105.0\rangle$.
+    \item This continues until the final leaf (marked grey in Figure \ref{fig:example_novelty_tree_color}) is reached. This leaf has a depth of 3.
+    
+\end{itemize}

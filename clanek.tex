@@ -38,8 +38,15 @@
 %% The amssymb package provides various useful mathematical symbols
 \usepackage{amssymb}
 \usepackage{svg}
+\usepackage{siunitx}
 \usepackage{amsmath}
 \usepackage{amsthm}
+\usepackage{tabularray}
+\UseTblrLibrary{amsmath}
+\UseTblrLibrary{siunitx}
+\UseTblrLibrary{diagbox}
+\usepackage{rotating}
+
 
 \newtheorem{example}{Example}[section]
 \theoremstyle{definition}
@@ -138,7 +145,7 @@
 
 \begin{keyword}
 %% keywords here, in the form: keyword \sep keyword
-keyword one \sep keyword two
+anomaly detection \sep outlier detection \sep novelty detection
 %% PACS codes here, in the form: \PACS code \sep code
 \PACS 0000 \sep 1111
 %% MSC codes here, in the form: \MSC code \sep code
@@ -161,13 +168,17 @@ keyword one \sep keyword two
 
 \include{sections/theory}
 
-\include{sections/methods}
+% \include{sections/methods}
 
 \include{sections/graph_theory}
 
 \include{sections/isolation_forest}
 
 \include{sections/novelty_isolation_forest}
+
+\include{sections/proofs}
+
+\include{sections/conclusion}
 
 
 
