@@ -3,44 +3,44 @@
 
 Isolation Forest
 \cite{liu2008isolation} \cite{liu2012isolation} is an outlier
-detection, unsupervised ensemble algorithm. This approach is well known for successfully identifying outliers by using recursive partitioning (forming a tree-like structure) to decide whether the analyzed datapoint is an anomaly or not. The fewer partitions required to isolate, the more probable it is for a datapoint to be an anomaly.
+detection, unsupervised ensemble algorithm. This approach is well known for successfully identifying outliers using recursive partitioning (forming a decision tree) to decide whether the analyzed datapoint is an anomaly. The fewer partitions required to isolate, the more probable it is for a datapoint to be an anomaly.
 
-\paragraph{Isolation tree}
-Isolation Tree is a rooted tree constructed with a subset of \(A\) items
-(datapoints) with the size \(s=|A|\).
+% \paragraph{Isolation tree}
+% Isolation Tree is a rooted tree constructed with a subset of \(A\) items
+% (datapoints) with the size \(s=|A|\).
 
-\begin{enumerate}
-    \item To build an isolation tree, it is not necessary to have a large set; it
-  may even be undesirable
-  \item Well-chosen small \(s\) can help eliminate \emph{masking} and
-  \emph{swamping}
+% \begin{enumerate}
+%     \item To build an isolation tree, it is not necessary to have a large set; it
+%   may even be undesirable
+%   \item Well-chosen small \(s\) can help eliminate \emph{masking} and
+%   \emph{swamping}
 
 
-\begin{itemize}
-    \item \textbf{Masking} When the number of anomalies is high, it is possible that some of those aggregate in a dense and large cluster, making it more difficult to separate the single anomalies and, in turn, to detect such points as
-  anomalous.
-    \item \textbf{Swamping} When normal instances are too close to anomalies, the number of
-  partitions required to separate them increases, making it more difficult for the Isolation Forest to discriminate between
-  anomalies and normal points.
-\end{itemize}
+% \begin{itemize}
+%     \item \textbf{Masking} When the number of anomalies is high, it is possible that some of those aggregate in a dense and large cluster, making it more difficult to separate the single anomalies and, in turn, to detect such points as
+%   anomalous.
+%     \item \textbf{Swamping} When normal instances are too close to anomalies, the number of
+%   partitions required to separate them increases, making it more difficult for the Isolation Forest to discriminate between
+%   anomalies and normal points.
+% \end{itemize}
 
-\item There are two types of vertices
+% \item There are two types of vertices
 
-\begin{itemize}
-    \item \textbf{Internal vertex} Internal vertex contains a condition (a feature and a limit) and two children (one
-  representing a fulfilled condition and the other an unfulfilled one)
-    \item \textbf{External vertex} External vertex is created if the conditions of the parents are met (or not met) by
-  one or none of the elements from the sample or the maximum depth of
-  the tree \(l\) is reached, usually \(l=\ln_2(s)\). It contains the
-  evaluation of \(h(x)\) using the distance from the root. If the max
-  length of the tree is reached the \emph{distance} is estimated using
-  \(h(x)=e+c(n)\), where \(e\) is the distance from the root, \(n\) is
-  the number of elements from the sample satisfying the conditions of
-  the parents, \(c(n)=2\,(H_{n-1}-\frac{n-1}{n})\) and \(H_{n-1}\) is
-  \(n-1\) harmonic number.
-\end{itemize}
+% \begin{itemize}
+%     \item \textbf{Internal vertex} Internal vertex contains a condition (a feature and a limit) and two children (one
+%   representing a fulfilled condition and the other an unfulfilled one)
+%     \item \textbf{External vertex} External vertex is created if the conditions of the parents are met (or not met) by
+%   one or none of the elements from the sample or the maximum depth of
+%   the tree \(l\) is reached, usually \(l=\ln_2(s)\). It contains the
+%   evaluation of \(h(x)\) using the distance from the root. If the max
+%   length of the tree is reached the \emph{distance} is estimated using
+%   \(h(x)=e+c(n)\), where \(e\) is the distance from the root, \(n\) is
+%   the number of elements from the sample satisfying the conditions of
+%   the parents, \(c(n)=2\,(H_{n-1}-\frac{n-1}{n})\) and \(H_{n-1}\) is
+%   \(n-1\) harmonic number.
+% \end{itemize}
 
-\end{enumerate}
+% \end{enumerate}
 
 \begin{definition}
 Let $\mathsf{s}=(s_0, \dots, s_d, \dots, s_{n-1})\in \mathbb{R}^n$ be a datapoint. Then we say that $\pi_d(\mathsf{s}):=s_d$ is a \emph{projection} of datapoint $\mathsf{s}$ onto dimension $d$  yielding $s_d$.
@@ -64,16 +64,17 @@ $$R(Z) = r_0 \times r_1 \times \cdots \times r_{n-1},$$ where $r_d = \langle \mi
 \begin{enumerate}
 
     \item Each leaf or internal vertex is a hyperrectangle $R$. 
-    \item Function relation $\rho$ assigns each internal vertex $v$ to split point $z$ and dimension $d$.
+    \item Function relation $\rho$ assigns split point $z$ and dimension $d$ to internal vertex $v$ .
     $$(v, (z,d)) \in \rho$$
-    \item The maximum possible height of a tree is controlled by the \emph{max\_depth} parameter.
+    % \item The maximum possible height of a tree is controlled by the \emph{max\_depth} parameter.
     \item The sample \(S\) contains \emph{b} number of input datapoints of $n$ dimensions, that is
-    $$S \subseteq \mathbb{R}^n ;\quad |S| = b; \quad b \in \mathbb{N}_0.$$
-    \item Leaves' ending condition is satisfied by one of two criteria: 
-\begin{enumerate}
-    \item Vertex \(R\) satisfies \(| S \cap R | = 1\).
-    \item Vertex's depth reached the \emph{max\_depth} value.
-\end{enumerate}
+    $$S \subseteq \mathbb{R}^n ;\quad |S| = b; \quad b \in \mathbb{N}.$$
+    \item Leaves' ending condition is satisfied if vertex \(R\) satisfies \(| S \cap R | = 1\).
+%     \item Leaves' ending condition is satisfied by one of two criteria: 
+% \begin{enumerate}
+%     \item Vertex \(R\) satisfies \(| S \cap R | = 1\).
+%     \item Vertex's depth reached the \emph{max\_depth} value.
+% \end{enumerate}
 \end{enumerate}
 
 
@@ -88,28 +89,37 @@ $$\rho_0 = \emptyset.$$
 
 \subparagraph{Recursive step}
 
-The steps to reach the tree \(T_{j+1}\) from \(T_{j} = (V_j, E_j)\) and $\rho_{j+1}$ from $\rho_{j}$ are
-as follows:
+% The steps to reach the tree \(T_{j+1}\) from \(T_{j} = (V_j, E_j)\) and $\rho_{j+1}$ from $\rho_{j}$ are
+% as follows:
+% Let us create \(T_{j+1}\) from \(T_{j} = (V_j, E_j)\) and $\rho_{j+1}$ from $\rho_{j}$.
+% The creation of \(T_{j+1}\) from \(T_{j} = (V_j, E_j)\) and $\rho_{j+1}$ from $\rho_{j}$ starts by forming a new hyperrcentagle R.
+% to reach the tree \(T_{j+1}\) from \(T_{j} = (V_j, E_j)\) and $\rho_{j+1}$ from $\rho_{j}$
+is to reach the tree \(T_{j+1}\) from \(T_{j} = (V_j, E_j)\) and $\rho_{j+1}$ from $\rho_{j}$.
 
 Let \(L_j \subseteq V_j\) be a subset of leaves not satisfying the
-ending condition. 
+ending condition
+% By selecting a random dimension $d_R$ (such that $|r_{d_R}| > 1$) create two new vertices \(R_l, R_r\) for each leaf \(R \in L_j\)\
+% \[R =  r_0 \times \cdots \times r_{d_R} \times \cdots \times r_{n-1} \] with a random split point $z_R \in r_{d_R}$.
+and \(R \in L_j\)\ be a leaf such that
+\[R =  r_0 \times \cdots \times r_{d_R} \times \cdots \times r_{n-1}. \]
+We first select a random dimension $d_R$ (such that $|r_{d_R}| > 1$) and a random split point $z_R \in r_{d_R}$.
 
-By selecting a random dimension $d_R$,(TODO: dimenze taková aby $r_d$ nebyla $\langle a,a\rangle$)   create two new vertices \(R_l, R_r\) for each leaf \(R \in L_j\)\
-\[R =  r_0 \times \cdots \times r_{d_R} \times \cdots \times r_{n-1}  \tag{xx}\,\] with a random split point $z_R \in r_{d_R}$.
 
-Split point $z_R$ splits the $R \cap S$, creating two disjunctive sets, $S_l$ and $S_r$ respectively:
+Split point $z_R$ splits the $R \cap S$, creating two disjunctive sets, $S_l$ and $S_r$ respectively, such that
+\begin{align*}
+S_l &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s})\le z_R\},&
+S_r &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s}) > z_R\}.
+\end{align*}
 
-$$S_l = \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s})\le z_R\}$$
-
-$$S_r = \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s}) > z_R\}$$
-
-Then we obtain the left and right hyperrectangles \(R_l\), \(R_r\) as
+Then we obtain left and right hyperrectangles \(R_l\), \(R_r\) as
 follows:
-$$R_l = R(S_l),$$
-$$R_r = R(S_r).$$
+\begin{align*}
+R_l &= R(S_l),&
+R_r &= R(S_r).
+\end{align*}
 
-Each vertex \(R\) is associated with two new
-edges \((R,R_l ), (R, R_r)\) and is assigned with $(z_R,d_R)$ by function relation $\rho_{j+1}$ as in (x\ldots xxx).
+Each vertex \(R \in L_j\) is associated with two new
+edges \((R,R_l ), (R, R_r)\) and is assigned with $(z_R,d_R)$ by function relation $\rho_{j+1}$ as
 
 
 \begin{align}
@@ -123,8 +133,8 @@ i.e.~${R_l, R_r} \subset R$ are leaves and $R$ is an inner vertex in the new tre
 \((V_{j+1},\subseteq)\)}
 
 
-The algorithm moves to the next recursion step unless there is an equality of two consecutive trees \(T_j = T_{j+1}\). This happens when all leaves satisfy their ending condition, i.e., \(L_j = \emptyset\).
-Thus, the desired tree $T$ is the tree $T_j$, and finite relation $\rho$ is $\rho_j$.
+The algorithm moves to the next recursion step unless there is an equality of two consecutive trees \(T_k = T_{k+1}\). This happens when all leaves satisfy their ending condition, i.e., \(L_k = \emptyset\).
+Thus, the desired tree $T$ is the tree $T_k$, and finite relation $\rho$ is $\rho_k$.
 
 
 \begin{example}
@@ -141,12 +151,11 @@ Consider now an example of creating a new Isolation tree based on the given inpu
 \begin{figure}[htbp]
 \centering
 \includesvg[width=0.9\textwidth, inkscapelatex=false]{figures/example66_Noutlier_gnu.svg}
-\caption{Original solution: Input sample on the finished hyperplane}
+\caption{Original solution. Rectangles created by recursive splitting.}
 \label{fig:example_noutlier_gnu}
 \end{figure}
 
-After selecting \emph{max depth} of 8 (experimentally), the tree $T$ is created by starting with tree $T_0$ and expanding further as described by the recursive step until the final condition is met.
-
+Tree $T$ is created by starting with tree $T_0$ and expanding further as described by the recursive step until the final condition is met.
 Figure \ref{fig:example_noutlier_tree_color} shows the finished tree $T$, learned on dataset $S$.
 
 \begin{enumerate}
@@ -158,9 +167,11 @@ V_0 &= \{R\}\\
 E_0 &= \emptyset\\
 T_0 &= (V_0, E_0)\\
 \rho_0 &= \emptyset
-\end{align*}    
+\end{align*}
 
-\item In order to reach $T_1$ from $T_0$, dimension $d_R=1$ and split point $z_R = 72.63$ were chosen. The recursive step is as follows:
+Figure \ref{fig:example_noutlier_gnu} shows $R$ as the largest and the brightest colored rectangle.
+
+\item In order to reach $T_1$ from $T_0$, dimension $d_R=1$ and split point $z_R = 72.63$ were chosen. Figure \ref{fig:example_noutlier_gnu} shows split points as red lines in their respective rectangles. The recursive step is as follows:
 
 $$S_l = \{[105,20],[95,25],[95,15],[90,30],[90,20],[90,10]\}$$
 $$S_r = \{[25,100],[30,90],[20,90],[35,85],[25,85],[15,85]\}$$
@@ -173,7 +184,7 @@ V_1 &= \{R, R_l, R_r\}\\
 E_1 &= \{(R,R_l), (R,R_r)\}\\
 T_1 &= (V_1, E_1)
 \end{align*}
-\item The tree $T_1$ has two vertices and two edges; the ending condition is not met, that is $L_1 = \{R_l,R_r\}$. The tree $T_1$ now has a left and right vertex. We continue the recursive step with two vertices.
+\item The tree $T_1$ has left leaf $R_l$ and right leaf $R_r$; the ending condition is not met, that is $L_1 = \{R_l,R_r\}$. We continue the recursive step with two vertices.
 
 Left vertex $R_l$:
 \begin{align*}
@@ -202,7 +213,7 @@ E_2 &= \{ (R,R_l),(R,R_r), (R_l,R_{ll}), (R_l,R_{lr}), (R_r,R_{rl}), (R_r,R_{rr}
 T_2 &= (V_2, E_2)
 \end{align*}
 \item With the $T_2$ created, we now have to check for leaves' ending condition. Since $|R_{lr}\cap S|=|S_{lr}| = 1$, the ending condition for leaf $R_{lr}$ is met, and the new set of leaves $L_2$ for the next recursion step is
-$$L_2 = \{R_{ll},R_{rl}R_{rr}\}.$$
+$$L_2 = \{R_{ll},R_{rl},R_{rr}\}.$$
 
 This continues until we reach tree $T_5$ such that $T_5=T_6$, which is the desired tree $T$ as shown in Figure \ref{fig:example_noutlier_tree_color}. 
 
@@ -214,11 +225,11 @@ This continues until we reach tree $T_5$ such that $T_5=T_6$, which is the desir
 \subsection{Evaluating decision tree $T$}
 The evaluation of desired element $a$ starts in the root $R$ of previously built tree $T$.
 In a root, by applying function relation, $\rho(R) = (z,d)$, we obtain split point $z$ and dimension $d$.
-The root $R$ of a tree $T$ has two ancestors $R_l$, $R_r$, such that
+The root $R$ of a tree $T$ has two descendants $R_l$, $R_r$, such that
 $\forall r_l\in R_l; \pi_d(r_l) \le z$ and $\forall r_r\in R_r; \pi_d(r_r)  > z$.
 
-If $\pi_d(a)\le z$, we traverse to $R_l$, else, that is $\pi_d(a) > z$, we traverse to $R_r$.
-We continue in this manner up until we reach the leaf, determined by the ending condition. The score of $a$ is calculated using the depth of the reached leaf.
+If $\pi_d(a)\le z$, we visit $R_l$, else, that is $\pi_d(a) > z$, we visit $R_r$.
+We continue in this manner up until we reach the leaf. Figures \ref{fig:example_noutlier_gnu} and \ref{fig:example_noutlier_tree_color} show individual leaves' final depth. Based on it, we can decide on the level of outlierness. The deeper the evaluated point in the tree, the less anomalous it gets.
 
 \begin{example}
 \label{ex:regular_point_evaluation_original}
@@ -226,7 +237,7 @@ We continue in this manner up until we reach the leaf, determined by the ending 
 
     We start with the root $R = \langle 15,105\rangle \times \langle 10, 100 \rangle$.
     By applying function $\rho(R)$, we obtain split point $z = 72.63$ and dimension $d = 1$.
-    Root $R$ has two ancestors 
+    Root $R$ has two descendants 
 \begin{align*}
     &R_l = \langle 90,105\rangle \times \langle 10, 30 \rangle,&
     &R_r = \langle 15,35\rangle \times \langle 85, 100 \rangle,\\
@@ -239,42 +250,7 @@ $$\pi_1([105,20]) = 20 < 72.63.$$
 We visit the vertex $R_l$ because the value obtained by applying the projection on any element of $R_l$ is smaller than $72.63$.
 
 We reached the next recursive step. With vertex $R_l$ visited, we apply function $\rho(R_l)$, obtaining a new split point $z = 103.08$ and new dimension $d = 0$.
-Vertex $R_l$ has two ancestors 
-\begin{align*}
-    &R_{ll} = \langle 90,95\rangle \times \langle 10, 30 \rangle,&
-    &R_{lr} = \langle 105,105\rangle \times \langle 20,20 \rangle,\\
-    \intertext{such that}
-    &\forall r_{ll}\in R_{ll}; \pi_1(r_{ll}) \le 103.08,&
-    &\forall r_{lr}\in R_{lr}; \pi_1(r_{lr}) > 103.08.
-\end{align*}
-
-We visit the vertex $R_{lr}$ because the value obtained by applying the projection on any element of $R_{lr}$ is less than $103.08$.
-
-Since $R_{lr}$ has no more ancestors, we reached the final leaf with a depth of 2.
-%%TODO: muzeme tu rict ze, vlasnte u tohoto prikladu se dalo normalne divat na hodnoty S_l a S_r a jit tam kde padneme, to ale nepujde vzdy
-\end{example}
-
-
-\begin{example}
-\label{ex:novelty_point_evaluation_original}
-    Consider now the evaluation of $a' = [25,20]$ on tree $T$ built in Example \ref{example:original_tree_create}.
-
-    We start with the root $R = \langle 5,105\rangle \times \langle 10, 100 \rangle$.
-    By applying function $\rho(R)$, we obtain split point $z = 72.63$ and dimension $d = 1$.
-    Root $R$ has two ancestors 
-\begin{align*}
-    &R_l = \langle 90,105\rangle \times \langle 10, 30 \rangle,&
-    &R_r = \langle 15,35\rangle \times \langle 85, 100 \rangle,\\
-    \intertext{such that}
-    &\forall r_l\in R_l; \pi_1(r_l) \le 72.63,&
-    &\forall r_r\in R_r; \pi_1(r_r) > 72.63.
-\end{align*}
-Now, by applying projection $\pi_1$ on $a'$, we obtain $20$, which is less than split point $z = 72.63$, i.e.
-$$\pi_1([25,20]) = 20 \le 72.63.$$
-We visit the vertex $R_l$ because the value obtained by applying the projection on any element of $R_l$ is less than $72.63$.
-
-We reached the next recursive step. With vertex $R_l$ visited, we apply function $\rho(R_l)$, obtaining a new split point $z = 103.08$ and new dimension $d = 0$.
-Vertex $R_l$ has two ancestors 
+Vertex $R_l$ has two descendants 
 \begin{align*}
     &R_{ll} = \langle 90,95\rangle \times \langle 10, 30 \rangle,&
     &R_{lr} = \langle 105,105\rangle \times \langle 20,20 \rangle,\\
@@ -283,9 +259,49 @@ Vertex $R_l$ has two ancestors
     &\forall r_{lr}\in R_{lr}; \pi_0(r_{lr}) > 103.08.
 \end{align*}
 
-We visit the vertex $R_{ll}$ because the value obtained by applying the projection on any element of $R_{ll}$ is less than $103.08$.
+We visit the vertex $R_{lr}$ because the value obtained by applying projection $\pi_0$ on any element of $R_{lr}$ and also on $a$ is more than $103.08$.
 
-This continues recursively until the leaf $R_{llllr}$ is reached. The reached depth is 5, as shown in Figure \ref{fig:example_noutlier_tree_color} (marked gray).
+Since $R_{lr}$ has no more descendants, we reached the final leaf with a depth of~$2$.
+\end{example}
+
+
+\begin{example}
+\label{ex:novelty_point_evaluation_original}
+    Consider now the evaluation of $a' = [25,20]$ on tree $T$ built in Example \ref{example:original_tree_create}. Note that $a'$ was not contained in the training set for building a tree.
+
+    We start with the root $R = \langle 5,105\rangle \times \langle 10, 100 \rangle$.
+    By applying function $\rho(R)$, we obtain split point $z = 72.63$ and dimension $d = 1$.
+%     Root $R$ has two descendants 
+% \begin{align*}
+%     &R_l = \langle 90,105\rangle \times \langle 10, 30 \rangle,&
+%     &R_r = \langle 15,35\rangle \times \langle 85, 100 \rangle,\\
+%     \intertext{such that}
+%     &\forall r_l\in R_l; \pi_1(r_l) \le 72.63,&
+%     &\forall r_r\in R_r; \pi_1(r_r) > 72.63.
+% \end{align*}
+% Now, by applying projection $\pi_1$ on $a'$, we obtain $20$, which is less than split point $z = 72.63$, i.e.
+We visit $R_l = \langle 90,105\rangle \times \langle 10, 30 \rangle$ 
+because $\pi_1([25,20]) = 20 \le 72.63.$
+% We visit the vertex $R_l$ because the value obtained by applying the projection on any element of $R_l$ is less than $72.63$.
+
+We reached the next recursive step. Obtaining a new split point $z = 103.08$ and new dimension $d = 0$, we visit $R_{ll} = \langle 90,95\rangle \times \langle 10, 30 \rangle$, since $\pi_0([25,20]) \le 103.08$.
+% Vertex $R_l$ has two descendants 
+% \begin{align*}
+%     &R_{ll} = \langle 90,95\rangle \times \langle 10, 30 \rangle,&
+%     &R_{lr} = \langle 105,105\rangle \times \langle 20,20 \rangle,\\
+%     \intertext{such that}
+%     &\forall r_{ll}\in R_{ll}; \pi_0(r_{ll}) \le 103.08,&
+%     &\forall r_{lr}\in R_{lr}; \pi_0(r_{lr}) > 103.08.
+% \end{align*}
+
+% We visit the vertex $R_{ll}$ because the value obtained by applying the projection on any element of $R_{ll}$ is less than $103.08$.
+
+This continues recursively until the leaf $R_{llllr}$ is reached. Observe that this is the leaf with the point $[90,20]$. The reached depth is 5, as shown in Figure \ref{fig:example_noutlier_tree_color} (marked gray).
+
+
+Observe from Figure \ref{fig:example_noutlier_gnu} that after just two steps, the $[25,20]$ is no longer a part of any of the further evaluated rectangles.
+
+% Figure \ref{fig:example_noutlier_gnu} shows that $[25,20]$ is evaluated in a way that it is left in the vertex with the point $[90,20]$, thus being evaluated as such.
 
 \end{example}
 

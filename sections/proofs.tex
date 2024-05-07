@@ -25,10 +25,9 @@ The probability of selecting $x$ is $0.5$ due to the two-dimensional setting.
 The probability of the split point being from the given range is $\frac{105-95}{105-15}$, where the nominator is the size of the favorable range, and the denominator is the size of the whole possible range.
 % Let $p(\langle 95, 105\rangle_x)$ be the probability of $n$ splits.
 The probability of such event is then $$\frac{1}{2}\cdot\frac{105-95}{105-15} = \frac{1}{18}.$$
-Since the given point is not yet orphaned, we continue this way. The observable space is now scaled down due to the split point to the range of $\langle 15, 95\rangle$ for the first dimension $x$ and $\langle 10,100\rangle$ for the second $y$. Table x shows the rest of the probabilities for this path.
+Since the given point is not yet orphaned, we continue this way. The observable space is now scaled down due to the split point to the range of $\langle 15, 95\rangle$ for the first dimension $x$ and $\langle 10,100\rangle$ for the second $y$. Table \ref{prob_table_25_85} shows the rest of the probabilities for this path.
 
 \begin{table}[h]
-\label{prob_table_25_85}
 \centering
 \begin{tblr}{
     width=\linewidth,
@@ -46,10 +45,11 @@ Start space & Dim. & Split range & Probability & End space \\
 \langle 15, 90\rangle \times \langle 10, 100\rangle & y & \langle 85, 90\rangle &  \frac{1}{2}\cdot\frac{90-85}{100-10} = \frac{1}{36} & \langle 15, 90\rangle \times \langle 10, 85\rangle \\
 \langle 15, 90\rangle \times \langle 10, 85\rangle & y & \langle 10, 20\rangle &  \frac{1}{2}\cdot\frac{20-10}{85-10} = \frac{1}{15} & \langle 15, 90\rangle \times \langle 20, 85\rangle \\
 \langle 15, 90\rangle \times \langle 20, 85\rangle & x & \langle 35, 90\rangle &  \frac{1}{2}\cdot\frac{90-35}{90-15} = \frac{11}{30} & \langle 15, 35\rangle \times \langle 85, 85\rangle \\
-\langle 15, 35\rangle \times \langle 85, 85\rangle & x & \langle 25, 35\rangle &  \phantom{\frac{1}{2}\cdot}\frac{35-25}{35-15} = \frac{11}{30} & \langle 15, 25\rangle \times \langle 85, 85\rangle \\
+\langle 15, 35\rangle \times \langle 85, 85\rangle & x & \langle 25, 35\rangle &  \phantom{\frac{1}{2}\cdot}\frac{35-25}{35-15} = \frac{1}{2} & \langle 15, 25\rangle \times \langle 85, 85\rangle \\
 \langle 15, 25\rangle \times \langle 85, 85\rangle & x & \langle 15, 25\rangle &  \phantom{\frac{1}{2}\cdot}\frac{25-15}{25-15} = \frac{1}{1} & \langle 25, 25\rangle \times \langle 85, 85\rangle
 \end{tblr}
 \caption{Probabilities of depths for point $[25,85]$.}
+\label{prob_table_25_85}
 \end{table}
 
 
@@ -72,7 +72,6 @@ Note that the path for the novelty point $[25,20]$ is a path of the $[25,85]$ (t
 
 
 \begin{sidewaystable}[p]
-\label{table_big_original}
 \begin{tblr}{
     width=\linewidth,
     hspan=minimal,
@@ -109,6 +108,7 @@ Note that the path for the novelty point $[25,20]$ is a path of the $[25,85]$ (t
 \left[20, 25\right] & 0 & 3.5693536674E-02 & 1.8350184759E-01 & 3.4881778276E-01 & 3.4168298237E-01 & 8.0460443076E-02 & 9.2155826505E-03 & 6.0623378611E-04 & 2.1232873030E-05 & 3.5512746939E-07 & 3.0996586909E-09
 \end{tblr}
 \caption{Probabilities for individual data points, original approach.}
+\label{table_big_original}
 \end{sidewaystable}
 
 
@@ -119,11 +119,10 @@ We start with given range $\langle 0, 110.0\rangle \times \langle -5.0, 105.0\ra
 % 3Hy
 The first point to consider is the $[25,100]$. There is only one way to isolate this point: using three horizontal splits. This is the only scenario S1 for this point. Table \ref{table_25_100} shows the probabilities for individual depths. Since the vertical splits do not matter in this case, there could be any number of them; hence, we get the expected value of depth as:
 
-$$\sum_{n=3}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n = 6$$
+$$\sum_{n=3}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n = 6.$$
 
 %first point 25,100
 \begin{table}[h]
-\label{table_25_100}
 \centering
 \begin{tblr}{
     width=\linewidth,
@@ -147,13 +146,13 @@ k & \binom{k-1}{2}\cdot \frac{1}{2^k} & \binom{k-1}{2}\cdot \frac{1}{2^k} \\
 \sum & 1 & 1
 \end{tblr}
 \caption{Probabilities of depths for point $[25,100]$.}
+\label{table_25_100}
 \end{table}
 
 
 % 4Vx or 2Vx + 5Hy
-The second point in our sample is $[20,90]$. Here, there are more ways to isolate this point. That is by exactly four vertical splits (and any number of horizontals) or by exactly five horizontal and two vertical splits. To get the expected value for all the possible scenarios, we must calculate their probabilities. Table \ref{table_20_90} shows the probabilities for individual depths.
+The second point in our sample is $[20,90]$. Here, there are more ways to isolate this point. That is by exactly four vertical splits (and any number of horizontals --- up to five --- S1) or by exactly five horizontal and two or three vertical splits (S2X). To get the expected value for all the possible scenarios, we must calculate their probabilities. Table \ref{table_20_90} shows the probabilities for individual depths.
 
-In the first scenario (S1), we consider exactly four vertical splits. We calculate the probabilities of four vertical splits and any horizontal splits up to five since the five horizontal splits scenario interferes with the second possible isolation.
 To simplify the second scenario - two vertical and five horizontal splits - we divide it into two sub-scenarios.
 \begin{enumerate}
     \item Sub-scenario (S2V), where the last split is vertical.
@@ -165,7 +164,6 @@ $$\sum_{n=4}^{8}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n + \sum_{n=7}^{\infty}\b
 %second point [20,90]
 \begin{table}[h]
 \centering
-\label{table_20_90}
 \begin{tblr}{
     width=\linewidth,
     hspan=minimal,
@@ -191,23 +189,23 @@ k & 0 & \binom{k-1}{1}\cdot \frac{1}{2^k} & 0 & (k-1)\cdot\frac{1}{2^k}\\
 \sum & \frac{163}{256} & \frac{7}{64} & \frac{65}{256} & 1
 \end{tblr}
 \caption{Probabilities of depths for point $[20,90]$.}
+\label{table_20_90}
 \end{table}
 
 
 The third point in the sample is $[15,85]$. We need four vertical splits or two vertical and five horizontal splits to isolate this point. That is the same scenario as the previous point $[20,90]$; hence we omit this.
 
 %4. (30,90) 5Vx or 2Vx + 5Hy
-The fourth point in the sample is $[30,90]$. We need either five vertical splits or two vertical and five horizontal splits to isolate this point.
+The fourth point in the sample is $[30,90]$. We need either exactly five vertical splits (S1) or two vertical and at least five horizontal splits to isolate this point. That is, again, two sub-scenarios. First, the last split is vertical (S2V), and conversely, the last is horizontal (S2H).
+Table \ref{table_30_90} shows the probabilities for individual depths.
 
-Similarly to the previous point, we simplify this by creating more sub-scenarios. Table \ref{table_30_90} shows the probabilities for individual depths.
 
-
-In the first scenario (S1), we consider exactly five vertical splits.
-To simplify the second scenario - two vertical and five horizontal splits - we divide it into two sub-scenarios.
-\begin{enumerate}
-    \item Sub-scenario (S2V), where the last split is vertical.
-    \item Sub-scenario (S2H), where the last split is horizontal.
-\end{enumerate}
+% In the first scenario (S1), we consider exactly five vertical splits.
+% To simplify the second scenario - two vertical and five horizontal splits - we divide it into two sub-scenarios.
+% \begin{enumerate}
+%     \item Sub-scenario (S2V), where the last split is vertical.
+%     \item Sub-scenario (S2H), where the last split is horizontal.
+% \end{enumerate}
 
 The expected value of depth for the point $[30,90]$ is:
 $$\sum_{n=5}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n + \sum_{n=7}^{\infty}\binom{n-1}{1}\cdot \frac{1}{2^n}\cdot n + \sum_{n=7}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n \doteq 7.82$$
@@ -216,7 +214,6 @@ $$\sum_{n=5}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n + \sum_{n=7}^{\infty}\b
 
 %ctvrty point [30,90]
 \begin{table}[h]
-\label{table_30_90}
 \centering
 \begin{tblr}{
     width=\linewidth,
@@ -243,6 +240,7 @@ k & 0 & \binom{k-1}{1}\cdot \frac{1}{2^k} & 0 & (k-1)\cdot \frac{1}{2^k} \\
 \sum & \frac{1}{2} & \frac{7}{64} & \frac{25}{64} & 1
 \end{tblr}
 \caption{Probabilities of depths for point $[30,90]$.}
+\label{table_30_90}
 \end{table}
 
 
@@ -254,7 +252,6 @@ Table \ref{table_35_85} shows the probabilities for individual depths for the fi
 
 %paty point [35,85]
 \begin{table}[h]
-\label{table_35_85}
 \centering
 \begin{tblr}{
     width=\linewidth,
@@ -278,18 +275,19 @@ k & \binom{k-1}{3}\cdot \frac{1}{2^k} & \binom{k-1}{3}\cdot \frac{1}{2^k}\\
 \sum & 1 & 1
 \end{tblr}
 \caption{Probabilities of depths for point $[35,85]$.}
+\label{table_35_85}
 \end{table}
 
 
 %5Vx + 3Hy || 4Vx + 5Hy
-The sixth point in the sample is $[25,85]$. We need five vertical and three horizontal splits or four vertical and five horizontal splits to isolate this point.
-Table \ref{table_25_85} shows the probabilities for individual depths for the following scenarios.
-Let us begin with the first scenario, five vertical and three horizontal splits. We divide it into more sub-scenarios:
+The sixth point in the sample is $[25,85]$. We need five vertical and three or four horizontal splits (S1V and S1H) or four vertical and at least five horizontal splits (S2V and S2H) to isolate this point.
+Table \ref{table_25_85} shows the probabilities for individual depths for the above scenarios.
+% Let us begin with the first scenario, five vertical and three horizontal splits. We divide it into more sub-scenarios:
 
-\begin{enumerate}
-    \item Sub-scenario (S1V), where the last split is vertical.
-    \item Sub-scenario (S1H), where the last split is horizontal.
-\end{enumerate}
+% \begin{enumerate}
+%     \item Sub-scenario (S1V), where the last split is vertical.
+%     \item Sub-scenario (S1H), where the last split is horizontal.
+% \end{enumerate}
 
 % \begin{enumerate}
 %     \item Sub-scenario - the last split is vertical - is generalized as: 
@@ -298,12 +296,12 @@ Let us begin with the first scenario, five vertical and three horizontal splits.
 % $$\sum_{n=8}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n$$
 % \end{enumerate}
 
-In the second scenario, four vertical and five horizontal splits, we are left with the last two sub-scenarios:
+% In the second scenario, four vertical and five horizontal splits, we are left with the last two sub-scenarios:
 
-\begin{enumerate}
-    \item Sub-scenario (S2V), where the last split is vertical.
-    \item Sub-scenario (S2H), where the last split is horizontal. Here, only 9 splits are possible since in ten splits, there would be five vertical splits, making it the previous scenario.
-\end{enumerate}
+% \begin{enumerate}
+%     \item Sub-scenario (S2V), where the last split is vertical.
+%     \item Sub-scenario (S2H), where the last split is horizontal. Here, only 9 splits are possible since in ten splits, there would be five vertical splits, making it the previous scenario.
+% \end{enumerate}
 
 The expected value of depth for the point $[25,85]$ is:
 $$\sum_{n=8}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n + \sum_{n=8}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n + \sum_{n=9}^{\infty}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n + \binom{8}{4}\cdot \frac{1}{2^9} \doteq 9.734$$
@@ -320,7 +318,6 @@ $$\sum_{n=8}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n + \sum_{n=8}^{\infty}\b
 %sesty point [25,85]
 \begin{table}[h]
 \centering
-\label{table_25_85}
 \begin{tblr}{
     width=\linewidth,
     hspan=minimal,
@@ -343,8 +340,8 @@ k & 0 & \binom{k-1}{2}\cdot\frac{1}{2^k} & \binom{k-1}{3}\cdot \frac{1}{2^k} & 0
 \sum & \frac{35}{128} & \frac{29}{128} & \frac{93}{256} & \frac{35}{256} & 1
 \end{tblr}
 \caption{Probabilities of depths for point $[25,85]$.}
+\label{table_25_85}
 \end{table}
-
 
 
 
@@ -366,7 +363,6 @@ The expected value of depth of $[25,85]$ is 3.
 
 %novelty 
 \begin{table}[h]
-\label{table_novelty}
 \centering
 \begin{tblr}{
     width=\linewidth,
@@ -390,6 +386,7 @@ k & \binom{k-1}{0}\cdot\frac{1}{2^k} & \binom{k-1}{0}\cdot\frac{1}{2^k}&\frac{1}
 \sum & \frac{1}{2} & \frac{1}{2} & 1 \\
 \end{tblr}
 \caption{Probabilities of depths for the novelty point $[25,20]$.}
+\label{table_novelty}
 \end{table}
 
 Table \ref{table_big_novelty} shows the aggregated sums for individual depths for comparison with the expected values for the original approach in table \ref{table_big_original}.
@@ -442,7 +439,6 @@ Table \ref{table_big_novelty} shows the aggregated sums for individual depths fo
 
 
 \begin{sidewaystable}[p]
-\label{table_big_novelty}
 \begin{tblr}{
     width=\linewidth,
     hspan=minimal,
@@ -480,6 +476,7 @@ Table \ref{table_big_novelty} shows the aggregated sums for individual depths fo
 \left[20, 25\right] & 0 & 5.000e-1 & 2.500e-1 & 1.250e-1 & 6.250e-2 & 3.130e-2 & 1.560e-2 & 7.810e-3 & 3.910e-3 & 1.950e-3 & 9.53e-04\\
 \end{tblr}
 \caption{Probabilities for individual data points, enhanced approach.}
+\label{table_big_novelty}
 \end{sidewaystable}
 
 \subsection{Expected value of depth}
@@ -489,7 +486,6 @@ This example proved that it is feasible for the enhanced algorithm to encapsulat
 Note that a representative example of one possible distribution of data in the hyperplane was chosen for this proof. However, it shares most of the attributes with general novelty detection problems.
 
 \begin{table}[h]
-\label{table_ex_comparison}
 \centering
 \begin{tblr}{
     width=\linewidth,
@@ -515,4 +511,5 @@ point & EXD outlier & EXD novelty \\
 \hline
 \end{tblr}
 \caption{Expected values of depths for both algorithms.}
+\label{table_ex_comparison}
 \end{table}

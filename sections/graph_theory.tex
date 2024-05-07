@@ -9,12 +9,11 @@ Directed graph (or digraph) $D = (V, E)$ consists of a nonempty set of vertices 
 The directed edge $(u, v)$ is said to start at $u$ and end at $v$.
 \end{definition}
 
-A digraph comprises vertices leading from one ancestor to another, forming a path.
 
 \begin{definition}
 For digraph $D = (V,E)$ we define:
 \begin{itemize}
-    \item Ancestor of vertex $v \in V$ is a vertex $v' \in V$ such that $(v,v') \in E$. We say that $v$ is \emph{associated with} $v'$.
+    \item Descendant of vertex $v \in V$ is a vertex $v' \in V$ such that $(v,v') \in E$. We say that $v$ is the ancestor \emph{associated with} $v'$.
     \item Path $P$ from vertex $v_0 \in V$ to vertex $v_n \in V$ is finite set of edges $P \subseteq E$, such that: $$P = \{(v_0, v_1),(v_1, v_2),\dots(v_{n-1}, v_n)\}.$$
       The empty set $P = \emptyset$ is a trivial path from $v$ to $v$ for every $v \in V$.
     
@@ -33,7 +32,7 @@ To be able to evaluate the isolation tree, we have to define several tree-specif
 For rooted tree $T = (V,E)$ we define:
 \begin{itemize}
     \item depth of $v \in V$ is a size of path $P$ from root to $v$.
-    \item vertex $v \in V$ is called a leaf if it has no ancestors. Vertices that have ancestors are called internal vertices.
+    \item vertex $v \in V$ is called a leaf if it has no descendants. Vertices that have descendants are called internal vertices.
     \item to traverse tree $T$ is to take path $P$ from root to leaf. If $(v,v') \in P$, we say that we \emph{visit} $v$ and $v'$ during traversing.
 \end{itemize}
 \end{definition}

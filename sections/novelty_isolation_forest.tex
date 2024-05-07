@@ -27,34 +27,31 @@ The observed space is bounded by the minimum and maximum in each feature.
 
 As in the original article, we use the concept of a binary decision tree. The proposed solution is altering the concept of the split point evaluation. Whereas the original Isolation Forest evaluates the split point based on the previous data, we
 evaluate the split point based on a range in our proposed solution. For this to work, several alterations to the split point evaluation and the form of data passed between vertices must be made; however, the overall concept of the forest remains the same.
-The proposed solution has two main concepts of alteration to the original solution.
+The proposed solution has several concepts of alteration to the original solution.
 
 \begin{enumerate}
-    \item Each of the vertices gets assigned a space bounded by ranges. Each range should be reasonable enough to separate all the domain space correctly.
+    \item We start with the root as the whole domain space bounded by ranges.
+    \item Descendants cover the whole observable space of their associated ancestors. 
     \item The split point is in the middle of the given dimension’s range.
-    \item The input observations are only used to determine the ending condition.
+    \item The input data is only used to determine the ending condition.
 \end{enumerate}
 
 \subsection{Constructing decision tree $T$}
 
 \begin{enumerate}
-    \item The maximum possible depth of a tree is controlled by the \emph{max\_depth} parameter.
-    \item The sample \(S\) contains \emph{batch\_size} number of input datapoints.
-    \item Leaves and internal vertices are possibility-space hyperrectangles \(R\). 
-    \item Leaves' ending condition is satisfied by one of two criteria: 
-\begin{enumerate}
-    \item Vertex \(R\) satisfies \(S \cap R = \emptyset\) or \(| S \cap R | = 1\).
-    \item Vertex's depth reached the \emph{max\_depth} value.
-\end{enumerate}
+    % \item The maximum possible depth of a tree is controlled by the \emph{max\_depth} parameter.
+    \item The sample \(S\) is nonempty set of input datapoints.
+    \item Leaves and internal vertices are possibility-space hyperrectangles. 
+    \item Hyperrectangle $R$ satisfies the ending condition when \(S \cap R = \emptyset\) or \(| S \cap R | = 1\).
 \end{enumerate}
 
 
 
 \subparagraph{Basis step}
 
-Each dimension \(d \in\{0, \dots, n-1\}\), is bounded by the range \(r_d\). The ranges form the possibility-space hyperrectangle \(R_0\) as in:
+Each dimension \(d \in\{0, \dots, n-1\}\), is bounded by the range \(r_d\). The ranges form the possibility-space hyperrectangle \(R_0\), i.e.
 
-\[R_0 =  r_0 \times r_1 \times \cdots \times r_{n-1}  \tag{xx}\,.\]
+\[R_0 =  r_0 \times r_1 \times \cdots \times r_{n-1}.\]
 
 The trivial rooted tree \(T_0\) is a tuple with
 vertices \(V_0 = \{R_0\}\) and edges \(E_0 = \emptyset\), i.e.
@@ -66,28 +63,27 @@ The steps to reach the tree \(T_{j+1}\) from \(T_{j} = (V_j, E_j)\) are
 as follows:
 
 Let \(L_j \subseteq V_j\) be a subset of leaves not satisfying the
-ending condition. 
-
-For each leaf \(R \in L_j\) create two new vertices \(R_l, R_r\) by
-selecting a random dimension \(d\).
+ending condition.
+For each leaf \(R \in L_j\) we
+select a random dimension \(d\).
 
 Let
 \begin{align}
 R &= r_0 \times  \cdots \times r_{d-1} \times  r_d\times r_{d+1} \times \cdots \times r_{n-1},
 \end{align}
-where $r_d = \langle x, y ).$ %TODO: NEVIME k cemu to je
+where $r_d = \langle x, y )$.
 
 Then we obtain the left and right hyperrectangles \(R_l\), \(R_r\) as
-follows:
+follows
 \begin{align}
-R_l &= r_1 \times  \cdots \times r_{d-1} \times  r_l \times r_{d+1} \times \cdots \times r_n \\
-R_r &= r_1 \times  \cdots \times r_{d-1} \times  r_r \times r_{d+1} \times \cdots \times r_n
+R_l &= r_1 \times  \cdots \times r_{d-1} \times  \langle x, s ) \times r_{d+1} \times \cdots \times r_n, \\
+R_r &= r_1 \times  \cdots \times r_{d-1} \times \langle s, y ) \times r_{d+1} \times \cdots \times r_n,
 \end{align}
-where \(r_l = \langle x, s )\) and \(r_r = \langle s, y )\) and \(s\) is
-a number obtained as the middle of the range \(r_d\,\):
+where \(s\) is
+a number obtained as the middle of the range \(r_d\,\)
 
-\[s = \frac{x + y}{2}\tag{x}.\] Each vertex \(R\) is associated with two new
-edges \((R,R_l ), (R, R_r)\) as follows:
+\[s = \frac{x + y}{2}\,.\] Each vertex \(R\) is associated with two new
+edges \((R,R_l ), (R, R_r)\) as follows
 \begin{align*}
 V_{j+1} &= V_j \cup \bigcup_{R \in L_j} \{R_l, R_r\},\\
 E_{j+1} &= E_j \cup \bigcup_{R \in L_j} \{(R, R_l), (R,R_r)\},\\
@@ -96,8 +92,8 @@ T_{j+1} &= (V_{j+1}, E_{j+1}),
 i.e.~${R_l, R_r} \subset R$ are leaves in the new tree
 \(T_{j+1}\).
 
-Recursion is terminated if there is an equality of two consecutive trees \(T_j = T_{j+1}\). This happens when all leaves satisfy the ending condition, i.e., \(L_j = \emptyset\).
-If this is the case, then the desired tree $T$ is the tree $T_j$ otherwise, move to the next recursion step.
+Recursion is terminated if there is an equality of two consecutive trees \(T_k = T_{k+1}\). This happens when all leaves satisfy the ending condition, i.e., \(L_k = \emptyset\).
+If this is the case, the desired tree $T$ is the tree $T_k$; otherwise, move to the next recursion step.
 
 
 Note that tree \(T_{j}\) is actually a Hasse diagram of the ordered set
@@ -106,84 +102,70 @@ Note that tree \(T_{j}\) is actually a Hasse diagram of the ordered set
 
 \begin{example}
 \label{example:novelty_tree_create}
-Consider now an example of creating a new enhanced Isolation tree based on the given input sample $S$. Figure \ref{fig:example_novelty_gnu} shows $S$ on the finished hyperplane created using an enhanced approach.
-
+Consider now an example of creating a new enhanced Isolation tree based on the given input sample
 \begin{align*}
     S = \{&[25,100],[30,90],[20,90],[35,85],\\
     &[25,85],[15,85],[105,20],[95,25], \\
-    &[95,15],[90,30],[90,20],[90,10]\}
+    &[95,15],[90,30],[90,20],[90,10]\}.
 \end{align*}
-
+Figure \ref{fig:example_novelty_gnu} shows $S$ on the finished hyperplane created using an enhanced approach. Observe that the split points (red lines) are always in the middle of the previous observable space, and hyperrectangles now always cover the whole ancestor's area. Numbers represent the final leaves' depth (also seen in Figure \ref{fig:example_novelty_tree_color}.
 
 \begin{figure}[htbp]
 \centering
 \includesvg[width=0.9\textwidth,inkscapelatex=false]{figures/example66_Novelty_gnu.svg}
-\caption{example}
+\caption{Enhanced approach. Rectangles created by recursive splitting.}
 \label{fig:example_novelty_gnu}
 \end{figure}
 
-After selecting \emph{max depth} of 8 (experimentally), the tree $T$ is created by starting with tree $T_0$ and expanding further as described by the recursive step until the final condition is met.
+ The tree $T$ is created by starting with tree $T_0$ and expanding further as described by the recursive step until the final condition is met.
 
 Figure \ref{fig:example_novelty_tree_color} shows the finished tree $T$, learned on dataset $S$.
 
-\begin{enumerate}
-    \item Basis step is to create a tree $T_0$ with one root vertex $R = \langle 0,110) \times \langle -5,105)$ with experimentally set initial possibility space and no edges $E_0$, such that
+
+    \paragraph{Basis step} Creation of tree $T_0$ with one root vertex $R$ with experimentally set initial possibility space  $R= \langle 0,110) \times \langle -5,105)$ and no edges $E_0$, such that
     \begin{align*}
         V_0 &= \{R\},&
         E_0 &= \emptyset,&
-        T_0 &= (V_0, E_0)
+        T_0 &= (V_0, E_0).
     \end{align*}
-    \item Since $R \in L_0$, we create two hyperrectangles $R_l$, $R_r$ by selecting a random dimension $d=0$.
+     Since $R \in L_0$, we create two hyperrectangles $R_l$, $R_r$ by selecting a random dimension $d=0$.
     \begin{align*}
-        r_0 &= \langle 0, 110) \\
-        s &= \frac{0 + 110}{2} = 55 \\
-        r_l &= \langle 0, 55) \\
-        R_l &= \langle 0, 55) \times \langle -5,105) \\
-        r_r &= \langle 55, 110) \\
-        R_r &= \langle 55, 110) \times \langle -5,105)
+        r_0 &= \langle 0, 110), &
+        s &= \frac{0 + 110}{2} = 55, \\
+        R_l &= \langle 0, 55) \times \langle -5,105), &
+        R_r &= \langle 55, 110) \times \langle -5,105).
     \end{align*}
-
-    \item New tree $T_1$ is then
+     New tree $T_1$ is then
     \begin{align*}
-    V_1 &= \{R, R_l, R_r\} \\
-    E_1 &= \{(R, R_l), (R, R_r)\} \\
-    T_1 &= (V_1, E_1)
+    V_1 &= \{R, R_l, R_r\}, &
+    E_1 &= \{(R, R_l), (R, R_r)\}, &
+    T_1 &= (V_1, E_1).
     \end{align*}
+    After checking for the ending condition, set $L_1$ is $\{R_l, R_r\}$.
 
-    \item After checking for the ending condition, $L_1$ is as follows:
-    $$L_1 = \{R_l, R_r\}$$
-
-    \item Since there are vertices in $L_1$ left to be examined, we continue the next recursive step:
-    Since $R_l \in L_1$ (resp. $R_r \in L_1$), we create two hyperrectangles $R_{ll}$, $R_{lr}$ --- left column (resp. $R_{rl}$, $R_{rr}$ -- right column) by selecting a random dimension $d=1$ (resp. $d=0$).
+    \paragraph{Since there are vertices in $L_1$ left to be examined, we continue the next recursive step}
+    Since $R_l \in L_1$ (resp. $R_r \in L_1$), we create two hyperrectangles $R_{ll}$, $R_{lr}$ -- left column (resp. $R_{rl}$, $R_{rr}$ -- right column) by selecting a random dimension $d=1$ (resp. $d=0$).
     \begin{align*}
         r_{l1} &= \langle -5, 105)& r_{r0} &= \langle 55, 110) \\
         s_l &= 50 & s_r&=82.5\\
-        r_{ll} &= \langle -5, 50) & r_{rl} &= \langle 55, 82.5) \\
         R_{ll} &= \langle 0, 55) \times \langle -5,50) & R_{rl} &= \langle 55, 82.5) \times \langle -5,105)\\
-        r_{lr} &= \langle 50, 105) & r_{rr} &= \langle 82.5, 110) \\
         R_{lr} &= \langle 0, 55) \times \langle 50,105) & R_{ll} &= \langle 82.5, 110) \times \langle -5,105)
     \end{align*}
-
-    \item New tree $T_2$ is then
+ New tree $T_2$ is then
     \begin{align*}
         V_2 &= \{R, R_l, R_r, R_{ll}, R_{lr}, R_{rl}, R_{rr}\} \\
         E_2 &= \{(R, R_l), (R, R_r), (R_l, R_{ll}), (R_l, R_{lr}), (R_r, R_{rl}), (R_r, R_{rr})\} \\
         T_2 &= (V_2, E_2)
     \end{align*}
+ We check the ending condition again, getting $L_2 = \{R_{lr}, R_{rr}\}$.
 
-    \item After checking for the ending condition, $L_2$ is as follows:
-    $$L_2 = \{R_{lr}, R_{rr}\}$$
-
-    \item This goes on until one of the final conditions is met.
-
-\end{enumerate}
-
+    This goes on until the final condition is met.
 \end{example}
 
 \subsection{Evaluating enhanced decision tree $T$}
 The evaluation of our enhanced decision tree is more straightforward since the examined datapoint is always contained in the possibility space hyperrectangle of some vertex in each depth until a leaf is visited.
 The evaluation starts in the root vertex. The initial possibility space should be reasonable enough to cover the whole domain of a given problem.
-Until the leaf is reached, the examined point recursively visits the ancestor within which it is contained.
+Until the leaf is reached, the examined point recursively visits the descendant within which it is contained.
 
 
 
@@ -193,13 +175,13 @@ Until the leaf is reached, the examined point recursively visits the ancestor wi
 
 \begin{enumerate}
     \item  We start with the root $R = \langle 0,110\rangle \times \langle -5, 105 \rangle$.
-    Root $R$ has two ancestors 
+    Root $R$ has two descendants 
 \begin{align*}
     &R_l = \langle 0,55) \times \langle -5, 105),&
     &R_r = \langle 55,110) \times \langle -5, 105),
 \end{align*}
 Since $a \in R_r$, we visit $R_r$.
-\item Vertex $R_r$ has two ancestors
+\item Vertex $R_r$ has two descendants
 \begin{align*}
     &R_{rl} = \langle 5,82.5) \times \langle -5, 105),&
     &R_{rr} = \langle 82.5,110) \times \langle -5, 105),
@@ -218,13 +200,13 @@ we continue recursively in this manner for another two steps until leaf $R_{rrlr
 
 \begin{enumerate}
     \item  We start with the root $R = \langle 0,110\rangle \times \langle -5, 105 \rangle$.
-    Root $R$ has two ancestors 
+    Root $R$ has two descendants 
 \begin{align*}
     &R_l = \langle 0,55) \times \langle -5, 105),&
     &R_r = \langle 55,110) \times \langle -5, 105),
 \end{align*}
 Since $a' \in R_l$, we visit $R_l$.
-\item Vertex $R_l$ has two ancestors
+\item Vertex $R_l$ has two descendants
 \begin{align*}
     &R_{ll} = \langle 0,55) \times \langle -5, 50),&
     &R_{lr} = \langle 0,5) \times \langle 50, 105),
