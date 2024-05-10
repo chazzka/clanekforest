@@ -119,7 +119,7 @@ Figure \ref{fig:example_novelty_gnu} shows $S$ on the finished hyperplane create
 
  The tree $T$ is created by starting with tree $T_0$ and expanding further as described by the recursive step until the final condition is met.
 
-Figure \ref{fig:example_novelty_tree_color} shows the finished tree $T$, learned on dataset $S$.
+Figure \ref{fig:example_novelty_tree_color} shows the finished tree $T$, trained on dataset $S$.
 
 
     \paragraph{Basis step} Creation of tree $T_0$ with one root vertex $R$ with experimentally set initial possibility space  $R= \langle 0,110) \times \langle -5,105)$ and no edges $E_0$, such that
@@ -164,8 +164,7 @@ Figure \ref{fig:example_novelty_tree_color} shows the finished tree $T$, learned
 
 \subsection{Evaluating enhanced decision tree $T$}
 The evaluation of our enhanced decision tree is more straightforward since the examined datapoint is always contained in the possibility space hyperrectangle of some vertex in each depth until a leaf is visited.
-The evaluation starts in the root vertex. The initial possibility space should be reasonable enough to cover the whole domain of a given problem.
-Until the leaf is reached, the examined point recursively visits the descendant within which it is contained.
+The evaluation starts in the root vertex. The initial possibility space should be reasonable enough to cover the whole domain of a given problem. Until the leaf is reached, the examined point recursively visits the descendant within which it is contained.
 
 
 

@@ -3,7 +3,7 @@
 
 Isolation Forest
 \cite{liu2008isolation} \cite{liu2012isolation} is an outlier
-detection, unsupervised ensemble algorithm. This approach is well known for successfully identifying outliers using recursive partitioning (forming a decision tree) to decide whether the analyzed datapoint is an anomaly. The fewer partitions required to isolate, the more probable it is for a datapoint to be an anomaly.
+detection, unsupervised ensemble algorithm. This approach is well-known for successfully identifying outliers using recursive partitioning (forming a decision tree) to decide whether the analyzed datapoint is an anomaly. The fewer partitions that are required to isolate, the more probable it is for a datapoint to be an anomaly.
 
 % \paragraph{Isolation tree}
 % Isolation Tree is a rooted tree constructed with a subset of \(A\) items
@@ -69,7 +69,7 @@ $$R(Z) = r_0 \times r_1 \times \cdots \times r_{n-1},$$ where $r_d = \langle \mi
     % \item The maximum possible height of a tree is controlled by the \emph{max\_depth} parameter.
     \item The sample \(S\) contains \emph{b} number of input datapoints of $n$ dimensions, that is
     $$S \subseteq \mathbb{R}^n ;\quad |S| = b; \quad b \in \mathbb{N}.$$
-    \item Leaves' ending condition is satisfied if vertex \(R\) satisfies \(| S \cap R | = 1\).
+    \item The ending condition of the leaves is satisfied if vertex \(R\) satisfies \(| S \cap R | = 1\).
 %     \item Leaves' ending condition is satisfied by one of two criteria: 
 % \begin{enumerate}
 %     \item Vertex \(R\) satisfies \(| S \cap R | = 1\).
@@ -134,7 +134,7 @@ i.e.~${R_l, R_r} \subset R$ are leaves and $R$ is an inner vertex in the new tre
 
 
 The algorithm moves to the next recursion step unless there is an equality of two consecutive trees \(T_k = T_{k+1}\). This happens when all leaves satisfy their ending condition, i.e., \(L_k = \emptyset\).
-Thus, the desired tree $T$ is the tree $T_k$, and finite relation $\rho$ is $\rho_k$.
+Thus, the desired tree $T$ is the tree $T_k$, and the finite relation $\rho$ is $\rho_k$.
 
 
 \begin{example}
@@ -156,7 +156,7 @@ Consider now an example of creating a new Isolation tree based on the given inpu
 \end{figure}
 
 Tree $T$ is created by starting with tree $T_0$ and expanding further as described by the recursive step until the final condition is met.
-Figure \ref{fig:example_noutlier_tree_color} shows the finished tree $T$, learned on dataset $S$.
+Figure \ref{fig:example_noutlier_tree_color} shows the finished tree $T$, trained on dataset $S$.
 
 \begin{enumerate}
     \item Basis step is to create a tree $T_0$ and a function relation $\rho_0$. 
@@ -212,7 +212,7 @@ V_2 &= \{ R, R_l, R_r, R_{lr}, R_{lr}, R_{rl}, R_{rr} \}\\
 E_2 &= \{ (R,R_l),(R,R_r), (R_l,R_{ll}), (R_l,R_{lr}), (R_r,R_{rl}), (R_r,R_{rr}) \}\\
 T_2 &= (V_2, E_2)
 \end{align*}
-\item With the $T_2$ created, we now have to check for leaves' ending condition. Since $|R_{lr}\cap S|=|S_{lr}| = 1$, the ending condition for leaf $R_{lr}$ is met, and the new set of leaves $L_2$ for the next recursion step is
+\item With the $T_2$ created, we now have to check for the ending condition of the leaves. Since $|R_{lr}\cap S|=|S_{lr}| = 1$, the ending condition for leaf $R_{lr}$ is met, and the new set of leaves $L_2$ for the next recursion step is
 $$L_2 = \{R_{ll},R_{rl},R_{rr}\}.$$
 
 This continues until we reach tree $T_5$ such that $T_5=T_6$, which is the desired tree $T$ as shown in Figure \ref{fig:example_noutlier_tree_color}. 
@@ -223,13 +223,13 @@ This continues until we reach tree $T_5$ such that $T_5=T_6$, which is the desir
 
 
 \subsection{Evaluating decision tree $T$}
-The evaluation of desired element $a$ starts in the root $R$ of previously built tree $T$.
+The evaluation of desired element $a$ starts in the root $R$ of the previously built tree $T$.
 In a root, by applying function relation, $\rho(R) = (z,d)$, we obtain split point $z$ and dimension $d$.
 The root $R$ of a tree $T$ has two descendants $R_l$, $R_r$, such that
 $\forall r_l\in R_l; \pi_d(r_l) \le z$ and $\forall r_r\in R_r; \pi_d(r_r)  > z$.
 
 If $\pi_d(a)\le z$, we visit $R_l$, else, that is $\pi_d(a) > z$, we visit $R_r$.
-We continue in this manner up until we reach the leaf. Figures \ref{fig:example_noutlier_gnu} and \ref{fig:example_noutlier_tree_color} show individual leaves' final depth. Based on it, we can decide on the level of outlierness. The deeper the evaluated point in the tree, the less anomalous it gets.
+We continue in this manner until we reach the leaf. Figures \ref{fig:example_noutlier_gnu} and \ref{fig:example_noutlier_tree_color} show the final depths of individual leaves. Based on it, we can decide on the level of outlierness. The deeper the evaluated point in the tree, the less anomalous it gets.
 
 \begin{example}
 \label{ex:regular_point_evaluation_original}
@@ -249,7 +249,7 @@ Now, by applying projection $\pi_1$ on $a$, we obtain $20$, which is less than s
 $$\pi_1([105,20]) = 20 < 72.63.$$
 We visit the vertex $R_l$ because the value obtained by applying the projection on any element of $R_l$ is smaller than $72.63$.
 
-We reached the next recursive step. With vertex $R_l$ visited, we apply function $\rho(R_l)$, obtaining a new split point $z = 103.08$ and new dimension $d = 0$.
+We reached the next recursive step. With vertex $R_l$ visited, we apply function $\rho(R_l)$, obtaining a new split point $z = 103.08$ and a new dimension $d = 0$.
 Vertex $R_l$ has two descendants 
 \begin{align*}
     &R_{ll} = \langle 90,95\rangle \times \langle 10, 30 \rangle,&
@@ -296,7 +296,7 @@ We reached the next recursive step. Obtaining a new split point $z = 103.08$ and
 
 % We visit the vertex $R_{ll}$ because the value obtained by applying the projection on any element of $R_{ll}$ is less than $103.08$.
 
-This continues recursively until the leaf $R_{llllr}$ is reached. Observe that this is the leaf with the point $[90,20]$. The reached depth is 5, as shown in Figure \ref{fig:example_noutlier_tree_color} (marked gray).
+This continues recursively until the leaf $R_{llllr}$ is reached. Note that this is the leaf with the point $[90,20]$. The reached depth is 5, as shown in Figure \ref{fig:example_noutlier_tree_color} (marked grey).
 
 
 Observe from Figure \ref{fig:example_noutlier_gnu} that after just two steps, the $[25,20]$ is no longer a part of any of the further evaluated rectangles.
@@ -306,8 +306,7 @@ Observe from Figure \ref{fig:example_noutlier_gnu} that after just two steps, th
 \end{example}
 
 
-Note that each element that was part of the batch during the training --- tree building --- phase is always contained in each vertex it visits.
-See $a \in R_{lr} \subset R_{l} \subset R$ in Example \ref{ex:regular_point_evaluation_original}.
+Note that each element that was part of the batch during the training --- tree building --- phase is always contained in each vertex it visits. See $a \in R_{lr} \subset R_{l} \subset R$ in Example \ref{ex:regular_point_evaluation_original}.
 Note that this is not true for elements unseen during the training phase (such as novelty points).
 See $a' \in R$, but $a' \notin R_l$ (and of course $a' \notin R_r$) in Example \ref{ex:novelty_point_evaluation_original}.
 

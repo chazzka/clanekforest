@@ -1,7 +1,7 @@
 \section{Graph Theory}
 \label{sec:graph_theory}
 
-The theoretical framework used in this article is centered mainly around the graph theory.
+The theoretical framework used in this article is centered mainly around graph theory.
 The definitions used in this section are based on Rosen et.al in \cite{rosen2012discrete}. Since the isolation forest is composed of trees, we define a tree as a directed graph.
 
 \begin{definition}
@@ -31,8 +31,8 @@ To be able to evaluate the isolation tree, we have to define several tree-specif
 \begin{definition}
 For rooted tree $T = (V,E)$ we define:
 \begin{itemize}
-    \item depth of $v \in V$ is a size of path $P$ from root to $v$.
+    \item depth of $v \in V$ is the size of path $P$ from root to $v$.
     \item vertex $v \in V$ is called a leaf if it has no descendants. Vertices that have descendants are called internal vertices.
-    \item to traverse tree $T$ is to take path $P$ from root to leaf. If $(v,v') \in P$, we say that we \emph{visit} $v$ and $v'$ during traversing.
+    \item to \textit{traverse} tree $T$ is to take path $P$ from the root to the leaf. If $(v,v') \in P$, we say that we \emph{visit} $v$ and $v'$ while traversing.
 \end{itemize}
 \end{definition}
