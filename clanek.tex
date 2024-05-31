@@ -16,7 +16,7 @@
 %% 
 %% Template article for Elsevier's document class `elsarticle'
 %% with harvard style bibliographic references
-
+%\documentclass[3p,times,procedia,table]{elsarticle}
 \documentclass[preprint,12pt]{elsarticle}
 
 %% Use the option review to obtain double line spacing
@@ -46,10 +46,11 @@
 \UseTblrLibrary{siunitx}
 \UseTblrLibrary{diagbox}
 \usepackage{rotating}
+\usepackage{mathtools}
 
 
-\newtheorem{example}{Example}[section]
 \theoremstyle{definition}
+\newtheorem{example}{Example}[section]
 \newtheorem{definition}{Definition}[section]
 
 %% The amsthm package provides extended theorem environments
@@ -91,7 +92,7 @@
 %%             country={}}
 %% \fntext[label3]{}
 
-\title{Title of Your Manuscript}
+\title{Isolation Forest in Novelty Detection Scenario}
 
 %% use optional labels to link authors explicitly to addresses:
 %% \author[label1,label2]{}
