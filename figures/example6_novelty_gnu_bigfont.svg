@@ -1,0 +1,2287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="600"
+   height="480"
+   viewBox="0 0 600 480"
+   version="1.1"
+   id="svg175"
+   sodipodi:docname="example6_novelty_gnu_bigfont.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs175" />
+  <sodipodi:namedview
+     id="namedview175"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="305.82368"
+     inkscape:cy="229.45615"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g153" />
+  <title
+     id="title1">Gnuplot</title>
+  <desc
+     id="desc1">Produced by GNUPLOT 6.0 patchlevel 1 </desc>
+  <g
+     id="gnuplot_canvas">
+    <rect
+       x="0"
+       y="0"
+       width="600"
+       height="480"
+       fill="none"
+       id="rect1" />
+    <defs
+       id="defs2">
+      <circle
+         id="gpDot"
+         r="0.5"
+         stroke-width="0.5"
+         stroke="currentColor" />
+      <path
+         id="gpPt0"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M-1,0 h2 M0,-1 v2" />
+      <path
+         id="gpPt1"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M-1,-1 L1,1 M1,-1 L-1,1" />
+      <path
+         id="gpPt2"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1" />
+      <rect
+         id="gpPt3"
+         stroke-width="0.222"
+         stroke="currentColor"
+         x="-1"
+         y="-1"
+         width="2"
+         height="2" />
+      <rect
+         id="gpPt4"
+         stroke-width="0.222"
+         stroke="currentColor"
+         fill="currentColor"
+         x="-1"
+         y="-1"
+         width="2"
+         height="2" />
+      <circle
+         id="gpPt5"
+         stroke-width="0.222"
+         stroke="currentColor"
+         cx="0"
+         cy="0"
+         r="1" />
+      <use
+         xlink:href="#gpPt5"
+         id="gpPt6"
+         fill="currentColor"
+         stroke="none" />
+      <path
+         id="gpPt7"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M0,-1.33 L-1.33,0.67 L1.33,0.67 z" />
+      <use
+         xlink:href="#gpPt7"
+         id="gpPt8"
+         fill="currentColor"
+         stroke="none" />
+      <use
+         xlink:href="#gpPt7"
+         id="gpPt9"
+         stroke="currentColor"
+         transform="rotate(180)" />
+      <use
+         xlink:href="#gpPt9"
+         id="gpPt10"
+         fill="currentColor"
+         stroke="none" />
+      <use
+         xlink:href="#gpPt3"
+         id="gpPt11"
+         stroke="currentColor"
+         transform="rotate(45)" />
+      <use
+         xlink:href="#gpPt11"
+         id="gpPt12"
+         fill="currentColor"
+         stroke="none" />
+      <path
+         id="gpPt13"
+         stroke-width="0.222"
+         stroke="currentColor"
+         d="M0,1.330 L1.265,0.411 L0.782,-1.067 L-0.782,-1.076 L-1.265,0.411 z" />
+      <use
+         xlink:href="#gpPt13"
+         id="gpPt14"
+         fill="currentColor"
+         stroke="none" />
+      <filter
+         id="textbox"
+         filterUnits="objectBoundingBox"
+         x="0"
+         y="0"
+         height="1"
+         width="1">
+        <feFlood
+           flood-color="white"
+           flood-opacity="1"
+           result="bgnd"
+           id="feFlood1" />
+        <feComposite
+           in="SourceGraphic"
+           in2="bgnd"
+           operator="atop"
+           id="feComposite1" />
+      </filter>
+      <filter
+         id="greybox"
+         filterUnits="objectBoundingBox"
+         x="0"
+         y="0"
+         height="1"
+         width="1">
+        <feFlood
+           flood-color="lightgrey"
+           flood-opacity="1"
+           result="grey"
+           id="feFlood2" />
+        <feComposite
+           in="SourceGraphic"
+           in2="grey"
+           operator="atop"
+           id="feComposite2" />
+      </filter>
+    </defs>
+    <g
+       fill="none"
+       color="white"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g2" />
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g4"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <path
+         stroke="#000000"
+         d="m 54.53,424.64 h 9 m 511.29,0 h -9"
+         id="path2" />
+      <g
+         transform="translate(46.14,428.54)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="end"
+         id="g3">
+        <text
+           id="text2"><tspan
+             font-family="Arial"
+             id="tspan2">0</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g6"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <path
+         stroke="#000000"
+         d="m 54.53,347.18 h 9 m 511.29,0 h -9"
+         id="path4" />
+      <g
+         transform="translate(46.14,351.08)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="end"
+         id="g5">
+        <text
+           id="text4"><tspan
+             font-family="Arial"
+             id="tspan4">20</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g8"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <path
+         stroke="#000000"
+         d="m 54.53,269.73 h 9 m 511.29,0 h -9"
+         id="path6" />
+      <g
+         transform="translate(46.14,273.63)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="end"
+         id="g7">
+        <text
+           id="text6"><tspan
+             font-family="Arial"
+             id="tspan6">40</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g10"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <path
+         stroke="#000000"
+         d="m 54.53,192.28 h 9 m 511.29,0 h -9"
+         id="path8" />
+      <g
+         transform="translate(46.14,196.18)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="end"
+         id="g9">
+        <text
+           id="text8"><tspan
+             font-family="Arial"
+             id="tspan8">60</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g12"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <path
+         stroke="#000000"
+         d="m 54.53,114.83 h 9 m 511.29,0 h -9"
+         id="path10" />
+      <g
+         transform="translate(46.14,118.73)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="end"
+         id="g11">
+        <text
+           id="text10"><tspan
+             font-family="Arial"
+             id="tspan10">80</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g14"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <path
+         stroke="#000000"
+         d="m 54.53,37.37 h 9 m 511.29,0 h -9"
+         id="path12" />
+      <g
+         transform="translate(46.14,41.27)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="end"
+         id="g13">
+        <text
+           id="text12"><tspan
+             font-family="Arial"
+             id="tspan12">100</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g16"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <path
+         stroke="#000000"
+         d="m 54.53,444 v -9 m 0,-416.99 v 9"
+         id="path14" />
+      <g
+         transform="translate(54.53,465.9)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="middle"
+         id="g15">
+        <text
+           id="text14"><tspan
+             font-family="Arial"
+             id="tspan14">0</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g18"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <path
+         stroke="#000000"
+         d="m 149.13,444 v -9 m 0,-416.99 v 9"
+         id="path16" />
+      <g
+         transform="translate(149.13,465.9)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="middle"
+         id="g17">
+        <text
+           id="text16"><tspan
+             font-family="Arial"
+             id="tspan16">20</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g20"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <path
+         stroke="#000000"
+         d="m 243.73,444 v -9 m 0,-416.99 v 9"
+         id="path18" />
+      <g
+         transform="translate(243.73,465.9)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="middle"
+         id="g19">
+        <text
+           id="text18"><tspan
+             font-family="Arial"
+             id="tspan18">40</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g22"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <path
+         stroke="#000000"
+         d="m 338.32,444 v -9 m 0,-416.99 v 9"
+         id="path20" />
+      <g
+         transform="translate(338.32,465.9)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="middle"
+         id="g21">
+        <text
+           id="text20"><tspan
+             font-family="Arial"
+             id="tspan20">60</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g24"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <path
+         stroke="#000000"
+         d="m 432.92,444 v -9 m 0,-416.99 v 9"
+         id="path22" />
+      <g
+         transform="translate(432.92,465.9)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="middle"
+         id="g23">
+        <text
+           id="text22"><tspan
+             font-family="Arial"
+             id="tspan22">80</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g26"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <path
+         stroke="#000000"
+         d="m 527.52,444 v -9 m 0,-416.99 v 9"
+         id="path24" />
+      <g
+         transform="translate(527.52,465.9)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="middle"
+         id="g25">
+        <text
+           id="text24"><tspan
+             font-family="Arial"
+             id="tspan24">100</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g27" />
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g28"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <path
+         stroke="#000000"
+         d="M 54.53,18.01 V 444 H 574.82 V 18.01 Z"
+         id="path27" />
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="black"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g29" />
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g31"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g30">
+        <polygon
+           fill="#000000"
+           points="54.53,18.02 54.53,444 574.81,444 574.81,18.02 "
+           id="polygon29" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 54.53,444 V 18.02 H 574.81 V 444 Z"
+         id="path30" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g33"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g32">
+        <polygon
+           fill="#000000"
+           points="54.53,18.02 54.53,444 314.68,444 314.68,18.02 "
+           id="polygon31" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 54.53,444 V 18.02 H 314.68 V 444 Z"
+         id="path32" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g35"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g34">
+        <polygon
+           fill="#eec6c6"
+           points="54.53,231 54.53,444 314.68,444 314.68,231 "
+           id="polygon33" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 54.53,444 V 231 h 260.15 v 213 z"
+         id="path34" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g37"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g36">
+        <polygon
+           fill="#000000"
+           points="54.53,18.02 54.53,231 314.68,231 314.68,18.02 "
+           id="polygon35" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 54.53,231 V 18.02 H 314.68 V 231 Z"
+         id="path36" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g39"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g38">
+        <polygon
+           fill="#000000"
+           points="54.53,18.02 54.53,231 184.6,231 184.6,18.02 "
+           id="polygon37" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 54.53,231 V 18.02 H 184.6 V 231 Z"
+         id="path38" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g41"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g40">
+        <polygon
+           fill="#c38282"
+           points="54.53,18.02 54.53,231 119.57,231 119.57,18.02 "
+           id="polygon39" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 54.53,231 V 18.02 h 65.04 V 231 Z"
+         id="path40" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g43"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g42">
+        <polygon
+           fill="#000000"
+           points="119.57,18.02 119.57,231 184.6,231 184.6,18.02 "
+           id="polygon41" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 119.57,231 V 18.02 H 184.6 V 231 Z"
+         id="path42" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g45"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g44">
+        <polygon
+           fill="#ae6565"
+           points="119.57,124.51 119.57,231 184.6,231 184.6,124.51 "
+           id="polygon43" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 119.57,231 V 124.51 H 184.6 V 231 Z"
+         id="path44" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g47"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g46">
+        <polygon
+           fill="#000000"
+           points="119.57,18.02 119.57,124.51 184.6,124.51 184.6,18.02 "
+           id="polygon45" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 119.57,124.51 V 18.02 h 65.03 v 106.49 z"
+         id="path46" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g49"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g48">
+        <polygon
+           fill="#000000"
+           points="119.57,71.26 119.57,124.51 184.6,124.51 184.6,71.26 "
+           id="polygon47" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 119.57,124.51 V 71.26 h 65.03 v 53.25 z"
+         id="path48" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g51"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g50">
+        <polygon
+           fill="#000000"
+           points="119.57,71.26 119.57,124.51 152.08,124.51 152.08,71.26 "
+           id="polygon49" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 119.57,124.51 V 71.26 h 32.51 v 53.25 z"
+         id="path50" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g53"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g52">
+        <polygon
+           fill="#6e2424"
+           points="119.57,71.26 119.57,124.51 135.83,124.51 135.83,71.26 "
+           id="polygon51" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 119.57,124.51 V 71.26 h 16.26 v 53.25 z"
+         id="path52" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g55"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g54">
+        <polygon
+           fill="#6e2424"
+           points="135.83,71.26 135.83,124.51 152.08,124.51 152.08,71.26 "
+           id="polygon53" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 135.83,124.51 V 71.26 h 16.25 v 53.25 z"
+         id="path54" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g57"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g56">
+        <polygon
+           fill="#833636"
+           points="152.08,71.26 152.08,124.51 184.6,124.51 184.6,71.26 "
+           id="polygon55" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 152.08,124.51 V 71.26 h 32.52 v 53.25 z"
+         id="path56" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g59"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g58">
+        <polygon
+           fill="#994c4c"
+           points="119.57,18.02 119.57,71.26 184.6,71.26 184.6,18.02 "
+           id="polygon57" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 119.57,71.26 V 18.02 h 65.03 v 53.24 z"
+         id="path58" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g61"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g60">
+        <polygon
+           fill="#000000"
+           points="184.6,18.02 184.6,231 314.68,231 314.68,18.02 "
+           id="polygon59" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 184.6,231 V 18.02 H 314.68 V 231 Z"
+         id="path60" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g63"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g62">
+        <polygon
+           fill="#000000"
+           points="184.6,18.02 184.6,231 249.64,231 249.64,18.02 "
+           id="polygon61" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 184.6,231 V 18.02 h 65.04 V 231 Z"
+         id="path62" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g65"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g64">
+        <polygon
+           fill="#ae6565"
+           points="184.6,124.51 184.6,231 249.64,231 249.64,124.51 "
+           id="polygon63" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 184.6,231 V 124.51 h 65.04 V 231 Z"
+         id="path64" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g67"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g66">
+        <polygon
+           fill="#000000"
+           points="184.6,18.02 184.6,124.51 249.64,124.51 249.64,18.02 "
+           id="polygon65" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 184.6,124.51 V 18.02 h 65.04 v 106.49 z"
+         id="path66" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g69"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g68">
+        <polygon
+           fill="#000000"
+           points="184.6,71.26 184.6,124.51 249.64,124.51 249.64,71.26 "
+           id="polygon67" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 184.6,124.51 V 71.26 h 65.04 v 53.25 z"
+         id="path68" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g71"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g70">
+        <polygon
+           fill="#833636"
+           points="184.6,97.88 184.6,124.51 249.64,124.51 249.64,97.88 "
+           id="polygon69" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 184.6,124.51 V 97.88 h 65.04 v 26.63 z"
+         id="path70" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g73"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g72">
+        <polygon
+           fill="#000000"
+           points="184.6,71.26 184.6,97.88 249.64,97.88 249.64,71.26 "
+           id="polygon71" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 184.6,97.88 V 71.26 h 65.04 v 26.62 z"
+         id="path72" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g75"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g74">
+        <polygon
+           fill="#6e2424"
+           points="184.6,71.26 184.6,97.88 217.12,97.88 217.12,71.26 "
+           id="polygon73" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 184.6,97.88 V 71.26 h 32.52 v 26.62 z"
+         id="path74" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g77"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g76">
+        <polygon
+           fill="#6e2424"
+           points="217.12,71.26 217.12,97.88 249.64,97.88 249.64,71.26 "
+           id="polygon75" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 217.12,97.88 V 71.26 h 32.52 v 26.62 z"
+         id="path76" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g79"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g78">
+        <polygon
+           fill="#994c4c"
+           points="184.6,18.02 184.6,71.26 249.64,71.26 249.64,18.02 "
+           id="polygon77" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 184.6,71.26 V 18.02 h 65.04 v 53.24 z"
+         id="path78" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g81"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g80">
+        <polygon
+           fill="#c38282"
+           points="249.64,18.02 249.64,231 314.68,231 314.68,18.02 "
+           id="polygon79" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 249.64,231 V 18.02 h 65.04 V 231 Z"
+         id="path80" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g83"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g82">
+        <polygon
+           fill="#000000"
+           points="314.68,18.02 314.68,444 574.81,444 574.81,18.02 "
+           id="polygon81" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 314.68,444 V 18.02 H 574.81 V 444 Z"
+         id="path82" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g85"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g84">
+        <polygon
+           fill="#eec6c6"
+           points="314.68,18.02 314.68,444 444.75,444 444.75,18.02 "
+           id="polygon83" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 314.68,444 V 18.02 H 444.75 V 444 Z"
+         id="path84" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g87"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g86">
+        <polygon
+           fill="#000000"
+           points="444.75,18.02 444.75,444 574.81,444 574.81,18.02 "
+           id="polygon85" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 444.75,444 V 18.02 H 574.81 V 444 Z"
+         id="path86" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g89"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g88">
+        <polygon
+           fill="#000000"
+           points="444.75,231 444.75,444 574.81,444 574.81,231 "
+           id="polygon87" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 444.75,444 V 231 h 130.06 v 213 z"
+         id="path88" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g91"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g90">
+        <polygon
+           fill="#000000"
+           points="444.75,231 444.75,444 509.78,444 509.78,231 "
+           id="polygon89" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 444.75,444 V 231 h 65.03 v 213 z"
+         id="path90" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g93"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g92">
+        <polygon
+           fill="#000000"
+           points="444.75,337.5 444.75,444 509.78,444 509.78,337.5 "
+           id="polygon91" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 444.75,444 V 337.5 h 65.03 V 444 Z"
+         id="path92" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g95"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g94">
+        <polygon
+           fill="#994c4c"
+           points="444.75,337.5 444.75,444 477.27,444 477.27,337.5 "
+           id="polygon93" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 444.75,444 V 337.5 h 32.52 V 444 Z"
+         id="path94" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g97"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g96">
+        <polygon
+           fill="#000000"
+           points="477.27,337.5 477.27,444 509.78,444 509.78,337.5 "
+           id="polygon95" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 477.27,444 V 337.5 h 32.51 V 444 Z"
+         id="path96" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g99"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g98">
+        <polygon
+           fill="#000000"
+           points="477.27,337.5 477.27,444 493.52,444 493.52,337.5 "
+           id="polygon97" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 477.27,444 V 337.5 h 16.25 V 444 Z"
+         id="path98" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g101"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g100">
+        <polygon
+           fill="#000000"
+           points="477.27,337.5 477.27,444 485.4,444 485.4,337.5 "
+           id="polygon99" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 477.27,444 V 337.5 h 8.13 V 444 Z"
+         id="path100" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g103"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g102">
+        <polygon
+           fill="#591616"
+           points="477.27,390.75 477.27,444 485.4,444 485.4,390.75 "
+           id="polygon101" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 477.27,444 v -53.25 h 8.13 V 444 Z"
+         id="path102" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g105"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g104">
+        <polygon
+           fill="#000000"
+           points="477.27,337.5 477.27,390.75 485.4,390.75 485.4,337.5 "
+           id="polygon103" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 477.27,390.75 V 337.5 h 8.13 v 53.25 z"
+         id="path104" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g107"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g106">
+        <polygon
+           fill="#440b0b"
+           points="477.27,364.13 477.27,390.75 485.4,390.75 485.4,364.13 "
+           id="polygon105" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 477.27,390.75 v -26.62 h 8.13 v 26.62 z"
+         id="path106" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g109"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g108">
+        <polygon
+           fill="#440b0b"
+           points="477.27,337.5 477.27,364.13 485.4,364.13 485.4,337.5 "
+           id="polygon107" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 477.27,364.13 V 337.5 h 8.13 v 26.63 z"
+         id="path108" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g111"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g110">
+        <polygon
+           fill="#6e2424"
+           points="485.4,337.5 485.4,444 493.52,444 493.52,337.5 "
+           id="polygon109" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 485.4,444 V 337.5 h 8.12 V 444 Z"
+         id="path110" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g113"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g112">
+        <polygon
+           fill="#833636"
+           points="493.52,337.5 493.52,444 509.78,444 509.78,337.5 "
+           id="polygon111" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 493.52,444 V 337.5 h 16.26 V 444 Z"
+         id="path112" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g115"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g114">
+        <polygon
+           fill="#000000"
+           points="444.75,231 444.75,337.5 509.78,337.5 509.78,231 "
+           id="polygon113" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 444.75,337.5 V 231 h 65.03 v 106.5 z"
+         id="path114" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g117"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g116">
+        <polygon
+           fill="#000000"
+           points="444.75,284.25 444.75,337.5 509.78,337.5 509.78,284.25 "
+           id="polygon115" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 444.75,337.5 v -53.25 h 65.03 v 53.25 z"
+         id="path116" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g119"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g118">
+        <polygon
+           fill="#833636"
+           points="444.75,310.88 444.75,337.5 509.78,337.5 509.78,310.88 "
+           id="polygon117" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 444.75,337.5 v -26.62 h 65.03 v 26.62 z"
+         id="path118" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g121"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g120">
+        <polygon
+           fill="#833636"
+           points="444.75,284.25 444.75,310.88 509.78,310.88 509.78,284.25 "
+           id="polygon119" />
+      </g>
+      <path
+         stroke="#000000"
+         d="m 444.75,310.88 v -26.63 h 65.03 v 26.63 z"
+         id="path120" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g123"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g122">
+        <polygon
+           fill="#994c4c"
+           points="444.75,231 444.75,284.25 509.78,284.25 509.78,231 "
+           id="polygon121" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 444.75,284.25 V 231 h 65.03 v 53.25 z"
+         id="path122" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g125"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g124">
+        <polygon
+           fill="#c38282"
+           points="509.78,231 509.78,444 574.81,444 574.81,231 "
+           id="polygon123" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 509.78,444 V 231 h 65.03 v 213 z"
+         id="path124" />
+    </g>
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="0.05"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g153"
+       transform="matrix(0.92672633,0,0,0.9214147,-10.980055,26.173742)">
+      <g
+         stroke="none"
+         shape-rendering="crispEdges"
+         id="g126"
+         transform="matrix(1.0513279,0,0,1.0513279,-1.4076752,-23.921179)">
+        <polygon
+           fill="#d8a2a2"
+           points="444.75,18.02 444.75,231 574.81,231 574.81,18.02 "
+           id="polygon125" />
+      </g>
+      <path
+         stroke="#000000"
+         d="M 466.1704,218.93556 V -4.9762506 H 602.9061 V 218.93556 Z"
+         id="path126"
+         style="stroke-width:0.0525664" />
+      <g
+         transform="matrix(7.3064654,0,0,7.3064654,175.95984,306.84282)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g127">
+        <text
+           id="text126"
+           x="-10.649669"
+           y="13.250795"><tspan
+             font-family="Arial"
+             id="tspan126">2</tspan></text>
+      </g>
+      <g
+         transform="matrix(5.2103836,0,0,5.2103836,79.217018,124.00337)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g128">
+        <text
+           id="text127"><tspan
+             font-family="Arial"
+             id="tspan127">4</tspan></text>
+      </g>
+      <g
+         transform="matrix(2.5489259,0,0,2.5489259,143.43378,102.45311)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g131"
+         style="fill:#f9f9f9">
+        <text
+           id="text130"
+           style="fill:#f9f9f9"><tspan
+             font-family="Arial"
+             id="tspan130"
+             style="fill:#f9f9f9">8</tspan></text>
+      </g>
+      <g
+         transform="matrix(2.5489259,0,0,2.5489259,126.85871,102.35424)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g131-3"
+         style="fill:#f9f9f9">
+        <text
+           id="text130-3"
+           style="fill:#f9f9f9"><tspan
+             font-family="Arial"
+             id="tspan130-7"
+             style="fill:#f9f9f9">8</tspan></text>
+      </g>
+      <g
+         transform="matrix(3.7955468,0,0,3.7955468,217.36893,173.3126)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g134">
+        <text
+           id="text133"><tspan
+             font-family="Arial"
+             id="tspan133">5</tspan></text>
+      </g>
+      <g
+         transform="matrix(3.7955468,0,0,3.7955468,153.74223,173.18733)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g134-7">
+        <text
+           id="text133-6"><tspan
+             font-family="Arial"
+             id="tspan133-5">5</tspan></text>
+      </g>
+      <g
+         transform="matrix(2.2732068,0,0,2.2732068,209.79847,72.367167)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g136"
+         style="fill:#f9f9f9">
+        <text
+           id="text135"
+           style="fill:#f9f9f9"><tspan
+             font-family="Arial"
+             id="tspan135"
+             style="fill:#f9f9f9">8</tspan></text>
+      </g>
+      <g
+         transform="matrix(2.2732068,0,0,2.2732068,239.47705,72.194162)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g136-5"
+         style="fill:#f9f9f9">
+        <text
+           id="text135-7"
+           style="fill:#f9f9f9"><tspan
+             font-family="Arial"
+             id="tspan135-0"
+             style="fill:#f9f9f9">8</tspan></text>
+      </g>
+      <g
+         transform="matrix(5.1167281,0,0,5.1167281,285.29834,121.35349)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g139">
+        <text
+           id="text138"><tspan
+             font-family="Arial"
+             id="tspan138">4</tspan></text>
+      </g>
+      <g
+         transform="matrix(5.1167281,0,0,5.1167281,559.21518,324.02839)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g139-8">
+        <text
+           id="text138-9"><tspan
+             font-family="Arial"
+             id="tspan138-2">4</tspan></text>
+      </g>
+      <g
+         transform="matrix(0.57364618,0,0,0.57364618,396.38417,221.49121)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g140"
+         style="stroke-width:54.1086;stroke-dasharray:none">
+        <text
+           id="text139"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:72.1449px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:54.1086;stroke-dasharray:none"
+           inkscape:label="text139"
+           x="-18.920538"
+           y="23.560467"><tspan
+             font-family="Arial"
+             id="tspan139"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:72.1449px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:54.1086;stroke-dasharray:none">2</tspan></text>
+      </g>
+      <g
+         transform="matrix(1.2539362,0,0,1.5474026,501.47378,417.87499)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g142"
+         style="fill:#f2f2f2">
+        <text
+           id="text141"
+           style="fill:#f2f2f2"><tspan
+             font-family="Arial"
+             id="tspan141"
+             style="fill:#f2f2f2">9</tspan></text>
+      </g>
+      <g
+         transform="matrix(1.4960164,0,0,1.4960164,510.31374,390.81539)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g145"
+         style="fill:#f2f2f2">
+        <text
+           id="text144"
+           style="fill:#f2f2f2"><tspan
+             font-family="Arial"
+             id="tspan144"
+             style="fill:#f2f2f2">8</tspan></text>
+      </g>
+      <g
+         transform="matrix(3.1541831,0,0,3.1541831,518.58701,397.15138)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g146"
+         style="fill:#ececec">
+        <text
+           id="text145"
+           style="fill:#ececec"><tspan
+             font-family="Arial"
+             id="tspan145"
+             style="fill:#ececec">7</tspan></text>
+      </g>
+      <g
+         transform="matrix(3.1541831,0,0,3.1541831,222.46795,103.0149)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g146-6"
+         style="fill:#e6e6e6">
+        <text
+           id="text145-5"
+           style="fill:#e6e6e6"><tspan
+             font-family="Arial"
+             id="tspan145-7"
+             style="fill:#e6e6e6">7</tspan></text>
+      </g>
+      <g
+         transform="matrix(3.1541831,0,0,3.1541831,167.73079,102.63392)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g146-8"
+         style="fill:#e6e6e6">
+        <text
+           id="text145-8"
+           style="fill:#e6e6e6"><tspan
+             font-family="Arial"
+             id="tspan145-4"
+             style="fill:#e6e6e6">7</tspan></text>
+      </g>
+      <g
+         transform="matrix(2.8390353,0,0,2.8390353,496.67409,294.35051)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g148"
+         style="fill:#ececec">
+        <text
+           id="text147"
+           style="fill:#ececec"><tspan
+             font-family="Arial"
+             id="tspan147"
+             style="fill:#ececec">7</tspan></text>
+      </g>
+      <g
+         transform="matrix(2.8390353,0,0,2.8390353,495.35578,326.07458)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g148-2"
+         style="fill:#e6e6e6">
+        <text
+           id="text147-8"
+           style="fill:#e6e6e6"><tspan
+             font-family="Arial"
+             id="tspan147-6"
+             style="fill:#e6e6e6">7</tspan></text>
+      </g>
+      <g
+         transform="matrix(3.4705247,0,0,3.4705247,495.28423,258.86071)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g149"
+         style="fill:#1a1a1a">
+        <text
+           id="text148"
+           style="fill:#1a1a1a"><tspan
+             font-family="Arial"
+             id="tspan148"
+             style="fill:#1a1a1a">6</tspan></text>
+      </g>
+      <g
+         transform="matrix(3.4705247,0,0,3.4705247,218.88658,34.570936)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g149-3"
+         style="fill:#1a1a1a">
+        <text
+           id="text148-2"
+           style="fill:#1a1a1a"><tspan
+             font-family="Arial"
+             id="tspan148-0"
+             style="fill:#1a1a1a">6</tspan></text>
+      </g>
+      <g
+         transform="matrix(3.4705247,0,0,3.4705247,149.04443,34.587779)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g149-0"
+         style="fill:#1a1a1a">
+        <text
+           id="text148-3"
+           style="fill:#1a1a1a"><tspan
+             font-family="Arial"
+             id="tspan148-8"
+             style="fill:#1a1a1a">6</tspan></text>
+      </g>
+      <g
+         transform="matrix(3.4705247,0,0,3.4705247,477.32847,397.27203)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g149-6">
+        <text
+           id="text148-5"><tspan
+             font-family="Arial"
+             id="tspan148-09">6</tspan></text>
+      </g>
+      <g
+         transform="matrix(5.3108768,0,0,5.3108768,528.10033,118.71158)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g151">
+        <text
+           id="text150"><tspan
+             font-family="Arial"
+             id="tspan150">3</tspan></text>
+      </g>
+      <g
+         transform="matrix(5.0515894,0,0,5.0515894,363.39121,143.63523)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="8px"
+         text-anchor="start"
+         id="g151-8">
+        <text
+           id="text150-3-3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.74257px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.0108911"
+           x="-42.061443"
+           y="28.704824"
+           transform="matrix(0,-1.0057646,0.99426844,0,0,0)"><tspan
+             sodipodi:role="line"
+             id="tspan176-5"
+             x="-42.061443"
+             y="28.704824"
+             style="stroke-width:0.0108911">10</tspan><tspan
+             sodipodi:role="line"
+             id="tspan177-6"
+             x="-42.061443"
+             y="30.883032"
+             style="stroke-width:0.0108911" /></text>
+        <text
+           id="text150-3-3-5"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.74257px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke-width:0.0108911"
+           x="-45.697231"
+           y="28.747171"
+           transform="matrix(0,-1.0057646,0.99426844,0,0,0)"><tspan
+             sodipodi:role="line"
+             id="tspan176-5-3"
+             x="-45.697231"
+             y="28.747171"
+             style="stroke-width:0.0108911">10</tspan><tspan
+             sodipodi:role="line"
+             id="tspan177-6-3"
+             x="-45.697231"
+             y="30.925379"
+             style="stroke-width:0.0108911" /></text>
+      </g>
+      <g
+         transform="matrix(1.0513279,0,0,1.0513279,172.77633,355.36638)"
+         stroke="none"
+         fill="#000000"
+         font-family="Arial"
+         font-size="12px"
+         text-anchor="start"
+         id="g152">
+        <text
+           id="text151"><tspan
+             font-family="Arial"
+             font-weight="bold"
+             id="tspan151">Px</tspan></text>
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="black"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g154" />
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g155" />
+    <g
+       id="gnuplot_plot_1"
+       fill="none"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <title
+         id="title155">gnuplot_plot_1</title>
+      <g
+         fill="none"
+         color="#ffffff"
+         stroke="#000000"
+         stroke-width="0.5"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         id="g156" />
+      <g
+         fill="none"
+         color="#000000"
+         stroke="currentColor"
+         stroke-width="0.5"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         id="g157">
+        <path
+           stroke="#ff0000"
+           d="M 314.68,435.48 V 26.53 M 59.73,231 H 309.47 M 184.6,226.75 V 22.27 M 119.57,226.75 V 22.27 m 1.3,102.24 H 183.3 M 120.87,71.26 h 62.43 m -31.22,52.18 V 72.32 m -16.25,51.12 V 72.32 M 249.64,226.75 V 22.27 M 185.9,124.51 h 62.44 M 185.9,71.26 h 62.44 M 185.9,97.88 h 62.44 M 217.12,97.35 V 71.79 M 444.75,435.48 V 26.53 M 447.35,231 H 572.22 M 509.78,439.74 V 235.26 M 446.05,337.5 h 62.43 M 477.27,441.87 V 339.63 m 16.25,102.24 V 339.63 M 485.4,441.87 V 339.63 m -7.97,51.12 h 7.8 m -7.8,-26.62 h 7.8 m -39.18,-79.88 h 62.43 m -62.43,26.63 h 62.43"
+           id="path156" />
+      </g>
+    </g>
+    <g
+       id="gnuplot_plot_2"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <title
+         id="title157">regular</title>
+      <g
+         fill="none"
+         color="#ffffff"
+         stroke="#ff0000"
+         stroke-width="1"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         id="g158" />
+      <g
+         fill="none"
+         color="#000000"
+         stroke="currentColor"
+         stroke-width="1"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         id="g168">
+        <use
+           xlink:href="#gpPt0"
+           transform="matrix(4.5,0,0,4.5,172.78,37.37)"
+           color="#0000ff"
+           id="use158" />
+        <use
+           xlink:href="#gpPt0"
+           transform="matrix(4.5,0,0,4.5,196.43,76.1)"
+           color="#0000ff"
+           id="use159" />
+        <use
+           xlink:href="#gpPt0"
+           transform="matrix(4.5,0,0,4.5,149.13,76.1)"
+           color="#0000ff"
+           id="use160" />
+        <use
+           xlink:href="#gpPt0"
+           transform="matrix(4.5,0,0,4.5,220.08,95.46)"
+           color="#0000ff"
+           id="use161" />
+        <use
+           xlink:href="#gpPt0"
+           transform="matrix(4.5,0,0,4.5,172.78,95.46)"
+           color="#0000ff"
+           id="use162" />
+        <use
+           xlink:href="#gpPt0"
+           transform="matrix(4.5,0,0,4.5,125.48,95.46)"
+           color="#0000ff"
+           id="use163" />
+        <use
+           xlink:href="#gpPt0"
+           transform="matrix(4.5,0,0,4.5,503.87,327.82)"
+           color="#0000ff"
+           id="use164" />
+        <use
+           xlink:href="#gpPt0"
+           transform="matrix(4.5,0,0,4.5,503.87,366.55)"
+           color="#0000ff"
+           id="use165" />
+        <use
+           xlink:href="#gpPt0"
+           transform="matrix(4.5,0,0,4.5,480.22,308.46)"
+           color="#0000ff"
+           id="use166" />
+        <use
+           xlink:href="#gpPt0"
+           transform="matrix(4.5,0,0,4.5,480.22,347.18)"
+           color="#0000ff"
+           id="use167" />
+        <use
+           xlink:href="#gpPt0"
+           transform="matrix(4.5,0,0,4.5,480.22,385.91)"
+           color="#0000ff"
+           id="use168" />
+      </g>
+    </g>
+    <g
+       id="gnuplot_plot_3"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <title
+         id="title168">anomaly</title>
+      <g
+         fill="none"
+         color="#000000"
+         stroke="currentColor"
+         stroke-width="1"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         id="g170">
+        <use
+           xlink:href="#gpPt0"
+           transform="matrix(4.5,0,0,4.5,551.17,347.18)"
+           color="#0000ff"
+           id="use169" />
+        <use
+           xlink:href="#gpPt0"
+           transform="matrix(4.5,0,0,4.5,172.78,347.18)"
+           color="#0000ff"
+           id="use170" />
+      </g>
+    </g>
+    <g
+       fill="none"
+       color="white"
+       stroke="rgb(  0,   0, 255)"
+       stroke-width="2.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g171" />
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="2.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g172" />
+    <g
+       fill="none"
+       color="black"
+       stroke="black"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g173" />
+    <g
+       fill="none"
+       color="#000000"
+       stroke="currentColor"
+       stroke-width="1"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g174"
+       transform="matrix(0.97429323,0,0,0.96870897,-12.284585,4.132416)">
+      <path
+         stroke="#000000"
+         d="M 54.53,18.01 V 444 H 574.82 V 18.01 Z"
+         id="path173" />
+    </g>
+    <g
+       fill="none"
+       color="black"
+       stroke="currentColor"
+       stroke-width="1.00"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       id="g175" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f9f9f9;stroke:#000000;stroke-width:50;stroke-dasharray:none;stroke-opacity:0.997602"
+       x="329.59412"
+       y="358.81918"
+       id="text175"><tspan
+         sodipodi:role="line"
+         id="tspan175"
+         x="329.59412"
+         y="358.81918" /></text>
+  </g>
+  <metadata
+     id="metadata177">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Gnuplot</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

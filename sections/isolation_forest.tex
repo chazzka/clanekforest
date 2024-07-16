@@ -87,7 +87,6 @@ Note that this deviation is theoretical and does not affect the original functio
 The trivial rooted tree \(T_0\) is a tuple with
 vertices \(V_0 = \{R(S)\}\) and edges \(E_0 = \emptyset\), i.e. 
 \[T_0= (V_0, E_0) = (\{R(S)\},\emptyset).\]
-
 The function relation $\rho_0$ initially has no assignments, i.e.
 $$\rho_0 = \emptyset.$$
 
@@ -96,8 +95,8 @@ $$\rho_0 = \emptyset.$$
 % Let us create \(T_{j+1}\) from \(T_{j} = (V_j, E_j)\) and $\rho_{j+1}$ from $\rho_{j}$.
 % The creation of \(T_{j+1}\) from \(T_{j} = (V_j, E_j)\) and $\rho_{j+1}$ from $\rho_{j}$ starts by forming a new hyperrcentagle R.
 % to reach the tree \(T_{j+1}\) from \(T_{j} = (V_j, E_j)\) and $\rho_{j+1}$ from $\rho_{j}$
-\paragraph{Recursive step
-is to reach the tree \(T_{j+1}\) from \(T_{j} = (V_j, E_j)\) and $\rho_{j+1}$ from $\rho_{j}$}
+\paragraph{Recursive step}
+The task of this step is to reach the tree \(T_{j+1}\) from \(T_{j} = (V_j, E_j)\) and $\rho_{j+1}$ from $\rho_{j}.$
 Let \(L_j \subseteq V_j\) be a subset of leaves not satisfying the
 ending condition
 % By selecting a random dimension $d_R$ (such that $|r_{d_R}| > 1$) create two new vertices \(R_l, R_r\) for each leaf \(R \in L_j\)\
@@ -105,8 +104,6 @@ ending condition
 and \(R \in L_j\)\ be a leaf such that
 \[R =  r_0 \times \cdots \times r_{d_R} \times \cdots \times r_{n-1}. \]
 We first select a random dimension $d_R$ (such that $r_{d_R}$ is infinite) and a random split point $z_R \in r_{d_R}$.
-
-
 The split point $z_R$ splits $R \cap S$, creating two disjunctive sets $S_l$ and $S_r$ respectively, such that
 \begin{align*}
 S_l &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s})\le z_R\},&
@@ -120,7 +117,7 @@ R_r &= R(S_r).
 \end{align*}
 
 Each vertex \(R \in L_j\) is associated with two new
-edges \((R,R_l ), (R, R_r)\) and is assigned with $(z_R,d_R)$ by function relation $\rho_{j+1}$ as
+edges \((R,R_l ), (R, R_r)\) and is assigned with $(z_R,d_R)$ by function relation $\rho_{j+1}$, such that
 
 
 \begin{align*}
@@ -134,7 +131,7 @@ i.e.~${R_l, R_r} \subset R$ are leaves and $R$ is an inner vertex in the new tre
 \((V_{j+1},\subseteq)\)}
 
 
-\paragraph{Ending condition} The algorithm moves to the next recursion step unless there is an equality of two consecutive trees \(T_k = T_{k+1}\). Such equality happens when all leaves satisfy their ending condition, i.e., \(L_k = \emptyset\).
+\paragraph{Termination} The algorithm moves to the next recursion step unless there is an equality of two consecutive trees \(T_k = T_{k+1}\). Such equality happens when all leaves satisfy their ending condition, i.e., \(L_k = \emptyset\).
 Thus, the desired tree $T$ is the tree $T_k$, and the finite relation $\rho$ is $\rho_k$.
 
 
@@ -150,13 +147,15 @@ as shown in Figure \ref{fig:example_noutlier_gnu}.
 
 \begin{figure}[htbp]
 \centering
-\includesvg[width=0.9\textwidth, inkscapelatex=false]{figures/example66_Noutlier_gnu.svg}
+\includesvg[width=0.9\textwidth, inkscapelatex=false]{figures/example6_noutlier_gnu_legend.svg}
 \caption{Original solution. Rectangles created by recursive splitting.}
 \label{fig:example_noutlier_gnu}
 \end{figure}
 
+
+
 The tree $T$ is created by starting with the tree $T_0$ and expanding further as described by the recursive step until the ending condition is met.
-Figure \ref{fig:example_noutlier_tree_color} shows the finished tree $T$, trained on the dataset $S$.
+Figure \ref{fig:example_noutlier_tree_color} shows the finished tree $T$, trained on the dataset $S$. Numbers represent the final leaves’ depth.
 
 \paragraph{Basis step} 
 We create the tree $T_0$ and a function relation $\rho_0$.
@@ -170,7 +169,7 @@ T_0 &= (V_0, E_0),& \rho_0 &= \emptyset.
 Figure \ref{fig:example_noutlier_gnu} shows $R$ as the largest and the brightest coloured rectangle.
 
 \paragraph{Recursive step} 
-In order to reach $T_1$ from $T_0$, a dimension $d_R=1$ and a split point $z_R = 72.63$ were randomly chosen. Figure \ref{fig:example_noutlier_gnu} shows split points as red lines in their respective rectangles. The recursive step starts with creating left and right descendants of $R$ as
+In order to reach $T_1$ from $T_0$, a dimension $d_R=1$ and a split point $z_R = 72.63$ were randomly chosen. Figure \ref{fig:example_noutlier_gnu} shows split points as purple lines in their respective rectangles. The recursive step starts with creating left and right descendants of $R$ as
 \begin{align*}
  S_l & = \left\{\begin{smallmatrix}
  [105,20],& [95,25], &[95,15],\\
@@ -203,7 +202,6 @@ S_{lr} &= \{[105,20]\},\\
 R_{ll} &= \langle 90, 95 \rangle \times \langle 10, 30\rangle,&
 R_{lr} &= \langle 105, 105 \rangle \times \langle 20, 20\rangle
 \end{align*}
-
 and $z_{R_r}= 20.32$, $d_{R_r} = 0$ for the right vertex $R_r$ respectively
 \begin{align*}
 S_{rl}&= \{[20,90],[15,85]\},&
@@ -224,7 +222,7 @@ E_2 &= \{ (R,R_l),(R,R_r), (R_l,R_{ll}), (R_l,R_{lr}), (R_r,R_{rl}), (R_r,R_{rr}
 T_2 &= (V_2, E_2).
 \end{align*}
 
-With the $T_2$ created, we now have to check for the ending condition of the leaves. Since $|R_{lr}\cap S|=|S_{lr}| = 1$, the ending condition for the leaf $R_{lr}$ is met, and the new set of leaves $L_2$ for the next recursion step is
+\paragraph{Termination} With the $T_2$ created, we now have to check for the ending condition of the leaves. Since $|R_{lr}\cap S|=|S_{lr}| = 1$, the ending condition for the leaf $R_{lr}$ is met, and the new set of leaves $L_2$ for the next recursion step is
 $$L_2 = \{R_{ll},R_{rl},R_{rr}\}.$$
 
 This continues until we reach tree $T_5$ such that $T_5=T_6$ is the desired tree $T$ as shown in Figure \ref{fig:example_noutlier_tree_color}. 
@@ -317,9 +315,9 @@ Note that each element that was part of the batch during the training --- tree b
 This is not true for elements unseen during the training phase (such as novelty points).
 See $a' \in R$, but $a' \notin R_l$ (and of course $a' \notin R_r$) in Example \ref{ex:novelty_point_evaluation_original}.
 
-\begin{figure}[htbp]
+\begin{sidewaysfigure}[htbp]
 \centering
-\includesvg[angle=90,inkscapelatex=false,width=1\textwidth]{figures/example66_Noutlier_tree.svg}
+\includesvg[inkscapelatex=false,width=1\textwidth]{figures/example6_Noutlier_tree_tb.svg}
 \caption{tree constructed using the original approach}
 \label{fig:example_noutlier_tree_color}
-\end{figure}
+\end{sidewaysfigure}

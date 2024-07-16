@@ -15,11 +15,11 @@ Let us recall the equations needed for vertex creation:
 S_l &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s})\le z_R\},&
 S_r &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s}) > z_R\}.
 \end{align*}
-The point $p$ fits neither $S_l$ nor $S_r$ and does not even necessarily fit $R_l = R(S_l)$ nor $R_r = R(S_r)$. 
+The point $p$ fits neither $S_l$ nor $S_r$ and does not even necessarily fit $R_l = R(S_l)$ nor $R_r = R(S_r)$ (for practical illustration, see point $a'$ in Example \ref{ex:novelty_point_evaluation_original}.
 
 Nevertheless, because the data point $p$ satisfies  $\pi_d(p) \le z$ (or $\pi_d(p) > z$), $p$ is assigned to the vertex $R_l$ (or $R_r$) even though $p \notin R_l$ nor $p \notin R_r$.
 
-This is why the original Isolation Forest is a purely unsupervised algorithm. To work properly, the tree has to be constructed concerning all possible input data.
+This is why the original Isolation Forest is a purely unsupervised algorithm. To work correctly, the tree has to be constructed concerning all possible input data.
 
 \subsection{Proposed Solution}
 The proposed solution comes from the idea that the original tree lacks the possibility to isolate more data points than it currently observes.
@@ -74,9 +74,7 @@ Then, we obtain the left and right hyperrectangles
 R_l &= r_1 \times  \cdots \times r_{d-1} \times  \langle x, s ) \times r_{d+1} \times \cdots \times r_n, \\
 R_r &= r_1 \times  \cdots \times r_{d-1} \times \langle s, y ) \times r_{d+1} \times \cdots \times r_n,
 \end{align*}
-where 
-\(s = \frac{x + y}{2}\)
-is a number obtained as the middle of the range \(r_d\,\).
+where \(s = \frac{x + y}{2}\) is a number obtained as the middle of the range \(r_d\,\).
 
 In the new tree $T_{j+1}$ each vertex \(R\) is associated with two new
 edges \((R,R_l ), (R, R_r)\) giving
@@ -88,7 +86,7 @@ T_{j+1} &= (V_{j+1}, E_{j+1}),
 i.e.~${R_l, R_r} \subset R$ are leaves in the new tree
 \(T_{j+1}\).
 
-\paragraph{Recursion is terminated} if there is an equality of two consecutive trees \(T_k = T_{k+1}\). This happens when all leaves satisfy the ending condition, i.e., \(L_k = \emptyset\).
+\paragraph{Termination} Recursion is terminated if there is an equality of two consecutive trees \(T_k = T_{k+1}\). This happens when all leaves satisfy the ending condition, i.e., \(L_k = \emptyset\).
 If this is the case, the desired tree $T$ is the tree $T_k$; otherwise, move to the next recursion step.
 
 
@@ -104,12 +102,11 @@ Consider now an example of creating a new enhanced Isolation tree based on the g
     &[25,85],[15,85],[105,20],[95,25], \\
     &[95,15],[90,30],[90,20],[90,10]\}.
 \end{align*}
-
 Figure \ref{fig:example_novelty_gnu} shows $S$ in the finished plane created using an enhanced approach. Observe that the split points (red lines) are always in the middle of the previous observable space, and rectangles now always cover the whole ancestor's area. Numbers represent the final leaves' depth (also seen in Figure \ref{fig:example_novelty_tree_color}).
 
 \begin{figure}[htbp]
 \centering
-\includesvg[width=0.9\textwidth,inkscapelatex=false]{figures/example66_Novelty_gnu.svg}
+\includesvg[width=0.9\textwidth,inkscapelatex=false]{figures/example6_novelty_gnu_bigfont.svg}
 \caption{Enhanced approach. Rectangles created by recursive splitting.}
 \label{fig:example_novelty_gnu}
 \end{figure}
@@ -125,7 +122,7 @@ The trivial step is to create the tree $T_0$ with one root vertex $R$ with the e
         T_0 &= (V_0, E_0).
     \end{align*}
 
-\paragraph{Recursive step}
+\paragraph{First recursive step}
      Since $R \in L_0$, we create two rectangles $R_l$, $R_r$ by selecting a random dimension $d=0$.
     \begin{align*}
         r_0 &= \langle 0, 110), &
@@ -141,13 +138,14 @@ The trivial step is to create the tree $T_0$ with one root vertex $R$ with the e
     \end{align*}
     After checking for the ending condition, set $L_1$ contains precisely two elements $R_l$ and $R_r$.
      
+\paragraph{Second recursive step}
     Since there are vertices in $L_1$ left to be examined, we continue with recursive steps.
     Since $R_l \in L_1$ (resp. $R_r \in L_1$), we create two new rectangles $R_{ll}$, $R_{lr}$ -- left column (resp. $R_{rl}$, $R_{rr}$ -- right column) by selecting a random dimension $d=1$ (resp. $d=0$).
     \begin{align*}
         r_{l1} &= \langle -5, 105)& r_{r0} &= \langle 55, 110) \\
         s_l &= 50 & s_r&=82.5\\
         R_{ll} &= \langle 0, 55) \times \langle -5,50) & R_{rl} &= \langle 55, 82.5) \times \langle -5,105)\\
-        R_{lr} &= \langle 0, 55) \times \langle 50,105) & R_{ll} &= \langle 82.5, 110) \times \langle -5,105)
+        R_{lr} &= \langle 0, 55) \times \langle 50,105) & R_{rr} &= \langle 82.5, 110) \times \langle -5,105)
     \end{align*}
  New tree $T_2$ is then
     \begin{align*}
@@ -155,7 +153,7 @@ The trivial step is to create the tree $T_0$ with one root vertex $R$ with the e
         E_2 &= \{(R, R_l), (R, R_r), (R_l, R_{ll}), (R_l, R_{lr}), (R_r, R_{rl}), (R_r, R_{rr})\} \\
         T_2 &= (V_2, E_2)
     \end{align*}
-We recheck the ending condition. The set of leaves $L_2$ now contains two hyperrectangles $R_{lr}$ and $R_{rr}$.
+\paragraph{Termination} We recheck the ending condition. The set of leaves $L_2$ now contains two hyperrectangles $R_{lr}$ and $R_{rr}$.
 This goes on until the ending condition is met. The resulting tree $T_8$ is depicted in Figure \ref{fig:example_novelty_tree_color}.
 \end{example}
 
@@ -221,11 +219,11 @@ and $a' \in R_{ll} \subset R_{l} \subset R$ as shown in Example \ref{ex:novelty_
 
 
 
-\begin{figure}[htbp]
+\begin{sidewaysfigure}[htbp]
 \centering
-\includesvg[angle=90,inkscapelatex=false,width=1\textwidth]{figures/example66_Novelty_tree.svg}
+\includesvg[inkscapelatex=false,width=1\textwidth]{figures/example6_Novelty_tree_tb.svg}
 \caption{Tree constructed using the enhanced novelty approach}
 \label{fig:example_novelty_tree_color}
-\end{figure}
+\end{sidewaysfigure}
 
 
