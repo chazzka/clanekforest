@@ -1,38 +1,19 @@
-\section{Proposed Range-based Enhancement For Isolation Forest}
+\section{Proposed Half-Space Tree novelty detector}
 \label{sec:novelty_isolation_forest}
-In this section, we propose a new enhancement of the original Isolation Forest algorithm to make it possible to detect novelty observations.
-The proposed enhancement takes the basic idea of an ensemble of trees with various depths but takes it further to make semi-supervised detection possible.
+This section proposes a new novelty detector based on the Half-Space tree algorithm.
+This modification takes the basic idea of an ensemble of trees with various depths but takes it further to make semi-supervised detection possible.
 
-\subsection{Initial Problem}
-\label{sec:InitialProblem}
- The standard Isolation Forest algorithm cannot be used for novelty detection. This is because, in each step, the observation space is limited by the previous data.
-
-
-Suppose we now want to use the original tree to evaluate the novelty data point $p$, which is not present in the training set.
-
-Let us recall the equations needed for vertex creation:
-\begin{align*}
-S_l &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s})\le z_R\},&
-S_r &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s}) > z_R\}.
-\end{align*}
-The point $p$ fits neither $S_l$ nor $S_r$ and does not even necessarily fit $R_l = R(S_l)$ nor $R_r = R(S_r)$ (for practical illustration, see point $a'$ in Example \ref{ex:novelty_point_evaluation_original}.
-
-Nevertheless, because the data point $p$ satisfies  $\pi_d(p) \le z$ (or $\pi_d(p) > z$), $p$ is assigned to the vertex $R_l$ (or $R_r$) even though $p \notin R_l$ nor $p \notin R_r$.
-
-This is why the original Isolation Forest is a purely unsupervised algorithm. To work correctly, the tree has to be constructed concerning all possible input data.
-
-\subsection{Proposed Solution}
+\subsection{The Solution}
 The proposed solution comes from the idea that the original tree lacks the possibility to isolate more data points than it currently observes.
 The observed space is bounded by the minimum and maximum in each dimension.
 
-As in the original article, we use the concept of a binary decision tree. The proposed solution is altering the idea of the split point evaluation. Whereas the original Isolation Forest evaluates the split point based on the previous data, we
-evaluate the split point based on a range in our proposed solution. For this to work, several alterations to the split point evaluation and the form of data passed between vertices must be made; however, the overall concept of the forest remains the same.
-The proposed solution has several concepts of alteration to the original solution:
+As in the original article, we use the concept of a binary decision tree. The proposed solution is altering the idea of the split point evaluation. Whereas the original Isolation Forest evaluates the split point based on the previous data, the HST algorithm evaluates the split point based on a range. For this to work, several alterations to the split point evaluation and the form of data passed between vertices must be made; however, the overall concept of the forest remains the same.
+The HST algorithm has several key concepts, which we adopted and modified as follows:
 
 \begin{enumerate}
-    \item We start with the root as the whole domain space bounded by ranges.
+    \item We start with the root, representing the whole domain space bounded by ranges.
     \item Descendants cover the whole observable space of their associated ancestors. 
-    \item The split point is in the middle of the given dimension’s range.
+    \item The split point is in the \emph{middle} of the given dimension’s range.
     \item The input data is only used to determine the ending condition.
 \end{enumerate}
 
@@ -96,7 +77,7 @@ Note that the tree \(T_{j}\) is actually a Hasse diagram of the ordered set
 
 \begin{example}
 \label{example:novelty_tree_create}
-Consider now an example of creating a new enhanced Isolation tree based on the given input sample
+Consider now an example of creating a new HST based on the given input sample
 \begin{align*}
     S = \{&[25,100],[30,90],[20,90],[35,85],\\
     &[25,85],[15,85],[105,20],[95,25], \\
@@ -104,12 +85,12 @@ Consider now an example of creating a new enhanced Isolation tree based on the g
 \end{align*}
 Figure \ref{fig:example_novelty_gnu} shows $S$ in the finished plane created using an enhanced approach. Observe that the split points (red lines) are always in the middle of the previous observable space, and rectangles now always cover the whole ancestor's area. Numbers represent the final leaves' depth (also seen in Figure \ref{fig:example_novelty_tree_color}).
 
-\begin{figure}[htbp]
+\begin{figure*}[!t]
 \centering
 \includesvg[width=0.9\textwidth,inkscapelatex=false]{figures/example6_novelty_gnu_bigfont.svg}
 \caption{Enhanced approach. Rectangles created by recursive splitting.}
 \label{fig:example_novelty_gnu}
-\end{figure}
+\end{figure*}
 
 The tree $T$ is created by starting with the tree $T_0$ and expanding further as described by the recursive step until the ending condition is met.
 Figure \ref{fig:example_novelty_tree_color} shows the finished tree $T$, trained on the dataset $S$.
@@ -136,7 +117,7 @@ The trivial step is to create the tree $T_0$ with one root vertex $R$ with the e
     E_1 &= \{(R, R_l), (R, R_r)\}, &
     T_1 &= (V_1, E_1).
     \end{align*}
-    After checking for the ending condition, set $L_1$ contains precisely two elements $R_l$ and $R_r$.
+    Checking for the ending condition, set $L_1$ contains precisely two elements $R_l$ and $R_r$; hence, we continue.
      
 \paragraph{Second recursive step}
     Since there are vertices in $L_1$ left to be examined, we continue with recursive steps.
@@ -157,8 +138,8 @@ The trivial step is to create the tree $T_0$ with one root vertex $R$ with the e
 This goes on until the ending condition is met. The resulting tree $T_8$ is depicted in Figure \ref{fig:example_novelty_tree_color}.
 \end{example}
 
-\subsection{Evaluating enhanced decision tree $T$}
-The evaluation of our enhanced decision tree is more straightforward since the examined data point is always contained in the possibility space hyperrectangle of some vertex in each depth until a leaf is visited.
+\subsection{Evaluating the decision tree $T$}
+The evaluation of this decision tree is more straightforward since the examined data point is always contained in the possibility space hyperrectangle of some vertex in each level of depth until a leaf is visited.
 The evaluation starts in the root vertex. The initial possibility space should be reasonable enough to cover the whole domain of a given problem. Until the leaf is reached, the examined point recursively visits the descendant within which it is contained.
 
 
@@ -182,7 +163,7 @@ Since $a \in R_r$, we visit $R_r$.
 \end{align*}
 Since $a \in R_{rr}$, we visit the vertex $R_{rr}$.
 \item
-we continue recursively for another two steps until the leaf $R_{rrlr}$ is reached. This leaf has a depth of $4$.
+We continue recursively for another two steps until the leaf $R_{rrlr}$ is reached. This leaf has a depth of $4$.
 
 \end{enumerate}
    
@@ -207,7 +188,7 @@ Since $a' \in R_l$, we visit $R_l$.
 \end{align*}
 Since $a' \in R_{ll}$, we visit the vertex $R_{ll}$.
 \item
-Since $R_{ll}$ is a leaf, we end here, and the reached leaf's depth is $2$.
+Since $R_{ll}$ is a leaf, we end here, and the reached leaf's depth is $2$. The leaf is marked gray in Figure \ref{fig:example_novelty_tree_color}.
 \end{enumerate}
 \end{example}
 Note that each evaluated point of the given possibility space is always contained in each vertex it visits.
@@ -222,7 +203,7 @@ and $a' \in R_{ll} \subset R_{l} \subset R$ as shown in Example \ref{ex:novelty_
 \begin{sidewaysfigure}[htbp]
 \centering
 \includesvg[inkscapelatex=false,width=1\textwidth]{figures/example6_Novelty_tree_tb.svg}
-\caption{Tree constructed using the enhanced novelty approach}
+\caption{Tree constructed using the enhanced novelty approach.}
 \label{fig:example_novelty_tree_color}
 \end{sidewaysfigure}
 

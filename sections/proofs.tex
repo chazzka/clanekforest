@@ -62,7 +62,7 @@ Start space & Dim. & Split range & Probability & End space \\
 % cela pravdepodobnost je pak ze to cele vynasobim
 % a reknu aha path je tedy 7 protoze to dal neslo
 
-Note that rows $6$ and $7$ no longer contain the probability of selecting the dimensions since the second dimension cannot be chosen as it would not isolate any point (see the startspace of $y$ as $\langle 85, 85\rangle$).
+Note that rows $6$ and $7$ no longer contain the probability of selecting the dimensions since the second dimension cannot be chosen as it would not isolate any point (see the startspace's $y$ as $\langle 85, 85\rangle$).
 The evaluation ends after seven splits (depth = $7$) since that is the last split to isolate the given point.
 The probability of this case is then $\frac{1}{18}\cdot\frac{1}{32}\cdot\dots\cdot\frac{1}{2}\cdot 1$.
 
@@ -71,10 +71,10 @@ The rest of the rows of this table show the probabilities of depth for the remai
 This is later used to calculate the expected value of depth.
 Due to the symmetricity, the probabilities for the points in the bottom right corner in Figure \ref{fig:example_noutlier_gnu} are the same as those in the top left corner, so we only show the latter.
 
-Let us recall the initial problem in Section \ref{sec:InitialProblem}.
+Let us recall the initial problem in Section \ref{sec:revisiting}.
 If we consider the novelty point $[25,20]$, the evaluation results in the same path as the point $[25,85]$ in Table \ref{prob_table_25_85}. However, the novelty point no longer fits in the start space for the sixth and seventh rows. Nevertheless, because the point $[25,20]$ satisfies $25 \le z \in \langle 25, 35 \rangle$,  $[25,20]$ is assigned to the vertex $\langle 15, 25 \rangle \times \langle 85, 85 \rangle$ even though $[25,20] \notin \langle 15, 25 \rangle \times \langle 85, 85 \rangle$.
 
-Note that the path for the novelty point $[25,20]$ is a path of the $[25,85]$ (the vertical neighbour) or the $[90,20]$ (the horizontal neighbour).
+Note that the path for the novelty point $[25,20]$ is a path of the $[25,85]$ (the vertical neighbour in Figure \ref{fig:example_noutlier_gnu}) or the $[90,20]$ (the horizontal neighbour).
 
 
 
@@ -124,7 +124,7 @@ To provide an argument for the resulting depth using the novelty approach, we ca
 We start with given range $\langle 0, 110.0\rangle \times \langle -5.0, 105.0\rangle$.
 
 % 3Hy
-\subparagraph{The first point to consider is \([25,100]\).} There is only one way to isolate this point; using three horizontal splits. This is the only scenario S1 for this point. Table \ref{table_25_100} shows the probabilities for individual depths. Since the vertical splits do not matter in this case, there could be any number of them. Hence, we get the expected value of depth as
+\paragraph{The first point to consider is \([25,100]\).} There is only one way to isolate this point: using three horizontal splits (H). This is the only scenario S1 for this point. Table \ref{table_25_100} shows the probabilities for individual depths. Since the vertical splits (V) do not contribute to the isolation of a given point, there could be any number of them. Hence, we get the expected value of depth as
 $$\sum_{n=3}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n = 6.$$
 
 %first point 25,100
@@ -134,35 +134,37 @@ $$\sum_{n=3}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n = 6.$$
     width=\linewidth,
     hspan=minimal,
     cells={font=\footnotesize},
-    colspec={c| c |c},
+    colspec={c| c | c | c | c},
     column{odd}={gray9},
-    %colsep=1pt,
     row{1}={guard},
-    column{1-3}={guard, mode=math}
+    column{1-5}={guard, mode=math}
 }
- \diagbox{Depth}{Probab.} & S1 & \sum \\
+ \diagbox{Depth}{Probab.} & V & H & S1 & \sum \\
  \hline
-3 & \binom{2}{2}\cdot\frac{1}{2^3} & \frac{1}{8} \\
-4 & \binom{3}{2}\cdot\frac{1}{2^4} & \frac{3}{16} \\
-5 & \binom{4}{2}\cdot\frac{1}{2^5} & \frac{3}{16} \\
-\vdots & \vdots & \vdots  \\
-k & \binom{k-1}{2}\cdot \frac{1}{2^k} & \binom{k-1}{2}\cdot \frac{1}{2^k} \\
-\vdots & \vdots & \vdots \\
+3 & 0 & 3 & \binom{2}{2}\cdot\frac{1}{2^3} & \frac{1}{8} \\
+4 & 1 & 3 & \binom{3}{2}\cdot\frac{1}{2^4} & \frac{3}{16} \\
+5 & 2 & 3 & \binom{4}{2}\cdot\frac{1}{2^5} & \frac{3}{16} \\
+\vdots & \vdots & \vdots & \vdots & \vdots  \\
+k & k-3 & 3 & \binom{k-1}{2}\cdot \frac{1}{2^k} & \binom{k-1}{2}\cdot \frac{1}{2^k} \\
+\vdots & \vdots & \vdots & \vdots & \vdots \\
 \hline
-\sum & 1 & 1
+\sum & - & - & 1 & 1
 \end{tblr}
 \caption{Probabilities of depths for point $[25,100]$.}
 \label{table_25_100}
 \end{table}
 
 
+
+
 % 4Vx or 2Vx + 5Hy
-\subparagraph{The second point in our sample is $[20,90]$.} Now, there are more ways to isolate this point. That is by exactly four vertical splits (and any number of horizontals --- up to five --- S1) or by exactly five horizontal and two or three vertical splits (S2X). To get the expected value for all the possible scenarios, we must calculate their probabilities. Table \ref{table_20_90} shows the probabilities for individual depths.
+\paragraph{The second point in our sample is $[20,90]$.} Now, there are more ways to isolate this point. That is, by exactly four vertical splits and up to four horizontal splits (S1) or at least five horizontal splits along with two or three vertical splits (S2X).
+To get the expected value for all the possible scenarios, we must calculate their probabilities. Table \ref{table_20_90} shows the probabilities for individual depths.
 
 To simplify the second scenario --- two vertical and five horizontal splits --- we divide it into two sub-scenarios.
 \begin{enumerate}
-    \item Sub-scenario (S2V), where the last split is vertical.
-    \item Sub-scenario (S2H), where the last split is horizontal.
+    \item Sub-scenario (S2V), where the last split is vertical (exactly two vertical splits).
+    \item Sub-scenario (S2H), where the last split is horizontal (exactly five horizontal splits).
 \end{enumerate}
 
 The expected value of depth for the point $[20,90]$ is
@@ -199,10 +201,11 @@ k & 0 & \binom{k-1}{1}\cdot \frac{1}{2^k} & 0 & (k-1)\cdot\frac{1}{2^k}\\
 \end{table}
 
 
-\subparagraph{The third point in the sample is $[15,85]$.} We need four vertical splits or two or three vertical and five horizontal splits to isolate this point. That is the same scenario as the previous point $[20,90]$; hence, we get the same depths, resulting in the same probabilities.
+
+\paragraph{The third point in the sample is $[15,85]$.} We need four vertical splits or two or three vertical and five horizontal splits to isolate this point. That is the same scenario as the previous point $[20,90]$; hence, we get the same depths, resulting in the same probabilities.
 
 %4. (30,90) 5Vx or 2Vx + 5Hy
-\subparagraph{The fourth point in the sample is $[30,90]$.} We need either exactly five vertical splits (S1) or two, three or four vertical and exactly five horizontal splits to isolate this point. That gives, again, two sub-scenarios. First, the last split is vertical (S2V), and conversely, the last is horizontal (S2H).
+\paragraph{The fourth point in the sample is $[30,90]$.} We need either exactly five vertical splits (S1) or two, three or four vertical and exactly five horizontal splits to isolate this point. That gives, again, two sub-scenarios. First, the last split is vertical (S2V), and conversely, the last is horizontal (S2H).
 Table \ref{table_30_90} shows the probabilities for individual depths.
 
 
@@ -250,7 +253,7 @@ k & 0 & \binom{k-1}{1}\cdot \frac{1}{2^k} & 0 & (k-1)\cdot \frac{1}{2^k} \\
 \end{table}
 
 
-\subparagraph{The fifth point in the sample is $[35,85]$.}  We need four vertical splits to isolate this point. That is, any number of horizontal splits and four vertical splits are mixed so that the last split is always vertical.
+\paragraph{The fifth point in the sample is $[35,85]$.}  We need four vertical splits to isolate this point. That is, any number of horizontal splits and four vertical splits are mixed so that the last split is always vertical.
 We get the expected value of depth as follows
 $$\sum_{n=4}^{\infty}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n = 8.$$
 
@@ -286,7 +289,7 @@ k & \binom{k-1}{3}\cdot \frac{1}{2^k} & \binom{k-1}{3}\cdot \frac{1}{2^k}\\
 
 
 %5Vx + 3Hy || 4Vx + 5Hy
-\subparagraph{The sixth point in the sample is the point  $[25,85]$.} To isolate this point, we need five vertical and three or four horizontal splits (S1V and S1H) or four vertical and at least five horizontal splits (S2V and S2H).
+\paragraph{The sixth point in the sample is the point  $[25,85]$.} To isolate this point, we need five vertical and three or four horizontal splits (S1V and S1H) or four vertical and at least five horizontal splits (S2V and S2H).
 Table \ref{table_25_85} shows the probabilities for individual depths for the above scenarios.
 % Let us begin with the first scenario, five vertical and three horizontal splits. We divide it into more sub-scenarios:
 
@@ -308,7 +311,6 @@ Table \ref{table_25_85} shows the probabilities for individual depths for the ab
 %     \item Sub-scenario (S2V), where the last split is vertical.
 %     \item Sub-scenario (S2H), where the last split is horizontal. Here, only 9 splits are possible since in ten splits, there would be five vertical splits, making it the previous scenario.
 % \end{enumerate}
-
 The expected value of depth for the point $[25,85]$ is:
 $$\sum_{n=8}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n + \sum_{n=8}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n + \sum_{n=9}^{\infty}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n + \binom{8}{4}\cdot \frac{1}{2^9} \doteq 9.734.$$
 
@@ -479,10 +481,10 @@ Table \ref{table_big_novelty} shows the aggregated sums for individual depths fo
 \end{sidewaystable}
 
 \subsection{Conclusion}
-The expected values of depths (EXD) for the enhanced isolation forest algorithm are shown in the section above.
-To compare the values with the expected values of depths for the original isolation forest, we sum the rows in Table \ref{table_big_original} multiplied by respective depth values. Table \ref{table_ex_comparison} shows the side-by-side comparison. The important outcome is the ratio of expected depths in the respective column. As seen in this table, the difference of depth for the novelty point in the case of the original approach is relatively small compared to the difference of enhanced novelty isolation forest.
-This example proved that it is feasible for the enhanced algorithm to encapsulate the previously unseen data points in the higher leaves of the tree, making novelty detection possible.
-Note that a representative example of one possible data distribution in the hyperplane was chosen for this evaluation. However, it shares most of the attributes with general novelty detection problems.
+The expected values of depths (EXD) for the HST algorithm are shown in the section above.
+To compare the values with the expected values of depths for the original isolation forest, we sum the rows in Table \ref{table_big_original} multiplied by respective depth values. Table \ref{table_ex_comparison} shows the side-by-side comparison. The important outcome is the ratio of expected depths in the respective column. As seen in this table, the difference in depth for the novelty point in the case of the original approach is relatively small compared to the difference in the HST forest.
+This example proved that it is feasible for the HST algorithm to encapsulate the previously unseen data points in the higher leaves of the tree, making novelty detection possible.
+This example closely resembles other similar novelty detection problems.
 
 \begin{table}
 \centering

@@ -5,6 +5,13 @@ Isolation Forest
 \cite{liu2008isolation, liu2012isolation} is an outlier
 detection, unsupervised ensemble algorithm. This approach is well-known for successfully identifying outliers using recursive partitioning (forming a decision tree) to decide whether the analyzed data point is an anomaly. The fewer partitions required to isolate, the more probable it is for a point to be an anomaly.
 
+The initial problem with using the original Isolation Forest for novelty detection is that a potential novelty point located far from training data tends to fall into some existing branch because the Isolation Forest's splits were created without seeing it, making its placement arbitrary and leading to incorrect isolation.
+This statement will later be supported by mathematical analysis and revisited in \ref{sec:revisiting}.
+
+In the following sections, we describe the original decision tree.
+We deviated slightly from Liu et al.~\cite{liu2008isolation} for better interpretability and comparability with the proposed solution.
+Note that this deviation is theoretical and does not affect the original functionality.
+
 % \paragraph{Isolation tree}
 % Isolation Tree is a rooted tree constructed with a subset of \(A\) items
 % (datapoints) with the size \(s=|A|\).
@@ -42,6 +49,7 @@ detection, unsupervised ensemble algorithm. This approach is well-known for succ
 
 % \end{enumerate}
 
+\subsection{Definitions}
 \begin{definition}
 Let $\mathsf{s}=(s_0, \dots, s_d, \dots, s_{n-1})\in \mathbb{R}^n$ be a data point. Then we say that $\pi_d(\mathsf{s}):=s_d$ is a \emph{projection} of data point $\mathsf{s}$ onto  dimension $d$  yielding $s_d$.
 \end{definition}
@@ -59,13 +67,8 @@ $$R(Z) = r_0 \times r_1 \times \cdots \times r_{n-1},$$ where $r_d = \langle \mi
 \end{definition}
 
 
-
-
-In this section, we describe the original decision tree.
-We deviated slightly from Liu et al.~\cite{liu2008isolation} for better interpretability and comparability with the proposed solution.
-Note that this deviation is theoretical and does not affect the original functionality.
-
 \subsection{Constructing a decision tree $T$}
+\label{sec:cdt}
 \begin{enumerate}
 
     \item Each leaf or internal vertex is a hyperrectangle $R$. 
@@ -145,12 +148,12 @@ Consider now an example of creating a new Isolation tree based on the given inpu
 \end{align*}
 as shown in Figure \ref{fig:example_noutlier_gnu}.
 
-\begin{figure}[htbp]
+\begin{figure*}[!t]
 \centering
 \includesvg[width=0.9\textwidth, inkscapelatex=false]{figures/example6_noutlier_gnu_legend.svg}
 \caption{Original solution. Rectangles created by recursive splitting.}
 \label{fig:example_noutlier_gnu}
-\end{figure}
+\end{figure*}
 
 
 
@@ -160,7 +163,7 @@ Figure \ref{fig:example_noutlier_tree_color} shows the finished tree $T$, traine
 \paragraph{Basis step} 
 We create the tree $T_0$ and a function relation $\rho_0$.
    There is just a single vertex (root) 
-   \[R = R(S) = \langle 15, 105 \rangle \times \langle 10, 105 \rangle,\]
+   \[R = R(S) = \langle 15, 105 \rangle \times \langle 10, 100 \rangle,\]
    without any connections, so both $E_0$ and $\rho_0$ are empty, i.e.
 \begin{align*}
 V_0 &= \{R\},& E_0 &= \emptyset,\\
@@ -314,6 +317,20 @@ Figure \ref{fig:example_noutlier_gnu} shows that after just two steps, the $[25,
 Note that each element that was part of the batch during the training --- tree building --- phase is always contained in each vertex it visits. See $a \in R_{lr} \subset R_{l} \subset R$ in Example \ref{ex:regular_point_evaluation_original}.
 This is not true for elements unseen during the training phase (such as novelty points).
 See $a' \in R$, but $a' \notin R_l$ (and of course $a' \notin R_r$) in Example \ref{ex:novelty_point_evaluation_original}.
+
+\subsection{Revisiting the Initial Problem}
+\label{sec:revisiting}
+Suppose we now want to use the original tree to evaluate a novelty data point $p$, which is not present in the training set.
+Let us recall the equations from \textit{recursive step} in section \ref{sec:cdt} needed for vertex creation:
+\begin{align*}
+S_l &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s})\le z_R\},&
+S_r &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s}) > z_R\}.
+\end{align*}
+The point $p$ fits neither $S_l$ nor $S_r$ and does not even necessarily fit $R_l = R(S_l)$ nor $R_r = R(S_r)$.\footnote{For practical illustration, see point $a'$ in Example \ref{ex:novelty_point_evaluation_original}.}
+
+Nevertheless, because the point $p$ satisfies  $\pi_d(p) \le z$ (or $\pi_d(p) > z$), $p$ \emph{is assigned} to the vertex $R_l$ (or $R_r$) even though $p \notin R_l$ nor $p \notin R_r$.
+
+% This is why the original Isolation Forest is a purely unsupervised algorithm. To work correctly, the tree has to be constructed concerning all possible input data.
 
 \begin{sidewaysfigure}[htbp]
 \centering

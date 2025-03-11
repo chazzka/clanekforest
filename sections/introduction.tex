@@ -37,15 +37,17 @@ Another novelty detection algorithm is called the Local Outlier Factor from the 
 
 
 % 4. a tady už konkrétní problem, proč teda my tvoříme novelty detection algoritmus, protože jsme potřebovali něco jiného než lof a pracovali jsme s isolation forestem, ktery dobře fungoval na outliery a krásně šlo přidávat stromy další a my chtěli zachovat tu myšlenku toho kooperativního algoritmu více stromů ale použít v semi supervised manneru
-One of the downsides when dealing with the above algorithms is their lack of interpretability. It is not trivial to visualize the outcomes and understand the reasons for the point being a novelty or otherwise, making it arduous to understand the properties of the dataset. That is not the case for the Isolation Forest, though, where the visualization is its superiority.
-Elaborate research on novelty detectors has highlighted several determining properties that come up when dealing with such problems. First, the novelty detection algorithm should be semi-supervised (that is, it can be trained on a dataset first and evaluated later). Then, the algorithm should be able to work with \(n\)-dimensional spaces. Lastly, the algorithm should evaluate both data seen during the learning phase and those never seen before. Only then will the novelty detector be able to work properly.
+One of the downsides when dealing with the above algorithms is their lack of interpretability. It is not trivial to visualize the outcomes and understand the reasons for the point being a novelty or otherwise, making it arduous to understand the dataset's properties. That is not the case for the Isolation Forest, though, where the visualization is its superiority.
+Elaborate research on novelty detectors has highlighted several determining properties when dealing with such problems. First, the novelty detection algorithm should be semi-supervised (that is, it can be trained on a dataset first and evaluated later). Then, the algorithm should be able to work with \(n\)-dimensional spaces. Lastly, the algorithm should evaluate both data seen during the learning phase and those never seen before. Only then will the novelty detector be able to work properly.
 
-In this article, we propose a new algorithm for novelty detection.
+The Half-Space Tree (HST) algorithm, introduced by Tan et al. in \cite{tan2011fast} for anomaly detection for streaming data, is a data structure that recursively partitions the data space into half-spaces to model the distribution of normal instances.
 The core of this algorithm is based on the Isolation Forest by Liu et al. \cite{liu2008isolation}, \cite{liu2012isolation}.
-It builds on the idea of the binary decision tree and alters the process of building and later evaluating the decision tree to be able to isolate novelty anomalies.
-The main task is to utilize the competition of trees and the original Isolation Forest's scalability to develop a solid and adaptable novelty detector. One of the upsides of using trees to evaluate data is the visualization. A reason for enhancing the Isolation forest was its ability to visualize the current point's placement in the tree because the level of abnormality directly depends on the point's depth in the resulting tree.
-In this article, we provide a description of a new Novelty Isolation Forest algorithm.
-First, we provide a theoretical framework for the original and new Isolation forest algorithms.
+It builds on the idea of the binary decision tree and alters the process of building and evaluating the decision tree to isolate anomalies. By using an algorithm based on binary trees, the interpretability of the problem is significantly enhanced, as the tree structure allows us to visually trace and understand the decision-making process.
+
+Our main task is to utilize the HST algorithm to develop a solid and adaptable novelty detector.
+This article proposes a new HST modification, similar to Ting's in \cite{ting2013mass}, specifically tailored for detecting novelties.
+We show that this modification is particularly well-suited for novelty detection due to its unique structure and operational approach.
+First, we provide a theoretical framework for this modified algorithm and the original Isolation Forest.
 We then provide examples of using it to build and evaluate the tree.
 With this framework built up, we show the distinction between those two algorithms and examples of using them in novelty search scenarios.
 

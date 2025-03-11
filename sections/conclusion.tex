@@ -1,15 +1,14 @@
 \section{Discussion and Conclusions}
 \label{sec:conclusion}
-In Section \ref{sec:InitialProblem} we presented the initial problem of novelty detection and highlighted the exact areas where the original Isolation Forest can be enhanced to be successfully used in novelty detection scenarios.
-Later in this section, we proposed our solution based on several alterations to the original solution, mainly on the range-based training of a tree.
-Through the examples in Section \ref{example:novelty_tree_create}, we show how to build such an enhanced tree using a descriptive dataset.
+In Section \ref{sec:novelty_isolation_forest} we presented the initial problem of novelty detection and highlighted the exact areas where the original Isolation Forest can be enhanced to be successfully used in novelty detection scenarios.
+Later in this section, we proposed our solution based on the Half-Space Tree algorithm.
+Through the examples in Section \ref{example:novelty_tree_create}, we show how to build HST using a descriptive dataset.
 Experiments in this paper fully demonstrate that, using our proposed enhancement, it is possible to successfully isolate previously unseen novelty data points, with their depth being reasonably different from the regular trained-on data points.
 This assumption is later solidified with proofs that show the theoretical outcomes if all possible solutions were assessed. Namely, Table \ref{table_big_novelty} shows that the expected depth of the novelty point when evaluated using the enhanced approach differs much more significantly from other points as opposed to the original approach seen in Table \ref{table_big_original}.
 
-In summary, the research presented herein introduces a novel algorithm that has been demonstrated to effectively handle specific novelty points, as evidenced through a detailed example.
-Notably, comparisons between the depths of the original algorithm and the new one indicate significant modifications at these novelty points, suggesting enhanced performance in these areas.
-Such findings not only affirm the practical utility of the new algorithm but also highlight its potential adaptability to various situations within the algorithmic framework. 
-However, this method caused the Isolation Forest to no longer detect outliers, as the algorithm now works in semi-supervised mode. 
+In summary, the research presented herein introduces a novel approach that effectively handles specific novelty points, as evidenced through a detailed example.
+Notably, comparisons between the depths of the Isolation Forest algorithm and the Half-Space Tree algorithm indicate significant improvement in detecting novelty points, suggesting enhanced performance in these areas.
+Such findings affirm the practical utility of the new approach and highlight its potential adaptability to various situations within the algorithmic framework. 
+However, using this approach can no longer detect outliers, as it now works in semi-supervised mode. 
 Also, there is a need to choose the proper starting range and other hyperparameters. 
 This is why future work will focus on establishing optimal range settings at the onset, addressing unique scenarios within the algorithmic structure, and validating these enhancements through comprehensive benchmarks.
-This proposed trajectory aims to further substantiate the robustness and efficiency of the new algorithm in diverse operational contexts.
