@@ -32,8 +32,11 @@ The probability of the split point being from the given range is $\frac{105-95}{
 The probability of such event is then $$\frac{1}{2}\cdot\frac{105-95}{105-15} = \frac{1}{18}.$$
 Since the given point is not yet orphaned, we continue this way. The observable space is now scaled down due to the split point to the range of $\langle 15, 95\rangle$ for the first dimension $x$ and $\langle 10,100\rangle$ for the second $y$. Table \ref{prob_table_25_85} shows the rest of the probabilities for this path.
 
-\begin{table}[h]
+\begin{table}[!t]
 \centering
+\caption{Probabilities of depths for point $[25,85]$.}
+\label{prob_table_25_85}
+\resizebox{\columnwidth}{!}{%
 \begin{tblr}{
     width=\linewidth,
     hspan=minimal,
@@ -53,8 +56,7 @@ Start space & Dim. & Split range & Probability & End space \\
 \langle 15, 35\rangle \times \langle 85, 85\rangle & x & \langle 25, 35\rangle &  \phantom{\frac{1}{2}\cdot}\frac{35-25}{35-15} = \frac{1}{2} & \langle 15, 25\rangle \times \langle 85, 85\rangle \\
 \langle 15, 25\rangle \times \langle 85, 85\rangle & x & \langle 15, 25\rangle &  \phantom{\frac{1}{2}\cdot}\frac{25-15}{25-15} = \frac{1}{1} & \langle 25, 25\rangle \times \langle 85, 85\rangle
 \end{tblr}
-\caption{Probabilities of depths for point $[25,85]$.}
-\label{prob_table_25_85}
+}
 \end{table}
 
 
@@ -78,7 +80,9 @@ Note that the path for the novelty point $[25,20]$ is a path of the $[25,85]$ (t
 
 
 
-\begin{sidewaystable}[p]
+\begin{sidewaystable}[!t]
+\caption{Probabilities for individual data points, original approach.}
+\label{table_big_original}
 \begin{tblr}{
     width=\linewidth,
     hspan=minimal,
@@ -114,8 +118,7 @@ Note that the path for the novelty point $[25,20]$ is a path of the $[25,85]$ (t
 \hline
 \left[20, 25\right] & 0 & 3.5693536674E-02 & 1.8350184759E-01 & 3.4881778276E-01 & 3.4168298237E-01 & 8.0460443076E-02 & 9.2155826505E-03 & 6.0623378611E-04 & 2.1232873030E-05 & 3.5512746939E-07 & 3.0996586909E-09
 \end{tblr}
-\caption{Probabilities for individual data points, original approach.}
-\label{table_big_original}
+
 \end{sidewaystable}
 
 
@@ -128,8 +131,11 @@ We start with given range $\langle 0, 110.0\rangle \times \langle -5.0, 105.0\ra
 $$\sum_{n=3}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n = 6.$$
 
 %first point 25,100
-\begin{table}[h]
+\begin{table}[!t]
 \centering
+\caption{Probabilities of depths for point $[25,100]$.}
+\label{table_25_100}
+\resizebox{\columnwidth}{!}{%
 \begin{tblr}{
     width=\linewidth,
     hspan=minimal,
@@ -150,8 +156,7 @@ k & k-3 & 3 & \binom{k-1}{2}\cdot \frac{1}{2^k} & \binom{k-1}{2}\cdot \frac{1}{2
 \hline
 \sum & - & - & 1 & 1
 \end{tblr}
-\caption{Probabilities of depths for point $[25,100]$.}
-\label{table_25_100}
+}
 \end{table}
 
 
@@ -168,10 +173,16 @@ To simplify the second scenario --- two vertical and five horizontal splits --- 
 \end{enumerate}
 
 The expected value of depth for the point $[20,90]$ is
-\[\sum_{n=4}^{8}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n + \sum_{n=7}^{\infty}\binom{n-1}{1}\cdot \frac{1}{2^n}\cdot n + \sum_{n=7}^{8}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n \doteq 6.82.\]
+\begin{multline*}
+  \sum_{n=4}^{8}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n + \sum_{n=7}^{\infty}\binom{n-1}{1}\cdot \frac{1}{2^n}\cdot n +\\ +\sum_{n=7}^{8}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n \doteq 6.82.
+\end{multline*}
+
 %second point [20,90]
-\begin{table}[h]
+\begin{table}[!t]
+\caption{Probabilities of depths for point $[20,90]$.}
+\label{table_20_90}
 \centering
+\resizebox{\columnwidth}{!}{%
 \begin{tblr}{
     width=\linewidth,
     hspan=minimal,
@@ -196,8 +207,7 @@ k & 0 & \binom{k-1}{1}\cdot \frac{1}{2^k} & 0 & (k-1)\cdot\frac{1}{2^k}\\
 \hline
 \sum & \frac{163}{256} & \frac{7}{64} & \frac{65}{256} & 1
 \end{tblr}
-\caption{Probabilities of depths for point $[20,90]$.}
-\label{table_20_90}
+}
 \end{table}
 
 
@@ -217,13 +227,22 @@ Table \ref{table_30_90} shows the probabilities for individual depths.
 % \end{enumerate}
 
 The expected value of depth for the point $[30,90]$ is
-$$\sum_{n=5}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n + \sum_{n=7}^{\infty}\binom{n-1}{1}\cdot \frac{1}{2^n}\cdot n + \sum_{n=7}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n \doteq 7.82.$$
+
+\begin{multline*}
+\sum_{n=5}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n + \sum_{n=7}^{\infty}\binom{n-1}{1}\cdot \frac{1}{2^n}\cdot n+\\
++ \sum_{n=7}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n \doteq 7.82
+\end{multline*}
+
+
 
 
 
 %ctvrty point [30,90]
-\begin{table}[h]
+\begin{table}[!t]
+\caption{Probabilities of depths for point $[30,90]$.}
+\label{table_30_90}
 \centering
+\resizebox{\columnwidth}{!}{%
 \begin{tblr}{
     width=\linewidth,
     hspan=minimal,
@@ -248,8 +267,7 @@ k & 0 & \binom{k-1}{1}\cdot \frac{1}{2^k} & 0 & (k-1)\cdot \frac{1}{2^k} \\
 \hline
 \sum & \frac{1}{2} & \frac{7}{64} & \frac{25}{64} & 1
 \end{tblr}
-\caption{Probabilities of depths for point $[30,90]$.}
-\label{table_30_90}
+}
 \end{table}
 
 
@@ -260,8 +278,11 @@ $$\sum_{n=4}^{\infty}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n = 8.$$
 Table \ref{table_35_85} shows the probabilities for individual depths for the fifth point.
 
 %paty point [35,85]
-\begin{table}[h]
+\begin{table}[!t]
+\caption{Probabilities of depths for point $[35,85]$.}
+\label{table_35_85}
 \centering
+\resizebox{\columnwidth}{!}{%
 \begin{tblr}{
     width=\linewidth,
     hspan=minimal,
@@ -283,8 +304,7 @@ k & \binom{k-1}{3}\cdot \frac{1}{2^k} & \binom{k-1}{3}\cdot \frac{1}{2^k}\\
 \hline
 \sum & 1 & 1
 \end{tblr}
-\caption{Probabilities of depths for point $[35,85]$.}
-\label{table_35_85}
+}
 \end{table}
 
 
@@ -312,7 +332,13 @@ Table \ref{table_25_85} shows the probabilities for individual depths for the ab
 %     \item Sub-scenario (S2H), where the last split is horizontal. Here, only 9 splits are possible since in ten splits, there would be five vertical splits, making it the previous scenario.
 % \end{enumerate}
 The expected value of depth for the point $[25,85]$ is:
-$$\sum_{n=8}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n + \sum_{n=8}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n + \sum_{n=9}^{\infty}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n + \binom{8}{4}\cdot \frac{1}{2^9} \doteq 9.734.$$
+\begin{multline*}
+\sum_{n=8}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n
++ \sum_{n=8}^{\infty}\binom{n-1}{2}\cdot \frac{1}{2^n}\cdot n+\\
++ \sum_{n=9}^{\infty}\binom{n-1}{3}\cdot \frac{1}{2^n}\cdot n 
++ \binom{8}{4}\cdot \frac{1}{2^9} \doteq 9.734
+\end{multline*}
+
 
 
 % \begin{enumerate}
@@ -324,8 +350,13 @@ $$\sum_{n=8}^{9}\binom{n-1}{4}\cdot \frac{1}{2^n}\cdot n + \sum_{n=8}^{\infty}\b
 
 
 %sesty point [25,85]
-\begin{table}[h]
+\begin{table}[!t]
+% increase table row spacing, adjust to taste
+\caption{Probabilities of depths for point $[25,85]$.}
+\label{table_25_85}
+\renewcommand{\arraystretch}{1.3}
 \centering
+\resizebox{\columnwidth}{!}{%
 \begin{tblr}{
     width=\linewidth,
     hspan=minimal,
@@ -347,8 +378,7 @@ k & 0 & \binom{k-1}{2}\cdot\frac{1}{2^k} & \binom{k-1}{3}\cdot \frac{1}{2^k} & 0
 \hline
 \sum & \frac{35}{128} & \frac{29}{128} & \frac{93}{256} & \frac{35}{256} & 1
 \end{tblr}
-\caption{Probabilities of depths for point $[25,85]$.}
-\label{table_25_85}
+}
 \end{table}
 
 We can determine that our novelty point $[25,20]$ gets the value of the expected depth of $3$. Table \ref{table_novelty} shows the probabilities for the individual depths. When orphaning this point, we only have two possible sub-scenarios.
@@ -363,8 +393,10 @@ The expected value of depth of $[25,85]$ is $3$.
 
 
 %novelty 
-\begin{table}[h]
+\begin{table}[!t]
 \centering
+\caption{Probabilities of depths for the novelty point $[25,20]$.}
+\label{table_novelty}
 \begin{tblr}{
     width=\linewidth,
     hspan=minimal,
@@ -386,8 +418,6 @@ k & \binom{k-1}{0}\cdot\frac{1}{2^k} & \binom{k-1}{0}\cdot\frac{1}{2^k}&\frac{1}
 \hline
 \sum & \frac{1}{2} & \frac{1}{2} & 1 \\
 \end{tblr}
-\caption{Probabilities of depths for the novelty point $[25,20]$.}
-\label{table_novelty}
 \end{table}
 
 Table \ref{table_big_novelty} shows the aggregated sums for individual depths for comparison with the expected values for the original approach in Table \ref{table_big_original}.
@@ -439,7 +469,9 @@ Table \ref{table_big_novelty} shows the aggregated sums for individual depths fo
 
 
 
-\begin{sidewaystable}[p]
+\begin{sidewaystable}[!t]
+\caption{Probabilities for individual data points, enhanced approach.}
+\label{table_big_novelty}
 \begin{tblr}{
     width=\linewidth,
     hspan=minimal,
@@ -476,8 +508,6 @@ Table \ref{table_big_novelty} shows the aggregated sums for individual depths fo
 \hline
 \left[20, 25\right] & 0 & 5.000e-1 & 2.500e-1 & 1.250e-1 & 6.250e-2 & 3.130e-2 & 1.560e-2 & 7.810e-3 & 3.910e-3 & 1.950e-3 & 9.53e-04
 \end{tblr}
-\caption{Probabilities for individual data points, enhanced approach.}
-\label{table_big_novelty}
 \end{sidewaystable}
 
 \subsection{Conclusion}
@@ -486,7 +516,9 @@ To compare the values with the expected values of depths for the original isolat
 This example proved that it is feasible for the HST algorithm to encapsulate the previously unseen data points in the higher leaves of the tree, making novelty detection possible.
 This example closely resembles other similar novelty detection problems.
 
-\begin{table}
+\begin{table}[!t]
+\caption{Expected values of depths for both algorithms.}
+\label{table_ex_comparison}
 \centering
 \begin{tblr}{
     width=\linewidth,
@@ -510,6 +542,4 @@ point & EXD\ outlier & EXD\ novelty \\
 \hline
 20,25 & 4.27789495 & 3
 \end{tblr}
-\caption{Expected values of depths for both algorithms.}
-\label{table_ex_comparison}
 \end{table}

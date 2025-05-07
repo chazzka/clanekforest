@@ -67,7 +67,7 @@ $$R(Z) = r_0 \times r_1 \times \cdots \times r_{n-1},$$ where $r_d = \langle \mi
 \end{definition}
 
 
-\subsection{Constructing a decision tree $T$}
+\subsection{Constructing a decision tree}
 \label{sec:cdt}
 \begin{enumerate}
 
@@ -109,7 +109,7 @@ and \(R \in L_j\)\ be a leaf such that
 We first select a random dimension $d_R$ (such that $r_{d_R}$ is infinite) and a random split point $z_R \in r_{d_R}$.
 The split point $z_R$ splits $R \cap S$, creating two disjunctive sets $S_l$ and $S_r$ respectively, such that
 \begin{align*}
-S_l &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s})\le z_R\},&
+S_l &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s})\le z_R\},\\
 S_r &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s}) > z_R\}.
 \end{align*}
 Then we obtain left and right hyperrectangles \(R_l\), \(R_r\) as
@@ -138,13 +138,15 @@ i.e.~${R_l, R_r} \subset R$ are leaves and $R$ is an inner vertex in the new tre
 Thus, the desired tree $T$ is the tree $T_k$, and the finite relation $\rho$ is $\rho_k$.
 
 
-\begin{example}
+\subsection{Example of decision tree construction}
 \label{example:original_tree_create}
 Consider now an example of creating a new Isolation tree based on the given input sample
 \begin{align*}
-    S = \{&[25,100],[30,90],[20,90],[35,85],\\
-    &[25,85],[15,85],[105,20],[95,25], \\
-    &[95,15],[90,30],[90,20],[90,10]\},
+    S = \left\{\begin{smallmatrix}
+    [25,100],&[30,90],&[20,90],&[35,85],\\
+    [25,85],&[15,85],&[105,20],&[95,25], \\
+    [95,15],&[90,30],&[90,20],&[90,10]
+    \end{smallmatrix}\right\},
 \end{align*}
 as shown in Figure \ref{fig:example_noutlier_gnu}.
 
@@ -174,16 +176,14 @@ Figure \ref{fig:example_noutlier_gnu} shows $R$ as the largest and the brightest
 \paragraph{Recursive step} 
 In order to reach $T_1$ from $T_0$, a dimension $d_R=1$ and a split point $z_R = 72.63$ were randomly chosen. Figure \ref{fig:example_noutlier_gnu} shows split points as purple lines in their respective rectangles. The recursive step starts with creating left and right descendants of $R$ as
 \begin{align*}
- S_l & = \left\{\begin{smallmatrix}
+S_l &= \left\{\begin{smallmatrix}
  [105,20],& [95,25], &[95,15],\\
-[90,30],&[90,20],&[90,10],
-\end{smallmatrix}\right\},&
+[90,30],&[90,20],&[90,10]
+\end{smallmatrix}\right\}, \\
 S_r &= \left\{\begin{smallmatrix}
     [25,100],&[30,90],&[20,90],\\
-    [35,85], &[25,85],&[15,85],
-\end{smallmatrix}\right\},\\
-R_l &= R(S_l) = \langle 90, 105 \rangle \times \langle 10, 30 \rangle,&
-R_r &= R(S_r) = \langle 15, 35 \rangle \times \langle 85, 100 \rangle,
+    [35,85], &[25,85],&[15,85]
+\end{smallmatrix}\right\}.
 \end{align*}
 forming a new tree $T_1$ and a new function relation $\rho_1$ as follows:
 \begin{align*}
@@ -198,8 +198,9 @@ We continue the recursive step with two vertices.
 For the left vertex $R_l$, the dimension $d_{R_l} =0$ and the split point $z_{R_L}= 103.08$ were chosen randomly, giving
 \begin{align*}
 S_{ll} &= \left\{\begin{smallmatrix}
-    [95,25],& [95,15], &[90,30],\\
-    [90,20],& [90,10],
+    [95,25],& [95,15],\\ 
+    [90,30],&[90,20],\\
+    [90,10]
 \end{smallmatrix}\right\},&
 S_{lr} &= \{[105,20]\},\\
 R_{ll} &= \langle 90, 95 \rangle \times \langle 10, 30\rangle,&
@@ -221,7 +222,10 @@ With the rectangles prepared, we can assemble new vertices and edges and create 
 \begin{align*}
 \rho_2 &= \{(R,(72.63,1), (R_l, (103.08, 0)), (R_r, (20.32, 0)) \},\\
 V_2 &= \{ R, R_l, R_r, R_{lr}, R_{lr}, R_{rl}, R_{rr} \},\\
-E_2 &= \{ (R,R_l),(R,R_r), (R_l,R_{ll}), (R_l,R_{lr}), (R_r,R_{rl}), (R_r,R_{rr}) \},\\
+E_2 &= \left\{\begin{smallmatrix} 
+(R,R_l),&(R,R_r), &(R_l,R_{ll}),\\ 
+(R_l,R_{lr}),& (R_r,R_{rl}),& (R_r,R_{rr})
+\end{smallmatrix}\right\},\\
 T_2 &= (V_2, E_2).
 \end{align*}
 
@@ -229,10 +233,10 @@ T_2 &= (V_2, E_2).
 $$L_2 = \{R_{ll},R_{rl},R_{rr}\}.$$
 
 This continues until we reach tree $T_5$ such that $T_5=T_6$ is the desired tree $T$ as shown in Figure \ref{fig:example_noutlier_tree_color}. 
-\end{example}
 
 
-\subsection{Evaluating decision tree $T$}
+
+\subsection{Evaluating decision tree}
 The evaluation of desired element $a$ starts in the root $R$ of the previously built tree $T$.
 In a root, by applying function relation, $\rho(R) = (z,d)$, we obtain split point $z$ and dimension $d$.
 The root $R$ of a tree $T$ has two descendants $R_l$, $R_r$, such that
@@ -323,7 +327,7 @@ See $a' \in R$, but $a' \notin R_l$ (and of course $a' \notin R_r$) in Example \
 Suppose we now want to use the original tree to evaluate a novelty data point $p$, which is not present in the training set.
 Let us recall the equations from \textit{recursive step} in section \ref{sec:cdt} needed for vertex creation:
 \begin{align*}
-S_l &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s})\le z_R\},&
+S_l &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s})\le z_R\},\\
 S_r &= \{ \mathsf{s} \in{R \cap S}\ |\ \pi_{d_R}(\mathsf{s}) > z_R\}.
 \end{align*}
 The point $p$ fits neither $S_l$ nor $S_r$ and does not even necessarily fit $R_l = R(S_l)$ nor $R_r = R(S_r)$.\footnote{For practical illustration, see point $a'$ in Example \ref{ex:novelty_point_evaluation_original}.}
@@ -332,9 +336,17 @@ Nevertheless, because the point $p$ satisfies  $\pi_d(p) \le z$ (or $\pi_d(p) > 
 
 % This is why the original Isolation Forest is a purely unsupervised algorithm. To work correctly, the tree has to be constructed concerning all possible input data.
 
-\begin{sidewaysfigure}[htbp]
-\centering
+
+\begin{figure*}[!t]
 \includesvg[inkscapelatex=false,width=1\textwidth]{figures/example6_Noutlier_tree_tb.svg}
 \caption{tree constructed using the original approach}
 \label{fig:example_noutlier_tree_color}
-\end{sidewaysfigure}
+\end{figure*}
+
+
+% \begin{sidewaysfigure}[htbp]
+% \centering
+% \includesvg[inkscapelatex=false,width=1\textwidth]{figures/example6_Noutlier_tree_tb.svg}
+% \caption{tree constructed using the original approach}
+% \label{fig:example_noutlier_tree_color}
+% \end{sidewaysfigure}

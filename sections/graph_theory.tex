@@ -14,13 +14,13 @@
 
 
 %\begin{definition}
- For the digraph $D = (V,E)$ we define:
-\begin{description}
-    \item[Descendant] of a vertex $v \in V$ is a vertex $v' \in V$ such that $(v,v') \in E$. 
+For the digraph $D = (V,E)$ we define:
+\begin{itemize}
+    \item \emph{Descendant} of a vertex $v \in V$ is a vertex $v' \in V$ such that $(v,v') \in E$. 
     We say that $v$ is the \emph{ancestor} associated with $v'$.
-    \item[Walk] $W$ from a vertex $v_0 \in V$ to a vertex $v_n \in V$ is a finite set of edges ($W \subseteq E$), such that $$W = \{(v_0, v_1),(v_1, v_2),\dots(v_{n-1}, v_n)\}.$$
+    \item \emph{Walk} $W$ from a vertex $v_0 \in V$ to a vertex $v_n \in V$ is a finite set of edges ($W \subseteq E$), such that $$W = \{(v_0, v_1),(v_1, v_2),\dots,(v_{n-1}, v_n)\}.$$
     The empty set $W = \emptyset$ is a trivial walk from $v$ to $v$ for every $v \in V$. 
-\end{description}
+\end{itemize}
 %\end{definition}
 
 With the isolation tree starting at the root, we define a rooted tree.
@@ -29,14 +29,12 @@ With the isolation tree starting at the root, we define a rooted tree.
 \emph{Rooted} tree is the digraph $T = (V,E)$ with a single vertex $r \in V$ designated as the \emph{root}, with exactly one walk (so-call \emph{path}) from $r$ to $v$ for each $v \in V$.
 \end{definition}
 
-To be able to evaluate the isolation tree, we have to define several tree-specific attributes.
-
 %\begin{definition}
 For the rooted tree $T = (V,E)$ we define:
-\begin{description}
-    \item[Depth] of $v \in V$ is the size of the path from the root to $v$.
-    \item[Leaf] is a vertex $v \in V$ that has no descendants. 
-    \item[Internal] vertex conversely has a descendant.
-    \item[To traverse] a tree $T$ is to take a path $P$ from the root to the leaf. If $(v,v') \in P$, we say that we \emph{visit} $v$ and $v'$ while traversing.
-\end{description}
+\begin{itemize}
+    \item \emph{Depth} of $v \in V$ is the size of the path from the root to $v$.
+    \item \emph{Leaf} is a vertex $v \in V$ that has no descendants. 
+    \item \emph{Internal  vertex} conversely has a descendant.
+    \item To \emph{traverse} a tree $T$ is to take a path $P$ from the root to the leaf. If $(v,v') \in P$, we say that we \emph{visit} $v$ and $v'$ while traversing.
+\end{itemize}
 %\end{definition}

@@ -17,7 +17,7 @@
 %% Template article for Elsevier's document class `elsarticle'
 %% with harvard style bibliographic references
 %\documentclass[3p,times,procedia,table]{elsarticle}
-\documentclass[preprint,12pt]{elsarticle}
+\documentclass[12pt]{article}
 
 %% Use the option review to obtain double line spacing
 %% \documentclass[preprint,review,12pt]{elsarticle}
@@ -48,11 +48,11 @@
 \usepackage{rotating}
 \usepackage{mathtools}
 \usepackage{pstricks}    %for embedding pspicture.
+\usepackage{authblk}
 
-
-% \theoremstyle{definition}
-\newdefinition{example}{Example}[section]
-\newdefinition{definition}{Definition}[section]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}{Definition}[section]
 
 %% The amsthm package provides extended theorem environments
 %% \usepackage{amsthm}
@@ -62,11 +62,8 @@
 %% for the whole article with \linenumbers.
 %% \usepackage{lineno}
 
-\journal{Mathematics and Computers in Simulation}
 
 \begin{document}
-
-\begin{frontmatter}
 
 %% Title, authors and addresses
 
@@ -94,69 +91,12 @@
 %% \fntext[label3]{}
 
 \title{Isolation Forest in Novelty Detection Scenario}
-
-%% use optional labels to link authors explicitly to addresses:
-%% \author[label1,label2]{}
-%% \affiliation[label1]{organization={},
-%%             addressline={},
-%%             city={},
-%%             postcode={},
-%%             state={},
-%%             country={}}
-%%
-%% \affiliation[label2]{organization={},
-%%             addressline={},
-%%             city={},
-%%             postcode={},
-%%             state={},
-%%             country={}}
-
-\author[inst1]{Author One}
-
-\affiliation[inst1]{organization={Department One},%Department and Organization
-            addressline={Address One}, 
-            city={City One},
-            postcode={00000}, 
-            state={State One},
-            country={Country One}}
-
-\author[inst2]{Author Two}
-\author[inst1,inst2]{Author Three}
-
-\affiliation[inst2]{organization={Department Two},%Department and Organization
-            addressline={Address Two}, 
-            city={City Two},
-            postcode={22222}, 
-            state={State Two},
-            country={Country Two}}
-
-%abstract
-\include{sections/abstract}
-
-
-%%Graphical abstract
-\begin{graphicalabstract}
-\includegraphics{grabs}
-\end{graphicalabstract}
-
-%%Research highlights
-\begin{highlights}
-\item Research highlight 1
-\item Research highlight 2
-\end{highlights}
-
-\begin{keyword}
-%% keywords here, in the form: keyword \sep keyword
-anomaly detection \sep novelty detection \sep isolation forest \sep half-space tree
-%% PACS codes here, in the form: \PACS code \sep code
-\PACS 0000 \sep 1111
-%% MSC codes here, in the form: \MSC code \sep code
-%% or \MSC[2008] code \sep code (2000 is the default)
-\MSC 0000 \sep 1111
-\end{keyword}
-
-\end{frontmatter}
-
+\author[1]{Adam Ulrich}
+\author[1]{Jak Krňávek} 
+\author[1]{Roman Šenkreřík}
+\author[1]{Zuzana Komínková Oplatková}
+\author[1]{Radek Vala}
+\affil[1]{Faculty of Applied Informatics, Tomas Bata University in Zlin}
 %% \linenumbers
 
 %% For citations use: 
@@ -164,7 +104,7 @@ anomaly detection \sep novelty detection \sep isolation forest \sep half-space t
 %%       \citep{<label>} ==> [21]
 %%
 
-
+\maketitle
 %% main text
 \include{sections/introduction}
 
